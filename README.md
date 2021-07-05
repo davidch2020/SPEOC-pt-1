@@ -14,3 +14,6 @@ The main thing I did since last meeting was write the standardize
 function. It aims to give all the Excel sheets the same shape as 
 a DataFrame so we can deal with them in the same way. It also broke
 the rest of the code I had written.
+
+**I will be away from computer access for the next couple weeks.
+If you have questions, you can text me and I will try to respond.**
