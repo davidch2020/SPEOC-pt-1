@@ -6,6 +6,7 @@ Abraham Stout,Abraham,Stout,PA,yes,14.0,2,136.0,2
 Albert Baker,Albert,Baker,NY,no,28.0,1,0,0
 Alexander Hamilton,Alexander,Hamilton,Constitution,yes,160.0,1,0,0
 Alexander Martin,Alexander,Martin,Constitution,no,124.0,2,110.0,2
+Allen McLane,Allen,McLane,DE,yes,15.0,1,68.0,1
 Allen Samuel,Allen,Samuel,RI,yes,18.0,4,67.0,2
 Allen Thomas,Allen,Thomas,RI,yes,4.0,3,71.0,3
 Andrew Moore,Andrew,Moore,VA,yes,95.0,1,21.0,1
@@ -17,9 +18,11 @@ Barker Joshua,Barker,Joshua,RI,yes,40.0,1,0,0
 Barker Peter,Barker,Peter,RI,yes,1.0,1,86.0,1
 Barton William,Barton,William,RI,yes,46.0,2,89.0,2
 Benjamin Bellows,Benjamin,Bellows,NH,yes,156.0,1,22.0,1
-Benjamin Elliott,Benjamin,Elliott,PA,yes,10.0,1,30.0,1
+Benjamin Browne,Benjamin,Browne,MA,yes,20.0,2,0,0
+Benjamin Elliott,Benjamin,Elliott,PA,yes,43.0,2,79.0,2
 Benjamin Hicks,Benjamin,Hicks,SC,yes,5.0,1,5,1
-Benjamin Jones,Benjamin,Jones,NC,no,49.0,1,30.0,1
+Benjamin Jones,Benjamin,Jones,NC,no,97.0,2,84.0,2
+Benjamin Manning ,Benjamin,Manning ,NJ,yes,254.0,2,64.0,2
 Benjamin Morse,Benjamin,Morse,MA,no,184.0,1,0,0
 Benjamin Sheldon,Benjamin,Sheldon,MA,yes,52.0,1,72.0,1
 Benjamin Smith,Benjamin,Smith,SC,yes,1160.0,14,243.0,6
@@ -31,12 +34,16 @@ Brown Elisha,Brown,Elisha,RI,no,13.0,3,121.0,3
 Brown John,Brown,John,RI,yes,1204.0,13,379.0,10
 Champlin George,Champlin,George,RI,yes,16.0,4,22.0,1
 Charles Burrall,Charles,Burrall,CT,yes,25.0,1,34.0,1
+Charles Johnson,Charles,Johnson,NC,yes,0.0,0,0,0
 Charles Phelps,Charles,Phelps,CT,yes,10.0,1,0,0
+Christopher P.  Yates,Christopher P. ,Yates,NY,did not vote,1431.0,3,148,2
+Clark John I,Clark,John I,RI,yes,1935.0,10,210.0,6
 Clarke Peleg,Clarke,Peleg,RI,yes,785.0,8,110.0,5
 Comstock Betts,Comstock,Betts,MA,no,35.0,1,0,0
 Congdon William,Congdon,William,RI,no,16.0,2,0,0
+Cornelius C. Schoonmaker,Cornelius C.,Schoonmaker,NY,no,314.0,3,125,3
 Cornelius Higgins,Cornelius,Higgins,CT,yes,1.0,1,23.0,1
-Daniel Adams,Daniel,Adams,MA,no,370.0,2,22,1
+Daniel Adams,Daniel,Adams,MA,no,779.0,4,85.0,3
 Daniel Cannon,Daniel,Cannon,SC,yes,0.0,0,0,0
 Daniel Everitt,Daniel,Everitt,CT,yes,1.0,1,23.0,1
 Daniel Hall,Daniel,Hall,CT,no,25.0,2,61,1
@@ -48,13 +55,14 @@ David Brearley,David,Brearley,NJ,yes,12.0,1,45.0,1
 David Brearly,David,Brearly,Constitution,yes,12.0,1,45.0,1
 David Brown,David,Brown,MA,no,468.0,4,102.0,3
 David Caldwell,David,Caldwell,NC,yes,5.0,2,85.0,2
+David Crane ,David,Crane ,NJ,yes,365.0,3,220.0,3
 David Deshler,David,Deshler,PA,yes,15578.0,11,339.0,9
 David Grier,David,Grier,PA,yes,196.0,3,72.0,2
 David Hopkins,David,Hopkins,NY,no,161.0,1,22,1
 David Murray,David,Murray,MA,no,128.0,1,0,0
 David Smith,David,Smith,CT,yes,310.0,9,198.0,5
 David Todd,David,Todd,CT,no,37.0,1,30.0,1
-David Wilson,David,Wilson,NC,yes,27.0,1,52.0,1
+David Wilson,David,Wilson,NC,yes,99.0,6,249.0,5
 Davis John,Davis,John,RI,yes,2166.0,10,512.0,10
 Dexter John S,Dexter,John S,RI,yes,17.0,2,80.0,1
 Durfree Job,Durfree,Job,RI,did not vote,7.0,2,26.0,2
@@ -64,6 +72,7 @@ Ebenezer Warren,Ebenezer,Warren,MA,yes,292.0,2,60.0,1
 Ebenezer White,Ebenezer,White,CT,yes,121.0,2,75.0,2
 Edward Ward,Edward,Ward,NC,yes,731.0,5,157.0,5
 Edward White,Edward,White,DE,yes,27.0,1,11,1
+Edward Williams,Edward,Williams,NC,yes,26.0,1,0,0
 Elbridge Gerry,Elbridge,Gerry,Constitution,no,10100.0,1,0,0
 Elihu Marvin,Elihu,Marvin,CT,no,22.0,1,0,0
 Elisha Carpenter,Elisha,Carpenter,MA,yes,1.0,1,89.0,1
@@ -78,6 +87,8 @@ Francis Dana,Francis,Dana,MA,yes,586.0,2,86.0,2
 French Strother,French,Strother,VA,no,12.0,2,60.0,1
 George Clinton,George,Clinton,NY,did not vote,1366.0,2,28,2
 George Gray,George,Gray,PA,yes,4.0,1,28.0,1
+George Houser,George,Houser,NC,yes,98.0,1,45,1
+George Jackson,George,Jackson,VA,yes,15.0,1,45,1
 George Mitchell,George,Mitchell,NC,yes,50.0,1,0,0
 George Parker,George,Parker,VA,yes,71.0,1,6.0,1
 George Payson,George,Payson,MA,yes,11.0,1,22.0,1
@@ -85,7 +96,10 @@ George Read,George,Read,Constitution,yes,341.0,1,53.0,1
 Gideon Buckingham,Gideon,Buckingham,CT,yes,12.0,1,45.0,1
 Greene Job,Greene,Job,RI,no,6.0,1,110.0,2
 Gunning Bedford Jr.,Gunning,Bedford Jr.,Constitution,yes,106.0,6,217.0,6
-Henry Baker,Henry,Baker,NC,yes,602.0,4,149.0,3
+"Gunning Bedford, Jr.",Gunning,"Bedford, Jr.",DE,yes,106.0,6,217.0,6
+"Gunning Bedford, Sr.",Gunning,"Bedford, Sr.",DE,yes,106.0,6,217.0,6
+Gustavus Richard Brown,Gustavus Richard,Brown,MD,yes,228.0,4,90.0,2
+Henry Baker,Henry,Baker,NC,yes,641.0,5,195.0,4
 Henry Hill,Henry,Hill,NC,no,1.0,1,22.0,1
 Henry Hollingsworth,Henry,Hollingsworth,MD,yes,213.0,1,30.0,1
 Henry Lane,Henry,Lane,NC,yes,0.0,0,0,0
@@ -96,7 +110,9 @@ Hezekiah Holcomb,Hezekiah,Holcomb,CT,no,8.0,2,67.0,1
 Hezekiah Lane,Hezekiah,Lane,CT,yes,8.0,1,67.0,1
 Hezekiah Rogers,Hezekiah,Rogers,CT,yes,9.0,1,23,1
 Hugh White,Hugh,White,SC,no,54.0,2,93.0,2
-Hugh Wilson,Hugh,Wilson,SC,yes,600.0,1,0,0
+Hugh Wilson,Hugh,Wilson,SC,yes,639.0,3,34.0,1
+Icabod Weeks,Icabod,Weeks,NH,yes,5.0,1,0,0
+Isaac Clarke,Isaac,Clarke,NC,no,7.0,1,9.0,1
 Isaac Foot,Isaac,Foot,CT,yes,6.0,2,22.0,1
 Isaac Guion,Isaac,Guion,NC,yes,225.0,1,0,0
 Isaac Mansfield,Isaac,Mansfield,MA,yes,5.0,1,0,0
@@ -104,61 +120,70 @@ Isaac Parker,Isaac,Parker,SC,yes,114.0,2,88,2
 Jabez Chapman,Jabez,Chapman,CT,yes,15.0,2,0,0
 Jacob Broom,Jacob,Broom,Constitution,yes,2.0,1,78.0,1
 Jacob Brown,Jacob,Brown,SC,no,44.0,3,166.0,3
-Jacob Johnston,Jacob,Johnston,NC,yes,30.0,1,0,0
+Jacob Johnston,Jacob,Johnston,NC,yes,40.0,2,71.0,1
+Jacob Rinker,Jacob,Rinker,VA,yes,808.0,5,195.0,3
 Jacob Weed,Jacob,Weed,GA,yes,686.0,1,47.0,1
-Jacobus Swartwout,Jacobus,Swartwout,NY,no,282.0,2,115,2
+Jacobus Swartwout,Jacobus,Swartwout,NY,no,293.0,3,159,3
 James Anderson,James,Anderson,NC,yes,120.0,6,128.0,4
 James Armstrong,James,Armstrong,NC,yes,37.0,4,132.0,4
 James Black,James,Black,DE,yes,200.0,8,319.0,5
 James Bradford,James,Bradford,CT,yes,30.0,1,38.0,1
-James Campbell,James,Campbell,PA,did not vote,52.0,4,147.0,3
+James Campbell,James,Campbell,PA,did not vote,56.0,5,193.0,4
 James Clinton,James,Clinton,NY,no,788.0,3,179,3
 James Craig,James,Craig,SC,no,230.0,5,112.0,3
 James Duane,James,Duane,NY,yes,288.0,1,67,1
 James Edgar,James,Edgar,PA,no,108.0,2,86.0,2
+James G. Hunt,James G.,Hunt,SC,no,1398.0,5,208.0,4
 James Gallaway,James,Gallaway,NC,no,28.0,1,80,1
 James Gillespie,James,Gillespie,NC,no,0.0,0,0,0
+James Gordon Heron,James Gordon,Heron,MD,yes,134.0,2,75.0,2
+James Johnson,James,Johnson,VA,yes,980.0,3,132.0,3
 James Knox,James,Knox,SC,no,34.0,1,60.0,1
 James Marshall,James,Marshall,PA,no,533.0,3,140.0,3
 James Martin,James,Martin,MD,yes,67.0,4,199.0,3
 James Maxwell,James,Maxwell,GA,yes,48.0,1,35.0,1
 James Montgomery,James,Montgomery,VA,no,263.0,4,88.0,3
-James Moore,James,Moore,NC,no,449.0,6,208.0,5
-James Morris,James,Morris,PA,yes,8087.0,2,108.0,2
+James Moore,James,Moore,NC,no,689.0,7,208.0,5
+James Morris,James,Morris,PA,yes,8161.0,4,229.0,4
 James Porter,James,Porter,NC,no,11.0,1,0,0
 James Potter,James,Potter,CT,yes,153.0,3,135.0,3
 James Shaw,James,Shaw,MD,yes,19.0,2,20.0,1
 James Stewart,James,Stewart,SC,yes,1786.0,6,131.0,4
 James Taylor,James,Taylor,VA,yes,102.0,3,96.0,2
 James Thomas,James,Thomas,RI,no,24.0,2,96.0,2
-James Thompson,James,Thompson,NC,no,8433.0,17,730.0,12
+James Thompson,James,Thompson,NC,no,8478.0,18,760.0,13
 James Watson,James,Watson,NC,yes,3989.0,2,5,1
 James White,James,White,NC,yes,214.0,4,87,1
 James Williams,James,Williams,MA,no,44.0,1,22.0,1
-James Wilson,James,Wilson,Constitution,yes,1135.0,18,603.0,10
+James Wilson,James,Wilson,Constitution,yes,1037.0,17,531.0,9
 Jedediah Huntington,Jedediah,Huntington,CT,yes,294.0,1,84.0,1
 Jeremiah Wadsworth,Jeremiah,Wadsworth,CT,yes,22.0,1,45.0,1
 Jesse Woodhull,Jesse,Woodhull,NY,yes,4880.0,4,0,0
 John  Allen,John ,Allen,VA,yes,417.0,11,223.0,6
+John  Fox,John, Fox,MA,yes,42.0,2,28.0,2
 John  Whittlesey,John ,Whittlesey,CT,yes,3.0,1,67.0,1
 John A. Campbell,John A.,Campbell,NC,no,797.0,8,131.0,4
-John Allen,John,Allen,NC,yes,417.0,11,223.0,6
+John Allen,John,Allen,NC,yes,959.0,13,285.0,8
 John Allison,John,Allison,PA,yes,32.0,2,39.0,2
 John Anderson,John,Anderson,NC,yes,338.0,4,165,3
+John Andre Hanna,John Andre,Hanna,PA,no,154.0,2,76.0,2
 John Ashley,John,Ashley,MA,yes,62.0,1,0,0
 John Baird,John,Baird,PA,no,70.0,1,0,0
-John Baker,John,Baker,NC,yes,185.0,5,89.0,2
+John Baker,John,Baker,NC,yes,270.0,7,113.0,4
 John Bay,John,Bay,NY,no,291.0,2,100,2
 John Beach,John,Beach,CT,yes,979.0,3,90.0,2
+John Beatty,John,Beatty,NJ,yes,400.0,5,178.0,4
 John Bishop,John,Bishop,PA,no,1373.0,10,175.0,6
 John Black,John,Black,PA,yes,603.0,6,138.0,4
 John Blair,John,Blair,Constitution,yes,139.0,2,0,0
+"John Blair, Jun.",John,"Blair, Jun.",VA,yes,139.0,2,0,0
 John Blake,John,Blake,SC,yes,827.0,3,177,3
 John Boyd,John,Boyd,PA,yes,96.0,1,0,0
-John Brooks,John,Brooks,MA,yes,232.0,5,60.0,1
+John Brooks,John,Brooks,MA,yes,237.0,6,60.0,1
 John Brown,John,Brown,NC,no,1204.0,13,379.0,10
 John Cantine,John,Cantine,NY,no,32.0,2,67,2
 John Carson,John,Carson,NC,yes,1283.0,6,202.0,6
+John Carter Littlepage,John Carter,Littlepage,VA,no,37.0,1,30.0,1
 John Chandler,John,Chandler,CT,yes,646.0,3,172.0,3
 John Chesnut,John,Chesnut,SC,yes,8.0,2,44.0,2
 John Chester,John,Chester,CT,yes,50.0,2,60.0,2
@@ -167,46 +192,62 @@ John Cochran,John,Cochran,NH,no,158.0,4,111.0,4
 John Coffin Jones,John Coffin,Jones,MA,yes,34.0,1,30.0,1
 John Collins,John,Collins,SC,yes,91.0,1,43,1
 John Cook,John,Cook,SC,no,5138.0,6,144.0,5
+John Cragin,John,Cragin,NH,no,4.0,1,0,0
 John Curtiss,John,Curtiss,CT,yes,201.0,3,45.0,1
 "John Davenport, Jun.",John,"Davenport, Jun.",CT,yes,40.0,4,173.0,4
 John Davis,John,Davis,MA,yes,2166.0,10,512.0,10
+John DeWitt,John,DeWitt,NY,yes,67.0,2,26.0,2
 John Dickinson,John,Dickinson,Constitution,yes,73.0,2,67.0,2
 John Dunlap,John,Dunlap,MA,yes,1135.0,4,74.0,2
 John Easton,John,Easton,NC,yes,65.0,2,0,0
-John Edwards,John,Edwards,SC,yes,26.0,2,60.0,1
+John Eborn,John,Eborn,NC,yes,27.0,1,45.0,1
+John Edwards,John,Edwards,SC,yes,87.0,3,78.0,2
+John Elliot,John,Elliot,GA,yes,0.0,0,0,0
 John Evans,John,Evans,VA,no,724.0,6,129.0,5
 John Fell,John,Fell,NJ,yes,26.0,1,84.0,1
+John Francis Mercer,John Francis,Mercer,MD,no,76.0,4,217.0,4
 John Frey,John,Frey,NY,no,35.0,1,0,0
+John G. Scull,John G.,Scull,NC,no,33.0,2,109.0,2
 John Gale,John,Gale,MD,yes,2384.0,7,163,5
 John Glaze,John,Glaze,SC,yes,56.0,3,139.0,3
 John Glover,John,Glover,MA,yes,38.0,1,72.0,1
+John H. Bryan,John H.,Bryan,NC,yes,125.0,1,0,0
 John Hall,John,Hall,NC,yes,1768.0,13,438.0,11
 John Hamilton,John,Hamilton,MA,no,102.0,3,93.0,3
 John Hampton,John,Hampton,SC,no,2551.0,2,94.0,2
 John Hancock,John,Hancock,MA,yes,40.0,1,0,0
 John Hannum,John,Hannum,PA,yes,25.0,1,0,0
-John Haring,John,Haring,NY,no,1190.0,1,0,0
+John Haring,John,Haring,NY,no,1303.0,2,30.0,1
 John Harris,John,Harris,PA,no,169.0,3,125.0,3
 John Hay,John,Hay,NC,yes,135.0,2,42.0,2
 John Holbrook,John,Holbrook,CT,yes,25.0,1,38.0,1
+John Howell Briggs,John Howell,Briggs,VA,no,80.0,1,0,0
 John Hunt,John,Hunt,NC,yes,731.0,8,270.0,7
+John Jacob Faesch ,John Jacob,Faesch ,NJ,yes,6273.0,7,33.0,2
 John Jay,John,Jay,NY,yes,1.0,1,22/8,1
-John Johnston,John,Johnston,NC,yes,1058.0,11,422.0,9
-John Jones,John,Jones,DE,yes,1366.0,24,819.0,19
+John Johnston,John,Johnston,NC,yes,1178.0,17,600.0,13
+John Jones,John,Jones,DE,yes,1400.0,25,849.0,20
 John K. Smith,John K.,Smith,MA,yes,6192.0,62,1853.0,51
 John Kean,John,Kean,SC,yes,12.0,1,54.0,1
 John King,John,King,GA,yes,1672.0,27,1397.0,25
 John Langdon,John,Langdon,Constitution,yes,67.0,4,128.0,3
 John Lansing Jr.,John,Lansing Jr.,Constitution,no,11.0,1,22,1
-John Lloyd,John,Lloyd,SC,yes,2348.0,3,172.0,3
+"John Lansing, Jun. ",John,"Lansing, Jun. ",NY,no,11.0,1,22,1
+John Lewis Bourquin,John Lewis,Bourquin,SC,no,1827.0,4,60,2
+John Lewis Gervias,John Lewis,Gervias,SC,no,1827.0,4,60,2
+John Linton,John,Linton,SC,no,43.0,1,30,1
+John Lloyd,John,Lloyd,SC,yes,4749.0,7,344.0,7
 John Logan,John,Logan,VA,no,289.0,4,181.0,4
 John Love,John,Love,MD,no,257.0,5,234.0,5
 John Marshall,John,Marshall,VA,yes,1.0,1,22.0,1
+John Matthews,John,Matthews,SC,yes,131.0,2,0,0
 John McPherson,John,McPherson,SC,yes,360.0,1,0,0
 John Miller,John,Miller,VA,no,4094.0,26,808.0,19
 John Montgomery,John,Montgomery,SC,no,54.0,4,64.0,4
-John Moore,John,Moore,NC,yes,616.0,13,484.0,11
-John Nevill,John,Nevill,PA,yes,776.0,2,0,0
+John Moore,John,Moore,NC,yes,684.0,14,513.0,12
+John Neilson,John,Neilson,NJ,yes,87.0,6,8.0,1
+John Nesbitt (Nisbet),John,Nesbitt (Nisbet),NC,yes,260.0,1,14.0,1
+John Nevill,John,Nevill,PA,yes,793.0,3,30.0,1
 John Palmer,John,Palmer,SC,yes,643.0,2,13,1
 John Parker,John,Parker,SC,yes,136.0,3,128.0,3
 John Phelps,John,Phelps,CT,yes,5.0,1,0,0
@@ -214,61 +255,73 @@ John Pratt,John,Pratt,MA,no,0.0,0,0,0
 John Pride,John,Pride,VA,no,15.0,1,4,1
 John Reynolds,John,Reynolds,PA,no,674.0,6,249.0,5
 John Richards,John,Richards,PA,yes,11.0,2,38.0,2
-John Scott,John,Scott,NC,no,81.0,4,142.0,3
+John Schenck,John,Schenck,NY,yes,867.0,6,132.0,2
+John Scott,John,Scott,NC,no,117.0,5,166.0,4
 John Simmons,John,Simmons,SC,yes,7.0,1,33,1
-John Skinner,John,Skinner,NC,yes,5.0,1,0,0
-John Smith,John,Smith,NY,yes,6192.0,62,1853.0,51
+John Skinner,John,Skinner,NC,yes,15.0,2,45,1
+John Smith,John,Smith,NY,yes,6235.0,65,1909.0,53
 John Sprague,John,Sprague,MA,yes,5.0,1,0,0
+John Steele,John,Steele,VA,no,2998.0,10,233.0,7
 John Stevens,John,Stevens,NJ,yes,3459.0,9,409.0,7
 John Stewart,John,Stewart,MD,yes,2949.0,10,428.0,9
 John Stokes,John,Stokes,NC,yes,50.0,1,0,0
 John Swan,John,Swan,NC,yes,8.0,1,0,0
 John Taylor,John,Taylor,MA,no,3104.0,16,500.0,12
+John Taylor Gilman,John Taylor,Gilman,NH,yes,3068.0,15,478.0,11
 John Thomas,John,Thomas,SC,yes,647.0,5,111.0,3
 John Thompson,John,Thompson,NC,yes,1329.0,17,470.0,12
 John Turner,John,Turner,MA,yes,449.0,3,80.0,2
+"John Tyler, Sr.",John,"Tyler, Sr.",VA,no,332.0,4,67.0,2
 John Wallace,John,Wallace,NC,yes,0.0,0,0,0
 John Watson,John,Watson,CT,yes,679.0,4,105.0,3
+John Welton,John,Welton,CT,yes,5.0,1,22,1
 John Whitehill,John,Whitehill,PA,no,4.0,1,60.0,1
-John Williams,John,Williams,VA,yes,1400.0,14,436.0,11
-John Willis,John,Willis,NC,yes,248.0,1,0,0
-John Wilson,John,Wilson,VA,no,0.0,0,0,0
+John Williams,John,Williams,VA,yes,1766.0,19,579.0,16
+John Willis,John,Willis,NC,yes,264.0,2,60.0,1
+John Wilson,John,Wilson,VA,no,635.0,10,166.0,4
 John Winn,John,Winn,NY,no,255.0,1,84,1
 John Wood,John,Wood,NY,no,613.0,5,152.0,4
 Jonathan Dayton,Jonathan,Dayton,Constitution,yes,4551.0,6,150.0,4
 Jonathan Freeman,Jonathan,Freeman,NH,yes,1632.0,2,0,0
 Jonathan Roberts,Jonathan,Roberts,PA,yes,23.0,1,68.0,1
-Jonathan Smith,Jonathan,Smith,MA,no,32.0,2,102.0,2
-Joseph Barker,Joseph,Barker,DE,yes,122.0,8,301.0,8
+Jonathan Smith,Jonathan,Smith,MA,no,181.0,4,191.0,4
+Joseph Barker,Joseph,Barker,DE,yes,126.0,9,361.0,9
 Joseph Brown,Joseph,Brown,SC,no,628.0,9,346.0,8
 Joseph Heister,Joseph,Heister,PA,no,59.0,1,4.0,1
 Joseph Hopkins,Joseph,Hopkins,CT,yes,275.0,2,101,2
+Joseph Hosmer,Joseph,Hosmer,MA,yes,1.0,1,22.0,1
 Joseph Jackson,Joseph,Jackson,MA,yes,554.0,4,91.0,2
 Joseph Jones,Joseph,Jones,VA,no,570.0,5,168.0,3
 Joseph Martin,Joseph,Martin,NC,yes,8.0,1,0,0
 Joseph Mosely,Joseph,Mosely,CT,yes,10.0,1,0,0
+Joseph Moss White,Joseph Moss,White,CT,yes,108.0,3,68,2
 Joseph Palmer,Joseph,Palmer,MA,yes,211.0,2,22.0,1
 Joseph Stone,Joseph,Stone,MA,no,5.0,1,0,0
 Joseph Wood,Joseph,Wood,MA,yes,220.0,5,200.0,4
 Joshua Whitney,Joshua,Whitney,MA,no,105.0,2,7.0,1
+King William,King,William,RI,no,88.0,3,86.0,2
 Ladd William,Ladd,William,RI,yes,1.0,1,22.0,1
 Lewis Morris,Lewis,Morris,NY,yes,58.0,2,96.0,2
 Luther Martin,Luther,Martin,Constitution,no,24.0,1,27.0,1
 Manchester Isaac,Manchester,Isaac,RI,yes,34.0,1,59.0,2
 Matthew Patterson,Matthew,Patterson,CT,no,117.0,2,104,2
 Melancton Smith,Melancton,Smith,NY,yes,968.0,2,102,2
-Miller Nathan,Miller,Nathan,RI,did not vote,44.0,1,0,0
+Michael Jenifer Stone,Michael Jenifer,Stone,MD,yes,27.0,1,14.0,1
+Miller Nathan,Miller,Nathan,RI,did not vote,1136.0,8,252,4
 Moses Davis,Moses,Davis,MA,yes,738.0,2,103.0,2
 Nathan Hale,Nathan,Hale,CT,yes,110.0,1,0,0
 Nicholas Lutz,Nicholas,Lutz,PA,no,72.0,2,11.0,1
+Nichols William,Nichols,William,RI,no,7.0,1,6.0,1
 Pearce Samuel,Pearce,Samuel,RI,yes,4.0,1,20.0,1
 Peter Lefferts,Peter,Lefferts,NY,yes,514.0,2,93.0,2
 Peter Smith,Peter,Smith,SC,yes,223.0,6,286.0,5
 Peter Van Ness,Peter,Van Ness,NY,no,2010.0,1,45,1
 Peter Vandevoort,Peter,Vandevoort,NY,yes,38.0,1,67.0,1
-Peter Vrooman,Peter,Vrooman,NY,did not vote,85.0,1,80,1
+Peter Vrooman,Peter,Vrooman,NY,did not vote,197.0,5,170,3
 Philip Van Cortlandt,Philip,Van Cortlandt,NY,yes,850.0,1,0,0
+Potter Samuel J,Potter,Samuel J,RI,no,129.0,3,67.0,2
 Reynolds Joseph,Reynolds,Joseph,RI,no,254.0,3,57.0,2
+Richard Barnes,Richard,Barnes,MD,yes,21.0,1,50,1
 Richard Lewis,Richard,Lewis,NC,yes,230.0,3,75.0,2
 Richard Manning,Richard,Manning,MA,yes,20.0,1,0,0
 Richard Potts,Richard,Potts,MD,yes,59.0,1,68.0,1
@@ -276,21 +329,26 @@ Richard Smith,Richard,Smith,DE,yes,684.0,2,62,1
 Richard Thomas,Richard,Thomas,MD,yes,56.0,2,115.0,2
 Robert Alexander,Robert,Alexander,VA,no,61.0,1,18,1
 Robert Andrews,Robert,Andrews,VA,yes,28.0,1,0,0
+Robert Edwards,Robert,Edwards,NC,no,3.0,1,30.0,1
 Robert Montgomery,Robert,Montgomery,NC,yes,27.0,1,66.0,1
 Robert Morris,Robert,Morris,Constitution,yes,1051.0,6,217.0,6
 Robert Ogden,Robert,Ogden,NJ,yes,42.0,2,60.0,1
+Robert R. Livingston,Robert R.,Livingston,NY,yes,10720.0,6,168,3
 Robert Whitehill,Robert,Whitehill,PA,no,5.0,1,0,0
-Robert Williams,Robert,Williams,VA,no,93.0,4,135.0,3
-Robert Wilson,Robert,Wilson,MA,no,0.0,0,0,0
+Robert Williams,Robert,Williams,VA,no,136.0,9,399.0,8
+Robert Wilson,Robert,Wilson,MA,no,172.0,3,76.0,2
 Samuel Adams,Samuel,Adams,MA,yes,33.0,1,30.0,1
-Samuel Baker,Samuel,Baker,MA,yes,608.0,7,137.0,3
+Samuel Baker,Samuel,Baker,MA,yes,613.0,9,220.0,5
 Samuel Canfield,Samuel,Canfield,CT,yes,13.0,1,68.0,1
 Samuel Davenport,Samuel,Davenport,CT,no,10.0,1,30.0,1
+Samuel Edmison,Samuel,Edmison,VA,no,1026.0,1,12.0,1
 Samuel Evans,Samuel,Evans,MD,yes,174.0,3,79.0,2
 Samuel H. Parsons,Samuel H.,Parsons,CT,yes,25.0,1,0,0
 Samuel Huntington,Samuel,Huntington,CT,yes,33.0,3,0,0
 Samuel Johnston,Samuel,Johnston,NC,yes,379.0,3,101.0,2
 Samuel Jones,Samuel,Jones,NY,yes,73.0,3,66.0,3
+Samuel Langdon,Samuel,Langdon,NH,yes,25.0,1,6.0,1
+Samuel Orton,Samuel,Orton,CT,yes,378.0,4,118.0,3
 Samuel Reed,Samuel,Reed,MA,no,9.0,1,86.0,1
 Samuel Simpson,Samuel,Simpson,NC,yes,214.0,2,77.0,2
 Samuel Smith,Samuel,Smith,SC,yes,669.0,15,408.0,11
@@ -302,60 +360,82 @@ Sands Ray,Sands,Ray,RI,did not vote,56.0,1,17.0,1
 Sears George,Sears,George,RI,yes,63.0,4,193.0,4
 Seth Crocker,Seth,Crocker,CT,yes,7.0,1,45.0,1
 Seth Newton,Seth,Newton,MA,yes,10.0,1,0,0
-Simeon Smith,Simeon,Smith,CT,yes,524.0,2,39.0,1
+Simeon Smith,Simeon,Smith,CT,yes,561.0,3,66.0,2
 Slocum Giles,Slocum,Giles,RI,no,5.0,1,64.0,1
 Solomon Maxwell,Solomon,Maxwell,DE,yes,1121.0,7,140.0,4
 Stephen Smith,Stephen,Smith,SC,yes,2045.0,2,54.0,2
+Stevens Thomson Mason,Stevens Thomson,Mason,VA,no,128.0,1,0,0
+Thomas  Collins,Thomas ,Collins,DE,yes,140.0,2,36.0,1
 Thomas Allen,Thomas,Allen,VA,no,4.0,3,71.0,3
 Thomas Anderson,Thomas,Anderson,NJ,yes,402.0,6,380.0,6
 Thomas Brown,Thomas,Brown,NC,no,1206.0,14,279.0,7
 Thomas Chase,Thomas,Chase,NH,no,1440.0,1,0,0
 Thomas Cooper,Thomas,Cooper,VA,no,8.0,2,120.0,2
+Thomas Daniell,Thomas,Daniell,GA,yes,63.0,1,27.0,1
 Thomas Davis,Thomas,Davis,MA,yes,120.0,2,65.0,2
 Thomas Evans,Thomas,Evans,DE,yes,140.0,3,121.0,3
-Thomas Johnson,Thomas,Johnson,MD,yes,178.0,1,22,1
-Thomas Johnston,Thomas,Johnston,NC,yes,237.0,4,158.0,3
+Thomas Gaskins,Thomas,Gaskins,VA,yes,7200.0,1,0,0
+Thomas Hines,Thomas,Hines,NC,yes,10.0,1,0,0
+Thomas Johnson,Thomas,Johnson,MD,yes,415.0,5,180.0,4
+Thomas Johnston,Thomas,Johnston,NC,yes,415.0,5,180.0,4
 Thomas Jones,Thomas,Jones,MA,yes,687.0,19,601.0,15
 Thomas Lewis,Thomas,Lewis,VA,yes,15.0,3,11,1
-Thomas Owen,Thomas,Owen,NC,yes,8.0,1,35.0,1
+Thomas Owen,Thomas,Owen,NC,yes,103.0,5,168.0,4
+Thomas P. Williams,Thomas P.,Williams,NC,yes,1625.0,5,224.0,5
+Thomas Person,Thomas,Person,NC,no,101.0,1,50.0,1
 Thomas Read,Thomas,Read,VA,no,69.0,2,45.0,1
 Thomas Reynolds,Thomas,Reynolds,NJ,yes,133.0,2,93.0,2
 Thomas Russel,Thomas,Russel,MA,yes,80.0,4,104.0,3
 Thomas Scott,Thomas,Scott,PA,yes,2633.0,9,236.0,6
+Thomas Sim Lee,Thomas Sim,Lee,MD,yes,297.0,4,101.0,3
 Thomas Smith,Thomas,Smith,VA,yes,1134.0,11,163.0,6
 Thomas Stewart,Thomas,Stewart,NC,yes,203.0,1,26.0,1
 Thomas Taylor,Thomas,Taylor,SC,no,29.0,3,60.0,1
-Thomas Williams,Thomas,Williams,NC,no,1625.0,5,224.0,5
+Thomas Walke,Thomas,Walke,VA,yes,414.0,2,12.0,1
+Thomas Wastson,Thomas,Wastson,DE,yes,18.0,1,30.0,1
+Thomas Williams,Thomas,Williams,NC,no,1635.0,6,260.0,6
 Thomas Yardley,Thomas,Yardley,PA,yes,21.0,2,56.0,1
 Timothy Taylor,Timothy,Taylor,NH,no,33.0,1,41.0,1
-Volkert Veeder,Volkert,Veeder,NY,no,691.0,5,134,3
+Tristam Dalton,Tristam,Dalton,MA,yes,12.0,1,45.0,1
+Volkert Veeder,Volkert,Veeder,NY,no,693.0,6,179,4
 Wait Goodrich,Wait,Goodrich,CT,yes,6.0,1,23.0,1
 Walter Smith,Walter,Smith,MD,yes,360.0,4,92.0,2
+William  Findley,William ,Findley,PA,no,38.0,3,40.0,2
 William Abbott,William,Abbott,NH,yes,770.0,2,0,0
+William Bailey ,William,Bailey ,NC,yes,5.0,1,56.0,1
+William Baylies,William,Baylies,MA,yes,304.0,2,80.0,2
 William Brown,William,Brown,PA,no,7896.0,132,5572.0,121
 William Butler,William,Butler,SC,no,10622.0,1,0,0
 William C. Houston,William C.,Houston,Constitution,no,1074.0,3,127.0,2
-William Elliot,William,Elliot,SC,yes,0.0,0,0,0
+William Cabell,William,Cabell,VA,no,8.0,1,0,0
+William Crawford ,William,Crawford ,NJ,yes,28.0,3,90.0,2
+William E. Erwin,William E.,Erwin,NC,yes,218.0,1,56.0,1
+William Elliot,William,Elliot,SC,yes,57320.0,5,75.0,1
 William Few,William,Few,Constitution,yes,5.0,1,89,1
+William Gray Jun.,William,Gray Jun.,MA,yes,626.0,7,70.0,2
 William Hall,William,Hall,DE,yes,1358.0,10,324.0,6
 William Harper,William,Harper,NY,no,7.0,1,71,1
-William Hart,William,Hart,CT,yes,903.0,8,181.0,6
+William Hart,William,Hart,CT,yes,1119.0,9,241.0,7
+William Hayes,William,Hayes,NC,yes,46.0,2,60,1
 William Heath,William,Heath,MA,yes,362.0,3,135.0,2
+William Heron,William,Heron,CT,yes,117.0,1,30.0,1
 William Hill,William,Hill,SC,no,39.0,2,76.0,2
-William Houston,William,Houston,NC,yes,1000.0,1,0,0
+William Houston,William,Houston,NC,yes,1074.0,3,127.0,2
 William Houstoun,William,Houstoun,Constitution,no,1000.0,1,0,0
 William Hunt,William,Hunt,NH,no,74.0,1,10,1
-William Johnson,William,Johnson,SC,yes,86.0,4,4,1
-William Johnston,William,Johnston,NC,yes,181.0,1,54.0,1
-William Jones,William,Jones,MA,no,674.0,6,138.0,4
+William Johnson,William,Johnson,SC,yes,267.0,5,58.0,2
+William Johnston,William,Johnston,NC,yes,267.0,5,58.0,2
+William Johnston Dawson,William,Johnston Dawson,NC,yes,181.0,1,54.0,1
+William Jones,William,Jones,MA,no,1159.0,7,198.0,5
 William Kennedy,William,Kennedy,SC,no,907.0,7,150.0,3
 William King,William,King,NC,no,88.0,3,86.0,2
 William L. Pierce,William L.,Pierce,Constitution,no,15.0,1,22,1
 William Livingston,William,Livingston,Constitution,yes,6.0,1,45,1
-William Martin,William,Martin,NC,no,112.0,2,75.0,2
-William McKee,William,McKee,VA,yes,30.0,1,60.0,1
+William Martin,William,Martin,NC,no,132.0,3,121.0,3
+William McKee,William,McKee,VA,yes,446.0,3,60.0,1
 William Moore,William,Moore,DE,yes,401.0,8,262.0,6
 William Morris,William,Morris,MD,yes,20.0,4,113.0,3
+William N. Hill,William N.,Hill,NC,yes,39.0,2,76.0,2
 William Nash,William,Nash,NC,no,4.0,1,72.0,1
 William Page,William,Page,NH,no,169.0,2,145.0,2
 William Paterson,William,Paterson,Constitution,yes,30.0,2,90.0,2
@@ -366,16 +446,18 @@ William Reed,William,Reed,SC,no,13.0,3,121.0,2
 William Richardson,William,Richardson,MD,yes,378.0,4,70.0,3
 William Richardson Davie,William Richardson,Davie,NC,yes,378.0,4,70.0,3
 William Robinson,William,Robinson,NC,no,95.0,6,164.0,5
+William Robison,William,Robison,SC,yes,95.0,6,164.0,5
 William Samuel Johnson,William Samuel,Johnson,Constitution,yes,171.0,6,61.0,2
 William Scott,William,Scott,SC,yes,211.0,3,22.0,1
 William Shaw,William,Shaw,MA,yes,264.0,8,214.0,6
 William Simpson,William,Simpson,NH,yes,224.0,3,112.0,2
-William Smith,William,Smith,SC,yes,5848.0,22,519.0,15
+William Smith,William,Smith,SC,yes,5920.0,26,679.0,19
 William Stevens,William,Stevens,GA,yes,94.0,3,31.0,2
-William Thompson,William,Thompson,MA,no,1341.0,4,102.0,2
+William Thompson,William,Thompson,MA,no,1363.0,6,102.0,2
 William Todd,William,Todd,PA,no,36.0,2,39.0,1
+William Watkins,William,Watkins,VA,no,600.0,1,0,0
 William White,William,White,VA,no,721.0,12,383.0,10
-William Williams,William,Williams,CT,yes,1227.0,12,354.0,8
-William Wilson,William,Wilson,PA,yes,0.0,0,0,0
-Williams John,Williams,John,RI,no,1400.0,14,436.0,11
+William Williams,William,Williams,CT,yes,3552.0,14,486.0,9
+William Wilson,William,Wilson,PA,yes,96.0,3,6,1
+Williams John,Williams,John,RI,no,1766.0,19,579.0,16
 Zephaniah Platt,Zephaniah,Platt,NY,yes,284.0,1,26,1
