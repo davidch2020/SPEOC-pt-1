@@ -19,4 +19,4 @@ the rest of the code I had written.
 If you have questions, you can text me and I will try to respond.**
 
 ## Chris Section
-I uploaded my code that cleans the dataset. Please follow me on gtihub 😊
+chrisliao (at) uchicago (dot) edu if you have qs.
