@@ -52,7 +52,6 @@ Daniel Miles,Daniel,Miles,CT,yes,99.0,4,211.0,4
 Daniel Smith,Daniel,Smith,NC,yes,724.0,9,375.0,6
 Daniel Whitney,Daniel,Whitney,MA,yes,18.0,1,67.0,1
 David Brearley,David,Brearley,NJ,yes,12.0,1,45.0,1
-David Brearly,David,Brearly,Constitution,yes,12.0,1,45.0,1
 David Brown,David,Brown,MA,no,468.0,4,102.0,3
 David Caldwell,David,Caldwell,NC,yes,5.0,2,85.0,2
 David Crane ,David,Crane ,NJ,yes,365.0,3,220.0,3
@@ -162,7 +161,7 @@ Jesse Woodhull,Jesse,Woodhull,NY,yes,4880.0,4,0,0
 John  Allen,John ,Allen,VA,yes,417.0,11,223.0,6
 John  Fox,John, Fox,MA,yes,42.0,2,28.0,2
 John  Whittlesey,John ,Whittlesey,CT,yes,3.0,1,67.0,1
-John A. Campbell,John A.,Campbell,NC,no,797.0,8,131.0,4
+John A. Campbell,John A.,Campbell,NC,no,4969.0,27,884.0,22
 John Allen,John,Allen,NC,yes,959.0,13,285.0,8
 John Allison,John,Allison,PA,yes,32.0,2,39.0,2
 John Anderson,John,Anderson,NC,yes,338.0,4,165,3
@@ -223,10 +222,10 @@ John Hay,John,Hay,NC,yes,135.0,2,42.0,2
 John Holbrook,John,Holbrook,CT,yes,25.0,1,38.0,1
 John Howell Briggs,John Howell,Briggs,VA,no,80.0,1,0,0
 John Hunt,John,Hunt,NC,yes,731.0,8,270.0,7
-John Jacob Faesch ,John Jacob,Faesch ,NJ,yes,6273.0,7,33.0,2
+John Jacob Faesch ,John Jacob,Faesch ,NJ,yes,6486.0,11,190.0,5
 John Jay,John,Jay,NY,yes,1.0,1,22/8,1
 John Johnston,John,Johnston,NC,yes,1178.0,17,600.0,13
-John Jones,John,Jones,DE,yes,1400.0,25,849.0,20
+John Jones,John,Jones,DE,yes,1366.0,24,819.0,19
 John K. Smith,John K.,Smith,MA,yes,6192.0,62,1853.0,51
 John Kean,John,Kean,SC,yes,12.0,1,54.0,1
 John King,John,King,GA,yes,1672.0,27,1397.0,25
@@ -257,6 +256,7 @@ John Reynolds,John,Reynolds,PA,no,674.0,6,249.0,5
 John Richards,John,Richards,PA,yes,11.0,2,38.0,2
 John Schenck,John,Schenck,NY,yes,867.0,6,132.0,2
 John Scott,John,Scott,NC,no,117.0,5,166.0,4
+John Sheaman Woodcock,John Sheaman,Woodcock,VA,yes,16.0,1,23.0,1
 John Simmons,John,Simmons,SC,yes,7.0,1,33,1
 John Skinner,John,Skinner,NC,yes,15.0,2,45,1
 John Smith,John,Smith,NY,yes,6235.0,65,1909.0,53
@@ -411,7 +411,6 @@ William Cabell,William,Cabell,VA,no,8.0,1,0,0
 William Crawford ,William,Crawford ,NJ,yes,28.0,3,90.0,2
 William E. Erwin,William E.,Erwin,NC,yes,218.0,1,56.0,1
 William Elliot,William,Elliot,SC,yes,57320.0,5,75.0,1
-William Few,William,Few,Constitution,yes,5.0,1,89,1
 William Gray Jun.,William,Gray Jun.,MA,yes,626.0,7,70.0,2
 William Hall,William,Hall,DE,yes,1358.0,10,324.0,6
 William Harper,William,Harper,NY,no,7.0,1,71,1
@@ -457,7 +456,7 @@ William Thompson,William,Thompson,MA,no,1363.0,6,102.0,2
 William Todd,William,Todd,PA,no,36.0,2,39.0,1
 William Watkins,William,Watkins,VA,no,600.0,1,0,0
 William White,William,White,VA,no,721.0,12,383.0,10
-William Williams,William,Williams,CT,yes,3552.0,14,486.0,9
+William Williams,William,Williams,CT,yes,3532.0,13,486.0,9
 William Wilson,William,Wilson,PA,yes,96.0,3,6,1
 Williams John,Williams,John,RI,no,1766.0,19,579.0,16
 Zephaniah Platt,Zephaniah,Platt,NY,yes,284.0,1,26,1

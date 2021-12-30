@@ -7,16 +7,16 @@ The name matching was executed in three steps: cleaning, fuzzy-matching, and mer
 
 
 
-1. _Data_: This folder contains all of the raw data and cleaned data. Within the Delegates, Post1790, and Pre1790 subfolders are the corresponding raw Excel sheets (copied from the dropbox) and cleaned csv files. This folder also contains _final_matching.csv_ and _final_matching_post1790.csv _which list the results of our fuzzy matching.
-2. _Producables: _The requested final tables are in this folder, along with a folder called ‘Separate’ containing csv files with individual tables for each type of certificate 
-    1. _Delegate_Pre1790_Assets.csv_ contains the assets in Pre-1790 certificates for all delegates
-    2. _Delegate_Post1790_Assets.csv_ contains the assets in Post-1790 certificates for all delegates 2
-3. _clean_debt_files.ipynb_: This Jupyter notebook contains the code used to produce the cleaned csv files in the Data/Pre1790/Cleaned folder. Note: the post-1790 data was not cleaned.
-4. _fuzzy_matching.ipynb​​_: This Jupyter notebook contains the code that created the _final_matching.csv_ file in the Data folder that we used to identify pre-1790 debt certificates held by delegates
-5. _fuzzy_matching_post1790.ipynb​​_: This Jupyter notebook contains the code that created the _final_matching_post1790_._csv_ file in the Data folder that we used to identify post-1790 debt certificates held by delegates
-6. _debt_aggregation.ipynb_: This Jupyter notebook contains the code which merges the cleaned delegate names and debt certificate/stock data using the _final_matching.csv_ files. It then merges those results to produce _Delegate_Pre1790_Assets_ in the _Producables_ folder.
-7. _debt_aggregation_post1790.ipynb_: This Jupyter notebook contains the code which merges the cleaned delegate names and debt certificate/stock data using the _final_matching_post1790.csv_ files. It then merges those results to produce _Delegate_Post1790_Assets.csv_ in the _Producables_ folder.
-8. _Results.ipynb: _This jupyter notebook contains the code which we used to generate results described in the technical report and located in the Results section.
+1. `Data`: This folder contains all of the raw data and cleaned data. Within the Delegates, Post1790, and Pre1790 subfolders are the corresponding raw Excel sheets (copied from the dropbox) and cleaned csv files. This folder also contains `final_matching.csv` and `final_matching_post1790.csv` which list the results of our fuzzy matching.
+2. `Producables`:The requested final tables are in this folder, along with a folder called ‘Separate’ containing csv files with individual tables for each type of certificate 
+    1.`Delegate_Pre1790_Assets.csv` contains the assets in Pre-1790 certificates for all delegates
+    2.`Delegate_Post1790_Assets.csv` contains the assets in Post-1790 certificates for all delegates 2
+3.`clean_debt_files.ipynb`: This Jupyter notebook contains the code used to produce the cleaned csv files in the Data/Pre1790/Cleaned folder. Note: the post-1790 data was not cleaned.
+4.`fuzzy_matching.ipynb`: This Jupyter notebook contains the code that created the`final_matching.csv`file in the Data folder that we used to identify pre-1790 debt certificates held by delegates
+5.`fuzzy_matching_post1790.ipynb`: This Jupyter notebook contains the code that created the`final_matching_post1790_._csv`file in the Data folder that we used to identify post-1790 debt certificates held by delegates
+6.`debt_aggregation.ipynb`: This Jupyter notebook contains the code which merges the cleaned delegate names and debt certificate/stock data using the`final_matching.csv`files. It then merges those results to produce`Delegate_Pre1790_Assets`in the`Producables`folder.
+7.`debt_aggregation_post1790.ipynb`: This Jupyter notebook contains the code which merges the cleaned delegate names and debt certificate/stock data using the`final_matching_post1790.csv`files. It then merges those results to produce`Delegate_Post1790_Assets.csv`in the`Producables`folder.
+8.`Results.ipynb`: This jupyter notebook contains the code which we used to generate results described in the technical report and located in the Results section.
 
 **READMEs and Notes**
 
@@ -30,10 +30,10 @@ clean_debt_files.ipynb - Cleans raw data imported into DataFrames from Excel she
     * Special case - row 44 of constitutional_convention_1787 was ‘Fitzsimons (FitzSimons; Fitzsimmons)’ and got modified to Fitzsimons (Fitzsimmons)
     * Note: John Nesbitt (Nisbet) was missed in cleaning and might not have matched properly
 * Loan office certificates - removes empty rows and entries missing first or last names, splits full name entries with ‘&’ or ‘and’ into multiple names, handles cases of executors, heirs, ‘and co’, and treasurers
-    * Creates _state_companies.csv_ with entries that have ‘&’ or ‘and’ but with incomplete names (i.e. only last name)
+    * Creates`state_companies.csv`with entries that have ‘&’ or ‘and’ but with incomplete names (i.e. only last name)
     * Note: uses an entity classifier to detect organizations and remove them; results were manually checked for accuracy
         * See [https://spacy.io/models](https://spacy.io/models) for more detail about the entity classifier
-    * Special cases - see _export_weird_names.csv_ file in the Data folder; see chart below for cases changed manually
+    * Special cases - see`export_weird_names.csv`file in the Data folder; see chart below for cases changed manually
         * Entries marked with ** have an executor whose first name got accidentally dropped
         * Notes column contains other changes, errors, etc.
 
@@ -1560,7 +1560,7 @@ State
 </table>
 
 
-fuzzy_matching.ipynb - runs cleaned delegates and debt certificates through a fuzzy matching algorithm, yielding _final_matching.csv_
+fuzzy_matching.ipynb - runs cleaned delegates and debt certificates through a fuzzy matching algorithm, yielding`final_matching.csv_
 
 
 
@@ -1570,19 +1570,19 @@ fuzzy_matching.ipynb - runs cleaned delegates and debt certificates through a fu
 * If the match passes both steps, it is added to the csv file
 * See the Methods section of the report for a better explanation of step 2
 
-fuzzy_matching_post1790.ipynb - uses the same algorithm as _fuzzy_matching.ipynb _to generate _final_matching_post1790_._csv_
+fuzzy_matching_post1790.ipynb - uses the same algorithm as`fuzzy_matching.ipynb`to generate`final_matching_post1790_._csv_
 
-debt_aggregation.ipynb - merges state and constitutional convention delegates’ on the matched names from _final_matching.csv_, then uses full names to merge with the cleaned pre-1790 loan certificate data to compile the total sum value and certificate count of each certificate type for each delegate
+debt_aggregation.ipynb - merges state and constitutional convention delegates’ on the matched names from`final_matching.csv_, then uses full names to merge with the cleaned pre-1790 loan certificate data to compile the total sum value and certificate count of each certificate type for each delegate
 
 
 
-* Produces _Delegate_Pre1790_Assets.csv_
+* Produces`Delegate_Pre1790_Assets.csv_
 
 debt_aggregation_post1790.ipynb - uses the same process to merge matched names with the post-1790 stocks and compile the total sum value and count of each type of stock for each delegate
 
 
 
-* Produces _Delegates_Post1790_Assets.csv_
+* Produces`Delegates_Post1790_Assets.csv_
 
 Results.ipynb - code which utilizes fuzzy matching and aggregated debt csv files to generate the tables and charts found in the Results section of our technical report
 
@@ -1593,64 +1593,64 @@ _Csv Files_
 
 
 * Delegates
-    * _Data/Delegates/constitutional_convention_1787.xlsx_
-    * _Data/Delegates/State Delegates.xlsx_
+    *`Data/Delegates/constitutional_convention_1787.xlsx_
+    *`Data/Delegates/State Delegates.xlsx_
 * Pre1790 Debt Files
-    * _Data/Pre1790/ _contains the raw Pre-1790 debt certificates that were copied over dropbox
+    *`Data/Pre1790/`contains the raw Pre-1790 debt certificates that were copied over dropbox
 * Post1790 Debt Files
-    * _Data/Post1790/ _contains the raw Post-1790 debt certificates that were copied over dropbox, organized by state in the folders
+    *`Data/Post1790/`contains the raw Post-1790 debt certificates that were copied over dropbox, organized by state in the folders
 
-**Cleaned Data** - products of _clean_debt_files.ipynb_
+**Cleaned Data** - products of`clean_debt_files.ipynb_
 
 
 
-* Delegates - located in _Data/Delegates/cleaned_
-    * _State_Delegates_cleaned.csv_
-    * _constitutional_convention_delegates_cleaned.csv_
-* Pre-1790 Debt Files - located in _Data/Pre1790/cleaned_
-    * _Marine_Liquidated_Debt_Certificates_cleaned.csv_
-    * _Pierce_Certs_cleaned_2021.csv_
-    * _liquidated_debt_certificates_CT_cleaned.csv_
-    * _liquidated_debt_certificates_DE_cleaned.csv_
-    * _liquidated_debt_certificates_MA_cleaned.csv_
-    * _liquidated_debt_certificates_NH_cleaned.csv_
-    * _liquidated_debt_certificates_NJ_cleaned.csv_
-    * _liquidated_debt_certificates_NY_cleaned.csv_
-    * _liquidated_debt_certificates_PA_stelle_cleaned.csv_
-    * _liquidated_debt_certificates_PA_story_cleaned.csv_
-    * _liquidated_debt_certificates_RI_cleaned.csv_
-    * _Loan_office_certificates_9_states_cleaned.csv_
+* Delegates - located in`Data/Delegates/cleaned_
+    *`State_Delegates_cleaned.csv_
+    *`constitutional_convention_delegates_cleaned.csv_
+* Pre-1790 Debt Files - located in`Data/Pre1790/cleaned_
+    *`Marine_Liquidated_Debt_Certificates_cleaned.csv_
+    *`Pierce_Certs_cleaned_2021.csv_
+    *`liquidated_debt_certificates_CT_cleaned.csv_
+    *`liquidated_debt_certificates_DE_cleaned.csv_
+    *`liquidated_debt_certificates_MA_cleaned.csv_
+    *`liquidated_debt_certificates_NH_cleaned.csv_
+    *`liquidated_debt_certificates_NJ_cleaned.csv_
+    *`liquidated_debt_certificates_NY_cleaned.csv_
+    *`liquidated_debt_certificates_PA_stelle_cleaned.csv_
+    *`liquidated_debt_certificates_PA_story_cleaned.csv_
+    *`liquidated_debt_certificates_RI_cleaned.csv_
+    *`Loan_office_certificates_9_states_cleaned.csv_
 
 **Intermediary Data ** 
 
 
 
-* _final_matching.csv_ - Lists all the fuzzy matches matches generated by _fuzzy_matching.ipynb_, with the initial process.extract score in the Scores column
-    * Used in _debt_aggregation.ipynb_ to generate totals of delegate assets
-* _final_matching_post1790.csv_ - Lists all the fuzzy matches matches generated by _fuzzy_matching_post1790.ipynb_, with the initial process.extract score in the Scores column
-    * Used in _debt_aggregation_post1790.ipynb_ to generate totals of delegate assets
-* _state_companies.csv_ - Lists all the entries from _Loan_office_certificates_9_states.xlsx_ which contained ‘&’ or ‘and’ with two last names
+*`final_matching.csv`- Lists all the fuzzy matches matches generated by`fuzzy_matching.ipynb_, with the initial process.extract score in the Scores column
+    * Used in`debt_aggregation.ipynb`to generate totals of delegate assets
+*`final_matching_post1790.csv`- Lists all the fuzzy matches matches generated by`fuzzy_matching_post1790.ipynb_, with the initial process.extract score in the Scores column
+    * Used in`debt_aggregation_post1790.ipynb`to generate totals of delegate assets
+*`state_companies.csv`- Lists all the entries from`Loan_office_certificates_9_states.xlsx`which contained ‘&’ or ‘and’ with two last names
     * Ex. Clark & Nightingale
 
 **Final Data**
 
 
 
-* _Delegates_Pre1790_Assets.csv_ - final compiled table of pre-1790 assets of delegates, formatted as requested
-    * Product of _debt_aggregation.ipynb_
-* _Delegates_Post1790_Assets.csv _- final compiled table of post-1790 assets of delegates, formatted requested
-    * Product of _debt_aggregation_post1790.ipynb_
+*`Delegates_Pre1790_Assets.csv`- final compiled table of pre-1790 assets of delegates, formatted as requested
+    * Product of`debt_aggregation.ipynb_
+*`Delegates_Post1790_Assets.csv`- final compiled table of post-1790 assets of delegates, formatted requested
+    * Product of`debt_aggregation_post1790.ipynb_
 * Separate - aggregated debt for each type of asset
-    * _ASD_debt_Matched.csv_
-    * _CD_debt_Matched.csv_
-    * _Loan_Office_Certificates_Matched.csv_
-    * _Marine_Certificates_Matched.csv_
-    * _Pierce_Certificates_Matched.csv_
-    * _State_Certificates_Matched.csv_
+    *`ASD_debt_Matched.csv_
+    *`CD_debt_Matched.csv_
+    *`Loan_Office_Certificates_Matched.csv_
+    *`Marine_Certificates_Matched.csv_
+    *`Pierce_Certificates_Matched.csv_
+    *`State_Certificates_Matched.csv_
 
 **Something I wish we did:**
 
-Identify company owners - see our incomplete list at _state_companies.csv_
+Identify company owners - see our incomplete list at`state_companies.csv_
 
 
 

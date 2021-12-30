@@ -47,7 +47,7 @@ Charles Ridgely,Charles,Ridgely,MD,no,3000,1,285.0417,1
 Charles Turner,Charles,Turner,MA,yes,2400,5,510.02778,5
 Charles Whitman,Charles,Whitman,MA,yes,300,1,24.84583,1
 Christopher P.  Yates,Christopher P. ,Yates,NY,did not vote,6500,16,432.8554900000001,16
-Clark John I,Clark,John I,RI,yes,24900,28,1991.7346100000004,28
+Clark John I,Clark,John I,RI,yes,83200,126,57268.122610000006,126
 Cornelius C. Schoonmaker,Cornelius C.,Schoonmaker,NY,no,2300,4,177.78194000000002,4
 Cornelius Higgins,Cornelius,Higgins,CT,yes,300,1,23.683329999999998,1
 Cotton Tufts,Cotton,Tufts,MA,yes,300,1,34.04583,1
@@ -89,7 +89,7 @@ Frederick A. Muhlenberg,Frederick A.,Muhlenberg,PA,yes,7300,6,182.5,6
 Gabriel Jones,Gabriel,Jones,VA,yes,5700,5,563.1582699999999,5
 George Carrington,George,Carrington,VA,no,1200,2,119.23333,2
 George Clinton,George,Clinton,NY,did not vote,53600,118,20666.301870000036,118
-George Clymer,George,Clymer,Constitution,yes,1400,2,168.75558,2
+George Clymer,George,Clymer,Constitution,yes,13200,11,485.71668,11
 George Digges,George,Digges,MD,yes,200,1,6.808333,1
 George H. Berger,George H.,Berger,NC,no,5500,5,279.6737,5
 George Mitchell,George,Mitchell,NC,yes,4900,3,385.0903,3
@@ -151,7 +151,7 @@ James Porter,James,Porter,NC,no,4400,9,199.84166,9
 James Potter,James,Potter,CT,yes,5000,11,949.2778600000001,11
 James Stewart,James,Stewart,SC,yes,1700,4,113.99028,4
 James Taylor,James,Taylor,VA,yes,6100,4,532.93333,4
-James Thomas,James,Thomas,RI,no,2300,2,187.36113,2
+James Thomas,James,Thomas,RI,no,2500,3,205.47224,3
 James Thompson,James,Thompson,NC,no,96400,95,4422.530561400008,95
 James Upshaw,James,Upshaw,VA,no,1300,4,119.63611,4
 James White,James,White,NC,yes,1800,5,369.02783000000005,5
@@ -208,7 +208,7 @@ John Evans,John,Evans,VA,no,23900,48,4113.2810899999995,48
 John F. Mercer,John F.,Mercer,Constitution,no,1500,2,165.14580999999998,2
 John Fell,John,Fell,NJ,yes,3000,5,1394.2085,5
 John Fowler,John,Fowler,VA,no,4200,6,393.15006,6
-John Francis Mercer,John Francis,Mercer,MD,no,1500,4,75.30416,4
+John Francis Mercer,John Francis,Mercer,MD,no,22400,35,10524.447669999998,35
 John Frye,John,Frye,MA,no,900,2,67.71249999999999,2
 John Fuller,John,Fuller,MA,no,1000,4,32.180555999999996,4
 John G. Scull,John G.,Scull,NC,no,900,3,78.25694,3
@@ -227,10 +227,10 @@ John Hunn,John,Hunn,PA,yes,13900,21,1045.1179799999998,21
 John Hunt,John,Hunt,NC,yes,1000,2,165.23337,2
 John Hunter,John,Hunter,SC,yes,18300,12,1559.97482,12
 John Ingram,John,Ingram,DE,yes,1200,3,116.21667000000001,3
-John Jacob Faesch ,John Jacob,Faesch ,NJ,yes,500,2,43.166669999999996,2
+John Jacob Faesch ,John Jacob,Faesch ,NJ,yes,2700,8,960.3958800000001,8
 John Jay,John,Jay,NY,yes,8900,15,8719.3542,15
 John Johnston,John,Johnston,NC,yes,33800,56,5689.030769999997,56
-John Jones,John,Jones,DE,yes,53000,86,13422.693919999998,86
+John Jones,John,Jones,DE,yes,43000,46,7183.043020000001,46
 John K. Smith,John K.,Smith,MA,yes,23900,42,2011.0513799999994,42
 John Kean,John,Kean,SC,yes,9600,13,1121.6416100000001,13
 John King,John,King,GA,yes,19600,11,702.1806429999999,11
@@ -282,7 +282,7 @@ John Wallace,John,Wallace,NC,yes,11100,9,1171.0111700000002,9
 John Watson,John,Watson,CT,yes,300,1,25.4875,1
 John Weeks,John,Weeks,NH,yes,300,1,31.388890000000004,1
 John Whitehill,John,Whitehill,PA,no,200,1,17.76944,1
-John Williams,John,Williams,VA,yes,107500,176,9937.48332999999,176
+John Williams,John,Williams,VA,yes,107200,175,9755.12502999999,175
 John Willis,John,Willis,NC,yes,1500,2,71.83333,2
 John Wilson,John,Wilson,VA,no,10000,26,2140.7318840000003,26
 John Winthrop,John,Winthrop,MA,yes,4400,10,4031.5334000000003,10
@@ -451,7 +451,6 @@ William Hart,William,Hart,CT,yes,21800,38,10977.6363,38
 William Harwood,William,Harwood,MD,did not vote,1300,2,131.31807,2
 William Heath,William,Heath,MA,yes,1400,2,126.27222,2
 William Hill,William,Hill,SC,no,5000,3,548.7861,3
-William Houston,William,Houston,NC,yes,1800,4,724.5,4
 William Hunt,William,Hunt,NH,no,1300,2,1300.0,2
 William Johnson,William,Johnson,SC,yes,17100,25,1261.60006,25
 William Johnston,William,Johnston,NC,yes,17100,25,1261.60006,25
@@ -490,7 +489,7 @@ William Sommersall,William,Sommersall,SC,yes,18000,18,450.0,18
 William Stevens,William,Stevens,GA,yes,6000,13,4495.42227,13
 William Thompson,William,Thompson,MA,no,39800,71,5750.044527000006,71
 William White,William,White,VA,no,11400,18,1197.5845,18
-William Williams,William,Williams,CT,yes,15600,28,3957.088890000001,28
+William Williams,William,Williams,CT,yes,14600,27,3922.7694500000007,27
 William Wilson,William,Wilson,PA,yes,2800,9,272.00277000000006,9
 William Woodhull,William,Woodhull,NJ,yes,1000,2,51.06944,2
-Williams John,Williams,John,RI,no,107800,176,9740.07501999999,176
+Williams John,Williams,John,RI,no,108100,177,9922.43331999999,177

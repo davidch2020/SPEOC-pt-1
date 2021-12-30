@@ -44,7 +44,7 @@ Bourne Benjamin,Bourne,Benjamin,RI,yes,4.09,1
 Bowen Jabez,Bowen,Jabez,RI,yes,156.56,4
 Bradford William,Bradford,William,RI,yes,4.63,1
 Brown Elisha,Brown,Elisha,RI,no,268.71999999999997,6
-Brown John,Brown,John,RI,yes,9563.78,123
+Brown John,Brown,John,RI,yes,7131.930000000002,119
 Caleb Curtiss,Caleb,Curtiss,MA,no,17.71,1
 Charles Barrett,Charles,Barrett,NH,no,80.0,1
 Charles Gerrard,Charles,Gerrard,NC,yes,2056.86,5
@@ -87,7 +87,6 @@ Ebenezer Wales,Ebenezer,Wales,MA,yes,1761.27,5
 Ebenezer Webster,Ebenezer,Webster,NH,did not vote,227.46,6
 Edward Blake,Edward,Blake,SC,yes,3920.49,19
 Edward Lloyd,Edward,Lloyd,MD,yes,1977.8799999999999,2
-Edward Ward,Edward,Ward,NC,yes,332.56,6
 Edward White,Edward,White,DE,yes,2757.99,14
 Edward Williams,Edward,Williams,NC,yes,328.5,6
 Elias Barnes,Elias,Barnes,NC,yes,2.1,1
@@ -202,12 +201,12 @@ John Blake,John,Blake,SC,yes,687.3399999999999,16
 John Bowman,John,Bowman,SC,no,404.75,4
 John Boyd,John,Boyd,PA,yes,2121.0299999999997,12
 John Brooks,John,Brooks,MA,yes,7418.64,13
-John Brown,John,Brown,NC,no,9531.93,122
+John Brown,John,Brown,NC,no,9563.780000000002,123
 John Budd,John,Budd,SC,yes,2112.7799999999997,2
 John Burgess,John,Burgess,SC,no,797.4800000000002,18
 John Burnham,John,Burnham,MA,yes,4368.17,10
 John Carson,John,Carson,NC,yes,846.1899999999999,9
-John Carter Littlepage,John Carter,Littlepage,VA,no,952.7900000000001,17
+John Carter Littlepage,John Carter,Littlepage,VA,no,1026.09,18
 John Chester,John,Chester,CT,yes,537.3,9
 John Cochran,John,Cochran,NH,no,4735.450000000001,15
 John Collins,John,Collins,SC,yes,2311.7299999999996,37
@@ -245,6 +244,7 @@ John Howell Briggs,John Howell,Briggs,VA,no,3289.12,8
 John Hunt,John,Hunt,NC,yes,94.47,2
 John Hunter,John,Hunter,SC,yes,314.65000000000003,5
 John Ingersoll,John,Ingersoll,MA,yes,87.89999999999999,3
+John Jacob Faesch ,John Jacob,Faesch ,NJ,yes,1053.91,17
 John Jennings,John,Jennings,MA,no,246.96,5
 John Johnston,John,Johnston,NC,yes,7550.390000000004,89
 John Jones,John,Jones,DE,yes,7726.33,70
@@ -279,6 +279,7 @@ John Reynolds,John,Reynolds,PA,no,1404.66,26
 John Rhea,John,Rhea,NC,yes,86.6,2
 John Richards,John,Richards,PA,yes,654.67,13
 John Scott,John,Scott,NC,no,5745.120000000001,40
+John Sheaman Woodcock,John Sheaman,Woodcock,VA,yes,185.6,5
 John Simmons,John,Simmons,SC,yes,602.93,11
 John Skinner,John,Skinner,NC,yes,214.39,3
 John Smith,John,Smith,NY,yes,29545.899999999983,241
@@ -359,7 +360,6 @@ Nathaniel Russell,Nathaniel,Russell,SC,yes,70.55,3
 Nicholas Breading,Nicholas,Breading,PA,no,85.61,1
 Nicholas Gilman,Nicholas,Gilman,Constitution,yes,3305.0099999999998,6
 Nichols William,Nichols,William,RI,no,389.80999999999995,9
-Pawling Pawling,Pawling,Pawling,VA,no,210.32999999999998,2
 Pearce Samuel,Pearce,Samuel,RI,yes,141.12,2
 Peter Bennett,Peter,Bennett,NC,no,68.58,1
 Peter Fayssoux,Peter,Fayssoux,SC,no,2699.86,3
@@ -507,8 +507,8 @@ William Heath,William,Heath,MA,yes,13436.74,10
 William Hill,William,Hill,SC,no,1008.53,18
 William Houston,William,Houston,NC,yes,2707.1899999999996,9
 William Hunt,William,Hunt,NH,no,847.51,13
-William Johnson,William,Johnson,SC,yes,6172.600000000005,63
-William Johnston,William,Johnston,NC,yes,9400.600000000006,70
+William Johnson,William,Johnson,SC,yes,6136.000000000005,62
+William Johnston,William,Johnston,NC,yes,9400.600000000004,70
 William Johnston Dawson,William,Johnston Dawson,NC,yes,1052.86,19
 William Jones,William,Jones,MA,no,3178.979999999999,56
 William Judd,William,Judd,CT,yes,2446.41,6
@@ -547,7 +547,7 @@ William Thornton,William,Thornton,VA,yes,423.43,6
 William Washington,William,Washington,SC,yes,936.0699999999999,2
 William Watkins,William,Watkins,VA,no,316.8,5
 William White,William,White,VA,no,4272.54,26
-William Williams,William,Williams,CT,yes,4062.610000000001,49
+William Williams,William,Williams,CT,yes,4035.610000000001,48
 William Wilson,William,Wilson,PA,yes,4800.330000000001,36
 Williams John,Williams,John,RI,no,6900.620000000002,64
 Zachariah Johnston,Zachariah,Johnston,VA,yes,147.2,1
