@@ -8,11 +8,11 @@ The name matching was executed in three steps: cleaning, fuzzy-matching, and mer
 
 1. `Data`: This folder contains all of the raw data and cleaned data. Within the Delegates, Post1790, and Pre1790 subfolders are the corresponding raw Excel sheets (copied from the dropbox) and cleaned csv files. This folder also contains `final_matching.csv` and `final_matching_post1790.csv` which list the results of our fuzzy matching.
 2. `Producables`:The requested final tables are in this folder, along with a folder called ‘Separate’ containing csv files with individual tables for each type of certificate 
-    1.`Delegate_Pre1790_Assets.csv` contains the assets in Pre-1790 certificates for all delegates
-    2.`Delegate_Post1790_Assets.csv` contains the assets in Post-1790 certificates for all delegates
+    1. `Delegate_Pre1790_Assets.csv` contains the assets in Pre-1790 certificates for all delegates
+    2. `Delegate_Post1790_Assets.csv` contains the assets in Post-1790 certificates for all delegates
 3. `clean_debt_files.ipynb`: This Jupyter notebook contains the code used to produce the cleaned csv files in the Data/Pre1790/Cleaned folder. Note: the post-1790 data was not cleaned.
 4. `fuzzy_matching.ipynb`: This Jupyter notebook contains the code that created the`final_matching.csv`file in the Data folder that we used to identify pre-1790 debt certificates held by delegates
-5. `fuzzy_matching_post1790.ipynb`: This Jupyter notebook contains the code that created the`final_matching_post1790_._csv`file in the Data folder that we used to identify post-1790 debt certificates held by delegates
+5. `fuzzy_matching_post1790.ipynb`: This Jupyter notebook contains the code that created the`final_matching_post1790.csv`file in the Data folder that we used to identify post-1790 debt certificates held by delegates
 6. `debt_aggregation.ipynb`: This Jupyter notebook contains the code which merges the cleaned delegate names and debt certificate/stock data using the`final_matching.csv`files. It then merges those results to produce`Delegate_Pre1790_Assets`in the`Producables`folder.
 7. `debt_aggregation_post1790.ipynb`: This Jupyter notebook contains the code which merges the cleaned delegate names and debt certificate/stock data using the`final_matching_post1790.csv`files. It then merges those results to produce`Delegate_Post1790_Assets.csv`in the`Producables`folder.
 8. `Results.ipynb`: This jupyter notebook contains the code which we used to generate results described in the technical report and located in the Results section.
