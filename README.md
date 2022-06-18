@@ -1,5 +1,13 @@
 # SPEOC-pt-1
 Code repository for a Summer Project on the Economic Origins of the Constitution. Contact me at chrisliao (at) uchicago (dot) edu. The project has two components - delegate matching and pre-post debt matching. The README is separated into two parts, one for each component.
+Note that `README.md` and code repository/project are a work in progress.
+
+# READ THIS BEFORE PROCEEDING
+Since we're continuing work on this repo in summer 2022, I've moved everything from summer and winter 2021 to the `S2021` folder. 
+This means that code importing data will probably break. To fix it, add a `../` before the relative directory path which should enable the data to be imported.
+
+I may fix this in a future iteration if I decide to revisit old code. If I do so, this section will either be ~~struckthrough~~ or deleted. 
+
 
 ## Overview of delegate matching
 The purpose of this part of the project was to match constitutional and state convention delegates to their pre-1790 debt asset totals to identify how much each delegate owned and ananlyze if this influenced their vote. 
