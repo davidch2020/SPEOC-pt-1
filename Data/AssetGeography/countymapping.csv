@@ -1,0 +1,469 @@
+,town,state,county,name_type
+0,Hartford,CT,Hartford County,town
+1,Bolton,CT,Tolland County,town
+2,Rhode Island,RI,,state
+5,Wethersfield,CT,Hartford County,town
+6,Lyme,CT,New London County,town
+8,New Haven,CT,New Haven County,town
+9,Farmington,CT,Hartford County,town
+10,New London,CT,New London County,town
+14,Cornwall,CT,Litchfield County,town
+18,Stamford,CT,Fairfield County,town
+20,East Hartford,CT,Hartford County,town
+22,Bristol,CT,Hartford County,town
+24,Lebanon,CT,New London County,town
+25,Windsor,CT,Hartford County,town
+26,Southhampton,CT,Windham County,town
+27,Suffield,CT,Hartford County,town
+30,Chatham,CT,Middlesex County,town
+32,Berlin,CT,Hartford County,town
+33,Glastonbury,CT,Hartford County,town
+35,Saybrook,CT,Middlesex County,town
+37,Stafford,CT,Tolland County,town
+40,Hebron,CT,Tolland County,town
+41,Middletown,CT,Middlesex County,town
+42,,CT,,
+46,East Windsor,CT,Hartford County,town
+50,Boston,MA,Suffolk County,town
+52,Norwich,CT,New London County,town
+54,Springfield,MA,Hampden County,town
+60,Preston,CT,New London County,town
+62,Sharon,CT,Litchfield County,town
+64,Somers,CT,Tolland County,town
+67,Goshen,CT,Litchfield County,town
+69,Torrington,CT,Litchfield County,town
+72,Watertown,CT,Litchfield County,town
+78,Stonington,CT,New London County,town
+79,Colchester,CT,New London County,town
+85,Fairfield,CT,Fairfield County,town
+87,Guilford,CT,New Haven County,town
+91,Enfield,CT,Hartford County,town
+93,Plainfield,CT,Windham County,town
+98,Coventry,CT,Tolland County,town
+103,State of New York,NY,,state
+106,Groton,CT,New London County,town
+110,Mansfield,CT,Tolland County,town
+119,Bozrah,CT,New London County,town
+120,Derby,CT,New Haven County,town
+131,Huntington,CT,Fairfield County,town
+132,Woodstock,CT,Windham County,town
+134,Windham,CT,Windham County,town
+148,Stratford,CT,Fairfield County,town
+160,Brooklyn,CT,Windham County,town
+168,State of Vermont,VT,,state
+169,Haddam,CT,Middlesex County,town
+178,Tolland,CT,Tolland County,town
+179,Danbury,CT,Fairfield County,town
+188,Newington,CT,Hartford County,town
+192,Litchfield,CT,Litchfield County,town
+205,Tyringham MA,MA,Berkshire County,county
+207,Milford,CT,New Haven County,town
+212,Pomfret,CT,Windham County,town
+224,Killingworth,CT,Middlesex County,town
+228,Sturbridge MA,MA,Worcester County,county
+245,Newport State of Rhode Island,RI,Newport County,town
+249,Granby,CT,Hartford County,town
+272,Roxbury,CT,Litchfield County,town
+274,New Hartford,CT,Litchfield County,town
+297,Northampton,CT,Windham County,town
+303,East Haddam,CT,Middlesex County,town
+318,Greenwich,CT,Fairfield County,town
+323,New Milford,CT,Litchfield County,town
+336,Canaan,CT,Litchfield County,town
+342,Montville,CT,New London County,town
+355,Norwalk,CT,Fairfield County,town
+361,Providence,RI,Providence County,town
+390,City of New York,NY,New York County,town
+392,Tyringham Massachusetts,MA,Berkshire County,county
+399,Canterbury,CT,Windham County,town
+400,Charleston State of New Hampshire,NH,Sullivan County,town
+401,New York,NY,,state
+403,Branford,CT,New Haven County,town
+404,Ashford,CT,Windham County,town
+433,Willington,CT,Tolland County,town
+438,Hadley Massachusetts,MA,Hampshire County,county
+458,Southbury,CT,New Haven County,town
+476,Reading,CT,Fairfield County,town
+489,Boston state Massachusetts,MA,Suffolk County,county
+490,Worcester State Massachusetts,MA,Worcester County,county
+495,North Haven,CT,New Haven County,town
+513,Symsbury,CT,Hartford County,town
+527,Woodbury,CT,Litchfield County,town
+536,State Vermont,VT,,state
+537,Vermont,VT,,state
+544,Thompson,CT,Windham County,town
+553,London,CT,New London County,town
+611,Hampton,CT,Windham County,town
+621,Franklin,CT,New London County,town
+639,Portsmouth,NH,Rockingham County,town
+644,North Hampshire,NH,,
+666,Pittsfield,MA,Berkshire County,town
+668,Cornwell,CT,Litchfield County,town
+681,Cheshire,CT,New Haven County,town
+691,Voluntown,CT,New London County,town
+699,Cambridge,MA,Middlesex County,town
+732,Salisbury,CT,Litchfield County,town
+737,Brooklyne,CT,Windham County,town
+745,Weston,CT,Fairfield County,town
+749,Wallingford,CT,New Haven County,town
+750,State of Georgia,GA,,state
+755,Connecticut,CT,,state
+756,East Haven,CT,New Haven County,town
+763,Ellington,CT,Tolland County,town
+769,Stonnington,CT,New London County,town
+780,Durham,CT,Middlesex County,town
+817,Portsmouth New Hampshire,NH,Portsmouth County,county
+833,Granby Massachusetts,MA,Hampshire County,county
+840,Long Island,NY,,town
+851,Long Meadow Massachusetts,MA,Hampden County,county
+855,State of New Hampshire,NH,,state
+863,Waterbury,CT,New Haven County,town
+898,Norfolk,CT,Litchfield County,town
+935,Volentown,CT,New London County,town
+943,Ridgefield,CT,Fairfield County,town
+957,,,,
+1007,Savannah,GA,Chatham County,town
+1008,,GA,,
+1010,Charleston,SC,Berkeley County,town
+1011,Philadelphia,PA,Philadelphia County,town
+1013,Maryland,MD,,state
+1017,Effingham County,GA,Effingham County,county
+1018,South Carolina,SC,,state
+1022,Charleston  South Carolina,SC,Berkeley County,county
+1026,Augusta,GA,Richmond County,town
+1028,Charleston South Carolina,SC,Berkeley County,town
+1046,Portsmouth Virginia,VA,Norfolk County,town
+1050,Carolina,SC,,
+1051,Columbia County,GA,Columbia County,county
+1052,Baltimore,MD,Baltimore County,town
+1057,Georgia,GA,,state
+1074,George Town,MD,Cecil County,town
+1075,Prince Georges County,MD,Prince George's County,county
+1076,Harford County,MD,Harford County,county
+1077,St Marys County,MD,St Mary's County,county
+1079,Annapolis,MD,Anne Arundel County,town
+1081,Frederick Town,MD,Frederick County,town
+1082,Virginia,VA,,state
+1083,Rotterdam,,,
+1087,Baltimore County,MD,Baltimore County,county
+1090,Anne Arundel County,MD,Anne Arundel County,county
+1092,Baltimore Town,MD,Baltimore County,town
+1093,Frederick County,MD,Frederick County,county
+1104,Somerset County,MD,Somerset County,county
+1107,Bladensburg,MD,Prince George's County,town
+1108,Caroline County,MD,Caroline County,county
+1109,Cambridge,MD,Dorchester County,town
+1112,Virgina,VA,,
+1113,Georges Town,MD,Cecil County,town
+1121,Washington County,MD,Washington County,county
+1122,Kent County,MD,Kent County,county
+1126,Charles County,MD,Charles County,county
+1127,Montgomery County,MD,Montgomery County,county
+1133,Calver County,MD,Calvert County,county
+1135,Queen Annes County,MD,Queen Anne's County,county
+1152,Talbot County,MD,Talbot County,county
+1153,Calvert County,MD,Calvert County,county
+1162,Talbot,MD,Talbot County,county
+1175,Frederick,MD,Frederick County,town
+1191,Cecil County,MD,Cecil County,county
+1217,Dorchester County,MD,Dorchester County,county
+1223,Pennsylvania,PA,,state
+1236,Worcester County,MD,Worcester County,county
+1245,Alexandria State of Virginia,VA,Fairfax County,county
+1269,George town,MD,Cecil County,town
+1377,Allegany County,MD,Allegany County,county
+1492,Doden Maryland,MD,,state
+1507,,MD,,
+1531,Isaac,MD,,
+1592,London,,,
+1634,Frederick County Maryland,MD,Frederick County,county
+1701,Edenton,NC,Chowan County,town
+1703,Wayne County,NC,Wayne County,county
+1707,Richmond Virginia,VA,Henrico County,county
+1708,Newbern,NC,Craven County,town
+1709,Rowan County,NC,Rowan County,county
+1713,Warren County,NC,Warren County,county
+1714,Tarborugh,NC,Edgecombe County,town
+1718,Murfrees Borough,NC,Hertford County,town
+1719,Perquimans County,NC,Perquimans County,county
+1720,Mecklenburg County,NC,Mecklenburg County,county
+1722,Fayetteville,NC,Cumberland County,town
+1723,Wilmington,NC,New Hanover County,town
+1724,Petersburg Virginia,VA,Grant County,county
+1725,Edgecombe County,NC,Edgecombe County,county
+1726,Pitt County,NC,Pitt County,county
+1727,Salisbury,NC,Rowan County,town
+1730,Halifax,NC,Halifax County,town
+1737,Montgomery County Maryland,MD,Montgomery County,county
+1740,Washington,NC,Beaufort County,town
+1751,Halifax ,NC,Halifax County,town
+1753,Eustatia,BVI,,
+1757,North Carolina,NC,,state
+1758,Currituck County,NC,Currituck County,county
+1764,Hillsborough,NC,Orange County,town
+1765,Rockingham County,NC,Rockingham County,county
+1773,,NC,,
+1778,Exeter,NH,Rockingham County,town
+1779,Rockingham,NH,Rockingham County,county
+1780,Merrimac,NH,Hillsborough County,town
+1789,Kittery,MA,,
+1793,Deerfield,NH,Rockingham County,town
+1795,Greenland,NH,Rockingham County,town
+1796,,NH,,
+1797,Kingstown,NH,Rockingham County,town
+1798,Andover,MA,Essex County,town
+1799,Kensington,NH,Rockingham County,town
+1800,Hampton,NH,Rockingham County,town
+1801,North Hampton,NH,Rockingham County,town
+1804,Newbury,NH,Merrimack County,town
+1806,Candia,NH,Rockingham County,town
+1810,Salem,MA,Essex County,town
+1812,Marbury,NH,Strafford County,town
+1813,London,NH,Rockingham County,town
+1815,Newbury Port,MA,Essex County,county
+1819,Salem,NH,Rockingham County,town
+1821,Glouster,NH,,
+1825,Canterbury,NH,Merrimack County,town
+1831,York,NH,,
+1835,New Castle,NH,Rockingham County,town
+1836,Wells,NH,,
+1839,Beverly,MA,Essex County,town
+1841,Sandwich,NH,Carroll County,town
+1842,Pembroke,NH,Merrimack County,town
+1844,Gilmantown,NH,Belknap County,town
+1848,Pelham,NH,Hillsborough County,town
+1850,Situate,MA,Plymouth County,county
+1852,Concord,NH,Merrimack County,town
+1853,Ipswich,MA,Essex County,town
+1854,Barrington,NH,Strafford County,town
+1857,Rowley,MA,Essex County,town
+1858,Newtown,NH,Rockingham County,town
+1863,South Hampton,NH,Rockingham County,town
+1864,Tamworth,NH,Carroll County,town
+1870,Amherst,NH,Hillsborough County,town
+1872,Hopkinton,NH,Merrimack County,town
+1875,Acworth,NH,Sullivan County,town
+1876,Somersworth,NH,Strafford County,town
+1877,Haverhill,MA,Essex County,town
+1882,Nottingham,NH,Rockingham County,town
+1884,Charlestown,NH,Sullivan County,town
+1892,Stoughton,MA,Norfolk County,town
+1896,Wakefield,NH,Carroll County,town
+1901,Londonberry,NH,Rockingham County,town
+1905,Salisbury,NH,Merrimack County,town
+1912,Durham,NH,Strafford County,town
+1930,Hollis,NH,Hillsborough County,town
+1951,Dover,NH,Strafford County,town
+1968,Brintwood,NH,Rockingham County,town]
+1975,Roxbury,MA,Suffolk County,town
+1977,Keene,NH,Cheshire County,town
+1980,Rye,NH,Rockingham County,town
+1986,Almsbury,MA,Essex County,county
+1997,Lancaster,PA,Lancaster County,town
+2004,Philadelphia County,PA,Philadelphia County,county
+2006,Bucks County Pennsylvania,PA,Bucks County,county
+2010,Carlisle Pennsylvania,PA,Cumberland County,town
+2015,Germantown,PA,Perry County,town
+2033,Franklin County,PA,Franklin County,county
+2035,Conecticutt,CT,,state
+2036,New Castle Delaware,DE,New Castle County,county
+2042,Reading,PA,Berks County,town
+2055,Bethlehem,PA,Northampton County,town
+2067,New Jersey,NJ,,state
+2079,,PA,,
+2087,Barbadoes,,,
+2089,Sta Croix,,,
+2094,Westmoreland,PA,Westmoreland County,town
+2097,Blockley,PA,Philadelphia County,town
+2100,Alexandria Virginia,VA,Fairfax County,county
+2103,Montgomery,PA,Lycoming County,town
+2104,W Callisters Town,PA,,
+2105,Huntington New Jersey,NJ,,state
+2110,Cumberland,PA,Cumberland County,town
+2119,Delaware,PA,Delaware County,county
+2127,State of Delawere,DE,,state
+2134,Cambridge Massachusetts,MA,Middlesex County,county
+2147,Massachusetts,MA,,state
+2172,Reading Pennsylvania,PA,Berks County,town
+2173,Tulpehocken,PA,Berks County,county
+2176,,VA,,
+2189,Chester County,PA,Chester County,county
+2206,Connecticutt,CT,,state
+2211,Armstrong,PA,Lycoming County,county
+2230,Bucks County,PA,Bucks County,county
+2263,Reading Berks County,PA,Berks County,town
+2273,County of Philadelphia,PA,Philadelphia County,town
+2287,Maidenhead,,,
+2289,Northumb Country,PA,Elk County,county
+2339,Northan Liberties,PA,Philadelphia County,town
+2413,Montgomery County,PA,Montgomery County,county
+2433,Delaware Newcastle County,DE,New Castle County,county
+2446,Chester County Pennsylvania,PA,Chester County,county
+2447,York Town Pennsylvania,PA,York County,town
+2474,Lancaster Pennsylvania,PA,Lancaster County,town
+2479,Dauphin County Pennsylvania,PA,Dauphin County,county
+2481,Allegheny County Pennsylvania,PA,Allegheny County,county
+2487,Louden County Virginia,VA,Loudoun County,county
+2497,Borden Town,PA,Philadelphia County,town
+2500,Chester Co Pennsylvania,PA,Chester County,county
+2502,The N Lib of Philadelphia,PA,Philadelphia County,town
+2504,Pennsylvania Berks County,PA,Berks County,county
+2506,Pennsylvania Montgomery County,PA,Montgomery County,county
+2509,Franklin County Pennsylvania,PA,Franklin County,county
+2524,Pittsburgh Pennsylvania,PA,Allegheny County,town
+2526,Lancaster County Pennsylvania,PA,Lancaster County,county
+2531,Brunswick New Jersey,NJ,Middlesex County,town
+2535,St Eustalia,PA,,
+2537,Berks County Pennsylvania,PA,Berks County,county
+2564,Fayette County Pennsylvania,PA,Fayette County,county
+2572,Delaware County Pennsylvania,PA,Delaware County,county
+2579,Passyunk,PA,Philadelphia County,town
+2593,Northampton County Pennsylvania,PA,Northampton County,county
+2595,Chester County Pennsylvaina,PA,Westmoreland County,town
+2599,Northern Liberties,PA,Philadelphia County,town
+2606,Northum County Pennsylvania,PA,Northumberland County,county
+2613,Fredericksburg Virginia,VA,Spotsylvania County,county
+2617,Chambersburgh Pennsylvania,PA,Franklin County,town
+2619,Fredrick Co Maryland,MD,Frederick County,county
+2629,Frankford Philadelphia County,PA,Philadelphia County,town
+2635,Ohio County Virginia,VA,Ohio County,county
+2640,Dauphincoy Pennsylvania,PA,Dauphin County,town
+2645,York County Pennsylvania,PA,York County,county
+2648,Cape May New Jersey,NJ,Cape May County,town
+2650,Cumb County Pennsylvania,PA,Washington County,county
+2669,Delaware State,DE,,state
+2679,Trenton New Jersey,NJ,Mercer County,town
+2695,New Brunswick New Jersey,NJ,Middlesex County,town
+2696,Mount Holley New Jersey,NJ,Burlington County,town
+2708,Kensington,PA,Westmoreland County,town
+2716,Dauphin County,PA,Dauphin County,county
+2721,Chester,PA,Delaware County,town
+2722,Burlington New Jersey,PA,Philadelphia County,town
+2724,Allegheny County,PA,Allegheny County,county
+2779,Chester and County,PA,Delaware County,town
+2802,German Town,PA,Philadelphia County,town
+2822,Westmoreland County,PA,Westmoreland County,county
+2832,Middlesex New Jersey,NJ,Middlesex County,town
+2837,Dauphin and Company,PA,Dauphin County,town
+2849,The Northern Libert,PA,Philadelphia County,town
+2857,Lancaster County,PA,Lancaster County,county
+2858,Kent Company Delaware,DE,Kent County,county
+2868,Northumberland County,PA,Northumberland County,county
+2875,Hatter Philadelphia,PA,Philadelphia County,town
+2906,Accomack County Virginia,VA,Accomack County,county
+2910,Princeton New Jersey,NJ,Mercer County,town
+2924,Albany,NY,Albany County,town
+2931,Northampton County,PA,Northampton County,county
+2938,King George Co Virginia,VA,King George County,county
+2954,Southwark,PA,Philadelphia County,town
+2956,Westmoreland County Pennsylvania,PA,Westmoreland County,county
+2991,Wilmington Delaware,DE,New Castle County,county
+2992,Montgomery County Pennsylvania,PA,Montgomery County,county
+3005,Berlington New Jersey,NJ,Camden County,town
+3015,Northumberland County Pennsylvania,PA,Northumberland County,county
+3020,Sunbury Pennsylvania,PA,Northumberland County,town
+3028,Church on Philadelphia,PA,Philadelphia County,town
+3037,James City County Virginia,VA,Mecklenburg County,county
+3041,Pittsburgh,PA,Allegheny County,town
+3056,Newark,NJ,Essex County,town
+3058,Monmouth County New Jersey,NJ,Monmouth County,county
+3061,Philadelphila,PA,Philadelphia County,town
+3069,New Castle County Delaware State,DE,New Castle County,county
+3075,Somerset County Maryland,MD,Somerset County,county
+3094,Berks County,PA,Berks County,county
+3098,York County,PA,York County,county
+3138,Northumberland County Virginia,VA,Northumberland County,county
+3171,Newton Township New Jersey,NJ,Sussex County,town
+3199,Paxton Tot Dauphin County,PA,Dauphin County,town
+3208,Delaware County,PA,Delaware County,county
+3213,Cape May,NJ,Cape May County,town
+3235,Bedford County,PA,Bedford County,county
+3255,Somerset County New Jersey,NJ,Somerset County,town
+3273,York Town,PA,York County,town
+3287,Little Compton,RI,Newport County,town
+3288,Warren,RI,Bristol County,town
+3289,East Greenwich,RI,Kent County,town
+3290,Johnston,RI,Providence County,town
+3291,Scituate,RI,Providence County,town
+3294,Coventry,RI,Kent County,town
+3296,Rehoboth,MA,Bristol County,town
+3298,Newport,RI,Newport County,town
+3302,Dighton,MA,Bristol County,town
+3303,Cumberland,RI,Providence County,town
+3305,South Kingston,RI,Washington County,town
+3306,North Hampton,MA,Hampshire County,county
+3308,Littleton,MA,Middlesex County,town
+3309,Sutton,MA,Worcester County,town
+3313,Gloucester,RI,Providence County,town
+3314,Ludlow,MA,Hampden County,town
+3315,North Providence,RI,Providence County,town
+3325,Foster,RI,Providence County,town
+3326,Warwick,RI,Kent County,town
+3330,Liecester,MA,Worcester County,county
+3333,Bristol,RI,Bristol County,town
+3351,Smithfield,RI,Providence County,town
+3359,Newport in New Hampshire,NH,Sullivan County,town
+3366,,RI,,
+3375,Barrington,RI,Bristol County,town
+3391,Somerset,MA,Bristol County,town
+3404,Cranston,RI,Providence County,town
+3413,Charlestown,RI,Washington County,town
+3427,Grafton Massachusetts,MA,Worcester County,county
+3437,Swansea,MA,Bristol County,town
+3439,West Greenwich,RI,Kent County,town
+3468,Bridgewater,MA,Plymouth County,town
+3469,South Kingstone,RI,Washington County,town
+3476,Attleborough,MA,Bristol County,county
+3477,Johnson,RI,Providence County,town
+3482,Portsmouth,RI,Newport County,town
+3497,North Kingston,RI,Washington County,town
+3500,Exeter,RI,Washington County,town
+3503,Richmond,RI,Washington County,town
+3510,Tiverton,RI,Newport County,town
+3557,Falmouth Massachusetts,MA,Barnstable County,county
+3560,Dudley,MA,Worcester County,town
+3611,Springfield,RI,,
+3646,Westport,MA,Bristol County,town
+3659,Chesterfield Massachusetts,MA,Hampshire County,county
+3719,Freetown,MA,Bristol County,county
+3722,North Kingstone,RI,Washington County,town
+3729,Norton,MA,Bristol County,town
+3749,North Kingstown,RI,Washington County,town
+3754,Stoughton now of Providence,RI,Providence County,town
+3774,Alexandria,NH,Grafton County,town
+3958,James Island,SC,Charleston County,county
+3974,Bermuda,BM,,
+3988,Georgetown,SC,Georgetown County,town
+3999,Camden Planter,SC,Kershaw County,county
+4019,Virginia and Philadelphia,VA,King and Queen County,county
+4037,St. Paul's,SC,Clarendon County,town
+4041,Williamsburgh,VA,Greenbrier County,county
+4043,Pee Dee,SC,Marion County,town
+4044,St Helena,SC,Beaufort County,county
+4053,Register of the Treasury,US,,
+4083,,FR,,
+4095,,SC,,
+4099,St. George,SC,Dorchester County,town
+4100,Camden,SC,Kershaw County,town
+4104,St. Thomas,VI,,
+4109,New River,SC,Beaufort County,town
+4119,St Johns,SC,Charleston County,county
+4125,Winyaw,SC,Winyah County,town
+4132,Broad River,SC,Beaufort County,town
+4144,Columbia,SC,Richland County,town
+4147,St Thomas,BVI,,
+4152,St Andrews,SC,Richland County,county
+4153,Great Britain,GB,,
+4187,Richard Sennings,SC,,
+4197,96 District,SC,Greenwood County,county
+4204,Edinburgh,GB,,
+4210,Abbeville,SC,Abbeville County,town
+4219,Long Cames,SC,,
+4222,Toogoodoo,SC,Charleston County,town
+4241,Charlestom,SC,Berkeley County,county
+4249,Bourdeaux,FR,,
+4272,The River May,VI,,
+4288,St Pauls,SC,Clarendon County,town
+4318,Ninety six District,SC,Greenwood County,county
+4321,Richard County,SC,Richland County,county
+4351,Dorchester,SC,Dorchester County,town
