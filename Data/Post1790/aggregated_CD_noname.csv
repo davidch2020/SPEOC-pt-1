@@ -53,7 +53,7 @@
 51,459.0,86.0,229.0,93.0,370.0,,Hartford,CT,Merchant,Hartford County,town,459.86
 52,16405.0,29.0,8202.0,64.0,11988.0,66.0,Norwich,CT,,New London County,town,16405.29
 53,1228.0,39.0,614.0,20.0,935.0,98.0,Norwich,CT,,New London County,town,1228.39
-54,2403.0,33.0,1201.0,67.0,866.0,61.0,Springfield,MA,Merchant,Hampden County,town,2403.33
+54,2403.0,33.0,1201.0,67.0,866.0,61.0,Springfield,MA,Merchant,Hampshire County,town,2403.33
 55,1408.0,67.0,704.0,33.0,380.0,33.0,Hartford,CT,Merchant,Hartford County,town,1408.67
 56,2109.0,41.0,1054.0,71.0,1326.0,22.0,Hartford,CT,Merchant,Hartford County,town,2109.41
 57,178.0,50.0,89.0,25.0,94.0,64.0,New Haven,CT,,New Haven County,town,178.5
@@ -171,7 +171,7 @@
 169,1852.0,46.0,926.0,23.0,1416.0,64.0,Haddam,CT,,Middlesex County,town,1852.46
 170,705.0,66.0,352.0,83.0,576.0,,Norwich,CT,,New London County,town,705.66
 171,1200.0,,600.0,,324.0,,Stafford,CT,,Tolland County,town,
-172,78.0,31.0,39.0,16.0,,,Springfield,MA,,Hampden County,town,78.31
+172,78.0,31.0,39.0,16.0,,,Springfield,MA,,Hampshire County,town,78.31
 173,84.0,36.0,42.0,19.0,95.0,15.0,Wethersfield,CT,,Hartford County,town,84.36
 174,1252.0,29.0,626.0,14.0,825.0,83.0,Wethersfield,CT,,Hartford County,town,1252.29
 175,58.0,9.0,29.0,4.0,20.0,19.0,Wethersfield,CT,,Hartford County,town,58.09
@@ -399,7 +399,7 @@
 397,32.0,,16.0,,23.0,2.0,Lebanon,CT,Farmer,New London County,town,
 398,42.0,36.0,21.0,18.0,31.0,10.0,Hebron,CT,Farmer,Tolland County,town,42.36
 399,499.0,16.0,249.0,58.0,670.0,11.0,Canterbury,CT,Farmer,Windham County,town,499.16
-400,371.0,45.0,185.0,72.0,141.0,71.0,Charleston State of New Hampshire,NH,,Sullivan County,town,371.45
+400,371.0,45.0,185.0,72.0,141.0,71.0,Charleston State of New Hampshire,NH,,Cheshire County,town,371.45
 401,144.0,55.0,72.0,28.0,54.0,,New York,NY,,,state,144.55
 402,179.0,67.0,89.0,82.0,48.0,50.0,New Hartford,CT,Farmer,Litchfield County,town,179.67
 403,123.0,1.0,61.0,51.0,113.0,30.0,Branford,CT,Farmer,New Haven County,town,123.01
@@ -580,8 +580,8 @@
 578,22.0,71.0,11.0,35.0,16.0,34.0,Canterbury,CT,Farmer,Windham County,town,22.71
 579,16.0,42.0,8.0,21.0,338.0,15.0,Canterbury,CT,Attorney at Law,Windham County,town,16.42
 580,391.0,29.0,195.0,65.0,321.0,91.0,Middletown,CT,Farmer,Middlesex County,town,391.29
-581,101.0,44.0,50.0,72.0,150.0,81.0,Springfield,MA,Gentleman,Hampden County,town,101.44
-582,297.0,78.0,148.0,89.0,241.0,27.0,Springfield,MA,Merchant,Hampden County,town,297.78
+581,101.0,44.0,50.0,72.0,150.0,81.0,Springfield,MA,Gentleman,Hampshire County,town,101.44
+582,297.0,78.0,148.0,89.0,241.0,27.0,Springfield,MA,Merchant,Hampshire County,town,297.78
 583,1437.0,81.0,718.0,91.0,1296.0,,New London,CT,Mariner,New London County,town,1437.81
 584,10.0,60.0,5.0,31.0,5.0,65.0,Chatham,CT,Farmer,Middlesex County,town,10.6
 585,9.0,64.0,4.0,82.0,,,New London,CT,Mariner,New London County,town,9.64
@@ -816,7 +816,7 @@
 814,60.0,66.0,30.0,33.0,261.0,34.0,Tolland,CT,Widow,Tolland County,town,60.66
 815,1055.0,62.0,1500.0,,,,New Haven,CT,,New Haven County,town,1055.62
 816,243.0,33.0,121.0,67.0,,,New Haven,CT,,New Haven County,town,243.33
-817,222.0,78.0,111.0,40.0,,,Portsmouth New Hampshire,NH,,Portsmouth County,county,222.78
+817,222.0,78.0,111.0,40.0,,,Portsmouth New Hampshire,NH,,Rockingham County,county,222.78
 818,13.0,33.0,6.0,67.0,,,Hartford,CT,,Hartford County,town,13.33
 819,181.0,33.0,90.0,66.0,,,Hartford,CT,,Hartford County,town,181.33
 820,166.0,95.0,84.0,48.0,,,Stonnington,CT,,New London County,town,166.95
@@ -850,7 +850,7 @@
 848,70.0,2.0,35.0,2.0,67.0,48.0,Hartford,CT,Cashier of Hartford Bank,Hartford County,town,70.02
 849,266.0,66.0,133.0,34.0,,,Woodstock,CT,,Windham County,town,266.66
 850,400.0,,,,,,Derby,CT,,New Haven County,town,
-851,200.0,,100.0,,,,Long Meadow Massachusetts,MA,,Hampden County,county,
+851,200.0,,100.0,,,,Long Meadow Massachusetts,MA,,Hampshire County,county,
 852,60.0,66.0,30.0,33.0,,,New Haven,CT,Trader,New Haven County,town,60.66
 853,44.0,57.0,22.0,28.0,29.0,12.0,Lyme,CT,,New London County,town,44.57
 854,128.0,65.0,64.0,33.0,134.0,60.0,Norwich,CT,,New London County,town,128.65
@@ -864,7 +864,7 @@
 862,1307.0,82.0,653.0,91.0,941.0,61.0,Hartford,CT,Merchant,Hartford County,town,1307.82
 863,225.0,22.0,112.0,61.0,60.0,82.0,Waterbury,CT,,New Haven County,town,225.22
 864,54.0,19.0,27.0,10.0,55.0,62.0,Hartford,CT,Merchant,Hartford County,town,54.19
-865,219.0,43.0,109.0,72.0,167.0,50.0,Long Meadow Massachusetts,MA,,Hampden County,county,219.43
+865,219.0,43.0,109.0,72.0,167.0,50.0,Long Meadow Massachusetts,MA,,Hampshire County,county,219.43
 866,31.0,7.0,15.0,54.0,,,New Haven,CT,,New Haven County,town,31.07
 867,15.0,81.0,7.0,91.0,11.0,38.0,Hartford,CT,,Hartford County,town,15.81
 868,94.0,13.0,47.0,6.0,103.0,26.0,Hartford,CT,Broker,Hartford County,town,94.13
@@ -946,7 +946,7 @@
 944,258.0,25.0,129.0,13.0,69.0,72.0,New Milford,CT,Farmer,Litchfield County,town,258.25
 945,658.0,47.0,329.0,23.0,558.0,50.0,Norwich,CT,,New London County,town,658.47
 946,51.0,36.0,25.0,68.0,36.0,97.0,Lebanon,CT,Farmer,New London County,town,51.36
-947,208.0,37.0,104.0,19.0,131.0,84.0,Charleston State of New Hampshire,NH,,Sullivan County,town,208.37
+947,208.0,37.0,104.0,19.0,131.0,84.0,Charleston State of New Hampshire,NH,,Cheshire County,town,208.37
 948,60.0,23.0,30.0,62.0,,,Saybrook,CT,,Middlesex County,town,60.23
 949,,,,,88.0,14.0,Hartford,CT,,Hartford County,town,
 950,,,,,68.0,73.0,Glastonbury,CT,Widow,Hartford County,town,
@@ -1009,11 +1009,11 @@
 1007,1.0,95.1133,1.0,47.5567,,0.0,Savannah,GA,Merchant,Chatham County,town,1.951133
 1008,1.0,890.0,1.0,445.0,1.0,570.7,,GA,,,,9.9
 1009,1.0,90.3,1.0,45.1,1.0,93.5,Savannah,GA,Merchant,Chatham County,town,1.903
-1010,1.0,1580.63,1.0,790.31,1.0,1818.62,Charleston,SC,,Berkeley County,town,16.8063
+1010,1.0,1580.63,1.0,790.31,1.0,1818.62,Charleston,SC,,Charleston County,town,16.8063
 1011,1.0,965.91,1.0,482.95,1.0,1110.37,Philadelphia,PA,,Philadelphia County,town,10.6591
 1012,1.0,249.77,1.0,124.89,1.0,273.65,Savannah,GA,,Chatham County,town,3.4977
 1013,1.0,58.76,1.0,29.38,1.0,64.17,Maryland,MD,,,state,1.5876000000000001
-1014,1.0,47.48,1.0,23.75,1.0,51.9,Charleston,SC,,Berkeley County,town,1.4747999999999999
+1014,1.0,47.48,1.0,23.75,1.0,51.9,Charleston,SC,,Charleston County,town,1.4747999999999999
 1015,1.0,114.6,1.0,57.3,1.0,123.94,Savannah,GA,,Chatham County,town,2.146
 1016,1.0,50.0,1.0,25.0,1.0,43.32,New York,NY,,,state,1.5
 1017,1.0,227.5133,1.0,113.7533,,,Effingham County,GA,,Effingham County,county,3.275133
@@ -1021,15 +1021,15 @@
 1019,1.0,249.7733,1.0,124.8833,1.0,273.65,New York,NY,,,state,3.497733
 1020,1.0,46.7633,1.0,23.3833,1.0,63.34,New York,NY,Merchants,,state,1.467633
 1021,1.0,129.6533,1.0,64.8233,1.0,144.96,Savannah,GA,Merchants,Chatham County,town,2.296533
-1022,1.0,322.7433,1.0,161.3733,1.0,349.98,Charleston  South Carolina,SC,,Berkeley County,county,4.2274329999999996
-1023,1.0,333.08,1.0,166.54,1.0,359.55,Charleston  South Carolina,SC,,Berkeley County,county,4.3308
+1022,1.0,322.7433,1.0,161.3733,1.0,349.98,Charleston  South Carolina,SC,,Charleston County,county,4.2274329999999996
+1023,1.0,333.08,1.0,166.54,1.0,359.55,Charleston  South Carolina,SC,,Charleston County,county,4.3308
 1024,1.0,209.8633,1.0,104.9333,1.0,241.38,Savannah,GA,Merchant,Chatham County,town,3.098633
 1025,1.0,102.14,1.0,51.07,1.0,117.34,Philadelphia,PA,Mariner,Philadelphia County,town,2.0214
 1026,1.0,10108.9033,1.0,5054.4533,1.0,2729.4,Augusta,GA,Esq,Richmond County,town,102.089033
 1027,1.0,114.733,1.0,57.333,1.0,124.45,Savannah,GA,Merchant,Chatham County,town,2.14733
-1028,1.0,2830.92,1.0,1415.46,1.0,3250.35,Charleston South Carolina,SC,,Berkeley County,town,29.3092
-1029,1.0,1303.9633,1.0,651.9833,1.0,1425.59,Charleston South Carolina,SC,,Berkeley County,town,14.039632999999998
-1030,1.0,914.24,1.0,457.12,1.0,995.99,Charleston South Carolina,SC,,Berkeley County,town,10.1424
+1028,1.0,2830.92,1.0,1415.46,1.0,3250.35,Charleston South Carolina,SC,,Charleston County,town,29.3092
+1029,1.0,1303.9633,1.0,651.9833,1.0,1425.59,Charleston South Carolina,SC,,Charleston County,town,14.039632999999998
+1030,1.0,914.24,1.0,457.12,1.0,995.99,Charleston South Carolina,SC,,Charleston County,town,10.1424
 1031,1.0,2241.64,1.0,1120.82,1.0,2552.07,,,,,,23.4164
 1032,1.0,3987.9033,1.0,1993.9533,1.0,3625.67,South Carolina,SC,Esq,,state,40.879033
 1033,1.0,5.3033,1.0,2.6533,,,,,,,,1.053033
@@ -1038,21 +1038,21 @@
 1036,17.0,256.04,13.0,128.02,1.0,184.27,South Carolina,SC,,,state,19.5604
 1037,17.0,74.5533,13.0,37.2733,14.0,81.66,South Carolina,SC,,,state,17.745533
 1038,17.0,107.8,13.0,53.9,14.0,124.14,Savannah,GA,,Chatham County,town,18.078
-1039,17.0,150.0,13.0,75.0,14.0,129.1,Charleston,SC,Merchant,Berkeley County,town,18.5
-1040,17.0,1067.92,13.0,533.96,14.0,1165.92,Charleston,SC,Merchant,Berkeley County,town,27.6792
+1039,17.0,150.0,13.0,75.0,14.0,129.1,Charleston,SC,Merchant,Charleston County,town,18.5
+1040,17.0,1067.92,13.0,533.96,14.0,1165.92,Charleston,SC,Merchant,Charleston County,town,27.6792
 1041,17.0,111.24,13.0,55.62,14.0,128.29,,,,,,18.1124
 1042,17.0,1448.14,13.0,724.07,14.0,1586.07,,,,,,31.4814
 1043,17.0,182.95,13.0,91.48,14.0,199.58,,,,,,18.8295
 1044,17.0,895.133,13.0,447.5033,14.0,976.7,South Carolina,SC,,,state,25.95133
 1045,17.0,368.3433,13.0,184.1733,14.0,409.44,,,,,,20.683433
-1046,17.0,351.6233,13.0,175.8133,14.0,384.09,Portsmouth Virginia,VA,Merchants,Norfolk County,town,20.516233
+1046,17.0,351.6233,13.0,175.8133,14.0,384.09,Portsmouth Virginia,VA,Merchants,Rockingham County,town,20.516233
 1047,17.0,5.9133,13.0,2.9533,,,,,,,,17.059133
 1048,17.0,8.6833,13.0,4.3433,,,,,,,,17.086833
-1049,17.0,170.8,13.0,85.4,14.0,186.31,Charleston,SC,,Berkeley County,town,18.708
+1049,17.0,170.8,13.0,85.4,14.0,186.31,Charleston,SC,,Charleston County,town,18.708
 1050,17.0,195.02,13.0,97.51,14.0,212.82,Carolina,SC,Excuetor,,,18.9502
-1051,17.0,106.8233,13.0,53.4133,14.0,122.92,Columbia County,GA,,Columbia County,county,18.068233
+1051,17.0,106.8233,13.0,53.4133,14.0,122.92,Columbia County,GA,,Richmond County,county,18.068233
 1052,17.0,66.5733,13.0,33.2833,14.0,76.4,Baltimore,MD,Esq,Baltimore County,town,17.665733
-1053,17.0,133.32,13.0,66.66,14.0,145.84,Charleston,SC,,Berkeley County,town,18.3332
+1053,17.0,133.32,13.0,66.66,14.0,145.84,Charleston,SC,,Charleston County,town,18.3332
 1054,17.0,140.32,13.0,70.16,14.0,127.93,Savannah,GA,,Chatham County,town,18.4032
 1055,17.0,118.5533,13.0,59.2733,,,,,,,,18.185533
 1056,17.0,949.1333,13.0,474.5633,14.0,1092.11,South Carolina,SC,,,state,26.491332999999997
@@ -1062,11 +1062,11 @@
 1060,17.0,45.62,13.0,22.81,,,,,,,,17.4562
 1061,20.0,651.86,13.0,325.93,15.0,708.89,,,,,,26.5186
 1062,20.0,26.12,16.0,13.06,,,Savannah,GA,Merchant,Chatham County,town,20.2612
-1063,20.0,370.81,16.0,185.41,15.0,327.55,Charleston,SC,Merchant,Berkeley County,town,23.7081
-1064,20.0,318.64,16.0,159.32,15.0,348.81,Charleston,SC,Merchant,Berkeley County,town,23.1864
-1065,20.0,60.58,16.0,30.29,15.0,69.21,Charleston,SC,Merchant,Berkeley County,town,20.6058
-1066,20.0,143.27,16.0,71.63,15.0,156.05,Charleston,SC,Merchants,Berkeley County,town,21.4327
-1067,20.0,180.47,16.0,90.24,15.0,207.93,Charleston,SC,Merchant,Berkeley County,town,21.8047
+1063,20.0,370.81,16.0,185.41,15.0,327.55,Charleston,SC,Merchant,Charleston County,town,23.7081
+1064,20.0,318.64,16.0,159.32,15.0,348.81,Charleston,SC,Merchant,Charleston County,town,23.1864
+1065,20.0,60.58,16.0,30.29,15.0,69.21,Charleston,SC,Merchant,Charleston County,town,20.6058
+1066,20.0,143.27,16.0,71.63,15.0,156.05,Charleston,SC,Merchants,Charleston County,town,21.4327
+1067,20.0,180.47,16.0,90.24,15.0,207.93,Charleston,SC,Merchant,Charleston County,town,21.8047
 1068,20.0,180.47,16.0,90.24,15.0,207.93,South Carolina,SC,Mariner,,state,21.8047
 1069,20.0,34.55,16.0,17.27,15.0,37.71,New York,NY,Merchant,,state,20.3455
 1070,37.0,18.2,18.0,9.09,,0.0,Augusta,GA,Merchants,Richmond County,town,37.182
@@ -1074,12 +1074,12 @@
 1072,,,,,,,,,,,,
 1073,,58168.2519,,29083.975600000012,,39791.5,,,,,,
 1074,26745.0,77.0,13372.0,88.0,50000.0,51.0,George Town,MD,Merchants,Cecil County,town,26745.77
-1075,2049.0,84.0,1024.0,91.0,1470.0,48.0,Prince Georges County,MD,,Prince George's County,county,2049.84
+1075,2049.0,84.0,1024.0,91.0,1470.0,48.0,Prince Georges County,MD,,Prince Georges County,county,2049.84
 1076,1215.0,45.0,607.0,72.0,1292.0,90.0,Harford County,MD,,Harford County,county,1215.45
-1077,155.0,13.0,77.0,56.0,150.0,91.0,St Marys County,MD,,St Mary's County,county,155.13
-1078,188.0,89.0,94.0,44.0,121.0,12.0,Prince Georges County,MD,,Prince George's County,county,188.89
+1077,155.0,13.0,77.0,56.0,150.0,91.0,St Marys County,MD,,St Marys County,county,155.13
+1078,188.0,89.0,94.0,44.0,121.0,12.0,Prince Georges County,MD,,Prince Georges County,county,188.89
 1079,444.0,67.0,222.0,33.0,448.0,7.0,Annapolis,MD,,Anne Arundel County,town,444.67
-1080,187.0,9.0,93.0,54.0,151.0,53.0,Prince Georges County,MD,,Prince George's County,county,187.09
+1080,187.0,9.0,93.0,54.0,151.0,53.0,Prince Georges County,MD,,Prince Georges County,county,187.09
 1081,4488.0,37.0,2244.0,18.0,5037.0,25.0,Frederick Town,MD,,Frederick County,town,4488.37
 1082,910.0,50.0,455.0,25.0,962.0,84.0,Virginia,VA,,,state,910.5
 1083,439.0,80.0,219.0,89.0,278.0,57.0,Rotterdam,,,,,439.8
@@ -1105,8 +1105,8 @@
 1103,4469.0,88.0,2234.0,93.0,3060.0,94.0,Baltimore Town,MD,,Baltimore County,town,4469.88
 1104,892.0,92.0,446.0,45.0,841.0,93.0,Somerset County,MD,,Somerset County,county,892.92
 1105,812.0,33.0,406.0,16.0,999.0,45.0,Baltimore,MD,Merchant,Baltimore County,town,812.33
-1106,161.0,64.0,80.0,82.0,169.0,92.0,Prince Georges County,MD,,Prince George's County,county,161.64
-1107,341.0,8.0,170.0,53.0,265.0,47.0,Bladensburg,MD,Merchant,Prince George's County,town,341.08
+1106,161.0,64.0,80.0,82.0,169.0,92.0,Prince Georges County,MD,,Prince Georges County,county,161.64
+1107,341.0,8.0,170.0,53.0,265.0,47.0,Bladensburg,MD,Merchant,Prince Georges County,town,341.08
 1108,126.0,38.0,63.0,18.0,121.0,76.0,Caroline County,MD,,Caroline County,county,126.38
 1109,16701.0,21.0,8350.0,60.0,17641.0,85.0,Cambridge,MD,,Dorchester County,town,16701.21
 1110,1122.0,48.0,561.0,24.0,761.0,65.0,Annapolis,MD,Shoemaker,Anne Arundel County,town,1122.48
@@ -1134,7 +1134,7 @@
 1132,359.0,81.0,179.0,90.0,307.0,56.0,Baltimore Town,MD,,Baltimore County,town,359.81
 1133,1626.0,48.0,813.0,24.0,878.0,30.0,Calver County,MD,,Calvert County,county,1626.48
 1134,389.0,51.0,194.0,75.0,377.0,7.0,,,,,,389.51
-1135,8657.0,21.0,4328.0,60.0,20478.0,84.0,Queen Annes County,MD,,Queen Anne's County,county,8657.21
+1135,8657.0,21.0,4328.0,60.0,20478.0,84.0,Queen Annes County,MD,,Queen Annes County,county,8657.21
 1136,135.0,56.0,67.0,77.0,580.0,92.0,Harford County,MD,,Harford County,county,135.56
 1137,286.0,67.0,143.0,33.0,266.0,52.0,Caroline County,MD,,Caroline County,county,286.67
 1138,5.0,32.0,2.0,66.0,,,Baltimore County,MD,,Baltimore County,county,5.32
@@ -1142,14 +1142,14 @@
 1140,2648.0,89.0,1324.0,44.0,1853.0,55.0,Charles County,MD,,Charles County,county,2648.89
 1141,486.0,34.0,243.0,17.0,543.0,16.0,Anne Arundel County,MD,,Anne Arundel County,county,486.34
 1142,39.0,11.0,19.0,55.0,41.0,57.0,Montgomery County,MD,,Montgomery County,county,39.11
-1143,67.0,34.0,33.0,67.0,65.0,72.0,St Marys County,MD,,St Mary's County,county,67.34
+1143,67.0,34.0,33.0,67.0,65.0,72.0,St Marys County,MD,,St Marys County,county,67.34
 1144,268.0,88.0,134.0,43.0,280.0,93.0,Harford County,MD,,Harford County,county,268.88
 1145,125.0,,62.0,50.0,110.0,58.0,Baltimore County,MD,,Baltimore County,county,
 1146,197.0,4.0,98.0,51.0,139.0,4.0,Frederick County,MD,,Frederick County,county,197.04
 1147,282.0,67.0,141.0,33.0,201.0,27.0,Annapolis,MD,,Anne Arundel County,town,282.67
 1148,300.0,67.0,150.0,33.0,216.0,97.0,,,,,,300.67
 1149,195.0,11.0,97.0,55.0,148.0,58.0,Annapolis,MD,,Anne Arundel County,town,195.11
-1150,504.0,74.0,252.0,37.0,488.0,4.0,Prince Georges County,MD,,Prince George's County,county,504.74
+1150,504.0,74.0,252.0,37.0,488.0,4.0,Prince Georges County,MD,,Prince Georges County,county,504.74
 1151,744.0,47.0,372.0,23.0,531.0,62.0,Annapolis,MD,,Anne Arundel County,town,744.47
 1152,466.0,67.0,233.0,33.0,284.0,43.0,Talbot County,MD,,Talbot County,county,466.67
 1153,196.0,44.0,98.0,22.0,140.0,43.0,Calvert County,MD,,Calvert County,county,196.44
@@ -1189,16 +1189,16 @@
 1187,364.0,16.0,182.0,7.0,98.0,31.0,Baltimore County,MD,,Baltimore County,county,364.16
 1188,1050.0,28.0,525.0,13.0,283.0,56.0,Baltimore County,MD,,Baltimore County,county,1050.28
 1189,188.0,89.0,94.0,44.0,134.0,32.0,Annapolis,MD,,Anne Arundel County,town,188.89
-1190,363.0,23.0,181.0,61.0,268.0,7.0,Bladensburg,MD,,Prince George's County,town,363.23
+1190,363.0,23.0,181.0,61.0,268.0,7.0,Bladensburg,MD,,Prince Georges County,town,363.23
 1191,155.0,83.0,77.0,91.0,132.0,45.0,Cecil County,MD,,Cecil County,county,155.83
 1192,275.0,56.0,137.0,77.0,3173.0,74.0,Annapolis,MD,,Anne Arundel County,town,275.56
 1193,1237.0,15.0,618.0,57.0,867.0,28.0,Baltimore Town,MD,,Baltimore County,town,1237.15
 1194,52.0,99.0,26.0,49.0,51.0,63.0,Montgomery County,MD,,Montgomery County,county,52.99
-1195,2822.0,88.0,1411.0,44.0,847.0,53.0,Prince Georges County,MD,,Prince George's County,county,2822.88
-1196,84.0,18.0,42.0,9.0,69.0,20.0,Prince Georges County,MD,,Prince George's County,county,84.18
+1195,2822.0,88.0,1411.0,44.0,847.0,53.0,Prince Georges County,MD,,Prince Georges County,county,2822.88
+1196,84.0,18.0,42.0,9.0,69.0,20.0,Prince Georges County,MD,,Prince Georges County,county,84.18
 1197,188.0,89.0,94.0,44.0,134.0,32.0,Baltimore Town,MD,,Baltimore County,town,188.89
 1198,1089.0,54.0,544.0,77.0,462.0,86.0,,,,,,1089.54
-1199,71.0,38.0,35.0,69.0,51.0,12.0,St Marys County,MD,,St Mary's County,county,71.38
+1199,71.0,38.0,35.0,69.0,51.0,12.0,St Marys County,MD,,St Marys County,county,71.38
 1200,1538.0,62.0,769.0,31.0,1108.0,63.0,Montgomery County,MD,,Montgomery County,county,1538.62
 1201,957.0,54.0,478.0,77.0,686.0,21.0,Frederick County,MD,,Frederick County,county,957.54
 1202,5811.0,99.0,2905.0,99.0,8293.0,98.0,Annapolis,MD,,Anne Arundel County,town,5811.99
@@ -1208,18 +1208,18 @@
 1206,5877.0,58.0,2938.0,79.0,2825.0,76.0,Annapolis,MD,,Anne Arundel County,town,5877.58
 1207,2696.0,87.0,1348.0,43.0,1559.0,53.0,Annapolis,MD,,Anne Arundel County,town,2696.87
 1208,4907.0,90.0,2453.0,94.0,1468.0,98.0,Annapolis,MD,,Anne Arundel County,town,4907.9
-1209,160.0,,80.0,,115.0,80.0,Prince Georges County,MD,,Prince George's County,county,
+1209,160.0,,80.0,,115.0,80.0,Prince Georges County,MD,,Prince Georges County,county,
 1210,,,,,52.0,34.0,Annapolis,MD,,Anne Arundel County,town,
 1211,64.0,76.0,32.0,38.0,68.0,82.0,Montgomery County,MD,,Montgomery County,county,64.76
 1212,,,,,5291.0,38.0,,,,,,
 1213,,,,,1924.0,64.0,,,,,,
-1214,16.0,,8.0,,,,Prince Georges County,MD,,Prince George's County,county,
+1214,16.0,,8.0,,,,Prince Georges County,MD,,Prince Georges County,county,
 1215,15.0,42.0,7.0,70.0,,,Anne Arundel County,MD,,Anne Arundel County,county,15.42
 1216,1936.0,28.0,968.0,14.0,,,Virgina,VA,,,,1936.28
 1217,2079.0,60.0,1039.0,90.0,1368.0,41.0,Dorchester County,MD,,Dorchester County,county,2079.6
-1218,118.0,22.0,59.0,11.0,80.0,,Prince Georges County,MD,,Prince George's County,county,118.22
+1218,118.0,22.0,59.0,11.0,80.0,,Prince Georges County,MD,,Prince Georges County,county,118.22
 1219,1235.0,92.0,617.0,95.0,933.0,73.0,Cambridge,MD,,Dorchester County,town,1235.92
-1220,126.0,1.0,63.0,,91.0,24.0,Prince Georges County,MD,,Prince George's County,county,126.01
+1220,126.0,1.0,63.0,,91.0,24.0,Prince Georges County,MD,,Prince Georges County,county,126.01
 1221,504.0,28.0,252.0,13.0,554.0,6.0,Annapolis,MD,Merchant,Anne Arundel County,town,504.28
 1222,3177.0,36.0,1588.0,68.0,2612.0,45.0,Annapolis,MD,,Anne Arundel County,town,3177.36
 1223,158.0,1.0,79.0,,158.0,10.0,Pennsylvania,PA,,,state,158.01
@@ -1232,7 +1232,7 @@
 1230,262138.0,43.0,131069.0,21.0,152239.0,70.0,Annapolis,MD,,Anne Arundel County,town,262138.43
 1231,272.0,48.0,136.0,24.0,278.0,11.0,Baltimore,MD,Merchant,Baltimore County,town,272.48
 1232,2202.0,48.0,1101.0,24.0,2129.0,56.0,Baltimore County,MD,,Baltimore County,county,2202.48
-1233,913.0,48.0,456.0,73.0,644.0,64.0,St Marys County,MD,,St Mary's County,county,913.48
+1233,913.0,48.0,456.0,73.0,644.0,64.0,St Marys County,MD,,St Marys County,county,913.48
 1234,2217.0,40.0,1108.0,70.0,1721.0,34.0,Annapolis,MD,,Anne Arundel County,town,2217.4
 1235,803.0,11.0,401.0,55.0,811.0,45.0,Anne Arundel County,MD,,Anne Arundel County,county,803.11
 1236,2521.0,14.0,1260.0,57.0,1726.0,90.0,Worcester County,MD,,Worcester County,county,2521.14
@@ -1242,7 +1242,7 @@
 1240,1619.0,36.0,809.0,68.0,1148.0,37.0,Dorchester County,MD,,Dorchester County,county,1619.36
 1241,15.0,,7.0,50.0,14.0,45.0,Anne Arundel County,MD,,Anne Arundel County,county,
 1242,257.0,11.0,128.0,55.0,181.0,21.0,Anne Arundel County,MD,,Anne Arundel County,county,257.11
-1243,275.0,32.0,137.0,65.0,227.0,38.0,St Marys County,MD,,St Mary's County,county,275.32
+1243,275.0,32.0,137.0,65.0,227.0,38.0,St Marys County,MD,,St Marys County,county,275.32
 1244,121.0,52.0,60.0,75.0,117.0,58.0,Baltimore,MD,,Baltimore County,town,121.52
 1245,243.0,94.0,121.0,96.0,65.0,85.0,Alexandria State of Virginia,VA,,Fairfax County,county,243.94
 1246,133.0,15.0,66.0,57.0,130.0,47.0,Annapolis,MD,,Anne Arundel County,town,133.15
@@ -1252,9 +1252,9 @@
 1250,31.0,70.0,15.0,85.0,25.0,32.0,Annapolis,MD,,Anne Arundel County,town,31.7
 1251,323.0,84.0,161.0,91.0,315.0,1.0,Dorchester County,MD,,Dorchester County,county,323.84
 1252,,,,,2127.0,85.0,,,,,,
-1253,735.0,46.0,367.0,72.0,530.0,52.0,St Marys County,MD,,St Mary's County,county,735.46
+1253,735.0,46.0,367.0,72.0,530.0,52.0,St Marys County,MD,,St Marys County,county,735.46
 1254,1503.0,32.0,,,1119.0,53.0,Baltimore,MD,Merchant,Baltimore County,town,1503.32
-1255,261.0,48.0,130.0,74.0,286.0,81.0,Prince Georges County,MD,,Prince George's County,county,261.48
+1255,261.0,48.0,130.0,74.0,286.0,81.0,Prince Georges County,MD,,Prince Georges County,county,261.48
 1256,333.0,33.0,,,,,Annapolis,MD,,Anne Arundel County,town,333.33
 1257,1664.0,60.0,832.0,30.0,1205.0,15.0,Annapolis,MD,,Anne Arundel County,town,1664.6
 1258,73.0,36.0,36.0,68.0,72.0,67.0,Calvert County,MD,,Calvert County,county,73.36
@@ -1264,19 +1264,19 @@
 1262,,,177.0,54.0,,,Baltimore,MD,,Baltimore County,town,
 1263,3.0,44.0,1.0,72.0,,,Cecil County,MD,,Cecil County,county,3.44
 1264,3013.0,48.0,1506.0,74.0,2125.0,15.0,,,,,,3013.48
-1265,620.0,47.0,310.0,24.0,1062.0,10.0,Queen Annes County,MD,,Queen Anne's County,county,620.47
+1265,620.0,47.0,310.0,24.0,1062.0,10.0,Queen Annes County,MD,,Queen Annes County,county,620.47
 1266,68.0,84.0,34.0,42.0,66.0,32.0,,,,,,68.84
 1267,80.0,,40.0,,57.0,60.0,Annapolis,MD,,Anne Arundel County,town,
 1268,768.0,7.0,384.0,3.0,540.0,86.0,Washington County,MD,,Washington County,county,768.07
 1269,803.0,96.0,401.0,98.0,1307.0,61.0,George town,MD,,Cecil County,town,803.96
-1270,55.0,50.0,27.0,75.0,,,Prince Georges County,MD,,Prince George's County,county,55.5
+1270,55.0,50.0,27.0,75.0,,,Prince Georges County,MD,,Prince Georges County,county,55.5
 1271,610.0,97.0,305.0,48.0,589.0,5.0,,,,,,610.97
 1272,1034.0,12.0,517.0,6.0,558.0,42.0,Virginia,VA,,,state,1034.12
 1273,165.0,92.0,82.0,96.0,176.0,23.0,Virginia,VA,,,state,165.92
 1274,3128.0,30.0,1564.0,15.0,1605.0,60.0,George Town,MD,Merchants,Cecil County,town,3128.3
 1275,46.0,20.0,23.0,10.0,,,Frederick County,MD,,Frederick County,county,46.2
 1276,15.0,62.0,7.0,81.0,,,Frederick County,MD,,Frederick County,county,15.62
-1277,333.0,68.0,166.0,84.0,303.0,87.0,Prince Georges County,MD,,Prince George's County,county,333.68
+1277,333.0,68.0,166.0,84.0,303.0,87.0,Prince Georges County,MD,,Prince Georges County,county,333.68
 1278,32.0,84.0,16.0,42.0,11.0,56.0,Frederick County,MD,,Frederick County,county,32.84
 1279,22.0,22.0,11.0,11.0,24.0,93.0,Frederick County,MD,,Frederick County,county,22.22
 1280,38.0,72.0,19.0,36.0,38.0,47.0,Frederick County,MD,,Frederick County,county,38.72
@@ -1292,9 +1292,9 @@
 1290,90.0,78.0,45.0,39.0,93.0,2.0,Frederick County,MD,,Frederick County,county,90.78
 1291,39.0,36.0,19.0,68.0,41.0,87.0,Annapolis,MD,,Anne Arundel County,town,39.36
 1292,258.0,20.0,129.0,10.0,248.0,47.0,Baltimore,MD,,Baltimore County,town,258.2
-1293,864.0,39.0,432.0,19.0,807.0,86.0,St Marys County,MD,,St Mary's County,county,864.39
+1293,864.0,39.0,432.0,19.0,807.0,86.0,St Marys County,MD,,St Marys County,county,864.39
 1294,369.0,70.0,184.0,84.0,360.0,94.0,Virginia,VA,,,state,369.7
-1295,221.0,67.0,110.0,83.0,212.0,57.0,Prince Georges County,MD,,Prince George's County,county,221.67
+1295,221.0,67.0,110.0,83.0,212.0,57.0,Prince Georges County,MD,,Prince Georges County,county,221.67
 1296,143.0,78.0,71.0,88.0,105.0,80.0,Baltimore County,MD,,Baltimore County,county,143.78
 1297,1283.0,99.0,641.0,99.0,903.0,22.0,Charles County,MD,,Charles County,county,1283.99
 1298,2416.0,60.0,1208.0,30.0,1857.0,50.0,,,,,,2416.6
@@ -1305,7 +1305,7 @@
 1303,115.0,85.0,57.0,92.0,123.0,47.0,Annapolis,MD,,Anne Arundel County,town,115.85
 1304,1085.0,24.0,542.0,62.0,1321.0,25.0,Baltimore Town,MD,Merchant,Baltimore County,town,1085.24
 1305,50.0,,25.0,,46.0,25.0,Annapolis,MD,,Anne Arundel County,town,
-1306,912.0,45.0,456.0,22.0,971.0,43.0,Prince Georges County,MD,,Prince George's County,county,912.45
+1306,912.0,45.0,456.0,22.0,971.0,43.0,Prince Georges County,MD,,Prince Georges County,county,912.45
 1307,28.0,4.0,14.0,3.0,29.0,93.0,,,,,,28.04
 1308,33.0,34.0,16.0,66.0,35.0,3.0,Frederick County,MD,,Frederick County,county,33.34
 1309,1390.0,89.0,695.0,45.0,556.0,70.0,,,the estate of the late,,,1390.89
@@ -1336,14 +1336,14 @@
 1334,106.0,66.0,53.0,34.0,81.0,60.0,Annapolis,MD,,Anne Arundel County,town,106.66
 1335,967.0,94.0,483.0,97.0,540.0,76.0,Baltimore,MD,,Baltimore County,town,967.94
 1336,4206.0,29.0,2103.0,14.0,3754.0,77.0,Annapolis,MD,,Anne Arundel County,town,4206.29
-1337,39.0,48.0,19.0,74.0,32.0,31.0,St Marys County,MD,,St Mary's County,county,39.48
+1337,39.0,48.0,19.0,74.0,32.0,31.0,St Marys County,MD,,St Marys County,county,39.48
 1338,515.0,55.0,257.0,77.0,360.0,75.0,Charles County,MD,,Charles County,county,515.55
 1339,,,,,1068.0,,Baltimore,MD,,Baltimore County,town,
 1340,550.0,,275.0,,371.0,38.0,Charles County,MD,,Charles County,county,
 1341,133.0,24.0,66.0,62.0,108.0,65.0,Frederick County,MD,,Frederick County,county,133.24
 1342,233.0,70.0,116.0,85.0,173.0,62.0,Baltimore County,MD,,Baltimore County,county,233.7
 1343,88.0,24.0,44.0,12.0,83.0,76.0,Anne Arundel County,MD,,Anne Arundel County,county,88.24
-1344,15.0,53.0,7.0,76.0,14.0,83.0,Prince Georges County,MD,,Prince George's County,county,15.53
+1344,15.0,53.0,7.0,76.0,14.0,83.0,Prince Georges County,MD,,Prince Georges County,county,15.53
 1345,21.0,66.0,10.0,83.0,76.0,87.0,Anne Arundel County,MD,,Anne Arundel County,county,21.66
 1346,415.0,36.0,207.0,68.0,389.0,88.0,Harford County,MD,,Harford County,county,415.36
 1347,44.0,84.0,22.0,42.0,43.0,95.0,Harford County,MD,Executor of Moses Ruth,Harford County,county,44.84
@@ -1352,7 +1352,7 @@
 1350,11.0,66.0,5.0,83.0,11.0,5.0,Harford County,MD,,Harford County,county,11.66
 1351,1573.0,33.0,786.0,66.0,1008.0,90.0,Harford County,MD,,Harford County,county,1573.33
 1352,183.0,49.0,91.0,74.0,190.0,40.0,,,,,,183.49
-1353,,,10580.0,28.0,,,Prince Georges County,MD,,Prince George's County,county,
+1353,,,10580.0,28.0,,,Prince Georges County,MD,,Prince Georges County,county,
 1354,188.0,88.0,94.0,44.0,134.0,32.0,Annapolis,MD,,Anne Arundel County,town,188.88
 1355,283.0,33.0,141.0,66.0,261.0,57.0,Baltimore,MD,,Baltimore County,town,283.33
 1356,161.0,77.0,80.0,88.0,117.0,7.0,Charles County,MD,,Charles County,county,161.77
@@ -1363,7 +1363,7 @@
 1361,179.0,25.0,,,130.0,64.0,Montgomery County,MD,,Montgomery County,county,179.25
 1362,153.0,54.0,76.0,77.0,146.0,96.0,Montgomery County,MD,,Montgomery County,county,153.54
 1363,,,3192.0,66.0,,,,,,,,
-1364,732.0,32.0,366.0,16.0,493.0,86.0,Prince Georges County,MD,,Prince George's County,county,732.32
+1364,732.0,32.0,366.0,16.0,493.0,86.0,Prince Georges County,MD,,Prince Georges County,county,732.32
 1365,,,,,753.0,35.0,,,,,,
 1366,179.0,48.0,89.0,74.0,115.0,32.0,Annapolis,MD,,Anne Arundel County,town,179.48
 1367,169.0,14.0,84.0,57.0,164.0,51.0,Frederick County,MD,,Frederick County,county,169.14
@@ -1387,7 +1387,7 @@
 1385,,,4493.0,12.0,,,Annapolis,MD,,Anne Arundel County,town,
 1386,5414.0,49.0,2707.0,24.0,4606.0,32.0,Anne Arundel County,MD,,Anne Arundel County,county,5414.49
 1387,38.0,12.0,19.0,6.0,37.0,12.0,Annapolis,MD,,Anne Arundel County,town,38.12
-1388,2818.0,40.0,1409.0,20.0,1889.0,95.0,Prince Georges County,MD,,Prince George's County,county,2818.4
+1388,2818.0,40.0,1409.0,20.0,1889.0,95.0,Prince Georges County,MD,,Prince Georges County,county,2818.4
 1389,297.0,67.0,148.0,83.0,,,Montgomery County,MD,,Montgomery County,county,297.67
 1390,2363.0,94.0,1181.0,97.0,1804.0,50.0,Virginia,VA,,,state,2363.94
 1391,2673.0,42.0,,,606.0,9.0,Annapolis,MD,,Anne Arundel County,town,2673.42
@@ -1403,8 +1403,8 @@
 1401,55.0,3.0,27.0,52.0,57.0,78.0,,,,,,55.03
 1402,459.0,40.0,229.0,70.0,256.0,36.0,Dorchester County,MD,,Dorchester County,county,459.4
 1403,267.0,62.0,133.0,81.0,234.0,86.0,Anne Arundel County,MD,,Anne Arundel County,county,267.62
-1404,154.0,58.0,77.0,29.0,321.0,17.0,Prince Georges County,MD,,Prince George's County,county,154.58
-1405,,,1076.0,54.0,,,Prince Georges County,MD,,Prince George's County,county,
+1404,154.0,58.0,77.0,29.0,321.0,17.0,Prince Georges County,MD,,Prince Georges County,county,154.58
+1405,,,1076.0,54.0,,,Prince Georges County,MD,,Prince Georges County,county,
 1406,106.0,66.0,53.0,33.0,81.0,60.0,Charles County,MD,,Charles County,county,106.66
 1407,471.0,83.0,235.0,91.0,323.0,3.0,Dorchester County,MD,,Dorchester County,county,471.83
 1408,600.0,88.0,300.0,44.0,586.0,34.0,,,Executor of Nicholas Gassaway,,,600.88
@@ -1419,10 +1419,10 @@
 1417,1077.0,,538.0,50.0,,,Annapolis,MD,,Anne Arundel County,town,
 1418,106.0,66.0,53.0,34.0,81.0,60.0,Baltimore,MD,,Baltimore County,town,106.66
 1419,296.0,2.0,148.0,1.0,204.0,74.0,Annapolis,MD,,Anne Arundel County,town,296.02
-1420,675.0,98.0,337.0,99.0,704.0,4.0,Prince Georges County,MD,,Prince George's County,county,675.98
+1420,675.0,98.0,337.0,99.0,704.0,4.0,Prince Georges County,MD,,Prince Georges County,county,675.98
 1421,505.0,60.0,252.0,80.0,667.0,62.0,Montgomery County,MD,,Montgomery County,county,505.6
 1422,89.0,82.0,44.0,91.0,44.0,68.0,Baltimore,MD,,Baltimore County,town,89.82
-1423,273.0,22.0,136.0,61.0,257.0,45.0,St Marys County,MD,,St Mary's County,county,273.22
+1423,273.0,22.0,136.0,61.0,257.0,45.0,St Marys County,MD,,St Marys County,county,273.22
 1424,,,,,407.0,85.0,Baltimore County,MD,Merchant,Baltimore County,county,
 1425,,,,,5849.0,6.0,Baltimore County,MD,Merchant,Baltimore County,county,
 1426,105.0,15.0,52.0,57.0,78.0,25.0,Baltimore Town,MD,,Baltimore County,town,105.15
@@ -1431,15 +1431,15 @@
 1429,165.0,89.0,82.0,94.0,666.0,21.0,Virginia,VA,,,state,165.89
 1430,38.0,73.0,19.0,36.0,41.0,14.0,Talbot County,MD,,Talbot County,county,38.73
 1431,1118.0,62.0,559.0,31.0,366.0,70.0,Annapolis,MD,,Anne Arundel County,town,1118.62
-1432,22.0,50.0,11.0,25.0,22.0,96.0,Prince Georges County,MD,,Prince George's County,county,22.5
-1433,220.0,88.0,110.0,43.0,299.0,1.0,Queen Annes County,MD,,Queen Anne's County,county,220.88
+1432,22.0,50.0,11.0,25.0,22.0,96.0,Prince Georges County,MD,,Prince Georges County,county,22.5
+1433,220.0,88.0,110.0,43.0,299.0,1.0,Queen Annes County,MD,,Queen Annes County,county,220.88
 1434,71.0,67.0,35.0,83.0,64.0,85.0,Baltimore Town,MD,,Baltimore County,town,71.67
 1435,242.0,22.0,121.0,11.0,,,Annapolis,MD,,Anne Arundel County,town,242.22
-1436,110.0,48.0,55.0,24.0,92.0,13.0,Prince Georges County,MD,,Prince George's County,county,110.48
-1437,24.0,85.0,12.0,42.0,26.0,32.0,Prince Georges County,MD,,Prince George's County,county,24.85
+1436,110.0,48.0,55.0,24.0,92.0,13.0,Prince Georges County,MD,,Prince Georges County,county,110.48
+1437,24.0,85.0,12.0,42.0,26.0,32.0,Prince Georges County,MD,,Prince Georges County,county,24.85
 1438,,,,,168.0,52.0,Baltimore,MD,Merchant,Baltimore County,town,
 1439,306.0,5.0,153.0,2.0,225.0,17.0,Charles County,MD,,Charles County,county,306.05
-1440,563.0,47.0,281.0,73.0,598.0,30.0,Prince Georges County,MD,,Prince George's County,county,563.47
+1440,563.0,47.0,281.0,73.0,598.0,30.0,Prince Georges County,MD,,Prince Georges County,county,563.47
 1441,1023.0,24.0,511.0,62.0,758.0,46.0,Harford County,MD,,Harford County,county,1023.24
 1442,82.0,22.0,41.0,11.0,52.0,72.0,Annapolis,MD,,Anne Arundel County,town,82.22
 1443,109619.0,64.0,54809.0,82.0,108192.0,72.0,Annapolis,MD,,Anne Arundel County,town,109619.64
@@ -1452,7 +1452,7 @@
 1450,218.0,44.0,109.0,21.0,201.0,23.0,Annapolis,MD,,Anne Arundel County,town,218.44
 1451,118.0,70.0,59.0,35.0,145.0,98.0,Annapolis,MD,,Anne Arundel County,town,118.7
 1452,115.0,56.0,57.0,77.0,74.0,10.0,,,,,,115.56
-1453,75.0,,37.0,50.0,71.0,52.0,Prince Georges County,MD,Adminstrator of Robert Whitaker,Prince George's County,county,
+1453,75.0,,37.0,50.0,71.0,52.0,Prince Georges County,MD,Adminstrator of Robert Whitaker,Prince Georges County,county,
 1454,170.0,90.0,85.0,44.0,,,Annapolis,MD,,Anne Arundel County,town,170.9
 1455,324.0,97.0,162.0,48.0,,,Annapolis,MD,,Anne Arundel County,town,324.97
 1456,100.0,88.0,50.0,43.0,105.0,65.0,Virginia,VA,,,state,100.88
@@ -1462,24 +1462,24 @@
 1460,1295.0,39.0,647.0,69.0,1492.0,60.0,Anne Arundel County,MD,,Anne Arundel County,county,1295.39
 1461,139.0,42.0,69.0,71.0,48.0,96.0,Baltimore,MD,Merchant,Baltimore County,town,139.42
 1462,17.0,21.0,8.0,61.0,,,Frederick County,MD,,Frederick County,county,17.21
-1463,8.0,90.0,4.0,44.0,45.0,11.0,Prince Georges County,MD,,Prince George's County,county,8.9
+1463,8.0,90.0,4.0,44.0,45.0,11.0,Prince Georges County,MD,,Prince Georges County,county,8.9
 1464,219.0,66.0,109.0,82.0,243.0,42.0,Anne Arundel County,MD,,Anne Arundel County,county,219.66
 1465,33.0,11.0,16.0,55.0,32.0,77.0,Anne Arundel County,MD,,Anne Arundel County,county,33.11
-1466,1989.0,19.0,1137.0,29.0,1912.0,6.0,Prince Georges County,MD,,Prince George's County,county,1989.19
-1467,285.0,41.0,,,,,Prince Georges County,MD,,Prince George's County,county,285.41
+1466,1989.0,19.0,1137.0,29.0,1912.0,6.0,Prince Georges County,MD,,Prince Georges County,county,1989.19
+1467,285.0,41.0,,,,,Prince Georges County,MD,,Prince Georges County,county,285.41
 1468,22.0,21.0,11.0,11.0,,,Annapolis,MD,,Anne Arundel County,town,22.21
-1469,278.0,44.0,139.0,21.0,,,Prince Georges County,MD,,Prince George's County,county,278.44
+1469,278.0,44.0,139.0,21.0,,,Prince Georges County,MD,,Prince Georges County,county,278.44
 1470,81.0,26.0,40.0,62.0,,,Montgomery County,MD,,Montgomery County,county,81.26
 1471,66.0,52.0,33.0,25.0,,,Montgomery County,MD,,Montgomery County,county,66.52
-1472,179.0,25.0,89.0,62.0,149.0,25.0,Queen Annes County,MD,,Queen Anne's County,county,179.25
+1472,179.0,25.0,89.0,62.0,149.0,25.0,Queen Annes County,MD,,Queen Annes County,county,179.25
 1473,56.0,95.0,28.0,48.0,58.0,98.0,Annapolis,MD,,Anne Arundel County,town,56.95
 1474,295.0,5.0,147.0,52.0,154.0,82.0,Virginia,VA,,,state,295.05
 1475,33605.0,38.0,16802.0,69.0,30160.0,83.0,Annapolis,MD,,Anne Arundel County,town,33605.38
 1476,139.0,55.0,69.0,78.0,117.0,1.0,Anne Arundel County,MD,,Anne Arundel County,county,139.55
 1477,53.0,33.0,26.0,67.0,36.0,34.0,,,,,,53.33
 1478,,,1728.0,98.0,,,Frederick Town,MD,,Frederick County,town,
-1479,248.0,92.0,124.0,47.0,156.0,80.0,Prince Georges County,MD,,Prince George's County,county,248.92
-1480,4220.0,63.0,2110.0,30.0,1139.0,54.0,St Marys County,MD,,St Mary's County,county,4220.63
+1479,248.0,92.0,124.0,47.0,156.0,80.0,Prince Georges County,MD,,Prince Georges County,county,248.92
+1480,4220.0,63.0,2110.0,30.0,1139.0,54.0,St Marys County,MD,,St Marys County,county,4220.63
 1481,2138.0,94.0,1069.0,47.0,1418.0,11.0,Baltimore,MD,Merchant,Baltimore County,town,2138.94
 1482,203.0,83.0,101.0,91.0,55.0,3.0,Annapolis,MD,,Anne Arundel County,town,203.83
 1483,83.0,33.0,41.0,67.0,79.0,74.0,Annapolis,MD,,Anne Arundel County,town,83.33
@@ -1489,7 +1489,7 @@
 1487,53.0,64.0,26.0,82.0,19.0,31.0,Annapolis,MD,,Anne Arundel County,town,53.64
 1488,,,,,1191.0,55.0,,,,,,
 1489,,,7689.0,83.0,,,Annapolis,MD,,Anne Arundel County,town,
-1490,,,1879.0,59.0,,,Prince Georges County,MD,,Prince George's County,county,
+1490,,,1879.0,59.0,,,Prince Georges County,MD,,Prince Georges County,county,
 1491,,,,,1050.0,,,,,,,
 1492,284.0,53.0,,,,,Doden Maryland,MD,,,state,284.53
 1493,3078.0,18.0,1539.0,9.0,1619.0,52.0,Annapolis,MD,,Anne Arundel County,town,3078.18
@@ -1597,11 +1597,11 @@
 1595,1330.0,16.0,,,,,Baltimore,MD,Merchant,Baltimore County,town,1330.16
 1596,24.0,62.0,12.0,30.0,18.0,82.0,Annapolis,MD,,Anne Arundel County,town,24.62
 1597,,,,,6.0,64.0,Annapolis,MD,,Anne Arundel County,town,
-1598,4721.0,90.0,,,,,Prince Georges County,MD,,Prince George's County,county,4721.9
+1598,4721.0,90.0,,,,,Prince Georges County,MD,,Prince Georges County,county,4721.9
 1599,115.0,73.0,57.0,86.0,,,,,Adm of William Wedge,,,115.73
 1600,2173.0,86.0,284.0,,,,Annapolis,MD,,Anne Arundel County,town,2173.86
 1601,20000.0,,,,,,George Town,MD,,Cecil County,town,
-1602,1771.0,67.0,254.0,27.0,,,Prince Georges County,MD,,Prince George's County,county,1771.67
+1602,1771.0,67.0,254.0,27.0,,,Prince Georges County,MD,,Prince Georges County,county,1771.67
 1603,3600.0,,,,,,Baltimore,MD,,Baltimore County,town,
 1604,592.0,50.0,,,,,Baltimore,MD,,Baltimore County,town,592.5
 1605,105.0,91.0,52.0,95.0,93.0,39.0,Annapolis,MD,,Anne Arundel County,town,105.91
@@ -1634,7 +1634,7 @@
 1632,159.0,78.0,,,139.0,37.0,Annapolis,MD,,Anne Arundel County,town,159.78
 1633,56.0,46.0,28.0,24.0,54.0,33.0,Annapolis,MD,,Anne Arundel County,town,56.46
 1634,142.0,24.0,75.0,95.0,106.0,43.0,Frederick County Maryland,MD,,Frederick County,county,142.24
-1635,2000.0,0.0,,,,,Prince Georges County,MD,,Prince George's County,county,2000.0
+1635,2000.0,0.0,,,,,Prince Georges County,MD,,Prince Georges County,county,2000.0
 1636,5810.0,98.0,,,,,Annapolis,MD,,Anne Arundel County,town,5810.98
 1637,7332.0,39.0,1017.0,55.0,,,Annapolis,MD,,Anne Arundel County,town,7332.39
 1638,6000.0,0.0,,,,,Annapolis,MD,,Anne Arundel County,town,6000.0
@@ -1668,7 +1668,7 @@
 1666,,,602.0,50.0,,,,,,,,
 1667,,,32.0,8.0,,,Annapolis,MD,,Anne Arundel County,town,
 1668,,,1899.0,13.0,,,Annapolis,MD,,Anne Arundel County,town,
-1669,,,188.0,43.0,100.0,37.0,Prince Georges County,MD,,Prince George's County,county,
+1669,,,188.0,43.0,100.0,37.0,Prince Georges County,MD,,Prince Georges County,county,
 1670,,,3600.0,,,,Annapolis,MD,,Anne Arundel County,town,
 1671,,,109.0,2.0,,,,,,,,
 1672,,,212.0,83.0,,,Annapolis,MD,,Anne Arundel County,town,
@@ -1723,7 +1723,7 @@
 1721,10.0,52.0,5.0,26.0,,,Warren County,NC,,Warren County,county,10.52
 1722,81.0,80.0,40.0,89.0,,,Fayetteville,NC,,Cumberland County,town,81.8
 1723,14.0,94.0,7.0,47.0,,,Wilmington,NC,,New Hanover County,town,14.94
-1724,39.0,13.0,19.0,56.0,,,Petersburg Virginia,VA,,Grant County,county,39.13
+1724,39.0,13.0,19.0,56.0,,,Petersburg Virginia,VA,,Hampshire County,county,39.13
 1725,458.0,54.0,229.0,26.0,512.0,50.0,Edgecombe County,NC,,Edgecombe County,county,458.54
 1726,19.0,56.0,9.0,77.0,20.0,78.0,Pitt County,NC,,Pitt County,county,19.56
 1727,98.0,66.0,49.0,33.0,,,Salisbury,NC,,Rowan County,town,98.66
@@ -1803,8 +1803,8 @@
 1801,1598.0,81.0,799.0,41.0,659.0,99.0,North Hampton,NH,Yeoman,Rockingham County,town,1598.81
 1802,278.0,25.0,139.0,13.0,136.0,28.0,Exeter,NH,Esquire,Rockingham County,town,278.25
 1803,405.0,98.0,202.0,99.0,183.0,20.0,Portsmouth,NH,Merchant,Rockingham County,town,405.98
-1804,832.0,35.0,416.0,18.0,475.0,33.0,Newbury,NH,Esquire,Merrimack County,town,832.35
-1805,5200.0,,2600.0,,2953.0,57.0,Newbury,NH,Esquire,Merrimack County,town,
+1804,832.0,35.0,416.0,18.0,475.0,33.0,Newbury,NH,Esquire,Hillsborough County,town,832.35
+1805,5200.0,,2600.0,,2953.0,57.0,Newbury,NH,Esquire,Hillsborough County,town,
 1806,1066.0,67.0,533.0,33.0,288.0,,Candia,NH,Esquire,Rockingham County,town,1066.67
 1807,361.0,24.0,180.0,62.0,199.0,31.0,Boston,MA,Esquire,Suffolk County,town,361.24
 1808,124.0,64.0,62.0,32.0,83.0,58.0,Portsmouth,NH,Esquire,Rockingham County,town,124.64
@@ -1823,11 +1823,11 @@
 1821,533.0,33.0,266.0,67.0,363.0,33.0,Glouster,NH,Gentleman,,,533.33
 1822,689.0,81.0,344.0,91.0,601.0,57.0,Glouster,NH,Merchant,,,689.81
 1823,676.0,89.0,338.0,45.0,598.0,89.0,Glouster,NH,Esquire,,,676.89
-1824,582.0,35.0,291.0,18.0,218.0,85.0,Newbury,NH,Trader,Merrimack County,town,582.35
-1825,64.0,2.0,32.0,1.0,22.0,60.0,Canterbury,NH,Esquire,Merrimack County,town,64.02
-1826,168.0,55.0,84.0,27.0,45.0,50.0,Canterbury,NH,,Merrimack County,town,168.55
-1827,179.0,43.0,89.0,71.0,48.0,44.0,Canterbury,NH,Trader,Merrimack County,town,179.43
-1828,83.0,83.0,41.0,91.0,22.0,63.0,Canterbury,NH,Gentleman,Merrimack County,town,83.83
+1824,582.0,35.0,291.0,18.0,218.0,85.0,Newbury,NH,Trader,Hillsborough County,town,582.35
+1825,64.0,2.0,32.0,1.0,22.0,60.0,Canterbury,NH,Esquire,Rockingham County,town,64.02
+1826,168.0,55.0,84.0,27.0,45.0,50.0,Canterbury,NH,,Rockingham County,town,168.55
+1827,179.0,43.0,89.0,71.0,48.0,44.0,Canterbury,NH,Trader,Rockingham County,town,179.43
+1828,83.0,83.0,41.0,91.0,22.0,63.0,Canterbury,NH,Gentleman,Rockingham County,town,83.83
 1829,85.0,35.0,42.0,68.0,23.0,1.0,Exeter,NH,,Rockingham County,town,85.35
 1830,307.0,41.0,153.0,71.0,126.0,,Kittery,MA,Esquire,,,307.41
 1831,189.0,58.0,94.0,79.0,43.0,14.0,York,NH,Esquire,,,189.58
@@ -1840,10 +1840,10 @@
 1838,567.0,9.0,283.0,55.0,240.0,96.0,Portsmouth,NH,Merchant,Rockingham County,town,567.09
 1839,800.0,,400.0,,800.0,40.0,Beverly,MA,Physician,Essex County,town,
 1840,266.0,66.0,133.0,34.0,233.0,13.0,Middletown,CT,Esquire,Middlesex County,town,266.66
-1841,205.0,17.0,102.0,59.0,73.0,86.0,Sandwich,NH,Esquire,Carroll County,town,205.17
-1842,52.0,98.0,26.0,49.0,13.0,48.0,Pembroke,NH,Esquire,Merrimack County,town,52.98
+1841,205.0,17.0,102.0,59.0,73.0,86.0,Sandwich,NH,Esquire,Strafford County,town,205.17
+1842,52.0,98.0,26.0,49.0,13.0,48.0,Pembroke,NH,Esquire,Hillsborough County,town,52.98
 1843,868.0,15.0,434.0,8.0,253.0,39.0,Portsmouth,NH,Trader,Rockingham County,town,868.15
-1844,763.0,11.0,381.0,55.0,251.0,1.0,Gilmantown,NH,Esquire,Belknap County,town,763.11
+1844,763.0,11.0,381.0,55.0,251.0,1.0,Gilmantown,NH,Esquire,Strafford County,town,763.11
 1845,1601.0,20.0,800.0,60.0,1524.0,62.0,Newbury Port,MA,Esquire,Essex County,county,1601.2
 1846,742.0,5.0,371.0,2.0,239.0,96.0,Portsmouth,NH,Cordwainer,Rockingham County,town,742.05
 1847,188.0,55.0,94.0,27.0,0.0,0.0,Portsmouth,NH,Esquire,Rockingham County,town,188.55
@@ -1851,7 +1851,7 @@
 1849,932.0,92.0,466.0,46.0,252.0,,Portsmouth,NH,Merchant,Rockingham County,town,932.92
 1850,266.0,67.0,133.0,33.0,329.0,7.0,Situate,MA,Shipwright,Plymouth County,county,266.67
 1851,7719.0,65.0,3859.0,82.0,2958.0,49.0,Exeter,NH,Merchant,Rockingham County,town,7719.65
-1852,2000.0,,1000.0,,540.0,,Concord,NH,Clerk,Merrimack County,town,
+1852,2000.0,,1000.0,,540.0,,Concord,NH,Clerk,Grafton County,town,
 1853,112.0,59.0,56.0,29.0,113.0,57.0,Ipswich,MA,Yeoman,Essex County,town,112.59
 1854,426.0,25.0,213.0,12.0,202.0,13.0,Barrington,NH,Yeoman,Strafford County,town,426.25
 1855,2159.0,4.0,1079.0,52.0,588.0,18.0,Portsmouth,NH,Baker,Rockingham County,town,2159.04
@@ -1863,18 +1863,18 @@
 1861,220.0,79.0,110.0,39.0,139.0,60.0,Portsmouth,NH,Physician,Rockingham County,town,220.79
 1862,137.0,59.0,68.0,80.0,45.0,72.0,Kensington,NH,Physician,Rockingham County,town,137.59
 1863,105.0,88.0,52.0,94.0,55.0,13.0,South Hampton,NH,Clerk,Rockingham County,town,105.88
-1864,303.0,42.0,151.0,71.0,81.0,92.0,Tamworth,NH,Esquire,Carroll County,town,303.42
+1864,303.0,42.0,151.0,71.0,81.0,92.0,Tamworth,NH,Esquire,Strafford County,town,303.42
 1865,567.0,55.0,283.0,78.0,156.0,31.0,Exeter,NH,Esquire,Rockingham County,town,567.55
 1866,1108.0,54.0,554.0,27.0,603.0,86.0,Exeter,NH,Merchant,Rockingham County,town,1108.54
-1867,214.0,99.0,107.0,49.0,58.0,4.0,Concord,NH,Yeoman,Merrimack County,town,214.99
+1867,214.0,99.0,107.0,49.0,58.0,4.0,Concord,NH,Yeoman,Grafton County,town,214.99
 1868,41.0,66.0,20.0,84.0,40.0,1.0,Portsmouth,NH,Esquire,Rockingham County,town,41.66
 1869,10.0,15.0,5.0,7.0,221.0,17.0,Portsmouth,NH,Esquire,Rockingham County,town,10.15
 1870,67.0,66.0,33.0,83.0,35.0,68.0,Amherst,NH,Esquire,Hillsborough County,town,67.66
-1871,968.0,3.0,484.0,1.0,315.0,26.0,Concord,NH,Gentleman,Merrimack County,town,968.03
-1872,400.0,0.0,200.0,0.0,144.0,0.0,Hopkinton,NH,Yeoman,Merrimack County,town,400.0
-1873,1840.0,0.0,920.0,0.0,496.0,80.0,Concord,NH,Gentleman,Merrimack County,town,1840.0
+1871,968.0,3.0,484.0,1.0,315.0,26.0,Concord,NH,Gentleman,Grafton County,town,968.03
+1872,400.0,0.0,200.0,0.0,144.0,0.0,Hopkinton,NH,Yeoman,Hillsborough County,town,400.0
+1873,1840.0,0.0,920.0,0.0,496.0,80.0,Concord,NH,Gentleman,Grafton County,town,1840.0
 1874,1791.0,17.0,895.0,59.0,987.0,60.0,Boston,MA,Physician,Suffolk County,town,1791.17
-1875,50.0,80.0,25.0,40.0,13.0,38.0,Acworth,NH,Gentleman,Sullivan County,town,50.8
+1875,50.0,80.0,25.0,40.0,13.0,38.0,Acworth,NH,Gentleman,Cheshire County,town,50.8
 1876,584.0,81.0,292.0,40.0,393.0,2.0,Somersworth,NH,Esquire,Strafford County,town,584.81
 1877,194.0,45.0,97.0,23.0,160.0,68.0,Haverhill,MA,Esquire,Essex County,town,194.45
 1878,115.0,14.0,57.0,57.0,146.0,77.0,South Hampton,NH,Clerk,Rockingham County,town,115.14
@@ -1883,19 +1883,19 @@
 1881,38.0,2.0,19.0,1.0,10.0,26.0,Portsmouth,NH,Esquire,Rockingham County,town,38.02
 1882,3975.0,85.0,1987.0,92.0,2296.0,4.0,Nottingham,NH,Esquire,Rockingham County,town,3975.85
 1883,220.0,19.0,110.0,10.0,59.0,44.0,Portsmouth,NH,Widow,Rockingham County,town,220.19
-1884,346.0,67.0,173.0,33.0,124.0,80.0,Charlestown,NH,Esquire,Sullivan County,town,346.67
+1884,346.0,67.0,173.0,33.0,124.0,80.0,Charlestown,NH,Esquire,Cheshire County,town,346.67
 1885,377.0,45.0,188.0,72.0,115.0,20.0,Portsmouth,NH,Merchant,Rockingham County,town,377.45
 1886,3253.0,55.0,1626.0,77.0,1527.0,63.0,Boston,MA,Merchant,Suffolk County,town,3253.55
-1887,1966.0,67.0,983.0,33.0,531.0,,Gilmantown,NH,Esquire,Belknap County,town,1966.67
+1887,1966.0,67.0,983.0,33.0,531.0,,Gilmantown,NH,Esquire,Strafford County,town,1966.67
 1888,146.0,83.0,73.0,41.0,82.0,64.0,Portsmouth,NH,Esquire,Rockingham County,town,146.83
 1889,733.0,33.0,366.0,67.0,547.0,61.0,Beverly,MA,Merchant,Essex County,town,733.33
-1890,135.0,89.0,67.0,95.0,204.0,42.0,Concord,NH,Esquire,Merrimack County,town,135.89
+1890,135.0,89.0,67.0,95.0,204.0,42.0,Concord,NH,Esquire,Grafton County,town,135.89
 1891,57.0,24.0,28.0,62.0,15.0,44.0,North Hampton,NH,Yeoman,Rockingham County,town,57.24
-1892,533.0,33.0,266.0,67.0,303.0,,Stoughton,MA,Yeoman,Norfolk County,town,533.33
+1892,533.0,33.0,266.0,67.0,303.0,,Stoughton,MA,Yeoman,Suffolk County,town,533.33
 1893,572.0,20.0,286.0,10.0,195.0,91.0,Boston,MA,Merchant,Suffolk County,town,572.2
 1894,33.0,33.0,16.0,67.0,9.0,,Kensington,NH,Yeoman,Rockingham County,town,33.33
 1895,772.0,87.0,386.0,43.0,3474.0,67.0,Newbury Port,MA,Trader,Essex County,county,772.87
-1896,352.0,53.0,176.0,26.0,216.0,,Wakefield,NH,Esquire,Carroll County,town,352.53
+1896,352.0,53.0,176.0,26.0,216.0,,Wakefield,NH,Esquire,Strafford County,town,352.53
 1897,257.0,55.0,128.0,77.0,109.0,18.0,Exeter,NH,Esquire,Rockingham County,town,257.55
 1898,1515.0,45.0,757.0,73.0,1179.0,8.0,Exeter,NH,Esquire,Rockingham County,town,1515.45
 1899,1332.0,51.0,666.0,26.0,360.0,,Portsmouth,NH,Physician,Rockingham County,town,1332.51
@@ -1904,7 +1904,7 @@
 1902,36.0,17.0,18.0,8.0,7.0,47.0,Portsmouth,NH,Esquire,Rockingham County,town,36.17
 1903,53.0,33.0,26.0,67.0,14.0,40.0,Portsmouth,NH,Merchant,Rockingham County,town,53.33
 1904,194.0,57.0,97.0,29.0,91.0,34.0,Andover,MA,Broker,Essex County,town,194.57
-1905,431.0,21.0,215.0,61.0,210.0,43.0,Salisbury,NH,Widow,Merrimack County,town,431.21
+1905,431.0,21.0,215.0,61.0,210.0,43.0,Salisbury,NH,Widow,Hillsborough County,town,431.21
 1906,1146.0,87.0,573.0,43.0,447.0,81.0,Portsmouth,NH,Esquire,Rockingham County,town,1146.87
 1907,56.0,39.0,28.0,19.0,28.0,22.0,Portsmouth,NH,Yeoman,Rockingham County,town,56.39
 1908,863.0,,431.0,50.0,254.0,40.0,Portsmouth,NH,Joiner,Rockingham County,town,
@@ -1977,13 +1977,13 @@
 1975,400.0,0.0,200.0,0.0,349.0,60.0,Roxbury,MA,Esquire,Suffolk County,town,400.0
 1976,179.0,3.0,89.0,51.0,189.0,6.0,Portsmouth,NH,Physician,Rockingham County,town,179.03
 1977,106.0,45.0,53.0,22.0,41.0,72.0,Keene,NH,Esquire,Cheshire County,town,106.45
-1978,155.0,98.0,77.0,99.0,42.0,11.0,Concord,NH,Yeoman,Merrimack County,town,155.98
+1978,155.0,98.0,77.0,99.0,42.0,11.0,Concord,NH,Yeoman,Grafton County,town,155.98
 1979,95.0,93.0,47.0,96.0,108.0,37.0,Boston,MA,Merchant,Suffolk County,town,95.93
 1980,139.0,91.0,69.0,96.0,72.0,75.0,Rye,NH,Esquire,Rockingham County,town,139.91
 1981,1609.0,21.0,804.0,61.0,1186.0,91.0,Portsmouth,NH,Esquire,Rockingham County,town,1609.21
 1982,92.0,21.0,46.0,11.0,47.0,43.0,Newbury Port,MA,Widow,Essex County,county,92.21
 1983,48.0,61.0,24.0,31.0,37.0,44.0,Portsmouth,NH,Painter,Rockingham County,town,48.61
-1984,14.0,68.0,7.0,34.0,10.0,42.0,Concord,NH,Esquire,Merrimack County,town,14.68
+1984,14.0,68.0,7.0,34.0,10.0,42.0,Concord,NH,Esquire,Grafton County,town,14.68
 1985,7.0,71.0,3.0,86.0,132.0,50.0,Portsmouth,NH,Esquire,Rockingham County,town,7.71
 1986,51.0,11.0,25.0,56.0,13.0,80.0,Almsbury,MA,Blacksmith,Essex County,county,51.11
 1987,59.0,48.0,29.0,74.0,44.0,97.0,Almsbury,MA,Shipwright,Essex County,county,59.48
@@ -2014,7 +2014,7 @@
 2012,,,,,5000.0,4.0,,,,,,
 2013,42.0,28.0,21.0,14.0,45.0,53.0,Maryland,MD,,,state,42.28
 2014,3472.0,90.0,1736.0,45.0,981.0,23.0,Philadelphia,PA,Lawyer,Philadelphia County,town,3472.9
-2015,59.0,24.0,29.0,62.0,42.0,35.0,Germantown,PA,,Perry County,town,59.24
+2015,59.0,24.0,29.0,62.0,42.0,35.0,Germantown,PA,,Cumberland County,town,59.24
 2016,7061.0,2.0,3530.0,51.0,13736.0,21.0,Philadelphia,PA,Merchant,Philadelphia County,town,7061.02
 2017,6568.0,8.0,3284.0,4.0,1773.0,37.0,Philadelphia,PA,Merchant,Philadelphia County,town,6568.08
 2018,114.0,32.0,57.0,16.0,,,Philadelphia,PA,,Philadelphia County,town,114.32
@@ -2036,8 +2036,8 @@
 2034,3791.0,30.0,1895.0,65.0,1590.0,22.0,Philadelphia,PA,Merchant,Philadelphia County,town,3791.3
 2035,22.0,70.0,11.0,35.0,23.0,48.0,Conecticutt,CT,,,state,22.7
 2036,715.0,82.0,357.0,91.0,386.0,53.0,New Castle Delaware,DE,,New Castle County,county,715.82
-2037,2654.0,36.0,1327.0,18.0,1954.0,93.0,Petersburg Virginia,VA,,Grant County,county,2654.36
-2038,2205.0,38.0,1102.0,69.0,670.0,93.0,Germantown,PA,,Perry County,town,2205.38
+2037,2654.0,36.0,1327.0,18.0,1954.0,93.0,Petersburg Virginia,VA,,Hampshire County,county,2654.36
+2038,2205.0,38.0,1102.0,69.0,670.0,93.0,Germantown,PA,,Cumberland County,town,2205.38
 2039,1008.0,10.0,504.0,5.0,821.0,15.0,Philadelphia,PA,,Philadelphia County,town,1008.1
 2040,4148.0,76.0,2074.0,38.0,1715.0,21.0,Philadelphia,PA,Merchant,Philadelphia County,town,4148.76
 2041,3989.0,22.0,1994.0,61.0,1500.0,48.0,Philadelphia,PA,,Philadelphia County,town,3989.22
@@ -2102,7 +2102,7 @@
 2100,467.0,18.0,233.0,59.0,252.0,26.0,Alexandria Virginia,VA,,Fairfax County,county,467.18
 2101,1538.0,76.0,769.0,38.0,415.0,45.0,Lancaster,PA,,Lancaster County,town,1538.76
 2102,1147.0,82.0,573.0,91.0,2488.0,,New York,NY,,,state,1147.82
-2103,443.0,90.0,221.0,95.0,119.0,84.0,Montgomery,PA,,Lycoming County,town,443.9
+2103,443.0,90.0,221.0,95.0,119.0,84.0,Montgomery,PA,,Northumberland County,town,443.9
 2104,335.0,40.0,167.0,70.0,90.0,54.0,W Callisters Town,PA,,,,335.4
 2105,151.0,40.0,75.0,70.0,119.0,8.0,Huntington New Jersey,NJ,,,state,151.4
 2106,188.0,14.0,94.0,7.0,210.0,2.0,New Jersey,NJ,,,state,188.14
@@ -2210,7 +2210,7 @@
 2208,1428.0,5.0,714.0,3.0,451.0,2.0,,,,,,1428.05
 2209,94.0,60.0,47.0,30.0,84.0,95.0,Philadelphia,PA,,Philadelphia County,town,94.6
 2210,151.0,4.0,75.0,52.0,100.0,17.0,Maryland,MD,,,state,151.04
-2211,989.0,87.0,494.0,93.0,458.0,82.0,Armstrong,PA,,Lycoming County,county,989.87
+2211,989.0,87.0,494.0,93.0,458.0,82.0,Armstrong,PA,,Northumberland County,county,989.87
 2212,2135.0,10.0,1067.0,55.0,576.0,47.0,Philadelphia,PA,Merchant,Philadelphia County,town,2135.1
 2213,80.0,44.0,40.0,22.0,51.0,81.0,Philadelphia,PA,,Philadelphia County,town,80.44
 2214,,,,,1000.0,,,,,,,
@@ -2235,7 +2235,7 @@
 2233,569.0,44.0,284.0,72.0,401.0,94.0,Philadelphia,PA,,Philadelphia County,town,569.44
 2234,213.0,89.0,106.0,95.0,57.0,74.0,,,,,,213.89
 2235,438.0,41.0,219.0,21.0,118.0,35.0,Philadelphia,PA,,Philadelphia County,town,438.41
-2236,23.0,21.0,11.0,60.0,6.0,25.0,Germantown,PA,,Perry County,town,23.21
+2236,23.0,21.0,11.0,60.0,6.0,25.0,Germantown,PA,,Cumberland County,town,23.21
 2237,1025.0,44.0,512.0,72.0,383.0,81.0,Philadelphia,PA,,Philadelphia County,town,1025.44
 2238,3251.0,57.0,1625.0,78.0,877.0,92.0,Philadelphia,PA,,Philadelphia County,town,3251.57
 2239,1641.0,51.0,820.0,75.0,443.0,19.0,Philadelphia,PA,,Philadelphia County,town,1641.51
@@ -2288,7 +2288,7 @@
 2286,1802.0,22.0,901.0,12.0,486.0,60.0,Reading Berks County,PA,,Berks County,town,1802.22
 2287,153.0,99.0,76.0,69.0,92.0,26.0,Maidenhead,,,,,153.99
 2288,490.0,15.0,245.0,8.0,266.0,33.0,,,,,,490.15
-2289,591.0,64.0,295.0,82.0,159.0,73.0,Northumb Country,PA,,Elk County,county,591.64
+2289,591.0,64.0,295.0,82.0,159.0,73.0,Northumb Country,PA,,Northumberland County,county,591.64
 2290,879.0,58.0,439.0,79.0,318.0,34.0,Philadelphia,PA,Merchant,Philadelphia County,town,879.58
 2291,4090.0,92.0,2045.0,46.0,1097.0,16.0,Philadelphia,PA,Broker,Philadelphia County,town,4090.92
 2292,5273.0,6.0,2636.0,52.0,1624.0,65.0,Philadelphia,PA,Merchant,Philadelphia County,town,5273.06
@@ -2382,7 +2382,7 @@
 2380,1279.0,97.0,639.0,98.0,1006.0,21.0,Philadelphia,PA,Merchant,Philadelphia County,town,1279.97
 2381,982.0,42.0,491.0,21.0,691.0,49.0,Philadelphia,PA,Merchant,Philadelphia County,town,982.42
 2382,2266.0,67.0,1133.0,33.0,879.0,,,,,,,2266.67
-2383,848.0,81.0,424.0,41.0,229.0,17.0,Northumb Country,PA,,Elk County,county,848.81
+2383,848.0,81.0,424.0,41.0,229.0,17.0,Northumb Country,PA,,Northumberland County,county,848.81
 2384,1272.0,50.0,636.0,25.0,931.0,44.0,Philadelphia,PA,Merchant,Philadelphia County,town,1272.5
 2385,521.0,79.0,260.0,89.0,258.0,70.0,Philadelphia,PA,,Philadelphia County,town,521.79
 2386,2800.0,,1400.0,,756.0,,,,Executer for Estate for Samuel Smith Deceased,,,
@@ -2444,7 +2444,7 @@
 2442,,,,,192.0,,,,,,,
 2443,280.0,84.0,140.0,42.0,75.0,82.0,Chester County,PA,,Chester County,county,280.84
 2444,1553.0,50.0,776.0,75.0,607.0,11.0,Philadelphia,PA,,Philadelphia County,town,1553.5
-2445,1777.0,60.0,888.0,80.0,568.0,28.0,Germantown,PA,,Perry County,town,1777.6
+2445,1777.0,60.0,888.0,80.0,568.0,28.0,Germantown,PA,,Cumberland County,town,1777.6
 2446,1854.0,63.0,927.0,32.0,500.0,74.0,Chester County Pennsylvania,PA,,Chester County,county,1854.63
 2447,577.0,97.0,288.0,98.0,193.0,13.0,York Town Pennsylvania,PA,,York County,town,577.97
 2448,2369.0,2.0,1184.0,51.0,1276.0,58.0,Philadelphia,PA,Merchant,Philadelphia County,town,2369.02
@@ -2517,7 +2517,7 @@
 2515,666.0,67.0,333.0,33.0,258.0,50.0,Philadelphia,PA,Merchant,Philadelphia County,town,666.67
 2516,124.0,21.0,62.0,11.0,56.0,20.0,New Jersey,NJ,,,state,124.21
 2517,3257.0,22.0,1628.0,62.0,1409.0,11.0,Philadelphia,PA,Merchant,Philadelphia County,town,3257.22
-2518,2879.0,48.0,1439.0,74.0,2615.0,49.0,Charleston South Carolina,SC,Merchant,Berkeley County,town,2879.48
+2518,2879.0,48.0,1439.0,74.0,2615.0,49.0,Charleston South Carolina,SC,Merchant,Charleston County,town,2879.48
 2519,704.0,12.0,352.0,6.0,359.0,48.0,Lancaster Pennsylvania,PA,,Lancaster County,town,704.12
 2520,708.0,7.0,356.0,77.0,488.0,22.0,Lancaster,PA,,Lancaster County,town,708.07
 2521,5.0,47.0,,,,,Lancaster,PA,,Lancaster County,town,5.47
@@ -2678,7 +2678,7 @@
 2676,826.0,42.0,413.0,22.0,423.0,24.0,Chester County Pennsylvania,PA,,Chester County,county,826.42
 2677,284.0,60.0,142.0,31.0,133.0,61.0,Philadelphia,PA,,Philadelphia County,town,284.6
 2678,326.0,76.0,163.0,39.0,132.0,81.0,Philadelphia,PA,Merchant,Philadelphia County,town,326.76
-2679,578.0,9.0,289.0,5.0,333.0,68.0,Trenton New Jersey,NJ,,Mercer County,town,578.09
+2679,578.0,9.0,289.0,5.0,333.0,68.0,Trenton New Jersey,NJ,,Hunterdon County,town,578.09
 2680,2313.0,98.0,1157.0,,900.0,,Philadelphia,PA,Merchant,Philadelphia County,town,2313.98
 2681,121.0,55.0,60.0,78.0,65.0,63.0,Northampton County Pennsylvania,PA,,Northampton County,county,121.55
 2682,133.0,92.0,66.0,96.0,36.0,15.0,Bucks County Pennsylvania,PA,,Bucks County,county,133.92
@@ -2754,7 +2754,7 @@
 2752,132.0,67.0,66.0,46.0,155.0,21.0,Philadelphia,PA,Widow,Philadelphia County,town,132.67
 2753,7.0,62.0,3.0,33.0,2.0,5.0,,,,,,7.62
 2754,2672.0,71.0,1336.0,36.0,1199.0,98.0,,,Executor to Estate of John Hart deceased,,,2672.71
-2755,1200.0,,600.0,,357.0,31.0,Germantown,PA,,Perry County,town,
+2755,1200.0,,600.0,,357.0,31.0,Germantown,PA,,Cumberland County,town,
 2756,99.0,30.0,49.0,65.0,57.0,60.0,Philadelphia,PA,Merchant,Philadelphia County,town,99.3
 2757,1261.0,16.0,630.0,59.0,371.0,88.0,Philadelphia,PA,Merchant,Philadelphia County,town,1261.16
 2758,906.0,94.0,453.0,48.0,244.0,86.0,Philadelphia,PA,,Philadelphia County,town,906.94
@@ -2762,7 +2762,7 @@
 2760,537.0,95.0,268.0,98.0,214.0,72.0,Philadelphia,PA,,Philadelphia County,town,537.95
 2761,189.0,76.0,94.0,89.0,51.0,23.0,Philadelphia,PA,,Philadelphia County,town,189.76
 2762,1333.0,33.0,666.0,67.0,997.0,,Philadelphia,PA,,Philadelphia County,town,1333.33
-2763,537.0,86.0,268.0,94.0,299.0,53.0,Trenton New Jersey,NJ,,Mercer County,town,537.86
+2763,537.0,86.0,268.0,94.0,299.0,53.0,Trenton New Jersey,NJ,,Hunterdon County,town,537.86
 2764,548.0,49.0,274.0,25.0,148.0,8.0,Philadelphia,PA,Gentleman,Philadelphia County,town,548.49
 2765,666.0,66.0,333.0,34.0,498.0,50.0,Philadelphia,PA,,Philadelphia County,town,666.66
 2766,2955.0,22.0,1477.0,62.0,797.0,91.0,,,Ships Their Widows and Children,,,2955.22
@@ -2909,7 +2909,7 @@
 2907,725.0,77.0,362.0,89.0,195.0,94.0,Philadelphia,PA,Merchant,Philadelphia County,town,725.77
 2908,6265.0,18.0,3132.0,59.0,3186.0,65.0,Philadelphia,PA,,Philadelphia County,town,6265.18
 2909,11.0,73.0,5.0,87.0,,,Northern Liberties,PA,,Philadelphia County,town,11.73
-2910,1183.0,71.0,591.0,,319.0,60.0,Princeton New Jersey,NJ,,Mercer County,town,1183.71
+2910,1183.0,71.0,591.0,,319.0,60.0,Princeton New Jersey,NJ,,Middlesex County,town,1183.71
 2911,1007.0,32.0,503.0,66.0,270.0,,Philadelphia,PA,Broker,Philadelphia County,town,1007.32
 2912,,,,,3904.0,55.0,,,,,,
 2913,692.0,25.0,346.0,12.0,186.0,90.0,Kensington,PA,Black Smith,Westmoreland County,town,692.25
@@ -3004,7 +3004,7 @@
 3002,307.0,48.0,153.0,74.0,123.0,27.0,Philadelphia,PA,,Philadelphia County,town,307.48
 3003,91.0,80.0,45.0,90.0,83.0,64.0,Berks County Pennsylvania,PA,,Berks County,county,91.8
 3004,27.0,74.0,13.0,87.0,22.0,80.0,Philadelphia,PA,Merchant,Philadelphia County,town,27.74
-3005,20.0,,10.0,,17.0,6.0,Berlington New Jersey,NJ,,Camden County,town,
+3005,20.0,,10.0,,17.0,6.0,Berlington New Jersey,NJ,,Burlington County,town,
 3006,984.0,76.0,492.0,38.0,369.0,50.0,Philadelphia,PA,Merchant,Philadelphia County,town,984.76
 3007,435.0,4.0,217.0,52.0,195.0,98.0,Franklin County Pennsylvania,PA,Farmer,Franklin County,county,435.04
 3008,303.0,89.0,151.0,95.0,198.0,80.0,New Jersey,NJ,,,state,303.89
@@ -3313,7 +3313,7 @@
 3311,1108.0,44.0,554.0,21.0,416.0,16.0,Providence,RI,Physician,Providence County,town,1108.44
 3312,2933.0,34.0,1466.0,66.0,792.0,,Providence,RI,Esquire,Providence County,town,2933.34
 3313,20.0,62.0,10.0,30.0,18.0,25.0,Gloucester,RI,Esquire,Providence County,town,20.62
-3314,80.0,,40.0,,43.0,20.0,Ludlow,MA,Gentleman,Hampden County,town,
+3314,80.0,,40.0,,43.0,20.0,Ludlow,MA,Gentleman,Hampshire County,town,
 3315,282.0,61.0,141.0,30.0,163.0,20.0,North Providence,RI,Yeoman,Providence County,town,282.61
 3316,284.0,32.0,142.0,16.0,122.0,71.0,Newport,RI,Merchant,Newport County,town,284.32
 3317,538.0,35.0,269.0,17.0,180.0,,Providence,RI,Esquire,Providence County,town,538.35
@@ -3358,7 +3358,7 @@
 3356,9766.0,78.0,4883.0,38.0,7544.0,23.0,Providence,RI,Merchant,Providence County,town,9766.78
 3357,2091.0,8.0,1045.0,54.0,568.0,98.0,Providence,RI,Esquire,Providence County,town,2091.08
 3358,155.0,28.0,77.0,63.0,98.0,20.0,East Greenwich,RI,Esquire,Kent County,town,155.28
-3359,168.0,28.0,84.0,13.0,60.0,54.0,Newport in New Hampshire,NH,,Sullivan County,town,168.28
+3359,168.0,28.0,84.0,13.0,60.0,54.0,Newport in New Hampshire,NH,,Cheshire County,town,168.28
 3360,86.0,4.0,43.0,2.0,65.0,54.0,Providence,RI,Taylor,Providence County,town,86.04
 3361,106.0,67.0,53.0,33.0,72.0,74.0,Rehoboth,MA,House Carpenter,Bristol County,town,106.67
 3362,648.0,36.0,324.0,17.0,240.0,,Providence,RI,Taylor,Providence County,town,648.36
@@ -3539,7 +3539,7 @@
 3537,400.0,,200.0,,247.0,,Newport,RI,Widow,Newport County,town,
 3538,13.0,21.0,6.0,61.0,4.0,74.0,Middletown,CT,Yeoman,Middlesex County,town,13.21
 3539,281.0,96.0,140.0,97.0,104.0,23.0,Swansea,MA,Yeoman,Bristol County,town,281.96
-3540,1269.0,72.0,634.0,85.0,1211.0,16.0,Charleston South Carolina,SC,,Berkeley County,town,1269.72
+3540,1269.0,72.0,634.0,85.0,1211.0,16.0,Charleston South Carolina,SC,,Charleston County,town,1269.72
 3541,37.0,78.0,18.0,89.0,36.0,90.0,Newport,RI,Merchant,Newport County,town,37.78
 3542,50.0,14.0,25.0,6.0,27.0,35.0,Cranston,RI,Trader,Providence County,town,50.14
 3543,15.0,21.0,7.0,60.0,12.0,56.0,South Kingston,RI,Esquire,Washington County,town,15.21
@@ -3558,7 +3558,7 @@
 3556,80.0,89.0,40.0,44.0,29.0,53.0,Providence,RI,Merchant,Providence County,town,80.89
 3557,99.0,9.0,49.0,54.0,132.0,80.0,Falmouth Massachusetts,MA,Reverend,Barnstable County,county,99.09
 3558,279.0,43.0,139.0,71.0,76.0,98.0,Scituate,RI,Esquire,Providence County,town,279.43
-3559,158.0,12.0,79.0,6.0,165.0,14.0,Charleston South Carolina,SC,,Berkeley County,town,158.12
+3559,158.0,12.0,79.0,6.0,165.0,14.0,Charleston South Carolina,SC,,Charleston County,town,158.12
 3560,98.0,48.0,49.0,23.0,48.0,,Dudley,MA,Yeoman,Worcester County,town,98.48
 3561,633.0,94.0,316.0,96.0,458.0,7.0,Swansea,MA,Esquire,Bristol County,town,633.94
 3562,687.0,51.0,343.0,75.0,247.0,45.0,Scituate,RI,Esquire,Providence County,town,687.51
@@ -3949,430 +3949,430 @@
 3947,,,17.0,5.0,,,,,,,,
 3948,,,10.0,10.0,,,,,,,,
 3949,690.0,96.0,345.0,48.0,665.0,28.0,New York,NY,Merchant,,state,690.96
-3950,83.0,33.0,41.0,66.0,80.0,43.0,Charleston,SC,Mariner,Berkeley County,town,83.33
-3951,1017.0,76.0,508.0,88.0,994.0,13.0,Charleston,SC,Merchant,Berkeley County,town,1017.76
-3952,33.0,34.0,16.0,66.0,30.0,65.0,Charleston,SC,Merchant,Berkeley County,town,33.34
-3953,386.0,32.0,193.0,16.0,222.0,19.0,Charleston,SC,Merchant,Berkeley County,town,386.32
-3954,322.0,70.0,161.0,36.0,246.0,69.0,Charleston,SC,Physician,Berkeley County,town,322.7
-3955,120.0,40.0,60.0,20.0,88.0,12.0,Charleston,SC,Factor,Berkeley County,town,120.4
+3950,83.0,33.0,41.0,66.0,80.0,43.0,Charleston,SC,Mariner,Charleston County,town,83.33
+3951,1017.0,76.0,508.0,88.0,994.0,13.0,Charleston,SC,Merchant,Charleston County,town,1017.76
+3952,33.0,34.0,16.0,66.0,30.0,65.0,Charleston,SC,Merchant,Charleston County,town,33.34
+3953,386.0,32.0,193.0,16.0,222.0,19.0,Charleston,SC,Merchant,Charleston County,town,386.32
+3954,322.0,70.0,161.0,36.0,246.0,69.0,Charleston,SC,Physician,Charleston County,town,322.7
+3955,120.0,40.0,60.0,20.0,88.0,12.0,Charleston,SC,Factor,Charleston County,town,120.4
 3956,183.0,33.0,91.0,67.0,175.0,60.0,Rhode Island,RI,,,state,183.33
 3957,83.0,33.0,41.0,67.0,79.0,75.0,Rhode Island,RI,,,state,83.33
 3958,216.0,67.0,108.0,33.0,207.0,64.0,James Island,SC,Widow,Charleston County,county,216.67
-3959,1333.0,34.0,666.0,66.0,480.0,0.0,Charleston,SC,Clerk of the Senate,Berkeley County,town,1333.34
-3960,1671.0,44.0,835.0,72.0,601.0,64.0,Charleston,SC,Administrator to Joseph Warley,Berkeley County,town,1671.44
-3961,2531.0,44.0,1265.0,72.0,2034.0,9.0,Charleston,SC,Merchant,Berkeley County,town,2531.44
-3962,5178.0,54.0,2589.0,27.0,3276.0,31.0,Charleston,SC,Planter,Berkeley County,town,5178.54
-3963,702.0,88.0,351.0,44.0,288.0,45.0,Charleston,SC,Merchant,Berkeley County,town,702.88
-3964,306.0,10.0,153.0,5.0,33.0,68.0,Charleston,SC,Broker,Berkeley County,town,306.1
-3965,411.0,90.0,205.0,95.0,52.0,41.0,Charleston,SC,Merchant,Berkeley County,town,411.9
-3966,608.0,28.0,301.0,64.0,64.0,23.0,Charleston,SC,Merchant,Berkeley County,town,608.28
-3967,333.0,8.0,166.0,54.0,359.0,55.0,Charleston,SC,Merchant,Berkeley County,town,333.08
-3968,1133.0,33.0,566.0,67.0,1323.0,11.0,Charleston,SC,Merchant,Berkeley County,town,1133.33
-3969,145.0,46.0,72.0,73.0,151.0,64.0,Charleston,SC,Attorney at Law,Berkeley County,town,145.46
-3970,446.0,52.0,223.0,26.0,433.0,38.0,Charleston,SC,Planter,Berkeley County,town,446.52
-3971,387.0,31.0,193.0,61.0,335.0,3.0,Charleston,SC,Merchant,Berkeley County,town,387.31
-3972,594.0,33.0,297.0,16.0,569.0,57.0,Charleston,SC,Merchant,Berkeley County,town,594.33
-3973,179.0,16.0,89.0,58.0,234.0,,Charleston,SC,Widow,Berkeley County,town,179.16
+3959,1333.0,34.0,666.0,66.0,480.0,0.0,Charleston,SC,Clerk of the Senate,Charleston County,town,1333.34
+3960,1671.0,44.0,835.0,72.0,601.0,64.0,Charleston,SC,Administrator to Joseph Warley,Charleston County,town,1671.44
+3961,2531.0,44.0,1265.0,72.0,2034.0,9.0,Charleston,SC,Merchant,Charleston County,town,2531.44
+3962,5178.0,54.0,2589.0,27.0,3276.0,31.0,Charleston,SC,Planter,Charleston County,town,5178.54
+3963,702.0,88.0,351.0,44.0,288.0,45.0,Charleston,SC,Merchant,Charleston County,town,702.88
+3964,306.0,10.0,153.0,5.0,33.0,68.0,Charleston,SC,Broker,Charleston County,town,306.1
+3965,411.0,90.0,205.0,95.0,52.0,41.0,Charleston,SC,Merchant,Charleston County,town,411.9
+3966,608.0,28.0,301.0,64.0,64.0,23.0,Charleston,SC,Merchant,Charleston County,town,608.28
+3967,333.0,8.0,166.0,54.0,359.0,55.0,Charleston,SC,Merchant,Charleston County,town,333.08
+3968,1133.0,33.0,566.0,67.0,1323.0,11.0,Charleston,SC,Merchant,Charleston County,town,1133.33
+3969,145.0,46.0,72.0,73.0,151.0,64.0,Charleston,SC,Attorney at Law,Charleston County,town,145.46
+3970,446.0,52.0,223.0,26.0,433.0,38.0,Charleston,SC,Planter,Charleston County,town,446.52
+3971,387.0,31.0,193.0,61.0,335.0,3.0,Charleston,SC,Merchant,Charleston County,town,387.31
+3972,594.0,33.0,297.0,16.0,569.0,57.0,Charleston,SC,Merchant,Charleston County,town,594.33
+3973,179.0,16.0,89.0,58.0,234.0,,Charleston,SC,Widow,Charleston County,town,179.16
 3974,640.0,4.0,320.0,2.0,406.0,72.0,Bermuda,BM,,,,640.04
-3975,91.0,98.0,45.0,99.0,9.0,32.0,Charleston,SC,Shopkeeper,Berkeley County,town,91.98
-3976,879.0,96.0,439.0,98.0,1386.0,62.0,Charleston,SC,Planter,Berkeley County,town,879.96
+3975,91.0,98.0,45.0,99.0,9.0,32.0,Charleston,SC,Shopkeeper,Charleston County,town,91.98
+3976,879.0,96.0,439.0,98.0,1386.0,62.0,Charleston,SC,Planter,Charleston County,town,879.96
 3977,50.0,0.0,25.0,0.0,47.0,83.0,Philadelphia,PA,,Philadelphia County,town,50.0
 3978,98.0,59.0,49.0,29.0,98.0,27.0,James Island,SC,Widow,Charleston County,county,98.59
-3979,397.0,20.0,198.0,60.0,335.0,56.0,Charleston,SC,Widow,Berkeley County,town,397.2
-3980,435.0,49.0,217.0,75.0,367.0,23.0,Charleston,SC,Merchant,Berkeley County,town,435.49
-3981,364.0,59.0,182.0,29.0,360.0,84.0,Charleston,SC,Spinster,Berkeley County,town,364.59
-3982,39.0,90.0,19.0,95.0,13.0,37.0,Charleston,SC,Carpenter,Berkeley County,town,39.9
-3983,329.0,12.0,164.0,56.0,118.0,44.0,Charleston,SC,Merchant,Berkeley County,town,329.12
-3984,296.0,69.0,148.0,15.0,275.0,37.0,Charleston,SC,Merchant,Berkeley County,town,296.69
-3985,634.0,63.0,317.0,32.0,434.0,70.0,Charleston,SC,Merchant,Berkeley County,town,634.63
-3986,986.0,25.0,493.0,13.0,2080.0,79.0,Charleston,SC,,Berkeley County,town,986.25
-3987,610.0,98.0,305.0,49.0,803.0,70.0,Charleston,SC,Merchant,Berkeley County,town,610.98
+3979,397.0,20.0,198.0,60.0,335.0,56.0,Charleston,SC,Widow,Charleston County,town,397.2
+3980,435.0,49.0,217.0,75.0,367.0,23.0,Charleston,SC,Merchant,Charleston County,town,435.49
+3981,364.0,59.0,182.0,29.0,360.0,84.0,Charleston,SC,Spinster,Charleston County,town,364.59
+3982,39.0,90.0,19.0,95.0,13.0,37.0,Charleston,SC,Carpenter,Charleston County,town,39.9
+3983,329.0,12.0,164.0,56.0,118.0,44.0,Charleston,SC,Merchant,Charleston County,town,329.12
+3984,296.0,69.0,148.0,15.0,275.0,37.0,Charleston,SC,Merchant,Charleston County,town,296.69
+3985,634.0,63.0,317.0,32.0,434.0,70.0,Charleston,SC,Merchant,Charleston County,town,634.63
+3986,986.0,25.0,493.0,13.0,2080.0,79.0,Charleston,SC,,Charleston County,town,986.25
+3987,610.0,98.0,305.0,49.0,803.0,70.0,Charleston,SC,Merchant,Charleston County,town,610.98
 3988,200.0,,100.0,,191.0,56.0,Georgetown,SC,Merchant,Georgetown County,town,
 3989,405.0,62.0,202.0,76.0,404.0,75.0,Georgetown,SC,Merchant,Georgetown County,town,405.62
 3990,405.0,62.0,202.0,76.0,393.0,75.0,Georgetown,SC,Merchant,Georgetown County,town,405.62
 3991,405.0,62.0,202.0,76.0,404.0,75.0,Georgetown,SC,Executor of Benjamin Tucker,Georgetown County,town,405.62
-3992,234.0,96.0,117.0,48.0,179.0,14.0,Charleston,SC,Merchant as Executor to Benjamin Garden,Berkeley County,town,234.96
-3993,1024.0,91.0,512.0,46.0,276.0,65.0,Charleston,SC,Executor to Richard Mason,Berkeley County,town,1024.91
+3992,234.0,96.0,117.0,48.0,179.0,14.0,Charleston,SC,Merchant as Executor to Benjamin Garden,Charleston County,town,234.96
+3993,1024.0,91.0,512.0,46.0,276.0,65.0,Charleston,SC,Executor to Richard Mason,Charleston County,town,1024.91
 3994,18.0,60.0,9.0,30.0,31.0,67.0,,,as Executor to John Couturier,,,18.6
-3995,1415.0,96.0,707.0,98.0,999.0,3.0,Charleston,SC,Merchant,Berkeley County,town,1415.96
+3995,1415.0,96.0,707.0,98.0,999.0,3.0,Charleston,SC,Merchant,Charleston County,town,1415.96
 3996,1756.0,3.0,878.0,1.0,1329.0,42.0,,,as Executor to Henry Lindauer,,,1756.03
-3997,352.0,57.0,176.0,28.0,206.0,73.0,Charleston,SC,Physician,Berkeley County,town,352.57
-3998,333.0,33.0,166.0,67.0,233.0,11.0,Charleston,SC,Merchant,Berkeley County,town,333.33
-3999,883.0,33.0,441.0,67.0,636.0,,Camden Planter,SC,Planter as Executor Ely Kershaw,Kershaw County,county,883.33
+3997,352.0,57.0,176.0,28.0,206.0,73.0,Charleston,SC,Physician,Charleston County,town,352.57
+3998,333.0,33.0,166.0,67.0,233.0,11.0,Charleston,SC,Merchant,Charleston County,town,333.33
+3999,883.0,33.0,441.0,67.0,636.0,,Camden Planter,SC,Planter as Executor Ely Kershaw,Lancaster County,county,883.33
 4000,57.0,66.0,28.0,84.0,47.0,56.0,,,as Executor James McCord,,,57.66
-4001,585.0,49.0,292.0,75.0,365.0,0.0,Charleston,SC,Merchant,Berkeley County,town,585.49
-4002,141.0,10.0,70.0,55.0,85.0,58.0,Charleston,SC,Gentleman,Berkeley County,town,141.1
-4003,2257.0,18.0,1128.0,59.0,1172.0,87.0,Charleston,SC,One of Judges of the Courts,Berkeley County,town,2257.18
+4001,585.0,49.0,292.0,75.0,365.0,0.0,Charleston,SC,Merchant,Charleston County,town,585.49
+4002,141.0,10.0,70.0,55.0,85.0,58.0,Charleston,SC,Gentleman,Charleston County,town,141.1
+4003,2257.0,18.0,1128.0,59.0,1172.0,87.0,Charleston,SC,One of Judges of the Courts,Charleston County,town,2257.18
 4004,73.0,84.0,36.0,92.0,71.0,26.0,Philadelphia,PA,,Philadelphia County,town,73.84
-4005,2956.0,26.0,1478.0,14.0,792.0,,Charleston,SC,Merchant,Berkeley County,town,2956.26
-4006,333.0,33.0,166.0,67.0,316.0,82.0,Charleston,SC,Gentleman,Berkeley County,town,333.33
-4007,70.0,33.0,35.0,16.0,,,Charleston,SC,Merchant,Berkeley County,town,70.33
-4008,157.0,60.0,78.0,80.0,,,Charleston,SC,Broker,Berkeley County,town,157.6
-4009,177.0,3.0,88.0,51.0,,,Charleston,SC,,Berkeley County,town,177.03
-4010,133.0,47.0,66.0,74.0,,,Charleston,SC,Carpenter,Berkeley County,town,133.47
-4011,112.0,68.0,56.0,34.0,,,Charleston,SC,,Berkeley County,town,112.68
-4012,50.0,51.0,25.0,26.0,,,Charleston,SC,Carpenter,Berkeley County,town,50.51
-4013,28.0,32.0,14.0,16.0,,,Charleston,SC,,Berkeley County,town,28.32
-4014,181.0,22.0,90.0,61.0,,,Charleston,SC,Carpenter,Berkeley County,town,181.22
-4015,12.0,50.0,6.0,26.0,,,Charleston,SC,,Berkeley County,town,12.5
-4016,192.0,65.0,96.0,33.0,,,Charleston,SC,Merchant,Berkeley County,town,192.65
+4005,2956.0,26.0,1478.0,14.0,792.0,,Charleston,SC,Merchant,Charleston County,town,2956.26
+4006,333.0,33.0,166.0,67.0,316.0,82.0,Charleston,SC,Gentleman,Charleston County,town,333.33
+4007,70.0,33.0,35.0,16.0,,,Charleston,SC,Merchant,Charleston County,town,70.33
+4008,157.0,60.0,78.0,80.0,,,Charleston,SC,Broker,Charleston County,town,157.6
+4009,177.0,3.0,88.0,51.0,,,Charleston,SC,,Charleston County,town,177.03
+4010,133.0,47.0,66.0,74.0,,,Charleston,SC,Carpenter,Charleston County,town,133.47
+4011,112.0,68.0,56.0,34.0,,,Charleston,SC,,Charleston County,town,112.68
+4012,50.0,51.0,25.0,26.0,,,Charleston,SC,Carpenter,Charleston County,town,50.51
+4013,28.0,32.0,14.0,16.0,,,Charleston,SC,,Charleston County,town,28.32
+4014,181.0,22.0,90.0,61.0,,,Charleston,SC,Carpenter,Charleston County,town,181.22
+4015,12.0,50.0,6.0,26.0,,,Charleston,SC,,Charleston County,town,12.5
+4016,192.0,65.0,96.0,33.0,,,Charleston,SC,Merchant,Charleston County,town,192.65
 4017,33.0,33.0,16.0,67.0,,,,,as Executor to Henry Coram,,,33.33
-4018,93.0,75.0,46.0,87.0,,,Charleston,SC,Merchant,Berkeley County,town,93.75
-4019,66.0,66.0,33.0,33.0,63.0,24.0,Virginia and Philadelphia,VA,Merchant,King and Queen County,county,66.66
-4020,3.0,82.0,1.0,92.0,3.0,74.0,Virginia and Philadelphia,VA,Merchant,King and Queen County,county,3.82
-4021,1329.0,48.0,664.0,75.0,652.0,0.0,Charleston,SC,Merchant,Berkeley County,town,1329.48
-4022,100.0,0.0,50.0,0.0,95.0,85.0,Charleston,SC,Planter,Berkeley County,town,100.0
-4023,916.0,60.0,458.0,30.0,896.0,15.0,Charleston,SC,Merchant,Berkeley County,town,916.6
+4018,93.0,75.0,46.0,87.0,,,Charleston,SC,Merchant,Charleston County,town,93.75
+4019,66.0,66.0,33.0,33.0,63.0,24.0,Virginia and Philadelphia,VA,Merchant,,county,66.66
+4020,3.0,82.0,1.0,92.0,3.0,74.0,Virginia and Philadelphia,VA,Merchant,,county,3.82
+4021,1329.0,48.0,664.0,75.0,652.0,0.0,Charleston,SC,Merchant,Charleston County,town,1329.48
+4022,100.0,0.0,50.0,0.0,95.0,85.0,Charleston,SC,Planter,Charleston County,town,100.0
+4023,916.0,60.0,458.0,30.0,896.0,15.0,Charleston,SC,Merchant,Charleston County,town,916.6
 4024,222.0,5.0,111.0,3.0,351.0,21.0,New York,NY,Merchant,,state,222.05
-4025,66.0,66.0,33.0,34.0,60.0,69.0,Charleston,SC,Merchant,Berkeley County,town,66.66
-4026,727.0,8.0,363.0,55.0,260.0,11.0,Charleston,SC,Merchant,Berkeley County,town,727.08
+4025,66.0,66.0,33.0,34.0,60.0,69.0,Charleston,SC,Merchant,Charleston County,town,66.66
+4026,727.0,8.0,363.0,55.0,260.0,11.0,Charleston,SC,Merchant,Charleston County,town,727.08
 4027,222.0,6.0,111.0,3.0,93.0,59.0,Philadelphia,PA,,Philadelphia County,town,222.06
-4028,1423.0,48.0,711.0,74.0,365.0,55.0,Charleston,SC,Blacks smith,Berkeley County,town,1423.48
-4029,257.0,37.0,128.0,69.0,36.0,20.0,Charleston,SC,Merchant,Berkeley County,town,257.37
-4030,533.0,33.0,266.0,67.0,144.0,,Charleston,SC,Physician,Berkeley County,town,533.33
-4031,,,,,431.0,12.0,Charleston,SC,Merchant,Berkeley County,town,
-4032,2738.0,49.0,1369.0,25.0,1476.0,34.0,Charleston,SC,Factor,Berkeley County,town,2738.49
+4028,1423.0,48.0,711.0,74.0,365.0,55.0,Charleston,SC,Blacks smith,Charleston County,town,1423.48
+4029,257.0,37.0,128.0,69.0,36.0,20.0,Charleston,SC,Merchant,Charleston County,town,257.37
+4030,533.0,33.0,266.0,67.0,144.0,,Charleston,SC,Physician,Charleston County,town,533.33
+4031,,,,,431.0,12.0,Charleston,SC,Merchant,Charleston County,town,
+4032,2738.0,49.0,1369.0,25.0,1476.0,34.0,Charleston,SC,Factor,Charleston County,town,2738.49
 4033,47.0,22.0,23.0,61.0,49.0,77.0,Boston,MA,,Suffolk County,town,47.22
-4034,377.0,49.0,188.0,75.0,384.0,70.0,Charleston,SC,Tanner,Berkeley County,town,377.49
-4035,2879.0,48.0,1439.0,74.0,2615.0,49.0,Charleston,SC,Merchant,Berkeley County,town,2879.48
+4034,377.0,49.0,188.0,75.0,384.0,70.0,Charleston,SC,Tanner,Charleston County,town,377.49
+4035,2879.0,48.0,1439.0,74.0,2615.0,49.0,Charleston,SC,Merchant,Charleston County,town,2879.48
 4036,433.0,33.0,216.0,66.0,389.0,62.0,Philadelphia,PA,,Philadelphia County,town,433.33
 4037,80.0,53.0,40.0,27.0,78.0,66.0,St. Paul's,SC,Planter,Clarendon County,town,80.53
 4038,1335.0,12.0,667.0,56.0,757.0,44.0,New York,NY,,,state,1335.12
 4039,66.0,66.0,33.0,33.0,62.0,86.0,Virginia,VA,,,state,66.66
-4040,79.0,82.0,39.0,92.0,44.0,89.0,Charleston,SC,Broker,Berkeley County,town,79.82
+4040,79.0,82.0,39.0,92.0,44.0,89.0,Charleston,SC,Broker,Charleston County,town,79.82
 4041,46.0,2.0,23.0,1.0,44.0,89.0,Williamsburgh,VA,Weaver,Greenbrier County,county,46.02
-4042,30.0,8.0,15.0,4.0,29.0,10.0,Charleston,SC,Shopkeeper,Berkeley County,town,30.08
-4043,4397.0,6.0,2198.0,53.0,1653.0,96.0,Pee Dee,SC,,Marion County,town,4397.06
+4042,30.0,8.0,15.0,4.0,29.0,10.0,Charleston,SC,Shopkeeper,Charleston County,town,30.08
+4043,4397.0,6.0,2198.0,53.0,1653.0,96.0,Pee Dee,SC,,Georgetown County,town,4397.06
 4044,250.0,89.0,125.0,45.0,221.0,77.0,St Helena,SC,Planter,Beaufort County,county,250.89
 4045,274.0,28.0,137.0,14.0,324.0,,Philadelphia,PA,,Philadelphia County,town,274.28
-4046,2909.0,1.0,1454.0,51.0,1924.0,27.0,Charleston,SC,Physician,Berkeley County,town,2909.01
-4047,385.0,38.0,192.0,69.0,333.0,65.0,Charleston,SC,Planter,Berkeley County,town,385.38
-4048,743.0,77.0,371.0,89.0,274.0,42.0,Charleston,SC,Merchant,Berkeley County,town,743.77
+4046,2909.0,1.0,1454.0,51.0,1924.0,27.0,Charleston,SC,Physician,Charleston County,town,2909.01
+4047,385.0,38.0,192.0,69.0,333.0,65.0,Charleston,SC,Planter,Charleston County,town,385.38
+4048,743.0,77.0,371.0,89.0,274.0,42.0,Charleston,SC,Merchant,Charleston County,town,743.77
 4049,88.0,60.0,44.0,30.0,62.0,43.0,New York,NY,Merchant,,state,88.6
 4050,337.0,98.0,199.0,81.0,61.0,63.0,Philadelphia,PA,,Philadelphia County,town,337.98
-4051,636.0,11.0,318.0,6.0,293.0,36.0,Charleston,SC,,Berkeley County,town,636.11
-4052,790.0,22.0,395.0,11.0,784.0,54.0,Charleston,SC,Merchant,Berkeley County,town,790.22
+4051,636.0,11.0,318.0,6.0,293.0,36.0,Charleston,SC,,Charleston County,town,636.11
+4052,790.0,22.0,395.0,11.0,784.0,54.0,Charleston,SC,Merchant,Charleston County,town,790.22
 4053,61.0,50.0,30.0,75.0,57.0,16.0,Register of the Treasury,US,,,,61.5
-4054,4237.0,41.0,2118.0,70.0,3916.0,44.0,Charleston,SC,Merchant,Berkeley County,town,4237.41
-4055,651.0,61.0,325.0,81.0,648.0,5.0,Charleston,SC,Merchant,Berkeley County,town,651.61
-4056,112.0,33.0,56.0,17.0,75.0,19.0,Charleston,SC,Broker,Berkeley County,town,112.33
-4057,313.0,42.0,156.0,71.0,38.0,31.0,Charleston,SC,Merchant,Berkeley County,town,313.42
-4058,1193.0,48.0,596.0,74.0,621.0,54.0,Charleston,SC,Blockmaker,Berkeley County,town,1193.48
+4054,4237.0,41.0,2118.0,70.0,3916.0,44.0,Charleston,SC,Merchant,Charleston County,town,4237.41
+4055,651.0,61.0,325.0,81.0,648.0,5.0,Charleston,SC,Merchant,Charleston County,town,651.61
+4056,112.0,33.0,56.0,17.0,75.0,19.0,Charleston,SC,Broker,Charleston County,town,112.33
+4057,313.0,42.0,156.0,71.0,38.0,31.0,Charleston,SC,Merchant,Charleston County,town,313.42
+4058,1193.0,48.0,596.0,74.0,621.0,54.0,Charleston,SC,Blockmaker,Charleston County,town,1193.48
 4059,44.0,,22.0,,42.0,88.0,,,,,,
-4060,1834.0,72.0,917.0,36.0,1781.0,87.0,Charleston,SC,Merchant,Berkeley County,town,1834.72
+4060,1834.0,72.0,917.0,36.0,1781.0,87.0,Charleston,SC,Merchant,Charleston County,town,1834.72
 4061,100.0,,50.0,,0.0,0.0,Philadelphia,PA,,Philadelphia County,town,
-4062,274.0,28.0,137.0,15.0,46.0,36.0,Charleston,SC,Merchant,Berkeley County,town,274.28
-4063,53.0,74.0,26.0,87.0,32.0,24.0,Charleston,SC,Comtroller of the Customs,Berkeley County,town,53.74
+4062,274.0,28.0,137.0,15.0,46.0,36.0,Charleston,SC,Merchant,Charleston County,town,274.28
+4063,53.0,74.0,26.0,87.0,32.0,24.0,Charleston,SC,Comtroller of the Customs,Charleston County,town,53.74
 4064,103.0,84.0,51.0,92.0,98.0,85.0,Boston,MA,,Suffolk County,town,103.84
-4065,212.0,89.0,106.0,45.0,388.0,7.0,Charleston,SC,Attorney at Law,Berkeley County,town,212.89
+4065,212.0,89.0,106.0,45.0,388.0,7.0,Charleston,SC,Attorney at Law,Charleston County,town,212.89
 4066,408.0,11.0,204.0,6.0,306.0,8.0,New York,NY,,,state,408.11
-4067,1661.0,55.0,830.0,78.0,838.0,5.0,Charleston,SC,,Berkeley County,town,1661.55
-4068,621.0,30.0,310.0,66.0,326.0,96.0,Charleston,SC,Attorney at Law,Berkeley County,town,621.3
-4069,66.0,66.0,33.0,34.0,63.0,38.0,Charleston,SC,Widow,Berkeley County,town,66.66
-4070,200.0,,100.0,,191.0,56.0,Charleston,SC,Merchant,Berkeley County,town,
-4071,405.0,62.0,202.0,76.0,393.0,75.0,Charleston,SC,Merchant,Berkeley County,town,405.62
-4072,2070.0,55.0,1035.0,27.0,3874.0,16.0,Charleston,SC,Merchant,Berkeley County,town,2070.55
+4067,1661.0,55.0,830.0,78.0,838.0,5.0,Charleston,SC,,Charleston County,town,1661.55
+4068,621.0,30.0,310.0,66.0,326.0,96.0,Charleston,SC,Attorney at Law,Charleston County,town,621.3
+4069,66.0,66.0,33.0,34.0,63.0,38.0,Charleston,SC,Widow,Charleston County,town,66.66
+4070,200.0,,100.0,,191.0,56.0,Charleston,SC,Merchant,Charleston County,town,
+4071,405.0,62.0,202.0,76.0,393.0,75.0,Charleston,SC,Merchant,Charleston County,town,405.62
+4072,2070.0,55.0,1035.0,27.0,3874.0,16.0,Charleston,SC,Merchant,Charleston County,town,2070.55
 4073,16.0,66.67,8.0,33.33,71.0,2.0,North Carolina,NC,,,state,16.6667
 4074,283.0,33.0,141.0,66.0,261.0,59.0,Maryland,MD,,,state,283.33
-4075,406.0,34.0,203.0,17.0,409.0,86.0,Charleston,SC,Merchant,Berkeley County,town,406.34
-4076,1814.0,67.0,907.0,33.0,837.0,45.0,Charleston,SC,Planter,Berkeley County,town,1814.67
+4075,406.0,34.0,203.0,17.0,409.0,86.0,Charleston,SC,Merchant,Charleston County,town,406.34
+4076,1814.0,67.0,907.0,33.0,837.0,45.0,Charleston,SC,Planter,Charleston County,town,1814.67
 4077,78.0,50.0,39.0,25.0,22.0,50.0,North Carolina,NC,,,state,78.5
-4078,28.0,16.0,14.0,8.0,27.0,54.0,Charleston,SC,Broker,Berkeley County,town,28.16
+4078,28.0,16.0,14.0,8.0,27.0,54.0,Charleston,SC,Broker,Charleston County,town,28.16
 4079,2198.0,42.0,1099.0,21.0,1437.0,65.0,Georgetown,SC,Physician,Georgetown County,town,2198.42
 4080,429.0,24.0,214.0,62.0,438.0,57.0,Georgetown,SC,Executor of Benjamin Tucker,Georgetown County,town,429.24
-4081,267.0,98.0,133.0,99.0,213.0,37.0,Charleston,SC,Merchant,Berkeley County,town,267.98
+4081,267.0,98.0,133.0,99.0,213.0,37.0,Charleston,SC,Merchant,Charleston County,town,267.98
 4082,396.0,20.0,198.0,10.0,360.0,33.0,New York,NY,,,state,396.2
 4083,2598.0,58.0,1299.0,29.0,2568.0,95.0,,FR,Consul of the French Nation,,,2598.58
 4084,1277.0,84.0,638.0,92.0,1258.0,50.0,,FR,Consul of the French Nation,,,1277.84
 4085,621.0,16.0,310.0,58.0,1072.0,38.0,,FR,Consul of the French Nation,,,621.16
-4086,166.0,72.0,83.0,36.0,169.0,61.0,Charleston,SC,Merchant,Berkeley County,town,166.72
-4087,37.0,94.0,18.0,97.0,32.0,25.0,Charleston,SC,Merchant,Berkeley County,town,37.94
+4086,166.0,72.0,83.0,36.0,169.0,61.0,Charleston,SC,Merchant,Charleston County,town,166.72
+4087,37.0,94.0,18.0,97.0,32.0,25.0,Charleston,SC,Merchant,Charleston County,town,37.94
 4088,100.0,,50.0,,600.0,62.0,New York,NY,,,state,
 4089,129.0,72.0,64.0,68.0,812.0,45.0,New York,NY,,,state,129.72
-4090,4070.0,75.0,2035.0,37.0,2076.0,6.0,Charleston,SC,Blockmaker,Berkeley County,town,4070.75
-4091,1829.0,68.0,914.0,84.0,1256.0,46.0,Charleston,SC,,Berkeley County,town,1829.68
-4092,857.0,52.0,428.0,76.0,272.0,35.0,Charleston,SC,Merchant,Berkeley County,town,857.52
-4093,191.0,75.0,95.0,87.0,69.0,2.0,Charleston,SC,Merchant,Berkeley County,town,191.75
-4094,1748.0,14.0,874.0,7.0,1869.0,45.0,Charleston,SC,Merchant,Berkeley County,town,1748.14
+4090,4070.0,75.0,2035.0,37.0,2076.0,6.0,Charleston,SC,Blockmaker,Charleston County,town,4070.75
+4091,1829.0,68.0,914.0,84.0,1256.0,46.0,Charleston,SC,,Charleston County,town,1829.68
+4092,857.0,52.0,428.0,76.0,272.0,35.0,Charleston,SC,Merchant,Charleston County,town,857.52
+4093,191.0,75.0,95.0,87.0,69.0,2.0,Charleston,SC,Merchant,Charleston County,town,191.75
+4094,1748.0,14.0,874.0,7.0,1869.0,45.0,Charleston,SC,Merchant,Charleston County,town,1748.14
 4095,2439.0,2.0,1219.0,51.0,1139.0,71.0,,SC,Trustee for the Cincinnati of South Carolina,,,2439.02
-4096,11.0,66.66666666666667,5.0,83.33333333333333,9.0,3.0,Charleston,SC,,Berkeley County,town,11.666666666666666
+4096,11.0,66.66666666666667,5.0,83.33333333333333,9.0,3.0,Charleston,SC,,Charleston County,town,11.666666666666666
 4097,16.0,66.0,8.0,33.0,15.0,96.0,Georgetown,SC,Widow,Georgetown County,town,16.66
-4098,234.0,96.0,117.0,48.0,179.0,14.0,Charleston,SC,Merchant,Berkeley County,town,234.96
-4099,1501.0,60.0,750.0,80.0,900.0,95.0,St. George,SC,Planter,Dorchester County,town,1501.6
-4100,1066.0,66.66666666666667,533.0,33.333333333333336,684.0,53.0,Camden,SC,Sheriff,Kershaw County,town,1066.6666666666667
-4101,45.0,46.0,22.0,73.0,31.0,93.0,Charleston,SC,Merchant,Berkeley County,town,45.46
-4102,142.0,68.0,71.0,34.0,130.0,25.0,Charleston,SC,Merchant,Berkeley County,town,142.68
-4103,76.0,70.0,38.0,35.0,75.0,2.0,Charleston,SC,Executrix of William Savage,Berkeley County,town,76.7
+4098,234.0,96.0,117.0,48.0,179.0,14.0,Charleston,SC,Merchant,Charleston County,town,234.96
+4099,1501.0,60.0,750.0,80.0,900.0,95.0,St. George,SC,Planter,Charleston County,town,1501.6
+4100,1066.0,66.66666666666667,533.0,33.333333333333336,684.0,53.0,Camden,SC,Sheriff,Lancaster County,town,1066.6666666666667
+4101,45.0,46.0,22.0,73.0,31.0,93.0,Charleston,SC,Merchant,Charleston County,town,45.46
+4102,142.0,68.0,71.0,34.0,130.0,25.0,Charleston,SC,Merchant,Charleston County,town,142.68
+4103,76.0,70.0,38.0,35.0,75.0,2.0,Charleston,SC,Executrix of William Savage,Charleston County,town,76.7
 4104,2300.0,,1150.0,,1173.0,,St. Thomas,VI,Planter,,,
 4105,167.0,70.0,83.0,85.0,270.0,11.0,Philadelphia,PA,,Philadelphia County,town,167.7
 4106,36.0,12.0,18.0,6.0,27.0,9.0,Philadelphia,PA,,Philadelphia County,town,36.12
-4107,1449.0,38.0,724.0,69.0,2502.0,25.0,Charleston,SC,Merchant,Berkeley County,town,1449.38
-4108,16.0,66.66666666666667,8.0,33.333333333333336,15.0,96.0,Charleston,SC,Merchant,Berkeley County,town,16.666666666666668
+4107,1449.0,38.0,724.0,69.0,2502.0,25.0,Charleston,SC,Merchant,Charleston County,town,1449.38
+4108,16.0,66.66666666666667,8.0,33.333333333333336,15.0,96.0,Charleston,SC,Merchant,Charleston County,town,16.666666666666668
 4109,38.0,29.0,19.0,14.0,38.0,51.0,New River,SC,Planter,Beaufort County,town,38.29
-4110,164.0,8.0,82.0,4.0,11.0,25.0,Charleston,SC,Merchant,Berkeley County,town,164.08
-4111,69.0,2.0,34.0,51.0,67.0,64.0,Charleston,SC,Executor of Jacob Smiser,Berkeley County,town,69.02
+4110,164.0,8.0,82.0,4.0,11.0,25.0,Charleston,SC,Merchant,Charleston County,town,164.08
+4111,69.0,2.0,34.0,51.0,67.0,64.0,Charleston,SC,Executor of Jacob Smiser,Charleston County,town,69.02
 4112,16.0,67.0,8.0,34.0,15.0,84.0,Philadelphia,PA,,Philadelphia County,town,16.67
-4113,602.0,34.0,301.0,17.0,324.0,60.0,Charleston,SC,Merchant,Berkeley County,town,602.34
+4113,602.0,34.0,301.0,17.0,324.0,60.0,Charleston,SC,Merchant,Charleston County,town,602.34
 4114,303.0,4.0,151.0,52.0,305.0,37.0,,,Administrator to Damaris Elizabeth Ravenel,,,303.04
 4115,242.0,44.0,121.0,22.0,243.0,61.0,,,Executrix of Daniel Ravenel,,,242.44
-4116,7.0,66.0,3.0,83.0,102.0,60.0,Charleston,SC,Merchant,Berkeley County,town,7.66
-4117,150.0,,75.0,,139.0,72.0,Charleston,SC,Merchant,Berkeley County,town,
-4118,2454.0,13.0,1227.0,7.0,662.0,61.0,Charleston,SC,Merchant,Berkeley County,town,2454.13
+4116,7.0,66.0,3.0,83.0,102.0,60.0,Charleston,SC,Merchant,Charleston County,town,7.66
+4117,150.0,,75.0,,139.0,72.0,Charleston,SC,Merchant,Charleston County,town,
+4118,2454.0,13.0,1227.0,7.0,662.0,61.0,Charleston,SC,Merchant,Charleston County,town,2454.13
 4119,169.0,72.0,84.0,86.0,173.0,46.0,St Johns,SC,Widow,Charleston County,county,169.72
-4120,827.0,49.0,413.0,74.0,814.0,36.0,Charleston,SC,,Berkeley County,town,827.49
-4121,310.0,20.0,155.0,10.0,111.0,66.0,Charleston,SC,Merchant,Berkeley County,town,310.2
+4120,827.0,49.0,413.0,74.0,814.0,36.0,Charleston,SC,,Charleston County,town,827.49
+4121,310.0,20.0,155.0,10.0,111.0,66.0,Charleston,SC,Merchant,Charleston County,town,310.2
 4122,138.0,58.0,69.0,29.0,60.0,12.0,New York,NY,Merchant,,state,138.58
-4123,99.0,50.0,49.0,75.0,95.0,32.0,Charleston,SC,Planter,Berkeley County,town,99.5
-4124,1600.0,,800.0,,1533.0,46.0,Charleston,SC,,Berkeley County,town,
-4125,66.0,66.66666666666667,33.0,33.333333333333336,61.0,27.0,Winyaw,SC,Planter,Winyah County,town,66.66666666666667
-4126,50.0,,25.0,,39.0,96.0,Charleston,SC,Hair Dresser,Berkeley County,town,
-4127,685.0,77.0,342.0,88.0,810.0,,Charleston,SC,Executor of William Parker,Berkeley County,town,685.77
-4128,283.0,33.333333333333336,141.0,66.66666666666667,339.0,30.0,Charleston,SC,Merchant,Berkeley County,town,283.3333333333333
-4129,112.0,54.0,56.0,27.0,109.0,24.0,Charleston,SC,Vendue Master,Berkeley County,town,112.54
+4123,99.0,50.0,49.0,75.0,95.0,32.0,Charleston,SC,Planter,Charleston County,town,99.5
+4124,1600.0,,800.0,,1533.0,46.0,Charleston,SC,,Charleston County,town,
+4125,66.0,66.66666666666667,33.0,33.333333333333336,61.0,27.0,Winyaw,SC,Planter,Georgetown County,town,66.66666666666667
+4126,50.0,,25.0,,39.0,96.0,Charleston,SC,Hair Dresser,Charleston County,town,
+4127,685.0,77.0,342.0,88.0,810.0,,Charleston,SC,Executor of William Parker,Charleston County,town,685.77
+4128,283.0,33.333333333333336,141.0,66.66666666666667,339.0,30.0,Charleston,SC,Merchant,Charleston County,town,283.3333333333333
+4129,112.0,54.0,56.0,27.0,109.0,24.0,Charleston,SC,Vendue Master,Charleston County,town,112.54
 4130,9.0,8.0,4.0,54.0,8.0,78.0,Philadelphia,PA,,Philadelphia County,town,9.08
-4131,239.0,10.0,119.0,55.0,245.0,23.0,Charleston,SC,Executor Philip Hawkins,Berkeley County,town,239.1
+4131,239.0,10.0,119.0,55.0,245.0,23.0,Charleston,SC,Executor Philip Hawkins,Charleston County,town,239.1
 4132,26.0,84.0,13.0,42.0,26.0,28.0,Broad River,SC,Planter,Beaufort County,town,26.84
-4133,233.0,33.0,116.0,66.0,221.0,75.0,Charleston,SC,Planter,Berkeley County,town,233.33
-4134,33.0,33.0,16.0,66.0,30.0,68.0,Charleston,SC,Administrator to John Harleston Jun,Berkeley County,town,33.33
-4135,148.0,24.0,74.0,12.0,47.0,24.0,Charleston,SC,Merchant,Berkeley County,town,148.24
-4136,53.0,33.333333333333336,26.0,66.66666666666667,50.0,32.0,Charleston,SC,,Berkeley County,town,53.333333333333336
-4137,50.0,,25.0,,47.0,93.0,Charleston,SC,Merchant,Berkeley County,town,
-4138,2602.0,1.0,1301.0,,1352.0,31.0,Charleston,SC,Attorney at Law,Berkeley County,town,2602.01
-4139,578.0,78.0,289.0,39.0,1007.0,51.0,Charleston,SC,Merchant,Berkeley County,town,578.78
+4133,233.0,33.0,116.0,66.0,221.0,75.0,Charleston,SC,Planter,Charleston County,town,233.33
+4134,33.0,33.0,16.0,66.0,30.0,68.0,Charleston,SC,Administrator to John Harleston Jun,Charleston County,town,33.33
+4135,148.0,24.0,74.0,12.0,47.0,24.0,Charleston,SC,Merchant,Charleston County,town,148.24
+4136,53.0,33.333333333333336,26.0,66.66666666666667,50.0,32.0,Charleston,SC,,Charleston County,town,53.333333333333336
+4137,50.0,,25.0,,47.0,93.0,Charleston,SC,Merchant,Charleston County,town,
+4138,2602.0,1.0,1301.0,,1352.0,31.0,Charleston,SC,Attorney at Law,Charleston County,town,2602.01
+4139,578.0,78.0,289.0,39.0,1007.0,51.0,Charleston,SC,Merchant,Charleston County,town,578.78
 4140,1200.0,,600.0,,1961.0,1.0,,,,,,
-4141,103.0,16.0,51.0,58.0,115.0,46.0,Charleston,SC,Merchant,Berkeley County,town,103.16
+4141,103.0,16.0,51.0,58.0,115.0,46.0,Charleston,SC,Merchant,Charleston County,town,103.16
 4142,155.0,83.0,77.0,91.0,145.0,95.0,Philadelphia,PA,,Philadelphia County,town,155.83
-4143,66.0,66.0,33.0,33.0,154.0,20.0,Charleston,SC,Executor of William Gibbs,Berkeley County,town,66.66
+4143,66.0,66.0,33.0,33.0,154.0,20.0,Charleston,SC,Executor of William Gibbs,Charleston County,town,66.66
 4144,379.0,68.0,189.0,84.0,372.0,8.0,Columbia,SC,Planter,Richland County,town,379.68
 4145,582.0,52.0,291.0,26.0,92.0,84.0,Philadelphia,PA,,Philadelphia County,town,582.52
-4146,8.0,36.0,4.0,18.0,7.0,50.0,Charleston,SC,,Berkeley County,town,8.36
+4146,8.0,36.0,4.0,18.0,7.0,50.0,Charleston,SC,,Charleston County,town,8.36
 4147,1011.0,39.0,505.0,69.0,949.0,9.0,St Thomas,BVI,deceased,,,1011.39
-4148,316.0,67.0,158.0,33.0,298.0,6.0,Charleston,SC,Merchant,Berkeley County,town,316.67
-4149,113.0,49.0,56.0,74.0,57.0,35.0,Charleston,SC,,Berkeley County,town,113.49
-4150,78.0,40.0,39.0,20.0,74.0,81.0,Charleston,SC,Mariner,Berkeley County,town,78.4
-4151,53.0,70.0,26.0,85.0,37.0,54.0,Charleston,SC,Merchant,Berkeley County,town,53.7
+4148,316.0,67.0,158.0,33.0,298.0,6.0,Charleston,SC,Merchant,Charleston County,town,316.67
+4149,113.0,49.0,56.0,74.0,57.0,35.0,Charleston,SC,,Charleston County,town,113.49
+4150,78.0,40.0,39.0,20.0,74.0,81.0,Charleston,SC,Mariner,Charleston County,town,78.4
+4151,53.0,70.0,26.0,85.0,37.0,54.0,Charleston,SC,Merchant,Charleston County,town,53.7
 4152,46.0,2.0,23.0,1.0,45.0,1.0,St Andrews,SC,Planter,Richland County,county,46.02
 4153,218.0,26.0,109.0,13.0,215.0,55.0,Great Britain,GB,Widow,,,218.26
 4154,150.0,,74.99999999999999,,138.0,90.0,Philadelphia,PA,Merchant,Philadelphia County,town,
 4155,174.0,62.0,87.0,31.0,,,New York,NY,Merchant,,state,174.62
 4156,526.0,95.0,263.0,47.0,281.0,74.0,Philadelphia,PA,,Philadelphia County,town,526.95
-4157,75.0,73.0,37.0,86.0,60.0,58.0,Charleston,SC,Merchant,Berkeley County,town,75.73
-4158,100.0,,50.0,,93.0,78.0,Charleston,SC,,Berkeley County,town,
-4159,179.0,42.0,89.0,71.0,155.0,2.0,Charleston,SC,Merchant,Berkeley County,town,179.42
+4157,75.0,73.0,37.0,86.0,60.0,58.0,Charleston,SC,Merchant,Charleston County,town,75.73
+4158,100.0,,50.0,,93.0,78.0,Charleston,SC,,Charleston County,town,
+4159,179.0,42.0,89.0,71.0,155.0,2.0,Charleston,SC,Merchant,Charleston County,town,179.42
 4160,581.0,48.0,290.0,74.0,545.0,12.0,New York,NY,Merchants,,state,581.48
 4161,143.0,33.0,71.0,66.0,107.0,51.0,Philadelphia,PA,,Philadelphia County,town,143.33
 4162,284.0,16.0,142.0,8.0,285.0,25.0,,,Executor of Richard Beresford,,,284.16
-4163,33.0,33.0,16.0,66.0,30.0,14.0,Charleston,SC,,Berkeley County,town,33.33
+4163,33.0,33.0,16.0,66.0,30.0,14.0,Charleston,SC,,Charleston County,town,33.33
 4164,255.0,94.0,127.0,97.0,369.0,52.0,New York,NY,Merchant,,state,255.94
-4165,59.0,41.0,29.0,70.0,44.0,26.0,Charleston,SC,Broker,Berkeley County,town,59.41
-4166,116.0,66.0,58.0,33.0,111.0,55.0,Charleston,SC,as treasurer of the State of south carolina,Berkeley County,town,116.66
-4167,100.0,,50.0,,95.0,80.0,Charleston,SC,Planter,Berkeley County,town,
+4165,59.0,41.0,29.0,70.0,44.0,26.0,Charleston,SC,Broker,Charleston County,town,59.41
+4166,116.0,66.0,58.0,33.0,111.0,55.0,Charleston,SC,as treasurer of the State of south carolina,Charleston County,town,116.66
+4167,100.0,,50.0,,95.0,80.0,Charleston,SC,Planter,Charleston County,town,
 4168,33.0,33.0,16.0,66.0,30.0,73.0,Georgia,GA,,,state,33.33
-4169,33.0,33.0,16.0,66.0,30.0,42.0,Charleston,SC,Merchant,Berkeley County,town,33.33
+4169,33.0,33.0,16.0,66.0,30.0,42.0,Charleston,SC,Merchant,Charleston County,town,33.33
 4170,163.0,76.0,81.0,88.0,63.0,86.0,Georgetown,SC,Merchant,Georgetown County,town,163.76
-4171,40.0,26.0,20.0,13.0,39.0,44.0,Charleston,SC,Merchant,Berkeley County,town,40.26
+4171,40.0,26.0,20.0,13.0,39.0,44.0,Charleston,SC,Merchant,Charleston County,town,40.26
 4172,22.0,16.0,11.0,8.0,3.0,74.0,,FR,Consul of the French Nation,,,22.16
-4173,120.0,49.0,60.0,24.0,112.0,51.0,Charleston,SC,Merchant,Berkeley County,town,120.49
+4173,120.0,49.0,60.0,24.0,112.0,51.0,Charleston,SC,Merchant,Charleston County,town,120.49
 4174,55.0,71.0,27.0,86.0,31.0,25.0,New York,NY,Merchant,,state,55.71
-4175,50.0,,25.0,,44.0,73.0,Pee Dee,SC,Planter,Marion County,town,
+4175,50.0,,25.0,,44.0,73.0,Pee Dee,SC,Planter,Georgetown County,town,
 4176,333.0,33.0,166.0,66.0,301.0,62.0,North Carolina,NC,,,state,333.33
 4177,1183.0,33.0,591.0,67.0,493.0,45.0,,,Execcutor of Jacob Motte,,,1183.33
-4178,88.0,68.0,44.0,34.0,27.0,12.0,Charleston,SC,Merchant,Berkeley County,town,88.68
-4179,37.0,35.0,18.0,68.0,18.0,75.0,Charleston,SC,Bricklayer,Berkeley County,town,37.35
-4180,137.0,12.0,68.0,56.0,11.0,65.0,Charleston,SC,,Berkeley County,town,137.12
-4181,15.0,63.0,7.0,81.0,11.0,24.0,Charleston,SC,Merchant,Berkeley County,town,15.63
-4182,141.0,88.0,70.0,94.0,24.0,68.0,Charleston,SC,Merchants,Berkeley County,town,141.88
+4178,88.0,68.0,44.0,34.0,27.0,12.0,Charleston,SC,Merchant,Charleston County,town,88.68
+4179,37.0,35.0,18.0,68.0,18.0,75.0,Charleston,SC,Bricklayer,Charleston County,town,37.35
+4180,137.0,12.0,68.0,56.0,11.0,65.0,Charleston,SC,,Charleston County,town,137.12
+4181,15.0,63.0,7.0,81.0,11.0,24.0,Charleston,SC,Merchant,Charleston County,town,15.63
+4182,141.0,88.0,70.0,94.0,24.0,68.0,Charleston,SC,Merchants,Charleston County,town,141.88
 4183,21.0,8.0,10.0,54.0,20.0,64.0,,,Executor of Hugh Irvin,,,21.08
 4184,407.0,50.0,203.0,75.0,381.0,1.0,New York,NY,Merchant,,state,407.5
-4185,47.0,48.0,23.0,75.0,51.0,90.0,Charleston,SC,Attorney at Law,Berkeley County,town,47.48
-4186,1303.0,96.0,651.0,98.0,1425.0,59.0,Charleston,SC,,Berkeley County,town,1303.96
+4185,47.0,48.0,23.0,75.0,51.0,90.0,Charleston,SC,Attorney at Law,Charleston County,town,47.48
+4186,1303.0,96.0,651.0,98.0,1425.0,59.0,Charleston,SC,,Charleston County,town,1303.96
 4187,914.0,24.0,457.0,12.0,995.0,99.0,Richard Sennings,SC,Penniston,,,914.24
-4188,581.0,44.0,290.0,72.0,25.0,12.0,Charleston,SC,Merchant,Berkeley County,town,581.44
-4189,2830.0,92.0,1415.0,46.0,3250.0,35.0,Charleston,SC,Widow,Berkeley County,town,2830.92
-4190,345.0,,172.0,50.0,331.0,20.0,Camden,SC,,Kershaw County,town,
+4188,581.0,44.0,290.0,72.0,25.0,12.0,Charleston,SC,Merchant,Charleston County,town,581.44
+4189,2830.0,92.0,1415.0,46.0,3250.0,35.0,Charleston,SC,Widow,Charleston County,town,2830.92
+4190,345.0,,172.0,50.0,331.0,20.0,Camden,SC,,Lancaster County,town,
 4191,1580.0,63.0,790.0,31.0,1818.0,62.0,,,Executor of John Paul Grimke,,,1580.63
-4192,940.0,52.0,470.0,25.0,993.0,86.0,Charleston,SC,Merchant,Berkeley County,town,940.52
-4193,81.0,42.0,40.0,72.0,,,Charleston,SC,Broker,Berkeley County,town,81.42
-4194,189.0,56.0,94.0,78.0,,,Charleston,SC,Merchant,Berkeley County,town,189.56
+4192,940.0,52.0,470.0,25.0,993.0,86.0,Charleston,SC,Merchant,Charleston County,town,940.52
+4193,81.0,42.0,40.0,72.0,,,Charleston,SC,Broker,Charleston County,town,81.42
+4194,189.0,56.0,94.0,78.0,,,Charleston,SC,Merchant,Charleston County,town,189.56
 4195,114.0,89.0,57.0,45.0,,,Bermuda,BM,Merchant,,,114.89
-4196,176.0,60.0,88.0,31.0,,,Charleston,SC,Merchant,Berkeley County,town,176.6
-4197,31.0,26.0,15.0,63.0,,,96 District,SC,Planter,Greenwood County,county,31.26
-4198,161.0,36.0,80.0,69.0,,,Charleston,SC,Planter,Berkeley County,town,161.36
-4199,48.0,80.0,24.0,40.0,,,Charleston,SC,Merchant,Berkeley County,town,48.8
-4200,172.0,88.0,86.0,44.0,,,Charleston,SC,Merchant,Berkeley County,town,172.88
-4201,131.0,93.0,65.0,47.0,,,Charleston,SC,Merchant,Berkeley County,town,131.93
-4202,613.0,94.0,306.0,98.0,,,Charleston,SC,,Berkeley County,town,613.94
-4203,117.0,68.0,58.0,84.0,,,Charleston,SC,Merchant,Berkeley County,town,117.68
+4196,176.0,60.0,88.0,31.0,,,Charleston,SC,Merchant,Charleston County,town,176.6
+4197,31.0,26.0,15.0,63.0,,,96 District,SC,Planter,Abbeville County,county,31.26
+4198,161.0,36.0,80.0,69.0,,,Charleston,SC,Planter,Charleston County,town,161.36
+4199,48.0,80.0,24.0,40.0,,,Charleston,SC,Merchant,Charleston County,town,48.8
+4200,172.0,88.0,86.0,44.0,,,Charleston,SC,Merchant,Charleston County,town,172.88
+4201,131.0,93.0,65.0,47.0,,,Charleston,SC,Merchant,Charleston County,town,131.93
+4202,613.0,94.0,306.0,98.0,,,Charleston,SC,,Charleston County,town,613.94
+4203,117.0,68.0,58.0,84.0,,,Charleston,SC,Merchant,Charleston County,town,117.68
 4204,49.0,58.0,24.0,80.0,,,Edinburgh,GB,,,,49.58
-4205,17.0,15.0,8.0,58.0,,,Charleston,SC,as Guardian to Mary Deborah L. Gowdey,Berkeley County,town,17.15
-4206,55.0,93.0,27.0,96.0,,,Charleston,SC,Shopkeeper,Berkeley County,town,55.93
-4207,130.0,94.0,65.0,47.0,,,Charleston,SC,,Berkeley County,town,130.94
+4205,17.0,15.0,8.0,58.0,,,Charleston,SC,as Guardian to Mary Deborah L. Gowdey,Charleston County,town,17.15
+4206,55.0,93.0,27.0,96.0,,,Charleston,SC,Shopkeeper,Charleston County,town,55.93
+4207,130.0,94.0,65.0,47.0,,,Charleston,SC,,Charleston County,town,130.94
 4208,104.0,85.0,52.0,42.0,,,Georgetown,SC,Physician,Georgetown County,town,104.85
-4209,245.0,13.0,122.0,56.0,,,Charleston,SC,Merchant,Berkeley County,town,245.13
+4209,245.0,13.0,122.0,56.0,,,Charleston,SC,Merchant,Charleston County,town,245.13
 4210,48.0,42.0,24.0,21.0,,,Abbeville,SC,Planter,Abbeville County,town,48.42
 4211,113.0,43.0,56.0,71.0,,,,,Executor of Job Pray,,,113.43
-4212,20.0,45.0,10.0,22.0,,,Charleston,SC,Planter,Berkeley County,town,20.45
+4212,20.0,45.0,10.0,22.0,,,Charleston,SC,Planter,Charleston County,town,20.45
 4213,59.0,2.0,29.0,51.0,,,Columbia,SC,Planter,Richland County,town,59.02
-4214,336.0,13.0,168.0,6.0,,,Charleston,SC,,Berkeley County,town,336.13
+4214,336.0,13.0,168.0,6.0,,,Charleston,SC,,Charleston County,town,336.13
 4215,123.0,38.0,61.0,69.0,,,North Carolina,NC,,,state,123.38
-4216,49.0,30.0,24.0,65.0,,,Charleston,SC,Merchant,Berkeley County,town,49.3
+4216,49.0,30.0,24.0,65.0,,,Charleston,SC,Merchant,Charleston County,town,49.3
 4217,54.0,80.0,27.0,40.0,,,,,,,,54.8
-4218,68.0,26.0,34.0,14.0,,,Charleston,SC,Executor of Sarah Lampriere,Berkeley County,town,68.26
+4218,68.0,26.0,34.0,14.0,,,Charleston,SC,Executor of Sarah Lampriere,Charleston County,town,68.26
 4219,81.0,3.0,40.0,51.0,,,Long Cames,SC,Planter,,,81.03
-4220,740.0,36.0,370.0,18.0,,,Charleston,SC,Broker,Berkeley County,town,740.36
-4221,260.0,86.0,130.0,43.0,,,Charleston,SC,Merchant,Berkeley County,town,260.86
+4220,740.0,36.0,370.0,18.0,,,Charleston,SC,Broker,Charleston County,town,740.36
+4221,260.0,86.0,130.0,43.0,,,Charleston,SC,Merchant,Charleston County,town,260.86
 4222,28.0,97.0,14.0,48.0,,,Toogoodoo,SC,Widow,Charleston County,town,28.97
 4223,29.0,93.0,14.0,96.0,,,New York,NY,Merchant,,state,29.93
-4224,81.0,31.0,40.0,65.0,,,Charleston,SC,Merchant,Berkeley County,town,81.31
-4225,72.0,60.0,36.0,30.0,,,Charleston,SC,Merchant,Berkeley County,town,72.6
-4226,88.0,22.0,44.0,11.0,,,Charleston,SC,Merchant,Berkeley County,town,88.22
-4227,174.0,19.0,87.0,9.0,,,Charleston,SC,,Berkeley County,town,174.19
-4228,22.0,50.0,11.0,25.0,,,Charleston,SC,Attorney at Law,Berkeley County,town,22.5
-4229,23.0,72.0,11.0,86.0,,,Charleston,SC,Executor of Samuel Bonneau,Berkeley County,town,23.72
-4230,74.0,46.0,37.0,23.0,,,Charleston,SC,Cabinet Maker,Berkeley County,town,74.46
-4231,76.0,91.0,38.0,46.0,,,Charleston,SC,,Berkeley County,town,76.91
-4232,48.0,20.0,24.0,10.0,,,Charleston,SC,,Berkeley County,town,48.2
+4224,81.0,31.0,40.0,65.0,,,Charleston,SC,Merchant,Charleston County,town,81.31
+4225,72.0,60.0,36.0,30.0,,,Charleston,SC,Merchant,Charleston County,town,72.6
+4226,88.0,22.0,44.0,11.0,,,Charleston,SC,Merchant,Charleston County,town,88.22
+4227,174.0,19.0,87.0,9.0,,,Charleston,SC,,Charleston County,town,174.19
+4228,22.0,50.0,11.0,25.0,,,Charleston,SC,Attorney at Law,Charleston County,town,22.5
+4229,23.0,72.0,11.0,86.0,,,Charleston,SC,Executor of Samuel Bonneau,Charleston County,town,23.72
+4230,74.0,46.0,37.0,23.0,,,Charleston,SC,Cabinet Maker,Charleston County,town,74.46
+4231,76.0,91.0,38.0,46.0,,,Charleston,SC,,Charleston County,town,76.91
+4232,48.0,20.0,24.0,10.0,,,Charleston,SC,,Charleston County,town,48.2
 4233,17.0,30.0,8.0,65.0,,,,,Executors of Isaac McPhersom,,,17.3
-4234,10.0,65.0,5.0,32.0,,,Charleston,SC,Autioneer,Berkeley County,town,10.65
+4234,10.0,65.0,5.0,32.0,,,Charleston,SC,Autioneer,Charleston County,town,10.65
 4235,25.0,81.0,12.0,90.0,,,,,,,,25.81
 4236,38.0,60.0,19.0,30.0,,,,,Executor of Barnard Elliott,,,38.6
-4237,153.0,54.0,76.0,77.0,,,Charleston,SC,Shipwright,Berkeley County,town,153.54
+4237,153.0,54.0,76.0,77.0,,,Charleston,SC,Shipwright,Charleston County,town,153.54
 4238,37.0,74.0,18.0,87.0,,,,,Executor of Humphry Sommers,,,37.74
-4239,24.0,96.0,12.0,48.0,,,Charleston,SC,,Berkeley County,town,24.96
-4240,54.0,36.0,27.0,19.0,,,Charleston,SC,Merchant,Berkeley County,town,54.36
-4241,105.0,40.0,52.0,71.0,,,Charlestom,SC,Merchant,Berkeley County,county,105.4
-4242,113.0,86.0,56.0,94.0,,,Charleston,SC,Merchant,Berkeley County,town,113.86
-4243,20.0,14.0,10.0,8.0,,,Charleston,SC,Attorney at Law,Berkeley County,town,20.14
+4239,24.0,96.0,12.0,48.0,,,Charleston,SC,,Charleston County,town,24.96
+4240,54.0,36.0,27.0,19.0,,,Charleston,SC,Merchant,Charleston County,town,54.36
+4241,105.0,40.0,52.0,71.0,,,Charlestom,SC,Merchant,Charleston County,county,105.4
+4242,113.0,86.0,56.0,94.0,,,Charleston,SC,Merchant,Charleston County,town,113.86
+4243,20.0,14.0,10.0,8.0,,,Charleston,SC,Attorney at Law,Charleston County,town,20.14
 4244,29.0,48.0,14.0,74.0,,,St. Thomas,VI,Planter,,,29.48
-4245,94.0,95.0,47.0,48.0,,,Charleston,SC,Merchant,Berkeley County,town,94.95
-4246,85.0,59.0,42.0,80.0,,,Charleston,SC,Merchant,Berkeley County,town,85.59
+4245,94.0,95.0,47.0,48.0,,,Charleston,SC,Merchant,Charleston County,town,94.95
+4246,85.0,59.0,42.0,80.0,,,Charleston,SC,Merchant,Charleston County,town,85.59
 4247,14.0,82.0,7.0,41.0,,,,,,,,14.82
-4248,43.0,92.0,21.0,97.0,,,Charleston,SC,Carpenter,Berkeley County,town,43.92
+4248,43.0,92.0,21.0,97.0,,,Charleston,SC,Carpenter,Charleston County,town,43.92
 4249,27.0,44.0,13.0,72.0,,,Bourdeaux,FR,,,,27.44
-4250,284.0,94.0,142.0,47.0,,,Charleston,SC,,Berkeley County,town,284.94
+4250,284.0,94.0,142.0,47.0,,,Charleston,SC,,Charleston County,town,284.94
 4251,67.0,74.0,33.0,87.0,,,,,Executor Thomas Shubrick,,,67.74
-4252,62.0,19.0,31.0,10.0,,,Charleston,SC,Merchant,Berkeley County,town,62.19
+4252,62.0,19.0,31.0,10.0,,,Charleston,SC,Merchant,Charleston County,town,62.19
 4253,49.0,85.0,24.0,93.0,,,,,Executor Thomas Hanscome,,,49.85
-4254,13.0,34.0,6.0,67.0,,,Charleston,SC,Charleston Merchants,Berkeley County,town,13.34
-4255,13.0,33.0,6.0,67.0,,,Charleston,SC,Charleston Merchants,Berkeley County,town,13.33
+4254,13.0,34.0,6.0,67.0,,,Charleston,SC,Charleston Merchants,Charleston County,town,13.34
+4255,13.0,33.0,6.0,67.0,,,Charleston,SC,Charleston Merchants,Charleston County,town,13.33
 4256,63.0,4.0,31.0,52.0,,,St. Thomas,VI,Spinster,,,63.04
-4257,92.0,48.0,46.0,25.0,,,Charleston,SC,Clerk of the Senate,Berkeley County,town,92.48
-4258,108.0,84.0,54.0,43.0,,,Charleston,SC,Merchant,Berkeley County,town,108.84
-4259,123.0,29.0,61.0,65.0,,,Charleston,SC,Merchant,Berkeley County,town,123.29
-4260,82.0,82.0,41.0,41.0,,,Charleston,SC,Merchant,Berkeley County,town,82.82
+4257,92.0,48.0,46.0,25.0,,,Charleston,SC,Clerk of the Senate,Charleston County,town,92.48
+4258,108.0,84.0,54.0,43.0,,,Charleston,SC,Merchant,Charleston County,town,108.84
+4259,123.0,29.0,61.0,65.0,,,Charleston,SC,Merchant,Charleston County,town,123.29
+4260,82.0,82.0,41.0,41.0,,,Charleston,SC,Merchant,Charleston County,town,82.82
 4261,42.0,83.0,21.0,42.0,,,,,,,,42.83
 4262,61.0,50.0,30.0,75.0,,,,,,,,61.5
-4263,51.0,69.0,25.0,85.0,,,Charleston,SC,Planter,Berkeley County,town,51.69
+4263,51.0,69.0,25.0,85.0,,,Charleston,SC,Planter,Charleston County,town,51.69
 4264,55.0,9.0,27.0,55.0,,,Georgetown,SC,Planter,Georgetown County,town,55.09
-4265,12.0,11.0,6.0,6.0,,,Charleston,SC,Executor of James Peart,Berkeley County,town,12.11
-4266,73.0,73.0,36.0,87.0,,,Charleston,SC,Broker,Berkeley County,town,73.73
-4267,70.0,25.0,35.0,13.0,,,Charleston,SC,Merchant,Berkeley County,town,70.25
+4265,12.0,11.0,6.0,6.0,,,Charleston,SC,Executor of James Peart,Charleston County,town,12.11
+4266,73.0,73.0,36.0,87.0,,,Charleston,SC,Broker,Charleston County,town,73.73
+4267,70.0,25.0,35.0,13.0,,,Charleston,SC,Merchant,Charleston County,town,70.25
 4268,26.0,21.0,13.0,11.0,,,North Carolina,NC,,,state,26.21
-4269,11.0,14.0,5.0,57.0,,,Charleston,SC,Widow,Berkeley County,town,11.14
-4270,6.0,96.0,3.0,48.0,,,Charleston,SC,,Berkeley County,town,6.96
-4271,49.0,56.0,24.0,79.0,,,Charleston,SC,,Berkeley County,town,49.56
+4269,11.0,14.0,5.0,57.0,,,Charleston,SC,Widow,Charleston County,town,11.14
+4270,6.0,96.0,3.0,48.0,,,Charleston,SC,,Charleston County,town,6.96
+4271,49.0,56.0,24.0,79.0,,,Charleston,SC,,Charleston County,town,49.56
 4272,60.0,74.0,30.0,37.0,,,The River May,VI,,,,60.74
 4273,4.0,54.0,2.0,27.0,,,,,,,,4.54
 4274,16.0,36.0,8.0,19.0,,,Georgetown,SC,,Georgetown County,town,16.36
-4275,145.0,48.0,72.0,75.0,,,Charleston,SC,as treasurer of the State of south carolina,Berkeley County,town,145.48
-4276,43.0,13.0,21.0,57.0,,,Charleston,SC,,Berkeley County,town,43.13
-4277,86.0,76.0,43.0,38.0,,,Charleston,SC,Merchant,Berkeley County,town,86.76
+4275,145.0,48.0,72.0,75.0,,,Charleston,SC,as treasurer of the State of south carolina,Charleston County,town,145.48
+4276,43.0,13.0,21.0,57.0,,,Charleston,SC,,Charleston County,town,43.13
+4277,86.0,76.0,43.0,38.0,,,Charleston,SC,Merchant,Charleston County,town,86.76
 4278,61.0,63.0,,,,,New York,NY,,,state,61.63
-4279,159.0,33.0,,,,,Charleston,SC,,Berkeley County,town,159.33
-4280,,,,,6000.0,,Charleston,SC,,Berkeley County,town,
-4281,647.0,4.0,323.0,52.0,706.0,48.0,Charleston,SC,Broker,Berkeley County,town,647.04
-4282,1214.0,91.0,607.0,45.0,1183.0,69.0,Charleston,SC,Merchant,Berkeley County,town,1214.91
-4283,3987.0,90.0,1993.0,95.0,3625.0,67.0,Charleston,SC,Merchant,Berkeley County,town,3987.9
-4284,1152.0,51.0,576.0,26.0,311.0,16.0,Charleston,SC,Physician,Berkeley County,town,1152.51
-4285,2241.0,64.0,1120.0,82.0,2552.0,7.0,Camden,SC,,Kershaw County,town,2241.64
+4279,159.0,33.0,,,,,Charleston,SC,,Charleston County,town,159.33
+4280,,,,,6000.0,,Charleston,SC,,Charleston County,town,
+4281,647.0,4.0,323.0,52.0,706.0,48.0,Charleston,SC,Broker,Charleston County,town,647.04
+4282,1214.0,91.0,607.0,45.0,1183.0,69.0,Charleston,SC,Merchant,Charleston County,town,1214.91
+4283,3987.0,90.0,1993.0,95.0,3625.0,67.0,Charleston,SC,Merchant,Charleston County,town,3987.9
+4284,1152.0,51.0,576.0,26.0,311.0,16.0,Charleston,SC,Physician,Charleston County,town,1152.51
+4285,2241.0,64.0,1120.0,82.0,2552.0,7.0,Camden,SC,,Lancaster County,town,2241.64
 4286,1448.0,14.0,724.0,7.0,1586.0,7.0,Georgetown,SC,Merchant,Georgetown County,town,1448.14
-4287,2468.0,76.0,1234.0,38.0,2434.0,79.0,Charleston,SC,Merchant,Berkeley County,town,2468.76
+4287,2468.0,76.0,1234.0,38.0,2434.0,79.0,Charleston,SC,Merchant,Charleston County,town,2468.76
 4288,138.0,15.0,69.0,7.0,138.0,42.0,St Pauls,SC,Planter,Clarendon County,town,138.15
-4289,50.0,72.0,25.0,36.0,15.0,2.0,Charleston,SC,Merchant,Berkeley County,town,50.72
-4290,160.0,78.0,80.0,38.0,40.0,23.0,Charleston,SC,Merchant,Berkeley County,town,160.78
-4291,1066.0,66.0,533.0,33.0,533.0,33.0,Camden,SC,Sheriff,Kershaw County,town,1066.66
-4292,895.0,1.0,447.0,50.0,976.0,70.0,Charleston,SC,Widow,Berkeley County,town,895.01
+4289,50.0,72.0,25.0,36.0,15.0,2.0,Charleston,SC,Merchant,Charleston County,town,50.72
+4290,160.0,78.0,80.0,38.0,40.0,23.0,Charleston,SC,Merchant,Charleston County,town,160.78
+4291,1066.0,66.0,533.0,33.0,533.0,33.0,Camden,SC,Sheriff,Lancaster County,town,1066.66
+4292,895.0,1.0,447.0,50.0,976.0,70.0,Charleston,SC,Widow,Charleston County,town,895.01
 4293,405.0,62.0,202.0,76.0,404.0,75.0,Georgetown,SC,Merchant,Georgetown County,town,405.62
 4294,76.0,25.0,38.0,12.0,69.0,34.0,Georgetown,SC,Merchant,Georgetown County,town,76.25
-4295,51.0,51.0,25.0,76.0,37.0,54.0,Charleston,SC,Merchant,Berkeley County,town,51.51
-4296,184.0,63.0,118.0,18.0,,,Charleston,SC,Merchant,Berkeley County,town,184.63
-4297,137.0,56.0,68.0,78.0,,,Charleston,SC,Merchant,Berkeley County,town,137.56
-4298,102.0,59.0,51.0,30.0,,,Charleston,SC,Factor,Berkeley County,town,102.59
-4299,147.0,88.0,73.0,94.0,20.0,64.0,Charleston,SC,Merchant,Berkeley County,town,147.88
-4300,246.0,16.0,123.0,9.0,,,Charleston,SC,Merchant,Berkeley County,town,246.16
-4301,8.0,82.0,4.0,41.0,,,Charleston,SC,,Berkeley County,town,8.82
-4302,19.0,16.0,9.0,59.0,18.0,77.0,Charleston,SC,Attorney at Law,Berkeley County,town,19.16
+4295,51.0,51.0,25.0,76.0,37.0,54.0,Charleston,SC,Merchant,Charleston County,town,51.51
+4296,184.0,63.0,118.0,18.0,,,Charleston,SC,Merchant,Charleston County,town,184.63
+4297,137.0,56.0,68.0,78.0,,,Charleston,SC,Merchant,Charleston County,town,137.56
+4298,102.0,59.0,51.0,30.0,,,Charleston,SC,Factor,Charleston County,town,102.59
+4299,147.0,88.0,73.0,94.0,20.0,64.0,Charleston,SC,Merchant,Charleston County,town,147.88
+4300,246.0,16.0,123.0,9.0,,,Charleston,SC,Merchant,Charleston County,town,246.16
+4301,8.0,82.0,4.0,41.0,,,Charleston,SC,,Charleston County,town,8.82
+4302,19.0,16.0,9.0,59.0,18.0,77.0,Charleston,SC,Attorney at Law,Charleston County,town,19.16
 4303,361.0,11.0,180.0,55.0,315.0,27.0,New York,NY,Merchant,,state,361.11
-4304,36.0,29.0,18.0,14.0,9.0,38.0,Charleston,SC,Merchant,Berkeley County,town,36.29
-4305,15.0,10.0,7.0,55.0,15.0,75.0,Charleston,SC,,Berkeley County,town,15.1
-4306,66.0,67.0,33.0,33.0,63.0,88.0,Charleston,SC,Merchant,Berkeley County,town,66.67
-4307,109.0,1.0,54.0,51.0,15.0,30.0,Charleston,SC,Merchant,Berkeley County,town,109.01
-4308,112.0,,56.0,,67.0,18.0,Charleston,SC,Merchant,Berkeley County,town,
-4309,104.0,55.0,52.0,28.0,31.0,93.0,Charleston,SC,,Berkeley County,town,104.55
-4310,906.0,66.0,453.0,34.0,489.0,60.0,Charleston,SC,,Berkeley County,town,906.66
-4311,25.0,34.0,12.0,66.0,19.0,76.0,Charleston,SC,Merchant,Berkeley County,town,25.34
-4312,26.0,84.0,13.0,42.0,26.0,28.0,Charleston,SC,,Berkeley County,town,26.84
-4313,21.0,50.0,10.0,76.0,591.0,31.0,Charleston,SC,Merchant,Berkeley County,town,21.5
-4314,48.0,92.0,24.0,46.0,,,Charleston,SC,Broker,Berkeley County,town,48.92
+4304,36.0,29.0,18.0,14.0,9.0,38.0,Charleston,SC,Merchant,Charleston County,town,36.29
+4305,15.0,10.0,7.0,55.0,15.0,75.0,Charleston,SC,,Charleston County,town,15.1
+4306,66.0,67.0,33.0,33.0,63.0,88.0,Charleston,SC,Merchant,Charleston County,town,66.67
+4307,109.0,1.0,54.0,51.0,15.0,30.0,Charleston,SC,Merchant,Charleston County,town,109.01
+4308,112.0,,56.0,,67.0,18.0,Charleston,SC,Merchant,Charleston County,town,
+4309,104.0,55.0,52.0,28.0,31.0,93.0,Charleston,SC,,Charleston County,town,104.55
+4310,906.0,66.0,453.0,34.0,489.0,60.0,Charleston,SC,,Charleston County,town,906.66
+4311,25.0,34.0,12.0,66.0,19.0,76.0,Charleston,SC,Merchant,Charleston County,town,25.34
+4312,26.0,84.0,13.0,42.0,26.0,28.0,Charleston,SC,,Charleston County,town,26.84
+4313,21.0,50.0,10.0,76.0,591.0,31.0,Charleston,SC,Merchant,Charleston County,town,21.5
+4314,48.0,92.0,24.0,46.0,,,Charleston,SC,Broker,Charleston County,town,48.92
 4315,7.0,93.0,3.0,97.0,,,,,as administrator of William Fenden,,,7.93
 4316,4.0,11.0,2.0,6.0,,,,,As administrator of Peter June,,,4.11
-4317,33.0,90.0,16.0,95.0,,,Charleston,SC,Merchant,Berkeley County,town,33.9
-4318,19.0,73.0,9.0,87.0,,,Ninety six District,SC,Planter,Greenwood County,county,19.73
-4319,12.0,67.0,6.0,34.0,,,Charleston,SC,Shopkeeper,Berkeley County,town,12.67
-4320,171.0,61.0,85.0,81.0,,,Charleston,SC,Merchant,Berkeley County,town,171.61
+4317,33.0,90.0,16.0,95.0,,,Charleston,SC,Merchant,Charleston County,town,33.9
+4318,19.0,73.0,9.0,87.0,,,Ninety six District,SC,Planter,Laurens County,county,19.73
+4319,12.0,67.0,6.0,34.0,,,Charleston,SC,Shopkeeper,Charleston County,town,12.67
+4320,171.0,61.0,85.0,81.0,,,Charleston,SC,Merchant,Charleston County,town,171.61
 4321,139.0,31.0,69.0,66.0,,,Richard County,SC,Planter,Richland County,county,139.31
-4322,130.0,99.0,65.0,50.0,,,Charleston,SC,Merchant,Berkeley County,town,130.99
-4323,293.0,99.0,146.0,99.0,,,Charleston,SC,Merchant,Berkeley County,town,293.99
-4324,545.0,93.0,272.0,97.0,,,Charleston,SC,Merchant,Berkeley County,town,545.93
-4325,2800.0,,,,1141.0,70.0,Charleston,SC,Widow,Berkeley County,town,
-4326,2500.0,,,,,,Charleston,SC,Merchant,Berkeley County,town,
-4327,132.0,72.0,,,,,Charleston,SC,Printer,Berkeley County,town,132.72
-4328,180.0,47.0,90.0,24.0,207.0,93.0,Charleston,SC,Merchant,Berkeley County,town,180.47
-4329,143.0,27.0,71.0,63.0,156.0,5.0,Charleston,SC,Merchant,Berkeley County,town,143.27
+4322,130.0,99.0,65.0,50.0,,,Charleston,SC,Merchant,Charleston County,town,130.99
+4323,293.0,99.0,146.0,99.0,,,Charleston,SC,Merchant,Charleston County,town,293.99
+4324,545.0,93.0,272.0,97.0,,,Charleston,SC,Merchant,Charleston County,town,545.93
+4325,2800.0,,,,1141.0,70.0,Charleston,SC,Widow,Charleston County,town,
+4326,2500.0,,,,,,Charleston,SC,Merchant,Charleston County,town,
+4327,132.0,72.0,,,,,Charleston,SC,Printer,Charleston County,town,132.72
+4328,180.0,47.0,90.0,24.0,207.0,93.0,Charleston,SC,Merchant,Charleston County,town,180.47
+4329,143.0,27.0,71.0,63.0,156.0,5.0,Charleston,SC,Merchant,Charleston County,town,143.27
 4330,803985.0,33.0,401992.0,67.0,241195.0,60.0,,SC,,,,803985.33
-4331,103.0,26.0,51.0,63.0,107.0,95.0,Charleston,SC,Merchant,Berkeley County,town,103.26
-4332,345.0,2.0,172.0,51.0,321.0,84.0,Charleston,SC,Assignee of James Simons,Berkeley County,town,345.02
-4333,1783.0,33.0,891.0,67.0,963.0,,Charleston,SC,,Berkeley County,town,1783.33
-4334,62.0,63.0,31.0,32.0,54.0,45.0,Charleston,SC,,Berkeley County,town,62.63
-4335,8000.0,,3333.0,33.0,5400.0,,Charleston,SC,,Berkeley County,town,
-4336,279.0,82.0,139.0,91.0,,,Charleston,SC,Physician,Berkeley County,town,279.82
-4337,2833.0,46.0,,,358.0,48.0,Charleston,SC,,Berkeley County,town,2833.46
-4338,2097.0,63.0,,,,,Charleston,SC,Merchant,Berkeley County,town,2097.63
-4339,4081.0,63.0,2040.0,81.0,3918.0,36.0,Charleston,SC,,Berkeley County,town,4081.63
-4340,30.0,59.0,15.0,29.0,30.0,34.0,Charleston,SC,,Berkeley County,town,30.59
-4341,160.0,,80.0,,139.0,49.0,Charleston,SC,Physician,Berkeley County,town,
+4331,103.0,26.0,51.0,63.0,107.0,95.0,Charleston,SC,Merchant,Charleston County,town,103.26
+4332,345.0,2.0,172.0,51.0,321.0,84.0,Charleston,SC,Assignee of James Simons,Charleston County,town,345.02
+4333,1783.0,33.0,891.0,67.0,963.0,,Charleston,SC,,Charleston County,town,1783.33
+4334,62.0,63.0,31.0,32.0,54.0,45.0,Charleston,SC,,Charleston County,town,62.63
+4335,8000.0,,3333.0,33.0,5400.0,,Charleston,SC,,Charleston County,town,
+4336,279.0,82.0,139.0,91.0,,,Charleston,SC,Physician,Charleston County,town,279.82
+4337,2833.0,46.0,,,358.0,48.0,Charleston,SC,,Charleston County,town,2833.46
+4338,2097.0,63.0,,,,,Charleston,SC,Merchant,Charleston County,town,2097.63
+4339,4081.0,63.0,2040.0,81.0,3918.0,36.0,Charleston,SC,,Charleston County,town,4081.63
+4340,30.0,59.0,15.0,29.0,30.0,34.0,Charleston,SC,,Charleston County,town,30.59
+4341,160.0,,80.0,,139.0,49.0,Charleston,SC,Physician,Charleston County,town,
 4342,881.0,66.0,2838.0,33.0,856.0,64.0,,,Administrators of Joseph Darrell,,,881.66
-4343,117.0,79.0,58.0,89.0,,,Charleston,SC,Physician,Berkeley County,town,117.79
-4344,181.0,44.0,90.0,71.0,,,Charleston,SC,,Berkeley County,town,181.44
-4345,8000.0,,,,11400.0,,Charleston,SC,,Berkeley County,town,
-4346,1000.0,0.0,,,,,Charleston,SC,Merchant,Berkeley County,town,1000.0
-4347,215.0,21.0,107.0,61.0,207.0,47.0,Charleston,SC,Merchant,Berkeley County,town,215.21
-4348,290.0,99.0,145.0,49.0,279.0,6.0,Charleston,SC,Merchant,Berkeley County,town,290.99
+4343,117.0,79.0,58.0,89.0,,,Charleston,SC,Physician,Charleston County,town,117.79
+4344,181.0,44.0,90.0,71.0,,,Charleston,SC,,Charleston County,town,181.44
+4345,8000.0,,,,11400.0,,Charleston,SC,,Charleston County,town,
+4346,1000.0,0.0,,,,,Charleston,SC,Merchant,Charleston County,town,1000.0
+4347,215.0,21.0,107.0,61.0,207.0,47.0,Charleston,SC,Merchant,Charleston County,town,215.21
+4348,290.0,99.0,145.0,49.0,279.0,6.0,Charleston,SC,Merchant,Charleston County,town,290.99
 4349,10508.0,90.0,,,,,Savannah,GA,Merchant,Chatham County,town,10508.9
-4350,800.0,0.0,,,,,Charleston,SC,,Berkeley County,town,800.0
-4351,104.0,78.0,52.0,39.0,113.0,96.0,Dorchester,SC,Planter,Dorchester County,town,104.78
-4352,,,874.0,7.0,1869.0,45.0,Charleston,SC,Merchant,Berkeley County,town,
-4353,,,193.0,61.0,,,Charleston,SC,Merchant,Berkeley County,town,
-4354,,,318.0,6.0,,,Charleston,SC,Merchant,Berkeley County,town,
+4350,800.0,0.0,,,,,Charleston,SC,,Charleston County,town,800.0
+4351,104.0,78.0,52.0,39.0,113.0,96.0,Dorchester,SC,Planter,Charleston County,town,104.78
+4352,,,874.0,7.0,1869.0,45.0,Charleston,SC,Merchant,Charleston County,town,
+4353,,,193.0,61.0,,,Charleston,SC,Merchant,Charleston County,town,
+4354,,,318.0,6.0,,,Charleston,SC,Merchant,Charleston County,town,
 4355,,,423.0,14.0,,,Philadelphia,PA,,Philadelphia County,town,
-4356,,,83.0,33.0,202.0,50.0,Charleston,SC,Planter,Berkeley County,town,
-4357,,,83.0,33.0,,,Charleston,SC,Merchant,Berkeley County,town,
+4356,,,83.0,33.0,202.0,50.0,Charleston,SC,Planter,Charleston County,town,
+4357,,,83.0,33.0,,,Charleston,SC,Merchant,Charleston County,town,
 4358,,,48.0,31.0,111.0,66.0,James Island,SC,Widow,Charleston County,county,
 4359,,,155.0,10.0,,,James Island,SC,Widow,Charleston County,county,
-4360,,,300.0,,,,Charleston,SC,Merchant,Berkeley County,town,
-4361,,,66.0,36.0,85.0,49.0,Charleston,SC,Printer,Berkeley County,town,
-4362,,,,,,,Charleston,SC,Merchant,Berkeley County,town,
-4363,,,2500.0,,,,Charleston,SC,South Carolina,Berkeley County,town,
-4364,,,,,6000.0,,Charleston,SC,,Berkeley County,town,
-4365,,,,,651.0,53.0,Charleston,SC,Merchant,Berkeley County,town,
-4366,,,,,140.0,77.0,Charleston,SC,Merchant,Berkeley County,town,
-4367,,,,,167.0,77.0,Charleston,SC,Attorney at Law,Berkeley County,town,
-4368,,,,,3600.0,,Charleston,SC,Merchant,Berkeley County,town,
+4360,,,300.0,,,,Charleston,SC,Merchant,Charleston County,town,
+4361,,,66.0,36.0,85.0,49.0,Charleston,SC,Printer,Charleston County,town,
+4362,,,,,,,Charleston,SC,Merchant,Charleston County,town,
+4363,,,2500.0,,,,Charleston,SC,South Carolina,Charleston County,town,
+4364,,,,,6000.0,,Charleston,SC,,Charleston County,town,
+4365,,,,,651.0,53.0,Charleston,SC,Merchant,Charleston County,town,
+4366,,,,,140.0,77.0,Charleston,SC,Merchant,Charleston County,town,
+4367,,,,,167.0,77.0,Charleston,SC,Attorney at Law,Charleston County,town,
+4368,,,,,3600.0,,Charleston,SC,Merchant,Charleston County,town,
 4369,,,,,319.0,50.0,,,Execcutor of Jacob Motte,,,
-4370,84.0,13.0,42.0,7.0,88.0,48.0,Charleston,SC,,Berkeley County,town,84.13
+4370,84.0,13.0,42.0,7.0,88.0,48.0,Charleston,SC,,Charleston County,town,84.13
 4371,33.0,33.0,17.0,39.0,31.0,94.0,Rhode Island,RI,Merchant,,state,33.33
 4372,120.0,25.0,60.0,12.0,97.0,70.0,New York,NY,Merchant,,state,120.25
 4373,33.0,33.0,16.0,67.0,31.0,67.0,Maryland,MD,Shopkeeper,,state,33.33
 4374,124.0,33.0,62.0,17.0,118.0,41.0,Maryland,MD,Merchant,,state,124.33
-4375,242.0,67.0,121.0,33.0,79.0,52.0,Charleston,SC,,Berkeley County,town,242.67
+4375,242.0,67.0,121.0,33.0,79.0,52.0,Charleston,SC,,Charleston County,town,242.67
 4376,180.0,47.0,90.0,24.0,207.0,93.0,South Carolina,SC,Marriner,,state,180.47
