@@ -6,3 +6,288 @@
 174,Providence,RI,156644.33000000007
 178,Charleston,SC,137111.14866600008
 62,Rockingham,NH,103314.17000000004
+1,Hartford,CT,97163.27999999998
+28,Cecil,MD,65354.26000000001
+161,Lancaster,PA,57920.39000000002
+25,Baltimore,MD,46389.355733000026
+3,Middlesex,CT,43352.20000000002
+4,New Haven,CT,38813.70000000002
+151,Berks,PA,35086.47
+0,Fairfield,CT,34659.380000000005
+2,Litchfield,CT,31067.140000000003
+30,Dorchester,MD,27875.870000000003
+7,Windham,CT,25589.8
+35,Prince Georges,MD,25155.119999999995
+55,Suffolk,MA,24077.51000000001
+6,Tolland,CT,22018.489999999994
+31,Frederick,MD,17918.83
+153,Chester,PA,15967.05
+152,Bucks,PA,15006.860000000002
+45,Bristol,MA,14233.8
+48,Essex,MA,13804.159999999998
+155,Dauphin,PA,13750.540000000005
+154,Cumberland,PA,12624.989999999998
+164,Montgomery,PA,11484.5
+183,Georgetown,SC,10594.976666666667
+13,Chatham,GA,10582.682729
+172,Kent,RI,10284.750000000002
+36,Queen Annes,MD,9677.809999999998
+26,Calvert,MD,9468.98
+34,Montgomery,MD,8964.500000000002
+171,Bristol,RI,8728.4
+170,York,PA,7998.329999999999
+37,St Marys,MD,7615.83
+166,Northumberland,PA,7449.800000000001
+149,Allegheny,PA,7175.37
+29,Charles,MD,6991.2300000000005
+61,Hillsborough,NH,6914.839999999999
+169,Westmoreland,PA,6557.57
+63,Strafford,NH,6328.49
+32,Harford,MD,5934.12
+104,Craven,NC,5639.79
+103,Chowan,NC,5513.570000000001
+185,Lancaster,SC,5258.296666666667
+38,Somerset,MD,5238.709999999999
+175,Washington,RI,4680.16
+57,Worcester,MA,4260.5
+159,Franklin,PA,4040.56
+40,Washington,MD,3760.76
+165,Northampton,PA,3528.57
+60,Grafton,NH,3370.24
+49,Hampshire,MA,3357.6599999999994
+52,Middlesex,MA,2715.59
+237,Hampshire,VA,2693.49
+9,New Castle,DE,2596.86
+71,Middlesex,NJ,2588.89
+156,Delaware,PA,2536.53
+41,Worcester,MD,2521.14
+267,Ohio,VA,2206.72
+109,Edgecombe,NC,1788.7
+158,Fayette,PA,1743.32
+8,Kent,DE,1731.41
+44,Berkshire,MA,1349.5
+58,York,MA,1328.1699999999998
+70,Hunterdon,NJ,1267.35
+59,Cheshire,NH,1252.02
+23,Allegany,MD,755.55
+226,Fairfax,VA,711.12
+191,Richland,SC,624.03
+241,Henrico,VA,599.81
+127,New Hanover,NC,589.5600000000001
+39,Talbot,MD,585.74
+283,Spotsylvania,VA,550.06
+84,New York,NY,492.21
+54,Plymouth,MA,459.38
+27,Caroline,MD,413.05
+247,King George,VA,319.17
+177,Beaufort,SC,316.02
+76,Sussex,NJ,311.99
+94,Beaufort,NC,254.73
+266,Northumberland,VA,253.49
+72,Monmouth,NJ,235.01
+180,Clarendon,SC,218.68
+65,Burlington,NJ,190.71
+138,Rowan,NC,188.08
+114,Halifax,NC,169.49
+33,Kent,MD,158.2
+20,Richmond,GA,157.339266
+168,Washington,PA,139.98
+145,Warren,NC,127.28
+251,Loudoun,VA,109.5
+43,Barnstable,MA,99.09
+146,Wayne,NC,85.25
+105,Cumberland,NC,81.8
+176,Abbeville,SC,79.68
+130,Orange,NC,78.89
+205,Accomack,VA,78.33
+256,Mecklenburg,VA,76.76
+115,Hertford,NC,71.11
+14,Effingham,GA,68.851733
+66,Cape May,NJ,62.89
+68,Essex,NJ,48.33
+234,Greenbrier,VA,46.02
+137,Rockingham,NC,38.83
+106,Currituck,NC,38.67
+77,Albany,NY,22.7
+123,Mecklenburg,NC,21.04
+279,Rockingham,VA,20.516233
+186,Laurens,SC,19.73
+133,Pitt,NC,19.56
+75,Somerset,NJ,16.67
+132,Perquimans,NC,15.3
+150,Bedford,PA,4.89
+229,Fluvanna,VA,0.0
+231,Frederick,VA,0.0
+230,Franklin,VA,0.0
+97,Brunswick,NC,0.0
+232,Gloucester,VA,0.0
+233,Goochland,VA,0.0
+235,Greensville,VA,0.0
+236,Halifax,VA,0.0
+17,Greene,GA,0.0
+238,Hanover,VA,0.0
+239,Hardy,VA,0.0
+240,Harrison,VA,0.0
+228,Fayette (old),VA,0.0
+225,Essex,VA,0.0
+227,Fauquier,VA,0.0
+18,Indian Lands,GA,0.0
+204,Windsor,Vermont,0.0
+206,Albemarle,VA,0.0
+207,Amelia,VA,0.0
+208,Amherst,VA,0.0
+209,Augusta,VA,0.0
+210,Bedford,VA,0.0
+211,Berkeley,VA,0.0
+212,Botetourt,VA,0.0
+213,Bourbon,VA,0.0
+214,Brunswick,VA,0.0
+215,Buckingham,VA,0.0
+216,Campbell,VA,0.0
+217,Caroline,VA,0.0
+218,Charles City,VA,0.0
+219,Charlotte,VA,0.0
+220,Chesterfield,VA,0.0
+221,Culpeper,VA,0.0
+222,Cumberland,VA,0.0
+223,Dinwiddie,VA,0.0
+224,Elizabeth City,VA,0.0
+242,Henry,VA,0.0
+16,Glynn,GA,0.0
+248,King William,VA,0.0
+243,Isle Of Wight,VA,0.0
+280,Russell,VA,0.0
+270,Pittsylvania,VA,0.0
+271,Powhatan,VA,0.0
+272,Prince Edward,VA,0.0
+273,Prince George,VA,0.0
+274,Princess Anne,VA,0.0
+275,Prince William,VA,0.0
+276,Randolph,VA,0.0
+277,Richmond,VA,0.0
+278,Rockbridge,VA,0.0
+281,Shenandoah,VA,0.0
+244,James City,VA,0.0
+282,Southampton,VA,0.0
+10,Sussex,DE,0.0
+284,Stafford,VA,0.0
+285,Surry,VA,0.0
+286,Sussex,VA,0.0
+287,Warwick,VA,0.0
+288,Washington,VA,0.0
+289,Westmoreland,VA,0.0
+290,Woodford,VA,0.0
+269,Pendelton,VA,0.0
+268,Orange,VA,0.0
+11,Burke,GA,0.0
+12,Camden,GA,0.0
+245,Jefferson (old),VA,0.0
+246,King And Queen,VA,0.0
+15,Franklin,GA,0.0
+202,Rutland,Vermont,0.0
+249,Lancaster,VA,0.0
+250,Lincoln,VA,0.0
+252,Louisa,VA,0.0
+253,Lunenburg,VA,0.0
+254,Madison (old),VA,0.0
+255,Mason (old),VA,0.0
+257,Mercer (old),VA,0.0
+258,Middlesex,VA,0.0
+259,Monongalia,VA,0.0
+260,Montgomery,VA,0.0
+261,Nansemond,VA,0.0
+262,Nelson (old),VA,0.0
+263,New Kent,VA,0.0
+264,Norfolk,VA,0.0
+265,Northampton,VA,0.0
+203,Windham,Vermont,0.0
+194,Union,SC,0.0
+201,Orange,Vermont,0.0
+87,Queens,NY,0.0
+125,Moore,NC,0.0
+126,Nash,NC,0.0
+91,Washington,NY,0.0
+128,Northampton,NC,0.0
+129,Onslow,NC,0.0
+131,Pasquotank,NC,0.0
+134,Randolph,NC,0.0
+135,Richmond,NC,0.0
+136,Robeson,NC,0.0
+90,Ulster,NY,0.0
+139,Rutherford,NC,0.0
+140,Sampson,NC,0.0
+141,Stokes,NC,0.0
+142,Surry,NC,0.0
+143,Tyrrell,NC,0.0
+144,Wake,NC,0.0
+89,Suffolk,NY,0.0
+88,Richmond,NY,0.0
+147,Wilkes,NC,0.0
+124,Montgomery,NC,0.0
+122,Martin,NC,0.0
+121,Lincoln,NC,0.0
+93,Anson,NC,0.0
+99,Camden,NC,0.0
+100,Carteret,NC,0.0
+101,Caswell,NC,0.0
+102,Chatham,NC,0.0
+96,Bladen,NC,0.0
+95,Bertie,NC,0.0
+107,Dobbs,NC,0.0
+108,Duplin,NC,0.0
+110,Franklin,NC,0.0
+120,Jones,NC,0.0
+111,Gates,NC,0.0
+112,Granville,NC,0.0
+113,Guilford,NC,0.0
+92,Westchester,NY,0.0
+116,Hyde,NC,0.0
+117,Indian Lands,NC,0.0
+118,Iredell,NC,0.0
+119,Johnston,NC,0.0
+148,Territory outline (No Population),Northwest Territory,0.0
+86,Orange,NY,0.0
+200,Chittenden,Vermont,0.0
+85,Ontario,NY,0.0
+42,Baltimore City,MD,0.0
+181,Edgefield,SC,0.0
+182,Fairfield,SC,0.0
+22,Wilkes,GA,0.0
+184,Greenville,SC,0.0
+21,Washington,GA,0.0
+187,Marlboro,SC,0.0
+188,Newberry,SC,0.0
+189,Orangeburg,SC,0.0
+190,Pendleton,SC,0.0
+19,Liberty,GA,0.0
+192,Spartanburg,SC,0.0
+193,Sumter,SC,0.0
+98,Burke,NC,0.0
+195,Unorganized (No Data),SC,0.0
+196,York,SC,0.0
+197,Southwest Territory,,0.0
+198,Addison,Vermont,0.0
+199,Bennington,Vermont,0.0
+179,Chester,SC,0.0
+46,Cumberland,MA,0.0
+47,Dukes,MA,0.0
+162,Luzerne,PA,0.0
+83,Montgomery,NY,0.0
+82,Kings,NY,0.0
+81,Indian Lands (No Data),NY,0.0
+80,Dutchess,NY,0.0
+157,Erie Triangle (No Data),PA,0.0
+79,Columbia,NY,0.0
+78,Clinton,NY,0.0
+160,Huntingdon,PA,0.0
+163,Mifflin,PA,0.0
+50,Hancock,MA,0.0
+74,Salem,NJ,0.0
+73,Morris,NJ,0.0
+69,Gloucester,NJ,0.0
+67,Cumberland,NJ,0.0
+64,Bergen,NJ,0.0
+56,Washington,MA,0.0
+53,Nantucket,MA,0.0
+51,Lincoln,MA,0.0
+291,York,VA,0.0
