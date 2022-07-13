@@ -85,9 +85,9 @@ CT,Windham,Windham,5490.97
 CT,Windham,Woodstock,9823.87
 GA,Chatham,Savannah,10582.682729
 GA,Richmond,Augusta,139.271033
-MA,Barnstable,Falmouth ,99.09
+MA,Barnstable,Falmouth,99.09
 MA,Berkshire,Pittsfield,357.38
-MA,Berkshire,Tyringham ,992.1200000000001
+MA,Berkshire,Tyringham,992.1200000000001
 MA,Bristol,Attleborough,1268.5
 MA,Bristol,Dighton,2712.82
 MA,Bristol,Freetown,133.34
@@ -104,10 +104,10 @@ MA,Essex,Ipswich,585.76
 MA,Essex,Newbury Port,6091.2
 MA,Essex,Rowley,72.19
 MA,Essex,Salem,1437.65
-MA,Hampshire,Chesterfield ,75.34
-MA,Hampshire,Granby ,4.18
-MA,Hampshire,Hadley ,0.0
-MA,Hampshire,Long Meadow ,219.43
+MA,Hampshire,Chesterfield,75.34
+MA,Hampshire,Granby,4.18
+MA,Hampshire,Hadley,0.0
+MA,Hampshire,Long Meadow,219.43
 MA,Hampshire,Ludlow,0.0
 MA,Hampshire,North Hampton,177.85
 MA,Hampshire,Springfield,2880.8599999999997
@@ -119,18 +119,17 @@ MA,Suffolk,Boston,22339.48
 MA,Suffolk,Roxbury,1204.7
 MA,Suffolk,Stoughton,533.33
 MA,Worcester,Dudley,98.48
-MA,Worcester,Grafton ,434.6
+MA,Worcester,Grafton,434.6
 MA,Worcester,Liecester,266.67
 MA,Worcester,Sturbridge MA,222.32
 MA,Worcester,Sutton,376.55999999999995
 MA,Worcester,Worcester,2861.87
 MA,York,Kittery,1328.17
 MD,Anne Arundel,Annapolis,586235.98
-MD,Baltimore,Baltimore,22146.945733
-MD,Baltimore,Baltimore ,17228.04
-MD,Cecil,George ,65194.99
+MD,Baltimore,Baltimore,39374.985733
+MD,Cecil,George,65194.99
 MD,Dorchester,Cambridge,18626.05
-MD,Frederick,Frederick ,11048.11
+MD,Frederick,Frederick,11048.11
 MD,Prince Georges,Bladensburg,704.31
 NC,Beaufort,Washington,254.73
 NC,Chowan,Edenton,5513.57
@@ -145,7 +144,7 @@ NC,Rowan,Salisbury,98.66
 NH,Cheshire,Acworth,50.8
 NH,Cheshire,Charleston,926.49
 NH,Cheshire,Keene,106.45
-NH,Cheshire,Newport in ,168.28
+NH,Cheshire,Newport in,168.28
 NH,Grafton,Alexandria,40.67
 NH,Grafton,Concord,3329.57
 NH,Hillsborough,Amherst,185.89999999999998
@@ -183,47 +182,45 @@ NH,Strafford,Tamworth,303.42
 NH,Strafford,Wakefield,352.53
 NH,York,Wells,643.34
 NH,York,York,189.58
-NJ,Burlington,Burlington ,0.0
-NJ,Burlington,Mount Holley ,190.71
+NJ,Burlington,Burlington,0.0
+NJ,Burlington,Mount Holley,190.71
 NJ,Cape May,Cape May,62.89
 NJ,Essex,Newark,48.33
-NJ,Hunterdon,Trenton ,1115.95
-NJ,Middlesex,Brunswick ,1330.3
-NJ,Middlesex,Middlesex ,74.88
-NJ,Middlesex,Princeton ,1183.71
-NJ,Sussex,Newton ship ,311.99
+NJ,Hunterdon,Trenton,1115.95
+NJ,Middlesex,Brunswick,1330.3
+NJ,Middlesex,Middlesex,74.88
+NJ,Middlesex,Princeton,1183.71
+NJ,Sussex,Newton ship,311.99
 NY,Albany,Albany,22.7
 NY,New York,City of New York,492.21000000000004
 PA,Allegheny,Pittsburgh,4017.6900000000005
 PA,Berks,Reading,9843.65
-PA,Berks,Reading Berks ,19243.649999999998
+PA,Berks,Reading Berks,19243.649999999998
 PA,Berks,Tulpehocken,1136.06
-PA,Cumberland,Carlisle ,6171.04
-PA,Cumberland,Cumberland,2388.52
+PA,Cumberland,Carlisle,6171.04
+PA,Cumberland,Cumb,2388.52
 PA,Cumberland,Germantown,4065.43
-PA,Dauphin,Dauphin ,1979.6
-PA,Dauphin,Dauphincoy ,1160.69
-PA,Franklin,Chambersburgh ,237.7
-PA,Lancaster,Lancaster,36375.09
-PA,Lancaster,Lancaster ,10803.76
+PA,Dauphin,Dauphin,1979.6
+PA,Dauphin,Dauphincoy,1160.69
+PA,Franklin,Chambersburgh,237.7
+PA,Lancaster,Lancaster,47178.85
 PA,Northampton,Bethlehem,2639.7
 PA,Northumberland,Armstrong,989.87
-PA,Northumberland,Montgomery ,443.9
-PA,Northumberland,Sunbury ,1360.22
+PA,Northumberland,Montgomery,443.9
+PA,Northumberland,Sunbury,1360.22
 PA,Philadelphia,Blockley,971.4
-PA,Philadelphia,Borden ,4050.5000000000005
+PA,Philadelphia,Borden,4050.5000000000005
 PA,Philadelphia,Burlington New Jersey,280.69
 PA,Philadelphia,Germantown,1959.55
-PA,Philadelphia,Kensington,1241.76
+PA,Philadelphia,Kensignton,1241.76
 PA,Philadelphia,Northern Liberties,2486.79
 PA,Philadelphia,Passyunk,64.37
-PA,Philadelphia,Philadelphia,1165947.0605
+PA,Philadelphia,Philadelphia,1175818.7205
 PA,Philadelphia,Southwark,3.33
 PA,Philadelphia,The Northern Libert,1263.4
-PA,Westmoreland,Kensington,692.25
+PA,Westmoreland,Kensignton,692.25
 PA,Westmoreland,Westmoreland,33.33
-PA,York,York ,91.83
-PA,York,York  ,7529.37
+PA,York,York,7621.2
 RI,Bristol,Barrington,2059.1800000000003
 RI,Bristol,Bristol,1065.52
 RI,Bristol,Warren,5603.700000000001
@@ -255,8 +252,7 @@ SC,Abbeville,Abbeville,48.42
 SC,Beaufort,Broad River,26.84
 SC,Beaufort,New River,38.29
 SC,Beaufort,St Helena,250.89
-SC,Charleston,Charleston,130630.007433
-SC,Charleston,Charleston ,4360.811233
+SC,Charleston,Charleston,134990.818666
 SC,Charleston,Dorchester,104.78
 SC,Charleston,James Island,315.26
 SC,Charleston,St Johns,169.72
@@ -272,7 +268,7 @@ SC,Richland,Columbia,438.7
 SC,Richland,St Andrews,46.02
 VA,Fairfax,Alexandria,711.12
 VA,Greenbrier,Williamsburgh,46.02
-VA,Hampshire,Petersburg ,2693.4900000000002
-VA,Henrico,Richmond ,599.8100000000001
-VA,Rockingham,Portsmouth ,20.516233
-VA,Spotsylvania,Fredericksburg ,550.06
+VA,Hampshire,Petersburg,2693.4900000000002
+VA,Henrico,Richmond,599.8100000000001
+VA,Rockingham,Portsmouth,20.516233
+VA,Spotsylvania,Fredericksburg,550.06

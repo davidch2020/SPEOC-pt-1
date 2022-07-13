@@ -92,9 +92,9 @@ GA,Effingham,NaN,2
 GA,NaN,NaN,3
 GA,Richmond,Augusta,2
 GA,Richmond,NaN,1
-MA,Barnstable,Falmouth ,1
+MA,Barnstable,Falmouth,1
 MA,Berkshire,Pittsfield,1
-MA,Berkshire,Tyringham ,2
+MA,Berkshire,Tyringham,2
 MA,Bristol,Attleborough,6
 MA,Bristol,Dighton,4
 MA,Bristol,Freetown,1
@@ -111,10 +111,10 @@ MA,Essex,Ipswich,3
 MA,Essex,Newbury Port,15
 MA,Essex,Rowley,1
 MA,Essex,Salem,2
-MA,Hampshire,Chesterfield ,1
-MA,Hampshire,Granby ,1
-MA,Hampshire,Hadley ,1
-MA,Hampshire,Long Meadow ,2
+MA,Hampshire,Chesterfield,1
+MA,Hampshire,Granby,1
+MA,Hampshire,Hadley,1
+MA,Hampshire,Long Meadow,2
 MA,Hampshire,Ludlow,1
 MA,Hampshire,North Hampton,1
 MA,Hampshire,Springfield,4
@@ -127,7 +127,7 @@ MA,Suffolk,Boston,26
 MA,Suffolk,Roxbury,2
 MA,Suffolk,Stoughton,1
 MA,Worcester,Dudley,1
-MA,Worcester,Grafton ,1
+MA,Worcester,Grafton,1
 MA,Worcester,Liecester,1
 MA,Worcester,Sturbridge MA,1
 MA,Worcester,Sutton,2
@@ -136,17 +136,16 @@ MA,York,Kittery,3
 MD,Allegany,NaN,1
 MD,Anne Arundel,Annapolis,200
 MD,Anne Arundel,NaN,27
-MD,Baltimore,Baltimore,52
-MD,Baltimore,Baltimore ,17
+MD,Baltimore,Baltimore,69
 MD,Baltimore,NaN,19
 MD,Calvert,NaN,4
 MD,Caroline,NaN,2
-MD,Cecil,George ,13
+MD,Cecil,George,13
 MD,Cecil,NaN,2
 MD,Charles,NaN,11
 MD,Dorchester,Cambridge,4
 MD,Dorchester,NaN,8
-MD,Frederick,Frederick ,10
+MD,Frederick,Frederick,10
 MD,Frederick,NaN,33
 MD,Harford,NaN,16
 MD,Kent,NaN,1
@@ -183,7 +182,7 @@ NC,Wayne,NaN,1
 NH,Cheshire,Acworth,1
 NH,Cheshire,Charleston,3
 NH,Cheshire,Keene,1
-NH,Cheshire,Newport in ,1
+NH,Cheshire,Newport in,1
 NH,Grafton,Alexandria,1
 NH,Grafton,Concord,7
 NH,Hillsborough,Amherst,2
@@ -223,19 +222,19 @@ NH,Strafford,Tamworth,1
 NH,Strafford,Wakefield,1
 NH,York,Wells,1
 NH,York,York,1
-NJ,Burlington,Burlington ,1
-NJ,Burlington,Mount Holley ,1
+NJ,Burlington,Burlington,1
+NJ,Burlington,Mount Holley,1
 NJ,Cape May,Cape May,2
 NJ,Essex,Newark,1
 NJ,Hunterdon,NaN,1
-NJ,Hunterdon,Trenton ,2
-NJ,Middlesex,Brunswick ,2
-NJ,Middlesex,Middlesex ,1
-NJ,Middlesex,Princeton ,1
+NJ,Hunterdon,Trenton,2
+NJ,Middlesex,Brunswick,2
+NJ,Middlesex,Middlesex,1
+NJ,Middlesex,Princeton,1
 NJ,Monmouth,NaN,1
 NJ,NaN,NaN,26
 NJ,Somerset,NaN,1
-NJ,Sussex,Newton ship ,1
+NJ,Sussex,Newton ship,1
 NY,Albany,Albany,1
 NY,NaN,NaN,48
 NY,New York,City of New York,4
@@ -244,49 +243,47 @@ PA,Allegheny,Pittsburgh,4
 PA,Bedford,NaN,1
 PA,Berks,NaN,12
 PA,Berks,Reading,8
-PA,Berks,Reading Berks ,9
+PA,Berks,Reading Berks,9
 PA,Berks,Tulpehocken,2
 PA,Bucks,NaN,27
 PA,Chester,NaN,28
-PA,Cumberland,Carlisle ,7
-PA,Cumberland,Cumberland,1
+PA,Cumberland,Carlisle,7
+PA,Cumberland,Cumb,1
 PA,Cumberland,Germantown,5
-PA,Dauphin,Dauphin ,1
-PA,Dauphin,Dauphincoy ,1
+PA,Dauphin,Dauphin,1
+PA,Dauphin,Dauphincoy,1
 PA,Dauphin,NaN,7
 PA,Delaware,NaN,4
 PA,Fayette,NaN,2
-PA,Franklin,Chambersburgh ,1
+PA,Franklin,Chambersburgh,1
 PA,Franklin,NaN,7
-PA,Lancaster,Lancaster,17
-PA,Lancaster,Lancaster ,10
+PA,Lancaster,Lancaster,27
 PA,Lancaster,NaN,11
 PA,Montgomery,NaN,11
 PA,NaN,NaN,1
 PA,Northampton,Bethlehem,5
 PA,Northampton,NaN,5
 PA,Northumberland,Armstrong,1
-PA,Northumberland,Montgomery ,1
+PA,Northumberland,Montgomery,1
 PA,Northumberland,NaN,10
-PA,Northumberland,Sunbury ,1
+PA,Northumberland,Sunbury,1
 PA,Philadelphia,Blockley,1
-PA,Philadelphia,Borden ,3
+PA,Philadelphia,Borden,3
 PA,Philadelphia,Burlington New Jersey,1
 PA,Philadelphia,Germantown,1
-PA,Philadelphia,Kensington,1
-PA,Philadelphia,NaN,27
+PA,Philadelphia,Kensignton,1
+PA,Philadelphia,NaN,25
 PA,Philadelphia,Northern Liberties,6
 PA,Philadelphia,Passyunk,1
-PA,Philadelphia,Philadelphia,662
+PA,Philadelphia,Philadelphia,664
 PA,Philadelphia,Southwark,1
 PA,Philadelphia,The Northern Libert,1
 PA,Washington,NaN,1
-PA,Westmoreland,Kensington,1
+PA,Westmoreland,Kensignton,1
 PA,Westmoreland,NaN,5
 PA,Westmoreland,Westmoreland,1
 PA,York,NaN,12
-PA,York,York ,2
-PA,York,York  ,8
+PA,York,York,10
 RI,Bristol,Barrington,10
 RI,Bristol,Bristol,7
 RI,Bristol,Warren,14
@@ -319,8 +316,7 @@ SC,Abbeville,Abbeville,1
 SC,Beaufort,Broad River,1
 SC,Beaufort,New River,1
 SC,Beaufort,St Helena,1
-SC,Charleston,Charleston,297
-SC,Charleston,Charleston ,6
+SC,Charleston,Charleston,303
 SC,Charleston,Dorchester,1
 SC,Charleston,James Island,4
 SC,Charleston,St Johns,1
@@ -339,14 +335,14 @@ SC,Richland,St Andrews,1
 VA,Accomack,NaN,1
 VA,Fairfax,Alexandria,2
 VA,Greenbrier,Williamsburgh,1
-VA,Hampshire,Petersburg ,2
-VA,Henrico,Richmond ,3
+VA,Hampshire,Petersburg,2
+VA,Henrico,Richmond,3
 VA,King George,NaN,1
 VA,Loudoun,NaN,1
 VA,Mecklenburg,NaN,1
 VA,NaN,NaN,17
 VA,Northumberland,NaN,1
 VA,Ohio,NaN,1
-VA,Rockingham,Portsmouth ,1
-VA,Spotsylvania,Fredericksburg ,1
+VA,Rockingham,Portsmouth,1
+VA,Spotsylvania,Fredericksburg,1
 VT,NaN,NaN,7
