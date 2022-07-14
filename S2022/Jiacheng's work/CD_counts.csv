@@ -1,348 +1,366 @@
 state,county,town,0
-CT,Fairfield,Danbury,7
-CT,Fairfield,Fairfield,20
-CT,Fairfield,Greenwich,6
-CT,Fairfield,Huntington,5
-CT,Fairfield,Norwalk,8
-CT,Fairfield,Reading,1
-CT,Fairfield,Ridgefield,1
-CT,Fairfield,Stamford,24
-CT,Fairfield,Stratford,9
-CT,Fairfield,Weston,1
-CT,Hartford,Berlin,4
-CT,Hartford,Bristol,1
-CT,Hartford,East Hartford,10
-CT,Hartford,East Windsor,8
-CT,Hartford,Enfield,2
-CT,Hartford,Farmington,24
-CT,Hartford,Glastonbury,12
-CT,Hartford,Granby,1
-CT,Hartford,Hartford,137
-CT,Hartford,Newington,2
-CT,Hartford,Suffield,13
-CT,Hartford,Symsbury,2
-CT,Hartford,Wethersfield,47
-CT,Hartford,Windsor,28
-CT,Litchfield,Canaan,3
-CT,Litchfield,Cornwall,3
-CT,Litchfield,Goshen,8
-CT,Litchfield,Hartford,2
-CT,Litchfield,Litchfield,2
-CT,Litchfield,New Milford,11
-CT,Litchfield,Norfolk,1
-CT,Litchfield,Roxbury,2
-CT,Litchfield,Salisbury,1
-CT,Litchfield,Sharon,3
-CT,Litchfield,Torrington,4
-CT,Litchfield,Watertown,1
-CT,Litchfield,Woodbury,3
-CT,Middlesex,Chatham,11
-CT,Middlesex,Durham,1
-CT,Middlesex,Haddam,11
-CT,Middlesex,Killingworth,15
-CT,Middlesex,Middletown,31
-CT,Middlesex,Saybrook,13
+BM,NaN,Bermuda,2
+BVI,NaN,Eustatia,3
+BVI,NaN,St Thomas,1
+CT,Fairfield County,Danbury,7
+CT,Fairfield County,Fairfield,20
+CT,Fairfield County,Greenwich,6
+CT,Fairfield County,Huntington,5
+CT,Fairfield County,Norwalk,8
+CT,Fairfield County,Reading,1
+CT,Fairfield County,Ridgefield,1
+CT,Fairfield County,Stamford,24
+CT,Fairfield County,Stratford,9
+CT,Fairfield County,Weston,1
+CT,Hartford County,Berlin,4
+CT,Hartford County,Bristol,1
+CT,Hartford County,East Hartford,10
+CT,Hartford County,East Windsor,8
+CT,Hartford County,Enfield,2
+CT,Hartford County,Farmington,24
+CT,Hartford County,Glastonbury,12
+CT,Hartford County,Granby,1
+CT,Hartford County,Hartford,137
+CT,Hartford County,Newington,2
+CT,Hartford County,Suffield,13
+CT,Hartford County,Symsbury,2
+CT,Hartford County,Wethersfield,47
+CT,Hartford County,Windsor,28
+CT,Litchfield County,Canaan,3
+CT,Litchfield County,Cornwall,3
+CT,Litchfield County,Goshen,8
+CT,Litchfield County,Hartford,2
+CT,Litchfield County,Litchfield,2
+CT,Litchfield County,New Milford,11
+CT,Litchfield County,Norfolk,1
+CT,Litchfield County,Roxbury,2
+CT,Litchfield County,Salisbury,1
+CT,Litchfield County,Sharon,3
+CT,Litchfield County,Torrington,4
+CT,Litchfield County,Watertown,1
+CT,Litchfield County,Woodbury,3
+CT,Middlesex County,Chatham,11
+CT,Middlesex County,Durham,1
+CT,Middlesex County,Haddam,11
+CT,Middlesex County,Killingworth,15
+CT,Middlesex County,Middletown,31
+CT,Middlesex County,Saybrook,13
 CT,NaN,NaN,3
-CT,New Haven,Branford,2
-CT,New Haven,Cheshire,2
-CT,New Haven,Derby,8
-CT,New Haven,East Haven,2
-CT,New Haven,Guilford,11
-CT,New Haven,Milford,11
-CT,New Haven,New Haven,45
-CT,New Haven,North Haven,1
-CT,New Haven,Southbury,1
-CT,New Haven,Wallingford,2
-CT,New Haven,Waterbury,1
-CT,New London,Bozrah,2
-CT,New London,Colchester,18
-CT,New London,Franklin,2
-CT,New London,Groton,12
-CT,New London,Lebanon,24
-CT,New London,Lyme,29
-CT,New London,Montville,5
-CT,New London,New London,38
-CT,New London,Norwich,46
-CT,New London,Preston,9
-CT,New London,Stonington,9
-CT,New London,Voluntown,2
-CT,Tolland,Bolton,13
-CT,Tolland,Coventry,9
-CT,Tolland,Ellington,1
-CT,Tolland,Hebron,10
-CT,Tolland,Mansfield,8
-CT,Tolland,Somers,1
-CT,Tolland,Stamford,2
-CT,Tolland,Tolland,4
-CT,Tolland,Willington,2
-CT,Windham,Ashford,4
-CT,Windham,Brooklyn,3
-CT,Windham,Canterbury,4
-CT,Windham,Hampton,3
-CT,Windham,Plainfield,4
-CT,Windham,Pomfret,8
-CT,Windham,Thompson,4
-CT,Windham,Windham,13
-CT,Windham,Woodstock,21
-DE,Kent,NaN,1
+CT,New Haven County,Branford,2
+CT,New Haven County,Cheshire,2
+CT,New Haven County,Derby,8
+CT,New Haven County,East Haven,2
+CT,New Haven County,Guilford,11
+CT,New Haven County,Milford,11
+CT,New Haven County,New Haven,45
+CT,New Haven County,North Haven,1
+CT,New Haven County,Southbury,1
+CT,New Haven County,Wallingford,2
+CT,New Haven County,Waterbury,1
+CT,New London County,Bozrah,2
+CT,New London County,Colchester,18
+CT,New London County,Franklin,2
+CT,New London County,Groton,12
+CT,New London County,Lebanon,24
+CT,New London County,Lyme,29
+CT,New London County,Montville,5
+CT,New London County,New London,38
+CT,New London County,Norwich,46
+CT,New London County,Preston,9
+CT,New London County,Stonington,9
+CT,New London County,Voluntown,2
+CT,Tolland County,Bolton,13
+CT,Tolland County,Coventry,9
+CT,Tolland County,Ellington,1
+CT,Tolland County,Hebron,10
+CT,Tolland County,Mansfield,8
+CT,Tolland County,Somers,1
+CT,Tolland County,Stamford,2
+CT,Tolland County,Tolland,4
+CT,Tolland County,Willington,2
+CT,Windham County,Ashford,4
+CT,Windham County,Brooklyn,3
+CT,Windham County,Canterbury,4
+CT,Windham County,Hampton,3
+CT,Windham County,Plainfield,4
+CT,Windham County,Pomfret,8
+CT,Windham County,Thompson,4
+CT,Windham County,Windham,13
+CT,Windham County,Woodstock,21
+DE,Kent County,NaN,1
 DE,NaN,NaN,3
-DE,New Castle,NaN,4
-GA,Chatham,Savannah,11
-GA,Effingham,NaN,2
+DE,New Castle County,NaN,4
+FR,NaN,Bourdeaux,1
+GA,Chatham County,Savannah,11
+GA,Effingham County,NaN,2
 GA,NaN,NaN,3
-GA,Richmond,Augusta,2
-GA,Richmond,NaN,1
-MA,Barnstable,Falmouth,1
-MA,Berkshire,Pittsfield,1
-MA,Berkshire,Tyringham,2
-MA,Bristol,Attleborough,6
-MA,Bristol,Dighton,4
-MA,Bristol,Freetown,1
-MA,Bristol,Norton,1
-MA,Bristol,Rehoboth,13
-MA,Bristol,Somerset,1
-MA,Bristol,Swansea,5
-MA,Bristol,Westport,1
-MA,Essex,Almsbury,2
-MA,Essex,Andover,5
-MA,Essex,Beverly,4
-MA,Essex,Haverhill,5
-MA,Essex,Ipswich,3
-MA,Essex,Newbury Port,15
-MA,Essex,Rowley,1
-MA,Essex,Salem,2
-MA,Hampshire,Chesterfield,1
-MA,Hampshire,Granby,1
-MA,Hampshire,Hadley,1
-MA,Hampshire,Long Meadow,2
-MA,Hampshire,Ludlow,1
-MA,Hampshire,North Hampton,1
-MA,Hampshire,Springfield,4
-MA,Middlesex,Cambridge,5
-MA,Middlesex,Littleton,1
+GA,Richmond County,Augusta,2
+GA,Richmond County,NaN,1
+GB,NaN,Edinburgh,1
+GB,NaN,Great Britain,1
+MA,Barnstable County,Falmouth,1
+MA,Berkshire County,Pittsfield,1
+MA,Berkshire County,Tyringham,2
+MA,Bristol County,Attleborough,6
+MA,Bristol County,Dighton,4
+MA,Bristol County,Freetown,1
+MA,Bristol County,Norton,1
+MA,Bristol County,Rehoboth,13
+MA,Bristol County,Somerset,1
+MA,Bristol County,Swansea,5
+MA,Bristol County,Westport,1
+MA,Essex County,Almsbury,2
+MA,Essex County,Andover,5
+MA,Essex County,Beverly,4
+MA,Essex County,Haverhill,5
+MA,Essex County,Ipswich,3
+MA,Essex County,Newbury Port,15
+MA,Essex County,Rowley,1
+MA,Essex County,Salem,2
+MA,Hampshire County,Chesterfield,1
+MA,Hampshire County,Granby,1
+MA,Hampshire County,Hadley,1
+MA,Hampshire County,Long Meadow,2
+MA,Hampshire County,Ludlow,1
+MA,Hampshire County,North Hampton,1
+MA,Hampshire County,Springfield,4
+MA,Middlesex County,Cambridge,5
+MA,Middlesex County,Littleton,1
 MA,NaN,NaN,3
-MA,Plymouth,Bridgewater,1
-MA,Plymouth,Situate,1
-MA,Suffolk,Boston,26
-MA,Suffolk,Roxbury,2
-MA,Suffolk,Stoughton,1
-MA,Worcester,Dudley,1
-MA,Worcester,Grafton,1
-MA,Worcester,Liecester,1
-MA,Worcester,Sturbridge MA,1
-MA,Worcester,Sutton,2
-MA,Worcester,Worcester,1
-MA,York,Kittery,3
-MD,Allegany,NaN,1
-MD,Anne Arundel,Annapolis,200
-MD,Anne Arundel,NaN,27
-MD,Baltimore,Baltimore,69
-MD,Baltimore,NaN,19
-MD,Calvert,NaN,4
-MD,Caroline,NaN,2
-MD,Cecil,George,13
-MD,Cecil,NaN,2
-MD,Charles,NaN,11
-MD,Dorchester,Cambridge,4
-MD,Dorchester,NaN,8
-MD,Frederick,Frederick,10
-MD,Frederick,NaN,33
-MD,Harford,NaN,16
-MD,Kent,NaN,1
-MD,Montgomery,NaN,20
+MA,Plymouth County,Bridgewater,1
+MA,Plymouth County,Situate,1
+MA,Suffolk County,Boston,26
+MA,Suffolk County,Roxbury,2
+MA,Suffolk County,Stoughton,1
+MA,Worcester County,Dudley,1
+MA,Worcester County,Grafton,1
+MA,Worcester County,Liecester,1
+MA,Worcester County,Sturbridge MA,1
+MA,Worcester County,Sutton,2
+MA,Worcester County,Worcester,1
+MA,York County,Kittery,3
+MD,Allegany County,NaN,1
+MD,Anne Arundel County,Annapolis,200
+MD,Anne Arundel County,NaN,27
+MD,Baltimore County,Baltimore,69
+MD,Baltimore County,NaN,19
+MD,Calvert County,NaN,4
+MD,Caroline County,NaN,2
+MD,Cecil County,George,13
+MD,Cecil County,NaN,2
+MD,Charles County,NaN,11
+MD,Dorchester County,Cambridge,4
+MD,Dorchester County,NaN,8
+MD,Frederick County,Frederick,10
+MD,Frederick County,NaN,33
+MD,Harford County,NaN,16
+MD,Kent County,NaN,1
+MD,Montgomery County,NaN,20
+MD,NaN,Isaac,1
 MD,NaN,NaN,11
-MD,Prince Georges,Bladensburg,2
-MD,Prince Georges,NaN,38
-MD,Queen Annes,NaN,4
-MD,Somerset,NaN,5
-MD,St Marys,NaN,10
-MD,Talbot,NaN,4
-MD,Washington,NaN,4
-MD,Worcester,NaN,2
-NC,Beaufort,Washington,1
-NC,Chowan,Edenton,12
-NC,Craven,Newbern,10
-NC,Cumberland,Fayetteville,1
-NC,Currituck,NaN,1
-NC,Edgecombe,NaN,1
-NC,Edgecombe,Tarborugh,1
-NC,Halifax,Halifax,3
-NC,Hertford,Murfrees Borough,2
-NC,Mecklenburg,NaN,1
+MD,Prince Georges County,Bladensburg,2
+MD,Prince Georges County,NaN,38
+MD,Queen Annes County,NaN,4
+MD,Somerset County,NaN,5
+MD,St Marys County,NaN,10
+MD,Talbot County,NaN,4
+MD,Washington County,NaN,4
+MD,Worcester County,NaN,2
+NC,Beaufort County,Washington,1
+NC,Chowan County,Edenton,12
+NC,Craven County,Newbern,10
+NC,Cumberland County,Fayetteville,1
+NC,Currituck County,NaN,1
+NC,Edgecombe County,NaN,1
+NC,Edgecombe County,Tarborugh,1
+NC,Halifax County,Halifax,3
+NC,Hertford County,Murfrees Borough,2
+NC,Mecklenburg County,NaN,1
 NC,NaN,NaN,10
-NC,New Hanover,Wilmington,2
-NC,Orange,Hillsborough,2
-NC,Perquimans,NaN,1
-NC,Pitt,NaN,1
-NC,Rockingham,NaN,1
-NC,Rowan,NaN,4
-NC,Rowan,Salisbury,1
-NC,Warren,NaN,2
-NC,Wayne,NaN,1
-NH,Cheshire,Acworth,1
-NH,Cheshire,Charleston,3
-NH,Cheshire,Keene,1
-NH,Cheshire,Newport in,1
-NH,Grafton,Alexandria,1
-NH,Grafton,Concord,7
-NH,Hillsborough,Amherst,2
-NH,Hillsborough,Hollis,1
-NH,Hillsborough,Hopkinton,1
-NH,Hillsborough,Merrimac,1
-NH,Hillsborough,Newbury,3
-NH,Hillsborough,Pelham,1
-NH,Hillsborough,Pembroke,1
-NH,Hillsborough,Salisbury,1
+NC,New Hanover County,Wilmington,2
+NC,Orange County,Hillsborough,2
+NC,Perquimans County,NaN,1
+NC,Pitt County,NaN,1
+NC,Rockingham County,NaN,1
+NC,Rowan County,NaN,4
+NC,Rowan County,Salisbury,1
+NC,Warren County,NaN,2
+NC,Wayne County,NaN,1
+NH,Cheshire County,Acworth,1
+NH,Cheshire County,Charleston,3
+NH,Cheshire County,Keene,1
+NH,Cheshire County,Newport in,1
+NH,Grafton County,Alexandria,1
+NH,Grafton County,Concord,7
+NH,Hillsborough County,Amherst,2
+NH,Hillsborough County,Hollis,1
+NH,Hillsborough County,Hopkinton,1
+NH,Hillsborough County,Merrimac,1
+NH,Hillsborough County,Newbury,3
+NH,Hillsborough County,Pelham,1
+NH,Hillsborough County,Pembroke,1
+NH,Hillsborough County,Salisbury,1
+NH,NaN,Glouster,3
 NH,NaN,NaN,1
-NH,Rockingham,Brintwood,1
-NH,Rockingham,Candia,1
-NH,Rockingham,Canterbury,4
-NH,Rockingham,Deerfield,1
-NH,Rockingham,Exeter,29
-NH,Rockingham,Greenland,1
-NH,Rockingham,Hampton,7
-NH,Rockingham,Kensington,4
-NH,Rockingham,Kingstown,1
-NH,Rockingham,London,3
-NH,Rockingham,NaN,2
-NH,Rockingham,New Castle,1
-NH,Rockingham,Newtown,2
-NH,Rockingham,Nottingham,1
-NH,Rockingham,Portsmouth,64
-NH,Rockingham,Rye,1
-NH,Rockingham,Salem,3
-NH,Strafford,Barrington,2
-NH,Strafford,Dover,2
-NH,Strafford,Durham,3
-NH,Strafford,Gilmantown,2
-NH,Strafford,Marbury,1
-NH,Strafford,Sandwich,1
-NH,Strafford,Somersworth,2
-NH,Strafford,Tamworth,1
-NH,Strafford,Wakefield,1
-NH,York,Wells,1
-NH,York,York,1
-NJ,Burlington,Burlington,1
-NJ,Burlington,Mount Holley,1
-NJ,Cape May,Cape May,2
-NJ,Essex,Newark,1
-NJ,Hunterdon,NaN,1
-NJ,Hunterdon,Trenton,2
-NJ,Middlesex,Brunswick,2
-NJ,Middlesex,Middlesex,1
-NJ,Middlesex,Princeton,1
-NJ,Monmouth,NaN,1
+NH,NaN,North Hampshire,1
+NH,Rockingham County,Brintwood,1
+NH,Rockingham County,Candia,1
+NH,Rockingham County,Canterbury,4
+NH,Rockingham County,Deerfield,1
+NH,Rockingham County,Exeter,29
+NH,Rockingham County,Greenland,1
+NH,Rockingham County,Hampton,7
+NH,Rockingham County,Kensington,4
+NH,Rockingham County,Kingstown,1
+NH,Rockingham County,London,3
+NH,Rockingham County,NaN,2
+NH,Rockingham County,New Castle,1
+NH,Rockingham County,Newtown,2
+NH,Rockingham County,Nottingham,1
+NH,Rockingham County,Portsmouth,64
+NH,Rockingham County,Rye,1
+NH,Rockingham County,Salem,3
+NH,Strafford County,Barrington,2
+NH,Strafford County,Dover,2
+NH,Strafford County,Durham,3
+NH,Strafford County,Gilmantown,2
+NH,Strafford County,Marbury,1
+NH,Strafford County,Sandwich,1
+NH,Strafford County,Somersworth,2
+NH,Strafford County,Tamworth,1
+NH,Strafford County,Wakefield,1
+NH,York County,Wells,1
+NH,York County,York,1
+NJ,Burlington County,Berlington,1
+NJ,Burlington County,Mount Holley,1
+NJ,Cape May County,Cape May,2
+NJ,Essex County,Newark,1
+NJ,Hunterdon County,NaN,1
+NJ,Hunterdon County,Trenton,2
+NJ,Middlesex County,Brunswick,2
+NJ,Middlesex County,Middlesex,1
+NJ,Middlesex County,Princeton,1
+NJ,Monmouth County,NaN,1
 NJ,NaN,NaN,26
-NJ,Somerset,NaN,1
-NJ,Sussex,Newton ship,1
-NY,Albany,Albany,1
+NJ,Somerset County,NaN,1
+NJ,Sussex County,Newton ship,1
+NY,Albany County,Albany,1
+NY,NaN,Long Island,1
 NY,NaN,NaN,48
-NY,New York,City of New York,4
-PA,Allegheny,NaN,3
-PA,Allegheny,Pittsburgh,4
-PA,Bedford,NaN,1
-PA,Berks,NaN,12
-PA,Berks,Reading,8
-PA,Berks,Reading Berks,9
-PA,Berks,Tulpehocken,2
-PA,Bucks,NaN,27
-PA,Chester,NaN,28
-PA,Cumberland,Carlisle,7
-PA,Cumberland,Cumb,1
-PA,Cumberland,Germantown,5
-PA,Dauphin,Dauphin,1
-PA,Dauphin,Dauphincoy,1
-PA,Dauphin,NaN,7
-PA,Delaware,NaN,4
-PA,Fayette,NaN,2
-PA,Franklin,Chambersburgh,1
-PA,Franklin,NaN,7
-PA,Lancaster,Lancaster,27
-PA,Lancaster,NaN,11
-PA,Montgomery,NaN,11
+NY,New York County,City of New York,4
+PA,Allegheny County,NaN,3
+PA,Allegheny County,Pittsburgh,4
+PA,Bedford County,NaN,1
+PA,Berks County,NaN,13
+PA,Berks County,Reading,8
+PA,Berks County,Reading Berks,9
+PA,Berks County,Tulpehocken,2
+PA,Bucks County,NaN,27
+PA,Chester County,NaN,28
+PA,Cumberland County,Carlisle,7
+PA,Cumberland County,Cumb,1
+PA,Cumberland County,Germantown,5
+PA,Dauphin County,Dauphin,1
+PA,Dauphin County,Dauphincoy,1
+PA,Dauphin County,NaN,7
+PA,Delaware County,NaN,4
+PA,Fayette County,NaN,2
+PA,Franklin County,Chambersburgh,1
+PA,Franklin County,NaN,7
+PA,Lancaster County,Lancaster,27
+PA,Lancaster County,NaN,11
+PA,Montgomery County,NaN,11
 PA,NaN,NaN,1
-PA,Northampton,Bethlehem,5
-PA,Northampton,NaN,5
-PA,Northumberland,Armstrong,1
-PA,Northumberland,Montgomery,1
-PA,Northumberland,NaN,10
-PA,Northumberland,Sunbury,1
-PA,Philadelphia,Blockley,1
-PA,Philadelphia,Borden,3
-PA,Philadelphia,Burlington New Jersey,1
-PA,Philadelphia,Germantown,1
-PA,Philadelphia,Kensignton,1
-PA,Philadelphia,NaN,25
-PA,Philadelphia,Northern Liberties,6
-PA,Philadelphia,Passyunk,1
-PA,Philadelphia,Philadelphia,664
-PA,Philadelphia,Southwark,1
-PA,Philadelphia,The Northern Libert,1
-PA,Washington,NaN,1
-PA,Westmoreland,Kensignton,1
-PA,Westmoreland,NaN,5
-PA,Westmoreland,Westmoreland,1
-PA,York,NaN,12
-PA,York,York,10
-RI,Bristol,Barrington,10
-RI,Bristol,Bristol,7
-RI,Bristol,Warren,14
-RI,Kent,Coventry,5
-RI,Kent,East Greenwich,9
-RI,Kent,Warwick,15
-RI,Kent,West Greenwich,7
+PA,NaN,St Eustalia,1
+PA,NaN,W Callisters,1
+PA,Northampton County,Bethlehem,5
+PA,Northampton County,NaN,5
+PA,Northumberland County,Armstrong,1
+PA,Northumberland County,Montgomery,1
+PA,Northumberland County,NaN,10
+PA,Northumberland County,Sunbury,1
+PA,Philadelphia County,Blockley,1
+PA,Philadelphia County,Borden,3
+PA,Philadelphia County,Burlington New Jersey,1
+PA,Philadelphia County,Germantown,1
+PA,Philadelphia County,NaN,25
+PA,Philadelphia County,Northern Liberties,6
+PA,Philadelphia County,Passyunk,1
+PA,Philadelphia County,Philadelphia,663
+PA,Philadelphia County,Southwark,1
+PA,Philadelphia County,The Northern Libert,1
+PA,Washington County,NaN,1
+PA,Westmoreland County,Kensington,2
+PA,Westmoreland County,NaN,5
+PA,Westmoreland County,Westmoreland,1
+PA,York County,NaN,12
+PA,York County,York,10
+RI,Bristol County,Barrington,10
+RI,Bristol County,Bristol,7
+RI,Bristol County,Warren,14
+RI,Kent County,Coventry,5
+RI,Kent County,East Greenwich,9
+RI,Kent County,Warwick,15
+RI,Kent County,West Greenwich,7
 RI,NaN,NaN,7
-RI,Newport,Little Compton,8
-RI,Newport,Newport,71
-RI,Newport,Portsmouth,2
-RI,Newport,Tiverton,14
-RI,Providence,Cranston,19
-RI,Providence,Cumberland,3
-RI,Providence,Foster,2
-RI,Providence,Gloucester,6
-RI,Providence,Johnson,4
-RI,Providence,Johnston,4
-RI,Providence,North Providence,9
-RI,Providence,Providence,191
-RI,Providence,Scituate,17
-RI,Providence,Smithfield,8
-RI,Washington,Charlestown,8
-RI,Washington,Exeter,8
-RI,Washington,North Kingston,6
-RI,Washington,Richmond,2
-RI,Washington,South Kingston,8
-SC,Abbeville,96 District,1
-SC,Abbeville,Abbeville,1
-SC,Beaufort,Broad River,1
-SC,Beaufort,New River,1
-SC,Beaufort,St Helena,1
-SC,Charleston,Charleston,303
-SC,Charleston,Dorchester,1
-SC,Charleston,James Island,4
-SC,Charleston,St Johns,1
-SC,Charleston,St. George,1
-SC,Charleston,Toogoodoo,1
-SC,Clarendon,St Pauls,2
-SC,Georgetown,Georgetown,14
-SC,Georgetown,Pee Dee,2
-SC,Georgetown,Winyaw,1
-SC,Lancaster,Camden,5
-SC,Laurens,96 District,1
+RI,NaN,Springfield,1
+RI,Newport County,Little Compton,8
+RI,Newport County,Newport,71
+RI,Newport County,Portsmouth,2
+RI,Newport County,Tiverton,14
+RI,Providence County,Cranston,19
+RI,Providence County,Cumberland,3
+RI,Providence County,Foster,2
+RI,Providence County,Gloucester,6
+RI,Providence County,Johnson,4
+RI,Providence County,Johnston,4
+RI,Providence County,North Providence,9
+RI,Providence County,Providence,191
+RI,Providence County,Scituate,17
+RI,Providence County,Smithfield,8
+RI,Washington County,Charlestown,8
+RI,Washington County,Exeter,8
+RI,Washington County,North Kingston,6
+RI,Washington County,Richmond,2
+RI,Washington County,South Kingston,8
+SC,Abbeville County,96 District,1
+SC,Abbeville County,Abbeville,1
+SC,Beaufort County,Broad River,1
+SC,Beaufort County,New River,1
+SC,Beaufort County,St Helena,1
+SC,Charleston County,Charleston,303
+SC,Charleston County,Dorchester,1
+SC,Charleston County,James Island,4
+SC,Charleston County,St Johns,1
+SC,Charleston County,St. George,1
+SC,Charleston County,Toogoodoo,1
+SC,Clarendon County,St Pauls,2
+SC,Georgetown County,Georgetown,14
+SC,Georgetown County,Pee Dee,2
+SC,Georgetown County,Winyaw,1
+SC,Lancaster County,Camden,5
+SC,Laurens County,96 District,1
+SC,NaN,Carolina,1
+SC,NaN,Long Cames,1
 SC,NaN,NaN,12
-SC,Richland,Columbia,2
-SC,Richland,NaN,1
-SC,Richland,St Andrews,1
-VA,Accomack,NaN,1
-VA,Fairfax,Alexandria,2
-VA,Greenbrier,Williamsburgh,1
-VA,Hampshire,Petersburg,2
-VA,Henrico,Richmond,3
-VA,King George,NaN,1
-VA,Loudoun,NaN,1
-VA,Mecklenburg,NaN,1
+SC,NaN,Richard,1
+SC,Richland County,Columbia,2
+SC,Richland County,NaN,1
+SC,Richland County,St Andrews,1
+US,NaN,Register of the Treasury,1
+VA,Accomack County,NaN,1
+VA,Fairfax County,Alexandria,2
+VA,Greenbrier County,Williamsburgh,1
+VA,Hampshire County,Petersburg,2
+VA,Henrico County,Richmond,3
+VA,King George County,NaN,1
+VA,Loudoun County,NaN,1
+VA,Mecklenburg County,NaN,1
 VA,NaN,NaN,17
-VA,Northumberland,NaN,1
-VA,Ohio,NaN,1
-VA,Rockingham,Portsmouth,1
-VA,Spotsylvania,Fredericksburg,1
+VA,Northumberland County,NaN,1
+VA,Ohio County,NaN,1
+VA,Rockingham County,Portsmouth,1
+VA,Spotsylvania County,Fredericksburg,1
+VI,NaN,St. Thomas,3
+VI,NaN,The River May,1
 VT,NaN,NaN,7

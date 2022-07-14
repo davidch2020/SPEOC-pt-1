@@ -1,274 +1,366 @@
 state,county,town,6p_total
-CT,Fairfield,Danbury,3116.56
-CT,Fairfield,Fairfield,6505.58
-CT,Fairfield,Greenwich,997.06
-CT,Fairfield,Huntington,6845.41
-CT,Fairfield,Norwalk,1993.3400000000001
-CT,Fairfield,Reading,578.36
-CT,Fairfield,Ridgefield,110.75
-CT,Fairfield,Stamford,9994.88
-CT,Fairfield,Stratford,4448.07
-CT,Fairfield,Weston,69.37
-CT,Hartford,Berlin,920.41
-CT,Hartford,Bristol,210.01
-CT,Hartford,East Hartford,4049.04
-CT,Hartford,East Windsor,1326.9299999999998
-CT,Hartford,Enfield,562.06
-CT,Hartford,Farmington,5442.13
-CT,Hartford,Glastonbury,11805.089999999998
-CT,Hartford,Granby,422.38
-CT,Hartford,Hartford,49140.48
-CT,Hartford,Newington,1922.37
-CT,Hartford,Suffield,1866.1
-CT,Hartford,Symsbury,35.78
-CT,Hartford,Wethersfield,10765.4
-CT,Hartford,Windsor,8695.1
-CT,Litchfield,Canaan,299.40999999999997
-CT,Litchfield,Cornwall,3151.91
-CT,Litchfield,Goshen,8842.39
-CT,Litchfield,Hartford,615.6999999999999
-CT,Litchfield,Litchfield,1150.9
-CT,Litchfield,New Milford,1975.34
-CT,Litchfield,Norfolk,52.28
-CT,Litchfield,Roxbury,10592.61
-CT,Litchfield,Salisbury,10.08
-CT,Litchfield,Sharon,745.03
-CT,Litchfield,Torrington,1965.91
-CT,Litchfield,Watertown,533.33
-CT,Litchfield,Woodbury,1132.25
-CT,Middlesex,Chatham,1208.07
-CT,Middlesex,Durham,32.77
-CT,Middlesex,Haddam,6597.64
-CT,Middlesex,Killingworth,1780.76
-CT,Middlesex,Middletown,21997.77
-CT,Middlesex,Saybrook,11735.19
-CT,New Haven,Branford,127.54
-CT,New Haven,Cheshire,794.01
-CT,New Haven,Derby,5303.11
-CT,New Haven,East Haven,44.33
-CT,New Haven,Guilford,971.39
-CT,New Haven,Milford,2243.3
-CT,New Haven,New Haven,27504.96
-CT,New Haven,North Haven,30.56
-CT,New Haven,Southbury,350.25
-CT,New Haven,Wallingford,1219.03
-CT,New Haven,Waterbury,225.22
-CT,New London,Bozrah,335.98
-CT,New London,Colchester,7403.65
-CT,New London,Franklin,67.64
-CT,New London,Groton,2735.23
-CT,New London,Lebanon,19910.54
-CT,New London,Lyme,31431.16
-CT,New London,Montville,475.21000000000004
-CT,New London,New London,40166.44
-CT,New London,Norwich,47732.350000000006
-CT,New London,Preston,2965.37
-CT,New London,Stonington,7465.2
-CT,New London,Voluntown,413.14000000000004
-CT,Tolland,Bolton,10453.64
-CT,Tolland,Coventry,1335.46
-CT,Tolland,Ellington,112.24
-CT,Tolland,Hebron,7733.12
-CT,Tolland,Mansfield,1507.58
-CT,Tolland,Somers,40.67
-CT,Tolland,Stamford,288.97
-CT,Tolland,Tolland,330.22
-CT,Tolland,Willington,216.59
-CT,Windham,Ashford,1276.25
-CT,Windham,Brooklyn,975.02
-CT,Windham,Canterbury,778.27
-CT,Windham,Hampton,387.56
-CT,Windham,Plainfield,1430.27
-CT,Windham,Pomfret,2705.1200000000003
-CT,Windham,Thompson,2722.47
-CT,Windham,Windham,5490.97
-CT,Windham,Woodstock,9823.87
-GA,Chatham,Savannah,10582.682729
-GA,Richmond,Augusta,139.271033
-MA,Barnstable,Falmouth,99.09
-MA,Berkshire,Pittsfield,357.38
-MA,Berkshire,Tyringham,992.1200000000001
-MA,Bristol,Attleborough,1268.5
-MA,Bristol,Dighton,2712.82
-MA,Bristol,Freetown,133.34
-MA,Bristol,Norton,266.67
-MA,Bristol,Rehoboth,8270.92
-MA,Bristol,Somerset,30.45
-MA,Bristol,Swansea,1444.53
-MA,Bristol,Westport,106.57
-MA,Essex,Almsbury,110.59
-MA,Essex,Andover,2836.61
-MA,Essex,Beverly,1333.33
-MA,Essex,Haverhill,1336.8300000000002
-MA,Essex,Ipswich,585.76
-MA,Essex,Newbury Port,6091.2
-MA,Essex,Rowley,72.19
-MA,Essex,Salem,1437.65
-MA,Hampshire,Chesterfield,75.34
-MA,Hampshire,Granby,4.18
-MA,Hampshire,Hadley,0.0
-MA,Hampshire,Long Meadow,219.43
-MA,Hampshire,Ludlow,0.0
-MA,Hampshire,North Hampton,177.85
-MA,Hampshire,Springfield,2880.8599999999997
-MA,Middlesex,Cambridge,2118.7799999999997
-MA,Middlesex,Littleton,596.81
-MA,Plymouth,Bridgewater,192.71
-MA,Plymouth,Situate,266.67
-MA,Suffolk,Boston,22339.48
-MA,Suffolk,Roxbury,1204.7
-MA,Suffolk,Stoughton,533.33
-MA,Worcester,Dudley,98.48
-MA,Worcester,Grafton,434.6
-MA,Worcester,Liecester,266.67
-MA,Worcester,Sturbridge MA,222.32
-MA,Worcester,Sutton,376.55999999999995
-MA,Worcester,Worcester,2861.87
-MA,York,Kittery,1328.17
-MD,Anne Arundel,Annapolis,586235.98
-MD,Baltimore,Baltimore,39374.985733
-MD,Cecil,George,65194.99
-MD,Dorchester,Cambridge,18626.05
-MD,Frederick,Frederick,11048.11
-MD,Prince Georges,Bladensburg,704.31
-NC,Beaufort,Washington,254.73
-NC,Chowan,Edenton,5513.57
-NC,Craven,Newbern,5639.79
-NC,Cumberland,Fayetteville,81.8
-NC,Edgecombe,Tarborugh,1330.16
-NC,Halifax,Halifax,169.49
-NC,Hertford,Murfrees Borough,71.11
-NC,New Hanover,Wilmington,589.5600000000001
-NC,Orange,Hillsborough,78.89
-NC,Rowan,Salisbury,98.66
-NH,Cheshire,Acworth,50.8
-NH,Cheshire,Charleston,926.49
-NH,Cheshire,Keene,106.45
-NH,Cheshire,Newport in,168.28
-NH,Grafton,Alexandria,40.67
-NH,Grafton,Concord,3329.57
-NH,Hillsborough,Amherst,185.89999999999998
-NH,Hillsborough,Hollis,283.82
-NH,Hillsborough,Hopkinton,400.0
-NH,Hillsborough,Merrimac,4082.06
-NH,Hillsborough,Newbury,1414.7
-NH,Hillsborough,Pelham,64.17
-NH,Hillsborough,Pembroke,52.98
-NH,Hillsborough,Salisbury,431.21
-NH,Rockingham,Brintwood,146.16
-NH,Rockingham,Candia,1066.67
-NH,Rockingham,Canterbury,495.83
-NH,Rockingham,Deerfield,3677.87
-NH,Rockingham,Exeter,30837.74
-NH,Rockingham,Greenland,615.28
-NH,Rockingham,Hampton,7797.719999999999
-NH,Rockingham,Kensington,4027.66
-NH,Rockingham,Kingstown,398.93
-NH,Rockingham,London,4695.96
-NH,Rockingham,New Castle,172.49
-NH,Rockingham,Newtown,337.63
-NH,Rockingham,Nottingham,3975.85
-NH,Rockingham,Portsmouth,41300.04
-NH,Rockingham,Rye,139.91
-NH,Rockingham,Salem,3423.2400000000002
-NH,Strafford,Barrington,543.5699999999999
-NH,Strafford,Dover,859.78
-NH,Strafford,Durham,532.29
-NH,Strafford,Gilmantown,2729.78
-NH,Strafford,Marbury,0.0
-NH,Strafford,Sandwich,205.17
-NH,Strafford,Somersworth,801.9499999999999
-NH,Strafford,Tamworth,303.42
-NH,Strafford,Wakefield,352.53
-NH,York,Wells,643.34
-NH,York,York,189.58
-NJ,Burlington,Burlington,0.0
-NJ,Burlington,Mount Holley,190.71
-NJ,Cape May,Cape May,62.89
-NJ,Essex,Newark,48.33
-NJ,Hunterdon,Trenton,1115.95
-NJ,Middlesex,Brunswick,1330.3
-NJ,Middlesex,Middlesex,74.88
-NJ,Middlesex,Princeton,1183.71
-NJ,Sussex,Newton ship,311.99
-NY,Albany,Albany,22.7
-NY,New York,City of New York,492.21000000000004
-PA,Allegheny,Pittsburgh,4017.6900000000005
-PA,Berks,Reading,9843.65
-PA,Berks,Reading Berks,19243.649999999998
-PA,Berks,Tulpehocken,1136.06
-PA,Cumberland,Carlisle,6171.04
-PA,Cumberland,Cumb,2388.52
-PA,Cumberland,Germantown,4065.43
-PA,Dauphin,Dauphin,1979.6
-PA,Dauphin,Dauphincoy,1160.69
-PA,Franklin,Chambersburgh,237.7
-PA,Lancaster,Lancaster,47178.85
-PA,Northampton,Bethlehem,2639.7
-PA,Northumberland,Armstrong,989.87
-PA,Northumberland,Montgomery,443.9
-PA,Northumberland,Sunbury,1360.22
-PA,Philadelphia,Blockley,971.4
-PA,Philadelphia,Borden,4050.5000000000005
-PA,Philadelphia,Burlington New Jersey,280.69
-PA,Philadelphia,Germantown,1959.55
-PA,Philadelphia,Kensignton,1241.76
-PA,Philadelphia,Northern Liberties,2486.79
-PA,Philadelphia,Passyunk,64.37
-PA,Philadelphia,Philadelphia,1175818.7205
-PA,Philadelphia,Southwark,3.33
-PA,Philadelphia,The Northern Libert,1263.4
-PA,Westmoreland,Kensignton,692.25
-PA,Westmoreland,Westmoreland,33.33
-PA,York,York,7621.2
-RI,Bristol,Barrington,2059.1800000000003
-RI,Bristol,Bristol,1065.52
-RI,Bristol,Warren,5603.700000000001
-RI,Kent,Coventry,481.83
-RI,Kent,East Greenwich,1964.0
-RI,Kent,Warwick,6513.650000000001
-RI,Kent,West Greenwich,1325.27
-RI,Newport,Little Compton,1614.7
-RI,Newport,Newport,252788.89
-RI,Newport,Portsmouth,82.74000000000001
-RI,Newport,Tiverton,1462.79
-RI,Providence,Cranston,3058.09
-RI,Providence,Cumberland,1257.36
-RI,Providence,Foster,255.82
-RI,Providence,Gloucester,4249.81
-RI,Providence,Johnson,715.88
-RI,Providence,Johnston,1388.82
-RI,Providence,North Providence,1179.0
-RI,Providence,Providence,138893.75
-RI,Providence,Scituate,5109.3099999999995
-RI,Providence,Smithfield,536.49
-RI,Washington,Charlestown,1553.18
-RI,Washington,Exeter,389.03999999999996
-RI,Washington,North Kingston,1294.41
-RI,Washington,Richmond,17.12
-RI,Washington,South Kingston,1426.4099999999999
-SC,Abbeville,96 District,31.26
-SC,Abbeville,Abbeville,48.42
-SC,Beaufort,Broad River,26.84
-SC,Beaufort,New River,38.29
-SC,Beaufort,St Helena,250.89
-SC,Charleston,Charleston,134990.818666
-SC,Charleston,Dorchester,104.78
-SC,Charleston,James Island,315.26
-SC,Charleston,St Johns,169.72
-SC,Charleston,St. George,1501.6
-SC,Charleston,Toogoodoo,28.97
-SC,Clarendon,St Pauls,218.68
-SC,Georgetown,Georgetown,6131.25
-SC,Georgetown,Pee Dee,4397.06
-SC,Georgetown,Winyaw,66.66666666666667
-SC,Lancaster,Camden,5258.296666666666
-SC,Laurens,96 District,19.73
-SC,Richland,Columbia,438.7
-SC,Richland,St Andrews,46.02
-VA,Fairfax,Alexandria,711.12
-VA,Greenbrier,Williamsburgh,46.02
-VA,Hampshire,Petersburg,2693.4900000000002
-VA,Henrico,Richmond,599.8100000000001
-VA,Rockingham,Portsmouth,20.516233
-VA,Spotsylvania,Fredericksburg,550.06
+BM,,Bermuda,754.93
+BVI,,Eustatia,125.45
+BVI,,St Thomas,1011.39
+CT,Fairfield County,Danbury,3116.56
+CT,Fairfield County,Fairfield,6505.58
+CT,Fairfield County,Greenwich,997.06
+CT,Fairfield County,Huntington,6845.41
+CT,Fairfield County,Norwalk,1993.3400000000001
+CT,Fairfield County,Reading,578.36
+CT,Fairfield County,Ridgefield,110.75
+CT,Fairfield County,Stamford,9994.88
+CT,Fairfield County,Stratford,4448.07
+CT,Fairfield County,Weston,69.37
+CT,Hartford County,Berlin,920.41
+CT,Hartford County,Bristol,210.01
+CT,Hartford County,East Hartford,4049.04
+CT,Hartford County,East Windsor,1326.9299999999998
+CT,Hartford County,Enfield,562.06
+CT,Hartford County,Farmington,5442.13
+CT,Hartford County,Glastonbury,11805.089999999998
+CT,Hartford County,Granby,422.38
+CT,Hartford County,Hartford,49140.48
+CT,Hartford County,Newington,1922.37
+CT,Hartford County,Suffield,1866.1
+CT,Hartford County,Symsbury,35.78
+CT,Hartford County,Wethersfield,10765.4
+CT,Hartford County,Windsor,8695.1
+CT,Litchfield County,Canaan,299.40999999999997
+CT,Litchfield County,Cornwall,3151.91
+CT,Litchfield County,Goshen,8842.39
+CT,Litchfield County,Hartford,615.6999999999999
+CT,Litchfield County,Litchfield,1150.9
+CT,Litchfield County,New Milford,1975.34
+CT,Litchfield County,Norfolk,52.28
+CT,Litchfield County,Roxbury,10592.61
+CT,Litchfield County,Salisbury,10.08
+CT,Litchfield County,Sharon,745.03
+CT,Litchfield County,Torrington,1965.91
+CT,Litchfield County,Watertown,533.33
+CT,Litchfield County,Woodbury,1132.25
+CT,Middlesex County,Chatham,1208.07
+CT,Middlesex County,Durham,32.77
+CT,Middlesex County,Haddam,6597.64
+CT,Middlesex County,Killingworth,1780.76
+CT,Middlesex County,Middletown,21997.77
+CT,Middlesex County,Saybrook,11735.19
+CT,New Haven County,Branford,127.54
+CT,New Haven County,Cheshire,794.01
+CT,New Haven County,Derby,5303.11
+CT,New Haven County,East Haven,44.33
+CT,New Haven County,Guilford,971.39
+CT,New Haven County,Milford,2243.3
+CT,New Haven County,New Haven,27504.96
+CT,New Haven County,North Haven,30.56
+CT,New Haven County,Southbury,350.25
+CT,New Haven County,Wallingford,1219.03
+CT,New Haven County,Waterbury,225.22
+CT,New London County,Bozrah,335.98
+CT,New London County,Colchester,7403.65
+CT,New London County,Franklin,67.64
+CT,New London County,Groton,2735.23
+CT,New London County,Lebanon,19910.54
+CT,New London County,Lyme,31431.16
+CT,New London County,Montville,475.21000000000004
+CT,New London County,New London,40166.44
+CT,New London County,Norwich,47732.350000000006
+CT,New London County,Preston,2965.37
+CT,New London County,Stonington,7465.2
+CT,New London County,Voluntown,413.14000000000004
+CT,Tolland County,Bolton,10453.64
+CT,Tolland County,Coventry,1335.46
+CT,Tolland County,Ellington,112.24
+CT,Tolland County,Hebron,7733.12
+CT,Tolland County,Mansfield,1507.58
+CT,Tolland County,Somers,40.67
+CT,Tolland County,Stamford,288.97
+CT,Tolland County,Tolland,330.22
+CT,Tolland County,Willington,216.59
+CT,Windham County,Ashford,1276.25
+CT,Windham County,Brooklyn,975.02
+CT,Windham County,Canterbury,778.27
+CT,Windham County,Hampton,387.56
+CT,Windham County,Plainfield,1430.27
+CT,Windham County,Pomfret,2705.1200000000003
+CT,Windham County,Thompson,2722.47
+CT,Windham County,Windham,5490.97
+CT,Windham County,Woodstock,9823.87
+CT,,,4111.63
+DE,Kent County,,1731.41
+DE,New Castle County,,2596.86
+DE,,,4052.69
+FR,,Bourdeaux,27.44
+GA,Chatham County,Savannah,10582.682729
+GA,Effingham County,,68.851733
+GA,Richmond County,Augusta,139.271033
+GA,Richmond County,,18.068233
+GA,,,4650.480732999999
+GB,,Edinburgh,49.58
+GB,,Great Britain,218.26
+MA,Barnstable County,Falmouth,99.09
+MA,Berkshire County,Pittsfield,357.38
+MA,Berkshire County,Tyringham,992.1200000000001
+MA,Bristol County,Attleborough,1268.5
+MA,Bristol County,Dighton,2712.82
+MA,Bristol County,Freetown,133.34
+MA,Bristol County,Norton,266.67
+MA,Bristol County,Rehoboth,8270.92
+MA,Bristol County,Somerset,30.45
+MA,Bristol County,Swansea,1444.53
+MA,Bristol County,Westport,106.57
+MA,Essex County,Almsbury,110.59
+MA,Essex County,Andover,2836.61
+MA,Essex County,Beverly,1333.33
+MA,Essex County,Haverhill,1336.8300000000002
+MA,Essex County,Ipswich,585.76
+MA,Essex County,Newbury Port,6091.2
+MA,Essex County,Rowley,72.19
+MA,Essex County,Salem,1437.65
+MA,Hampshire County,Chesterfield,75.34
+MA,Hampshire County,Granby,4.18
+MA,Hampshire County,Hadley,0.0
+MA,Hampshire County,Long Meadow,219.43
+MA,Hampshire County,Ludlow,0.0
+MA,Hampshire County,North Hampton,177.85
+MA,Hampshire County,Springfield,2880.8599999999997
+MA,Middlesex County,Cambridge,2118.7799999999997
+MA,Middlesex County,Littleton,596.81
+MA,Plymouth County,Bridgewater,192.71
+MA,Plymouth County,Situate,266.67
+MA,Suffolk County,Boston,22339.48
+MA,Suffolk County,Roxbury,1204.7
+MA,Suffolk County,Stoughton,533.33
+MA,Worcester County,Dudley,98.48
+MA,Worcester County,Grafton,434.6
+MA,Worcester County,Liecester,266.67
+MA,Worcester County,Sturbridge MA,222.32
+MA,Worcester County,Sutton,376.55999999999995
+MA,Worcester County,Worcester,2861.87
+MA,York County,Kittery,1328.17
+MA,,,4065.01
+MD,Allegany County,,755.55
+MD,Anne Arundel County,Annapolis,586235.98
+MD,Anne Arundel County,,13611.109999999999
+MD,Baltimore County,Baltimore,39374.985733
+MD,Baltimore County,,7014.37
+MD,Calvert County,,9468.98
+MD,Caroline County,,413.05
+MD,Cecil County,George,65194.99
+MD,Cecil County,,159.27
+MD,Charles County,,6991.23
+MD,Dorchester County,Cambridge,18626.05
+MD,Dorchester County,,9249.82
+MD,Frederick County,Frederick,11048.11
+MD,Frederick County,,6870.72
+MD,Harford County,,5934.12
+MD,Kent County,,158.2
+MD,Montgomery County,,8964.5
+MD,Prince Georges County,Bladensburg,704.31
+MD,Prince Georges County,,24450.81
+MD,Queen Annes County,,9677.81
+MD,Somerset County,,5238.71
+MD,St Marys County,,7615.83
+MD,Talbot County,,585.74
+MD,Washington County,,3760.7599999999998
+MD,Worcester County,,2521.14
+MD,,Isaac,26.93
+MD,,,3407.2376
+NC,Beaufort County,Washington,254.73
+NC,Chowan County,Edenton,5513.57
+NC,Craven County,Newbern,5639.79
+NC,Cumberland County,Fayetteville,81.8
+NC,Currituck County,,38.67
+NC,Edgecombe County,Tarborugh,1330.16
+NC,Edgecombe County,,458.54
+NC,Halifax County,Halifax,169.49
+NC,Hertford County,Murfrees Borough,71.11
+NC,Mecklenburg County,,21.04
+NC,New Hanover County,Wilmington,589.5600000000001
+NC,Orange County,Hillsborough,78.89
+NC,Perquimans County,,15.3
+NC,Pitt County,,19.56
+NC,Rockingham County,,38.83
+NC,Rowan County,Salisbury,98.66
+NC,Rowan County,,89.42
+NC,Warren County,,127.28
+NC,Wayne County,,85.25
+NC,,,14197.8567
+NH,Cheshire County,Acworth,50.8
+NH,Cheshire County,Charleston,926.49
+NH,Cheshire County,Keene,106.45
+NH,Cheshire County,Newport in,168.28
+NH,Grafton County,Alexandria,40.67
+NH,Grafton County,Concord,3329.57
+NH,Hillsborough County,Amherst,185.89999999999998
+NH,Hillsborough County,Hollis,283.82
+NH,Hillsborough County,Hopkinton,400.0
+NH,Hillsborough County,Merrimac,4082.06
+NH,Hillsborough County,Newbury,1414.7
+NH,Hillsborough County,Pelham,64.17
+NH,Hillsborough County,Pembroke,52.98
+NH,Hillsborough County,Salisbury,431.21
+NH,Rockingham County,Brintwood,146.16
+NH,Rockingham County,Candia,1066.67
+NH,Rockingham County,Canterbury,495.83
+NH,Rockingham County,Deerfield,3677.87
+NH,Rockingham County,Exeter,30837.74
+NH,Rockingham County,Greenland,615.28
+NH,Rockingham County,Hampton,7797.719999999999
+NH,Rockingham County,Kensington,4027.66
+NH,Rockingham County,Kingstown,398.93
+NH,Rockingham County,London,4695.96
+NH,Rockingham County,New Castle,172.49
+NH,Rockingham County,Newtown,337.63
+NH,Rockingham County,Nottingham,3975.85
+NH,Rockingham County,Portsmouth,41300.04
+NH,Rockingham County,Rye,139.91
+NH,Rockingham County,Salem,3423.2400000000002
+NH,Rockingham County,,205.19
+NH,Strafford County,Barrington,543.5699999999999
+NH,Strafford County,Dover,859.78
+NH,Strafford County,Durham,532.29
+NH,Strafford County,Gilmantown,2729.78
+NH,Strafford County,Marbury,0.0
+NH,Strafford County,Sandwich,205.17
+NH,Strafford County,Somersworth,801.9499999999999
+NH,Strafford County,Tamworth,303.42
+NH,Strafford County,Wakefield,352.53
+NH,York County,Wells,643.34
+NH,York County,York,189.58
+NH,,Glouster,1900.03
+NH,,North Hampshire,778.04
+NH,,,68.72
+NJ,Burlington County,Berlington,0.0
+NJ,Burlington County,Mount Holley,190.71
+NJ,Cape May County,Cape May,62.89
+NJ,Essex County,Newark,48.33
+NJ,Hunterdon County,Trenton,1115.95
+NJ,Hunterdon County,,151.4
+NJ,Middlesex County,Brunswick,1330.3
+NJ,Middlesex County,Middlesex,74.88
+NJ,Middlesex County,Princeton,1183.71
+NJ,Monmouth County,,235.01
+NJ,Somerset County,,16.67
+NJ,Sussex County,Newton ship,311.99
+NJ,,,23874.66
+NY,Albany County,Albany,22.7
+NY,New York County,City of New York,492.21000000000004
+NY,,Long Island,16.61
+NY,,,16707.680866
+PA,Allegheny County,Pittsburgh,4017.6900000000005
+PA,Allegheny County,,3157.6800000000003
+PA,Bedford County,,4.89
+PA,Berks County,Reading,9843.65
+PA,Berks County,Reading Berks,19243.649999999998
+PA,Berks County,Tulpehocken,1136.06
+PA,Berks County,,4863.11
+PA,Bucks County,,15006.86
+PA,Chester County,,15967.050000000001
+PA,Cumberland County,Carlisle,6171.04
+PA,Cumberland County,Cumb,2388.52
+PA,Cumberland County,Germantown,4065.43
+PA,Dauphin County,Dauphin,1979.6
+PA,Dauphin County,Dauphincoy,1160.69
+PA,Dauphin County,,10610.25
+PA,Delaware County,,2536.53
+PA,Fayette County,,1743.32
+PA,Franklin County,Chambersburgh,237.7
+PA,Franklin County,,3802.86
+PA,Lancaster County,Lancaster,47178.85
+PA,Lancaster County,,10741.539999999999
+PA,Montgomery County,,11484.5
+PA,Northampton County,Bethlehem,2639.7
+PA,Northampton County,,888.87
+PA,Northumberland County,Armstrong,989.87
+PA,Northumberland County,Montgomery,443.9
+PA,Northumberland County,Sunbury,1360.22
+PA,Northumberland County,,4655.8099999999995
+PA,Philadelphia County,Blockley,971.4
+PA,Philadelphia County,Borden,4050.5000000000005
+PA,Philadelphia County,Burlington New Jersey,280.69
+PA,Philadelphia County,Germantown,1959.55
+PA,Philadelphia County,Northern Liberties,2486.79
+PA,Philadelphia County,Passyunk,64.37
+PA,Philadelphia County,Philadelphia,1175475.2205
+PA,Philadelphia County,Southwark,3.33
+PA,Philadelphia County,The Northern Libert,1263.4
+PA,Philadelphia County,,31907.079999999998
+PA,Washington County,,139.98
+PA,Westmoreland County,Kensington,1934.01
+PA,Westmoreland County,Westmoreland,33.33
+PA,Westmoreland County,,4590.2300000000005
+PA,York County,York,7621.2
+PA,York County,,377.13
+PA,,St Eustalia,92.04
+PA,,W Callisters,335.4
+PA,,,158.01
+RI,Bristol County,Barrington,2059.1800000000003
+RI,Bristol County,Bristol,1065.52
+RI,Bristol County,Warren,5603.700000000001
+RI,Kent County,Coventry,481.83
+RI,Kent County,East Greenwich,1964.0
+RI,Kent County,Warwick,6513.650000000001
+RI,Kent County,West Greenwich,1325.27
+RI,Newport County,Little Compton,1614.7
+RI,Newport County,Newport,252788.89
+RI,Newport County,Portsmouth,82.74000000000001
+RI,Newport County,Tiverton,1462.79
+RI,Providence County,Cranston,3058.09
+RI,Providence County,Cumberland,1257.36
+RI,Providence County,Foster,255.82
+RI,Providence County,Gloucester,4249.81
+RI,Providence County,Johnson,715.88
+RI,Providence County,Johnston,1388.82
+RI,Providence County,North Providence,1179.0
+RI,Providence County,Providence,138893.75
+RI,Providence County,Scituate,5109.3099999999995
+RI,Providence County,Smithfield,536.49
+RI,Washington County,Charlestown,1553.18
+RI,Washington County,Exeter,389.03999999999996
+RI,Washington County,North Kingston,1294.41
+RI,Washington County,Richmond,17.12
+RI,Washington County,South Kingston,1426.4099999999999
+RI,,Springfield,439.02
+RI,,,626.69
+SC,Abbeville County,96 District,31.26
+SC,Abbeville County,Abbeville,48.42
+SC,Beaufort County,Broad River,26.84
+SC,Beaufort County,New River,38.29
+SC,Beaufort County,St Helena,250.89
+SC,Charleston County,Charleston,134990.818666
+SC,Charleston County,Dorchester,104.78
+SC,Charleston County,James Island,315.26
+SC,Charleston County,St Johns,169.72
+SC,Charleston County,St. George,1501.6
+SC,Charleston County,Toogoodoo,28.97
+SC,Clarendon County,St Pauls,218.68
+SC,Georgetown County,Georgetown,6131.25
+SC,Georgetown County,Pee Dee,4397.06
+SC,Georgetown County,Winyaw,66.66666666666667
+SC,Lancaster County,Camden,5258.296666666666
+SC,Laurens County,96 District,19.73
+SC,Richland County,Columbia,438.7
+SC,Richland County,St Andrews,46.02
+SC,Richland County,,139.31
+SC,,Carolina,18.9502
+SC,,Long Cames,81.03
+SC,,Richard,914.24
+SC,,,2474.782495
+US,,Register of the Treasury,61.5
+VA,Accomack County,,78.33
+VA,Fairfax County,Alexandria,711.12
+VA,Greenbrier County,Williamsburgh,46.02
+VA,Hampshire County,Petersburg,2693.4900000000002
+VA,Henrico County,Richmond,599.8100000000001
+VA,King George County,,319.17
+VA,Loudoun County,,109.5
+VA,Mecklenburg County,,76.76
+VA,Northumberland County,,253.49
+VA,Ohio County,,2206.72
+VA,Rockingham County,Portsmouth,20.516233
+VA,Spotsylvania County,Fredericksburg,550.06
+VA,,,10527.07
+VI,,St. Thomas,92.52
+VI,,The River May,60.74
+VT,,,4857.46
