@@ -2166,7 +2166,7 @@
 2164,3908.0,,1954.0,,2594.0,14.0,Philadelphia,PA,,Philadelphia County,town,
 2165,2623.0,70.0,1311.0,85.0,708.0,40.0,Philadelphia,PA,Merchant,Philadelphia County,town,2623.7
 2166,3185.0,52.0,1592.0,76.0,1051.0,65.0,,,,,other,3185.52
-2167,393.0,95.0,196.0,97.0,106.0,36.0,,,Executor,,other,393.95
+2167,393.0,95.0,196.0,97.0,106.0,36.0,,,Executer,,other,393.95
 2168,6951.0,55.0,3475.0,77.0,4664.0,50.0,,,,,other,6951.55
 2169,2837.0,33.0,1418.0,67.0,1473.0,60.0,,,,,other,2837.33
 2170,1567.0,75.0,783.0,87.0,923.0,71.0,,,,,other,1567.75
@@ -2243,7 +2243,7 @@
 2241,120.0,20.0,60.0,10.0,,,,,,,other,120.2
 2242,1166.0,40.0,583.0,20.0,636.0,47.0,Philadelphia,PA,,Philadelphia County,town,1166.4
 2243,1462.0,31.0,731.0,15.0,666.0,18.0,Philadelphia,PA,,Philadelphia County,town,1462.31
-2244,1015.0,67.0,507.0,84.0,689.0,50.0,Philadelphia,PA,Merchant,Philadelphia County,town,1015.67
+2244,1015.0,67.0,507.0,84.0,689.0,50.0,Philadelphia,PA,Marchant,Philadelphia County,town,1015.67
 2245,1295.0,29.0,647.0,64.0,349.0,72.0,,,,,other,1295.29
 2246,3143.0,81.0,1571.0,90.0,1527.0,38.0,Philadelphia,PA,,Philadelphia County,town,3143.81
 2247,,,,,41.0,37.0,,,,,other,
@@ -2558,7 +2558,7 @@
 2556,2181.0,68.0,1090.0,84.0,764.0,73.0,Bucks County Pennsylvania,PA,,Bucks County,county,2181.68
 2557,115.0,94.0,57.0,97.0,42.0,30.0,Bucks County Pennsylvania,PA,Ex to the Estate of John Baird Bucks Co,Bucks County,county,115.94
 2558,2775.0,56.0,1387.0,78.0,749.0,40.0,Lancaster Pennsylvania,PA,,Lancaster County,town,2775.56
-2559,343.0,50.0,171.0,76.0,131.0,34.0,Philadelphia,PA,Merchant,Philadelphia County,town,343.5
+2559,343.0,50.0,171.0,76.0,131.0,34.0,Berks County,PA,Merchant,Berks County,county,343.5
 2560,193.0,96.0,96.0,98.0,91.0,14.0,Philadelphia,PA,,Philadelphia County,town,193.96
 2561,600.0,32.0,300.0,16.0,192.0,42.0,Bucks County Pennsylvania,PA,,Bucks County,county,600.32
 2562,1032.0,62.0,516.0,32.0,278.0,63.0,Lancaster Pennsylvania,PA,,Lancaster County,town,1032.62
@@ -2707,12 +2707,12 @@
 2705,758.0,65.0,379.0,33.0,460.0,91.0,Philadelphia,PA,Merchant,Philadelphia County,town,758.65
 2706,400.0,,200.0,,108.0,,,,,,other,
 2707,612.0,2.0,306.0,2.0,165.0,24.0,Philadelphia,PA,,Philadelphia County,town,612.02
-2708,1241.0,76.0,620.0,88.0,345.0,66.0,Kensignton,PA,Ship Wright,Philadelphia County,neighborhood,1241.76
+2708,1241.0,76.0,620.0,88.0,345.0,66.0,Kensington,PA,Ship Wright,Westmoreland County,town,1241.76
 2709,612.0,2.0,306.0,2.0,165.0,24.0,Philadelphia,PA,,Philadelphia County,town,612.02
 2710,3619.0,53.0,1809.0,77.0,979.0,26.0,Philadelphia,PA,Merchant,Philadelphia County,town,3619.53
 2711,166.0,,83.0,1.0,109.0,52.0,Philadelphia,PA,Merchant,Philadelphia County,town,
 2712,982.0,33.0,491.0,17.0,695.0,7.0,Lancaster Pennsylvania,PA,,Lancaster County,town,982.33
-2713,1605.0,80.0,802.0,90.0,540.0,,Philadelphia,PA,Guardian to Adam Grier,Philadelphia County,town,1605.8
+2713,1605.0,80.0,802.0,90.0,540.0,,Philadelphia,PA,Guardian to Adam Guier,Philadelphia County,town,1605.8
 2714,528.0,33.0,264.0,17.0,142.0,64.0,Philadelphia,PA,Spinster,Philadelphia County,town,528.33
 2715,1650.0,68.0,825.0,35.0,445.0,67.0,Philadelphia,PA,Merchant,Philadelphia County,town,1650.68
 2716,2573.0,87.0,1286.0,94.0,1016.0,88.0,Dauphin County,PA,,Dauphin County,county,2573.87
@@ -3004,7 +3004,7 @@
 3002,307.0,48.0,153.0,74.0,123.0,27.0,Philadelphia,PA,,Philadelphia County,town,307.48
 3003,91.0,80.0,45.0,90.0,83.0,64.0,Berks County Pennsylvania,PA,,Berks County,county,91.8
 3004,27.0,74.0,13.0,87.0,22.0,80.0,Philadelphia,PA,Merchant,Philadelphia County,town,27.74
-3005,20.0,,10.0,,17.0,6.0,Burlington New Jersey,NJ,,Burlington County,town,
+3005,20.0,,10.0,,17.0,6.0,Berlington New Jersey,NJ,,Burlington County,town,
 3006,984.0,76.0,492.0,38.0,369.0,50.0,Philadelphia,PA,Merchant,Philadelphia County,town,984.76
 3007,435.0,4.0,217.0,52.0,195.0,98.0,Franklin County Pennsylvania,PA,Farmer,Franklin County,county,435.04
 3008,303.0,89.0,151.0,95.0,198.0,80.0,New Jersey,NJ,,,state,303.89
@@ -3085,7 +3085,7 @@
 3083,3.0,80.0,1.0,90.0,7.0,,Philadelphia,PA,Gentleman,Philadelphia County,town,3.8
 3084,200.0,,100.0,,494.0,41.0,Philadelphia,PA,,Philadelphia County,town,
 3085,108.0,78.0,54.0,40.0,40.0,4.0,Reading Berks County,PA,,Berks County,town,108.78
-3086,117.0,58.0,58.0,79.0,71.0,77.0,Philadelphia,PA,Merchant,Philadelphia County,town,117.58
+3086,117.0,58.0,58.0,79.0,71.0,77.0,Philadelphia,PA,Marchant,Philadelphia County,town,117.58
 3087,20.0,26.0,10.0,14.0,,,York Town Pennsylvania,PA,,York County,town,20.26
 3088,,,,,330.0,,,,,,other,
 3089,767.0,76.0,383.0,89.0,488.0,86.0,Philadelphia,PA,Merchant,Philadelphia County,town,767.76

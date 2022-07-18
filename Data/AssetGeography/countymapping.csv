@@ -314,6 +314,7 @@
 2526,Lancaster County Pennsylvania,PA,Lancaster County,county
 2531,Brunswick New Jersey,NJ,Middlesex County,town
 2535,St Eustalia,PA,,other
+2559,Berks County,PA,Berks County,county
 2564,Fayette County Pennsylvania,PA,Fayette County,county
 2572,Delaware County Pennsylvania,PA,Delaware County,county
 2579,Passyunk,PA,Philadelphia County,town
@@ -334,7 +335,7 @@
 2679,Trenton New Jersey,NJ,Hunterdon County,town
 2695,New Brunswick New Jersey,NJ,Middlesex County,town
 2696,Mount Holley New Jersey,NJ,Burlington County,town
-2708,Kensignton,PA,Philadelphia County,neighborhood
+2708,Kensington,PA,Westmoreland County,town
 2716,Dauphin County,PA,Dauphin County,county
 2721,Chester,PA,Chester County,county
 2722,Burlington New Jersey,PA,Philadelphia County,town
@@ -351,14 +352,13 @@
 2875,Hatter Philadelphia,PA,Philadelphia County,town
 2906,Accomack County Virginia,VA,Accomack County,county
 2910,Princeton New Jersey,NJ,Middlesex County,town
-2913,Kensington,PA,Westmoreland County,town
 2924,Albany,NY,Albany County,town
 2931,Northampton County,PA,Northampton County,county
 2938,King George Co Virginia,VA,King George County,county
 2954,Southwark,PA,Philadelphia County,town
 2956,Westmoreland County Pennsylvania,PA,Westmoreland County,county
 2991,Wilmington Delaware,DE,New Castle County,county
-3005,Burlington New Jersey,NJ,Burlington County,town
+3005,Berlington New Jersey,NJ,Burlington County,town
 3015,Northumberland County Pennsylvania,PA,Northumberland County,county
 3020,Sunbury Pennsylvania,PA,Northumberland County,town
 3028,Church on Philadelphia,PA,Philadelphia County,town
@@ -369,7 +369,6 @@
 3061,Philadelphila,PA,Philadelphia County,town
 3069,New Castle County Delaware State,DE,New Castle County,county
 3075,Somerset County Maryland,MD,Somerset County,county
-3094,Berks County,PA,Berks County,county
 3098,York County,PA,York County,county
 3138,Northumberland County Virginia,VA,Northumberland County,county
 3171,Newton Township New Jersey,NJ,Sussex County,town
