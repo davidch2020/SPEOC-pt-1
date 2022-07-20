@@ -265,7 +265,6 @@
 2010,Carlisle Pennsylvania,PA,Cumberland County,town
 2015,Germantown,PA,Cumberland County,town
 2033,Franklin County,PA,Franklin County,county
-2035,Conecticutt,CT,,state
 2036,New Castle Delaware,DE,New Castle County,county
 2042,Reading,PA,Berks County,town
 2055,Bethlehem,PA,Northampton County,town
@@ -279,9 +278,9 @@
 2103,Montgomery,PA,Northumberland County,town
 2104,W Callisters Town,PA,,other
 2105,Huntington New Jersey,NJ,Hunterdon County,county
-2110,Cumberland,PA,Cumberland County,town
+2110,Cumberland,PA,Cumberland County,county
 2119,Delaware,PA,Delaware County,county
-2127,State of Delaware,DE,,state
+2127,State of Delawere,DE,,state
 2134,Cambridge Massachusetts,MA,Middlesex County,town
 2147,Massachusetts,MA,,state
 2172,Reading Pennsylvania,PA,Berks County,town
@@ -307,14 +306,13 @@
 2497,Borden Town,PA,Philadelphia County,town
 2500,Chester Co Pennsylvania,PA,Chester County,county
 2502,The N Lib of Philadelphia,PA,Philadelphia County,town
-2504,Pennsylvania Berks County,PA,Berks County,county
-2506,Pennsylvania Montgomery County,PA,Montgomery County,county
+2504,Berks County Pennsylvania,PA,Berks County,county
+2506,Montgomery County Pennsylvania,PA,Montgomery County,county
 2509,Pennsylvania Franklin County,PA,Franklin County,county
 2524,Pittsburgh Pennsylvania,PA,Allegheny County,town
 2526,Lancaster County Pennsylvania,PA,Lancaster County,county
 2531,Brunswick New Jersey,NJ,Middlesex County,town
 2535,St Eustalia,PA,,other
-2537,Berks County Pennsylvania,PA,Berks County,county
 2559,Berks County,PA,Berks County,county
 2564,Fayette County Pennsylvania,PA,Fayette County,county
 2572,Delaware County Pennsylvania,PA,Delaware County,county
@@ -331,12 +329,12 @@
 2640,Dauphincoy Pennsylvania,PA,Dauphin County,town
 2645,York County Pennsylvania,PA,York County,county
 2648,Cape May New Jersey,NJ,Cape May County,town
-2650,Cumb County Pennsylvania,PA,Washington County,county
+2650,Cumb County Pennsylvania,PA,Cumberland County,county
 2669,Delaware State,DE,,state
 2679,Trenton New Jersey,NJ,Hunterdon County,town
 2695,New Brunswick New Jersey,NJ,Middlesex County,town
 2696,Mount Holley New Jersey,NJ,Burlington County,town
-2708,Kensington,PA,Westmoreland County,town
+2708,Kensignton,PA,Philadelphia County,neighborhood
 2716,Dauphin County,PA,Dauphin County,county
 2721,Chester,PA,Chester County,county
 2722,Burlington New Jersey,PA,Philadelphia County,town
@@ -353,6 +351,7 @@
 2875,Hatter Philadelphia,PA,Philadelphia County,town
 2906,Accomack County Virginia,VA,Accomack County,county
 2910,Princeton New Jersey,NJ,Middlesex County,town
+2913,Kensington,PA,Westmoreland County,town
 2924,Albany,NY,Albany County,town
 2931,Northampton County,PA,Northampton County,county
 2938,King George Co Virginia,VA,King George County,county
@@ -360,8 +359,7 @@
 2956,Westmoreland County Pennsylvania,PA,Westmoreland County,county
 2986,Franklin County Pennsylvania,PA,Franklin County,county
 2991,Wilmington Delaware,DE,New Castle County,county
-2992,Montgomery County Pennsylvania,PA,Montgomery County,county
-3005,Berlington New Jersey,NJ,Burlington County,town
+3005,Burlington New Jersey,NJ,Burlington County,town
 3015,Northumberland County Pennsylvania,PA,Northumberland County,county
 3020,Sunbury Pennsylvania,PA,Northumberland County,town
 3028,Church on Philadelphia,PA,Philadelphia County,town
@@ -390,7 +388,7 @@
 3296,Rehoboth,MA,Bristol County,town
 3298,Newport,RI,Newport County,town
 3302,Dighton,MA,Bristol County,town
-3303,Cumberland,RI,Providence County,town
+3303,Cumberland,RI,Providence County,county
 3305,South Kingston,RI,Washington County,town
 3306,North Hampton,MA,Hampshire County,town
 3308,Littleton,MA,Middlesex County,town
@@ -432,7 +430,6 @@
 3749,North Kingstown,RI,Washington County,town
 3754,Stoughton now of Providence,RI,Providence County,town
 3774,Alexandria,NH,Grafton County,town
-3786,Smithfeild,RI,Providence County,town
 3958,James Island,SC,Charleston County,town
 3974,Bermuda,BM,,other
 3988,Georgetown,SC,Georgetown County,town
@@ -462,7 +459,6 @@
 4210,Abbeville,SC,Abbeville County,town
 4219,Long Cames,SC,,other
 4222,Toogoodoo,SC,Charleston County,town
-4241,Charlestom,SC,Charleston County,town
 4249,Bourdeaux,FR,,other
 4272,The River May,VI,,other
 4288,St Pauls,SC,Clarendon County,town
