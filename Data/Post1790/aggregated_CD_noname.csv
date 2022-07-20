@@ -2166,7 +2166,7 @@
 2164,3908.0,,1954.0,,2594.0,14.0,Philadelphia,PA,,Philadelphia County,town,
 2165,2623.0,70.0,1311.0,85.0,708.0,40.0,Philadelphia,PA,Merchant,Philadelphia County,town,2623.7
 2166,3185.0,52.0,1592.0,76.0,1051.0,65.0,,,,,other,3185.52
-2167,393.0,95.0,196.0,97.0,106.0,36.0,,,Executer,,other,393.95
+2167,393.0,95.0,196.0,97.0,106.0,36.0,,,Executor,,other,393.95
 2168,6951.0,55.0,3475.0,77.0,4664.0,50.0,,,,,other,6951.55
 2169,2837.0,33.0,1418.0,67.0,1473.0,60.0,,,,,other,2837.33
 2170,1567.0,75.0,783.0,87.0,923.0,71.0,,,,,other,1567.75
@@ -2503,12 +2503,12 @@
 2501,259.0,70.0,129.0,85.0,109.0,83.0,,,,,other,259.7
 2502,538.0,92.0,269.0,46.0,252.0,65.0,The N Lib of Philadelphia,PA,Tanner,Philadelphia County,town,538.92
 2503,7.0,83.0,3.0,92.0,,,Philadelphia,PA,,Philadelphia County,town,7.83
-2504,80.0,28.0,40.0,15.0,28.0,90.0,Berks County Pennsylvania,PA,,Berks County,county,80.28
-2505,511.0,63.0,255.0,81.0,230.0,13.0,Berks County Pennsylvania,PA,,Berks County,county,511.63
-2506,233.0,10.0,116.0,55.0,112.0,8.0,Montgomery County Pennsylvania,PA,,Montgomery County,county,233.1
+2504,80.0,28.0,40.0,15.0,28.0,90.0,Pennsylvania Berks County,PA,,Berks County,county,80.28
+2505,511.0,63.0,255.0,81.0,230.0,13.0,Pennsylvania Berks County,PA,,Berks County,county,511.63
+2506,233.0,10.0,116.0,55.0,112.0,8.0,Pennsylvania Montgomery County,PA,,Montgomery County,county,233.1
 2507,585.0,83.0,292.0,92.0,158.0,10.0,,,,,other,585.83
 2508,1284.0,34.0,642.0,17.0,346.0,76.0,Philadelphia County,PA,,Philadelphia County,county,1284.34
-2509,214.0,36.0,107.0,19.0,106.0,44.0,Franklin County Pennsylvania,PA,,Franklin County,county,214.36
+2509,214.0,36.0,107.0,19.0,106.0,44.0,Pennsylvania Franklin County,PA,,Franklin County,county,214.36
 2510,262.0,26.0,131.0,13.0,188.0,74.0,Philadelphia,PA,,Philadelphia County,town,262.26
 2511,317.0,79.0,158.0,89.0,1252.0,,Philadelphia,PA,Merchant,Philadelphia County,town,317.79
 2512,694.0,37.0,347.0,19.0,567.0,1.0,Reading Berks County,PA,,Berks County,town,694.37
@@ -3785,7 +3785,7 @@
 3783,23.0,28.0,11.0,64.0,,,Charlestown,RI,Esquire,Washington County,town,23.28
 3784,41.0,3.0,20.0,51.0,,,Rehoboth,MA,Esquire,Bristol County,town,41.03
 3785,35.0,10.0,17.0,55.0,,,Providence,RI,Widow,Providence County,town,35.1
-3786,18.0,84.0,9.0,41.0,,,Smithfield,RI,Yeoman,Providence County,town,18.84
+3786,18.0,84.0,9.0,41.0,,,Smithfeild,RI,Yeoman,Providence County,town,18.84
 3787,20.0,60.0,10.0,29.0,,,Scituate,RI,Yeoman,Providence County,town,20.6
 3788,35.0,4.0,17.0,52.0,,,Providence,RI,Merchant,Providence County,town,35.04
 3789,25.0,70.0,12.0,84.0,,,Providence,RI,,Providence County,town,25.7
@@ -4240,7 +4240,7 @@
 4238,37.0,74.0,18.0,87.0,,,,,Executor of Humphry Sommers,,other,37.74
 4239,24.0,96.0,12.0,48.0,,,Charleston,SC,,Charleston County,town,24.96
 4240,54.0,36.0,27.0,19.0,,,Charleston,SC,Merchant,Charleston County,town,54.36
-4241,105.0,40.0,52.0,71.0,,,Charleston,SC,Merchant,Charleston County,town,105.4
+4241,105.0,40.0,52.0,71.0,,,Charlestom,SC,Merchant,Charleston County,town,105.4
 4242,113.0,86.0,56.0,94.0,,,Charleston,SC,Merchant,Charleston County,town,113.86
 4243,20.0,14.0,10.0,8.0,,,Charleston,SC,Attorney at Law,Charleston County,town,20.14
 4244,29.0,48.0,14.0,74.0,,,St. Thomas,VI,Planter,,other,29.48

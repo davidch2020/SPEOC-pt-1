@@ -307,13 +307,14 @@
 2497,Borden Town,PA,Philadelphia County,town
 2500,Chester Co Pennsylvania,PA,Chester County,county
 2502,The N Lib of Philadelphia,PA,Philadelphia County,town
-2504,Berks County Pennsylvania,PA,Berks County,county
-2506,Montgomery County Pennsylvania,PA,Montgomery County,county
-2509,Franklin County Pennsylvania,PA,Franklin County,county
+2504,Pennsylvania Berks County,PA,Berks County,county
+2506,Pennsylvania Montgomery County,PA,Montgomery County,county
+2509,Pennsylvania Franklin County,PA,Franklin County,county
 2524,Pittsburgh Pennsylvania,PA,Allegheny County,town
 2526,Lancaster County Pennsylvania,PA,Lancaster County,county
 2531,Brunswick New Jersey,NJ,Middlesex County,town
 2535,St Eustalia,PA,,other
+2537,Berks County Pennsylvania,PA,Berks County,county
 2559,Berks County,PA,Berks County,county
 2564,Fayette County Pennsylvania,PA,Fayette County,county
 2572,Delaware County Pennsylvania,PA,Delaware County,county
@@ -357,7 +358,9 @@
 2938,King George Co Virginia,VA,King George County,county
 2954,Southwark,PA,Philadelphia County,town
 2956,Westmoreland County Pennsylvania,PA,Westmoreland County,county
+2986,Franklin County Pennsylvania,PA,Franklin County,county
 2991,Wilmington Delaware,DE,New Castle County,county
+2992,Montgomery County Pennsylvania,PA,Montgomery County,county
 3005,Berlington New Jersey,NJ,Burlington County,town
 3015,Northumberland County Pennsylvania,PA,Northumberland County,county
 3020,Sunbury Pennsylvania,PA,Northumberland County,town
@@ -429,6 +432,7 @@
 3749,North Kingstown,RI,Washington County,town
 3754,Stoughton now of Providence,RI,Providence County,town
 3774,Alexandria,NH,Grafton County,town
+3786,Smithfeild,RI,Providence County,town
 3958,James Island,SC,Charleston County,town
 3974,Bermuda,BM,,other
 3988,Georgetown,SC,Georgetown County,town
@@ -458,6 +462,7 @@
 4210,Abbeville,SC,Abbeville County,town
 4219,Long Cames,SC,,other
 4222,Toogoodoo,SC,Charleston County,town
+4241,Charlestom,SC,Charleston County,town
 4249,Bourdeaux,FR,,other
 4272,The River May,VI,,other
 4288,St Pauls,SC,Clarendon County,town
