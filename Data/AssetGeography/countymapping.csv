@@ -172,7 +172,7 @@
 1245,Alexandria State of Virginia,VA,Fairfax County,town
 1269,George town,MD,Cecil County,town
 1377,Allegany County,MD,Allegany County,county
-1492,Doden Maryland,MD,Anne Arundel County,county
+1492,Doden Maryland,MD,Anne Arundel County,town
 1507,,MD,,state
 1531,Isaac,MD,,other
 1592,London,,,other
@@ -259,126 +259,126 @@
 1977,Keene,NH,Cheshire County,town
 1980,Rye,NH,Rockingham County,town
 1986,Almsbury,MA,Essex County,town
-1997,Lancaster,PA,Lancaster County,town
-2004,Philadelphia County,PA,Philadelphia County,county
-2006,Bucks County Pennsylvania,PA,Bucks County,county
-2010,Carlisle Pennsylvania,PA,Cumberland County,town
-2015,Germantown,PA,Cumberland County,town
-2033,Franklin County,PA,Franklin County,county
+1997,Lancaster,PA,,other
+2004,Philadelphia County,PA,,other
+2006,Bucks County Pennsylvania,PA,,state
+2010,Carlisle Pennsylvania,PA,,state
+2015,Germantown,PA,,other
+2033,Franklin County,PA,,other
+2035,Conecticutt,CT,,state
 2036,New Castle Delaware,DE,New Castle County,county
-2042,Reading,PA,Berks County,town
-2055,Bethlehem,PA,Northampton County,town
+2042,Reading,PA,,other
+2055,Bethlehem,PA,,other
 2067,New Jersey,NJ,,state
 2079,,PA,,state
 2087,Barbadoes,,,other
 2089,Sta Croix,,,other
-2094,Westmoreland,PA,Westmoreland County,town
-2097,Blockley,PA,Philadelphia County,town
+2094,Westmoreland,PA,,other
+2097,Blockley,PA,,other
 2100,Alexandria Virginia,VA,Fairfax County,town
-2103,Montgomery,PA,Northumberland County,town
+2103,Montgomery,PA,,other
 2104,W Callisters Town,PA,,other
-2105,Huntington New Jersey,NJ,Hunterdon County,county
-2110,Cumberland,PA,Cumberland County,county
-2119,Delaware,PA,Delaware County,county
+2105,Huntington New Jersey,NJ,Hunterdon County,town
+2110,Cumberland,PA,,town
+2119,Delaware,DE,,state
 2127,State of Delawere,DE,,state
 2134,Cambridge Massachusetts,MA,Middlesex County,town
 2147,Massachusetts,MA,,state
-2172,Reading Pennsylvania,PA,Berks County,town
-2173,Tulpehocken,PA,Berks County,town
+2172,Reading Pennsylvania,PA,,state
+2173,Tulpehocken,PA,,other
 2176,,VA,,state
 2189,Chester County,PA,Chester County,county
 2206,Connecticutt,CT,,state
-2211,Armstrong,PA,Northumberland County,town
-2230,Bucks County,PA,Bucks County,county
-2263,Reading Berks County,PA,Berks County,town
-2273,County of Philadelphia,PA,Philadelphia County,county
+2211,Armstrong,PA,,other
+2230,Bucks County,PA,,other
+2263,Reading Berks County,PA,,other
+2273,County of Philadelphia,PA,,other
 2287,Maidenhead,,,other
-2289,Northumb Country,PA,Northumberland County,county
-2339,Northan Liberties,PA,Philadelphia County,town
-2413,Montgomery County,PA,Montgomery County,county
+2289,Northumb Country,PA,,other
+2339,Northan Liberties,PA,,other
+2413,Montgomery County,PA,,other
 2433,Delaware Newcastle County,DE,New Castle County,county
 2446,Chester County Pennsylvania,PA,Chester County,county
-2447,York Town Pennsylvania,PA,York County,town
-2474,Lancaster Pennsylvania,PA,Lancaster County,town
-2479,Dauphin County Pennsylvania,PA,Dauphin County,county
-2481,Allegheny County Pennsylvania,PA,Allegheny County,county
+2447,York Town Pennsylvania,PA,,state
+2474,Lancaster Pennsylvania,PA,,state
+2479,Dauphin County Pennsylvania,PA,,state
+2481,Allegheny County Pennsylvania,PA,,state
 2487,Louden County Virginia,VA,Loudoun County,county
-2497,Borden Town,PA,Philadelphia County,town
+2497,Borden Town,PA,,other
 2500,Chester Co Pennsylvania,PA,Chester County,county
-2502,The N Lib of Philadelphia,PA,Philadelphia County,town
-2504,Berks County Pennsylvania,PA,Berks County,county
-2506,Montgomery County Pennsylvania,PA,Montgomery County,county
-2509,Pennsylvania Franklin County,PA,Franklin County,county
-2524,Pittsburgh Pennsylvania,PA,Allegheny County,town
-2526,Lancaster County Pennsylvania,PA,Lancaster County,county
+2502,The N Lib of Philadelphia,PA,,other
+2504,Pennsylvania Berks County,PA,,state
+2506,Montgomery County Pennsylvania,PA,,state
+2509,Franklin County Pennsylvania,PA,,state
+2524,Pittsburgh Pennsylvania,PA,,state
+2526,Lancaster County Pennsylvania,PA,,state
 2531,Brunswick New Jersey,NJ,Middlesex County,town
-2535,St Eustalia,PA,,other
-2559,Berks County,PA,Berks County,county
-2564,Fayette County Pennsylvania,PA,Fayette County,county
-2572,Delaware County Pennsylvania,PA,Delaware County,county
-2579,Passyunk,PA,Philadelphia County,town
-2593,Northampton County Pennsylvania,PA,Northampton County,county
+2535,St Eustatia,PA,,other
+2537,Berks County Pennsylvania,PA,,state
+2564,Fayette County Pennsylvania,PA,,state
+2572,Delaware County Pennsylvania,DE,,state
+2579,Passyunk,PA,,other
+2593,Northampton County Pennsylvania,PA,,state
 2595,Chester County Pennsylvaina,PA,Chester County,county
-2599,Northern Liberties,PA,Philadelphia County,town
-2606,Northum County Pennsylvania,PA,Northumberland County,county
+2599,Northern Liberties,PA,,other
+2606,Northum County Pennsylvania,PA,,state
 2613,Fredericksburg Virginia,VA,Spotsylvania County,town
-2617,Chambersburgh Pennsylvania,PA,Franklin County,town
+2617,Chambersburgh Pennsylvania,PA,,state
 2619,Fredrick Co Maryland,MD,Frederick County,county
-2629,Frankford Philadelphia County,PA,Philadelphia County,town
+2629,Frankford Philadelphia County,PA,,other
 2635,Ohio County Virginia,VA,Ohio County,county
-2640,Dauphincoy Pennsylvania,PA,Dauphin County,town
-2645,York County Pennsylvania,PA,York County,county
+2640,Dauphincoy Pennsylvania,PA,,state
+2645,York County Pennsylvania,PA,,state
 2648,Cape May New Jersey,NJ,Cape May County,town
-2650,Cumb County Pennsylvania,PA,Cumberland County,county
+2650,Cumb County Pennsylvania,PA,Cumberland County,state
 2669,Delaware State,DE,,state
 2679,Trenton New Jersey,NJ,Hunterdon County,town
 2695,New Brunswick New Jersey,NJ,Middlesex County,town
 2696,Mount Holley New Jersey,NJ,Burlington County,town
-2708,Kensignton,PA,Philadelphia County,neighborhood
-2716,Dauphin County,PA,Dauphin County,county
+2708,Kensington,PA,,other
+2716,Dauphin County,PA,,other
 2721,Chester,PA,Chester County,county
-2722,Burlington New Jersey,PA,Philadelphia County,town
-2724,Allegheny County,PA,Allegheny County,county
+2722,Burlington New Jersey,NJ,,state
+2724,Allegheny County,PA,,other
 2779,Chester and County,PA,Chester County,county
-2802,German Town,PA,Philadelphia County,town
-2822,Westmoreland County,PA,Westmoreland County,county
+2802,German Town,PA,,other
+2822,Westmoreland County,PA,,other
 2832,Middlesex New Jersey,NJ,Middlesex County,town
-2837,Dauphin and Company,PA,Dauphin County,town
-2849,The Northern Libert,PA,Philadelphia County,town
-2857,Lancaster County,PA,Lancaster County,county
+2837,Dauphin and Company,PA,,other
+2849,The Northern Libert,PA,,other
+2857,Lancaster County,PA,,other
 2858,Kent Company Delaware,DE,Kent County,county
-2868,Northumberland County,PA,Northumberland County,county
-2875,Hatter Philadelphia,PA,Philadelphia County,town
+2868,Northumberland County,PA,,other
+2875,Hatter Philadelphia,PA,,other
 2906,Accomack County Virginia,VA,Accomack County,county
 2910,Princeton New Jersey,NJ,Middlesex County,town
-2913,Kensington,PA,Westmoreland County,town
 2924,Albany,NY,Albany County,town
-2931,Northampton County,PA,Northampton County,county
+2931,Northampton County,PA,,other
 2938,King George Co Virginia,VA,King George County,county
-2954,Southwark,PA,Philadelphia County,town
-2956,Westmoreland County Pennsylvania,PA,Westmoreland County,county
-2986,Franklin County Pennsylvania,PA,Franklin County,county
+2954,Southwark,PA,,other
+2956,Westmoreland County Pennsylvania,PA,,state
 2991,Wilmington Delaware,DE,New Castle County,county
-3005,Burlington New Jersey,NJ,Burlington County,town
-3015,Northumberland County Pennsylvania,PA,Northumberland County,county
-3020,Sunbury Pennsylvania,PA,Northumberland County,town
-3028,Church on Philadelphia,PA,Philadelphia County,town
-3037,James City County Virginia,VA,Mecklenburg County,county
-3041,Pittsburgh,PA,Allegheny County,town
+3005,Berlington New Jersey,NJ,Burlington County,town
+3015,Northumberland County Pennsylvania,PA,,state
+3020,Sunbury Pennsylvania,PA,,state
+3028,Church on Philadelphia,PA,,other
+3037,James City County Virginia,VA,James City County,county
+3041,Pittsburgh,PA,,other
 3056,Newark,NJ,Essex County,town
 3058,Monmouth County New Jersey,NJ,Monmouth County,county
-3061,Philadelphila,PA,Philadelphia County,town
+3061,Philadelphila,PA,,other
 3069,New Castle County Delaware State,DE,New Castle County,county
 3075,Somerset County Maryland,MD,Somerset County,county
-3098,York County,PA,York County,county
+3094,Berks County,PA,,other
+3098,York County,PA,,other
 3138,Northumberland County Virginia,VA,Northumberland County,county
 3171,Newton Township New Jersey,NJ,Sussex County,town
-3199,Paxton Tot Dauphin County,PA,Dauphin County,county
-3208,Delaware County,PA,Delaware County,county
+3199,Paxton Tot Dauphin County,PA,,other
+3208,Delaware County,DE,,state
 3213,Cape May,NJ,Cape May County,town
-3235,Bedford County,PA,Bedford County,county
+3235,Bedford County,PA,,other
 3255,Somerset County New Jersey,NJ,Somerset County,county
-3273,York Town,PA,York County,town
+3273,York Town,PA,,other
 3287,Little Compton,RI,Newport County,town
 3288,Warren,RI,Bristol County,town
 3289,East Greenwich,RI,Kent County,town
@@ -388,7 +388,7 @@
 3296,Rehoboth,MA,Bristol County,town
 3298,Newport,RI,Newport County,town
 3302,Dighton,MA,Bristol County,town
-3303,Cumberland,RI,Providence County,county
+3303,Cumberland,RI,Providence County,town
 3305,South Kingston,RI,Washington County,town
 3306,North Hampton,MA,Hampshire County,town
 3308,Littleton,MA,Middlesex County,town
@@ -430,6 +430,7 @@
 3749,North Kingstown,RI,Washington County,town
 3754,Stoughton now of Providence,RI,Providence County,town
 3774,Alexandria,NH,Grafton County,town
+3786,Smithfeild,RI,Providence County,town
 3958,James Island,SC,Charleston County,town
 3974,Bermuda,BM,,other
 3988,Georgetown,SC,Georgetown County,town
