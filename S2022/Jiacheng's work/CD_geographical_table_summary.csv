@@ -225,14 +225,14 @@
 223,NH,nan,Glouster,1900.03,3,69.2,2.2,3.4
 224,NH,nan,North Hampshire,778.04,1,28.3,2.2,3.4
 225,NH,nan,nan,68.72,1,2.5,2.2,3.4
-226,NJ,Burlington County,Berlington,0.0,1,0.0,0.7,0.8
+226,NJ,Burlington County,Burlington,0.0,1,0.0,0.7,0.8
 227,NJ,Burlington County,Mount Holley,190.71,1,100.0,0.7,0.8
 228,NJ,Cape May County,Cape May,62.89,2,100.0,0.2,0.8
 229,NJ,Essex County,Newark,48.33,1,100.0,0.2,0.8
 230,NJ,Hunterdon County,Trenton,1115.95,2,88.1,4.4,0.8
 231,NJ,Hunterdon County,nan,151.4,1,11.9,4.4,0.8
-232,NJ,Middlesex County,Brunswick,1330.3,2,51.4,9.1,0.8
-233,NJ,Middlesex County,Middlesex,74.88,1,2.9,9.1,0.8
+232,NJ,Middlesex County,Middlesex,74.88,1,2.9,9.1,0.8
+233,NJ,Middlesex County,New Brunswick,1330.3,2,51.4,9.1,0.8
 234,NJ,Middlesex County,Princeton,1183.71,1,45.7,9.1,0.8
 235,NJ,Monmouth County,nan,235.01,1,100.0,0.8,0.8
 236,NJ,Somerset County,nan,16.67,1,100.0,0.1,0.8
@@ -251,9 +251,9 @@
 249,PA,Berks County,nan,4863.11,13,13.9,2.5,39.1
 250,PA,Bucks County,nan,15006.86,27,100.0,1.1,39.1
 251,PA,Chester County,nan,15967.050000000001,28,100.0,1.1,39.1
-252,PA,Cumberland County,Carlisle,6171.04,7,48.9,0.9,39.1
-253,PA,Cumberland County,Cumb,2388.52,1,18.9,0.9,39.1
-254,PA,Cumberland County,Germantown,4065.43,5,32.2,0.9,39.1
+252,PA,Cumberland County,Carlisle,6171.04,7,48.3,0.9,39.1
+253,PA,Cumberland County,Germantown,4065.43,5,31.8,0.9,39.1
+254,PA,Cumberland County,nan,2528.5,2,19.8,0.9,39.1
 255,PA,Dauphin County,Dauphin,1979.6,1,14.4,1.0,39.1
 256,PA,Dauphin County,Dauphincoy,1160.69,1,8.4,1.0,39.1
 257,PA,Dauphin County,nan,10610.25,7,77.2,1.0,39.1
@@ -270,91 +270,89 @@
 268,PA,Northumberland County,Montgomery,443.9,1,6.0,0.5,39.1
 269,PA,Northumberland County,Sunbury,1360.22,1,18.3,0.5,39.1
 270,PA,Northumberland County,nan,4655.8099999999995,10,62.5,0.5,39.1
-271,PA,Philadelphia County,Blockley,971.4,1,0.1,85.7,39.1
-272,PA,Philadelphia County,Borden,4050.5000000000005,3,0.3,85.7,39.1
-273,PA,Philadelphia County,Burlington New Jersey,280.69,1,0.0,85.7,39.1
-274,PA,Philadelphia County,Germantown,1959.55,1,0.2,85.7,39.1
-275,PA,Philadelphia County,Northern Liberties,2486.79,6,0.2,85.7,39.1
-276,PA,Philadelphia County,Passyunk,64.37,1,0.0,85.7,39.1
-277,PA,Philadelphia County,Philadelphia,1175475.2205,663,96.5,85.7,39.1
-278,PA,Philadelphia County,Southwark,3.33,1,0.0,85.7,39.1
-279,PA,Philadelphia County,The Northern Libert,1263.4,1,0.1,85.7,39.1
-280,PA,Philadelphia County,nan,31907.079999999998,25,2.6,85.7,39.1
-281,PA,Washington County,nan,139.98,1,100.0,0.0,39.1
-282,PA,Westmoreland County,Kensington,1934.01,2,29.5,0.5,39.1
-283,PA,Westmoreland County,Westmoreland,33.33,1,0.5,0.5,39.1
-284,PA,Westmoreland County,nan,4590.2300000000005,5,70.0,0.5,39.1
-285,PA,York County,York,7621.2,10,95.3,0.6,39.1
-286,PA,York County,nan,377.13,12,4.7,0.6,39.1
-287,PA,nan,St Eustalia,92.04,1,15.7,0.0,39.1
-288,PA,nan,W Callisters,335.4,1,57.3,0.0,39.1
-289,PA,nan,nan,158.01,1,27.0,0.0,39.1
-290,RI,Bristol County,Barrington,2059.1800000000003,10,23.6,2.0,12.0
-291,RI,Bristol County,Bristol,1065.52,7,12.2,2.0,12.0
-292,RI,Bristol County,Warren,5603.700000000001,14,64.2,2.0,12.0
-293,RI,Kent County,Coventry,481.83,5,4.7,2.4,12.0
-294,RI,Kent County,East Greenwich,1964.0,9,19.1,2.4,12.0
-295,RI,Kent County,Warwick,6513.650000000001,15,63.3,2.4,12.0
-296,RI,Kent County,West Greenwich,1325.27,7,12.9,2.4,12.0
-297,RI,Newport County,Little Compton,1614.7,8,0.6,58.5,12.0
-298,RI,Newport County,Newport,252788.89,71,98.8,58.5,12.0
-299,RI,Newport County,Portsmouth,82.74000000000001,2,0.0,58.5,12.0
-300,RI,Newport County,Tiverton,1462.79,14,0.6,58.5,12.0
-301,RI,Providence County,Cranston,3058.09,19,2.0,35.8,12.0
-302,RI,Providence County,Cumberland,1257.36,3,0.8,35.8,12.0
-303,RI,Providence County,Foster,255.82,2,0.2,35.8,12.0
-304,RI,Providence County,Gloucester,4249.81,6,2.7,35.8,12.0
-305,RI,Providence County,Johnson,715.88,4,0.5,35.8,12.0
-306,RI,Providence County,Johnston,1388.82,4,0.9,35.8,12.0
-307,RI,Providence County,North Providence,1179.0,9,0.8,35.8,12.0
-308,RI,Providence County,Providence,138893.75,191,88.7,35.8,12.0
-309,RI,Providence County,Scituate,5109.3099999999995,17,3.3,35.8,12.0
-310,RI,Providence County,Smithfield,536.49,8,0.3,35.8,12.0
-311,RI,Washington County,Charlestown,1553.18,8,33.2,1.1,12.0
-312,RI,Washington County,Exeter,389.03999999999996,8,8.3,1.1,12.0
-313,RI,Washington County,North Kingston,1294.41,6,27.7,1.1,12.0
-314,RI,Washington County,Richmond,17.12,2,0.4,1.1,12.0
-315,RI,Washington County,South Kingston,1426.4099999999999,8,30.5,1.1,12.0
-316,RI,nan,Springfield,439.02,1,41.2,0.2,12.0
-317,RI,nan,nan,626.69,7,58.8,0.2,12.0
-318,SC,Abbeville County,96 District,31.26,1,39.2,0.1,4.3
-319,SC,Abbeville County,Abbeville,48.42,1,60.8,0.1,4.3
-320,SC,Beaufort County,Broad River,26.84,1,8.5,0.2,4.3
-321,SC,Beaufort County,New River,38.29,1,12.1,0.2,4.3
-322,SC,Beaufort County,St Helena,250.89,1,79.4,0.2,4.3
-323,SC,Charleston County,Charleston,134990.818666,303,98.5,86.9,4.3
-324,SC,Charleston County,Dorchester,104.78,1,0.1,86.9,4.3
-325,SC,Charleston County,James Island,315.26,4,0.2,86.9,4.3
-326,SC,Charleston County,St Johns,169.72,1,0.1,86.9,4.3
-327,SC,Charleston County,St. George,1501.6,1,1.1,86.9,4.3
-328,SC,Charleston County,Toogoodoo,28.97,1,0.0,86.9,4.3
-329,SC,Clarendon County,St Pauls,218.68,2,100.0,0.1,4.3
-330,SC,Georgetown County,Georgetown,6131.25,14,57.9,6.7,4.3
-331,SC,Georgetown County,Pee Dee,4397.06,2,41.5,6.7,4.3
-332,SC,Georgetown County,Winyaw,66.66666666666667,1,0.6,6.7,4.3
-333,SC,Lancaster County,Camden,5258.296666666666,5,100.0,3.3,4.3
-334,SC,Laurens County,96 District,19.73,1,100.0,0.0,4.3
-335,SC,Richland County,Columbia,438.7,2,70.3,0.4,4.3
-336,SC,Richland County,St Andrews,46.02,1,7.4,0.4,4.3
-337,SC,Richland County,nan,139.31,1,22.3,0.4,4.3
-338,SC,nan,Carolina,18.9502,1,0.5,2.2,4.3
-339,SC,nan,Long Cames,81.03,1,2.3,2.2,4.3
-340,SC,nan,Richard,914.24,1,26.2,2.2,4.3
-341,SC,nan,nan,2474.782495,12,70.9,2.2,4.3
-342,VA,Accomack County,nan,78.33,1,100.0,0.4,0.5
-343,VA,Fairfax County,Alexandria,711.12,2,100.0,3.9,0.5
-344,VA,Greenbrier County,Williamsburgh,46.02,1,100.0,0.3,0.5
-345,VA,Hampshire County,Petersburg,2693.4900000000002,2,100.0,14.8,0.5
-346,VA,Henrico County,Richmond,599.8100000000001,3,100.0,3.3,0.5
-347,VA,King George County,nan,319.17,1,100.0,1.8,0.5
-348,VA,Loudoun County,nan,109.5,1,100.0,0.6,0.5
-349,VA,Mecklenburg County,nan,76.76,1,100.0,0.4,0.5
-350,VA,Northumberland County,nan,253.49,1,100.0,1.4,0.5
-351,VA,Ohio County,nan,2206.72,1,100.0,12.1,0.5
-352,VA,Rockingham County,Portsmouth,20.516233,1,100.0,0.1,0.5
-353,VA,Spotsylvania County,Fredericksburg,550.06,1,100.0,3.0,0.5
-354,VA,nan,nan,10527.07,17,100.0,57.9,0.5
-355,VT,nan,nan,4857.46,7,100.0,100.0,0.1
+271,PA,Philadelphia County,Blockley,971.4,1,0.1,85.8,39.1
+272,PA,Philadelphia County,Borden,4050.5000000000005,3,0.3,85.8,39.1
+273,PA,Philadelphia County,Burlington New Jersey,280.69,1,0.0,85.8,39.1
+274,PA,Philadelphia County,Germantown,1959.55,1,0.2,85.8,39.1
+275,PA,Philadelphia County,Kensington,1241.76,1,0.1,85.8,39.1
+276,PA,Philadelphia County,Passyunk,64.37,1,0.0,85.8,39.1
+277,PA,Philadelphia County,Philadelphia,1175475.2205,663,96.4,85.8,39.1
+278,PA,Philadelphia County,Southwark,3.33,1,0.0,85.8,39.1
+279,PA,Philadelphia County,The Northern Libert,1263.4,1,0.1,85.8,39.1
+280,PA,Philadelphia County,nan,34393.869999999995,31,2.8,85.8,39.1
+281,PA,Westmoreland County,Kensington,692.25,1,13.0,0.4,39.1
+282,PA,Westmoreland County,Westmoreland,33.33,1,0.6,0.4,39.1
+283,PA,Westmoreland County,nan,4590.2300000000005,5,86.4,0.4,39.1
+284,PA,York County,York,7621.2,10,95.3,0.6,39.1
+285,PA,York County,nan,377.13,12,4.7,0.6,39.1
+286,PA,nan,St Eustalia,92.04,1,15.7,0.0,39.1
+287,PA,nan,W Callisters,335.4,1,57.3,0.0,39.1
+288,PA,nan,nan,158.01,1,27.0,0.0,39.1
+289,RI,Bristol County,Barrington,2059.1800000000003,10,23.6,2.0,12.0
+290,RI,Bristol County,Bristol,1065.52,7,12.2,2.0,12.0
+291,RI,Bristol County,Warren,5603.700000000001,14,64.2,2.0,12.0
+292,RI,Kent County,Coventry,481.83,5,4.7,2.4,12.0
+293,RI,Kent County,East Greenwich,1964.0,9,19.1,2.4,12.0
+294,RI,Kent County,Warwick,6513.650000000001,15,63.3,2.4,12.0
+295,RI,Kent County,West Greenwich,1325.27,7,12.9,2.4,12.0
+296,RI,Newport County,Little Compton,1614.7,8,0.6,58.5,12.0
+297,RI,Newport County,Newport,252788.89,71,98.8,58.5,12.0
+298,RI,Newport County,Portsmouth,82.74000000000001,2,0.0,58.5,12.0
+299,RI,Newport County,Tiverton,1462.79,14,0.6,58.5,12.0
+300,RI,Providence County,Cranston,3058.09,19,2.0,35.8,12.0
+301,RI,Providence County,Foster,255.82,2,0.2,35.8,12.0
+302,RI,Providence County,Gloucester,4249.81,6,2.7,35.8,12.0
+303,RI,Providence County,Johnston,2104.7,8,1.3,35.8,12.0
+304,RI,Providence County,North Providence,1179.0,9,0.8,35.8,12.0
+305,RI,Providence County,Providence,138893.75,191,88.7,35.8,12.0
+306,RI,Providence County,Scituate,5109.3099999999995,17,3.3,35.8,12.0
+307,RI,Providence County,Smithfield,536.49,8,0.3,35.8,12.0
+308,RI,Providence County,nan,1257.36,3,0.8,35.8,12.0
+309,RI,Washington County,Charlestown,1553.18,8,33.2,1.1,12.0
+310,RI,Washington County,Exeter,389.03999999999996,8,8.3,1.1,12.0
+311,RI,Washington County,North Kingston,1294.41,6,27.7,1.1,12.0
+312,RI,Washington County,Richmond,17.12,2,0.4,1.1,12.0
+313,RI,Washington County,South Kingston,1426.4099999999999,8,30.5,1.1,12.0
+314,RI,nan,Springfield,439.02,1,41.2,0.2,12.0
+315,RI,nan,nan,626.69,7,58.8,0.2,12.0
+316,SC,Abbeville County,96 District,31.26,1,39.2,0.1,4.3
+317,SC,Abbeville County,Abbeville,48.42,1,60.8,0.1,4.3
+318,SC,Beaufort County,Broad River,26.84,1,8.5,0.2,4.3
+319,SC,Beaufort County,New River,38.29,1,12.1,0.2,4.3
+320,SC,Beaufort County,St Helena,250.89,1,79.4,0.2,4.3
+321,SC,Charleston County,Charleston,134990.818666,303,98.5,86.9,4.3
+322,SC,Charleston County,Dorchester,104.78,1,0.1,86.9,4.3
+323,SC,Charleston County,James Island,315.26,4,0.2,86.9,4.3
+324,SC,Charleston County,St Johns,169.72,1,0.1,86.9,4.3
+325,SC,Charleston County,St. George,1501.6,1,1.1,86.9,4.3
+326,SC,Charleston County,Toogoodoo,28.97,1,0.0,86.9,4.3
+327,SC,Clarendon County,St Pauls,218.68,2,100.0,0.1,4.3
+328,SC,Georgetown County,Georgetown,6131.25,14,57.9,6.7,4.3
+329,SC,Georgetown County,Pee Dee,4397.06,2,41.5,6.7,4.3
+330,SC,Georgetown County,Winyaw,66.66666666666667,1,0.6,6.7,4.3
+331,SC,Lancaster County,Camden,5258.296666666666,5,100.0,3.3,4.3
+332,SC,Laurens County,96 District,19.73,1,100.0,0.0,4.3
+333,SC,Richland County,Columbia,438.7,2,70.3,0.4,4.3
+334,SC,Richland County,St Andrews,46.02,1,7.4,0.4,4.3
+335,SC,Richland County,nan,139.31,1,22.3,0.4,4.3
+336,SC,nan,Carolina,18.9502,1,0.5,2.2,4.3
+337,SC,nan,Long Cames,81.03,1,2.3,2.2,4.3
+338,SC,nan,Richard Sennings,914.24,1,26.2,2.2,4.3
+339,SC,nan,nan,2474.782495,12,70.9,2.2,4.3
+340,VA,Accomack County,nan,78.33,1,100.0,0.4,0.5
+341,VA,Fairfax County,Alexandria,711.12,2,100.0,3.9,0.5
+342,VA,Greenbrier County,Williamsburgh,46.02,1,100.0,0.3,0.5
+343,VA,Hampshire County,Petersburg,2693.4900000000002,2,100.0,14.8,0.5
+344,VA,Henrico County,Richmond,599.8100000000001,3,100.0,3.3,0.5
+345,VA,King George County,nan,319.17,1,100.0,1.8,0.5
+346,VA,Loudoun County,nan,109.5,1,100.0,0.6,0.5
+347,VA,Mecklenburg County,nan,76.76,1,100.0,0.4,0.5
+348,VA,Northumberland County,nan,253.49,1,100.0,1.4,0.5
+349,VA,Ohio County,nan,2206.72,1,100.0,12.1,0.5
+350,VA,Rockingham County,Portsmouth,20.516233,1,100.0,0.1,0.5
+351,VA,Spotsylvania County,Fredericksburg,550.06,1,100.0,3.0,0.5
+352,VA,nan,nan,10527.07,17,100.0,57.9,0.5
+353,VT,nan,nan,4857.46,7,100.0,100.0,0.1
 0,BM,nan,Bermuda,754.93,2,,,
 1,BVI,nan,Eustatia,125.45,3,,,
 2,BVI,nan,St Thomas,1011.39,1,,,
