@@ -2243,7 +2243,7 @@
 2241,120.0,20.0,60.0,10.0,,,,,,,other,120.2
 2242,1166.0,40.0,583.0,20.0,636.0,47.0,Philadelphia,PA,,Philadelphia County,town,1166.4
 2243,1462.0,31.0,731.0,15.0,666.0,18.0,Philadelphia,PA,,Philadelphia County,town,1462.31
-2244,1015.0,67.0,507.0,84.0,689.0,50.0,Philadelphia,PA,Marchant,Philadelphia County,town,1015.67
+2244,1015.0,67.0,507.0,84.0,689.0,50.0,Philadelphia,PA,Merchant,Philadelphia County,town,1015.67
 2245,1295.0,29.0,647.0,64.0,349.0,72.0,,,,,other,1295.29
 2246,3143.0,81.0,1571.0,90.0,1527.0,38.0,Philadelphia,PA,,Philadelphia County,town,3143.81
 2247,,,,,41.0,37.0,,,,,other,
@@ -2271,7 +2271,7 @@
 2269,1921.0,50.0,960.0,75.0,518.0,80.0,Philadelphia,PA,Merchants,Philadelphia County,town,1921.5
 2270,376.0,30.0,188.0,15.0,182.0,46.0,,,,,other,376.3
 2271,2135.0,63.0,1067.0,82.0,1661.0,86.0,,,,,other,2135.63
-2272,397.0,52.0,198.0,76.0,118.0,32.0,Reading Pennsylvania,PA,,,state,397.52
+2272,397.0,52.0,198.0,76.0,118.0,32.0,Reading Berks County,PA,,,other,397.52
 2273,56.0,21.0,28.0,11.0,15.0,17.0,County of Philadelphia,PA,Sheriff,,other,56.21
 2274,1463.0,95.0,731.0,97.0,395.0,25.0,Philadelphia,PA,,Philadelphia County,town,1463.95
 2275,11958.0,37.0,5979.0,19.0,7242.0,51.0,,,Executive Estate of Thomas Satter deceased,,other,11958.37
@@ -2505,10 +2505,10 @@
 2503,7.0,83.0,3.0,92.0,,,Philadelphia,PA,,Philadelphia County,town,7.83
 2504,80.0,28.0,40.0,15.0,28.0,90.0,Pennsylvania Berks County,PA,,,state,80.28
 2505,511.0,63.0,255.0,81.0,230.0,13.0,Pennsylvania Berks County,PA,,,state,511.63
-2506,233.0,10.0,116.0,55.0,112.0,8.0,Montgomery County Pennsylvania,PA,,,state,233.1
+2506,233.0,10.0,116.0,55.0,112.0,8.0,Pennsylvania Montgomery County,PA,,,state,233.1
 2507,585.0,83.0,292.0,92.0,158.0,10.0,,,,,other,585.83
 2508,1284.0,34.0,642.0,17.0,346.0,76.0,Philadelphia County,PA,,,other,1284.34
-2509,214.0,36.0,107.0,19.0,106.0,44.0,Franklin County Pennsylvania,PA,,,state,214.36
+2509,214.0,36.0,107.0,19.0,106.0,44.0,Pennsylvania Franklin County,PA,,,state,214.36
 2510,262.0,26.0,131.0,13.0,188.0,74.0,Philadelphia,PA,,Philadelphia County,town,262.26
 2511,317.0,79.0,158.0,89.0,1252.0,,Philadelphia,PA,Merchant,Philadelphia County,town,317.79
 2512,694.0,37.0,347.0,19.0,567.0,1.0,Reading Berks County,PA,,,other,694.37
@@ -2534,7 +2534,7 @@
 2532,951.0,28.0,475.0,65.0,256.0,83.0,Philadelphia,PA,,Philadelphia County,town,951.28
 2533,997.0,32.0,498.0,66.0,359.0,26.0,Philadelphia,PA,,Philadelphia County,town,997.32
 2534,166.0,36.0,83.0,19.0,96.0,34.0,Reading Berks County,PA,,,other,166.36
-2535,92.0,4.0,46.0,2.0,93.0,92.0,St Eustatia,PA,,,other,92.04
+2535,92.0,4.0,46.0,2.0,93.0,92.0,St Eustalia,PA,,,other,92.04
 2536,933.0,33.0,466.0,67.0,504.0,,Philadelphia,PA,Widow,Philadelphia County,town,933.33
 2537,719.0,65.0,359.0,82.0,354.0,94.0,Berks County Pennsylvania,PA,,,state,719.65
 2538,206.0,39.0,103.0,19.0,94.0,14.0,Philadelphia,PA,Druggist,Philadelphia County,town,206.39
@@ -3085,7 +3085,7 @@
 3083,3.0,80.0,1.0,90.0,7.0,,Philadelphia,PA,Gentleman,Philadelphia County,town,3.8
 3084,200.0,,100.0,,494.0,41.0,Philadelphia,PA,,Philadelphia County,town,
 3085,108.0,78.0,54.0,40.0,40.0,4.0,Reading Berks County,PA,,,other,108.78
-3086,117.0,58.0,58.0,79.0,71.0,77.0,Philadelphia,PA,Marchant,Philadelphia County,town,117.58
+3086,117.0,58.0,58.0,79.0,71.0,77.0,Philadelphia,PA,Merchant,Philadelphia County,town,117.58
 3087,20.0,26.0,10.0,14.0,,,York Town Pennsylvania,PA,,,state,20.26
 3088,,,,,330.0,,,,,,other,
 3089,767.0,76.0,383.0,89.0,488.0,86.0,Philadelphia,PA,Merchant,Philadelphia County,town,767.76

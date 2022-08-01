@@ -308,12 +308,12 @@
 2500,Chester Co Pennsylvania,PA,Chester County,county
 2502,The N Lib of Philadelphia,PA,,other
 2504,Pennsylvania Berks County,PA,,state
-2506,Montgomery County Pennsylvania,PA,,state
-2509,Franklin County Pennsylvania,PA,,state
+2506,Pennsylvania Montgomery County,PA,,state
+2509,Pennsylvania Franklin County,PA,,state
 2524,Pittsburgh Pennsylvania,PA,,state
 2526,Lancaster County Pennsylvania,PA,,state
 2531,Brunswick New Jersey,NJ,Middlesex County,town
-2535,St Eustatia,PA,,other
+2535,St Eustalia,PA,,other
 2537,Berks County Pennsylvania,PA,,state
 2564,Fayette County Pennsylvania,PA,,state
 2572,Delaware County Pennsylvania,DE,,state
@@ -357,7 +357,9 @@
 2938,King George Co Virginia,VA,King George County,county
 2954,Southwark,PA,,other
 2956,Westmoreland County Pennsylvania,PA,,state
+2986,Franklin County Pennsylvania,PA,,state
 2991,Wilmington Delaware,DE,New Castle County,county
+2992,Montgomery County Pennsylvania,PA,,state
 3005,Berlington New Jersey,NJ,Burlington County,town
 3015,Northumberland County Pennsylvania,PA,,state
 3020,Sunbury Pennsylvania,PA,,state
