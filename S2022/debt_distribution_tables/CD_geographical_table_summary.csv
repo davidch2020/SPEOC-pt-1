@@ -1,0 +1,364 @@
+,state,county,town,6p_total_sum,6p_total_count,town/county pct,county/state pct,state/ovall (excluding non-colonies) pct
+0,CT,Fairfield County,Danbury,3116.56,7,9.0,7.6,12.6
+1,CT,Fairfield County,Fairfield,6505.58,20,18.8,7.6,12.6
+2,CT,Fairfield County,Greenwich,997.06,6,2.9,7.6,12.6
+3,CT,Fairfield County,Huntington,6845.41,5,19.8,7.6,12.6
+4,CT,Fairfield County,Norwalk,1993.3400000000001,8,5.8,7.6,12.6
+5,CT,Fairfield County,Reading,578.36,1,1.7,7.6,12.6
+6,CT,Fairfield County,Ridgefield,110.75,1,0.3,7.6,12.6
+7,CT,Fairfield County,Stamford,9994.88,24,28.8,7.6,12.6
+8,CT,Fairfield County,Stratford,4448.07,9,12.8,7.6,12.6
+9,CT,Fairfield County,Weston,69.37,1,0.2,7.6,12.6
+10,CT,Hartford County,Berlin,920.41,4,0.9,21.2,12.6
+11,CT,Hartford County,Bristol,210.01,1,0.2,21.2,12.6
+12,CT,Hartford County,East Hartford,4049.04,10,4.2,21.2,12.6
+13,CT,Hartford County,East Windsor,1326.9299999999998,8,1.4,21.2,12.6
+14,CT,Hartford County,Enfield,562.06,2,0.6,21.2,12.6
+15,CT,Hartford County,Farmington,5442.13,24,5.6,21.2,12.6
+16,CT,Hartford County,Glastonbury,11805.089999999998,12,12.1,21.2,12.6
+17,CT,Hartford County,Granby,422.38,1,0.4,21.2,12.6
+18,CT,Hartford County,Hartford,49140.48,137,50.6,21.2,12.6
+19,CT,Hartford County,Newington,1922.37,2,2.0,21.2,12.6
+20,CT,Hartford County,Suffield,1866.1,13,1.9,21.2,12.6
+21,CT,Hartford County,Symsbury,35.78,2,0.0,21.2,12.6
+22,CT,Hartford County,Wethersfield,10765.4,47,11.1,21.2,12.6
+23,CT,Hartford County,Windsor,8695.1,28,8.9,21.2,12.6
+24,CT,Litchfield County,Canaan,299.40999999999997,3,1.0,6.8,12.6
+25,CT,Litchfield County,Cornwall,3151.91,3,10.1,6.8,12.6
+26,CT,Litchfield County,Goshen,8842.39,8,28.5,6.8,12.6
+27,CT,Litchfield County,Hartford,615.6999999999999,2,2.0,6.8,12.6
+28,CT,Litchfield County,Litchfield,1150.9,2,3.7,6.8,12.6
+29,CT,Litchfield County,New Milford,1975.34,11,6.4,6.8,12.6
+30,CT,Litchfield County,Norfolk,52.28,1,0.2,6.8,12.6
+31,CT,Litchfield County,Roxbury,10592.61,2,34.1,6.8,12.6
+32,CT,Litchfield County,Salisbury,10.08,1,0.0,6.8,12.6
+33,CT,Litchfield County,Sharon,745.03,3,2.4,6.8,12.6
+34,CT,Litchfield County,Torrington,1965.91,4,6.3,6.8,12.6
+35,CT,Litchfield County,Watertown,533.33,1,1.7,6.8,12.6
+36,CT,Litchfield County,Woodbury,1132.25,3,3.6,6.8,12.6
+37,CT,Middlesex County,Chatham,1208.07,11,2.8,9.5,12.6
+38,CT,Middlesex County,Durham,32.77,1,0.1,9.5,12.6
+39,CT,Middlesex County,Haddam,6597.64,11,15.2,9.5,12.6
+40,CT,Middlesex County,Killingworth,1780.76,15,4.1,9.5,12.6
+41,CT,Middlesex County,Middletown,21997.77,31,50.7,9.5,12.6
+42,CT,Middlesex County,Saybrook,11735.19,13,27.1,9.5,12.6
+43,CT,New Haven County,Branford,127.54,2,0.3,8.5,12.6
+44,CT,New Haven County,Cheshire,794.01,2,2.0,8.5,12.6
+45,CT,New Haven County,Derby,5303.11,8,13.7,8.5,12.6
+46,CT,New Haven County,East Haven,44.33,2,0.1,8.5,12.6
+47,CT,New Haven County,Guilford,971.39,11,2.5,8.5,12.6
+48,CT,New Haven County,Milford,2243.3,11,5.8,8.5,12.6
+49,CT,New Haven County,New Haven,27504.96,45,70.9,8.5,12.6
+50,CT,New Haven County,North Haven,30.56,1,0.1,8.5,12.6
+51,CT,New Haven County,Southbury,350.25,1,0.9,8.5,12.6
+52,CT,New Haven County,Wallingford,1219.03,2,3.1,8.5,12.6
+53,CT,New Haven County,Waterbury,225.22,1,0.6,8.5,12.6
+54,CT,New London County,Bozrah,335.98,2,0.2,35.2,12.6
+55,CT,New London County,Colchester,7403.65,17,4.6,35.2,12.6
+56,CT,New London County,Franklin,67.64,2,0.0,35.2,12.6
+57,CT,New London County,Groton,2735.23,12,1.7,35.2,12.6
+58,CT,New London County,Lebanon,19910.54,24,12.4,35.2,12.6
+59,CT,New London County,Lyme,31431.16,29,19.5,35.2,12.6
+60,CT,New London County,Montville,475.21000000000004,5,0.3,35.2,12.6
+61,CT,New London County,New London,40166.44,38,24.9,35.2,12.6
+62,CT,New London County,Norwich,47732.350000000006,46,29.6,35.2,12.6
+63,CT,New London County,Preston,2965.37,9,1.8,35.2,12.6
+64,CT,New London County,Stonington,7465.2,9,4.6,35.2,12.6
+65,CT,New London County,Volentown,413.14000000000004,2,0.3,35.2,12.6
+66,CT,Tolland County,Bolton,10453.64,13,47.5,4.8,12.6
+67,CT,Tolland County,Coventry,1335.46,9,6.1,4.8,12.6
+68,CT,Tolland County,Ellington,112.24,1,0.5,4.8,12.6
+69,CT,Tolland County,Hebron,7733.12,10,35.1,4.8,12.6
+70,CT,Tolland County,Mansfield,1507.58,8,6.8,4.8,12.6
+71,CT,Tolland County,Somers,40.67,1,0.2,4.8,12.6
+72,CT,Tolland County,Stamford,288.97,2,1.3,4.8,12.6
+73,CT,Tolland County,Tolland,330.22,4,1.5,4.8,12.6
+74,CT,Tolland County,Willington,216.59,2,1.0,4.8,12.6
+75,CT,Windham County,Ashford,1276.25,4,5.0,5.6,12.6
+76,CT,Windham County,Brooklyn,975.02,3,3.8,5.6,12.6
+77,CT,Windham County,Canterbury,778.27,4,3.0,5.6,12.6
+78,CT,Windham County,Hampton,387.56,3,1.5,5.6,12.6
+79,CT,Windham County,Plainfield,1430.27,4,5.6,5.6,12.6
+80,CT,Windham County,Pomfret,2705.1200000000003,8,10.6,5.6,12.6
+81,CT,Windham County,Thompson,2722.47,4,10.6,5.6,12.6
+82,CT,Windham County,Windham,5490.97,13,21.5,5.6,12.6
+83,CT,Windham County,Woodstock,9823.87,21,38.4,5.6,12.6
+84,CT,nan,Connecticutt,647.09,1,15.7,0.9,12.6
+85,CT,nan,Vermont,13.58,1,0.3,0.9,12.6
+86,CT,nan,nan,3464.54,2,84.0,0.9,12.6
+87,DE,Kent County,nan,1731.41,1,100.0,20.7,0.2
+88,DE,New Castle County,nan,2596.86,4,100.0,31.0,0.2
+89,DE,nan,Delaware State,2514.04,1,62.0,48.4,0.2
+90,DE,nan,State of Delawere,1538.6499999999999,2,38.0,48.4,0.2
+91,GA,Chatham County,Savannah,73.78272899999999,10,100.0,1.5,0.1
+92,GA,Effingham County,nan,68.851733,2,100.0,1.4,0.1
+93,GA,Richmond County,Augusta,139.271033,2,88.5,3.2,0.1
+94,GA,Richmond County,nan,18.068233,1,11.5,3.2,0.1
+95,GA,nan,State of Georgia,4586.66,1,98.6,93.9,0.1
+96,GA,nan,nan,63.820733,2,1.4,93.9,0.1
+97,MA,Barnstable County,Falmouth,99.09,1,100.0,0.1,1.9
+98,MA,Berkshire County,Pittsfield,357.38,1,26.5,1.9,1.9
+99,MA,Berkshire County,Tyringham,992.1200000000001,2,73.5,1.9,1.9
+100,MA,Bristol County,Attleborough,1268.5,6,8.9,20.4,1.9
+101,MA,Bristol County,Dighton,2712.82,4,19.1,20.4,1.9
+102,MA,Bristol County,Freetown,133.34,1,0.9,20.4,1.9
+103,MA,Bristol County,Norton,266.67,1,1.9,20.4,1.9
+104,MA,Bristol County,Rehoboth,8270.92,13,58.1,20.4,1.9
+105,MA,Bristol County,Somerset,30.45,1,0.2,20.4,1.9
+106,MA,Bristol County,Swansea,1444.53,5,10.1,20.4,1.9
+107,MA,Bristol County,Westport,106.57,1,0.7,20.4,1.9
+108,MA,Essex County,Almsbury,110.59,2,0.8,19.8,1.9
+109,MA,Essex County,Andover,2836.61,5,20.5,19.8,1.9
+110,MA,Essex County,Beverly,1333.33,4,9.7,19.8,1.9
+111,MA,Essex County,Haverhill,1336.8300000000002,5,9.7,19.8,1.9
+112,MA,Essex County,Ipswich,585.76,3,4.2,19.8,1.9
+113,MA,Essex County,Newbury Port,6091.2,15,44.1,19.8,1.9
+114,MA,Essex County,Rowley,72.19,1,0.5,19.8,1.9
+115,MA,Essex County,Salem,1437.65,2,10.4,19.8,1.9
+116,MA,Hampshire County,Chesterfield,75.34,1,2.2,4.8,1.9
+117,MA,Hampshire County,Granby,4.18,1,0.1,4.8,1.9
+118,MA,Hampshire County,Hadley,0.0,1,0.0,4.8,1.9
+119,MA,Hampshire County,Long Meadow,219.43,2,6.5,4.8,1.9
+120,MA,Hampshire County,Ludlow,0.0,1,0.0,4.8,1.9
+121,MA,Hampshire County,North Hampton,177.85,1,5.3,4.8,1.9
+122,MA,Hampshire County,Springfield,2880.8599999999997,4,85.8,4.8,1.9
+123,MA,Middlesex County,Cambridge,2118.7799999999997,5,78.0,3.9,1.9
+124,MA,Middlesex County,Littleton,596.81,1,22.0,3.9,1.9
+125,MA,Plymouth County,Bridgewater,192.71,1,42.0,0.7,1.9
+126,MA,Plymouth County,Situate,266.67,1,58.0,0.7,1.9
+127,MA,Suffolk County,Boston,22339.48,26,92.8,34.5,1.9
+128,MA,Suffolk County,Roxbury,1204.7,2,5.0,34.5,1.9
+129,MA,Suffolk County,Stoughton,533.33,1,2.2,34.5,1.9
+130,MA,Worcester County,Dudley,98.48,1,2.3,6.1,1.9
+131,MA,Worcester County,Grafton,434.6,1,10.2,6.1,1.9
+132,MA,Worcester County,Liecester,266.67,1,6.3,6.1,1.9
+133,MA,Worcester County,Sturbridge MA,222.32,1,5.2,6.1,1.9
+134,MA,Worcester County,Sutton,376.55999999999995,2,8.8,6.1,1.9
+135,MA,Worcester County,Worcester,2861.87,1,67.2,6.1,1.9
+136,MA,nan,Kittery,1328.17,3,24.6,7.7,1.9
+137,MA,nan,nan,4065.01,3,75.4,7.7,1.9
+138,MD,Allegany County,nan,755.55,1,100.0,0.1,23.3
+139,MD,Anne Arundel County,Annapolis,586235.98,200,97.8,70.7,23.3
+140,MD,Anne Arundel County,nan,13208.359999999999,25,2.2,70.7,23.3
+141,MD,Baltimore County,Baltimore,39374.985733,69,84.9,5.5,23.3
+142,MD,Baltimore County,nan,7014.37,19,15.1,5.5,23.3
+143,MD,Calvert County,nan,9468.98,4,100.0,1.1,23.3
+144,MD,Caroline County,nan,413.05,2,100.0,0.0,23.3
+145,MD,Cecil County,George,65194.99,13,99.8,7.7,23.3
+146,MD,Cecil County,nan,159.27,2,0.2,7.7,23.3
+147,MD,Charles County,nan,6991.23,11,100.0,0.8,23.3
+148,MD,Dorchester County,Cambridge,18626.05,4,66.8,3.3,23.3
+149,MD,Dorchester County,nan,9249.82,8,33.2,3.3,23.3
+150,MD,Frederick County,Frederick,11048.11,10,61.7,2.1,23.3
+151,MD,Frederick County,nan,6870.72,33,38.3,2.1,23.3
+152,MD,Harford County,nan,5934.12,16,100.0,0.7,23.3
+153,MD,Kent County,nan,158.2,1,100.0,0.0,23.3
+154,MD,Montgomery County,nan,8964.5,20,100.0,1.1,23.3
+155,MD,Prince Georges County,Bladensburg,704.31,2,2.8,3.0,23.3
+156,MD,Prince Georges County,nan,24450.81,38,97.2,3.0,23.3
+157,MD,Queen Annes County,nan,9677.81,4,100.0,1.1,23.3
+158,MD,Somerset County,nan,5238.71,5,100.0,0.6,23.3
+159,MD,St Marys County,nan,7615.83,10,100.0,0.9,23.3
+160,MD,Talbot County,nan,585.74,4,100.0,0.1,23.3
+161,MD,Washington County,nan,3760.7599999999998,4,100.0,0.4,23.3
+162,MD,Worcester County,nan,2521.14,2,100.0,0.3,23.3
+163,MD,nan,Doden,402.75,2,10.5,0.5,23.3
+164,MD,nan,Isaac,26.93,1,0.7,0.5,23.3
+165,MD,nan,nan,3407.2376,11,88.8,0.5,23.3
+166,NC,Beaufort County,Washington,254.73,1,100.0,0.9,0.8
+167,NC,Chowan County,Edenton,5513.57,12,100.0,19.1,0.8
+168,NC,Craven County,Newbern,5639.79,10,100.0,19.5,0.8
+169,NC,Cumberland County,Fayetteville,81.8,1,100.0,0.3,0.8
+170,NC,Currituck County,nan,38.67,1,100.0,0.1,0.8
+171,NC,Edgecombe County,Tarborugh,1330.16,1,74.4,6.2,0.8
+172,NC,Edgecombe County,nan,458.54,1,25.6,6.2,0.8
+173,NC,Halifax County,Halifax,169.49,3,100.0,0.6,0.8
+174,NC,Hertford County,Murfrees Borough,71.11,2,100.0,0.2,0.8
+175,NC,Mecklenburg County,nan,21.04,1,100.0,0.1,0.8
+176,NC,New Hanover County,Wilmington,589.5600000000001,2,100.0,2.0,0.8
+177,NC,Orange County,Hillsborough,78.89,2,100.0,0.3,0.8
+178,NC,Perquimans County,nan,15.3,1,100.0,0.1,0.8
+179,NC,Pitt County,nan,19.56,1,100.0,0.1,0.8
+180,NC,Rockingham County,nan,38.83,1,100.0,0.1,0.8
+181,NC,Rowan County,Salisbury,98.66,1,52.5,0.7,0.8
+182,NC,Rowan County,nan,89.42,4,47.5,0.7,0.8
+183,NC,Warren County,nan,127.28,2,100.0,0.4,0.8
+184,NC,Wayne County,nan,85.25,1,100.0,0.3,0.8
+185,NC,nan,nan,14197.8567,10,100.0,49.1,0.8
+186,NH,Cheshire County,Acworth,50.8,1,4.1,1.0,3.4
+187,NH,Cheshire County,Charleston,926.49,3,74.0,1.0,3.4
+188,NH,Cheshire County,Keene,106.45,1,8.5,1.0,3.4
+189,NH,Cheshire County,Newport in,168.28,1,13.4,1.0,3.4
+190,NH,Grafton County,Alexandria,40.67,1,1.2,2.7,3.4
+191,NH,Grafton County,Concord,3329.57,7,98.8,2.7,3.4
+192,NH,Hillsborough County,Amherst,185.89999999999998,2,2.7,5.5,3.4
+193,NH,Hillsborough County,Hollis,283.82,1,4.1,5.5,3.4
+194,NH,Hillsborough County,Hopkinton,400.0,1,5.8,5.5,3.4
+195,NH,Hillsborough County,Merrimac,4082.06,1,59.0,5.5,3.4
+196,NH,Hillsborough County,Newbury,1414.7,3,20.5,5.5,3.4
+197,NH,Hillsborough County,Pelham,64.17,1,0.9,5.5,3.4
+198,NH,Hillsborough County,Pembroke,52.98,1,0.8,5.5,3.4
+199,NH,Hillsborough County,Salisbury,431.21,1,6.2,5.5,3.4
+200,NH,Rockingham County,Brintwood,146.16,1,0.1,82.8,3.4
+201,NH,Rockingham County,Candia,1066.67,1,1.0,82.8,3.4
+202,NH,Rockingham County,Canterbury,495.83,4,0.5,82.8,3.4
+203,NH,Rockingham County,Deerfield,3677.87,1,3.6,82.8,3.4
+204,NH,Rockingham County,Exeter,30837.74,29,29.8,82.8,3.4
+205,NH,Rockingham County,Greenland,615.28,1,0.6,82.8,3.4
+206,NH,Rockingham County,Hampton,7797.719999999999,7,7.5,82.8,3.4
+207,NH,Rockingham County,Kensington,4027.66,4,3.9,82.8,3.4
+208,NH,Rockingham County,Kingstown,398.93,1,0.4,82.8,3.4
+209,NH,Rockingham County,London,4695.96,3,4.5,82.8,3.4
+210,NH,Rockingham County,New Castle,172.49,1,0.2,82.8,3.4
+211,NH,Rockingham County,Newtown,337.63,2,0.3,82.8,3.4
+212,NH,Rockingham County,Nottingham,3975.85,1,3.8,82.8,3.4
+213,NH,Rockingham County,Portsmouth,41300.04,64,40.0,82.8,3.4
+214,NH,Rockingham County,Rye,139.91,1,0.1,82.8,3.4
+215,NH,Rockingham County,Salem,3423.2400000000002,3,3.3,82.8,3.4
+216,NH,Rockingham County,nan,205.19,2,0.2,82.8,3.4
+217,NH,Strafford County,Barrington,543.5699999999999,2,8.6,5.1,3.4
+218,NH,Strafford County,Dover,859.78,2,13.6,5.1,3.4
+219,NH,Strafford County,Durham,532.29,3,8.4,5.1,3.4
+220,NH,Strafford County,Gilmantown,2729.78,2,43.1,5.1,3.4
+221,NH,Strafford County,Marbury,0.0,1,0.0,5.1,3.4
+222,NH,Strafford County,Sandwich,205.17,1,3.2,5.1,3.4
+223,NH,Strafford County,Somersworth,801.9499999999999,2,12.7,5.1,3.4
+224,NH,Strafford County,Tamworth,303.42,1,4.8,5.1,3.4
+225,NH,Strafford County,Wakefield,352.53,1,5.6,5.1,3.4
+226,NH,nan,Glouster,1900.03,3,53.1,2.9,3.4
+227,NH,nan,North Hampshire,778.04,1,21.7,2.9,3.4
+228,NH,nan,State of New Hampshire,68.72,1,1.9,2.9,3.4
+229,NH,nan,Wells,643.34,1,18.0,2.9,3.4
+230,NH,nan,York,189.58,1,5.3,2.9,3.4
+231,NJ,Burlington County,Berlington,0.0,1,0.0,0.7,0.8
+232,NJ,Burlington County,Mount Holley,190.71,1,100.0,0.7,0.8
+233,NJ,Cape May County,Cape May,62.89,2,100.0,0.2,0.8
+234,NJ,Hunterdon County,Trenton,1115.95,2,100.0,3.9,0.8
+235,NJ,Middlesex County,Middlesex,74.88,1,2.9,9.1,0.8
+236,NJ,Middlesex County,New Brunswick,1330.3,2,51.4,9.1,0.8
+237,NJ,Middlesex County,Princeton,1183.71,1,45.7,9.1,0.8
+238,NJ,Monmouth County,nan,235.01,1,100.0,0.8,0.8
+239,NJ,Somerset County,nan,16.67,1,100.0,0.1,0.8
+240,NJ,Sussex County,Newton ship,311.99,1,100.0,1.1,0.8
+241,NJ,nan,Huntington,151.4,1,0.6,84.2,0.8
+242,NJ,nan,nan,23874.66,26,99.4,84.2,0.8
+243,NY,nan,Albany,22.7,1,0.1,100.0,0.5
+244,NY,nan,City of New York,492.21000000000004,4,2.9,100.0,0.5
+245,NY,nan,Long Island,16.61,1,0.1,100.0,0.5
+246,NY,nan,State of New York,3096.47,11,18.0,100.0,0.5
+247,NY,nan,nan,13611.210866,37,79.0,100.0,0.5
+248,PA,Philadelphia County,Philadelphia,1168616.0805,657,100.0,82.1,39.2
+249,PA,nan,Allegheny,3157.6800000000003,3,1.2,17.9,39.2
+250,PA,nan,Armstrong,989.87,1,0.4,17.9,39.2
+251,PA,nan,Bedford,4.89,1,0.0,17.9,39.2
+252,PA,nan,Berks,4519.61,12,1.8,17.9,39.2
+253,PA,nan,Bethlehem,2639.7,5,1.0,17.9,39.2
+254,PA,nan,Blockley,971.4,1,0.4,17.9,39.2
+255,PA,nan,Borden,4050.5000000000005,3,1.6,17.9,39.2
+256,PA,nan,Bucks,15006.86,27,5.9,17.9,39.2
+257,PA,nan,Burlington New Jersey,280.69,1,0.1,17.9,39.2
+258,PA,nan,Carlisle,6171.04,7,2.4,17.9,39.2
+259,PA,nan,Chambersburgh,237.7,1,0.1,17.9,39.2
+260,PA,nan,Charleston South Carolina,2879.48,1,1.1,17.9,39.2
+261,PA,nan,Chester,897.57,1,0.4,17.9,39.2
+262,PA,nan,Dauphin,12589.85,8,4.9,17.9,39.2
+263,PA,nan,Dauphincoy,1160.69,1,0.5,17.9,39.2
+264,PA,nan,Delaware,2536.53,4,1.0,17.9,39.2
+265,PA,nan,Fayette,1743.32,2,0.7,17.9,39.2
+266,PA,nan,Franklin,3802.86,7,1.5,17.9,39.2
+267,PA,nan,Germantown,6024.98,6,2.4,17.9,39.2
+268,PA,nan,Kensington,1934.01,2,0.8,17.9,39.2
+269,PA,nan,Lancaster,57920.39,38,22.7,17.9,39.2
+270,PA,nan,Montgomery,11928.4,12,4.7,17.9,39.2
+271,PA,nan,Northampton,888.87,5,0.3,17.9,39.2
+272,PA,nan,Northumb Country,1440.4499999999998,2,0.6,17.9,39.2
+273,PA,nan,Northumberland,3468.85,9,1.4,17.9,39.2
+274,PA,nan,Passyunk,64.37,1,0.0,17.9,39.2
+275,PA,nan,Philadelphia,37317.64,30,14.6,17.9,39.2
+276,PA,nan,Pittsburgh,4017.6900000000005,4,1.6,17.9,39.2
+277,PA,nan,Reading,10241.17,9,4.0,17.9,39.2
+278,PA,nan,Reading Berks,18846.13,8,7.4,17.9,39.2
+279,PA,nan,Southwark,3.33,1,0.0,17.9,39.2
+280,PA,nan,St Eustatia,92.04,1,0.0,17.9,39.2
+281,PA,nan,Sunbury,1360.22,1,0.5,17.9,39.2
+282,PA,nan,The Northern Libert,1263.4,1,0.5,17.9,39.2
+283,PA,nan,Tulpehocken,1136.06,2,0.4,17.9,39.2
+284,PA,nan,W Callisters,335.4,1,0.1,17.9,39.2
+285,PA,nan,Westmoreland,4623.56,6,1.8,17.9,39.2
+286,PA,nan,York,7998.329999999999,22,3.1,17.9,39.2
+287,PA,nan,nan,20242.78,36,7.9,17.9,39.2
+288,RI,Bristol County,Barrington,2059.1800000000003,10,23.6,2.0,12.0
+289,RI,Bristol County,Bristol,1065.52,7,12.2,2.0,12.0
+290,RI,Bristol County,Warren,5603.700000000001,14,64.2,2.0,12.0
+291,RI,Kent County,Coventry,481.83,5,4.7,2.4,12.0
+292,RI,Kent County,East Greenwich,1964.0,9,19.1,2.4,12.0
+293,RI,Kent County,Warwick,6513.650000000001,15,63.3,2.4,12.0
+294,RI,Kent County,West Greenwich,1325.27,7,12.9,2.4,12.0
+295,RI,Newport County,Little Compton,1614.7,8,0.6,58.5,12.0
+296,RI,Newport County,Newport,252788.89,71,98.8,58.5,12.0
+297,RI,Newport County,Portsmouth,82.74000000000001,2,0.0,58.5,12.0
+298,RI,Newport County,Tiverton,1462.79,14,0.6,58.5,12.0
+299,RI,Providence County,Cranston,3058.09,19,2.0,35.8,12.0
+300,RI,Providence County,Foster,255.82,2,0.2,35.8,12.0
+301,RI,Providence County,Gloucester,4249.81,6,2.7,35.8,12.0
+302,RI,Providence County,Johnston,2104.7,8,1.3,35.8,12.0
+303,RI,Providence County,North Providence,1179.0,9,0.8,35.8,12.0
+304,RI,Providence County,Providence,138893.75,191,88.7,35.8,12.0
+305,RI,Providence County,Scituate,5109.3099999999995,17,3.3,35.8,12.0
+306,RI,Providence County,Smithfield,536.49,8,0.3,35.8,12.0
+307,RI,Providence County,nan,1257.36,3,0.8,35.8,12.0
+308,RI,Washington County,Charlestown,1553.18,8,33.2,1.1,12.0
+309,RI,Washington County,Exeter,389.03999999999996,8,8.3,1.1,12.0
+310,RI,Washington County,North Kingston,1294.41,6,27.7,1.1,12.0
+311,RI,Washington County,Richmond,17.12,2,0.4,1.1,12.0
+312,RI,Washington County,South Kingston,1426.4099999999999,8,30.5,1.1,12.0
+313,RI,nan,Springfield,439.02,1,41.2,0.2,12.0
+314,RI,nan,nan,626.69,7,58.8,0.2,12.0
+315,SC,Abbeville County,96 District,31.26,1,39.2,0.0,4.6
+316,SC,Abbeville County,Abbeville,48.42,1,60.8,0.0,4.6
+317,SC,Beaufort County,Broad River,26.84,1,8.5,0.2,4.6
+318,SC,Beaufort County,New River,38.29,1,12.1,0.2,4.6
+319,SC,Beaufort County,St Helena,250.89,1,79.4,0.2,4.6
+320,SC,Charleston County,Charleston,132111.338666,302,98.4,81.2,4.6
+321,SC,Charleston County,Dorchester,104.78,1,0.1,81.2,4.6
+322,SC,Charleston County,James Island,315.26,4,0.2,81.2,4.6
+323,SC,Charleston County,St Johns,169.72,1,0.1,81.2,4.6
+324,SC,Charleston County,St. George,1501.6,1,1.1,81.2,4.6
+325,SC,Charleston County,Toogoodoo,28.97,1,0.0,81.2,4.6
+326,SC,Clarendon County,St Pauls,218.68,2,100.0,0.1,4.6
+327,SC,Georgetown County,Georgetown,6131.25,14,57.9,6.4,4.6
+328,SC,Georgetown County,Pee Dee,4397.06,2,41.5,6.4,4.6
+329,SC,Georgetown County,Winyaw,66.66666666666667,1,0.6,6.4,4.6
+330,SC,Lancaster County,Camden,5258.296666666666,5,100.0,3.2,4.6
+331,SC,Laurens County,96 District,19.73,1,100.0,0.0,4.6
+332,SC,Richland County,Columbia,438.7,2,70.3,0.4,4.6
+333,SC,Richland County,St Andrews,46.02,1,7.4,0.4,4.6
+334,SC,Richland County,nan,139.31,1,22.3,0.4,4.6
+335,SC,nan,Carolina,18.9502,1,0.1,8.5,4.6
+336,SC,nan,Long Cames,81.03,1,0.6,8.5,4.6
+337,SC,nan,Richard Sennings,914.24,1,6.5,8.5,4.6
+338,SC,nan,Savannah,10508.9,1,75.1,8.5,4.6
+339,SC,nan,nan,2474.782495,12,17.7,8.5,4.6
+340,VA,Accomack County,nan,78.33,1,100.0,0.4,0.5
+341,VA,Fairfax County,Alexandria,711.12,2,100.0,4.0,0.5
+342,VA,Greenbrier County,Williamsburgh,46.02,1,100.0,0.3,0.5
+343,VA,Hampshire County,Petersburg,2693.4900000000002,2,100.0,15.0,0.5
+344,VA,Henrico County,Richmond,599.8100000000001,3,100.0,3.3,0.5
+345,VA,James City County,nan,76.76,1,100.0,0.4,0.5
+346,VA,King George County,nan,319.17,1,100.0,1.8,0.5
+347,VA,Loudoun County,nan,109.5,1,100.0,0.6,0.5
+348,VA,Ohio County,nan,2206.72,1,100.0,12.3,0.5
+349,VA,Rockingham County,Portsmouth,20.516233,1,100.0,0.1,0.5
+350,VA,Spotsylvania County,Fredericksburg,550.06,1,100.0,3.1,0.5
+351,VA,nan,nan,10527.07,17,100.0,58.7,0.5
+0,BM,nan,Bermuda,754.93,2,,,
+1,BVI,nan,Eustatia,125.45,3,,,
+2,BVI,nan,St Thomas,1011.39,1,,,
+3,FR,nan,Bourdeaux,27.44,1,,,
+4,GB,nan,Edinburgh,49.58,1,,,
+5,GB,nan,Great Britain,218.26,1,,,
+6,US,nan,Register of the Treasury,61.5,1,,,
+7,VI,nan,St. Thomas,92.52,3,,,
+8,VI,nan,The River May,60.74,1,,,
+9,VT,nan,State Vermont,1908.56,2,,,
+10,VT,nan,State of Vermont,2935.3199999999997,4,,,
