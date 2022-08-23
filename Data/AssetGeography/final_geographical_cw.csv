@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 ,orig_town,town,county,state,name_type
 0,Hartford,Hartford,Hartford County,CT,town
 1,Bolton,Bolton,Tolland County,CT,town
@@ -259,7 +258,6 @@
 1818,Carlisle Pennsylvania,Carlisle,Cumberland County,PA,town
 1822,Germantown,Germantown,Cumberland County,PA,town
 1839,Franklin County,,Franklin County,PA,county
-1841,Conecticutt,,,CT,state
 1842,New Castle Delaware,,New Castle County,DE,county
 1848,Reading,Reading,Berks County,PA,town
 1861,Bethlehem,Bethlehem,Northampton County,PA,town
@@ -300,14 +298,15 @@
 2166,Chester Co Pennsylvania,,Chester County,PA,county
 2167,The N Lib of Philadelphia,Philadelphia,Philadelphia County,PA,town
 2169,Pennsylvania Berks County,,Berks County,PA,county
-2171,Montgomery County Pennsylvania,,Montgomery County,PA,county
-2173,Franklin County Pennsylvania,,Franklin County,PA,county
+2171,Pennsylvania Montgomery County,,Montgomery County,PA,county
+2173,Pennsylvania Franklin County,,Franklin County,PA,county
 2181,Charleston South Carolina,Charleston South Carolina,Charleston County,PA,town
 2187,Pittsburgh Pennsylvania,Pittsburgh,Allegheny County,PA,town
 2189,Lancaster County Pennsylvania,,Lancaster County,PA,county
 2192,Brunswick New Jersey,New Brunswick,Middlesex County,NJ,town
-2196,St Eustalia,,,PA,state
+2196,St Eustatia,,,PA,state
 2198,Berks County Pennsylvania,,Berks County,PA,county
+2219,Berks County,,Berks County,PA,county
 2224,Fayette County Pennsylvania,,Fayette County,PA,county
 2232,Delaware County Pennsylvania,,Delaware County,PA,county
 2237,Passyunk,Passyunk,Philadelphia County,PA,town
@@ -328,7 +327,7 @@
 2320,Trenton New Jersey,Trenton,Hunterdon County,NJ,town
 2333,New Brunswick New Jersey,New Brunswick,Middlesex County,NJ,town
 2334,Mount Holley New Jersey,Mount Holley,Burlington County,NJ,town
-2345,Kensington,Kensington,Westmoreland County,PA,town
+2345,Kensignton,,,PA,state
 2353,Dauphin County,,Dauphin County,PA,county
 2358,Chester,,Chester County,PA,county
 2359,Burlington New Jersey,Burlington New Jersey,Burlington County,PA,town
@@ -345,13 +344,16 @@
 2483,Hatter Philadelphia,Philadelphia,Philadelphia County,PA,town
 2509,Accomack County Virginia,,Accomack County,VA,county
 2513,Princeton New Jersey,Princeton,Middlesex County,NJ,town
+2515,Kensington,Kensington,Westmoreland County,PA,town
 2523,Albany,Albany,Albany County,NY,town
 2529,Northampton County,,Northampton County,PA,county
 2535,King George Co Virginia,,King George County,VA,county
 2550,Southwark,Southwark,Philadelphia County,PA,town
 2552,Westmoreland County Pennsylvania,,Westmoreland County,PA,county
+2580,Franklin County Pennsylvania,,Franklin County,PA,county
 2583,Wilmington Delaware,,New Castle County,DE,county
-2594,Burlington New Jersey,Burlington,Burlington County,NJ,town
+2584,Montgomery County Pennsylvania,,Montgomery County,PA,county
+2594,Berlington New Jersey,Berlington,Burlington County,NJ,town
 2604,Northumberland County Pennsylvania,,Northumberland County,PA,county
 2609,Sunbury Pennsylvania,Sunbury,Northumberland County,PA,town
 2615,Church on Philadelphia,Philadelphia,Philadelphia County,PA,town
@@ -362,7 +364,6 @@
 2641,Philadelphila,Philadelphia,Philadelphia County,PA,town
 2649,New Castle County Delaware State,,New Castle County,DE,state
 2655,Somerset County Maryland,,Somerset County,MD,county
-2672,Berks County,,Berks County,PA,county
 2675,York County,,York County,PA,county
 2701,Northumberland County Virginia,,,PA,state
 2725,Newton Township New Jersey,Newton ship,Sussex County,NJ,town
@@ -451,6 +452,7 @@
 3582,Abbeville,Abbeville,Abbeville County,SC,town
 3589,Long Cames,Long Cames,,SC,state_flag
 3592,Toogoodoo,Toogoodoo,Charleston County,SC,town
+3607,Charlestom,Charleston,Charleston County,SC,town
 3614,Bourdeaux,Bourdeaux,,FR,other
 3633,The River May,The River May,,VI,other
 3648,St Pauls,St Pauls,Clarendon County,SC,town
@@ -458,467 +460,3 @@
 3679,Richard County,,Richland County,SC,county
 3705,Savannah,Savannah,,SC,state_flag
 3707,Dorchester,Dorchester,Charleston County,SC,town
-=======
-,orig_town,town,county,state
-0,Hartford,Hartford,Hartford County,CT
-1,Bolton,Bolton,Tolland County,CT
-2,Rhode Island,,,RI
-5,Wethersfield,Wethersfield,Hartford County,CT
-6,Lyme,Lyme,New London County,CT
-8,New Haven,New Haven,New Haven County,CT
-9,Farmington,Farmington,Hartford County,CT
-10,New London,New London,New London County,CT
-14,Cornwall,Cornwall,Litchfield County,CT
-18,Stamford,Stamford,Fairfield County,CT
-20,East Hartford,East Hartford,Hartford County,CT
-22,Bristol,Bristol,Hartford County,CT
-24,Lebanon,Lebanon,New London County,CT
-25,Windsor,Windsor,Hartford County,CT
-26,Southhampton,Hampton,Windham County,CT
-27,Suffield,Suffield,Hartford County,CT
-30,Chatham,Chatham,Middlesex County,CT
-32,Berlin,Berlin,Hartford County,CT
-33,Glastonbury,Glastonbury,Hartford County,CT
-35,Saybrook,Saybrook,Middlesex County,CT
-37,Stafford,Stamford,Tolland County,CT
-40,Hebron,Hebron,Tolland County,CT
-41,Middletown,Middletown,Middlesex County,CT
-42,,,,CT
-46,East Windsor,East Windsor,Hartford County,CT
-50,Boston,Boston,Suffolk County,MA
-52,Norwich,Norwich,New London County,CT
-54,Springfield,Springfield,Hampshire County,MA
-60,Preston,Preston,New London County,CT
-62,Sharon,Sharon,Litchfield County,CT
-64,Somers,Somers,Tolland County,CT
-67,Goshen,Goshen,Litchfield County,CT
-69,Torrington,Torrington,Litchfield County,CT
-72,Watertown,Watertown,Litchfield County,CT
-78,Stonington,Stonington,New London County,CT
-79,Colchester,Colchester,New London County,CT
-85,Fairfield,Fairfield,Fairfield County,CT
-87,Guilford,Guilford,New Haven County,CT
-91,Enfield,Enfield,Hartford County,CT
-93,Plainfield,Plainfield,Windham County,CT
-98,Coventry,Coventry,Tolland County,CT
-103,State of New York,State of New York,,NY
-106,Groton,Groton,New London County,CT
-110,Mansfield,Mansfield,Tolland County,CT
-119,Bozrah,Bozrah,New London County,CT
-120,Derby,Derby,New Haven County,CT
-131,Huntington,Huntington,Fairfield County,CT
-132,Woodstock,Woodstock,Windham County,CT
-134,Windham,Windham,Windham County,CT
-148,Stratford,Stratford,Fairfield County,CT
-160,Brooklyn,Brooklyn,Windham County,CT
-168,State of Vermont,State of Vermont,,VT
-169,Haddam,Haddam,Middlesex County,CT
-178,Tolland,Tolland,Tolland County,CT
-179,Danbury,Danbury,Fairfield County,CT
-188,Newington,Newington,Hartford County,CT
-192,Litchfield,Litchfield,Litchfield County,CT
-205,Tyringham MA,Tyringham,Berkshire County,MA
-207,Milford,Milford,New Haven County,CT
-212,Pomfret,Pomfret,Windham County,CT
-224,Killingworth,Killingworth,Middlesex County,CT
-228,Sturbridge MA,Sturbridge MA,Worcester County,MA
-245,Newport State of Rhode Island,Newport,Newport County,RI
-249,Granby,Granby,Hartford County,CT
-272,Roxbury,Roxbury,Litchfield County,CT
-274,New Hartford,Hartford,Litchfield County,CT
-297,Northampton,Hampton,Windham County,CT
-303,East Haddam,Haddam,Middlesex County,CT
-318,Greenwich,Greenwich,Fairfield County,CT
-323,New Milford,New Milford,Litchfield County,CT
-336,Canaan,Canaan,Litchfield County,CT
-342,Montville,Montville,New London County,CT
-355,Norwalk,Norwalk,Fairfield County,CT
-361,Providence,Providence,Providence County,RI
-390,City of New York,City of New York,,NY
-392,Tyringham Massachusetts,Tyringham,Berkshire County,MA
-399,Canterbury,Canterbury,Windham County,CT
-400,Charleston State of New Hampshire,Charleston,Cheshire County,NH
-401,New York,,,NY
-403,Branford,Branford,New Haven County,CT
-404,Ashford,Ashford,Windham County,CT
-433,Willington,Willington,Tolland County,CT
-438,Hadley Massachusetts,Hadley,Hampshire County,MA
-458,Southbury,Southbury,New Haven County,CT
-476,Reading,Reading,Fairfield County,CT
-489,Boston state Massachusetts,Boston,Suffolk County,MA
-490,Worcester State Massachusetts,Worcester,Worcester County,MA
-495,North Haven,North Haven,New Haven County,CT
-513,Symsbury,Symsbury,Hartford County,CT
-527,Woodbury,Woodbury,Litchfield County,CT
-536,State Vermont,State Vermont,,VT
-537,Vermont,Vermont,,CT
-544,Thompson,Thompson,Windham County,CT
-553,London,New London,New London County,CT
-611,Hampton,Hampton,Windham County,CT
-621,Franklin,Franklin,New London County,CT
-639,Portsmouth,Portsmouth,Rockingham County,NH
-644,North Hampshire,North Hampshire,,NH
-666,Pittsfield,Pittsfield,Berkshire County,MA
-668,Cornwell,Cornwall,Litchfield County,CT
-681,Cheshire,Cheshire,New Haven County,CT
-691,Voluntown,Volentown,New London County,CT
-699,Cambridge,Cambridge,Middlesex County,MA
-732,Salisbury,Salisbury,Litchfield County,CT
-737,Brooklyne,Brooklyn,Windham County,CT
-745,Weston,Weston,Fairfield County,CT
-749,Wallingford,Wallingford,New Haven County,CT
-750,State of Georgia,State of Georgia,,GA
-755,Connecticut,,,CT
-756,East Haven,East Haven,New Haven County,CT
-763,Ellington,Ellington,Tolland County,CT
-769,Stonnington,Stonington,New London County,CT
-780,Durham,Durham,Middlesex County,CT
-817,Portsmouth New Hampshire,Portsmouth,Rockingham County,NH
-833,Granby Massachusetts,Granby,Hampshire County,MA
-840,Long Island,Long Island,,NY
-851,Long Meadow Massachusetts,Long Meadow,Hampshire County,MA
-855,State of New Hampshire,State of New Hampshire,,NH
-863,Waterbury,Waterbury,New Haven County,CT
-898,Norfolk,Norfolk,Litchfield County,CT
-935,Volentown,Volentown,New London County,CT
-943,Ridgefield,Ridgefield,Fairfield County,CT
-967,Savannah,Savannah,Chatham County,GA
-968,,,,GA
-970,Charleston,Charleston,Charleston County,SC
-971,Philadelphia,Philadelphia,Philadelphia County,PA
-973,Maryland,,,MD
-977,Effingham County,,Effingham County,GA
-978,South Carolina,,,SC
-982,Charleston  South Carolina,Charleston,Charleston County,SC
-986,Augusta,Augusta,Richmond County,GA
-988,Charleston South Carolina,Charleston,Charleston County,SC
-1000,Portsmouth Virginia,Portsmouth,Rockingham County,VA
-1002,Carolina,Carolina,,SC
-1003,Columbia County,,Richmond County,GA
-1004,Baltimore,Baltimore,Baltimore County,MD
-1008,Georgia,,,GA
-1021,George Town,George,Cecil County,MD
-1022,Prince Georges County,,Prince Georges County,MD
-1023,Harford County,,Harford County,MD
-1024,St Marys County,,St Marys County,MD
-1026,Annapolis,Annapolis,Anne Arundel County,MD
-1028,Frederick Town,Frederick,Frederick County,MD
-1029,Virginia,,,VA
-1033,Baltimore County,,Baltimore County,MD
-1036,Anne Arundel County,,Anne Arundel County,MD
-1038,Baltimore Town,Baltimore,Baltimore County,MD
-1039,Frederick County,,Frederick County,MD
-1050,Somerset County,,Somerset County,MD
-1053,Bladensburg,Bladensburg,Prince Georges County,MD
-1054,Caroline County,,Caroline County,MD
-1055,Cambridge,Cambridge,Dorchester County,MD
-1058,Virgina,,,VA
-1059,Georges Town,George,Cecil County,MD
-1065,Washington County,,Washington County,MD
-1066,Kent County,,Kent County,MD
-1070,Charles County,,Charles County,MD
-1071,Montgomery County,,Montgomery County,MD
-1075,Calver County,,Calvert County,MD
-1076,Queen Annes County,,Queen Annes County,MD
-1092,Talbot County,,Talbot County,MD
-1093,Calvert County,,Calvert County,MD
-1102,Talbot,,Talbot County,MD
-1112,Frederick,Frederick,Frederick County,MD
-1128,Cecil County,,Cecil County,MD
-1151,Dorchester County,,Dorchester County,MD
-1157,Pennsylvania,,,PA
-1170,Worcester County,,Worcester County,MD
-1179,Alexandria State of Virginia,Alexandria,Fairfax County,VA
-1200,George town,George,Cecil County,MD
-1295,Allegany County,,Allegany County,MD
-1400,Doden Maryland,Doden,,MD
-1406,,,,MD
-1417,Isaac,Isaac,,MD
-1493,Frederick County Maryland,,Frederick County,MD
-1542,Edenton,Edenton,Chowan County,NC
-1544,Wayne County,,Wayne County,NC
-1547,Richmond Virginia,Richmond,Henrico County,VA
-1548,Newbern,Newbern,Craven County,NC
-1549,Rowan County,,Rowan County,NC
-1553,Warren County,,Warren County,NC
-1554,Tarborugh,Tarborugh,Edgecombe County,NC
-1558,Murfrees Borough,Murfrees Borough,Hertford County,NC
-1559,Perquimans County,,Perquimans County,NC
-1560,Mecklenburg County,,Mecklenburg County,NC
-1562,Fayetteville,Fayetteville,Cumberland County,NC
-1563,Wilmington,Wilmington,New Hanover County,NC
-1564,Petersburg Virginia,Petersburg,Hampshire County,VA
-1565,Edgecombe County,,Edgecombe County,NC
-1566,Pitt County,,Pitt County,NC
-1567,Salisbury,Salisbury,Rowan County,NC
-1570,Halifax,Halifax,Halifax County,NC
-1572,Montgomery County Maryland,,Montgomery County,MD
-1575,Washington,Washington,Beaufort County,NC
-1584,Eustatia,Eustatia,,BVI
-1588,North Carolina,,,NC
-1589,Currituck County,,Currituck County,NC
-1595,Hillsborough,Hillsborough,Orange County,NC
-1596,Rockingham County,,Rockingham County,NC
-1604,,,,NC
-1607,Exeter,Exeter,Rockingham County,NH
-1608,Rockingham,,Rockingham County,NH
-1609,Merrimac,Merrimac,Hillsborough County,NH
-1618,Kittery,Kittery,,MA
-1622,Deerfield,Deerfield,Rockingham County,NH
-1624,Greenland,Greenland,Rockingham County,NH
-1625,,,,NH
-1626,Kingstown,Kingstown,Rockingham County,NH
-1627,Andover,Andover,Essex County,MA
-1628,Kensington,Kensington,Rockingham County,NH
-1629,Hampton,Hampton,Rockingham County,NH
-1630,North Hampton,Hampton,Rockingham County,NH
-1633,Newbury,Newbury,Hillsborough County,NH
-1635,Candia,Candia,Rockingham County,NH
-1639,Salem,Salem,Essex County,MA
-1641,Marbury,Marbury,Strafford County,NH
-1642,London,London,Rockingham County,NH
-1644,Newbury Port,Newbury Port,Essex County,MA
-1648,Salem,Salem,Rockingham County,NH
-1650,Glouster,Glouster,,NH
-1654,Canterbury,Canterbury,Rockingham County,NH
-1660,York,York,,NH
-1664,New Castle,New Castle,Rockingham County,NH
-1665,Wells,Wells,,NH
-1668,Beverly,Beverly,Essex County,MA
-1670,Sandwich,Sandwich,Strafford County,NH
-1671,Pembroke,Pembroke,Hillsborough County,NH
-1673,Gilmantown,Gilmantown,Strafford County,NH
-1677,Pelham,Pelham,Hillsborough County,NH
-1679,Situate,Situate,Plymouth County,MA
-1681,Concord,Concord,Grafton County,NH
-1682,Ipswich,Ipswich,Essex County,MA
-1683,Barrington,Barrington,Strafford County,NH
-1686,Rowley,Rowley,Essex County,MA
-1687,Newtown,Newtown,Rockingham County,NH
-1692,South Hampton,Hampton,Rockingham County,NH
-1693,Tamworth,Tamworth,Strafford County,NH
-1699,Amherst,Amherst,Hillsborough County,NH
-1701,Hopkinton,Hopkinton,Hillsborough County,NH
-1704,Acworth,Acworth,Cheshire County,NH
-1705,Somersworth,Somersworth,Strafford County,NH
-1706,Haverhill,Haverhill,Essex County,MA
-1711,Nottingham,Nottingham,Rockingham County,NH
-1713,Charlestown,Charleston,Cheshire County,NH
-1721,Stoughton,Stoughton,Suffolk County,MA
-1725,Wakefield,Wakefield,Strafford County,NH
-1730,Londonberry,London,Rockingham County,NH
-1734,Salisbury,Salisbury,Hillsborough County,NH
-1741,Durham,Durham,Strafford County,NH
-1759,Hollis,Hollis,Hillsborough County,NH
-1780,Dover,Dover,Strafford County,NH
-1797,Brintwood,Brintwood,Rockingham County,NH
-1804,Roxbury,Roxbury,Suffolk County,MA
-1806,Keene,Keene,Cheshire County,NH
-1809,Rye,Rye,Rockingham County,NH
-1815,Almsbury,Almsbury,Essex County,MA
-1826,Lancaster,Lancaster,,PA
-1833,Philadelphia County,Philadelphia,,PA
-1835,Bucks County Pennsylvania,Bucks,,PA
-1837,Carlisle Pennsylvania,Carlisle,,PA
-1841,Germantown,Germantown,,PA
-1858,Franklin County,Franklin,,PA
-1861,New Castle Delaware,,New Castle County,DE
-1867,Reading,Reading,,PA
-1880,Bethlehem,Bethlehem,,PA
-1891,New Jersey,,,NJ
-1903,,,,PA
-1915,Westmoreland,Westmoreland,,PA
-1918,Blockley,Blockley,,PA
-1920,Alexandria Virginia,Alexandria,Fairfax County,VA
-1923,Montgomery,Montgomery,,PA
-1924,W Callisters Town,W Callisters,,PA
-1925,Huntington New Jersey,Huntington,,NJ
-1930,Cumberland,,,PA
-1938,Delaware,Delaware,,PA
-1942,State of Delawere,State of Delawere,,DE
-1947,Cambridge Massachusetts,Cambridge,Middlesex County,MA
-1959,Massachusetts,,,MA
-1977,Reading Pennsylvania,Reading,,PA
-1978,Tulpehocken,Tulpehocken,,PA
-1981,,,,VA
-1988,Chester County,,,PA
-2002,Connecticutt,Connecticutt,,CT
-2005,Armstrong,Armstrong,,PA
-2022,Bucks County,Bucks,,PA
-2048,Reading Berks County,Reading Berks,,PA
-2056,County of Philadelphia,Philadelphia,,PA
-2063,Northumb Country,Northumb Country,,PA
-2094,Northan Liberties,,,PA
-2133,Montgomery County,Montgomery,,PA
-2147,Delaware Newcastle County,,New Castle County,DE
-2157,Chester County Pennsylvania,,,PA
-2158,York Town Pennsylvania,York,,PA
-2169,Lancaster Pennsylvania,Lancaster,,PA
-2171,Dauphin County Pennsylvania,Dauphin,,PA
-2172,Allegheny County Pennsylvania,Allegheny,,PA
-2175,Louden County Virginia,,Loudoun County,VA
-2182,Borden Town,Borden,,PA
-2184,Chester Co Pennsylvania,,,PA
-2185,The N Lib of Philadelphia,Philadelphia,,PA
-2187,Pennsylvania Berks County,Berks,,PA
-2189,Pennsylvania Montgomery County,Montgomery,,PA
-2191,Franklin County Pennsylvania,Franklin,,PA
-2199,Charleston South Carolina,Charleston South Carolina,,PA
-2205,Pittsburgh Pennsylvania,Pittsburgh,,PA
-2207,Lancaster County Pennsylvania,Lancaster,,PA
-2210,Brunswick New Jersey,New Brunswick,Middlesex County,NJ
-2214,St Eustatia,St Eustatia,,PA
-2216,Berks County Pennsylvania,Berks,,PA
-2242,Fayette County Pennsylvania,Fayette,,PA
-2250,Delaware County Pennsylvania,Delaware,,PA
-2255,Passyunk,Passyunk,,PA
-2267,Northampton County Pennsylvania,Northampton,,PA
-2269,Chester County Pennsylvaina,,,PA
-2273,Northern Liberties,,,PA
-2278,Northum County Pennsylvania,Northumberland,,PA
-2282,Fredericksburg Virginia,Fredericksburg,Spotsylvania County,VA
-2285,Chambersburgh Pennsylvania,Chambersburgh,,PA
-2287,Fredrick Co Maryland,,Frederick County,MD
-2295,Frankford Philadelphia County,Philadelphia,,PA
-2299,Ohio County Virginia,,Ohio County,VA
-2303,Dauphincoy Pennsylvania,Dauphincoy,,PA
-2308,York County Pennsylvania,York,,PA
-2311,Cape May New Jersey,Cape May,Cape May County,NJ
-2313,Cumb County Pennsylvania,,,PA
-2329,Delaware State,Delaware State,,DE
-2338,Trenton New Jersey,Trenton,Hunterdon County,NJ
-2351,New Brunswick New Jersey,New Brunswick,Middlesex County,NJ
-2352,Mount Holley New Jersey,Mount Holley,Burlington County,NJ
-2363,Kensington,Kensington,,PA
-2371,Dauphin County,Dauphin,,PA
-2376,Chester,Chester,,PA
-2377,Burlington New Jersey,Burlington New Jersey,,PA
-2379,Allegheny County,Allegheny,,PA
-2427,Chester and County,,,PA
-2445,German Town,Germantown,,PA
-2459,Westmoreland County,Westmoreland,,PA
-2463,Middlesex New Jersey,Middlesex,Middlesex County,NJ
-2468,Dauphin and Company,Dauphin,,PA
-2479,The Northern Libert,The Northern Libert,,PA
-2486,Lancaster County,Lancaster,,PA
-2487,Kent Company Delaware,,Kent County,DE
-2495,Northumberland County,Northumberland,,PA
-2501,Hatter Philadelphia,Philadelphia,,PA
-2527,Accomack County Virginia,,Accomack County,VA
-2531,Princeton New Jersey,Princeton,Middlesex County,NJ
-2541,Albany,Albany,,NY
-2547,Northampton County,Northampton,,PA
-2553,King George Co Virginia,,King George County,VA
-2568,Southwark,Southwark,,PA
-2570,Westmoreland County Pennsylvania,Westmoreland,,PA
-2601,Wilmington Delaware,,New Castle County,DE
-2602,Montgomery County Pennsylvania,Montgomery,,PA
-2612,Berlington New Jersey,Berlington,Burlington County,NJ
-2622,Northumberland County Pennsylvania,Northumberland,,PA
-2627,Sunbury Pennsylvania,Sunbury,,PA
-2633,Church on Philadelphia,Philadelphia,,PA
-2641,James City County Virginia,,James City County,VA
-2645,Pittsburgh,Pittsburgh,,PA
-2656,Monmouth County New Jersey,,Monmouth County,NJ
-2658,Philadelphila,Philadelphia,,PA
-2666,New Castle County Delaware State,,New Castle County,DE
-2672,Somerset County Maryland,,Somerset County,MD
-2689,Berks County,Berks,,PA
-2692,York County,York,,PA
-2717,Northumberland County Virginia,Northumberland,,PA
-2741,Newton Township New Jersey,Newton ship,Sussex County,NJ
-2764,Paxton Tot Dauphin County,Dauphin,,PA
-2772,Delaware County,Delaware,,PA
-2777,Cape May,Cape May,Cape May County,NJ
-2795,Bedford County,Bedford,,PA
-2810,Somerset County New Jersey,,Somerset County,NJ
-2828,York Town,York,,PA
-2832,Little Compton,Little Compton,Newport County,RI
-2833,Warren,Warren,Bristol County,RI
-2834,East Greenwich,East Greenwich,Kent County,RI
-2835,Johnston,Johnston,Providence County,RI
-2836,Scituate,Scituate,Providence County,RI
-2839,Coventry,Coventry,Kent County,RI
-2841,Rehoboth,Rehoboth,Bristol County,MA
-2843,Newport,Newport,Newport County,RI
-2847,Dighton,Dighton,Bristol County,MA
-2848,Cumberland,,Providence County,RI
-2850,South Kingston,South Kingston,Washington County,RI
-2851,North Hampton,North Hampton,Hampshire County,MA
-2853,Littleton,Littleton,Middlesex County,MA
-2854,Sutton,Sutton,Worcester County,MA
-2858,Gloucester,Gloucester,Providence County,RI
-2859,Ludlow,Ludlow,Hampshire County,MA
-2860,North Providence,North Providence,Providence County,RI
-2870,Foster,Foster,Providence County,RI
-2871,Warwick,Warwick,Kent County,RI
-2875,Liecester,Liecester,Worcester County,MA
-2878,Bristol,Bristol,Bristol County,RI
-2896,Smithfield,Smithfield,Providence County,RI
-2903,Newport in New Hampshire,Newport in,Cheshire County,NH
-2909,,,,RI
-2917,Barrington,Barrington,Bristol County,RI
-2931,Somerset,Somerset,Bristol County,MA
-2942,Cranston,Cranston,Providence County,RI
-2951,Charlestown,Charlestown,Washington County,RI
-2964,Grafton Massachusetts,Grafton,Worcester County,MA
-2973,Swansea,Swansea,Bristol County,MA
-2975,West Greenwich,West Greenwich,Kent County,RI
-3002,Bridgewater,Bridgewater,Plymouth County,MA
-3003,South Kingstone,South Kingston,Washington County,RI
-3009,Attleborough,Attleborough,Bristol County,MA
-3010,Johnson,Johnston,Providence County,RI
-3014,Portsmouth,Portsmouth,Newport County,RI
-3029,North Kingston,North Kingston,Washington County,RI
-3032,Exeter,Exeter,Washington County,RI
-3035,Richmond,Richmond,Washington County,RI
-3042,Tiverton,Tiverton,Newport County,RI
-3088,Falmouth Massachusetts,Falmouth,Barnstable County,MA
-3091,Dudley,Dudley,Worcester County,MA
-3138,Springfield,Springfield,,RI
-3171,Westport,Westport,Bristol County,MA
-3184,Chesterfield Massachusetts,Chesterfield,Hampshire County,MA
-3239,Freetown,Freetown,Bristol County,MA
-3242,North Kingstone,North Kingston,Washington County,RI
-3248,Norton,Norton,Bristol County,MA
-3268,North Kingstown,North Kingston,Washington County,RI
-3273,Stoughton now of Providence,Providence,Providence County,RI
-3291,Alexandria,Alexandria,Grafton County,NH
-3363,James Island,James Island,Charleston County,SC
-3379,Bermuda,Bermuda,,BM
-3393,Georgetown,Georgetown,Georgetown County,SC
-3402,Camden Planter,Camden,Lancaster County,SC
-3420,Virginia and Philadelphia,,,VA
-3438,St. Paul's,St Pauls,Clarendon County,SC
-3442,Williamsburgh,Williamsburgh,Greenbrier County,VA
-3444,Pee Dee,Pee Dee,Georgetown County,SC
-3445,St Helena,St Helena,Beaufort County,SC
-3454,Register of the Treasury,Register of the Treasury,,US
-3483,,,,FR
-3495,,,,SC
-3499,St. George,St. George,Charleston County,SC
-3500,Camden,Camden,Lancaster County,SC
-3504,St. Thomas,St. Thomas,,VI
-3509,New River,New River,Beaufort County,SC
-3517,St Johns,St Johns,Charleston County,SC
-3523,Winyaw,Winyaw,Georgetown County,SC
-3530,Broad River,Broad River,Beaufort County,SC
-3541,Columbia,Columbia,Richland County,SC
-3544,St Thomas,St Thomas,,BVI
-3549,St Andrews,St Andrews,Richland County,SC
-3550,Great Britain,Great Britain,,GB
-3581,Richard Sennings,Richard Sennings,,SC
-3590,96 District,96 District,Abbeville County,SC
-3597,Edinburgh,Edinburgh,,GB
-3603,Abbeville,Abbeville,Abbeville County,SC
-3610,Long Cames,Long Cames,,SC
-3613,Toogoodoo,Toogoodoo,Charleston County,SC
-3628,Charlestom,Charleston,Charleston County,SC
-3635,Bourdeaux,Bourdeaux,,FR
-3654,The River May,The River May,,VI
-3669,St Pauls,St Pauls,Clarendon County,SC
-3697,Ninety six District,96 District,Laurens County,SC
-3700,Richard County,,Richland County,SC
-3727,Savannah,Savannah,,SC
-3729,Dorchester,Dorchester,Charleston County,SC
->>>>>>> fdfad07aea6a38000b6949a498734ac619f350ec
