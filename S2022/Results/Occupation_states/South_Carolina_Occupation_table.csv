@@ -1,42 +1,42 @@
-,Occupations,6p_Total,6p_def_Total,3p_Total,count,state,Average (6p),6p_Total_pct,6p_def_Total_pct,3p_Total_pct,count_pct
-0,,860919.77,427508.82,300353.04,53,South Carolina,16243.77,82.02,81.68,69.15,21.81
-26,merchant,98952.59,45576.8,70502.24,72,South Carolina,1374.34,9.43,8.71,16.23,29.63
-28,planter,15676.67,8549.33,11013.0,26,South Carolina,602.95,1.49,1.63,2.54,10.7
-40,widow,11106.92,4644.46,10422.35,11,South Carolina,1009.72,1.06,0.89,2.4,4.53
-15,executor,7971.02,4536.51,6274.82,20,South Carolina,398.55,0.76,0.87,1.44,8.23
-27,physician,7114.0,3656.0,4126.0,6,South Carolina,1185.67,0.68,0.7,0.95,2.47
-6,blockmaker,5386.0,2742.0,2757.0,1,South Carolina,5386.0,0.51,0.52,0.63,0.41
-13,consul,4692.0,2445.0,5158.0,1,South Carolina,4692.0,0.45,0.47,1.19,0.41
-8,broker,3483.04,2045.52,1953.48,2,South Carolina,1741.52,0.33,0.39,0.45,0.82
-3,attorney,3307.48,1805.75,2525.9,5,South Carolina,661.5,0.32,0.35,0.58,2.06
-11,"clerk, administrator",3222.0,1710.0,1145.0,1,South Carolina,3222.0,0.31,0.33,0.26,0.41
-20,factor,3108.0,1555.0,1610.0,3,South Carolina,1036.0,0.3,0.3,0.37,1.23
-18,"executor, physician",3004.0,1553.0,1951.0,1,South Carolina,3004.0,0.29,0.3,0.45,0.41
-38,trustee,2441.0,1270.0,1210.0,1,South Carolina,2441.0,0.23,0.24,0.28,0.41
-24,judges,2275.0,1187.0,1259.0,1,South Carolina,2275.0,0.22,0.23,0.29,0.41
-33,sheriff,2264.67,1132.33,1303.0,1,South Carolina,2264.67,0.22,0.22,0.3,0.41
-21,gentleman,2098.63,1149.31,2360.62,2,South Carolina,1049.32,0.2,0.22,0.54,0.82
-17,"executor, merchant",1926.0,1151.0,1824.0,2,South Carolina,963.0,0.18,0.22,0.42,0.82
-5,blacksmith,1471.0,785.0,420.0,1,South Carolina,1471.0,0.14,0.15,0.1,0.41
-1,administrator,1369.0,3182.0,1262.0,3,South Carolina,456.33,0.13,0.61,0.29,1.23
-30,"planter, attorney",848.0,525.0,422.0,1,South Carolina,848.0,0.08,0.1,0.1,0.41
-14,esquire,825.41,413.2,942.54,1,South Carolina,825.41,0.08,0.08,0.22,0.41
-10,carpenter,748.0,574.0,50.0,5,South Carolina,149.6,0.07,0.11,0.01,2.06
-2,"assignee, physician",708.0,453.0,405.0,1,South Carolina,708.0,0.07,0.09,0.09,0.41
-25,mariner,661.47,386.24,800.93,3,South Carolina,220.49,0.06,0.07,0.18,1.23
-36,spinster,490.0,294.0,444.0,2,South Carolina,245.0,0.05,0.06,0.1,0.82
-19,"executor, treasurer",454.0,328.0,166.0,1,South Carolina,454.0,0.04,0.06,0.04,0.41
-35,shopkeeper,454.0,326.0,80.0,3,South Carolina,151.33,0.04,0.06,0.02,1.23
-31,"planter, executor",450.0,422.0,0.0,1,South Carolina,450.0,0.04,0.08,0.0,0.41
-37,tanner,426.0,263.0,454.0,1,South Carolina,426.0,0.04,0.05,0.1,0.41
-39,vendue master,353.8,181.4,333.31,1,South Carolina,353.8,0.03,0.03,0.08,0.41
-29,"planter, administrator",332.0,264.0,394.0,1,South Carolina,332.0,0.03,0.05,0.09,0.41
-34,ship wright,207.0,153.0,0.0,1,South Carolina,207.0,0.02,0.03,0.0,0.41
-32,printer,204.0,102.0,134.0,1,South Carolina,204.0,0.02,0.02,0.03,0.41
-16,"executor, attorney",167.0,133.0,0.0,1,South Carolina,167.0,0.02,0.03,0.0,0.41
-12,comtroller,127.0,113.0,56.0,1,South Carolina,127.0,0.01,0.02,0.01,0.41
-9,cabinet maker,120.0,60.0,0.0,1,South Carolina,120.0,0.01,0.01,0.0,0.41
-4,auctioneer,75.0,37.0,0.0,1,South Carolina,75.0,0.01,0.01,0.0,0.41
-7,bricklayer,72.0,86.0,93.0,1,South Carolina,72.0,0.01,0.02,0.02,0.41
-23,hair dresser,50.0,25.0,135.0,1,South Carolina,50.0,0.0,0.0,0.03,0.41
-22,guardian,32.0,66.0,0.0,1,South Carolina,32.0,0.0,0.01,0.0,0.41
+,Occupations,6p_Total,count,state,Average (6p),6p_Total_pct,count_pct
+0,,1288428.59,74,South Carolina,17411.2,81.91,18.45
+26,merchant,144529.4,155,South Carolina,932.45,9.19,38.65
+29,planter,24226.0,30,South Carolina,807.53,1.54,7.48
+40,widow,15751.38,15,South Carolina,1050.09,1.0,3.74
+18,executor,12507.53,22,South Carolina,568.52,0.8,5.49
+28,physician,10770.0,9,South Carolina,1196.67,0.68,2.24
+9,blockmaker,8128.0,2,South Carolina,4064.0,0.52,0.5
+16,consul,7137.0,4,South Carolina,1784.25,0.45,1.0
+11,broker,5528.56,12,South Carolina,460.71,0.35,2.99
+4,attorney,5113.23,8,South Carolina,639.15,0.33,2.0
+14,"clerk, administrator",4932.0,3,South Carolina,1644.0,0.31,0.75
+20,factor,4663.0,3,South Carolina,1554.33,0.3,0.75
+19,"executor, physician",4557.0,2,South Carolina,2278.5,0.29,0.5
+1,administrator,4551.0,4,South Carolina,1137.75,0.29,1.0
+38,trustee,3711.0,1,South Carolina,3711.0,0.24,0.25
+24,judges,3462.0,1,South Carolina,3462.0,0.22,0.25
+32,sheriff,3397.0,2,South Carolina,1698.5,0.22,0.5
+21,gentleman,3247.94,3,South Carolina,1082.65,0.21,0.75
+27,"merchant, executor",3077.0,6,South Carolina,512.83,0.2,1.5
+8,blacksmith,2256.0,1,South Carolina,2256.0,0.14,0.25
+6,"attorney, planter",1373.0,2,South Carolina,686.5,0.09,0.5
+13,carpenter,1322.0,5,South Carolina,264.4,0.08,1.25
+17,esquire,1238.62,1,South Carolina,1238.62,0.08,0.25
+3,"assignee, physician",1161.0,2,South Carolina,580.5,0.07,0.5
+25,mariner,1047.71,4,South Carolina,261.93,0.07,1.0
+30,"planter, executor",872.0,4,South Carolina,218.0,0.06,1.0
+35,spinster,784.0,2,South Carolina,392.0,0.05,0.5
+37,"treasurer, executor",782.0,4,South Carolina,195.5,0.05,1.0
+34,shopkeeper,780.0,4,South Carolina,195.0,0.05,1.0
+36,tanner,689.0,1,South Carolina,689.0,0.04,0.25
+2,"administrator, planter",596.0,2,South Carolina,298.0,0.04,0.5
+39,vendue master,535.2,2,South Carolina,267.6,0.03,0.5
+33,ship wright,360.0,1,South Carolina,360.0,0.02,0.25
+31,printer,306.0,2,South Carolina,153.0,0.02,0.5
+5,"attorney, executor",300.0,2,South Carolina,150.0,0.02,0.5
+15,comtroller,240.0,1,South Carolina,240.0,0.02,0.25
+12,cabinet maker,180.0,1,South Carolina,180.0,0.01,0.25
+10,bricklayer,158.0,1,South Carolina,158.0,0.01,0.25
+7,auctioneer,112.0,1,South Carolina,112.0,0.01,0.25
+22,guardian,98.0,1,South Carolina,98.0,0.01,0.25
+23,hair dresser,75.0,1,South Carolina,75.0,0.0,0.25

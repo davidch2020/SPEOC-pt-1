@@ -279,7 +279,7 @@
 2101,Huntington New Jersey,NJ,,state
 2106,Cumberland,PA,Cumberland County,town
 2115,Delaware,PA,Delaware County,county
-2123,State of Delaware,DE,,state
+2123,State of Delawere,DE,,state
 2130,Cambridge Massachusetts,MA,Middlesex County,town
 2143,Massachusetts,MA,,state
 2168,Reading Pennsylvania,PA,Berks County,town
@@ -307,12 +307,12 @@
 2498,The N Lib of Philadelphia,PA,Philadelphia County,town
 2500,Pennsylvania Berks County,PA,Berks County,county
 2502,Pennsylvania Montgomery County,PA,Montgomery County,county
-2505,Pennsylvania Franklin County,PA,Franklin County,county
+2505,Franklin County Pennsylvania,PA,Franklin County,county
 2514,Charleston South Carolina,PA,Charleston County,town
 2520,Pittsburgh Pennsylvania,PA,Allegheny County,town
 2522,Lancaster County Pennsylvania,PA,Lancaster County,county
 2527,Brunswick New Jersey,NJ,Middlesex County,town
-2531,St Eustatia,PA,,state
+2531,St Eustalia,PA,,state
 2533,Berks County Pennsylvania,PA,Berks County,county
 2555,Berks County,PA,Berks County,county
 2560,Fayette County Pennsylvania,PA,Fayette County,county
@@ -335,7 +335,7 @@
 2675,Trenton New Jersey,NJ,Hunterdon County,town
 2691,New Brunswick New Jersey,NJ,Middlesex County,town
 2692,Mount Holley New Jersey,NJ,Burlington County,town
-2704,Kensignton,PA,,state
+2704,Kensington,PA,Westmoreland County,town
 2712,Dauphin County,PA,Dauphin County,county
 2717,Chester,PA,Chester County,county
 2718,Burlington New Jersey,PA,Burlington County,town
@@ -352,16 +352,14 @@
 2871,Hatter Philadelphia,PA,Philadelphia County,town
 2902,Accomack County Virginia,VA,Accomack County,county
 2906,Princeton New Jersey,NJ,Middlesex County,town
-2909,Kensington,PA,Westmoreland County,town
 2920,Albany,NY,Albany County,town
 2927,Northampton County,PA,Northampton County,county
 2934,King George Co Virginia,VA,King George County,county
 2950,Southwark,PA,Philadelphia County,town
 2952,Westmoreland County Pennsylvania,PA,Westmoreland County,county
-2982,Franklin County Pennsylvania,PA,Franklin County,county
 2987,Wilmington Delaware,DE,New Castle County,county
 2988,Montgomery County Pennsylvania,PA,Montgomery County,county
-3001,Berlington New Jersey,NJ,Burlington County,town
+3001,Burlington New Jersey,NJ,Burlington County,town
 3011,Northumberland County Pennsylvania,PA,Northumberland County,county
 3016,Sunbury Pennsylvania,PA,Northumberland County,town
 3024,Church on Philadelphia,PA,Philadelphia County,town
@@ -433,7 +431,6 @@
 3745,North Kingstown,RI,Washington County,town
 3750,Stoughton now of Providence,RI,Providence County,town
 3770,Alexandria,NH,Grafton County,town
-3782,Smithfeild,RI,Providence County,town
 3954,James Island,SC,Charleston County,town
 3970,Bermuda,BM,,other
 3984,Georgetown,SC,Georgetown County,town

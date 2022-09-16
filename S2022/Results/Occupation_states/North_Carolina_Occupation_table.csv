@@ -1,7 +1,7 @@
-,Occupations,6p_Total,6p_def_Total,3p_Total,count,state,Average (6p),6p_Total_pct,6p_def_Total_pct,3p_Total_pct,count_pct
-0,,31574.67,16922.33,24847.0,42,North Carolina,751.78,80.49,76.74,76.81,79.25
-2,esquire,2971.0,1681.0,3030.0,2,North Carolina,1485.5,7.57,7.62,9.37,3.77
-5,merchant,2524.0,1410.0,1732.0,6,North Carolina,420.67,6.43,6.39,5.35,11.32
-1,doctor,2045.0,1022.0,1400.0,1,North Carolina,2045.0,5.21,4.63,4.33,1.89
-4,farmer,113.0,57.0,0.0,1,North Carolina,113.0,0.29,0.26,0.0,1.89
-3,executor,0.0,958.0,1339.0,1,North Carolina,0.0,0.0,4.34,4.14,1.89
+,Occupations,6p_Total,count,state,Average (6p),6p_Total_pct,count_pct
+0,,48497.0,52,North Carolina,932.63,79.14,74.29
+2,esquire,4652.0,5,North Carolina,930.4,7.59,7.14
+5,merchant,3934.0,10,North Carolina,393.4,6.42,14.29
+1,doctor,3067.0,1,North Carolina,3067.0,5.01,1.43
+3,executor,958.0,1,North Carolina,958.0,1.56,1.43
+4,farmer,170.0,1,North Carolina,170.0,0.28,1.43

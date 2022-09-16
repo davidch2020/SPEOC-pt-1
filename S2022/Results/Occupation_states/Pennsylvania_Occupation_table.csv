@@ -1,99 +1,99 @@
-,Occupations,6p_Total,6p_def_Total,3p_Total,count,state,Average (6p),6p_Total_pct,6p_def_Total_pct,3p_Total_pct,count_pct
-0,,642856.91,334977.95,347203.37,499,Pennsylvania,1288.29,33.27,33.76,36.96,60.05
-56,merchant,455681.0,232432.0,207838.0,90,Pennsylvania,5063.12,23.59,23.43,22.13,10.83
-61,"merchant, esquire",86823.0,44007.0,46019.0,3,Pennsylvania,28941.0,4.49,4.44,4.9,0.36
-27,"esquire, gentlewoman",76493.0,38247.0,20902.0,1,Pennsylvania,76493.0,3.96,3.86,2.23,0.12
-25,esquire,73139.0,37262.0,43974.0,20,Pennsylvania,3656.95,3.79,3.76,4.68,2.41
-9,broker,56361.0,29154.0,39543.0,14,Pennsylvania,4025.79,2.92,2.94,4.21,1.68
-31,executor,53118.0,26914.0,23596.0,16,Pennsylvania,3319.88,2.75,2.71,2.51,1.93
-62,"merchant, gentleman",41936.0,21267.0,17770.0,6,Pennsylvania,6989.33,2.17,2.14,1.89,0.72
-60,"merchant, druggist",38626.0,19413.0,11275.0,2,Pennsylvania,19313.0,2.0,1.96,1.2,0.24
-79,"scrivener, broker,  notary",32887.0,16887.0,16595.0,1,Pennsylvania,32887.0,1.7,1.7,1.77,0.12
-38,gentleman,32033.0,16268.0,11274.0,12,Pennsylvania,2669.42,1.66,1.64,1.2,1.44
-94,trustee,31487.0,16122.0,12344.0,9,Pennsylvania,3498.56,1.63,1.63,1.31,1.08
-10,"broker, junior",26791.0,13548.0,13622.0,1,Pennsylvania,26791.0,1.39,1.37,1.45,0.12
-68,minister,20435.0,10268.0,5618.0,2,Pennsylvania,10217.5,1.06,1.03,0.6,0.24
-51,"hatter, merchant",19122.0,9663.0,15689.0,2,Pennsylvania,9561.0,0.99,0.97,1.67,0.24
-2,administrator,16977.0,8889.0,6742.0,9,Pennsylvania,1886.33,0.88,0.9,0.72,1.08
-39,gentlewoman,15729.0,7261.0,6201.0,13,Pennsylvania,1209.92,0.81,0.73,0.66,1.56
-47,"guardian, merchant, estate",11668.0,5984.0,4984.0,1,Pennsylvania,11668.0,0.6,0.6,0.53,0.12
-30,estate,10534.0,5367.0,3093.0,3,Pennsylvania,3511.33,0.55,0.54,0.33,0.36
-66,"merchant, widow",9684.0,4842.0,2685.0,1,Pennsylvania,9684.0,0.5,0.49,0.29,0.12
-65,"merchant, shopkeeper",8456.0,4426.0,4286.0,3,Pennsylvania,2818.67,0.44,0.45,0.46,0.36
-73,printer,7989.0,4145.0,5085.0,3,Pennsylvania,2663.0,0.41,0.42,0.54,0.36
-92,trader,7273.0,3735.0,4253.0,1,Pennsylvania,7273.0,0.38,0.38,0.45,0.12
-33,"executor, hatter",7220.0,3611.0,1970.0,1,Pennsylvania,7220.0,0.37,0.36,0.21,0.12
-29,"esquire, post master",7136.0,3618.0,2072.0,1,Pennsylvania,7136.0,0.37,0.36,0.22,0.12
-14,carpenter,6349.0,3291.0,2159.0,3,Pennsylvania,2116.33,0.33,0.33,0.23,0.36
-16,clerk,6166.0,3436.0,3793.0,5,Pennsylvania,1233.2,0.32,0.35,0.4,0.6
-84,shopkeeper,6105.0,3201.0,2440.0,7,Pennsylvania,872.14,0.32,0.32,0.26,0.84
-15,city commissioner,5512.0,2583.0,1359.0,2,Pennsylvania,2756.0,0.29,0.26,0.14,0.24
-59,"merchant, carpenter",5144.0,2672.0,3049.0,1,Pennsylvania,5144.0,0.27,0.27,0.32,0.12
-4,baker,4725.0,2363.0,1449.0,2,Pennsylvania,2362.5,0.24,0.24,0.15,0.24
-21,currier,4609.0,2374.0,1732.0,1,Pennsylvania,4609.0,0.24,0.24,0.18,0.12
-42,"gentlewoman, widow",4548.0,2275.0,3795.0,1,Pennsylvania,4548.0,0.24,0.23,0.4,0.12
-69,negroe,4279.0,2139.0,1329.0,2,Pennsylvania,2139.5,0.22,0.22,0.14,0.24
-55,mariner,4161.14,2133.07,1421.34,2,Pennsylvania,2080.57,0.22,0.22,0.15,0.24
-28,"esquire, lawyer",4052.0,2076.0,3622.0,1,Pennsylvania,4052.0,0.21,0.21,0.39,0.12
-54,lawyer,3625.0,1813.0,1076.0,2,Pennsylvania,1812.5,0.19,0.18,0.11,0.24
-24,druggist,3483.0,1792.0,1079.0,1,Pennsylvania,3483.0,0.18,0.18,0.11,0.12
-13,candlekeeper,3374.0,1687.0,1007.0,1,Pennsylvania,3374.0,0.17,0.17,0.11,0.12
-52,inn keeper,3221.0,1761.0,1677.0,5,Pennsylvania,644.2,0.17,0.18,0.18,0.6
-37,furrier,3125.0,1612.0,1603.0,2,Pennsylvania,1562.5,0.16,0.16,0.17,0.24
-90,taylor,2797.0,1598.0,1064.0,5,Pennsylvania,559.4,0.14,0.16,0.11,0.6
-53,ironmonger,2703.0,1352.0,1484.0,1,Pennsylvania,2703.0,0.14,0.14,0.16,0.12
-88,surveyor,2628.0,1310.0,1339.0,1,Pennsylvania,2628.0,0.14,0.13,0.14,0.12
-5,"baker, merchant",2148.0,1124.0,720.0,1,Pennsylvania,2148.0,0.11,0.11,0.08,0.12
-50,"hatter, labourer",2130.0,1065.0,1304.0,1,Pennsylvania,2130.0,0.11,0.11,0.14,0.12
-3,assignee,2118.0,1059.0,1263.0,2,Pennsylvania,1059.0,0.11,0.11,0.13,0.24
-85,silversmith,2081.0,1141.0,577.0,1,Pennsylvania,2081.0,0.11,0.12,0.06,0.12
-58,"merchant, board builder",2073.0,1086.0,1334.0,1,Pennsylvania,2073.0,0.11,0.11,0.14,0.12
-1,accountant,2037.0,1018.0,1555.0,1,Pennsylvania,2037.0,0.11,0.1,0.17,0.12
-91,"taylor, shopkeeper",2030.0,1016.0,808.0,1,Pennsylvania,2030.0,0.11,0.1,0.09,0.12
-32,"executor, gentleman",2029.0,1064.0,580.0,1,Pennsylvania,2029.0,0.11,0.11,0.06,0.12
-46,guardian,1935.0,1018.0,782.0,3,Pennsylvania,645.0,0.1,0.1,0.08,0.36
-11,butcher,1865.0,982.0,641.0,1,Pennsylvania,1865.0,0.1,0.1,0.07,0.12
-36,farmer,1865.0,1124.0,1097.0,5,Pennsylvania,373.0,0.1,0.11,0.12,0.6
-48,"guardian, widow",1846.0,973.0,934.0,1,Pennsylvania,1846.0,0.1,0.1,0.1,0.12
-17,cloak maker,1829.0,964.0,664.0,1,Pennsylvania,1829.0,0.09,0.1,0.07,0.12
-86,skinner,1828.0,1007.0,780.0,1,Pennsylvania,1828.0,0.09,0.1,0.08,0.12
-70,physician,1770.0,935.0,540.0,1,Pennsylvania,1770.0,0.09,0.09,0.06,0.12
-63,"merchant, grocer",1751.0,925.0,924.0,1,Pennsylvania,1751.0,0.09,0.09,0.1,0.12
-87,spinster,1730.0,921.0,606.0,2,Pennsylvania,865.0,0.09,0.09,0.06,0.24
-95,widow,1689.0,957.0,860.0,3,Pennsylvania,563.0,0.09,0.1,0.09,0.36
-12,cabinet maker,1638.0,819.0,504.0,1,Pennsylvania,1638.0,0.08,0.08,0.05,0.12
-44,"governor, colonel, receiver general of land office, executor",1618.0,809.0,521.0,1,Pennsylvania,1618.0,0.08,0.08,0.06,0.12
-96,wooden planemaker,1575.0,838.0,437.0,1,Pennsylvania,1575.0,0.08,0.08,0.05,0.12
-8,book binder,1571.0,885.0,962.0,2,Pennsylvania,785.5,0.08,0.09,0.1,0.24
-81,ship wright,1520.0,809.0,576.0,2,Pennsylvania,760.0,0.08,0.08,0.06,0.24
-26,"esquire, attorney",1418.0,677.0,421.0,2,Pennsylvania,709.0,0.07,0.07,0.04,0.24
-76,rigger,1374.0,687.0,377.0,1,Pennsylvania,1374.0,0.07,0.07,0.04,0.12
-57,"merchant, blacksmith",1341.0,720.0,399.0,1,Pennsylvania,1341.0,0.07,0.07,0.04,0.12
-89,tanner,1316.0,708.0,886.0,2,Pennsylvania,658.0,0.07,0.07,0.09,0.24
-97,yeoman,1241.0,670.0,930.0,2,Pennsylvania,620.5,0.06,0.07,0.1,0.24
-6,blacksmith,1070.0,542.0,476.0,3,Pennsylvania,356.67,0.06,0.05,0.05,0.36
-78,school master,1029.0,564.0,385.0,1,Pennsylvania,1029.0,0.05,0.06,0.04,0.12
-22,doctor,1005.0,552.0,305.0,1,Pennsylvania,1005.0,0.05,0.06,0.03,0.12
-93,treasurer,795.0,398.0,455.0,1,Pennsylvania,795.0,0.04,0.04,0.05,0.12
-35,"executor, shopkeeper",764.0,382.0,241.0,1,Pennsylvania,764.0,0.04,0.04,0.03,0.12
-45,grocer,594.0,298.0,282.0,1,Pennsylvania,594.0,0.03,0.03,0.03,0.12
-7,boardinghouse keeper,584.0,292.0,295.0,2,Pennsylvania,292.0,0.03,0.03,0.03,0.24
-41,"gentlewoman, spinster",561.0,281.0,206.0,1,Pennsylvania,561.0,0.03,0.03,0.02,0.12
-18,coach maker,540.0,320.0,455.0,1,Pennsylvania,540.0,0.03,0.03,0.05,0.12
-40,"gentlewoman, administrator",522.0,310.0,287.0,1,Pennsylvania,522.0,0.03,0.03,0.03,0.12
-71,plaistr,489.0,294.0,215.0,1,Pennsylvania,489.0,0.03,0.03,0.02,0.12
-74,receiver general of land office,479.0,240.0,153.0,1,Pennsylvania,479.0,0.02,0.02,0.02,0.12
-34,"executor, professor",472.0,285.0,258.0,1,Pennsylvania,472.0,0.02,0.03,0.03,0.12
-64,"merchant, shoemaker",436.0,267.0,449.0,1,Pennsylvania,436.0,0.02,0.03,0.05,0.12
-77,sadler,406.0,203.0,228.0,1,Pennsylvania,406.0,0.02,0.02,0.02,0.12
-20,"cordwainer, shoemaker",306.0,202.0,250.0,1,Pennsylvania,306.0,0.02,0.02,0.03,0.12
-72,plasterer,266.0,134.0,241.0,1,Pennsylvania,266.0,0.01,0.01,0.03,0.12
-23,doorkeeper,253.0,176.0,148.0,1,Pennsylvania,253.0,0.01,0.02,0.02,0.12
-75,reverend,236.0,118.0,263.0,1,Pennsylvania,236.0,0.01,0.01,0.03,0.12
-43,goldsmith,164.0,82.0,78.0,1,Pennsylvania,164.0,0.01,0.01,0.01,0.12
-19,conveyancer,148.0,74.0,143.0,1,Pennsylvania,148.0,0.01,0.01,0.02,0.12
-67,miller,135.0,117.0,154.0,1,Pennsylvania,135.0,0.01,0.01,0.02,0.12
-49,hatter,112.0,57.0,86.0,1,Pennsylvania,112.0,0.01,0.01,0.01,0.12
-83,"shop keeper, shopkeeper",88.0,78.0,95.0,1,Pennsylvania,88.0,0.0,0.01,0.01,0.12
-82,shoemaker,83.0,41.0,64.0,1,Pennsylvania,83.0,0.0,0.0,0.01,0.12
-80,sheriff,77.0,39.0,32.0,1,Pennsylvania,77.0,0.0,0.0,0.0,0.12
+,Occupations,6p_Total,count,state,Average (6p),6p_Total_pct,count_pct
+0,,1003441.86,636,Pennsylvania,1577.74,34.02,51.88
+50,merchant,688113.0,192,Pennsylvania,3583.92,23.33,15.66
+56,"merchant, esquire",130830.0,18,Pennsylvania,7268.33,4.44,1.47
+35,"gentlewoman, esquire",114740.0,1,Pennsylvania,114740.0,3.89,0.08
+24,esquire,110401.0,32,Pennsylvania,3450.03,3.74,2.61
+9,broker,85515.0,50,Pennsylvania,1710.3,2.9,4.08
+26,executor,80032.0,18,Pennsylvania,4446.22,2.71,1.47
+58,"merchant, gentleman",63203.0,10,Pennsylvania,6320.3,2.14,0.82
+55,"merchant, druggist",58039.0,7,Pennsylvania,8291.29,1.97,0.57
+78,"scrivener,  notary, broker",49774.0,17,Pennsylvania,2927.88,1.69,1.39
+31,gentleman,48301.0,12,Pennsylvania,4025.08,1.64,0.98
+94,trustee,47609.0,12,Pennsylvania,3967.42,1.61,0.98
+45,"junior, broker",40339.0,12,Pennsylvania,3361.58,1.37,0.98
+65,minister,30703.0,2,Pennsylvania,15351.5,1.04,0.16
+60,"merchant, hatter",28785.0,7,Pennsylvania,4112.14,0.98,0.57
+2,administrator,25866.0,14,Pennsylvania,1847.57,0.88,1.14
+33,gentlewoman,22990.0,15,Pennsylvania,1532.67,0.78,1.22
+57,"merchant, estate, guardian",17652.0,6,Pennsylvania,2942.0,0.6,0.49
+25,estate,15901.0,3,Pennsylvania,5300.33,0.54,0.24
+63,"merchant, widow",14526.0,1,Pennsylvania,14526.0,0.49,0.08
+62,"merchant, shopkeeper",12882.0,5,Pennsylvania,2576.4,0.44,0.41
+71,printer,12134.0,6,Pennsylvania,2022.33,0.41,0.49
+92,trader,11008.0,5,Pennsylvania,2201.6,0.37,0.41
+27,"executor, hatter",10831.0,1,Pennsylvania,10831.0,0.37,0.08
+70,"post master, esquire",10754.0,1,Pennsylvania,10754.0,0.36,0.08
+13,carpenter,9640.0,5,Pennsylvania,1928.0,0.33,0.41
+15,clerk,9602.0,12,Pennsylvania,800.17,0.33,0.98
+82,shopkeeper,9306.0,8,Pennsylvania,1163.25,0.32,0.65
+14,city commissioner,8095.0,2,Pennsylvania,4047.5,0.27,0.16
+54,"merchant, carpenter",7816.0,5,Pennsylvania,1563.2,0.26,0.41
+5,baker,7088.0,2,Pennsylvania,3544.0,0.24,0.16
+20,currier,6983.0,2,Pennsylvania,3491.5,0.24,0.16
+37,"gentlewoman, widow",6823.0,1,Pennsylvania,6823.0,0.23,0.08
+66,negroe,6418.0,2,Pennsylvania,3209.0,0.22,0.16
+49,mariner,6294.21,5,Pennsylvania,1258.84,0.21,0.41
+48,"lawyer, esquire",6128.0,2,Pennsylvania,3064.0,0.21,0.16
+47,lawyer,5438.0,2,Pennsylvania,2719.0,0.18,0.16
+23,druggist,5275.0,1,Pennsylvania,5275.0,0.18,0.08
+12,candlekeeper,5061.0,1,Pennsylvania,5061.0,0.17,0.08
+43,inn keeper,4982.0,5,Pennsylvania,996.4,0.17,0.41
+30,furrier,4737.0,2,Pennsylvania,2368.5,0.16,0.16
+91,taylor,4395.0,6,Pennsylvania,732.5,0.15,0.49
+44,ironmonger,4055.0,1,Pennsylvania,4055.0,0.14,0.08
+89,surveyor,3938.0,1,Pennsylvania,3938.0,0.13,0.08
+51,"merchant, baker",3272.0,1,Pennsylvania,3272.0,0.11,0.08
+86,silversmith,3222.0,2,Pennsylvania,1611.0,0.11,0.16
+46,"labourer, hatter",3195.0,1,Pennsylvania,3195.0,0.11,0.08
+3,assignee,3177.0,2,Pennsylvania,1588.5,0.11,0.16
+53,"merchant, board builder",3159.0,1,Pennsylvania,3159.0,0.11,0.08
+32,"gentleman, executor",3093.0,2,Pennsylvania,1546.5,0.1,0.16
+1,accountant,3055.0,1,Pennsylvania,3055.0,0.1,0.08
+85,"shopkeeper, taylor",3046.0,1,Pennsylvania,3046.0,0.1,0.08
+29,farmer,2989.0,5,Pennsylvania,597.8,0.1,0.41
+40,guardian,2953.0,3,Pennsylvania,984.33,0.1,0.24
+10,butcher,2847.0,1,Pennsylvania,2847.0,0.1,0.08
+87,skinner,2835.0,2,Pennsylvania,1417.5,0.1,0.16
+41,"guardian, widow",2819.0,3,Pennsylvania,939.67,0.1,0.24
+16,cloak maker,2793.0,1,Pennsylvania,2793.0,0.09,0.08
+67,physician,2705.0,1,Pennsylvania,2705.0,0.09,0.08
+59,"merchant, grocer",2676.0,1,Pennsylvania,2676.0,0.09,0.08
+88,spinster,2651.0,2,Pennsylvania,1325.5,0.09,0.16
+95,widow,2646.0,3,Pennsylvania,882.0,0.09,0.24
+11,cabinet maker,2457.0,1,Pennsylvania,2457.0,0.08,0.08
+8,book binder,2456.0,2,Pennsylvania,1228.0,0.08,0.16
+28,"executor, receiver general of land office, governor, colonel",2427.0,1,Pennsylvania,2427.0,0.08,0.08
+96,wooden planemaker,2413.0,1,Pennsylvania,2413.0,0.08,0.08
+80,ship wright,2329.0,2,Pennsylvania,1164.5,0.08,0.16
+4,"attorney, esquire",2095.0,2,Pennsylvania,1047.5,0.07,0.16
+52,"merchant, blacksmith",2061.0,1,Pennsylvania,2061.0,0.07,0.08
+75,rigger,2061.0,1,Pennsylvania,2061.0,0.07,0.08
+90,tanner,2024.0,2,Pennsylvania,1012.0,0.07,0.16
+97,yeoman,1911.0,2,Pennsylvania,955.5,0.06,0.16
+6,blacksmith,1612.0,4,Pennsylvania,403.0,0.05,0.33
+77,school master,1593.0,1,Pennsylvania,1593.0,0.05,0.08
+21,doctor,1557.0,1,Pennsylvania,1557.0,0.05,0.08
+93,treasurer,1193.0,1,Pennsylvania,1193.0,0.04,0.08
+83,"shopkeeper, executor",1146.0,1,Pennsylvania,1146.0,0.04,0.08
+39,grocer,892.0,1,Pennsylvania,892.0,0.03,0.08
+7,boardinghouse keeper,876.0,2,Pennsylvania,438.0,0.03,0.16
+17,coach maker,860.0,1,Pennsylvania,860.0,0.03,0.08
+36,"gentlewoman, spinster",842.0,1,Pennsylvania,842.0,0.03,0.08
+34,"gentlewoman, administrator",832.0,1,Pennsylvania,832.0,0.03,0.08
+68,plaistr,783.0,1,Pennsylvania,783.0,0.03,0.08
+72,"professor, executor",757.0,1,Pennsylvania,757.0,0.03,0.08
+73,receiver general of land office,719.0,1,Pennsylvania,719.0,0.02,0.08
+61,"merchant, shoemaker",703.0,1,Pennsylvania,703.0,0.02,0.08
+76,sadler,609.0,1,Pennsylvania,609.0,0.02,0.08
+19,"cordwainer, shoemaker",508.0,1,Pennsylvania,508.0,0.02,0.08
+22,doorkeeper,429.0,1,Pennsylvania,429.0,0.01,0.08
+69,plasterer,400.0,1,Pennsylvania,400.0,0.01,0.08
+74,reverend,354.0,1,Pennsylvania,354.0,0.01,0.08
+64,miller,252.0,1,Pennsylvania,252.0,0.01,0.08
+38,goldsmith,246.0,1,Pennsylvania,246.0,0.01,0.08
+18,conveyancer,222.0,1,Pennsylvania,222.0,0.01,0.08
+42,hatter,169.0,1,Pennsylvania,169.0,0.01,0.08
+84,"shopkeeper, shop keeper",166.0,1,Pennsylvania,166.0,0.01,0.08
+81,shoemaker,124.0,1,Pennsylvania,124.0,0.0,0.08
+79,sheriff,116.0,1,Pennsylvania,116.0,0.0,0.08

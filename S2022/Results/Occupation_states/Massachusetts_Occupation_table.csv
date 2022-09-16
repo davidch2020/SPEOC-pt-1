@@ -1,21 +1,21 @@
-,Occupations,6p_Total,6p_def_Total,3p_Total,count,state,Average (6p),6p_Total_pct,6p_def_Total_pct,3p_Total_pct,count_pct
-11,merchant,26707.0,14039.0,14614.0,23,Massachusetts,1161.17,33.47,20.78,22.9,20.35
-6,esquire,16886.0,9076.0,11756.0,20,Massachusetts,844.3,21.16,13.43,18.42,17.7
-0,,6640.0,3567.0,5684.0,17,Massachusetts,390.59,8.32,5.28,8.91,15.04
-19,yeoman,6431.0,3653.0,3914.0,18,Massachusetts,357.28,8.06,5.41,6.13,15.93
-3,"broker, merchant",6182.0,3188.0,3320.0,1,Massachusetts,6182.0,7.75,4.72,5.2,0.88
-2,broker,3085.0,26216.0,11387.0,5,Massachusetts,617.0,3.87,38.8,17.85,4.42
-12,physician,2608.0,1354.0,1887.0,2,Massachusetts,1304.0,3.27,2.0,2.96,1.77
-18,widow,2273.0,1233.0,1560.0,7,Massachusetts,324.71,2.85,1.83,2.44,6.19
-17,"trader, merchant",2247.0,1326.0,4323.0,2,Massachusetts,1123.5,2.82,1.96,6.78,1.77
-7,"esquire, gentleman",1263.0,730.0,1043.0,2,Massachusetts,631.5,1.58,1.08,1.63,1.77
-15,spinster,912.0,554.0,302.0,2,Massachusetts,456.0,1.14,0.82,0.47,1.77
-16,"trader, esquire",891.0,496.0,840.0,1,Massachusetts,891.0,1.12,0.73,1.32,0.88
-1,blacksmith,795.0,447.0,273.0,2,Massachusetts,397.5,1.0,0.66,0.43,1.77
-8,farmer,711.0,405.0,400.0,1,Massachusetts,711.0,0.89,0.6,0.63,0.88
-14,ship wright,569.0,333.0,526.0,3,Massachusetts,189.67,0.71,0.49,0.82,2.65
-9,gentleman,558.0,328.0,526.0,3,Massachusetts,186.0,0.7,0.49,0.82,2.65
-10,mariner,426.0,263.0,966.0,1,Massachusetts,426.0,0.53,0.39,1.51,0.88
-4,carpenter,261.0,129.0,146.0,1,Massachusetts,261.0,0.33,0.19,0.23,0.88
-5,cordwainer,243.0,121.0,126.0,1,Massachusetts,243.0,0.3,0.18,0.2,0.88
-13,reverend,108.0,103.0,212.0,1,Massachusetts,108.0,0.14,0.15,0.33,0.88
+,Occupations,6p_Total,count,state,Average (6p),6p_Total_pct,count_pct
+11,merchant,40746.0,25,Massachusetts,1629.84,27.65,18.25
+2,broker,29301.0,6,Massachusetts,4883.5,19.88,4.38
+5,esquire,25962.0,25,Massachusetts,1038.48,17.62,18.25
+0,,10207.0,20,Massachusetts,510.35,6.93,14.6
+19,yeoman,10084.0,19,Massachusetts,530.74,6.84,13.87
+12,"merchant, broker",9370.0,3,Massachusetts,3123.33,6.36,2.19
+14,physician,3962.0,2,Massachusetts,1981.0,2.69,1.46
+13,"merchant, trader",3573.0,6,Massachusetts,595.5,2.42,4.38
+18,widow,3506.0,7,Massachusetts,500.86,2.38,5.11
+6,"esquire, gentleman",1993.0,5,Massachusetts,398.6,1.35,3.65
+17,spinster,1466.0,2,Massachusetts,733.0,0.99,1.46
+7,"esquire, trader",1387.0,2,Massachusetts,693.5,0.94,1.46
+1,blacksmith,1242.0,2,Massachusetts,621.0,0.84,1.46
+8,farmer,1116.0,1,Massachusetts,1116.0,0.76,0.73
+16,ship wright,902.0,3,Massachusetts,300.67,0.61,2.19
+9,gentleman,886.0,3,Massachusetts,295.33,0.6,2.19
+10,mariner,689.0,2,Massachusetts,344.5,0.47,1.46
+3,carpenter,390.0,2,Massachusetts,195.0,0.26,1.46
+4,cordwainer,364.0,1,Massachusetts,364.0,0.25,0.73
+15,reverend,211.0,1,Massachusetts,211.0,0.14,0.73

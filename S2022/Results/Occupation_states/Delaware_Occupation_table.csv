@@ -1,4 +1,4 @@
-,Occupations,6p_Total,6p_def_Total,3p_Total,count,state,Average (6p),6p_Total_pct,6p_def_Total_pct,3p_Total_pct,count_pct
-0,,4524.0,2410.0,1816.0,4,Delaware,1131.0,51.57,53.14,40.09,57.14
-1,esquire,3922.0,1961.0,2527.0,2,Delaware,1961.0,44.71,43.24,55.78,28.57
-2,merchant,327.0,164.0,187.0,1,Delaware,327.0,3.73,3.62,4.13,14.29
+,Occupations,6p_Total,count,state,Average (6p),6p_Total_pct,count_pct
+0,,6934.0,5,Delaware,1386.8,52.1,62.5
+1,esquire,5883.0,2,Delaware,2941.5,44.21,25.0
+2,merchant,491.0,1,Delaware,491.0,3.69,12.5

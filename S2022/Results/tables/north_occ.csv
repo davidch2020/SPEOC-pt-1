@@ -1,0 +1,122 @@
+,Occupations,6p_Total,count,cert_count,state,cert_count_avg,Average (6p),6p_Total_pct,count_pct
+0,,3167699.52,1563,3068,Rhode Island New York Pennsylvania New Hampshire New Jersey Delaware Massachusetts Vermont,,2026.68,103.01,168.43
+1,accountant,3055.0,1,1,Rhode Island New York Pennsylvania New Hampshire New Jersey Delaware Massachusetts Vermont,1.0,3055.0,0.1,0.11
+2,administrator,33151.0,14,27,Rhode Island New York Pennsylvania New Hampshire New Jersey Delaware Massachusetts Vermont,1.0,2367.93,1.08,1.51
+3,assignee,3177.0,2,2,Rhode Island New York Pennsylvania New Hampshire New Jersey Delaware Massachusetts Vermont,2.0,1588.5,0.1,0.22
+4,attorney,2140.0,1,1,Rhode Island New York Pennsylvania New Hampshire New Jersey Delaware Massachusetts Vermont,1.0,2140.0,0.07,0.11
+5,"attorney, esquire",2095.0,2,2,Rhode Island New York Pennsylvania New Hampshire New Jersey Delaware Massachusetts Vermont,1.0,1047.5,0.07,0.22
+6,auctioneer,1101.0,1,3,Rhode Island New York Pennsylvania New Hampshire New Jersey Delaware Massachusetts Vermont,3.0,1101.0,0.04,0.11
+7,baker,10746.0,4,4,Rhode Island New York Pennsylvania New Hampshire New Jersey Delaware Massachusetts Vermont,0.21,2686.5,0.35,0.43
+8,blacksmith,4371.0,9,10,Rhode Island New York Pennsylvania New Hampshire New Jersey Delaware Massachusetts Vermont,5.0,485.67,0.14,0.97
+9,blockmaker,71.0,1,1,Rhode Island New York Pennsylvania New Hampshire New Jersey Delaware Massachusetts Vermont,1.0,71.0,0.0,0.11
+10,boardinghouse keeper,876.0,2,2,Rhode Island New York Pennsylvania New Hampshire New Jersey Delaware Massachusetts Vermont,2.0,438.0,0.03,0.22
+11,book binder,2456.0,2,2,Rhode Island New York Pennsylvania New Hampshire New Jersey Delaware Massachusetts Vermont,1.0,1228.0,0.08,0.22
+12,broker,118076.0,22,59,Rhode Island New York Pennsylvania New Hampshire New Jersey Delaware Massachusetts Vermont,14.75,5367.09,3.84,2.37
+13,butcher,3353.0,2,2,Rhode Island New York Pennsylvania New Hampshire New Jersey Delaware Massachusetts Vermont,0.15,1676.5,0.11,0.22
+14,cabinet maker,2457.0,1,1,Rhode Island New York Pennsylvania New Hampshire New Jersey Delaware Massachusetts Vermont,0.5,2457.0,0.08,0.11
+15,candlekeeper,5061.0,1,1,Rhode Island New York Pennsylvania New Hampshire New Jersey Delaware Massachusetts Vermont,0.5,5061.0,0.16,0.11
+16,carpenter,10300.0,5,8,Rhode Island New York Pennsylvania New Hampshire New Jersey Delaware Massachusetts Vermont,4.0,2060.0,0.33,0.54
+17,chaise maker,205.0,1,1,Rhode Island New York Pennsylvania New Hampshire New Jersey Delaware Massachusetts Vermont,1.0,205.0,0.01,0.11
+18,city commissioner,8095.0,2,2,Rhode Island New York Pennsylvania New Hampshire New Jersey Delaware Massachusetts Vermont,0.08,4047.5,0.26,0.22
+19,clerk,14210.0,10,19,Rhode Island New York Pennsylvania New Hampshire New Jersey Delaware Massachusetts Vermont,9.5,1421.0,0.46,1.08
+20,cloak maker,2793.0,1,1,Rhode Island New York Pennsylvania New Hampshire New Jersey Delaware Massachusetts Vermont,0.5,2793.0,0.09,0.11
+21,coach maker,860.0,1,1,Rhode Island New York Pennsylvania New Hampshire New Jersey Delaware Massachusetts Vermont,1.0,860.0,0.03,0.11
+22,conveyancer,222.0,1,1,Rhode Island New York Pennsylvania New Hampshire New Jersey Delaware Massachusetts Vermont,0.09,222.0,0.01,0.11
+23,cooper,2811.0,3,3,Rhode Island New York Pennsylvania New Hampshire New Jersey Delaware Massachusetts Vermont,3.0,937.0,0.09,0.32
+24,cordwainer,2342.0,4,4,Rhode Island New York Pennsylvania New Hampshire New Jersey Delaware Massachusetts Vermont,4.0,585.5,0.08,0.43
+25,"cordwainer, shoemaker",508.0,1,1,Rhode Island New York Pennsylvania New Hampshire New Jersey Delaware Massachusetts Vermont,0.5,508.0,0.02,0.11
+26,currier,6983.0,1,2,Rhode Island New York Pennsylvania New Hampshire New Jersey Delaware Massachusetts Vermont,0.2,6983.0,0.23,0.11
+27,deacon,76.0,1,1,Rhode Island New York Pennsylvania New Hampshire New Jersey Delaware Massachusetts Vermont,1.0,76.0,0.0,0.11
+28,distiller,1132.0,3,3,Rhode Island New York Pennsylvania New Hampshire New Jersey Delaware Massachusetts Vermont,3.0,377.33,0.04,0.32
+29,doctor,1557.0,1,1,Rhode Island New York Pennsylvania New Hampshire New Jersey Delaware Massachusetts Vermont,1.0,1557.0,0.05,0.11
+30,"doctor, reverend",1598.0,1,4,Rhode Island New York Pennsylvania New Hampshire New Jersey Delaware Massachusetts Vermont,4.0,1598.0,0.05,0.11
+31,doorkeeper,429.0,1,1,Rhode Island New York Pennsylvania New Hampshire New Jersey Delaware Massachusetts Vermont,0.5,429.0,0.01,0.11
+32,druggist,5275.0,1,1,Rhode Island New York Pennsylvania New Hampshire New Jersey Delaware Massachusetts Vermont,1.0,5275.0,0.17,0.11
+33,esquire,362524.0,187,251,Rhode Island New York Pennsylvania New Hampshire New Jersey Delaware Massachusetts Vermont,251.0,1938.63,11.79,20.15
+34,"esquire, gentleman",1993.0,2,5,Rhode Island New York Pennsylvania New Hampshire New Jersey Delaware Massachusetts Vermont,5.0,996.5,0.06,0.22
+35,"esquire, trader",1387.0,1,2,Rhode Island New York Pennsylvania New Hampshire New Jersey Delaware Massachusetts Vermont,0.5,1387.0,0.05,0.11
+36,"esquire, treasurer",2663.0,2,5,Rhode Island New York Pennsylvania New Hampshire New Jersey Delaware Massachusetts Vermont,1.25,1331.5,0.09,0.22
+37,"esquire, trustee",95.0,1,1,Rhode Island New York Pennsylvania New Hampshire New Jersey Delaware Massachusetts Vermont,1.0,95.0,0.0,0.11
+38,estate,15901.0,3,3,Rhode Island New York Pennsylvania New Hampshire New Jersey Delaware Massachusetts Vermont,3.0,5300.33,0.52,0.32
+39,executor,92387.0,21,24,Rhode Island New York Pennsylvania New Hampshire New Jersey Delaware Massachusetts Vermont,24.0,4399.38,3.0,2.26
+40,"executor, hatter",10831.0,1,1,Rhode Island New York Pennsylvania New Hampshire New Jersey Delaware Massachusetts Vermont,1.0,10831.0,0.35,0.11
+41,"executor, receiver general of land office, governor, colonel",2427.0,1,1,Rhode Island New York Pennsylvania New Hampshire New Jersey Delaware Massachusetts Vermont,0.33,2427.0,0.08,0.11
+42,farmer,9547.0,15,15,Rhode Island New York Pennsylvania New Hampshire New Jersey Delaware Massachusetts Vermont,3.75,636.47,0.31,1.62
+43,furrier,4737.0,2,2,Rhode Island New York Pennsylvania New Hampshire New Jersey Delaware Massachusetts Vermont,2.0,2368.5,0.15,0.22
+44,gentleman,69695.0,31,33,Rhode Island New York Pennsylvania New Hampshire New Jersey Delaware Massachusetts Vermont,33.0,2248.23,2.27,3.34
+45,"gentleman, executor",3093.0,1,2,Rhode Island New York Pennsylvania New Hampshire New Jersey Delaware Massachusetts Vermont,2.0,3093.0,0.1,0.11
+46,gentlewoman,22990.0,13,15,Rhode Island New York Pennsylvania New Hampshire New Jersey Delaware Massachusetts Vermont,0.07,1768.46,0.75,1.4
+47,"gentlewoman, administrator",832.0,1,1,Rhode Island New York Pennsylvania New Hampshire New Jersey Delaware Massachusetts Vermont,0.25,832.0,0.03,0.11
+48,"gentlewoman, esquire",114740.0,1,1,Rhode Island New York Pennsylvania New Hampshire New Jersey Delaware Massachusetts Vermont,1.0,114740.0,3.73,0.11
+49,"gentlewoman, spinster",842.0,1,1,Rhode Island New York Pennsylvania New Hampshire New Jersey Delaware Massachusetts Vermont,0.5,842.0,0.03,0.11
+50,"gentlewoman, widow",6823.0,1,1,Rhode Island New York Pennsylvania New Hampshire New Jersey Delaware Massachusetts Vermont,1.0,6823.0,0.22,0.11
+51,glazier,1525.0,1,1,Rhode Island New York Pennsylvania New Hampshire New Jersey Delaware Massachusetts Vermont,0.33,1525.0,0.05,0.11
+52,goldsmith,1950.0,3,3,Rhode Island New York Pennsylvania New Hampshire New Jersey Delaware Massachusetts Vermont,0.06,650.0,0.06,0.32
+53,grocer,892.0,1,1,Rhode Island New York Pennsylvania New Hampshire New Jersey Delaware Massachusetts Vermont,1.0,892.0,0.03,0.11
+54,guardian,2953.0,3,3,Rhode Island New York Pennsylvania New Hampshire New Jersey Delaware Massachusetts Vermont,3.0,984.33,0.1,0.32
+55,"guardian, widow",2819.0,1,3,Rhode Island New York Pennsylvania New Hampshire New Jersey Delaware Massachusetts Vermont,3.0,2819.0,0.09,0.11
+56,hatter,1508.0,2,3,Rhode Island New York Pennsylvania New Hampshire New Jersey Delaware Massachusetts Vermont,1.0,754.0,0.05,0.22
+57,housewright,499.0,1,1,Rhode Island New York Pennsylvania New Hampshire New Jersey Delaware Massachusetts Vermont,0.01,499.0,0.02,0.11
+58,inn keeper,7859.0,8,13,Rhode Island New York Pennsylvania New Hampshire New Jersey Delaware Massachusetts Vermont,13.0,982.38,0.26,0.86
+59,ironmonger,4055.0,1,1,Rhode Island New York Pennsylvania New Hampshire New Jersey Delaware Massachusetts Vermont,1.0,4055.0,0.13,0.11
+60,joiner,1595.0,1,2,Rhode Island New York Pennsylvania New Hampshire New Jersey Delaware Massachusetts Vermont,2.0,1595.0,0.05,0.11
+61,"junior, broker",40339.0,1,12,Rhode Island New York Pennsylvania New Hampshire New Jersey Delaware Massachusetts Vermont,12.0,40339.0,1.31,0.11
+62,labourer,372.0,2,2,Rhode Island New York Pennsylvania New Hampshire New Jersey Delaware Massachusetts Vermont,2.0,186.0,0.01,0.22
+63,"labourer, hatter",3195.0,1,1,Rhode Island New York Pennsylvania New Hampshire New Jersey Delaware Massachusetts Vermont,0.5,3195.0,0.1,0.11
+64,lawyer,5438.0,2,2,Rhode Island New York Pennsylvania New Hampshire New Jersey Delaware Massachusetts Vermont,0.04,2719.0,0.18,0.22
+65,"lawyer, esquire",6128.0,1,2,Rhode Island New York Pennsylvania New Hampshire New Jersey Delaware Massachusetts Vermont,2.0,6128.0,0.2,0.11
+66,mariner,19199.21,24,36,Rhode Island New York Pennsylvania New Hampshire New Jersey Delaware Massachusetts Vermont,2.77,799.97,0.62,2.59
+67,mason,2000.0,1,3,Rhode Island New York Pennsylvania New Hampshire New Jersey Delaware Massachusetts Vermont,3.0,2000.0,0.07,0.11
+68,merchant,951544.97,201,389,Rhode Island New York Pennsylvania New Hampshire New Jersey Delaware Massachusetts Vermont,389.0,4734.05,30.94,21.66
+69,"merchant, baker",3272.0,1,1,Rhode Island New York Pennsylvania New Hampshire New Jersey Delaware Massachusetts Vermont,1.0,3272.0,0.11,0.11
+70,"merchant, blacksmith",2061.0,1,1,Rhode Island New York Pennsylvania New Hampshire New Jersey Delaware Massachusetts Vermont,1.0,2061.0,0.07,0.11
+71,"merchant, board builder",3159.0,1,1,Rhode Island New York Pennsylvania New Hampshire New Jersey Delaware Massachusetts Vermont,1.0,3159.0,0.1,0.11
+72,"merchant, broker",9370.0,1,3,Rhode Island New York Pennsylvania New Hampshire New Jersey Delaware Massachusetts Vermont,0.75,9370.0,0.3,0.11
+73,"merchant, carpenter",7816.0,1,5,Rhode Island New York Pennsylvania New Hampshire New Jersey Delaware Massachusetts Vermont,5.0,7816.0,0.25,0.11
+74,"merchant, druggist",58039.0,2,7,Rhode Island New York Pennsylvania New Hampshire New Jersey Delaware Massachusetts Vermont,1.0,29019.5,1.89,0.22
+75,"merchant, esquire",133880.0,4,21,Rhode Island New York Pennsylvania New Hampshire New Jersey Delaware Massachusetts Vermont,21.0,33470.0,4.35,0.43
+76,"merchant, estate, guardian",17652.0,1,6,Rhode Island New York Pennsylvania New Hampshire New Jersey Delaware Massachusetts Vermont,6.0,17652.0,0.57,0.11
+77,"merchant, gentleman",63203.0,6,10,Rhode Island New York Pennsylvania New Hampshire New Jersey Delaware Massachusetts Vermont,3.33,10533.83,2.06,0.65
+78,"merchant, grocer",2676.0,1,1,Rhode Island New York Pennsylvania New Hampshire New Jersey Delaware Massachusetts Vermont,1.0,2676.0,0.09,0.11
+79,"merchant, hatter",28785.0,2,7,Rhode Island New York Pennsylvania New Hampshire New Jersey Delaware Massachusetts Vermont,0.7,14392.5,0.94,0.22
+80,"merchant, shoemaker",703.0,1,1,Rhode Island New York Pennsylvania New Hampshire New Jersey Delaware Massachusetts Vermont,1.0,703.0,0.02,0.11
+81,"merchant, shopkeeper",12882.0,3,5,Rhode Island New York Pennsylvania New Hampshire New Jersey Delaware Massachusetts Vermont,5.0,4294.0,0.42,0.32
+82,"merchant, trader",3573.0,2,6,Rhode Island New York Pennsylvania New Hampshire New Jersey Delaware Massachusetts Vermont,3.0,1786.5,0.12,0.22
+83,"merchant, treasurer",1635.0,1,3,Rhode Island New York Pennsylvania New Hampshire New Jersey Delaware Massachusetts Vermont,3.0,1635.0,0.05,0.11
+84,"merchant, widow",17227.0,2,3,Rhode Island New York Pennsylvania New Hampshire New Jersey Delaware Massachusetts Vermont,3.0,8613.5,0.56,0.22
+85,miller,252.0,1,1,Rhode Island New York Pennsylvania New Hampshire New Jersey Delaware Massachusetts Vermont,0.5,252.0,0.01,0.11
+86,minister,30703.0,2,2,Rhode Island New York Pennsylvania New Hampshire New Jersey Delaware Massachusetts Vermont,2.0,15351.5,1.0,0.22
+87,negroe,6418.0,2,2,Rhode Island New York Pennsylvania New Hampshire New Jersey Delaware Massachusetts Vermont,1.0,3209.0,0.21,0.22
+88,painter,164.0,1,1,Rhode Island New York Pennsylvania New Hampshire New Jersey Delaware Massachusetts Vermont,1.0,164.0,0.01,0.11
+89,physician,25491.0,16,32,Rhode Island New York Pennsylvania New Hampshire New Jersey Delaware Massachusetts Vermont,32.0,1593.19,0.83,1.72
+90,plaistr,783.0,1,1,Rhode Island New York Pennsylvania New Hampshire New Jersey Delaware Massachusetts Vermont,0.03,783.0,0.03,0.11
+91,plasterer,400.0,1,1,Rhode Island New York Pennsylvania New Hampshire New Jersey Delaware Massachusetts Vermont,1.0,400.0,0.01,0.11
+92,"post master, esquire",10754.0,1,1,Rhode Island New York Pennsylvania New Hampshire New Jersey Delaware Massachusetts Vermont,0.0,10754.0,0.35,0.11
+93,printer,12134.0,3,6,Rhode Island New York Pennsylvania New Hampshire New Jersey Delaware Massachusetts Vermont,6.0,4044.67,0.39,0.32
+94,"professor, executor",757.0,1,1,Rhode Island New York Pennsylvania New Hampshire New Jersey Delaware Massachusetts Vermont,1.0,757.0,0.02,0.11
+95,receiver general of land office,719.0,1,1,Rhode Island New York Pennsylvania New Hampshire New Jersey Delaware Massachusetts Vermont,1.0,719.0,0.02,0.11
+96,reverend,3728.0,3,3,Rhode Island New York Pennsylvania New Hampshire New Jersey Delaware Massachusetts Vermont,3.0,1242.67,0.12,0.32
+97,rigger,2061.0,1,1,Rhode Island New York Pennsylvania New Hampshire New Jersey Delaware Massachusetts Vermont,1.0,2061.0,0.07,0.11
+98,sadler,609.0,1,1,Rhode Island New York Pennsylvania New Hampshire New Jersey Delaware Massachusetts Vermont,1.0,609.0,0.02,0.11
+99,school master,1861.0,2,2,Rhode Island New York Pennsylvania New Hampshire New Jersey Delaware Massachusetts Vermont,1.0,930.5,0.06,0.22
+100,"scrivener,  notary, broker",49774.0,1,17,Rhode Island New York Pennsylvania New Hampshire New Jersey Delaware Massachusetts Vermont,3.4,49774.0,1.62,0.11
+101,sheriff,116.0,1,1,Rhode Island New York Pennsylvania New Hampshire New Jersey Delaware Massachusetts Vermont,1.0,116.0,0.0,0.11
+102,ship wright,3719.0,7,7,Rhode Island New York Pennsylvania New Hampshire New Jersey Delaware Massachusetts Vermont,3.5,531.29,0.12,0.75
+103,shoemaker,427.0,2,2,Rhode Island New York Pennsylvania New Hampshire New Jersey Delaware Massachusetts Vermont,0.33,213.5,0.01,0.22
+104,shopkeeper,9306.0,7,8,Rhode Island New York Pennsylvania New Hampshire New Jersey Delaware Massachusetts Vermont,8.0,1329.43,0.3,0.75
+105,"shopkeeper, executor",1146.0,1,1,Rhode Island New York Pennsylvania New Hampshire New Jersey Delaware Massachusetts Vermont,0.5,1146.0,0.04,0.11
+106,"shopkeeper, shop keeper",166.0,1,1,Rhode Island New York Pennsylvania New Hampshire New Jersey Delaware Massachusetts Vermont,1.0,166.0,0.01,0.11
+107,"shopkeeper, taylor",3046.0,1,1,Rhode Island New York Pennsylvania New Hampshire New Jersey Delaware Massachusetts Vermont,0.33,3046.0,0.1,0.11
+108,silversmith,3222.0,1,2,Rhode Island New York Pennsylvania New Hampshire New Jersey Delaware Massachusetts Vermont,1.0,3222.0,0.1,0.11
+109,skinner,2835.0,1,2,Rhode Island New York Pennsylvania New Hampshire New Jersey Delaware Massachusetts Vermont,2.0,2835.0,0.09,0.11
+110,spinster,5698.0,7,8,Rhode Island New York Pennsylvania New Hampshire New Jersey Delaware Massachusetts Vermont,4.0,814.0,0.19,0.75
+111,surveyor,3938.0,1,1,Rhode Island New York Pennsylvania New Hampshire New Jersey Delaware Massachusetts Vermont,0.5,3938.0,0.13,0.11
+112,tanner,2024.0,2,2,Rhode Island New York Pennsylvania New Hampshire New Jersey Delaware Massachusetts Vermont,1.0,1012.0,0.07,0.22
+113,taylor,6592.0,9,10,Rhode Island New York Pennsylvania New Hampshire New Jersey Delaware Massachusetts Vermont,10.0,732.44,0.21,0.97
+114,trader,17133.0,13,19,Rhode Island New York Pennsylvania New Hampshire New Jersey Delaware Massachusetts Vermont,9.5,1317.92,0.56,1.4
+115,treasurer,341684.0,10,12,Rhode Island New York Pennsylvania New Hampshire New Jersey Delaware Massachusetts Vermont,12.0,34168.4,11.11,1.08
+116,trustee,48663.0,10,14,Rhode Island New York Pennsylvania New Hampshire New Jersey Delaware Massachusetts Vermont,0.56,4866.3,1.58,1.08
+117,widow,32832.0,39,42,Rhode Island New York Pennsylvania New Hampshire New Jersey Delaware Massachusetts Vermont,42.0,841.85,1.07,4.2
+118,wooden planemaker,2413.0,1,1,Rhode Island New York Pennsylvania New Hampshire New Jersey Delaware Massachusetts Vermont,0.04,2413.0,0.08,0.11
+119,yeoman,45650.0,101,109,Rhode Island New York Pennsylvania New Hampshire New Jersey Delaware Massachusetts Vermont,109.0,451.98,1.48,10.88
+120,"yeoman, esquire",3127.0,2,4,Rhode Island New York Pennsylvania New Hampshire New Jersey Delaware Massachusetts Vermont,4.0,1563.5,0.1,0.22

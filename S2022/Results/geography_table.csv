@@ -1,543 +1,543 @@
-,town,county,state,country,6p_Total,6p_def_Total,3p_Total,Certificate Count,# Debtholders,town/county pct (6p),county/state pct (6p),state/country pct (6p),country/ovall pct (6p)
-2,,,,United States,111.0,105.0,73.0,1,1,9.23,100.0,0.0,99.96
-4,,,Connecticut,United States,414557.0,207478.0,132330.0,30,31,100.0,43.78,13.19,99.96
-195,Danbury,Fairfield,Connecticut,United States,3469.0,1882.0,1362.0,7,6,8.86,4.14,13.19,99.96
-222,Fairfield,Fairfield,Connecticut,United States,7555.0,4128.0,4542.0,20,17,19.29,4.14,13.19,99.96
-252,Greenwich,Fairfield,Connecticut,United States,999.0,548.0,755.0,2,2,2.55,4.14,13.19,99.96
-280,Huntington,Fairfield,Connecticut,United States,7183.0,3791.0,5549.0,5,4,18.34,4.14,13.19,99.96
-379,Norwalk,Fairfield,Connecticut,United States,969.0,586.0,1227.0,3,3,2.47,4.14,13.19,99.96
-380,Norwalk and Stamford,Fairfield,Connecticut,United States,10124.0,5659.0,8083.0,24,14,25.86,4.14,13.19,99.96
-413,Reading,Fairfield,Connecticut,United States,614.0,307.0,678.0,1,1,1.57,4.14,13.19,99.96
-421,Ridgefield,Fairfield,Connecticut,United States,185.0,93.0,119.0,1,1,0.47,4.14,13.19,99.96
-468,Stamford,Fairfield,Connecticut,United States,3002.0,1649.0,1727.0,10,7,7.67,4.14,13.19,99.96
-475,Stratford,Fairfield,Connecticut,United States,4950.0,2524.0,3479.0,10,6,12.64,4.14,13.19,99.96
-519,Weston,Fairfield,Connecticut,United States,106.0,103.0,0.0,1,1,0.27,4.14,13.19,99.96
-127,Berlin,Hartford,Connecticut,United States,1060.0,680.0,611.0,4,3,0.9,12.49,13.19,99.96
-142,Bristol,Hartford,Connecticut,United States,211.0,106.0,80.0,1,1,0.18,12.49,13.19,99.96
-211,East Hartford,Hartford,Connecticut,United States,4626.0,2514.0,2338.0,10,11,3.91,12.49,13.19,99.96
-214,East Windsor,Hartford,Connecticut,United States,1716.0,907.0,1628.0,8,7,1.45,12.49,13.19,99.96
-219,Enfield,Hartford,Connecticut,United States,568.0,284.0,862.0,2,2,0.48,12.49,13.19,99.96
-226,Farmington,Hartford,Connecticut,United States,8104.0,4287.0,4492.0,27,27,6.85,12.49,13.19,99.96
-242,Glastonbury,Hartford,Connecticut,United States,12608.0,6552.0,10296.0,13,12,10.66,12.49,13.19,99.96
-250,Granby,Hartford,Connecticut,United States,460.0,230.0,371.0,1,1,0.39,12.49,13.19,99.96
-262,Hartford,Hartford,Connecticut,United States,60288.0,30807.0,40829.0,136,74,50.99,12.49,13.19,99.96
-363,Newington,Hartford,Connecticut,United States,1658.0,878.0,494.0,1,1,1.4,12.49,13.19,99.96
-477,Suffield,Hartford,Connecticut,United States,2470.0,1634.0,2465.0,13,13,2.09,12.49,13.19,99.96
-482,Symsbury,Hartford,Connecticut,United States,113.0,107.0,11.0,2,2,0.1,12.49,13.19,99.96
-521,Wethersfield,Hartford,Connecticut,United States,14143.0,7663.0,10417.0,51,37,11.96,12.49,13.19,99.96
-529,Windsor,Hartford,Connecticut,United States,10199.0,5945.0,8398.0,31,28,8.63,12.49,13.19,99.96
-158,Canaan,Litchfield,Connecticut,United States,318.0,209.0,381.0,2,2,0.8,4.21,13.19,99.96
-186,Cornwall,Litchfield,Connecticut,United States,3242.0,1770.0,1050.0,3,3,8.14,4.21,13.19,99.96
-246,Goshen,Litchfield,Connecticut,United States,1409.0,78.0,88.0,2,2,3.54,4.21,13.19,99.96
-263,Hartford,Litchfield,Connecticut,United States,685.0,391.0,679.0,2,2,1.72,4.21,13.19,99.96
-265,Harwinton,Litchfield,Connecticut,United States,0.0,0.0,91.0,1,2,0.0,4.21,13.19,99.96
-302,Litchfield,Litchfield,Connecticut,United States,16354.0,8328.0,8581.0,16,10,41.05,4.21,13.19,99.96
-342,New Milford,Litchfield,Connecticut,United States,2603.0,1649.0,1764.0,12,6,6.53,4.21,13.19,99.96
-369,Norfolk,Litchfield,Connecticut,United States,80.0,40.0,71.0,1,1,0.2,4.21,13.19,99.96
-424,Roxbury,Litchfield,Connecticut,United States,10752.0,5426.0,3554.0,2,2,26.99,4.21,13.19,99.96
-437,Sharon,Litchfield,Connecticut,United States,946.0,523.0,775.0,3,3,2.37,4.21,13.19,99.96
-490,Torrington,Litchfield,Connecticut,United States,1626.0,862.0,1328.0,3,3,4.08,4.21,13.19,99.96
-509,Watertown,Litchfield,Connecticut,United States,566.0,333.0,144.0,1,1,1.42,4.21,13.19,99.96
-533,Woodbury,Litchfield,Connecticut,United States,1256.0,678.0,2059.0,3,2,3.15,4.21,13.19,99.96
-173,Chatham,Middlesex,Connecticut,United States,1611.0,1107.0,1361.0,11,11,3.41,4.99,13.19,99.96
-206,Durham,Middlesex,Connecticut,United States,109.0,55.0,105.0,1,1,0.23,4.99,13.19,99.96
-210,East Haddam,Middlesex,Connecticut,United States,1219.0,761.0,782.0,5,4,2.58,4.99,13.19,99.96
-255,Haddam,Middlesex,Connecticut,United States,6036.0,3118.0,4757.0,6,3,12.76,4.99,13.19,99.96
-290,Killingworth,Middlesex,Connecticut,United States,2549.0,1724.0,1877.0,15,12,5.39,4.99,13.19,99.96
-324,Middletown,Middlesex,Connecticut,United States,23422.0,11745.0,15221.0,31,23,49.52,4.99,13.19,99.96
-433,Saybrook,Middlesex,Connecticut,United States,12348.0,6574.0,9676.0,13,10,26.11,4.99,13.19,99.96
-138,Branford,New Haven,Connecticut,United States,757.0,477.0,383.0,3,3,1.38,5.78,13.19,99.96
-175,Cheshire,New Haven,Connecticut,United States,894.0,497.0,383.0,2,2,1.63,5.78,13.19,99.96
-200,Derby,New Haven,Connecticut,United States,6411.0,3788.0,3602.0,8,5,11.7,5.78,13.19,99.96
-212,East Haven,New Haven,Connecticut,United States,110.0,106.0,220.0,2,1,0.2,5.78,13.19,99.96
-254,Guilford,New Haven,Connecticut,United States,1413.0,910.0,1050.0,10,10,2.58,5.78,13.19,99.96
-327,Milford,New Haven,Connecticut,United States,2291.0,1347.0,1028.0,10,9,4.18,5.78,13.19,99.96
-339,New Haven,New Haven,Connecticut,United States,40711.0,17289.0,17306.0,48,32,74.32,5.78,13.19,99.96
-372,North Haven,New Haven,Connecticut,United States,86.0,43.0,0.0,1,1,0.16,5.78,13.19,99.96
-451,Southbury,New Haven,Connecticut,United States,375.0,187.0,384.0,1,1,0.68,5.78,13.19,99.96
-500,Wallingford,New Haven,Connecticut,United States,1482.0,840.0,2041.0,3,3,2.71,5.78,13.19,99.96
-508,Waterbury,New Haven,Connecticut,United States,247.0,173.0,142.0,1,1,0.45,5.78,13.19,99.96
-532,Woodbridge,New Haven,Connecticut,United States,0.0,0.0,168.0,1,1,0.0,5.78,13.19,99.96
-65,,New London,Connecticut,United States,15.0,57.0,2595.0,8,8,0.01,18.47,13.19,99.96
-137,Bozrah,New London,Connecticut,United States,433.0,267.0,240.0,2,2,0.25,18.47,13.19,99.96
-180,Colchester,New London,Connecticut,United States,7963.0,3579.0,6593.0,18,12,4.55,18.47,13.19,99.96
-231,Franklin,New London,Connecticut,United States,230.0,115.0,92.0,2,2,0.13,18.47,13.19,99.96
-253,Groton,New London,Connecticut,United States,3550.0,2224.0,1832.0,12,11,2.03,18.47,13.19,99.96
-299,Lebanon,New London,Connecticut,United States,20590.0,10854.0,8666.0,24,20,11.78,18.47,13.19,99.96
-311,Lyme,New London,Connecticut,United States,32833.0,17165.0,22654.0,29,23,18.78,18.47,13.19,99.96
-332,Montville,New London,Connecticut,United States,892.0,495.0,482.0,5,4,0.51,18.47,13.19,99.96
-341,New London,New London,Connecticut,United States,42091.0,21792.0,41626.0,38,30,24.07,18.47,13.19,99.96
-381,Norwich,New London,Connecticut,United States,49846.0,26186.0,41074.0,46,31,28.51,18.47,13.19,99.96
-407,Preston,New London,Connecticut,United States,7800.0,4149.0,5846.0,9,8,4.46,18.47,13.19,99.96
-472,Stonington,New London,Connecticut,United States,8079.0,4291.0,7076.0,9,7,4.62,18.47,13.19,99.96
-498,Voluntown,New London,Connecticut,United States,526.0,363.0,124.0,2,2,0.3,18.47,13.19,99.96
-134,Bolton,Tolland,Connecticut,United States,11212.0,5902.0,9563.0,13,10,40.12,2.95,13.19,99.96
-189,Coventry,Tolland,Connecticut,United States,1777.0,1138.0,1718.0,9,6,6.36,2.95,13.19,99.96
-218,Ellington,Tolland,Connecticut,United States,136.0,68.0,80.0,1,1,0.49,2.95,13.19,99.96
-268,Hebron,Tolland,Connecticut,United States,9741.0,5217.0,5387.0,10,8,34.86,2.95,13.19,99.96
-318,Mansfield,Tolland,Connecticut,United States,2262.0,1330.0,1606.0,8,8,8.09,2.95,13.19,99.96
-442,Somers,Tolland,Connecticut,United States,107.0,54.0,62.0,1,1,0.38,2.95,13.19,99.96
-467,Stafford,Tolland,Connecticut,United States,1585.0,793.0,776.0,2,2,5.67,2.95,13.19,99.96
-488,Tolland,Tolland,Connecticut,United States,750.0,376.0,727.0,4,2,2.68,2.95,13.19,99.96
-525,Willington,Tolland,Connecticut,United States,374.0,237.0,290.0,3,3,1.34,2.95,13.19,99.96
-115,Ashford,Windham,Connecticut,United States,1499.0,850.0,912.0,4,4,4.95,3.2,13.19,99.96
-146,Brooklyn,Windham,Connecticut,United States,676.0,339.0,688.0,2,2,2.23,3.2,13.19,99.96
-147,Brooklyne,Windham,Connecticut,United States,400.0,200.0,389.0,1,1,1.32,3.2,13.19,99.96
-161,Canterbury,Windham,Connecticut,United States,1003.0,502.0,1349.0,4,4,3.31,3.2,13.19,99.96
-260,Hampton,Windham,Connecticut,United States,443.0,271.0,325.0,3,3,1.46,3.2,13.19,99.96
-401,Plainfield,Windham,Connecticut,United States,1655.0,927.0,1005.0,4,6,5.47,3.2,13.19,99.96
-402,Pomfret,Windham,Connecticut,United States,3113.0,1707.0,2330.0,8,6,10.28,3.2,13.19,99.96
-486,Thompson,Windham,Connecticut,United States,4087.0,2142.0,2400.0,4,4,13.5,3.2,13.19,99.96
-528,Windham,Windham,Connecticut,United States,6282.0,3588.0,4292.0,13,12,20.75,3.2,13.19,99.96
-535,Woodstock,Windham,Connecticut,United States,11117.0,6160.0,4566.0,21,19,36.72,3.2,13.19,99.96
-5,,,Delaware,United States,5525.0,2762.0,3223.0,4,3,100.0,62.98,0.12,99.96
-54,,Kent,Delaware,United States,1772.0,936.0,514.0,1,1,100.0,20.2,0.12,99.96
-64,,New Castle,Delaware,United States,1476.0,837.0,793.0,3,3,100.0,16.82,0.12,99.96
-7,,,Georgia,United States,25683.65,12935.33,14934.85,16,15,100.0,60.55,0.59,99.96
-432,Savannah,Chatham,Georgia,United States,1339.27,688.06,1287.95,10,9,100.0,3.16,0.59,99.96
-45,,Effingham,Georgia,United States,5103.17,2556.58,1762.76,2,1,100.0,12.03,0.59,99.96
-81,,Richmond,Georgia,United States,123.82,66.41,136.92,1,1,1.2,24.26,0.59,99.96
-117,Augusta,Richmond,Georgia,United States,10165.1,5082.54,2730.4,2,2,98.8,24.26,0.59,99.96
-225,Fannet,Hamilton,Letterkenney,United States,3414.0,1808.0,1288.0,5,5,100.0,100.0,0.05,99.96
-539,York,York,Maine,United States,247.0,173.0,57.0,1,1,100.0,100.0,0.0,99.96
-8,,,Maryland,United States,49333.76,23344.38,108981.17,81,74,100.0,5.02,13.7,99.96
-23,,Allegany,Maryland,United States,810.0,454.0,635.0,1,1,100.0,0.08,13.7,99.96
-25,,Anne Arundel,Maryland,United States,14249.0,7244.0,13631.0,25,25,2.3,63.11,13.7,99.96
-113,Annapolis,Anne Arundel,Maryland,United States,606541.0,313171.0,396378.0,200,47,97.7,63.11,13.7,99.96
-26,,Baltimore,Maryland,United States,5650.0,4098.0,12969.0,13,9,8.56,6.71,13.7,99.96
-118,Back River Upper Hundred,Baltimore,Maryland,United States,243.0,170.0,311.0,1,2,0.37,6.71,13.7,99.96
-120,Baltimore,Baltimore,Maryland,United States,28447.57,9147.28,8784.4,32,20,43.1,6.71,13.7,99.96
-121,Baltimore Town,Baltimore,Maryland,United States,29651.0,16745.0,44587.0,42,17,44.92,6.71,13.7,99.96
-389,Patapsco Lower Hundred,Baltimore,Maryland,United States,2017.0,1204.0,4004.0,8,10,3.06,6.71,13.7,99.96
-31,,Calvert,Maryland,United States,9665.0,4882.0,8620.0,4,4,100.0,0.98,13.7,99.96
-32,,Caroline,Maryland,United States,4517.0,257.0,515.0,3,3,100.0,0.46,13.7,99.96
-34,,Cecil,Maryland,United States,47.0,73.0,0.0,1,1,0.06,8.45,13.7,99.96
-236,George,Cecil,Maryland,United States,82679.0,30819.0,85918.0,12,10,99.42,8.45,13.7,99.96
-375,North Susquehannah,Cecil,Maryland,United States,199.0,199.0,187.0,4,1,0.24,8.45,13.7,99.96
-450,South Susquehannah Hundred,Cecil,Maryland,United States,238.0,168.0,177.0,1,1,0.29,8.45,13.7,99.96
-35,,Charles,Maryland,United States,8685.0,4735.0,6266.0,15,13,100.0,0.88,13.7,99.96
-42,,Dorchester,Maryland,United States,9628.0,5218.0,6749.0,8,7,33.83,2.89,13.7,99.96
-154,Cambridge,Dorchester,Maryland,United States,18829.0,9512.0,19299.0,4,1,66.17,2.89,13.7,99.96
-49,,Frederick,Maryland,United States,9034.0,5233.0,7045.0,34,38,38.54,2.38,13.7,99.96
-232,Frederick,Frederick,Maryland,United States,14404.0,9371.0,14046.0,10,6,61.46,2.38,13.7,99.96
-50,,Harford,Maryland,United States,8269.0,4775.0,7405.0,20,22,100.0,0.84,13.7,99.96
-55,,Kent,Maryland,United States,178.0,88.0,122.0,1,1,100.0,0.02,13.7,99.96
-62,,Montgomery,Maryland,United States,10630.0,5950.0,9192.0,24,20,100.0,1.08,13.7,99.96
-74,,Prince George's,Maryland,United States,26366.0,23584.0,13112.0,38,26,97.29,2.76,13.7,99.96
-132,Bladensburg,Prince George's,Maryland,United States,735.0,465.0,587.0,2,2,2.71,2.76,13.7,99.96
-75,,Prince Georges,Maryland,United States,3109.0,1604.0,4513.0,2,2,100.0,0.32,13.7,99.96
-77,,Queen Anne's,Maryland,United States,9857.0,5026.0,22108.0,4,3,100.0,1.0,13.7,99.96
-78,,Queen Annes,Maryland,United States,3326.0,1713.0,5124.0,4,5,100.0,0.34,13.7,99.96
-84,,Somerset,Maryland,United States,5606.0,2949.0,4243.0,5,4,100.0,0.57,13.7,99.96
-496,Unknown Township,St Marys,Maryland,United States,8333.0,4656.0,4746.0,12,12,100.0,0.85,13.7,99.96
-87,,Talbot,Maryland,United States,1140.0,508.0,686.0,6,7,100.0,0.12,13.7,99.96
-90,,Washington,Maryland,United States,5640.0,2919.0,4616.0,7,6,100.0,0.57,13.7,99.96
-95,,Worcester,Maryland,United States,5595.0,2898.0,3915.0,4,5,100.0,0.57,13.7,99.96
-9,,,Massachusetts,United States,1096.0,25123.0,10467.0,4,4,100.0,1.37,1.11,99.96
-224,Falmouth,Barnstable,Massachusetts,United States,108.0,103.0,212.0,1,1,100.0,0.14,1.11,99.96
-400,Pittsfield,Berkshire,Massachusetts,United States,395.0,247.0,295.0,1,1,26.37,1.88,1.11,99.96
-494,Tyringham,Berkshire,Massachusetts,United States,1103.0,601.0,741.0,2,2,73.63,1.88,1.11,99.96
-116,Attleborough,Bristol,Massachusetts,United States,1789.0,1187.0,1221.0,7,8,10.97,20.44,1.11,99.96
-201,Dighton,Bristol,Massachusetts,United States,3293.0,1694.0,882.0,4,1,20.19,20.44,1.11,99.96
-235,Freetown,Bristol,Massachusetts,United States,167.0,132.0,92.0,1,1,1.02,20.44,1.11,99.96
-378,Norton,Bristol,Massachusetts,United States,333.0,166.0,72.0,1,1,2.04,20.44,1.11,99.96
-415,Rehoboth,Bristol,Massachusetts,United States,8693.0,4540.0,3705.0,12,12,53.31,20.44,1.11,99.96
-443,Somerset,Bristol,Massachusetts,United States,75.0,37.0,71.0,1,1,0.46,20.44,1.11,99.96
-480,Swansea,Bristol,Massachusetts,United States,828.0,462.0,465.0,2,1,5.08,20.44,1.11,99.96
-481,Swanzey,Bristol,Massachusetts,United States,966.0,580.0,596.0,3,3,5.92,20.44,1.11,99.96
-520,Westport,Bristol,Massachusetts,United States,163.0,128.0,72.0,1,1,1.0,20.44,1.11,99.96
-107,Almsbury,Essex,Massachusetts,United States,169.0,184.0,234.0,2,2,1.04,20.31,1.11,99.96
-112,Andover,Essex,Massachusetts,United States,2996.0,1547.0,1397.0,5,2,18.49,20.31,1.11,99.96
-131,Beverly,Essex,Massachusetts,United States,2166.0,1133.0,1892.0,4,4,13.37,20.31,1.11,99.96
-266,Haverhill,Essex,Massachusetts,United States,1617.0,909.0,1430.0,5,4,9.98,20.31,1.11,99.96
-283,Ipswich,Essex,Massachusetts,United States,760.0,378.0,659.0,3,2,4.69,20.31,1.11,99.96
-360,Newbury Port,Essex,Massachusetts,United States,6903.0,3901.0,7180.0,15,10,42.6,20.31,1.11,99.96
-423,Rowley,Essex,Massachusetts,United States,91.0,45.0,136.0,1,1,0.56,20.31,1.11,99.96
-426,Salem,Essex,Massachusetts,United States,1502.0,800.0,928.0,2,2,9.27,20.31,1.11,99.96
-129,Bernardston,Hampshire,Massachusetts,United States,80.0,40.0,63.0,1,1,1.9,5.26,1.11,99.96
-176,Chesterfield,Hampshire,Massachusetts,United States,109.0,103.0,96.0,1,1,2.6,5.26,1.11,99.96
-249,Granby,Hampshire,Massachusetts,United States,22.0,11.0,0.0,1,1,0.52,5.26,1.11,99.96
-256,Hadley,Hampshire,Massachusetts,United States,200.0,100.0,199.0,1,1,4.76,5.26,1.11,99.96
-371,North Hampton,Hampshire,Massachusetts,United States,262.0,180.0,151.0,1,1,6.24,5.26,1.11,99.96
-454,Springfield,Hampshire,Massachusetts,United States,3065.0,1682.0,1426.0,4,4,72.98,5.26,1.11,99.96
-513,West Springfield,Hampshire,Massachusetts,United States,462.0,281.0,217.0,2,1,11.0,5.26,1.11,99.96
-155,Cambridge,Middlesex,Massachusetts,United States,2493.0,1294.0,1154.0,5,3,78.64,3.97,1.11,99.96
-305,Littleton,Middlesex,Massachusetts,United States,677.0,338.0,567.0,1,1,21.36,3.97,1.11,99.96
-139,Bridgewater,Plymouth,Massachusetts,United States,263.0,131.0,237.0,1,1,44.13,0.75,1.11,99.96
-439,Situate,Plymouth,Massachusetts,United States,333.0,166.0,336.0,1,1,55.87,0.75,1.11,99.96
-86,,Suffolk,Massachusetts,United States,426.0,263.0,1879.0,4,3,1.52,35.02,1.11,99.96
-136,Boston,Suffolk,Massachusetts,United States,25678.0,13671.0,18240.0,26,22,91.89,35.02,1.11,99.96
-425,Roxbury,Suffolk,Massachusetts,United States,1274.0,637.0,766.0,2,3,4.56,35.02,1.11,99.96
-473,Stoughton,Suffolk,Massachusetts,United States,566.0,333.0,303.0,1,1,2.03,35.02,1.11,99.96
-204,Dudley,Worcester,Massachusetts,United States,146.0,72.0,48.0,1,2,1.68,10.87,1.11,99.96
-248,Grafton,Worcester,Massachusetts,United States,494.0,247.0,427.0,1,1,5.7,10.87,1.11,99.96
-300,Leicester,Worcester,Massachusetts,United States,333.0,166.0,232.0,1,1,3.84,10.87,1.11,99.96
-301,Leominster,Worcester,Massachusetts,United States,4066.0,2082.0,2731.0,1,1,46.88,10.87,1.11,99.96
-476,Sturbridge MA,Worcester,Massachusetts,United States,254.0,127.0,240.0,1,1,2.93,10.87,1.11,99.96
-479,Sutton,Worcester,Massachusetts,United States,432.0,216.0,538.0,2,2,4.98,10.87,1.11,99.96
-536,Worcester,Worcester,Massachusetts,United States,2948.0,1524.0,1208.0,1,1,33.99,10.87,1.11,99.96
-10,,,New Hampshire,United States,50430.0,25464.0,68020.0,6,5,100.0,26.53,2.65,99.96
-100,Acworth,Cheshire,New Hampshire,United States,130.0,65.0,51.0,1,1,7.78,0.88,2.65,99.96
-108,Alstead,Cheshire,New Hampshire,United States,782.0,391.0,288.0,1,2,46.77,0.88,2.65,99.96
-170,Charlestown,Cheshire,New Hampshire,United States,413.0,206.0,204.0,1,1,24.7,0.88,2.65,99.96
-287,Keene,Cheshire,New Hampshire,United States,151.0,75.0,113.0,1,1,9.03,0.88,2.65,99.96
-365,Newport in,Cheshire,New Hampshire,United States,196.0,97.0,114.0,1,1,11.72,0.88,2.65,99.96
-106,Alexandria,Grafton,New Hampshire,United States,107.0,53.0,121.0,1,1,2.79,2.02,2.65,99.96
-124,Bartlett,Grafton,New Hampshire,United States,82.0,41.0,52.0,1,1,2.14,2.02,2.65,99.96
-184,Concord,Grafton,New Hampshire,United States,3508.0,1803.0,1189.0,4,4,91.43,2.02,2.65,99.96
-298,Lebanon,Grafton,New Hampshire,United States,140.0,70.0,97.0,1,1,3.65,2.02,2.65,99.96
-110,Amherst,Hillsborough,New Hampshire,United States,275.0,187.0,314.0,2,2,2.07,6.98,2.65,99.96
-205,Dunbarton,Hillsborough,New Hampshire,United States,765.0,383.0,687.0,1,1,5.77,6.98,2.65,99.96
-245,Goffstown,Hillsborough,New Hampshire,United States,867.0,434.0,508.0,1,1,6.54,6.98,2.65,99.96
-275,Hollis,Hillsborough,New Hampshire,United States,365.0,232.0,146.0,1,1,2.75,6.98,2.65,99.96
-278,Hopkinton,Hillsborough,New Hampshire,United States,400.0,200.0,144.0,1,1,3.02,6.98,2.65,99.96
-322,Merrimac,Hillsborough,New Hampshire,United States,4088.0,2044.0,2583.0,1,1,30.83,6.98,2.65,99.96
-359,Newbury,Hillsborough,New Hampshire,United States,5817.0,2909.0,3313.0,2,2,43.87,6.98,2.65,99.96
-392,Pelham,Hillsborough,New Hampshire,United States,81.0,40.0,103.0,1,1,0.61,6.98,2.65,99.96
-393,Pembroke,Hillsborough,New Hampshire,United States,150.0,75.0,61.0,1,1,1.13,6.98,2.65,99.96
-429,Salisbury,Hillsborough,New Hampshire,United States,452.0,276.0,253.0,1,1,3.41,6.98,2.65,99.96
-140,Brintwood,Rockingham,New Hampshire,United States,162.0,81.0,142.0,1,1,0.14,59.93,2.65,99.96
-159,Candia,Rockingham,New Hampshire,United States,1133.0,566.0,288.0,1,1,0.99,59.93,2.65,99.96
-160,Canterbury,Rockingham,New Hampshire,United States,677.0,436.0,354.0,4,4,0.59,59.93,2.65,99.96
-185,Concord,Rockingham,New Hampshire,United States,2093.0,1096.0,629.0,2,2,1.84,59.93,2.65,99.96
-199,Deerfield,Rockingham,New Hampshire,United States,3764.0,1932.0,1030.0,1,1,3.3,59.93,2.65,99.96
-220,Exeter,Rockingham,New Hampshire,United States,31629.0,16697.0,23294.0,30,17,27.77,59.93,2.65,99.96
-251,Greenland,Rockingham,New Hampshire,United States,643.0,371.0,256.0,1,1,0.56,59.93,2.65,99.96
-259,Hampton,Rockingham,New Hampshire,United States,5993.0,3047.0,2803.0,4,3,5.26,59.93,2.65,99.96
-288,Kensington,Rockingham,New Hampshire,United States,4192.0,2197.0,1340.0,4,4,3.68,59.93,2.65,99.96
-293,Kingstown,Rockingham,New Hampshire,United States,491.0,245.0,171.0,1,1,0.43,59.93,2.65,99.96
-307,London,Rockingham,New Hampshire,United States,2974.0,1487.0,1093.0,1,1,2.61,59.93,2.65,99.96
-309,Londonderry,Rockingham,New Hampshire,United States,3130.0,1714.0,1445.0,5,4,2.75,59.93,2.65,99.96
-337,New Castle,Rockingham,New Hampshire,United States,221.0,110.0,208.0,1,1,0.19,59.93,2.65,99.96
-361,Newcastle,Rockingham,New Hampshire,United States,230.0,165.0,147.0,1,1,0.2,59.93,2.65,99.96
-368,Newtown,Rockingham,New Hampshire,United States,499.0,250.0,203.0,2,1,0.44,59.93,2.65,99.96
-382,Nottingham,Rockingham,New Hampshire,United States,4060.0,2079.0,2300.0,1,1,3.56,59.93,2.65,99.96
-405,Portsmouth,Rockingham,New Hampshire,United States,46210.0,24459.0,23796.0,64,42,40.57,59.93,2.65,99.96
-427,Salem,Rockingham,New Hampshire,United States,3946.0,1973.0,3211.0,3,3,3.46,59.93,2.65,99.96
-445,South Hampton,Rockingham,New Hampshire,United States,1851.0,975.0,1195.0,1,1,1.63,59.93,2.65,99.96
-123,Barrington,Strafford,New Hampshire,United States,600.0,349.0,280.0,2,2,8.63,3.66,2.65,99.96
-203,Dover,Strafford,New Hampshire,United States,937.0,518.0,320.0,2,2,13.47,3.66,2.65,99.96
-207,Durham,Strafford,New Hampshire,United States,660.0,380.0,370.0,3,3,9.49,3.66,2.65,99.96
-241,Gilmantown,Strafford,New Hampshire,United States,2807.0,1452.0,783.0,2,2,40.36,3.66,2.65,99.96
-313,Madbury,Strafford,New Hampshire,United States,83.0,90.0,62.0,1,1,1.19,3.66,2.65,99.96
-431,Sandwich,Strafford,New Hampshire,United States,222.0,161.0,159.0,1,1,3.19,3.66,2.65,99.96
-444,Somersworth,Strafford,New Hampshire,United States,896.0,497.0,537.0,2,2,12.88,3.66,2.65,99.96
-483,Tamworth,Strafford,New Hampshire,United States,345.0,222.0,173.0,1,1,4.96,3.66,2.65,99.96
-499,Wakefield,Strafford,New Hampshire,United States,405.0,202.0,216.0,1,1,5.82,3.66,2.65,99.96
-11,,,New Jersey,United States,25404.0,13255.0,13829.0,27,21,100.0,82.67,0.43,99.96
-149,Burlington,Burlington,New Jersey,United States,20.0,10.0,23.0,1,1,7.12,0.91,0.43,99.96
-333,Mount Holley,Burlington,New Jersey,United States,261.0,131.0,154.0,1,1,92.88,0.91,0.43,99.96
-162,Cape May,Cape May,New Jersey,United States,151.0,174.0,92.0,2,2,100.0,0.49,0.43,99.96
-492,Trenton,Hunterdon,New Jersey,United States,1210.0,656.0,753.0,2,1,100.0,3.94,0.43,99.96
-323,Middlesex,Middlesex,New Jersey,United States,162.0,82.0,94.0,1,1,5.63,9.36,0.43,99.96
-336,New Brunswick,Middlesex,New Jersey,United States,1459.0,780.0,721.0,2,2,50.75,9.36,0.43,99.96
-410,Princeton,Middlesex,New Jersey,United States,1254.0,591.0,379.0,1,1,43.62,9.36,0.43,99.96
-61,,Monmouth,New Jersey,United States,236.0,168.0,149.0,1,1,100.0,0.77,0.43,99.96
-356,Newark,Newark,New Jersey,United States,81.0,41.0,17.0,1,1,100.0,0.26,0.43,99.96
-85,,Somerset,New Jersey,United States,83.0,41.0,65.0,1,2,100.0,0.27,0.43,99.96
-366,Newton ship,Sussex,New Jersey,United States,410.0,254.0,260.0,1,1,100.0,1.33,0.43,99.96
-12,,,New York,United States,678100.55,351338.27,3111563.71,1251,553,100.0,52.35,18.04,99.96
-101,Albany,Albany,New York,United States,30891.0,15646.0,23083.0,28,18,62.93,3.79,18.04,99.96
-102,Albany Ward 1,Albany,New York,United States,0.0,0.0,1740.0,4,4,0.0,3.79,18.04,99.96
-103,Albany Ward 2,Albany,New York,United States,5346.0,2727.0,3470.0,3,4,10.89,3.79,18.04,99.96
-104,Albany Ward 3,Albany,New York,United States,7400.0,3804.0,15273.0,19,12,15.07,3.79,18.04,99.96
-119,Balls Town,Albany,New York,United States,959.0,481.0,40099.0,22,5,1.95,3.79,18.04,99.96
-153,Cambridge,Albany,New York,United States,972.0,586.0,5400.0,10,5,1.98,3.79,18.04,99.96
-165,Catskill,Albany,New York,United States,0.0,0.0,472.0,2,2,0.0,3.79,18.04,99.96
-190,Coxsackie,Albany,New York,United States,1948.0,1075.0,1684.0,4,3,3.97,3.79,18.04,99.96
-257,Half Moon,Albany,New York,United States,0.0,0.0,1307.0,2,2,0.0,3.79,18.04,99.96
-276,Hoosick,Albany,New York,United States,0.0,0.0,2352.0,2,2,0.0,3.79,18.04,99.96
-416,Rensselaerville,Albany,New York,United States,0.0,0.0,40628.0,33,1,0.0,3.79,18.04,99.96
-417,Rensselaerwick,Albany,New York,United States,0.0,0.0,12864.0,10,8,0.0,3.79,18.04,99.96
-434,Schachticoke,Albany,New York,United States,151.0,125.0,4810.0,9,2,0.31,3.79,18.04,99.96
-435,Schenectady,Albany,New York,United States,0.0,0.0,3019.0,3,3,0.0,3.79,18.04,99.96
-470,Stephen Town,Albany,New York,United States,0.0,0.0,47.0,1,1,0.0,3.79,18.04,99.96
-471,Stillwater,Albany,New York,United States,0.0,0.0,3600.0,1,1,0.0,3.79,18.04,99.96
-510,Watervliet,Albany,New York,United States,1424.0,714.0,17699.0,16,13,2.9,3.79,18.04,99.96
-192,Crown Point,Clinton,New York,United States,0.0,0.0,174.0,1,1,,0.0,18.04,99.96
-157,Canaan,Columbia,New York,United States,778.0,439.0,44448.0,8,3,7.3,0.82,18.04,99.96
-179,Claverack,Columbia,New York,United States,9876.0,4938.0,6148.0,1,1,92.7,0.82,18.04,99.96
-274,Hillsdale,Columbia,New York,United States,0.0,0.0,117.0,1,1,0.0,0.82,18.04,99.96
-279,Hudson,Columbia,New York,United States,0.0,0.0,1296.0,2,2,0.0,0.82,18.04,99.96
-291,Kinderhook,Columbia,New York,United States,0.0,0.0,530.0,1,1,0.0,0.82,18.04,99.96
-306,Livingston,Columbia,New York,United States,0.0,0.0,5818.0,2,1,0.0,0.82,18.04,99.96
-43,,Dutchess,New York,United States,14.0,7.0,8540.0,8,4,0.95,0.11,18.04,99.96
-109,Amenia,Dutchess,New York,United States,0.0,0.0,3695.0,10,4,0.0,0.11,18.04,99.96
-126,Beekman,Dutchess,New York,United States,0.0,0.0,470.0,1,1,0.0,0.11,18.04,99.96
-228,Fishkill,Dutchess,New York,United States,820.0,410.0,2449.0,4,3,55.59,0.11,18.04,99.96
-234,Fredericksontown,Dutchess,New York,United States,0.0,0.0,159.0,2,2,0.0,0.11,18.04,99.96
-376,Northeast,Dutchess,New York,United States,0.0,0.0,6510.0,8,2,0.0,0.11,18.04,99.96
-390,Pawling,Dutchess,New York,United States,641.0,370.0,664.0,1,1,43.46,0.11,18.04,99.96
-397,Phillipstown,Dutchess,New York,United States,0.0,0.0,660.0,1,1,0.0,0.11,18.04,99.96
-418,Rhinebeck,Dutchess,New York,United States,0.0,0.0,6975.0,8,4,0.0,0.11,18.04,99.96
-57,,Kings,New York,United States,0.0,0.0,164.0,1,1,0.0,0.07,18.04,99.96
-145,Brooklyn,Kings,New York,United States,867.0,485.0,533.0,1,1,100.0,0.07,18.04,99.96
-151,Bushwick,Kings,New York,United States,0.0,0.0,1490.0,3,1,0.0,0.07,18.04,99.96
-166,Caughnawaga,Montgomery,New York,United States,1298.0,650.0,1488.0,2,2,25.77,0.39,18.04,99.96
-238,German Flatts,Montgomery,New York,United States,0.0,0.0,160.0,1,1,0.0,0.39,18.04,99.96
-272,Herkimer,Montgomery,New York,United States,3738.0,17332.0,549.0,4,1,74.23,0.39,18.04,99.96
-387,Palatine,Montgomery,New York,United States,0.0,0.0,378.0,1,1,0.0,0.39,18.04,99.96
-523,Whites,Montgomery,New York,United States,0.0,0.0,5515.0,4,3,0.0,0.39,18.04,99.96
-178,City of New York,New York,New York,United States,613.0,355.0,2358.0,4,2,0.11,41.92,18.04,99.96
-348,New York City Dock Ward,New York,New York,United States,14529.0,13039.0,368101.0,143,20,2.68,41.92,18.04,99.96
-349,New York City East Ward,New York,New York,United States,320496.0,164329.0,651191.0,260,57,59.03,41.92,18.04,99.96
-350,New York City Montgomery Ward,New York,New York,United States,15537.76,7541.38,90747.34,62,23,2.86,41.92,18.04,99.96
-351,New York City North Ward,New York,New York,United States,74743.0,29218.0,106085.0,60,18,13.77,41.92,18.04,99.96
-352,New York City Out Ward,New York,New York,United States,84218.0,38172.0,96811.0,31,9,15.51,41.92,18.04,99.96
-353,New York City South Ward,New York,New York,United States,21969.0,11036.0,14286.0,23,9,4.05,41.92,18.04,99.96
-354,New York City West Ward,New York,New York,United States,10831.0,5569.0,203815.0,92,23,1.99,41.92,18.04,99.96
-355,New York Harlem Division,New York,New York,United States,0.0,0.0,7869.0,1,1,0.0,41.92,18.04,99.96
-247,Goshen,Orange,New York,United States,435.0,268.0,717.0,3,3,72.5,0.05,18.04,99.96
-267,Haverstraw,Orange,New York,United States,0.0,0.0,558.0,5,3,0.0,0.05,18.04,99.96
-328,Minisink,Orange,New York,United States,0.0,0.0,216.0,1,1,0.0,0.05,18.04,99.96
-338,New Cornwall,Orange,New York,United States,0.0,0.0,3922.0,2,1,0.0,0.05,18.04,99.96
-383,Orange,Orange,New York,United States,0.0,0.0,2952.0,3,3,0.0,0.05,18.04,99.96
-505,Warwick,Orange,New York,United States,165.0,132.0,1781.0,10,4,27.5,0.05,18.04,99.96
-79,,Queens,New York,United States,0.0,0.0,236.0,1,1,,0.0,18.04,99.96
-229,Flushing,Queens,New York,United States,0.0,0.0,151.0,1,1,,0.0,18.04,99.96
-367,Newtown,Queens,New York,United States,0.0,0.0,1505.0,2,2,,0.0,18.04,99.96
-386,Oyster Bay,Queens,New York,United States,0.0,0.0,255.0,1,1,,0.0,18.04,99.96
-447,South Hempstead,Queens,New York,United States,0.0,0.0,12875.0,1,1,,0.0,18.04,99.96
-144,Brook Haven,Suffolk,New York,United States,0.0,0.0,1811.0,1,1,,0.0,18.04,99.96
-281,Huntington,Suffolk,New York,United States,0.0,0.0,2707.0,6,4,,0.0,18.04,99.96
-441,Smithtown,Suffolk,New York,United States,0.0,0.0,2701.0,2,1,,0.0,18.04,99.96
-446,South Hampton,Suffolk,New York,United States,0.0,0.0,707.0,1,1,,0.0,18.04,99.96
-88,,Ulster,New York,United States,164.0,82.0,11223.0,18,8,4.82,0.26,18.04,99.96
-282,Hurley,Ulster,New York,United States,0.0,0.0,895.0,1,1,0.0,0.26,18.04,99.96
-292,Kingston,Ulster,New York,United States,0.0,0.0,354.0,2,2,0.0,0.26,18.04,99.96
-314,Mamakating,Ulster,New York,United States,1898.77,1030.88,5685.65,9,3,55.8,0.26,18.04,99.96
-319,Marbletown,Ulster,New York,United States,757.0,428.0,233.0,1,2,22.25,0.26,18.04,99.96
-326,Middletown,Ulster,New York,United States,583.0,340.0,7423.0,5,1,17.13,0.26,18.04,99.96
-343,New Paltz,Ulster,New York,United States,0.0,0.0,1073.0,4,1,0.0,0.26,18.04,99.96
-347,New Windsor,Ulster,New York,United States,0.0,0.0,9503.0,7,6,0.0,0.26,18.04,99.96
-358,Newburgh,Ulster,New York,United States,0.0,0.0,160.0,2,2,0.0,0.26,18.04,99.96
-438,Shawangunk,Ulster,New York,United States,0.0,0.0,162.0,1,1,0.0,0.26,18.04,99.96
-501,Wallkill,Ulster,New York,United States,0.0,0.0,1001.0,1,2,0.0,0.26,18.04,99.96
-534,Woodstock,Ulster,New York,United States,0.0,0.0,140.0,1,1,0.0,0.26,18.04,99.96
-428,Salem,Washington,New York,United States,0.0,0.0,124.0,1,1,,0.0,18.04,99.96
-516,Westfield,Washington,New York,United States,0.0,0.0,7296.0,2,1,,0.0,18.04,99.96
-93,,Westchester,New York,United States,0.0,0.0,102.0,1,1,0.0,0.24,18.04,99.96
-125,Bedford,Westchester,New York,United States,0.0,0.0,69.0,1,1,0.0,0.24,18.04,99.96
-187,Cortlandt,Westchester,New York,United States,146.0,122.0,606.0,2,3,4.79,0.24,18.04,99.96
-261,Harrison,Westchester,New York,United States,163.0,82.0,218.0,1,1,5.35,0.24,18.04,99.96
-334,Mount Pleasant,Westchester,New York,United States,0.0,0.0,1764.0,1,1,0.0,0.24,18.04,99.96
-345,New Rochelle,Westchester,New York,United States,0.0,0.0,1667.0,4,2,0.0,0.24,18.04,99.96
-370,North Castle,Westchester,New York,United States,2452.0,1275.0,1027.0,3,3,80.5,0.24,18.04,99.96
-469,Stephen,Westchester,New York,United States,0.0,0.0,85.0,1,1,0.0,0.24,18.04,99.96
-537,Yonkers,Westchester,New York,United States,0.0,0.0,2456.0,1,1,0.0,0.24,18.04,99.96
-538,York,Westchester,New York,United States,285.0,192.0,211.0,1,2,9.36,0.24,18.04,99.96
-13,,,North Carolina,United States,3065.0,2885.0,2600.0,15,13,100.0,7.81,0.55,99.96
-506,Washington,Beaufort,North Carolina,United States,327.0,163.0,199.0,1,1,100.0,0.83,0.55,99.96
-33,,Carteret,North Carolina,United States,82.67,41.33,73.0,1,1,100.0,0.21,0.55,99.96
-215,Edenton,Chowan,North Carolina,United States,6142.0,3519.0,5339.0,12,5,100.0,15.66,0.55,99.96
-357,Newbern,Craven,North Carolina,United States,6015.0,3105.0,4607.0,10,6,100.0,15.33,0.55,99.96
-227,Fayetteville,Cumberland,North Carolina,United States,161.0,129.0,0.0,1,1,100.0,0.41,0.55,99.96
-39,,Currituck,North Carolina,United States,105.0,52.0,0.0,1,1,100.0,0.27,0.55,99.96
-44,,Edgecombe,North Carolina,United States,512.0,255.0,562.0,1,1,27.56,4.74,0.55,99.96
-484,Tarborugh,Edgecombe,North Carolina,United States,1346.0,673.0,951.0,1,1,72.44,4.74,0.55,99.96
-47,,Franklin,North Carolina,United States,238.0,169.0,293.0,1,1,100.0,0.61,0.55,99.96
-216,Edgecombe,Halifax,North Carolina,United States,17191.0,8643.0,15969.0,2,1,98.19,44.63,0.55,99.96
-258,Halifax,Halifax,North Carolina,United States,317.0,157.0,74.0,3,2,1.81,44.63,0.55,99.96
-335,Murfrees Borough,Hertford,North Carolina,United States,1462.0,780.0,961.0,2,1,100.0,3.73,0.55,99.96
-53,,Jones,North Carolina,United States,247.0,75.0,6.0,1,1,100.0,0.63,0.55,99.96
-60,,Mecklenburg,North Carolina,United States,25.0,62.0,0.0,1,1,100.0,0.06,0.55,99.96
-527,Wilmington,New Hanover,North Carolina,United States,744.0,372.0,63.0,2,2,100.0,1.9,0.55,99.96
-69,,Orange,North Carolina,United States,0.0,0.0,201.0,1,1,0.0,0.43,0.55,99.96
-273,Hillsborough,Orange,North Carolina,United States,167.0,184.0,145.0,2,2,100.0,0.43,0.55,99.96
-71,,Perquimans,North Carolina,United States,45.0,72.0,0.0,1,1,100.0,0.11,0.55,99.96
-73,,Pitt,North Carolina,United States,75.0,86.0,98.0,1,1,100.0,0.19,0.55,99.96
-82,,Rockingham,North Carolina,United States,121.0,60.0,84.0,1,1,100.0,0.31,0.55,99.96
-83,,Rowan,North Carolina,United States,312.0,255.0,0.0,5,5,65.55,1.21,0.55,99.96
-430,Salisbury,Rowan,North Carolina,United States,164.0,82.0,0.0,1,1,34.45,1.21,0.55,99.96
-89,,Warren,North Carolina,United States,254.0,127.0,0.0,2,1,100.0,0.65,0.55,99.96
-92,,Wayne,North Carolina,United States,110.0,104.0,123.0,1,1,100.0,0.28,0.55,99.96
-14,,,Pennsylvania,United States,172517.0,89171.0,127902.0,178,152,100.0,8.93,26.91,99.96
-24,,Allegheny,Pennsylvania,United States,1779.0,889.0,853.0,1,1,13.79,0.67,26.91,99.96
-399,Pittsburgh,Allegheny,Pennsylvania,United States,4185.0,2194.0,2279.0,4,4,32.43,0.67,26.91,99.96
-403,Portion Taken From Washington,Allegheny,Pennsylvania,United States,6940.0,3668.0,4311.0,7,8,53.78,0.67,26.91,99.96
-28,,Bedford,Pennsylvania,United States,1336.0,718.0,401.0,2,2,100.0,0.07,26.91,99.96
-29,,Berks,Pennsylvania,United States,4155.0,2372.0,3090.0,7,7,10.55,2.04,26.91,99.96
-111,Amity,Berks,Pennsylvania,United States,391.0,196.0,315.0,1,1,0.99,2.04,26.91,99.96
-128,Bern,Berks,Pennsylvania,United States,428.0,313.0,284.0,2,2,1.09,2.04,26.91,99.96
-181,Colebrookedale,Berks,Pennsylvania,United States,226.0,163.0,135.0,1,1,0.57,2.04,26.91,99.96
-194,Cumru,Berks,Pennsylvania,United States,208.0,104.0,156.0,1,1,0.53,2.04,26.91,99.96
-269,Heidelberg,Berks,Pennsylvania,United States,171.0,135.0,147.0,1,1,0.43,2.04,26.91,99.96
-321,Maxatany,Berks,Pennsylvania,United States,213.0,156.0,148.0,1,1,0.54,2.04,26.91,99.96
-412,Reading,Berks,Pennsylvania,United States,13086.0,6939.0,8624.0,12,10,33.24,2.04,26.91,99.96
-414,Reading Berks,Berks,Pennsylvania,United States,19255.0,9682.0,9266.0,8,4,48.9,2.04,26.91,99.96
-493,Tulpehocken,Berks,Pennsylvania,United States,1241.0,670.0,930.0,2,2,3.15,2.04,26.91,99.96
-30,,Bucks,Pennsylvania,United States,18065.0,9635.0,8600.0,29,29,100.0,0.94,26.91,99.96
-150,Burlington New Jersey,Burlington,Pennsylvania,United States,349.0,175.0,152.0,1,1,100.0,0.02,26.91,99.96
-37,,Chester,Pennsylvania,United States,11736.0,6219.0,4870.0,17,15,50.49,1.2,26.91,99.96
-171,Charlestown,Chester,Pennsylvania,United States,230.0,166.0,185.0,2,2,0.99,1.2,26.91,99.96
-208,East Caln,Chester,Pennsylvania,United States,442.0,221.0,238.0,1,1,1.9,1.2,26.91,99.96
-213,East Nantmill,Chester,Pennsylvania,United States,162.0,179.0,206.0,2,2,0.7,1.2,26.91,99.96
-308,Londonderry,Chester,Pennsylvania,United States,114.0,107.0,101.0,1,2,0.49,1.2,26.91,99.96
-340,New London,Chester,Pennsylvania,United States,435.0,218.0,183.0,1,2,1.87,1.2,26.91,99.96
-384,Oxford,Chester,Pennsylvania,United States,474.0,237.0,250.0,1,1,2.04,1.2,26.91,99.96
-398,Pikeland,Chester,Pennsylvania,United States,473.0,286.0,317.0,1,1,2.04,1.2,26.91,99.96
-491,Tredifferin,Chester,Pennsylvania,United States,6314.0,3257.0,3493.0,6,6,27.17,1.2,26.91,99.96
-514,West Whiteland,Chester,Pennsylvania,United States,954.0,527.0,276.0,1,2,4.1,1.2,26.91,99.96
-526,Willistown,Chester,Pennsylvania,United States,1909.0,1005.0,605.0,1,1,8.21,1.2,26.91,99.96
-38,,Cumberland,Pennsylvania,United States,237.0,168.0,115.0,1,1,2.72,0.45,26.91,99.96
-163,Carlisle,Cumberland,Pennsylvania,United States,6571.0,3436.0,2823.0,7,4,75.29,0.45,26.91,99.96
-239,Germantown,Cumberland,Pennsylvania,United States,1920.0,1059.0,673.0,2,2,22.0,0.45,26.91,99.96
-40,,Dauphin,Pennsylvania,United States,13849.0,7216.0,6285.0,10,8,74.79,0.96,26.91,99.96
-197,Dauphin,Dauphin,Pennsylvania,United States,2039.0,1069.0,700.0,1,1,11.01,0.96,26.91,99.96
-198,Dauphincoy,Dauphin,Pennsylvania,United States,1229.0,615.0,350.0,1,1,6.64,0.96,26.91,99.96
-297,Lebanon,Dauphin,Pennsylvania,United States,1400.0,700.0,378.0,1,1,7.56,0.96,26.91,99.96
-41,,Delaware,Pennsylvania,United States,2624.0,1442.0,1177.0,3,3,34.83,0.39,26.91,99.96
-183,Concord,Delaware,Pennsylvania,United States,64.0,81.0,74.0,1,1,0.85,0.39,26.91,99.96
-196,Darby,Delaware,Pennsylvania,United States,4736.0,2369.0,1977.0,1,2,62.87,0.39,26.91,99.96
-453,Springfield,Delaware,Pennsylvania,United States,109.0,104.0,77.0,1,1,1.45,0.39,26.91,99.96
-46,,Fayette,Pennsylvania,United States,395.0,198.0,243.0,1,1,20.87,0.1,26.91,99.96
-148,Bullskin,Fayette,Pennsylvania,United States,19.0,59.0,0.0,1,1,1.0,0.1,26.91,99.96
-455,Springhill,Fayette,Pennsylvania,United States,1479.0,740.0,773.0,1,1,78.13,0.1,26.91,99.96
-48,,Franklin,Pennsylvania,United States,1392.0,895.0,911.0,5,6,81.93,0.09,26.91,99.96
-167,Chambersburgh,Franklin,Pennsylvania,United States,307.0,203.0,172.0,1,1,18.07,0.09,26.91,99.96
-51,,Huntingdon,Pennsylvania,United States,414.0,257.0,205.0,1,2,100.0,0.02,26.91,99.96
-58,,Lancaster,Pennsylvania,United States,4040.0,2070.0,1704.0,4,4,6.25,3.34,26.91,99.96
-217,Elizabeth,Lancaster,Pennsylvania,United States,941.0,471.0,524.0,1,1,1.46,3.34,26.91,99.96
-270,Hempfield,Lancaster,Pennsylvania,United States,3062.0,1631.0,930.0,2,2,4.74,3.34,26.91,99.96
-294,Lancaster,Lancaster,Pennsylvania,United States,5353.0,2828.0,2489.0,7,7,8.28,3.34,26.91,99.96
-295,Lancaster Borough,Lancaster,Pennsylvania,United States,45585.0,23082.0,19184.0,22,17,70.55,3.34,26.91,99.96
-296,Lancaster Township,Lancaster,Pennsylvania,United States,4228.0,2114.0,1796.0,2,1,6.54,3.34,26.91,99.96
-315,Manheim,Lancaster,Pennsylvania,United States,175.0,88.0,49.0,1,1,0.27,3.34,26.91,99.96
-316,Manor Township,Lancaster,Pennsylvania,United States,589.0,345.0,230.0,1,1,0.91,3.34,26.91,99.96
-320,Martick,Lancaster,Pennsylvania,United States,511.0,355.0,162.0,2,2,0.79,3.34,26.91,99.96
-474,Strasburg,Lancaster,Pennsylvania,United States,133.0,67.0,88.0,1,1,0.21,3.34,26.91,99.96
-63,,Montgomery,Pennsylvania,United States,10415.0,5607.0,4147.0,14,17,76.11,0.71,26.91,99.96
-174,Cheltenham,Montgomery,Pennsylvania,United States,2437.0,1268.0,698.0,1,2,17.81,0.71,26.91,99.96
-317,Manor of Moreland,Montgomery,Pennsylvania,United States,832.0,417.0,400.0,1,1,6.08,0.71,26.91,99.96
-66,,Northampton,Pennsylvania,United States,1174.0,681.0,507.0,4,4,22.86,0.27,26.91,99.96
-130,Bethlehem,Northampton,Pennsylvania,United States,3688.0,1943.0,2213.0,5,1,71.81,0.27,26.91,99.96
-312,Lynn,Northampton,Pennsylvania,United States,0.0,0.0,192.0,1,1,0.0,0.27,26.91,99.96
-497,Upper Saucon,Northampton,Pennsylvania,United States,98.0,94.0,37.0,1,1,1.91,0.27,26.91,99.96
-522,Whitehall,Northampton,Pennsylvania,United States,176.0,138.0,128.0,1,1,3.43,0.27,26.91,99.96
-67,,Northumberland,Pennsylvania,United States,7612.0,3957.0,2663.0,11,11,71.79,0.55,26.91,99.96
-114,Armstrong,Northumberland,Pennsylvania,United States,1076.0,587.0,540.0,1,1,10.15,0.55,26.91,99.96
-331,Montgomery,Northumberland,Pennsylvania,United States,533.0,316.0,312.0,2,2,5.03,0.55,26.91,99.96
-478,Sunbury,Northumberland,Pennsylvania,United States,1382.0,691.0,392.0,1,1,13.03,0.55,26.91,99.96
-72,,Philadelphia,Pennsylvania,United States,23342.0,11973.0,11060.0,14,10,1.55,77.86,26.91,99.96
-133,Blockley,Philadelphia,Pennsylvania,United States,1011.0,555.0,472.0,1,1,0.07,77.86,26.91,99.96
-135,Borden,Philadelphia,Pennsylvania,United States,1443.0,789.0,587.0,1,1,0.1,77.86,26.91,99.96
-152,Byberry,Philadelphia,Pennsylvania,United States,1642.0,870.0,994.0,1,2,0.11,77.86,26.91,99.96
-240,Germantown,Philadelphia,Pennsylvania,United States,9389.0,4844.0,3106.0,9,7,0.62,77.86,26.91,99.96
-310,Lower Dublin,Philadelphia,Pennsylvania,United States,193.0,146.0,141.0,2,2,0.01,77.86,26.91,99.96
-330,Mojamensing and Passyunk,Philadelphia,Pennsylvania,United States,431.0,265.0,1592.0,3,3,0.03,77.86,26.91,99.96
-377,Northern Liberties,Philadelphia,Pennsylvania,United States,40367.0,20875.0,17898.0,28,18,2.68,77.86,26.91,99.96
-385,Oxford,Philadelphia,Pennsylvania,United States,586.0,293.0,396.0,1,1,0.04,77.86,26.91,99.96
-395,Philadelphia,Philadelphia,Pennsylvania,United States,490049.91,251842.95,215178.37,293,182,32.58,77.86,26.91,99.96
-396,Philadelphia City,Philadelphia,Pennsylvania,United States,85080.0,43645.0,33312.0,42,28,5.66,77.86,26.91,99.96
-452,Southwark,Philadelphia,Pennsylvania,United States,1687.0,137.0,108.0,3,3,0.11,77.86,26.91,99.96
-485,The Northern Libert,Philadelphia,Pennsylvania,United States,1303.0,702.0,352.0,1,1,0.09,77.86,26.91,99.96
-507,Water Street East Side,Philadelphia,Pennsylvania,United States,847688.14,431717.07,408662.34,359,215,56.35,77.86,26.91,99.96
-91,,Washington,Pennsylvania,United States,1914.0,1006.0,577.0,1,1,100.0,0.1,26.91,99.96
-94,,Westmoreland,Pennsylvania,United States,627.0,363.0,146.0,2,3,7.02,0.46,26.91,99.96
-271,Hempfield,Westmoreland,Pennsylvania,United States,2211.0,1155.0,682.0,1,1,24.76,0.46,26.91,99.96
-289,Kensington,Westmoreland,Pennsylvania,United States,1317.0,708.0,411.0,1,1,14.75,0.46,26.91,99.96
-422,Rostraver,Westmoreland,Pennsylvania,United States,2354.0,1227.0,727.0,2,3,26.36,0.46,26.91,99.96
-448,South Huntington,Westmoreland,Pennsylvania,United States,169.0,134.0,98.0,1,1,1.89,0.46,26.91,99.96
-495,Unity,Westmoreland,Pennsylvania,United States,2185.0,1093.0,650.0,1,1,24.47,0.46,26.91,99.96
-518,Westmoreland,Westmoreland,Pennsylvania,United States,66.0,83.0,30.0,1,1,0.74,0.46,26.91,99.96
-96,,York,Pennsylvania,United States,353.0,227.0,122.0,6,5,2.16,0.85,26.91,99.96
-168,Chanceford,York,Pennsylvania,United States,79.0,40.0,0.0,1,1,0.48,0.85,26.91,99.96
-329,Mixed Township,York,Pennsylvania,United States,2716.0,1557.0,807.0,6,6,16.59,0.85,26.91,99.96
-388,Paradise,York,Pennsylvania,United States,70.0,85.0,0.0,1,1,0.43,0.85,26.91,99.96
-503,Warrinton,York,Pennsylvania,United States,4366.0,2233.0,2148.0,1,1,26.66,0.85,26.91,99.96
-530,Windsor,York,Pennsylvania,United States,44.0,22.0,20.0,1,1,0.27,0.85,26.91,99.96
-540,York,York,Pennsylvania,United States,1461.0,880.0,410.0,6,7,8.92,0.85,26.91,99.96
-541,York Borough,York,Pennsylvania,United States,7285.0,3693.0,4015.0,6,8,44.49,0.85,26.91,99.96
-15,,,Rhode Island,United States,47545.0,23297.0,24824.0,70,69,100.0,8.87,7.47,99.96
-122,Barrington,Bristol,Rhode Island,United States,2473.0,1380.0,2697.0,11,9,23.45,1.97,7.47,99.96
-141,Bristol,Bristol,Rhode Island,United States,1614.0,952.0,1164.0,7,7,15.3,1.97,7.47,99.96
-502,Warren,Bristol,Rhode Island,United States,6459.0,3470.0,3603.0,15,13,61.25,1.97,7.47,99.96
-188,Coventry,Kent,Rhode Island,United States,663.0,480.0,604.0,5,4,5.46,2.27,7.47,99.96
-209,East Greenwich,Kent,Rhode Island,United States,2868.0,1628.0,1979.0,10,10,23.61,2.27,7.47,99.96
-303,Little Compton,Kent,Rhode Island,United States,0.0,0.0,53.0,1,1,0.0,2.27,7.47,99.96
-346,New Shoreham,Kent,Rhode Island,United States,0.0,0.0,0.0,1,1,0.0,2.27,7.47,99.96
-504,Warwick,Kent,Rhode Island,United States,6965.0,3872.0,4311.0,15,13,57.35,2.27,7.47,99.96
-512,West Greenwich,Kent,Rhode Island,United States,1649.0,1018.0,1606.0,7,6,13.58,2.27,7.47,99.96
-304,Little Compton,Newport,Rhode Island,United States,2155.0,1240.0,1566.0,8,8,0.8,50.39,7.47,99.96
-325,Middletown,Newport,Rhode Island,United States,108.0,103.0,187.0,1,1,0.04,50.39,7.47,99.96
-364,Newport,Newport,Rhode Island,United States,265263.0,133115.0,94820.0,76,64,98.18,50.39,7.47,99.96
-404,Portsmouth,Newport,Rhode Island,United States,255.0,176.0,68.0,2,2,0.09,50.39,7.47,99.96
-487,Tiverton,Newport,Rhode Island,United States,2397.0,1489.0,1874.0,16,15,0.89,50.39,7.47,99.96
-76,,Providence,Rhode Island,United States,1008.0,553.0,963.0,1,1,0.53,35.2,7.47,99.96
-191,Cranston,Providence,Rhode Island,United States,4464.0,2764.0,3269.0,20,18,2.37,35.2,7.47,99.96
-193,Cumberland,Providence,Rhode Island,United States,461.0,279.0,137.0,4,3,0.24,35.2,7.47,99.96
-230,Foster,Providence,Rhode Island,United States,764.0,482.0,543.0,6,8,0.4,35.2,7.47,99.96
-243,Glocester,Providence,Rhode Island,United States,523.0,333.0,450.0,3,2,0.28,35.2,7.47,99.96
-244,Gloucester,Providence,Rhode Island,United States,4627.0,2409.0,1464.0,6,7,2.45,35.2,7.47,99.96
-285,Johnston,Providence,Rhode Island,United States,848.0,571.0,318.0,4,3,0.45,35.2,7.47,99.96
-286,Johnstown,Providence,Rhode Island,United States,1690.0,995.0,805.0,6,6,0.9,35.2,7.47,99.96
-374,North Providence,Providence,Rhode Island,United States,1674.0,1032.0,737.0,9,8,0.89,35.2,7.47,99.96
-411,Providence,Providence,Rhode Island,United States,163374.0,92939.0,121367.0,240,156,86.56,35.2,7.47,99.96
-436,Scituate,Providence,Rhode Island,United States,6094.0,3576.0,4228.0,17,15,3.23,35.2,7.47,99.96
-440,Smithfield,Providence,Rhode Island,United States,3218.0,1951.0,1838.0,12,10,1.7,35.2,7.47,99.96
-172,Charlestown,Washington,Rhode Island,United States,2066.0,1327.0,1868.0,8,8,29.39,1.31,7.47,99.96
-221,Exeter,Washington,Rhode Island,United States,1088.0,540.0,638.0,9,6,15.48,1.31,7.47,99.96
-373,North Kingston,Washington,Rhode Island,United States,1749.0,1070.0,761.0,7,5,24.88,1.31,7.47,99.96
-420,Richmond,Washington,Rhode Island,United States,128.0,62.0,116.0,2,2,1.82,1.31,7.47,99.96
-449,South Kingston,Washington,Rhode Island,United States,1764.0,1027.0,968.0,8,8,25.09,1.31,7.47,99.96
-515,Westerly,Washington,Rhode Island,United States,235.0,167.0,152.0,1,1,3.34,1.31,7.47,99.96
-16,,,South Carolina,United States,826085.9,407380.39,248856.1,29,22,100.0,78.71,14.62,99.96
-21,,Abbeville,South Carolina,United States,216.55,113.27,95.66,2,2,59.57,0.03,14.62,99.96
-97,96 District,Abbeville,South Carolina,United States,57.0,78.0,0.0,1,1,15.68,0.03,14.62,99.96
-99,Abbeville,Abbeville,South Carolina,United States,90.0,45.0,0.0,1,1,24.76,0.03,14.62,99.96
-27,,Beaufort,South Carolina,United States,1024.13,516.56,1106.11,2,2,66.5,0.15,14.62,99.96
-143,Broad River,Beaufort,South Carolina,United States,110.0,55.0,54.0,1,1,7.14,0.15,14.62,99.96
-344,New River,Beaufort,South Carolina,United States,67.0,33.0,89.0,1,1,4.35,0.15,14.62,99.96
-459,St Helena,Beaufort,South Carolina,United States,339.0,170.0,298.0,1,1,22.01,0.15,14.62,99.96
-36,,Charleston,South Carolina,United States,77.0,88.0,0.0,1,1,0.04,19.33,14.62,99.96
-169,Charleston,Charleston,South Carolina,United States,88631.94,40036.97,81397.17,125,78,43.67,19.33,14.62,99.96
-177,Christ Church,Charleston,South Carolina,United States,32.0,66.0,0.0,1,1,0.02,19.33,14.62,99.96
-202,Dorchester,Charleston,South Carolina,United States,182.0,91.0,209.0,1,1,0.09,19.33,14.62,99.96
-284,James Island,Charleston,South Carolina,United States,440.0,463.0,573.0,4,2,0.22,19.33,14.62,99.96
-456,St Andrews,Charleston,South Carolina,United States,195.0,147.0,234.0,1,1,0.1,19.33,14.62,99.96
-458,St Bartholomes,Charleston,South Carolina,United States,257.0,129.0,0.0,1,1,0.13,19.33,14.62,99.96
-460,St Johns,Charleston,South Carolina,United States,241.0,170.0,219.0,1,1,0.12,19.33,14.62,99.96
-461,St Pauls,Charleston,South Carolina,United States,180.0,140.0,144.0,2,2,0.09,19.33,14.62,99.96
-463,St Phillips and St Michaels,Charleston,South Carolina,United States,108648.61,61435.83,84918.19,191,101,53.54,19.33,14.62,99.96
-464,St Thomas,Charleston,South Carolina,United States,2367.0,1233.0,1173.0,2,2,1.17,19.33,14.62,99.96
-466,St. George,Charleston,South Carolina,United States,1561.0,830.0,995.0,1,1,0.77,19.33,14.62,99.96
-489,Toogoodoo,Charleston,South Carolina,United States,125.0,62.0,0.0,1,1,0.06,19.33,14.62,99.96
-465,St Thomas,Cheraws District,South Carolina,United States,4403.0,2251.0,1749.0,1,1,100.0,0.42,14.62,99.96
-462,St Pauls,Clarendon,South Carolina,United States,153.0,76.0,180.0,1,1,100.0,0.01,14.62,99.96
-237,Georgetown,Georgetown,South Carolina,United States,355.0,278.0,149.0,3,3,4.96,0.68,14.62,99.96
-391,Pee Dee,Georgetown,South Carolina,United States,50.0,25.0,117.0,1,1,0.7,0.68,14.62,99.96
-408,Prince Fredericks,Georgetown,South Carolina,United States,29.0,64.0,84.0,1,2,0.4,0.68,14.62,99.96
-409,Prince Georges,Georgetown,South Carolina,United States,6595.0,3524.0,5956.0,11,6,92.09,0.68,14.62,99.96
-531,Winyaw,Georgetown,South Carolina,United States,132.67,66.33,88.0,1,1,1.85,0.68,14.62,99.96
-156,Camden,Lancaster,South Carolina,United States,5830.67,3064.33,4849.0,5,3,100.0,0.56,14.62,99.96
-98,96 District,Laurens,South Carolina,United States,92.0,96.0,0.0,1,1,100.0,0.01,14.62,99.96
-70,,Orangeburg,South Carolina,United States,300.0,150.0,310.0,1,2,100.0,0.03,14.62,99.96
-80,,Richland,South Carolina,United States,170.0,135.0,0.0,1,1,23.42,0.07,14.62,99.96
-182,Columbia,Richland,South Carolina,United States,508.0,353.0,451.0,3,2,69.97,0.07,14.62,99.96
-457,St Andrews,Richland,South Carolina,United States,48.0,24.0,46.0,1,1,6.61,0.07,14.62,99.96
-277,Hopewell,Newton,Tyborn,United States,15401.0,4984.0,3653.0,8,8,100.0,100.0,0.21,99.96
-19,,,Vermont,United States,1992.0,996.0,1801.0,1,1,100.0,37.59,0.07,99.96
-362,Newhuntington,Chittenden,Vermont,United States,71.0,86.0,69.0,1,2,100.0,1.34,0.07,99.96
-223,Fairley,Orange,Vermont,United States,175.0,88.0,0.0,1,1,100.0,3.3,0.07,99.96
-164,Castleton,Rutland,Vermont,United States,124.0,112.0,74.0,1,1,100.0,2.34,0.07,99.96
-517,Westminster,Windham,Vermont,United States,2788.0,0.0,0.0,1,1,100.0,52.61,0.07,99.96
-264,Hartford,Windsor,Vermont,United States,71.0,86.0,43.0,1,1,47.65,2.81,0.07,99.96
-511,Weathersfield,Windsor,Vermont,United States,78.0,39.0,30.0,1,2,52.35,2.81,0.07,99.96
-20,,,Virginia,United States,12027.0,6454.0,9429.0,19,18,100.0,58.38,0.29,99.96
-22,,Accomack,Virginia,United States,111.0,56.0,72.0,1,1,100.0,0.54,0.29,99.96
-105,Alexandria,Fairfax,Virginia,United States,485.0,292.0,278.0,1,1,100.0,2.35,0.29,99.96
-524,Williamsburgh,Greenbrier,Virginia,United States,48.0,24.0,133.0,1,1,100.0,0.23,0.29,99.96
-394,Petersburg,Hampshire,Virginia,United States,2742.0,1420.0,2047.0,2,2,100.0,13.31,0.29,99.96
-419,Richmond,Henrico,Virginia,United States,1339.0,768.0,1601.0,4,5,100.0,6.5,0.29,99.96
-52,,James City,Virginia,United States,152.0,77.0,138.0,1,1,100.0,0.74,0.29,99.96
-56,,King George,Virginia,United States,336.0,218.0,372.0,1,1,100.0,1.63,0.29,99.96
-59,,Loudoun,Virginia,United States,159.0,130.0,84.0,1,1,100.0,0.77,0.29,99.96
-68,,Ohio,Virginia,United States,2278.0,1139.0,676.0,1,1,100.0,11.06,0.29,99.96
-406,Portsmouth,Rockingham,Virginia,United States,368.62,188.81,398.09,1,1,100.0,1.79,0.29,99.96
-233,Fredericksburg,Spotsylvania,Virginia,United States,556.0,279.0,336.0,1,1,100.0,2.7,0.29,99.96
-1,,,,Great Britain,244.0,122.0,270.0,1,1,20.3,100.0,100.0,0.0
-3,,,Bourdeaux,France,71.0,85.0,0.0,1,1,100.0,100.0,100.0,0.0
-6,,,Eustatia,British Virgin Islands,279.0,193.0,398.0,3,3,100.0,100.0,19.07,0.02
-17,,,St Thomas,British Virgin Islands,1050.0,574.0,958.0,1,1,100.0,100.0,71.77,0.02
-18,,,The River May,British Virgin Islands,134.0,67.0,0.0,1,1,100.0,100.0,9.16,0.02
-0,,,,Bermuda,847.0,424.0,478.0,2,2,70.47,100.0,100.0,0.01
+,town,county,state,country,Certificate Count,# Debtholders,town/county pct,county/state pct,state/country pct,country/ovall pct
+2,,,,United States,1,1,11.66,100.0,0.0,99.96
+4,,,Connecticut,United States,30,31,100.0,43.42,13.15,99.96
+197,Danbury,Fairfield,Connecticut,United States,7,6,8.86,4.22,13.15,99.96
+224,Fairfield,Fairfield,Connecticut,United States,20,17,19.33,4.22,13.15,99.96
+253,Greenwich,Fairfield,Connecticut,United States,2,2,2.56,4.22,13.15,99.96
+280,Huntington,Fairfield,Connecticut,United States,5,4,18.16,4.22,13.15,99.96
+379,Norwalk,Fairfield,Connecticut,United States,3,3,2.57,4.22,13.15,99.96
+380,Norwalk and Stamford,Fairfield,Connecticut,United States,24,14,26.12,4.22,13.15,99.96
+413,Reading,Fairfield,Connecticut,United States,1,1,1.52,4.22,13.15,99.96
+421,Ridgefield,Fairfield,Connecticut,United States,1,1,0.46,4.22,13.15,99.96
+468,Stamford,Fairfield,Connecticut,United States,10,7,7.7,4.22,13.15,99.96
+475,Stratford,Fairfield,Connecticut,United States,10,6,12.37,4.22,13.15,99.96
+519,Weston,Fairfield,Connecticut,United States,1,1,0.35,4.22,13.15,99.96
+129,Berlin,Hartford,Connecticut,United States,4,3,0.96,12.62,13.15,99.96
+144,Bristol,Hartford,Connecticut,United States,1,1,0.18,12.62,13.15,99.96
+213,East Hartford,Hartford,Connecticut,United States,10,11,3.95,12.62,13.15,99.96
+216,East Windsor,Hartford,Connecticut,United States,8,7,1.45,12.62,13.15,99.96
+221,Enfield,Hartford,Connecticut,United States,2,2,0.47,12.62,13.15,99.96
+227,Farmington,Hartford,Connecticut,United States,27,27,6.85,12.62,13.15,99.96
+243,Glastonbury,Hartford,Connecticut,United States,13,12,10.6,12.62,13.15,99.96
+251,Granby,Hartford,Connecticut,United States,1,1,0.38,12.62,13.15,99.96
+263,Hartford,Hartford,Connecticut,United States,136,74,50.38,12.62,13.15,99.96
+363,Newington,Hartford,Connecticut,United States,1,1,1.4,12.62,13.15,99.96
+477,Suffield,Hartford,Connecticut,United States,13,13,2.27,12.62,13.15,99.96
+482,Symsbury,Hartford,Connecticut,United States,2,2,0.12,12.62,13.15,99.96
+521,Wethersfield,Hartford,Connecticut,United States,51,37,12.06,12.62,13.15,99.96
+529,Windsor,Hartford,Connecticut,United States,31,28,8.93,12.62,13.15,99.96
+160,Canaan,Litchfield,Connecticut,United States,2,2,0.88,4.2,13.15,99.96
+188,Cornwall,Litchfield,Connecticut,United States,3,3,8.34,4.2,13.15,99.96
+247,Goshen,Litchfield,Connecticut,United States,2,2,2.47,4.2,13.15,99.96
+264,Hartford,Litchfield,Connecticut,United States,2,2,1.79,4.2,13.15,99.96
+266,Harwinton,Litchfield,Connecticut,United States,1,2,0.0,4.2,13.15,99.96
+302,Litchfield,Litchfield,Connecticut,United States,16,10,41.05,4.2,13.15,99.96
+342,New Milford,Litchfield,Connecticut,United States,12,6,7.07,4.2,13.15,99.96
+369,Norfolk,Litchfield,Connecticut,United States,1,1,0.2,4.2,13.15,99.96
+424,Roxbury,Litchfield,Connecticut,United States,2,2,26.91,4.2,13.15,99.96
+437,Sharon,Litchfield,Connecticut,United States,3,3,2.44,4.2,13.15,99.96
+490,Torrington,Litchfield,Connecticut,United States,3,3,4.14,4.2,13.15,99.96
+509,Watertown,Litchfield,Connecticut,United States,1,1,1.5,4.2,13.15,99.96
+533,Woodbury,Litchfield,Connecticut,United States,3,2,3.22,4.2,13.15,99.96
+175,Chatham,Middlesex,Connecticut,United States,11,11,3.76,5.05,13.15,99.96
+208,Durham,Middlesex,Connecticut,United States,1,1,0.23,5.05,13.15,99.96
+212,East Haddam,Middlesex,Connecticut,United States,5,4,2.74,5.05,13.15,99.96
+256,Haddam,Middlesex,Connecticut,United States,6,3,12.65,5.05,13.15,99.96
+290,Killingworth,Middlesex,Connecticut,United States,15,12,5.9,5.05,13.15,99.96
+324,Middletown,Middlesex,Connecticut,United States,31,23,48.59,5.05,13.15,99.96
+433,Saybrook,Middlesex,Connecticut,United States,13,10,26.14,5.05,13.15,99.96
+140,Branford,New Haven,Connecticut,United States,3,3,1.53,5.61,13.15,99.96
+177,Cheshire,New Haven,Connecticut,United States,2,2,1.73,5.61,13.15,99.96
+202,Derby,New Haven,Connecticut,United States,8,5,12.68,5.61,13.15,99.96
+214,East Haven,New Haven,Connecticut,United States,2,1,0.27,5.61,13.15,99.96
+255,Guilford,New Haven,Connecticut,United States,10,10,2.89,5.61,13.15,99.96
+327,Milford,New Haven,Connecticut,United States,10,9,4.52,5.61,13.15,99.96
+339,New Haven,New Haven,Connecticut,United States,48,32,72.11,5.61,13.15,99.96
+372,North Haven,New Haven,Connecticut,United States,1,1,0.16,5.61,13.15,99.96
+451,Southbury,New Haven,Connecticut,United States,1,1,0.7,5.61,13.15,99.96
+500,Wallingford,New Haven,Connecticut,United States,3,3,2.89,5.61,13.15,99.96
+508,Waterbury,New Haven,Connecticut,United States,1,1,0.52,5.61,13.15,99.96
+532,Woodbridge,New Haven,Connecticut,United States,1,1,0.0,5.61,13.15,99.96
+67,,New London,Connecticut,United States,8,8,0.03,18.59,13.15,99.96
+139,Bozrah,New London,Connecticut,United States,2,2,0.26,18.59,13.15,99.96
+182,Colchester,New London,Connecticut,United States,18,12,4.33,18.59,13.15,99.96
+232,Franklin,New London,Connecticut,United States,2,2,0.13,18.59,13.15,99.96
+254,Groton,New London,Connecticut,United States,12,11,2.17,18.59,13.15,99.96
+299,Lebanon,New London,Connecticut,United States,24,20,11.8,18.59,13.15,99.96
+311,Lyme,New London,Connecticut,United States,29,23,18.77,18.59,13.15,99.96
+332,Montville,New London,Connecticut,United States,5,4,0.52,18.59,13.15,99.96
+341,New London,New London,Connecticut,United States,38,30,23.98,18.59,13.15,99.96
+381,Norwich,New London,Connecticut,United States,46,31,28.54,18.59,13.15,99.96
+407,Preston,New London,Connecticut,United States,9,8,4.49,18.59,13.15,99.96
+472,Stonington,New London,Connecticut,United States,9,7,4.64,18.59,13.15,99.96
+498,Voluntown,New London,Connecticut,United States,2,2,0.33,18.59,13.15,99.96
+136,Bolton,Tolland,Connecticut,United States,13,10,39.75,3.01,13.15,99.96
+191,Coventry,Tolland,Connecticut,United States,9,6,6.77,3.01,13.15,99.96
+220,Ellington,Tolland,Connecticut,United States,1,1,0.47,3.01,13.15,99.96
+269,Hebron,Tolland,Connecticut,United States,10,8,34.74,3.01,13.15,99.96
+318,Mansfield,Tolland,Connecticut,United States,8,8,8.34,3.01,13.15,99.96
+442,Somers,Tolland,Connecticut,United States,1,1,0.37,3.01,13.15,99.96
+467,Stafford,Tolland,Connecticut,United States,2,2,5.52,3.01,13.15,99.96
+488,Tolland,Tolland,Connecticut,United States,4,2,2.62,3.01,13.15,99.96
+525,Willington,Tolland,Connecticut,United States,3,3,1.42,3.01,13.15,99.96
+117,Ashford,Windham,Connecticut,United States,4,4,5.0,3.28,13.15,99.96
+148,Brooklyn,Windham,Connecticut,United States,2,2,2.16,3.28,13.15,99.96
+149,Brooklyne,Windham,Connecticut,United States,1,1,1.28,3.28,13.15,99.96
+163,Canterbury,Windham,Connecticut,United States,4,4,3.2,3.28,13.15,99.96
+261,Hampton,Windham,Connecticut,United States,3,3,1.52,3.28,13.15,99.96
+401,Plainfield,Windham,Connecticut,United States,4,6,5.5,3.28,13.15,99.96
+402,Pomfret,Windham,Connecticut,United States,8,6,10.26,3.28,13.15,99.96
+486,Thompson,Windham,Connecticut,United States,4,4,13.26,3.28,13.15,99.96
+528,Windham,Windham,Connecticut,United States,13,12,21.02,3.28,13.15,99.96
+535,Woodstock,Windham,Connecticut,United States,21,19,36.79,3.28,13.15,99.96
+5,,,Delaware,United States,4,3,100.0,62.27,0.12,99.96
+56,,Kent,Delaware,United States,1,1,100.0,20.35,0.12,99.96
+66,,New Castle,Delaware,United States,3,3,100.0,17.38,0.12,99.96
+7,,,Georgia,United States,16,15,100.0,60.58,0.59,99.96
+432,Savannah,Chatham,Georgia,United States,10,9,100.0,3.18,0.59,99.96
+46,,Effingham,Georgia,United States,2,1,100.0,12.02,0.59,99.96
+83,,Richmond,Georgia,United States,1,1,1.23,24.22,0.59,99.96
+119,Augusta,Richmond,Georgia,United States,2,2,98.77,24.22,0.59,99.96
+539,York,York,Maine,United States,1,1,100.0,100.0,0.0,99.96
+8,,,Maryland,United States,81,74,100.0,4.89,13.65,99.96
+23,,Allegany,Maryland,United States,1,1,100.0,0.09,13.65,99.96
+25,,Anne Arundel,Maryland,United States,25,25,2.28,63.3,13.65,99.96
+115,Annapolis,Anne Arundel,Maryland,United States,200,47,97.72,63.3,13.65,99.96
+26,,Baltimore,Maryland,United States,13,9,10.01,6.55,13.65,99.96
+120,Back River Upper Hundred,Baltimore,Maryland,United States,1,2,0.42,6.55,13.65,99.96
+122,Baltimore,Baltimore,Maryland,United States,32,20,38.61,6.55,13.65,99.96
+123,Baltimore Town,Baltimore,Maryland,United States,42,17,47.65,6.55,13.65,99.96
+389,Patapsco Lower Hundred,Baltimore,Maryland,United States,8,10,3.31,6.55,13.65,99.96
+31,,Calvert,Maryland,United States,4,4,100.0,0.98,13.65,99.96
+32,,Caroline,Maryland,United States,3,3,100.0,0.32,13.65,99.96
+34,,Cecil,Maryland,United States,1,1,0.1,7.7,13.65,99.96
+237,George,Cecil,Maryland,United States,12,10,99.19,7.7,13.65,99.96
+375,North Susquehannah,Cecil,Maryland,United States,4,1,0.35,7.7,13.65,99.96
+450,South Susquehannah Hundred,Cecil,Maryland,United States,1,1,0.35,7.7,13.65,99.96
+35,,Charles,Maryland,United States,15,13,100.0,0.9,13.65,99.96
+43,,Dorchester,Maryland,United States,8,7,34.38,2.9,13.65,99.96
+156,Cambridge,Dorchester,Maryland,United States,4,1,65.62,2.9,13.65,99.96
+51,,Frederick,Maryland,United States,34,38,37.5,2.56,13.65,99.96
+233,Frederick,Frederick,Maryland,United States,10,6,62.5,2.56,13.65,99.96
+52,,Harford,Maryland,United States,20,22,100.0,0.88,13.65,99.96
+57,,Kent,Maryland,United States,1,1,100.0,0.02,13.65,99.96
+64,,Montgomery,Maryland,United States,24,20,100.0,1.12,13.65,99.96
+76,,Prince George's,Maryland,United States,38,26,97.65,3.44,13.65,99.96
+134,Bladensburg,Prince George's,Maryland,United States,2,2,2.35,3.44,13.65,99.96
+77,,Prince Georges,Maryland,United States,2,2,100.0,0.32,13.65,99.96
+79,,Queen Anne's,Maryland,United States,4,3,100.0,1.0,13.65,99.96
+80,,Queen Annes,Maryland,United States,4,5,100.0,0.34,13.65,99.96
+86,,Somerset,Maryland,United States,5,4,100.0,0.58,13.65,99.96
+496,Unknown Township,St Marys,Maryland,United States,12,12,100.0,0.87,13.65,99.96
+89,,Talbot,Maryland,United States,6,7,100.0,0.11,13.65,99.96
+92,,Washington,Maryland,United States,7,6,100.0,0.58,13.65,99.96
+97,,Worcester,Maryland,United States,4,5,100.0,0.57,13.65,99.96
+9,,,Massachusetts,United States,4,4,100.0,17.79,1.35,99.96
+226,Falmouth,Barnstable,Massachusetts,United States,1,1,100.0,0.14,1.35,99.96
+400,Pittsfield,Berkshire,Massachusetts,United States,1,1,27.37,1.59,1.35,99.96
+494,Tyringham,Berkshire,Massachusetts,United States,2,2,72.63,1.59,1.35,99.96
+118,Attleborough,Bristol,Massachusetts,United States,7,8,11.79,17.12,1.35,99.96
+203,Dighton,Bristol,Massachusetts,United States,4,1,19.76,17.12,1.35,99.96
+236,Freetown,Bristol,Massachusetts,United States,1,1,1.18,17.12,1.35,99.96
+378,Norton,Bristol,Massachusetts,United States,1,1,1.98,17.12,1.35,99.96
+415,Rehoboth,Bristol,Massachusetts,United States,12,12,52.44,17.12,1.35,99.96
+443,Somerset,Bristol,Massachusetts,United States,1,1,0.44,17.12,1.35,99.96
+480,Swansea,Bristol,Massachusetts,United States,2,1,5.11,17.12,1.35,99.96
+481,Swanzey,Bristol,Massachusetts,United States,3,3,6.13,17.12,1.35,99.96
+520,Westport,Bristol,Massachusetts,United States,1,1,1.15,17.12,1.35,99.96
+109,Almsbury,Essex,Massachusetts,United States,2,2,1.41,17.03,1.35,99.96
+114,Andover,Essex,Massachusetts,United States,5,2,18.1,17.03,1.35,99.96
+133,Beverly,Essex,Massachusetts,United States,4,4,13.14,17.03,1.35,99.96
+267,Haverhill,Essex,Massachusetts,United States,5,4,10.06,17.03,1.35,99.96
+283,Ipswich,Essex,Massachusetts,United States,3,2,4.53,17.03,1.35,99.96
+360,Newbury Port,Essex,Massachusetts,United States,15,10,43.04,17.03,1.35,99.96
+423,Rowley,Essex,Massachusetts,United States,1,1,0.54,17.03,1.35,99.96
+426,Salem,Essex,Massachusetts,United States,2,2,9.17,17.03,1.35,99.96
+131,Bernardston,Hampshire,Massachusetts,United States,1,1,1.82,4.48,1.35,99.96
+178,Chesterfield,Hampshire,Massachusetts,United States,1,1,3.21,4.48,1.35,99.96
+250,Granby,Hampshire,Massachusetts,United States,1,1,0.5,4.48,1.35,99.96
+257,Hadley,Hampshire,Massachusetts,United States,1,1,4.55,4.48,1.35,99.96
+371,North Hampton,Hampshire,Massachusetts,United States,1,1,6.7,4.48,1.35,99.96
+454,Springfield,Hampshire,Massachusetts,United States,4,4,71.96,4.48,1.35,99.96
+513,West Springfield,Hampshire,Massachusetts,United States,2,1,11.26,4.48,1.35,99.96
+157,Cambridge,Middlesex,Massachusetts,United States,5,3,78.86,3.26,1.35,99.96
+305,Littleton,Middlesex,Massachusetts,United States,1,1,21.14,3.26,1.35,99.96
+141,Bridgewater,Plymouth,Massachusetts,United States,1,1,44.12,0.61,1.35,99.96
+439,Situate,Plymouth,Massachusetts,United States,1,1,55.88,0.61,1.35,99.96
+88,,Suffolk,Massachusetts,United States,4,3,1.61,29.08,1.35,99.96
+138,Boston,Suffolk,Massachusetts,United States,26,22,91.83,29.08,1.35,99.96
+425,Roxbury,Suffolk,Massachusetts,United States,2,3,4.46,29.08,1.35,99.96
+473,Stoughton,Suffolk,Massachusetts,United States,1,1,2.1,29.08,1.35,99.96
+206,Dudley,Worcester,Massachusetts,United States,1,2,1.66,8.89,1.35,99.96
+249,Grafton,Worcester,Massachusetts,United States,1,1,5.65,8.89,1.35,99.96
+300,Leicester,Worcester,Massachusetts,United States,1,1,3.81,8.89,1.35,99.96
+301,Leominster,Worcester,Massachusetts,United States,1,1,46.91,8.89,1.35,99.96
+476,Sturbridge MA,Worcester,Massachusetts,United States,1,1,2.91,8.89,1.35,99.96
+479,Sutton,Worcester,Massachusetts,United States,2,2,4.94,8.89,1.35,99.96
+536,Worcester,Worcester,Massachusetts,United States,1,1,34.12,8.89,1.35,99.96
+10,,,New Hampshire,United States,6,5,100.0,26.27,2.65,99.96
+102,Acworth,Cheshire,New Hampshire,United States,1,1,7.78,0.87,2.65,99.96
+110,Alstead,Cheshire,New Hampshire,United States,1,2,46.81,0.87,2.65,99.96
+172,Charlestown,Cheshire,New Hampshire,United States,1,1,24.7,0.87,2.65,99.96
+287,Keene,Cheshire,New Hampshire,United States,1,1,9.02,0.87,2.65,99.96
+365,Newport in,Cheshire,New Hampshire,United States,1,1,11.69,0.87,2.65,99.96
+108,Alexandria,Grafton,New Hampshire,United States,1,1,2.76,2.01,2.65,99.96
+126,Bartlett,Grafton,New Hampshire,United States,1,1,2.12,2.01,2.65,99.96
+186,Concord,Grafton,New Hampshire,United States,4,4,91.51,2.01,2.65,99.96
+298,Lebanon,Grafton,New Hampshire,United States,1,1,3.62,2.01,2.65,99.96
+112,Amherst,Hillsborough,New Hampshire,United States,2,2,2.31,6.94,2.65,99.96
+207,Dunbarton,Hillsborough,New Hampshire,United States,1,1,5.73,6.94,2.65,99.96
+246,Goffstown,Hillsborough,New Hampshire,United States,1,1,6.49,6.94,2.65,99.96
+276,Hollis,Hillsborough,New Hampshire,United States,1,1,2.98,6.94,2.65,99.96
+278,Hopkinton,Hillsborough,New Hampshire,United States,1,1,2.99,6.94,2.65,99.96
+322,Merrimac,Hillsborough,New Hampshire,United States,1,1,30.6,6.94,2.65,99.96
+359,Newbury,Hillsborough,New Hampshire,United States,2,2,43.54,6.94,2.65,99.96
+392,Pelham,Hillsborough,New Hampshire,United States,1,1,0.6,6.94,2.65,99.96
+393,Pembroke,Hillsborough,New Hampshire,United States,1,1,1.12,6.94,2.65,99.96
+429,Salisbury,Hillsborough,New Hampshire,United States,1,1,3.63,6.94,2.65,99.96
+142,Brintwood,Rockingham,New Hampshire,United States,1,1,0.14,60.16,2.65,99.96
+161,Candia,Rockingham,New Hampshire,United States,1,1,0.98,60.16,2.65,99.96
+162,Canterbury,Rockingham,New Hampshire,United States,4,4,0.64,60.16,2.65,99.96
+187,Concord,Rockingham,New Hampshire,United States,2,2,1.84,60.16,2.65,99.96
+201,Deerfield,Rockingham,New Hampshire,United States,1,1,3.28,60.16,2.65,99.96
+222,Exeter,Rockingham,New Hampshire,United States,30,17,27.81,60.16,2.65,99.96
+252,Greenland,Rockingham,New Hampshire,United States,1,1,0.58,60.16,2.65,99.96
+260,Hampton,Rockingham,New Hampshire,United States,4,3,5.2,60.16,2.65,99.96
+288,Kensington,Rockingham,New Hampshire,United States,4,4,3.68,60.16,2.65,99.96
+293,Kingstown,Rockingham,New Hampshire,United States,1,1,0.42,60.16,2.65,99.96
+307,London,Rockingham,New Hampshire,United States,1,1,2.57,60.16,2.65,99.96
+309,Londonderry,Rockingham,New Hampshire,United States,5,4,2.79,60.16,2.65,99.96
+337,New Castle,Rockingham,New Hampshire,United States,1,1,0.19,60.16,2.65,99.96
+361,Newcastle,Rockingham,New Hampshire,United States,1,1,0.23,60.16,2.65,99.96
+368,Newtown,Rockingham,New Hampshire,United States,2,1,0.43,60.16,2.65,99.96
+382,Nottingham,Rockingham,New Hampshire,United States,1,1,3.53,60.16,2.65,99.96
+405,Portsmouth,Rockingham,New Hampshire,United States,64,42,40.67,60.16,2.65,99.96
+427,Salem,Rockingham,New Hampshire,United States,3,3,3.41,60.16,2.65,99.96
+445,South Hampton,Rockingham,New Hampshire,United States,1,1,1.63,60.16,2.65,99.96
+125,Barrington,Strafford,New Hampshire,United States,2,2,8.77,3.75,2.65,99.96
+205,Dover,Strafford,New Hampshire,United States,2,2,13.44,3.75,2.65,99.96
+209,Durham,Strafford,New Hampshire,United States,3,3,9.61,3.75,2.65,99.96
+242,Gilmantown,Strafford,New Hampshire,United States,2,2,39.34,3.75,2.65,99.96
+313,Madbury,Strafford,New Hampshire,United States,1,1,1.6,3.75,2.65,99.96
+431,Sandwich,Strafford,New Hampshire,United States,1,1,3.54,3.75,2.65,99.96
+444,Somersworth,Strafford,New Hampshire,United States,2,2,12.87,3.75,2.65,99.96
+483,Tamworth,Strafford,New Hampshire,United States,1,1,5.24,3.75,2.65,99.96
+499,Wakefield,Strafford,New Hampshire,United States,1,1,5.61,3.75,2.65,99.96
+11,,,New Jersey,United States,27,21,100.0,82.4,0.43,99.96
+151,Burlington,Burlington,New Jersey,United States,1,1,7.11,0.9,0.43,99.96
+333,Mount Holley,Burlington,New Jersey,United States,1,1,92.89,0.9,0.43,99.96
+164,Cape May,Cape May,New Jersey,United States,2,2,100.0,0.69,0.43,99.96
+492,Trenton,Hunterdon,New Jersey,United States,2,1,100.0,3.98,0.43,99.96
+323,Middlesex,Middlesex,New Jersey,United States,1,1,5.64,9.23,0.43,99.96
+336,New Brunswick,Middlesex,New Jersey,United States,2,2,51.73,9.23,0.43,99.96
+410,Princeton,Middlesex,New Jersey,United States,1,1,42.63,9.23,0.43,99.96
+63,,Monmouth,New Jersey,United States,1,1,100.0,0.86,0.43,99.96
+356,Newark,Newark,New Jersey,United States,1,1,100.0,0.26,0.43,99.96
+87,,Somerset,New Jersey,United States,1,2,100.0,0.26,0.43,99.96
+366,Newton ship,Sussex,New Jersey,United States,1,1,100.0,1.42,0.43,99.96
+12,,,New York,United States,1251,553,100.0,52.27,18.08,99.96
+103,Albany,Albany,New York,United States,28,18,62.68,3.77,18.08,99.96
+104,Albany Ward 1,Albany,New York,United States,4,4,0.0,3.77,18.08,99.96
+105,Albany Ward 2,Albany,New York,United States,3,4,10.87,3.77,18.08,99.96
+106,Albany Ward 3,Albany,New York,United States,19,12,15.09,3.77,18.08,99.96
+121,Balls Town,Albany,New York,United States,22,5,1.94,3.77,18.08,99.96
+155,Cambridge,Albany,New York,United States,10,5,2.1,3.77,18.08,99.96
+167,Catskill,Albany,New York,United States,2,2,0.0,3.77,18.08,99.96
+192,Coxsackie,Albany,New York,United States,4,3,4.07,3.77,18.08,99.96
+258,Half Moon,Albany,New York,United States,2,2,0.0,3.77,18.08,99.96
+277,Hoosick,Albany,New York,United States,2,2,0.0,3.77,18.08,99.96
+416,Rensselaerville,Albany,New York,United States,33,1,0.0,3.77,18.08,99.96
+417,Rensselaerwick,Albany,New York,United States,10,8,0.0,3.77,18.08,99.96
+434,Schachticoke,Albany,New York,United States,9,2,0.37,3.77,18.08,99.96
+435,Schenectady,Albany,New York,United States,3,3,0.0,3.77,18.08,99.96
+470,Stephen Town,Albany,New York,United States,1,1,0.0,3.77,18.08,99.96
+471,Stillwater,Albany,New York,United States,1,1,0.0,3.77,18.08,99.96
+510,Watervliet,Albany,New York,United States,16,13,2.88,3.77,18.08,99.96
+194,Crown Point,Clinton,New York,United States,1,1,,0.0,18.08,99.96
+159,Canaan,Columbia,New York,United States,8,3,7.59,0.81,18.08,99.96
+181,Claverack,Columbia,New York,United States,1,1,92.41,0.81,18.08,99.96
+275,Hillsdale,Columbia,New York,United States,1,1,0.0,0.81,18.08,99.96
+279,Hudson,Columbia,New York,United States,2,2,0.0,0.81,18.08,99.96
+291,Kinderhook,Columbia,New York,United States,1,1,0.0,0.81,18.08,99.96
+306,Livingston,Columbia,New York,United States,2,1,0.0,0.81,18.08,99.96
+44,,Dutchess,New York,United States,8,4,0.93,0.11,18.08,99.96
+111,Amenia,Dutchess,New York,United States,10,4,0.0,0.11,18.08,99.96
+128,Beekman,Dutchess,New York,United States,1,1,0.0,0.11,18.08,99.96
+229,Fishkill,Dutchess,New York,United States,4,3,54.38,0.11,18.08,99.96
+235,Fredericksontown,Dutchess,New York,United States,2,2,0.0,0.11,18.08,99.96
+376,Northeast,Dutchess,New York,United States,8,2,0.0,0.11,18.08,99.96
+390,Pawling,Dutchess,New York,United States,1,1,44.69,0.11,18.08,99.96
+397,Phillipstown,Dutchess,New York,United States,1,1,0.0,0.11,18.08,99.96
+418,Rhinebeck,Dutchess,New York,United States,8,4,0.0,0.11,18.08,99.96
+59,,Kings,New York,United States,1,1,0.0,0.07,18.08,99.96
+147,Brooklyn,Kings,New York,United States,1,1,100.0,0.07,18.08,99.96
+153,Bushwick,Kings,New York,United States,3,1,0.0,0.07,18.08,99.96
+168,Caughnawaga,Montgomery,New York,United States,2,2,8.46,1.17,18.08,99.96
+239,German Flatts,Montgomery,New York,United States,1,1,0.0,1.17,18.08,99.96
+273,Herkimer,Montgomery,New York,United States,4,1,91.54,1.17,18.08,99.96
+387,Palatine,Montgomery,New York,United States,1,1,0.0,1.17,18.08,99.96
+523,Whites,Montgomery,New York,United States,4,3,0.0,1.17,18.08,99.96
+180,City of New York,New York,New York,United States,4,2,0.12,41.24,18.08,99.96
+348,New York City Dock Ward,New York,New York,United States,143,20,3.39,41.24,18.08,99.96
+349,New York City East Ward,New York,New York,United States,260,57,59.69,41.24,18.08,99.96
+350,New York City Montgomery Ward,New York,New York,United States,62,23,2.84,41.24,18.08,99.96
+351,New York City North Ward,New York,New York,United States,60,18,12.8,41.24,18.08,99.96
+352,New York City Out Ward,New York,New York,United States,31,9,15.07,41.24,18.08,99.96
+353,New York City South Ward,New York,New York,United States,23,9,4.06,41.24,18.08,99.96
+354,New York City West Ward,New York,New York,United States,92,23,2.02,41.24,18.08,99.96
+355,New York Harlem Division,New York,New York,United States,1,1,0.0,41.24,18.08,99.96
+248,Goshen,Orange,New York,United States,3,3,70.3,0.05,18.08,99.96
+268,Haverstraw,Orange,New York,United States,5,3,0.0,0.05,18.08,99.96
+328,Minisink,Orange,New York,United States,1,1,0.0,0.05,18.08,99.96
+338,New Cornwall,Orange,New York,United States,2,1,0.0,0.05,18.08,99.96
+383,Orange,Orange,New York,United States,3,3,0.0,0.05,18.08,99.96
+505,Warwick,Orange,New York,United States,10,4,29.7,0.05,18.08,99.96
+81,,Queens,New York,United States,1,1,,0.0,18.08,99.96
+230,Flushing,Queens,New York,United States,1,1,,0.0,18.08,99.96
+367,Newtown,Queens,New York,United States,2,2,,0.0,18.08,99.96
+386,Oyster Bay,Queens,New York,United States,1,1,,0.0,18.08,99.96
+447,South Hempstead,Queens,New York,United States,1,1,,0.0,18.08,99.96
+146,Brook Haven,Suffolk,New York,United States,1,1,,0.0,18.08,99.96
+281,Huntington,Suffolk,New York,United States,6,4,,0.0,18.08,99.96
+441,Smithtown,Suffolk,New York,United States,2,1,,0.0,18.08,99.96
+446,South Hampton,Suffolk,New York,United States,1,1,,0.0,18.08,99.96
+90,,Ulster,New York,United States,18,8,4.66,0.27,18.08,99.96
+282,Hurley,Ulster,New York,United States,1,1,0.0,0.27,18.08,99.96
+292,Kingston,Ulster,New York,United States,2,2,0.0,0.27,18.08,99.96
+314,Mamakating,Ulster,New York,United States,9,3,55.45,0.27,18.08,99.96
+319,Marbletown,Ulster,New York,United States,1,2,22.43,0.27,18.08,99.96
+326,Middletown,Ulster,New York,United States,5,1,17.47,0.27,18.08,99.96
+343,New Paltz,Ulster,New York,United States,4,1,0.0,0.27,18.08,99.96
+347,New Windsor,Ulster,New York,United States,7,6,0.0,0.27,18.08,99.96
+358,Newburgh,Ulster,New York,United States,2,2,0.0,0.27,18.08,99.96
+438,Shawangunk,Ulster,New York,United States,1,1,0.0,0.27,18.08,99.96
+501,Wallkill,Ulster,New York,United States,1,2,0.0,0.27,18.08,99.96
+534,Woodstock,Ulster,New York,United States,1,1,0.0,0.27,18.08,99.96
+428,Salem,Washington,New York,United States,1,1,,0.0,18.08,99.96
+516,Westfield,Washington,New York,United States,2,1,,0.0,18.08,99.96
+95,,Westchester,New York,United States,1,1,0.0,0.24,18.08,99.96
+127,Bedford,Westchester,New York,United States,1,1,0.0,0.24,18.08,99.96
+189,Cortlandt,Westchester,New York,United States,2,3,5.68,0.24,18.08,99.96
+262,Harrison,Westchester,New York,United States,1,1,5.19,0.24,18.08,99.96
+334,Mount Pleasant,Westchester,New York,United States,1,1,0.0,0.24,18.08,99.96
+345,New Rochelle,Westchester,New York,United States,4,2,0.0,0.24,18.08,99.96
+370,North Castle,Westchester,New York,United States,3,3,79.01,0.24,18.08,99.96
+469,Stephen,Westchester,New York,United States,1,1,0.0,0.24,18.08,99.96
+537,Yonkers,Westchester,New York,United States,1,1,0.0,0.24,18.08,99.96
+538,York,Westchester,New York,United States,1,2,10.11,0.24,18.08,99.96
+13,,,North Carolina,United States,15,13,100.0,9.71,0.56,99.96
+506,Washington,Beaufort,North Carolina,United States,1,1,100.0,0.8,0.56,99.96
+33,,Carteret,North Carolina,United States,1,1,100.0,0.2,0.56,99.96
+217,Edenton,Chowan,North Carolina,United States,12,5,100.0,15.77,0.56,99.96
+357,Newbern,Craven,North Carolina,United States,10,6,100.0,14.88,0.56,99.96
+228,Fayetteville,Cumberland,North Carolina,United States,1,1,100.0,0.47,0.56,99.96
+40,,Currituck,North Carolina,United States,1,1,100.0,0.26,0.56,99.96
+45,,Edgecombe,North Carolina,United States,1,1,27.53,4.55,0.56,99.96
+484,Tarborugh,Edgecombe,North Carolina,United States,1,1,72.47,4.55,0.56,99.96
+48,,Franklin,North Carolina,United States,1,1,100.0,0.66,0.56,99.96
+218,Edgecombe,Halifax,North Carolina,United States,2,1,98.2,42.93,0.56,99.96
+259,Halifax,Halifax,North Carolina,United States,3,2,1.8,42.93,0.56,99.96
+335,Murfrees Borough,Hertford,North Carolina,United States,2,1,100.0,3.66,0.56,99.96
+55,,Jones,North Carolina,United States,1,1,100.0,0.53,0.56,99.96
+62,,Mecklenburg,North Carolina,United States,1,1,100.0,0.14,0.56,99.96
+527,Wilmington,New Hanover,North Carolina,United States,2,2,100.0,1.82,0.56,99.96
+71,,Orange,North Carolina,United States,1,1,0.0,0.57,0.56,99.96
+274,Hillsborough,Orange,North Carolina,United States,2,2,100.0,0.57,0.56,99.96
+73,,Perquimans,North Carolina,United States,1,1,100.0,0.19,0.56,99.96
+75,,Pitt,North Carolina,United States,1,1,100.0,0.26,0.56,99.96
+84,,Rockingham,North Carolina,United States,1,1,100.0,0.3,0.56,99.96
+85,,Rowan,North Carolina,United States,5,5,69.74,1.33,0.56,99.96
+430,Salisbury,Rowan,North Carolina,United States,1,1,30.26,1.33,0.56,99.96
+91,,Warren,North Carolina,United States,2,1,100.0,0.62,0.56,99.96
+94,,Wayne,North Carolina,United States,1,1,100.0,0.35,0.56,99.96
+14,,,Pennsylvania,United States,178,152,100.0,8.87,27.08,99.96
+24,,Allegheny,Pennsylvania,United States,1,1,13.57,0.67,27.08,99.96
+399,Pittsburgh,Allegheny,Pennsylvania,United States,4,4,32.45,0.67,27.08,99.96
+403,Portion Taken From Washington,Allegheny,Pennsylvania,United States,7,8,53.97,0.67,27.08,99.96
+28,,Bedford,Pennsylvania,United States,2,2,100.0,0.07,27.08,99.96
+29,,Berks,Pennsylvania,United States,7,7,10.86,2.04,27.08,99.96
+113,Amity,Berks,Pennsylvania,United States,1,1,0.98,2.04,27.08,99.96
+130,Bern,Berks,Pennsylvania,United States,2,2,1.23,2.04,27.08,99.96
+183,Colebrookedale,Berks,Pennsylvania,United States,1,1,0.65,2.04,27.08,99.96
+196,Cumru,Berks,Pennsylvania,United States,1,1,0.52,2.04,27.08,99.96
+270,Heidelberg,Berks,Pennsylvania,United States,1,1,0.51,2.04,27.08,99.96
+321,Maxatany,Berks,Pennsylvania,United States,1,1,0.61,2.04,27.08,99.96
+412,Reading,Berks,Pennsylvania,United States,12,10,33.32,2.04,27.08,99.96
+414,Reading Berks,Berks,Pennsylvania,United States,8,4,48.14,2.04,27.08,99.96
+493,Tulpehocken,Berks,Pennsylvania,United States,2,2,3.18,2.04,27.08,99.96
+30,,Bucks,Pennsylvania,United States,29,29,100.0,0.94,27.08,99.96
+152,Burlington New Jersey,Burlington,Pennsylvania,United States,1,1,100.0,0.02,27.08,99.96
+37,,Chester,Pennsylvania,United States,17,15,50.34,1.21,27.08,99.96
+173,Charlestown,Chester,Pennsylvania,United States,2,2,1.11,1.21,27.08,99.96
+210,East Caln,Chester,Pennsylvania,United States,1,1,1.86,1.21,27.08,99.96
+215,East Nantmill,Chester,Pennsylvania,United States,2,2,0.96,1.21,27.08,99.96
+308,Londonderry,Chester,Pennsylvania,United States,1,2,0.62,1.21,27.08,99.96
+340,New London,Chester,Pennsylvania,United States,1,2,1.83,1.21,27.08,99.96
+384,Oxford,Chester,Pennsylvania,United States,1,1,1.99,1.21,27.08,99.96
+398,Pikeland,Chester,Pennsylvania,United States,1,1,2.13,1.21,27.08,99.96
+491,Tredifferin,Chester,Pennsylvania,United States,6,6,26.84,1.21,27.08,99.96
+514,West Whiteland,Chester,Pennsylvania,United States,1,2,4.15,1.21,27.08,99.96
+526,Willistown,Chester,Pennsylvania,United States,1,1,8.17,1.21,27.08,99.96
+38,,Cumberland,Pennsylvania,United States,1,1,3.02,0.45,27.08,99.96
+165,Carlisle,Cumberland,Pennsylvania,United States,7,4,74.73,0.45,27.08,99.96
+240,Germantown,Cumberland,Pennsylvania,United States,2,2,22.25,0.45,27.08,99.96
+39,,Cumberland County,Pennsylvania,United States,8,8,100.0,0.69,27.08,99.96
+41,,Dauphin,Pennsylvania,United States,10,8,74.92,0.95,27.08,99.96
+199,Dauphin,Dauphin,Pennsylvania,United States,1,1,11.05,0.95,27.08,99.96
+200,Dauphincoy,Dauphin,Pennsylvania,United States,1,1,6.56,0.95,27.08,99.96
+297,Lebanon,Dauphin,Pennsylvania,United States,1,1,7.47,0.95,27.08,99.96
+42,,Delaware,Pennsylvania,United States,3,3,35.27,0.39,27.08,99.96
+185,Concord,Delaware,Pennsylvania,United States,1,1,1.26,0.39,27.08,99.96
+198,Darby,Delaware,Pennsylvania,United States,1,2,61.63,0.39,27.08,99.96
+453,Springfield,Delaware,Pennsylvania,United States,1,1,1.85,0.39,27.08,99.96
+47,,Fayette,Pennsylvania,United States,1,1,20.52,0.1,27.08,99.96
+150,Bullskin,Fayette,Pennsylvania,United States,1,1,2.7,0.1,27.08,99.96
+455,Springhill,Fayette,Pennsylvania,United States,1,1,76.78,0.1,27.08,99.96
+49,,Franklin,Pennsylvania,United States,5,6,81.77,0.09,27.08,99.96
+169,Chambersburgh,Franklin,Pennsylvania,United States,1,1,18.23,0.09,27.08,99.96
+50,,Franklin County,Pennsylvania,United States,5,5,100.0,0.18,27.08,99.96
+53,,Huntingdon,Pennsylvania,United States,1,2,100.0,0.02,27.08,99.96
+60,,Lancaster,Pennsylvania,United States,4,4,6.26,3.31,27.08,99.96
+219,Elizabeth,Lancaster,Pennsylvania,United States,1,1,1.45,3.31,27.08,99.96
+271,Hempfield,Lancaster,Pennsylvania,United States,2,2,4.81,3.31,27.08,99.96
+294,Lancaster,Lancaster,Pennsylvania,United States,7,7,8.38,3.31,27.08,99.96
+295,Lancaster Borough,Lancaster,Pennsylvania,United States,22,17,70.31,3.31,27.08,99.96
+296,Lancaster Township,Lancaster,Pennsylvania,United States,2,1,6.49,3.31,27.08,99.96
+315,Manheim,Lancaster,Pennsylvania,United States,1,1,0.27,3.31,27.08,99.96
+316,Manor Township,Lancaster,Pennsylvania,United States,1,1,0.96,3.31,27.08,99.96
+320,Martick,Lancaster,Pennsylvania,United States,2,2,0.89,3.31,27.08,99.96
+474,Strasburg,Lancaster,Pennsylvania,United States,1,1,0.2,3.31,27.08,99.96
+65,,Montgomery,Pennsylvania,United States,14,17,76.38,0.71,27.08,99.96
+176,Cheltenham,Montgomery,Pennsylvania,United States,1,2,17.66,0.71,27.08,99.96
+317,Manor of Moreland,Montgomery,Pennsylvania,United States,1,1,5.95,0.71,27.08,99.96
+68,,Northampton,Pennsylvania,United States,4,4,23.21,0.27,27.08,99.96
+132,Bethlehem,Northampton,Pennsylvania,United States,5,1,70.46,0.27,27.08,99.96
+312,Lynn,Northampton,Pennsylvania,United States,1,1,0.0,0.27,27.08,99.96
+497,Upper Saucon,Northampton,Pennsylvania,United States,1,1,2.4,0.27,27.08,99.96
+522,Whitehall,Northampton,Pennsylvania,United States,1,1,3.93,0.27,27.08,99.96
+69,,Northumberland,Pennsylvania,United States,11,11,71.62,0.55,27.08,99.96
+116,Armstrong,Northumberland,Pennsylvania,United States,1,1,10.29,0.55,27.08,99.96
+331,Montgomery,Northumberland,Pennsylvania,United States,2,2,5.26,0.55,27.08,99.96
+478,Sunbury,Northumberland,Pennsylvania,United States,1,1,12.83,0.55,27.08,99.96
+74,,Philadelphia,Pennsylvania,United States,14,10,1.55,77.05,27.08,99.96
+135,Blockley,Philadelphia,Pennsylvania,United States,1,1,0.07,77.05,27.08,99.96
+137,Borden,Philadelphia,Pennsylvania,United States,1,1,0.1,77.05,27.08,99.96
+154,Byberry,Philadelphia,Pennsylvania,United States,1,2,0.11,77.05,27.08,99.96
+241,Germantown,Philadelphia,Pennsylvania,United States,9,7,0.63,77.05,27.08,99.96
+310,Lower Dublin,Philadelphia,Pennsylvania,United States,2,2,0.01,77.05,27.08,99.96
+330,Mojamensing and Passyunk,Philadelphia,Pennsylvania,United States,3,3,0.03,77.05,27.08,99.96
+377,Northern Liberties,Philadelphia,Pennsylvania,United States,28,18,2.69,77.05,27.08,99.96
+385,Oxford,Philadelphia,Pennsylvania,United States,1,1,0.04,77.05,27.08,99.96
+395,Philadelphia,Philadelphia,Pennsylvania,United States,293,182,32.64,77.05,27.08,99.96
+396,Philadelphia City,Philadelphia,Pennsylvania,United States,42,28,5.66,77.05,27.08,99.96
+452,Southwark,Philadelphia,Pennsylvania,United States,3,3,0.08,77.05,27.08,99.96
+485,The Northern Libert,Philadelphia,Pennsylvania,United States,1,1,0.09,77.05,27.08,99.96
+507,Water Street East Side,Philadelphia,Pennsylvania,United States,359,215,56.29,77.05,27.08,99.96
+93,,Washington,Pennsylvania,United States,1,1,100.0,0.1,27.08,99.96
+96,,Westmoreland,Pennsylvania,United States,2,3,7.23,0.46,27.08,99.96
+272,Hempfield,Westmoreland,Pennsylvania,United States,1,1,24.58,0.46,27.08,99.96
+289,Kensington,Westmoreland,Pennsylvania,United States,1,1,14.79,0.46,27.08,99.96
+422,Rostraver,Westmoreland,Pennsylvania,United States,2,3,26.15,0.46,27.08,99.96
+448,South Huntington,Westmoreland,Pennsylvania,United States,1,1,2.21,0.46,27.08,99.96
+495,Unity,Westmoreland,Pennsylvania,United States,1,1,23.94,0.46,27.08,99.96
+518,Westmoreland,Westmoreland,Pennsylvania,United States,1,1,1.09,0.46,27.08,99.96
+98,,York,Pennsylvania,United States,6,5,2.31,0.85,27.08,99.96
+170,Chanceford,York,Pennsylvania,United States,1,1,0.47,0.85,27.08,99.96
+329,Mixed Township,York,Pennsylvania,United States,6,6,17.02,0.85,27.08,99.96
+388,Paradise,York,Pennsylvania,United States,1,1,0.62,0.85,27.08,99.96
+503,Warrinton,York,Pennsylvania,United States,1,1,26.28,0.85,27.08,99.96
+530,Windsor,York,Pennsylvania,United States,1,1,0.26,0.85,27.08,99.96
+540,York,York,Pennsylvania,United States,6,7,9.32,0.85,27.08,99.96
+541,York Borough,York,Pennsylvania,United States,6,8,43.72,0.85,27.08,99.96
+15,,,Rhode Island,United States,70,69,100.0,8.63,7.53,99.96
+124,Barrington,Bristol,Rhode Island,United States,11,9,23.57,1.99,7.53,99.96
+143,Bristol,Bristol,Rhode Island,United States,7,7,15.7,1.99,7.53,99.96
+502,Warren,Bristol,Rhode Island,United States,15,13,60.74,1.99,7.53,99.96
+190,Coventry,Kent,Rhode Island,United States,5,4,5.97,2.33,7.53,99.96
+211,East Greenwich,Kent,Rhode Island,United States,10,10,23.49,2.33,7.53,99.96
+303,Little Compton,Kent,Rhode Island,United States,1,1,0.0,2.33,7.53,99.96
+346,New Shoreham,Kent,Rhode Island,United States,1,1,0.0,2.33,7.53,99.96
+504,Warwick,Kent,Rhode Island,United States,15,13,56.61,2.33,7.53,99.96
+512,West Greenwich,Kent,Rhode Island,United States,7,6,13.93,2.33,7.53,99.96
+304,Little Compton,Newport,Rhode Island,United States,8,8,0.84,49.52,7.53,99.96
+325,Middletown,Newport,Rhode Island,United States,1,1,0.05,49.52,7.53,99.96
+364,Newport,Newport,Rhode Island,United States,76,64,98.05,49.52,7.53,99.96
+404,Portsmouth,Newport,Rhode Island,United States,2,2,0.11,49.52,7.53,99.96
+487,Tiverton,Newport,Rhode Island,United States,16,15,0.96,49.52,7.53,99.96
+78,,Providence,Rhode Island,United States,1,1,0.53,36.15,7.53,99.96
+193,Cranston,Providence,Rhode Island,United States,20,18,2.44,36.15,7.53,99.96
+195,Cumberland,Providence,Rhode Island,United States,4,3,0.25,36.15,7.53,99.96
+231,Foster,Providence,Rhode Island,United States,6,8,0.42,36.15,7.53,99.96
+244,Glocester,Providence,Rhode Island,United States,3,2,0.29,36.15,7.53,99.96
+245,Gloucester,Providence,Rhode Island,United States,6,7,2.37,36.15,7.53,99.96
+285,Johnston,Providence,Rhode Island,United States,4,3,0.48,36.15,7.53,99.96
+286,Johnstown,Providence,Rhode Island,United States,6,6,0.91,36.15,7.53,99.96
+374,North Providence,Providence,Rhode Island,United States,9,8,0.91,36.15,7.53,99.96
+411,Providence,Providence,Rhode Island,United States,240,156,86.41,36.15,7.53,99.96
+436,Scituate,Providence,Rhode Island,United States,17,15,3.26,36.15,7.53,99.96
+440,Smithfield,Providence,Rhode Island,United States,12,10,1.74,36.15,7.53,99.96
+174,Charlestown,Washington,Rhode Island,United States,8,8,30.23,1.37,7.53,99.96
+223,Exeter,Washington,Rhode Island,United States,9,6,14.51,1.37,7.53,99.96
+373,North Kingston,Washington,Rhode Island,United States,7,5,25.12,1.37,7.53,99.96
+420,Richmond,Washington,Rhode Island,United States,2,2,1.69,1.37,7.53,99.96
+449,South Kingston,Washington,Rhode Island,United States,8,8,24.87,1.37,7.53,99.96
+515,Westerly,Washington,Rhode Island,United States,1,1,3.58,1.37,7.53,99.96
+16,,,South Carolina,United States,29,22,100.0,78.42,14.44,99.96
+21,,Abbeville,South Carolina,United States,2,2,54.99,0.04,14.44,99.96
+99,96 District,Abbeville,South Carolina,United States,1,1,22.51,0.04,14.44,99.96
+101,Abbeville,Abbeville,South Carolina,United States,1,1,22.51,0.04,14.44,99.96
+27,,Beaufort,South Carolina,United States,2,2,66.56,0.15,14.44,99.96
+145,Broad River,Beaufort,South Carolina,United States,1,1,7.13,0.15,14.44,99.96
+344,New River,Beaufort,South Carolina,United States,1,1,4.32,0.15,14.44,99.96
+459,St Helena,Beaufort,South Carolina,United States,1,1,21.99,0.15,14.44,99.96
+36,,Charleston,South Carolina,United States,1,1,0.05,19.57,14.44,99.96
+171,Charleston,Charleston,South Carolina,United States,125,78,41.8,19.57,14.44,99.96
+179,Christ Church,Charleston,South Carolina,United States,1,1,0.03,19.57,14.44,99.96
+204,Dorchester,Charleston,South Carolina,United States,1,1,0.09,19.57,14.44,99.96
+284,James Island,Charleston,South Carolina,United States,4,2,0.29,19.57,14.44,99.96
+456,St Andrews,Charleston,South Carolina,United States,1,1,0.11,19.57,14.44,99.96
+458,St Bartholomes,Charleston,South Carolina,United States,1,1,0.13,19.57,14.44,99.96
+460,St Johns,Charleston,South Carolina,United States,1,1,0.13,19.57,14.44,99.96
+461,St Pauls,Charleston,South Carolina,United States,2,2,0.1,19.57,14.44,99.96
+463,St Phillips and St Michaels,Charleston,South Carolina,United States,191,101,55.25,19.57,14.44,99.96
+464,St Thomas,Charleston,South Carolina,United States,2,2,1.17,19.57,14.44,99.96
+466,St. George,Charleston,South Carolina,United States,1,1,0.78,19.57,14.44,99.96
+489,Toogoodoo,Charleston,South Carolina,United States,1,1,0.06,19.57,14.44,99.96
+465,St Thomas,Cheraws District,South Carolina,United States,1,1,100.0,0.42,14.44,99.96
+462,St Pauls,Clarendon,South Carolina,United States,1,1,100.0,0.01,14.44,99.96
+238,Georgetown,Georgetown,South Carolina,United States,3,3,5.69,0.71,14.44,99.96
+391,Pee Dee,Georgetown,South Carolina,United States,1,1,0.67,0.71,14.44,99.96
+408,Prince Fredericks,Georgetown,South Carolina,United States,1,2,0.84,0.71,14.44,99.96
+409,Prince Georges,Georgetown,South Carolina,United States,11,6,91.01,0.71,14.44,99.96
+531,Winyaw,Georgetown,South Carolina,United States,1,1,1.79,0.71,14.44,99.96
+158,Camden,Lancaster,South Carolina,United States,5,3,100.0,0.57,14.44,99.96
+100,96 District,Laurens,South Carolina,United States,1,1,100.0,0.01,14.44,99.96
+72,,Orangeburg,South Carolina,United States,1,2,100.0,0.03,14.44,99.96
+82,,Richland,South Carolina,United States,1,1,24.64,0.08,14.44,99.96
+184,Columbia,Richland,South Carolina,United States,3,2,69.55,0.08,14.44,99.96
+457,St Andrews,Richland,South Carolina,United States,1,1,5.82,0.08,14.44,99.96
+19,,,Vermont,United States,1,1,100.0,44.56,0.06,99.96
+362,Newhuntington,Chittenden,Vermont,United States,1,2,100.0,2.34,0.06,99.96
+225,Fairley,Orange,Vermont,United States,1,1,100.0,3.92,0.06,99.96
+166,Castleton,Rutland,Vermont,United States,1,1,100.0,3.52,0.06,99.96
+517,Westminster,Windham,Vermont,United States,1,1,100.0,41.57,0.06,99.96
+265,Hartford,Windsor,Vermont,United States,1,1,57.3,4.09,0.06,99.96
+511,Weathersfield,Windsor,Vermont,United States,1,2,42.7,4.09,0.06,99.96
+20,,,Virginia,United States,19,18,100.0,58.4,0.29,99.96
+22,,Accomack,Virginia,United States,1,1,100.0,0.53,0.29,99.96
+107,Alexandria,Fairfax,Virginia,United States,1,1,100.0,2.46,0.29,99.96
+524,Williamsburgh,Greenbrier,Virginia,United States,1,1,100.0,0.23,0.29,99.96
+394,Petersburg,Hampshire,Virginia,United States,2,2,100.0,13.15,0.29,99.96
+419,Richmond,Henrico,Virginia,United States,4,5,100.0,6.66,0.29,99.96
+54,,James City,Virginia,United States,1,1,100.0,0.72,0.29,99.96
+58,,King George,Virginia,United States,1,1,100.0,1.75,0.29,99.96
+61,,Loudoun,Virginia,United States,1,1,100.0,0.91,0.29,99.96
+70,,Ohio,Virginia,United States,1,1,100.0,10.8,0.29,99.96
+406,Portsmouth,Rockingham,Virginia,United States,1,1,100.0,1.76,0.29,99.96
+234,Fredericksburg,Spotsylvania,Virginia,United States,1,1,100.0,2.64,0.29,99.96
+1,,,,Great Britain,1,1,19.75,100.0,100.0,0.0
+3,,,Bourdeaux,France,1,1,100.0,100.0,100.0,0.0
+6,,,Eustatia,British Virgin Islands,3,3,100.0,100.0,20.55,0.02
+17,,,St Thomas,British Virgin Islands,1,1,100.0,100.0,70.7,0.02
+18,,,The River May,British Virgin Islands,1,1,100.0,100.0,8.75,0.02
+0,,,,Bermuda,2,2,68.59,100.0,100.0,0.01
