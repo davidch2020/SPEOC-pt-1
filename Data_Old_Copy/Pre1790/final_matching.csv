@@ -1,0 +1,3467 @@
+,Delegates,Loan Matches,Scores,state
+0,William Patterson,William Patterson,100.0,6.0
+3,Elbridge Gerry,Elbridge Gerry,100.0,2.0
+4,Elbridge Gerry,Elbridge Gerry,100.0,6.0
+6,Thomas Mifflin,Thomas Mifflin,100.0,6.0
+9,Robert Morris,Robert Morris,100.0,6.0
+12,George Clymer,George Clymer,100.0,6.0
+15,William Livingston,William Livingston,100.0,5.0
+18,James Wilson,James Wilson,100.0,4.0
+19,James Wilson,James Wilson,100.0,6.0
+21,Nicholas Gilman,Nicholas Gilman,100.0,2.0
+24,John Langdon,John Langdon,100.0,1.0
+27,Caleb Strong,Caleb Strong,100.0,2.0
+30,George Washington,George Washington,100.0,8.0
+33,Benjamin Franklin,Benjamin Franklin,100.0,6.0
+36,Luther Martin,Luther Martin,100.0,8.0
+39,James McClurg,James McClurg,100.0,9.0
+42,Jacob Broom,Jacob Broom,100.0,7.0
+45,John Dickinson,John Dickinson,100.0,3.0
+48,David Brearley,David Brearley,100.0,5.0
+51,George Read,George Read,100.0,7.0
+52,George Read,George Read,100.0,9.0
+54,Oliver Ellsworth,Oliver Ellsworth,100.0,3.0
+57,Roger Sherman,Roger Sherman,100.0,3.0
+60,William C. Houston,William C. Huston,97.14285714285714,5.0
+63,William Paterson,William Palterson,96.96969696969697,5.0
+66,William Paterson,William Patterson,96.96969696969697,6.0
+69,Oliver Elsworth,Oliver Ellsworth,96.7741935483871,3.0
+72,Nicholas Gilman,Nichols Gilman,96.55172413793103,1.0
+75,William Blount,William Blunt,96.29629629629629,9.0
+78,David Brearly,David Brearley,96.29629629629629,5.0
+81,James Wilson,James Willson,96.0,3.0
+82,James Wilson,James Willson,96.0,4.0
+83,James Wilson,James Willson,96.0,5.0
+84,John F. Mercer,John Mercer,95.0,8.0
+87,George Washington,George Washington Esqr,95.0,9.0
+90,William L. Pierce,William Pierce,95.0,6.0
+93,Gunning Bedford Jr.,Gunning Bedford,95.0,6.0
+94,Gunning Bedford Jr.,Gunning Bedford,95.0,7.0
+96,William Samuel Johnson,William Johnson,95.0,7.0
+97,William Samuel Johnson,William Johnson,95.0,8.0
+99,William Samuel Johnson,Samuel Johnson,90.0,5.0
+100,William Samuel Johnson,Samuel Johnson,90.0,6.0
+102,George Clymer,his inlaws george clymer,90.0,6.0
+105,George Washington,George Washington Trustees,90.0,9.0
+0,Nicholas Gilman,Nicholas Gilman,100.0,NH
+1,Nicholas Gilman,Nicholas Gilman,100.0,NJ
+8,James Wilson,James Wilson,100.0,NH
+9,James Wilson,James Wilson,100.0,NJ
+10,James Wilson,James Wilson,100.0,MA
+11,James Wilson,James Wilson,100.0,CT
+12,James Wilson,James Wilson,100.0,NY
+13,James Wilson,James Wilson,100.0,PA
+14,James Wilson,James Wilson,100.0,unspecified
+15,James Wilson,James Wilson,100.0,MD
+16,Alexander Martin,Alexander Martin,100.0,PA
+24,John Blair,John Blair,100.0,MA
+25,John Blair,John Blair,100.0,NJ
+26,John Blair,John Blair,100.0,PA
+27,John Blair,John Blair,100.0,unspecified
+28,John Blair,John Blair,100.0,MD
+32,Jonathan Dayton,Jonathan Dayton,100.0,MA
+33,Jonathan Dayton,Jonathan Dayton,100.0,NJ
+34,Jonathan Dayton,Jonathan Dayton,100.0,unspecified
+40,William Paterson,William Paterson,100.0,CS
+48,Robert Morris,Robert Morris,100.0,NY
+56,George Mason,George Mason,100.0,MA
+64,William Patterson,William Patterson,100.0,CS
+65,William Patterson,William Patterson,100.0,DE
+66,William Patterson,William Patterson,100.0,NY
+67,William Patterson,William Patterson,100.0,PA
+68,William Patterson,William Patterson,100.0,MD
+69,William Patterson,William Patterson,100.0,NC
+72,Richard Bassett,Richard Bassett,100.0,unspecified
+80,George Read,George Read,100.0,CT
+88,William Paterson,William Patterson,96.96969696969697,CS
+89,William Paterson,William Patterson,96.96969696969697,DE
+90,William Paterson,William Patterson,96.96969696969697,NY
+91,William Paterson,William Patterson,96.96969696969697,PA
+92,William Paterson,William Patterson,96.96969696969697,MD
+93,William Paterson,William Patterson,96.96969696969697,NC
+96,William Patterson,William Paterson,96.96969696969697,CS
+104,Abraham Baldwin,Abraham Baldwine,96.7741935483871,CT
+112,James Wilson,James Willson,96.0,MA
+113,James Wilson,James Willson,96.0,unspecified
+114,James Wilson,James Willson,96.0,NY
+115,James Wilson,James Willson,96.0,PA
+116,James Wilson,James Willson,96.0,MD
+117,James Wilson,James Willson,96.0,NC
+120,John Blair,John Blaire,95.23809523809524,NJ
+128,Charles Pinckney,Charles C Pinckney,95.0,unspecified
+136,William Samuel Johnson,William Johnson,95.0,CT
+137,William Samuel Johnson,William Johnson,95.0,unspecified
+138,William Samuel Johnson,William Johnson,95.0,MA
+139,William Samuel Johnson,William Johnson,95.0,NJ
+140,William Samuel Johnson,William Johnson,95.0,NY
+141,William Samuel Johnson,William Johnson,95.0,VA
+142,William Samuel Johnson,William Johnson,95.0,MD
+144,John Lansing Jr.,John Lansing,95.0,unspecified
+152,John F. Mercer,John Mercer,95.0,unspecified
+160,Luther Martin,Martin Luther,95.0,CT
+168,William L. Pierce,William Pierce,95.0,MA
+169,William L. Pierce,William Pierce,95.0,CT
+170,William L. Pierce,William Pierce,95.0,unspecified
+171,William L. Pierce,William Pierce,95.0,NC
+176,William Samuel Johnson,Samuel Johnson,90.0,MA
+177,William Samuel Johnson,Samuel Johnson,90.0,NJ
+178,William Samuel Johnson,Samuel Johnson,90.0,RI
+179,William Samuel Johnson,Samuel Johnson,90.0,CS
+180,William Samuel Johnson,Samuel Johnson,90.0,NY
+181,William Samuel Johnson,Samuel Johnson,90.0,unspecified
+184,William C. Houston,William Huston,87.5,PA
+192,William R. Davie,William Davies,86.66666666666667,MD
+0,William Samuel Johnson,Samuel Johnson,90.0,Marine
+35,George Read,George Read,100.0,DE
+51,Jacob Broom,Jacob Broom,100.0,DE
+116,William Paterson,William Paterson,100.0,DE
+191,William Patterson,William Paterson,96.96969696969697,DE
+288,John Langdon,John Langdon,100.0,MA
+285,Elbridge Gerry,Eldbridge Gerry,96.55172413793103,MA
+54,John Langdon,John Langdon,100.0,NH
+106,John Dickinson,John Dickinson,100.0,NJ
+555,Robert Morris,Robert Morris,100.0,NJ
+571,James Wilson,James Willson,96.0,NJ
+401,Jonathan Dayton,Jonathan I Dayton,95.0,NJ
+720,David Brearley,Honorable David Brearley,90.0,NJ
+397,David Brearly,Honorable David Brearley,85.5,NJ
+440,John Langdon,John Langdon,100.0,NJ
+468,William Livingston,William Livingston,100.0,NJ
+696,Alexander Martin,Alexander Martin,100.0,NJ
+254,William L. Pierce,William Pierce,95.0,NJ
+552,John Lansing Jr.,John Lansing,95.0,NJ
+75,John Dickinson,John Dickinson,100.0,PA
+103,William Houstoun,William Houston,96.7741935483871,PA
+189,William C. Houston,William Houston,95.0,PA
+639,Alexander Hamilton,Alexander Hamilton,100.0,PA
+782,Robert Morris,Robert Morris,100.0,PA
+0,William Samuel Johnson,William Johnson,95.0,PA
+121,Gunning Bedford Jr.,Gunning Bedford,95.0,PA
+1067,Thomas FitzSimons; Fitzsimmons,Thomas Fitzsimmon,87.27272727272728,PA
+147,Luther Martin,Luther Martin,100.0,RI
+0,John Stevens,John Stevens,100.0,1.0
+1,John Stevens,John Stevens,100.0,5.0
+2,John Stevens,John Stevens,100.0,6.0
+3,John Stevens,John Stevens,100.0,8.0
+6,Joseph Hosmer,Joseph Hosmer,100.0,2.0
+12,John Davis,John Davis,100.0,3.0
+13,John Davis,John Davis,100.0,6.0
+18,Thomas Davis,Thomas Davis,100.0,2.0
+19,Thomas Davis,Thomas Davis,100.0,6.0
+24,John Hamilton,John Hamilton,100.0,6.0
+25,John Hamilton,John Hamilton,100.0,7.0
+36,Benjamin Ely,Benjamin Ely,100.0,2.0
+42,Leonard Williams,Leonard Williams,100.0,2.0
+48,Charles Whitman,Charles Whitman,100.0,2.0
+54,John Brooks,John Brooks,100.0,2.0
+55,John Brooks,John Brooks,100.0,3.0
+56,John Brooks,John Brooks,100.0,6.0
+60,Benjamin Blaney,Benjamin Blaney,100.0,2.0
+66,John Minot,John Minot,100.0,2.0
+72,Benjamin Browne,Benjamin Browne,100.0,2.0
+78,William Thompson,William Thompson,100.0,2.0
+79,William Thompson,William Thompson,100.0,6.0
+84,Timothy Winn,Timothy Winn,100.0,2.0
+90,John Baxter,John Baxter,100.0,2.0
+96,Francis Dana,Francis Dana,100.0,2.0
+102,Aaron Wood,Aaron Wood,100.0,2.0
+108,Israel Clark,Israel Clark,100.0,2.0
+114,Thomas Mighill,Thomas Mighill,100.0,2.0
+120,Peter Osgood,Peter Osgood,100.0,2.0
+126,John Burnham,John Burnham,100.0,2.0
+132,John Glover,John Glover,100.0,2.0
+138,Azor Orne,Azor Orne,100.0,2.0
+144,Jonathan Cogswell,Jonathan Cogswell,100.0,2.0
+150,Joseph Wood,Joseph Wood,100.0,6.0
+156,Benjamin Greenleaf,Benjamin Greenleaf,100.0,2.0
+162,Thomas Jones,Thomas Jones,100.0,2.0
+163,Thomas Jones,Thomas Jones,100.0,3.0
+164,Thomas Jones,Thomas Jones,100.0,4.0
+165,Thomas Jones,Thomas Jones,100.0,5.0
+166,Thomas Jones,Thomas Jones,100.0,6.0
+168,William Cushing,William Cushing,100.0,2.0
+174,Charles Turner,Charles Turner,100.0,2.0
+180,William Shaw,William Shaw,100.0,2.0
+181,William Shaw,William Shaw,100.0,6.0
+186,Isaac Thompson,Isaac Thompson,100.0,3.0
+192,Jonathan Smith,Jonathan Smith,100.0,1.0
+193,Jonathan Smith,Jonathan Smith,100.0,2.0
+198,John Ashley,John Ashley,100.0,3.0
+204,James Carr,James Carr,100.0,1.0
+210,Moses Davis,Moses Davis,100.0,1.0
+211,Moses Davis,Moses Davis,100.0,2.0
+216,Samuel Grant,Samuel Grant,100.0,2.0
+222,William Jones,William Jones,100.0,2.0
+223,William Jones,William Jones,100.0,3.0
+224,William Jones,William Jones,100.0,6.0
+225,William Jones,William Jones,100.0,8.0
+228,David Gilmore,David Gilmore,100.0,2.0
+234,John Dunlap,John Dunlap,100.0,2.0
+235,John Dunlap,John Dunlap,100.0,6.0
+236,John Dunlap,John Dunlap,100.0,9.0
+240,Jacob Willard,Jacob Willard,100.0,2.0
+246,John Frye,John Frye,100.0,2.0
+252,John Taylor,John Taylor,100.0,2.0
+253,John Taylor,John Taylor,100.0,4.0
+254,John Taylor,John Taylor,100.0,6.0
+255,John Taylor,John Taylor,100.0,7.0
+256,John Taylor,John Taylor,100.0,9.0
+258,Timothy Parker,Timothy Parker,100.0,2.0
+264,Samuel Baker,Samuel Baker,100.0,5.0
+270,Jonathan Day,Jonathan Day,100.0,5.0
+276,John Fuller,John Fuller,100.0,2.0
+282,Abraham Smith,Abraham Smith,100.0,3.0
+288,Amos Singletary,Amos Singletary,100.0,2.0
+294,John Sprague,John Sprague,100.0,2.0
+300,Samuel West,Samuel West,100.0,2.0
+306,John Pratt,John Pratt,100.0,2.0
+312,Thomas Durfee,Thomas Durfee,100.0,2.0
+318,Abraham White,Abraham White,100.0,2.0
+324,James Williams,James Williams,100.0,8.0
+330,Josiah Smith,Josiah Smith,100.0,2.0
+331,Josiah Smith,Josiah Smith,100.0,3.0
+336,Abraham Holmes,Abraham Holmes,100.0,6.0
+342,Ebenezer Warren,Ebenezer Warren,100.0,2.0
+348,Joseph Jackson,Joseph Jackson,100.0,2.0
+349,Joseph Jackson,Joseph Jackson,100.0,6.0
+354,Henry Wisner,Henry Wisner,100.0,6.0
+360,Henry Wynkoop,Henry Wynkoop,100.0,6.0
+366,John Boyd,John Boyd,100.0,6.0
+372,William Wilson,William Wilson,100.0,6.0
+373,William Wilson,William Wilson,100.0,8.0
+378,David Deshler,David Deshler,100.0,6.0
+384,John Arndt,John Arndt,100.0,6.0
+390,John Black,John Black,100.0,6.0
+396,Thomas Campbell,Thomas Campbell,100.0,4.0
+402,Henry Slagle,Henry Slagle,100.0,6.0
+408,Jasper Yeates,Jasper Yeates,100.0,6.0
+414,John Hubley,John Hubley,100.0,6.0
+420,Sebastian Graff,Sebastian Graff,100.0,6.0
+426,Robert Coleman,Robert Coleman,100.0,6.0
+432,John Barclay,John Barclay,100.0,4.0
+433,John Barclay,John Barclay,100.0,7.0
+438,Samuel Ashmead,Samuel Ashmead,100.0,6.0
+444,Anthony Wibird,Anthony Wibird,100.0,2.0
+450,John Hunn,John Hunn,100.0,6.0
+462,Benjamin Rush,Benjamin Rush,100.0,6.0
+468,Frederick A. Muhlenberg,Frederick A. Muhlenberg,100.0,6.0
+474,Lewis Morris,Lewis Morris,100.0,6.0
+480,Philip Livingston,Philip Livingston,100.0,4.0
+486,Dirck Wynkoop,Dirck Wynkoop,100.0,4.0
+492,George Clinton,George Clinton,100.0,4.0
+498,John Smith,John Smith,100.0,2.0
+499,John Smith,John Smith,100.0,3.0
+500,John Smith,John Smith,100.0,4.0
+501,John Smith,John Smith,100.0,5.0
+502,John Smith,John Smith,100.0,6.0
+503,John Smith,John Smith,100.0,9.0
+504,David Hedges,David Hedges,100.0,3.0
+510,John Schenck,John Schenck,100.0,6.0
+516,Samuel Jones,Samuel Jones,100.0,2.0
+517,Samuel Jones,Samuel Jones,100.0,3.0
+518,Samuel Jones,Samuel Jones,100.0,6.0
+522,Thomas Scott,Thomas Scott,100.0,6.0
+528,John Richards,John Richards,100.0,3.0
+529,John Richards,John Richards,100.0,6.0
+534,James Morris,James Morris,100.0,3.0
+535,James Morris,James Morris,100.0,6.0
+540,Timothy Pickering,Timothy Pickering,100.0,6.0
+546,Daniel Shute,Daniel Shute,100.0,2.0
+552,Benjamin Lincoln,Benjamin Lincoln,100.0,2.0
+558,Cotton Tufts,Cotton Tufts,100.0,2.0
+564,Nathaniel Robbins,Nathaniel Robbins,100.0,2.0
+565,Nathaniel Robbins,Nathaniel Robbins,100.0,3.0
+570,William Heath,William Heath,100.0,2.0
+576,Thomas Russel,Thomas Russel,100.0,3.0
+582,John Winthrop,John Winthrop,100.0,2.0
+588,John Coffin Jones,John Coffin Jones,100.0,2.0
+594,Caleb Davis,Caleb Davis,100.0,2.0
+600,William Phillips,William Phillips,100.0,2.0
+601,William Phillips,William Phillips,100.0,3.0
+602,William Phillips,William Phillips,100.0,5.0
+606,Samuel Adams,Samuel Adams,100.0,3.0
+612,John Hancock,John Hancock,100.0,3.0
+618,William Brown,William Brown,100.0,1.0
+619,William Brown,William Brown,100.0,2.0
+620,William Brown,William Brown,100.0,6.0
+621,William Brown,William Brown,100.0,7.0
+624,James Marshall,James Marshall,100.0,6.0
+625,James Marshall,James Marshall,100.0,8.0
+630,John Baird,John Baird,100.0,5.0
+636,Joseph Heister,Joseph Heister,100.0,6.0
+642,John Bishop,John Bishop,100.0,6.0
+648,John Ludwig,John Ludwig,100.0,6.0
+654,Nicholas Lutz,Nicholas Lutz,100.0,6.0
+660,Jonathan Hoge,Jonathan Hoge,100.0,6.0
+666,Robert Whitehill,Robert Whitehill,100.0,6.0
+672,John Harris,John Harris,100.0,2.0
+673,John Harris,John Harris,100.0,5.0
+674,John Harris,John Harris,100.0,6.0
+678,John Whitehill,John Whitehill,100.0,6.0
+684,James Campbell,James Campbell,100.0,5.0
+685,James Campbell,James Campbell,100.0,6.0
+690,John Allison,John Allison,100.0,6.0
+696,John Matthews,John Matthews,100.0,8.0
+702,William Johnson,William Johnson,100.0,7.0
+703,William Johnson,William Johnson,100.0,8.0
+708,John Budd,John Budd,100.0,5.0
+709,John Budd,John Budd,100.0,6.0
+714,William Porter,William Porter,100.0,2.0
+726,Benjamin Jones,Benjamin Jones,100.0,3.0
+727,Benjamin Jones,Benjamin Jones,100.0,5.0
+732,John Brown,John Brown,100.0,1.0
+733,John Brown,John Brown,100.0,2.0
+734,John Brown,John Brown,100.0,4.0
+735,John Brown,John Brown,100.0,5.0
+736,John Brown,John Brown,100.0,6.0
+738,Thomas Stewart,Thomas Stewart,100.0,6.0
+744,Samuel Mason,Samuel Mason,100.0,6.0
+750,David Wilson,David Wilson,100.0,8.0
+756,Daniel Smith,Daniel Smith,100.0,1.0
+757,Daniel Smith,Daniel Smith,100.0,3.0
+758,Daniel Smith,Daniel Smith,100.0,6.0
+762,James Thompson,James Thompson,100.0,2.0
+763,James Thompson,James Thompson,100.0,3.0
+764,James Thompson,James Thompson,100.0,5.0
+765,James Thompson,James Thompson,100.0,6.0
+768,John Scott,John Scott,100.0,6.0
+769,John Scott,John Scott,100.0,7.0
+770,John Scott,John Scott,100.0,8.0
+774,John Rhea,John Rhea,100.0,5.0
+780,John Willis,John Willis,100.0,5.0
+786,Isaac Clarke,Isaac Clarke,100.0,3.0
+792,William Robinson,William Robinson,100.0,6.0
+793,William Robinson,William Robinson,100.0,9.0
+798,John Edwards,John Edwards,100.0,3.0
+799,John Edwards,John Edwards,100.0,6.0
+804,William Bailey ,William Bailey,100.0,2.0
+805,William Bailey ,William Bailey,100.0,3.0
+806,William Bailey ,William Bailey,100.0,8.0
+810,Samuel Simpson,Samuel Simpson,100.0,6.0
+816,James Armstrong,James Armstrong,100.0,7.0
+822,John Skinner,John Skinner,100.0,5.0
+823,John Skinner,John Skinner,100.0,8.0
+828,John Swan,John Swan,100.0,2.0
+829,John Swan,John Swan,100.0,3.0
+830,John Swan,John Swan,100.0,6.0
+834,George Mitchell,George Mitchell,100.0,6.0
+840,William Johnston,William Johnston,100.0,9.0
+846,James Porter,James Porter,100.0,6.0
+852,William Martin,William Martin,100.0,8.0
+858,John Moore,John Moore,100.0,1.0
+859,John Moore,John Moore,100.0,3.0
+860,John Moore,John Moore,100.0,6.0
+861,John Moore,John Moore,100.0,8.0
+864,David Caldwell,David Caldwell,100.0,6.0
+870,John Hunt,John Hunt,100.0,3.0
+871,John Hunt,John Hunt,100.0,6.0
+876,John Pickering,John Pickering,100.0,2.0
+882,John Calfe,John Calfe,100.0,1.0
+888,John Taylor Gilman,John Taylor Gilman,100.0,1.0
+894,Joseph Blanchard,Joseph Blanchard,100.0,2.0
+900,Thomas Dawes,Thomas Dawes,100.0,2.0
+906,Jeremiah Ripley,Jeremiah Ripley,100.0,3.0
+912,Ebenezer Smith,Ebenezer Smith,100.0,3.0
+913,Ebenezer Smith,Ebenezer Smith,100.0,6.0
+918,Stephen Dole,Stephen Dole,100.0,1.0
+924,Jacob Green,Jacob Green,100.0,5.0
+930,William Hunt,William Hunt,100.0,6.0
+936,Thomas Penniman,Thomas Penniman,100.0,2.0
+942,John Cochran,John Cochran,100.0,6.0
+948,William Page,William Page,100.0,2.0
+954,Joseph Badger,Joseph Badger,100.0,1.0
+960,Thomas Chase,Thomas Chase,100.0,2.0
+966,Benjamin West,Benjamin West,100.0,2.0
+972,John Weeks,John Weeks,100.0,1.0
+978,Samuel Young,Samuel Young,100.0,3.0
+984,Josiah Bartlett,Josiah Bartlett,100.0,1.0
+990,William Simpson,William Simpson,100.0,6.0
+991,William Simpson,William Simpson,100.0,8.0
+996,William Abbott,William Abbott,100.0,3.0
+1002,Jeremiah Fogg,Jeremiah Fogg,100.0,1.0
+1008,Jonathan Freeman,Jonathan Freeman,100.0,2.0
+1014,Jesse Johnson,Jesse Johnson,100.0,1.0
+1015,Jesse Johnson,Jesse Johnson,100.0,6.0
+1020,Moses Carr,Moses Carr,100.0,1.0
+1026,Samuel Griffin,Samuel Griffin,100.0,2.0
+1027,Samuel Griffin,Samuel Griffin,100.0,3.0
+1028,Samuel Griffin,Samuel Griffin,100.0,6.0
+1029,Samuel Griffin,Samuel Griffin,100.0,9.0
+1032,Jonathan Chase,Jonathan Chase,100.0,1.0
+1038,Ezra Green,Ezra Green,100.0,1.0
+1044,Benjamin Bellows,Benjamin Bellows,100.0,1.0
+1050,James White,James White,100.0,2.0
+1056,John Anderson,John Anderson,100.0,1.0
+1057,John Anderson,John Anderson,100.0,5.0
+1062,Henry Baker,Henry Baker,100.0,8.0
+1068,Thomas Taylor,Thomas Taylor,100.0,8.0
+1074,John Hunter,John Hunter,100.0,4.0
+1075,John Hunter,John Hunter,100.0,6.0
+1076,John Hunter,John Hunter,100.0,8.0
+1077,John Hunter,John Hunter,100.0,9.0
+1080,John Hampton,John Hampton,100.0,6.0
+1086,Robert Rutherford,Robert Rutherford,100.0,6.0
+1092,John Thomas,John Thomas,100.0,2.0
+1093,John Thomas,John Thomas,100.0,3.0
+1094,John Thomas,John Thomas,100.0,6.0
+1095,John Thomas,John Thomas,100.0,8.0
+1098,William Butler,William Butler,100.0,6.0
+1104,John Montgomery,John Montgomery,100.0,6.0
+1110,Hugh White,Hugh White,100.0,3.0
+1116,John Lowry,John Lowry,100.0,9.0
+1122,John Palmer,John Palmer,100.0,2.0
+1128,John McPherson,John McPherson,100.0,6.0
+1134,John Burgess,John Burgess,100.0,3.0
+1140,William Reed,William Reed,100.0,2.0
+1141,William Reed,William Reed,100.0,3.0
+1142,William Reed,William Reed,100.0,6.0
+1146,Samuel Smith,Samuel Smith,100.0,2.0
+1147,Samuel Smith,Samuel Smith,100.0,3.0
+1148,Samuel Smith,Samuel Smith,100.0,4.0
+1149,Samuel Smith,Samuel Smith,100.0,5.0
+1150,Samuel Smith,Samuel Smith,100.0,6.0
+1152,James Stewart,James Stewart,100.0,3.0
+1153,James Stewart,James Stewart,100.0,4.0
+1154,James Stewart,James Stewart,100.0,6.0
+1158,John Kean,John Kean,100.0,6.0
+1164,John Lloyd,John Lloyd,100.0,3.0
+1170,John Parker,John Parker,100.0,8.0
+1176,William Smith,William Smith,100.0,2.0
+1177,William Smith,William Smith,100.0,3.0
+1178,William Smith,William Smith,100.0,4.0
+1179,William Smith,William Smith,100.0,6.0
+1180,William Smith,William Smith,100.0,8.0
+1181,William Smith,William Smith,100.0,9.0
+1182,Benjamin Smith,Benjamin Smith,100.0,2.0
+1183,Benjamin Smith,Benjamin Smith,100.0,3.0
+1184,Benjamin Smith,Benjamin Smith,100.0,5.0
+1188,Peter Smith,Peter Smith,100.0,6.0
+1194,William Scott,William Scott,100.0,2.0
+1195,William Scott,William Scott,100.0,6.0
+1200,Thomas Fuller,Thomas Fuller,100.0,3.0
+1206,Richard Hutson,Richard Hutson,100.0,6.0
+1212,Henry Laurens,Henry Laurens,100.0,6.0
+1218,William Read,William Read,100.0,2.0
+1224,William Kennedy,William Kennedy,100.0,6.0
+1230,James Craig,James Craig,100.0,6.0
+1236,John Baker,John Baker,100.0,2.0
+1237,John Baker,John Baker,100.0,6.0
+1238,John Baker,John Baker,100.0,8.0
+1242,John Cook,John Cook,100.0,2.0
+1248,David Rice,David Rice,100.0,6.0
+1254,Henry Hill,Henry Hill,100.0,6.0
+1255,Henry Hill,Henry Hill,100.0,8.0
+1260,Robert Ewing,Robert Ewing,100.0,9.0
+1266,James Anderson,James Anderson,100.0,4.0
+1267,James Anderson,James Anderson,100.0,6.0
+1268,James Anderson,James Anderson,100.0,8.0
+1272,John Ramsay,John Ramsay,100.0,9.0
+1278,John Thompson,John Thompson,100.0,6.0
+1279,John Thompson,John Thompson,100.0,7.0
+1280,John Thompson,John Thompson,100.0,9.0
+1284,Enoch Sawyer,Enoch Sawyer,100.0,1.0
+1285,Enoch Sawyer,Enoch Sawyer,100.0,2.0
+1290,John Wallace,John Wallace,100.0,6.0
+1296,Robert Adam,Robert Adam,100.0,8.0
+1302,James Moore,James Moore,100.0,6.0
+1303,James Moore,James Moore,100.0,8.0
+1308,John Hay,John Hay,100.0,2.0
+1309,John Hay,John Hay,100.0,6.0
+1310,John Hay,John Hay,100.0,9.0
+1314,Thomas Williams,Thomas Williams,100.0,3.0
+1315,Thomas Williams,Thomas Williams,100.0,6.0
+1316,Thomas Williams,Thomas Williams,100.0,8.0
+1317,Thomas Williams,Thomas Williams,100.0,9.0
+1320,Richard Nixon,Richard Nixon,100.0,5.0
+1326,John Allen,John Allen,100.0,2.0
+1327,John Allen,John Allen,100.0,5.0
+1328,John Allen,John Allen,100.0,8.0
+1332,Thomas Brown,Thomas Brown,100.0,1.0
+1333,Thomas Brown,Thomas Brown,100.0,2.0
+1334,Thomas Brown,Thomas Brown,100.0,5.0
+1335,Thomas Brown,Thomas Brown,100.0,6.0
+1338,John Hall,John Hall,100.0,2.0
+1339,John Hall,John Hall,100.0,5.0
+1340,John Hall,John Hall,100.0,6.0
+1341,John Hall,John Hall,100.0,8.0
+1342,John Hall,John Hall,100.0,9.0
+1344,David Jameson,David Jameson,100.0,9.0
+1350,James Thomas,James Thomas,100.0,2.0
+1351,James Thomas,James Thomas,100.0,6.0
+1356,Stephen Smith,Stephen Smith,100.0,3.0
+1362,Benjamin Hicks,Benjamin Hicks,100.0,4.0
+1368,Samuel Taylor,Samuel Taylor,100.0,6.0
+1374,Samuel Watson,Samuel Watson,100.0,3.0
+1380,Robert Patton,Robert Patton,100.0,6.0
+1386,William Hill,William Hill,100.0,3.0
+1387,William Hill,William Hill,100.0,6.0
+1388,William Hill,William Hill,100.0,9.0
+1392,Joseph Brown,Joseph Brown,100.0,1.0
+1393,Joseph Brown,Joseph Brown,100.0,2.0
+1394,Joseph Brown,Joseph Brown,100.0,5.0
+1395,Joseph Brown,Joseph Brown,100.0,6.0
+1398,John Wood,John Wood,100.0,2.0
+1399,John Wood,John Wood,100.0,4.0
+1400,John Wood,John Wood,100.0,6.0
+1404,Ebenezer Wales,Ebenezer Wales,100.0,2.0
+1410,Samuel Johnston,Samuel Johnston,100.0,6.0
+1422,Gideon Buckingham,Gideon Buckingham,100.0,3.0
+1428,Richard Law,Richard Law,100.0,3.0
+1434,Thomas Read,Thomas Read,100.0,2.0
+1435,Thomas Read,Thomas Read,100.0,6.0
+1440,James Taylor,James Taylor,100.0,9.0
+1446,Jedediah Huntington,Jedediah Huntington,100.0,3.0
+1452,Robert Alexander,Robert Alexander,100.0,8.0
+1458,Henry Lee,Henry Lee,100.0,6.0
+1470,Charles Ridgely,Charles Ridgely,100.0,8.0
+1476,Daniel Foot,Daniel Foot,100.0,3.0
+1482,Andrew Lee,Andrew Lee,100.0,3.0
+1488,William Noyes,William Noyes,100.0,3.0
+1494,Jeremiah Halsey,Jeremiah Halsey,100.0,3.0
+1495,Jeremiah Halsey,Jeremiah Halsey,100.0,6.0
+1500,John Francis Mercer,John Francis Mercer,100.0,5.0
+1501,John Francis Mercer,John Francis Mercer,100.0,6.0
+1506,Samuel Chase,Samuel Chase,100.0,1.0
+1507,Samuel Chase,Samuel Chase,100.0,8.0
+1512,Wheeler Coit,Wheeler Coit,100.0,3.0
+1518,William Harwood,William Harwood,100.0,9.0
+1524,John Holbrook,John Holbrook,100.0,3.0
+1530,Joseph Jones,Joseph Jones,100.0,2.0
+1531,Joseph Jones,Joseph Jones,100.0,6.0
+1536,Thomas Pierce,Thomas Pierce,100.0,9.0
+1542,Miles King,Miles King,100.0,9.0
+1548,Thaddeus Burr,Thaddeus Burr,100.0,3.0
+1554,Jabez Fitch,Jabez Fitch,100.0,3.0
+1560,John Phelps,John Phelps,100.0,3.0
+1566,John Marshall,John Marshall,100.0,6.0
+1572,Nehemiah Beardsley,Nehemiah Beardsley,100.0,3.0
+1578,Andrew Woodrow,Andrew Woodrow,100.0,9.0
+1584,James Potter,James Potter,100.0,6.0
+1590,John Chandler,John Chandler,100.0,1.0
+1591,John Chandler,John Chandler,100.0,2.0
+1596,Aaron Austin,Aaron Austin,100.0,5.0
+1602,Joshua Porter,Joshua Porter,100.0,3.0
+1608,Joseph Mosely,Joseph Mosely,100.0,3.0
+1614,Thomas Smith,Thomas Smith,100.0,2.0
+1615,Thomas Smith,Thomas Smith,100.0,5.0
+1616,Thomas Smith,Thomas Smith,100.0,6.0
+1617,Thomas Smith,Thomas Smith,100.0,9.0
+1620,John Chester,John Chester,100.0,6.0
+1626,John Fowler,John Fowler,100.0,9.0
+1638,Meriwether Smith,Meriwether Smith,100.0,6.0
+1644,James Upshaw,James Upshaw,100.0,9.0
+1650,Benjamin Edwards,Benjamin Edwards,100.0,2.0
+1656,Charles Phelps,Charles Phelps,100.0,2.0
+1657,Charles Phelps,Charles Phelps,100.0,3.0
+1662,Richard Thomas,Richard Thomas,100.0,8.0
+1668,Thomas Cramphin,Thomas Cramphin,100.0,8.0
+1674,Benjamin Dow,Benjamin Dow,100.0,3.0
+1680,Joseph Gilpin,Joseph Gilpin,100.0,6.0
+1686,Daniel Miles,Daniel Miles,100.0,3.0
+1692,David Smith,David Smith,100.0,6.0
+1698,Ebenezer White,Ebenezer White,100.0,2.0
+1699,Ebenezer White,Ebenezer White,100.0,3.0
+1704,Isaac Perkins,Isaac Perkins,100.0,8.0
+1710,Hezekiah Brainard,Hezekiah Brainard,100.0,3.0
+1716,Charles Chilton,Charles Chilton,100.0,8.0
+1722,William Hart,William Hart,100.0,2.0
+1723,William Hart,William Hart,100.0,3.0
+1724,William Hart,William Hart,100.0,6.0
+1728,Richard Barnes,Richard Barnes,100.0,8.0
+1734,Ebenezer Nash,Ebenezer Nash,100.0,3.0
+1740,Thomas Goodman,Thomas Goodman,100.0,3.0
+1746,Simon Cotton,Simon Cotton,100.0,3.0
+1752,Ichabod Warner,Ichabod Warner,100.0,3.0
+1758,Samuel Whiting,Samuel Whiting,100.0,2.0
+1764,David Todd,David Todd,100.0,6.0
+1770,Isaac Foot,Isaac Foot,100.0,3.0
+1776,Henry Hollingsworth,Henry Hollingsworth,100.0,6.0
+1782,Isaac Roosevelt,Isaac Roosevelt,100.0,4.0
+1788,Joshua Dunlap,Joshua Dunlap,100.0,3.0
+1794,Joseph Richardson,Joseph Richardson,100.0,2.0
+1795,Joseph Richardson,Joseph Richardson,100.0,8.0
+1800,Richard Potts,Richard Potts,100.0,8.0
+1806,Thomas Johnson,Thomas Johnson,100.0,1.0
+1807,Thomas Johnson,Thomas Johnson,100.0,4.0
+1808,Thomas Johnson,Thomas Johnson,100.0,6.0
+1809,Thomas Johnson,Thomas Johnson,100.0,8.0
+1812,John Done,John Done,100.0,8.0
+1818,Elisha Mills,Elisha Mills,100.0,3.0
+1824,William Morris,William Morris,100.0,7.0
+1825,William Morris,William Morris,100.0,9.0
+1830,James Martin,James Martin,100.0,1.0
+1831,James Martin,James Martin,100.0,3.0
+1836,John Coulter,John Coulter,100.0,8.0
+1842,William Richardson,William Richardson,100.0,8.0
+1848,Benjamin Hall,Benjamin Hall,100.0,8.0
+1854,William Paca,William Paca,100.0,6.0
+1855,William Paca,William Paca,100.0,8.0
+1860,Abraham Faw,Abraham Faw,100.0,8.0
+1866,John Stewart,John Stewart,100.0,6.0
+1867,John Stewart,John Stewart,100.0,8.0
+1872,Eliphalet Dyer,Eliphalet Dyer,100.0,3.0
+1878,John Parnham,John Parnham,100.0,8.0
+1884,Simeon Smith,Simeon Smith,100.0,3.0
+1890,William Williams,William Williams,100.0,2.0
+1891,William Williams,William Williams,100.0,3.0
+1892,William Williams,William Williams,100.0,5.0
+1893,William Williams,William Williams,100.0,6.0
+1896,Jonathan Sturges,Jonathan Sturges,100.0,3.0
+1902,Thomas Cooper,Thomas Cooper,100.0,5.0
+1908,John Laws,John Laws,100.0,8.0
+1914,Gabriel Jones,Gabriel Jones,100.0,6.0
+1915,Gabriel Jones,Gabriel Jones,100.0,9.0
+1920,Anthony Ten Eyck,Anthony Ten Eyck,100.0,4.0
+1926,Robert Hoops,Robert Hoops,100.0,6.0
+1932,James Montgomery,James Montgomery,100.0,6.0
+1938,Richard Cary,Richard Cary,100.0,2.0
+1939,Richard Cary,Richard Cary,100.0,6.0
+1944,John Ingram,John Ingram,100.0,9.0
+1950,John Hartwell Cocke,John Hartwell Cocke,100.0,9.0
+1956,John Jones,John Jones,100.0,2.0
+1957,John Jones,John Jones,100.0,4.0
+1958,John Jones,John Jones,100.0,6.0
+1959,John Jones,John Jones,100.0,7.0
+1960,John Jones,John Jones,100.0,8.0
+1961,John Jones,John Jones,100.0,9.0
+1962,William Moore,William Moore,100.0,1.0
+1963,William Moore,William Moore,100.0,6.0
+1964,William Moore,William Moore,100.0,7.0
+1965,William Moore,William Moore,100.0,8.0
+1968,William Hall,William Hall,100.0,5.0
+1969,William Hall,William Hall,100.0,6.0
+1974,Isaac Cooper,Isaac Cooper,100.0,8.0
+1980,James Johnson,James Johnson,100.0,2.0
+1981,James Johnson,James Johnson,100.0,6.0
+1986,Richard Smith,Richard Smith,100.0,1.0
+1992,Joseph Barker,Joseph Barker,100.0,3.0
+1998,James Black,James Black,100.0,6.0
+1999,James Black,James Black,100.0,7.0
+2004,John Williams,John Williams,100.0,2.0
+2005,John Williams,John Williams,100.0,3.0
+2006,John Williams,John Williams,100.0,4.0
+2007,John Williams,John Williams,100.0,5.0
+2008,John Williams,John Williams,100.0,6.0
+2009,John Williams,John Williams,100.0,8.0
+2010,Thomas Anderson,Thomas Anderson,100.0,6.0
+2011,Thomas Anderson,Thomas Anderson,100.0,9.0
+2016,Robert Ogden,Robert Ogden,100.0,5.0
+2022,Matthew Adgate,Matthew Adgate,100.0,4.0
+2028,Elisha Lawrence,Elisha Lawrence,100.0,6.0
+2034,Robert R. Livingston,Robert R. Livingston,100.0,4.0
+2040,John Fell,John Fell,100.0,5.0
+2046,Samuel Hay,Samuel Hay,100.0,6.0
+2052,John Jay,John Jay,100.0,4.0
+2058,John Neilson,John Neilson,100.0,5.0
+2064,John Beatty,John Beatty,100.0,8.0
+2070,William Crawford ,William Crawford,100.0,5.0
+2071,William Crawford ,William Crawford,100.0,6.0
+2076,Peter Van Ness,Peter Van Ness,100.0,4.0
+2082,William Harper,William Harper,100.0,5.0
+2083,William Harper,William Harper,100.0,6.0
+2084,William Harper,William Harper,100.0,8.0
+2088,Edmund Wetherby ,Edmund Wetherby,100.0,6.0
+2094,Melancton Smith,Melancton Smith,100.0,4.0
+2100,Jesse Hand,Jesse Hand,100.0,6.0
+2112,William Woodhull,William Woodhull,100.0,5.0
+2118,Jacob Rinker,Jacob Rinker,100.0,6.0
+2124,Samuel Carver,Samuel Carver,100.0,3.0
+2130,Thomas Lewis,Thomas Lewis,100.0,2.0
+2131,Thomas Lewis,Thomas Lewis,100.0,8.0
+2136,Robert Williams,Robert Williams,100.0,2.0
+2142,John Stringer,John Stringer,100.0,9.0
+2148,Jeremiah Wadsworth,Jeremiah Wadsworth,100.0,3.0
+2149,Jeremiah Wadsworth,Jeremiah Wadsworth,100.0,6.0
+2154,William Clayton,William Clayton,100.0,5.0
+2160,William McKee,William McKee,100.0,9.0
+2166,Alexander Robertson,Alexander Robertson,100.0,5.0
+2167,Alexander Robertson,Alexander Robertson,100.0,6.0
+2172,Isaac Lee,Isaac Lee,100.0,2.0
+2173,Isaac Lee,Isaac Lee,100.0,3.0
+2178,Thomas Allen,Thomas Allen,100.0,2.0
+2179,Thomas Allen,Thomas Allen,100.0,3.0
+2180,Thomas Allen,Thomas Allen,100.0,9.0
+2184,John Watson,John Watson,100.0,2.0
+2190,John Treadwell,John Treadwell,100.0,2.0
+2196,John Miller,John Miller,100.0,6.0
+2202,John Logan,John Logan,100.0,6.0
+2208,William White,William White,100.0,4.0
+2209,William White,William White,100.0,6.0
+2214,Levin Powell,Levin Powell,100.0,9.0
+2220,James Gordon,James Gordon,100.0,4.0
+2226,Robert Andrews,Robert Andrews,100.0,2.0
+2232,Thomas Gaskins,Thomas Gaskins,100.0,9.0
+2238,John Evans,John Evans,100.0,1.0
+2239,John Evans,John Evans,100.0,6.0
+2244,John Rutherford,John Rutherford,100.0,5.0
+2250,John Elliot,John Elliot,100.0,3.0
+2256,Jacob Weed,Jacob Weed,100.0,3.0
+2257,Jacob Weed,Jacob Weed,100.0,6.0
+2262,James Maxwell,James Maxwell,100.0,2.0
+2263,James Maxwell,James Maxwell,100.0,6.0
+2268,John King,John King,100.0,4.0
+2269,John King,John King,100.0,6.0
+2274,John Wilson,John Wilson,100.0,1.0
+2275,John Wilson,John Wilson,100.0,3.0
+2276,John Wilson,John Wilson,100.0,6.0
+2280,William Stevens,William Stevens,100.0,3.0
+2286,William Peachy,William Peachy,100.0,9.0
+2292,Cornelius C. Schoonmaker,Cornelius C Schoonmaker,97.87234042553192,4.0
+2298,Frederick A. Muhlenberg,Frederick A Muhlenberg,97.77777777777777,6.0
+2304,William Sommersall,William Somersall,97.14285714285714,2.0
+2310,Samuel W. Stockton,Samuel W Stockton,97.14285714285714,5.0
+2316,Nathaniel Robbins,Nathaniel Robins,96.96969696969697,2.0
+2322,Cornelius Higgins,Cornelius Higgns,96.96969696969697,3.0
+2328,Benjamin Elliott,Benjamin Elliot,96.7741935483871,3.0
+2334,William Johnson,Williams Johnson,96.7741935483871,8.0
+2340,William Johnson,William Johnston,96.7741935483871,9.0
+2346,Benjamin Wilson,Benjamin Willson,96.7741935483871,5.0
+2352,William Johnston,William Johnson,96.7741935483871,7.0
+2353,William Johnston,William Johnson,96.7741935483871,8.0
+2358,William Robison,William Robinson,96.7741935483871,6.0
+2359,William Robison,William Robinson,96.7741935483871,9.0
+2364,Benjamin Elliott,Benjamin Eliott,96.7741935483871,3.0
+2370,William Simpson,William Stimpson,96.7741935483871,2.0
+2376,Benjamin Bellows,Benjamin Bellow,96.7741935483871,1.0
+2382,William Phillips,William Philips,96.7741935483871,3.0
+2388,William Phillips,Wiliam Phillips,96.7741935483871,2.0
+2394,Richard F. Cutts,Richard F Cutts,96.7741935483871,2.0
+2400,Jonathan Gillet,Jonathan Gillett,96.7741935483871,3.0
+2406,George Mitchell,George Michell,96.55172413793103,5.0
+2412,Thomas  Collins,Thomas Collins,96.55172413793103,9.0
+2418,Thomas Johnston,Thomas Johnson,96.55172413793103,1.0
+2419,Thomas Johnston,Thomas Johnson,96.55172413793103,4.0
+2420,Thomas Johnston,Thomas Johnson,96.55172413793103,6.0
+2421,Thomas Johnston,Thomas Johnson,96.55172413793103,8.0
+2424,Samuel Johnston,Samuel Johnson,96.55172413793103,5.0
+2425,Samuel Johnston,Samuel Johnson,96.55172413793103,6.0
+2430,Lemuel Sandford,Lemuel Sanford,96.55172413793103,3.0
+2436,William Simpson,William Simson,96.55172413793103,6.0
+2442,John Montgomery,John Mongomery,96.55172413793103,6.0
+2448,Benjamin Hinma,Benjamin Hinman,96.55172413793103,3.0
+2454,Isaac Roosevelt,Isaac Rosevelt,96.55172413793103,4.0
+2460,Benjamin Browne,Benjamin Brown,96.55172413793103,1.0
+2461,Benjamin Browne,Benjamin Brown,96.55172413793103,2.0
+2466,Charles Grahame,Charles Graham,96.55172413793103,8.0
+2472,Samuel Edmison,Samuel Edmiston,96.55172413793103,6.0
+2478,Tristam Dalton,Tristram Dalton,96.55172413793103,2.0
+2484,William Bailey ,William Baily,96.29629629629629,6.0
+2490,William Mason,William Matson,96.29629629629629,6.0
+2496,Thomas Russel,Thomas Russell,96.29629629629629,2.0
+2497,Thomas Russel,Thomas Russell,96.29629629629629,3.0
+2498,Thomas Russel,Thomas Russell,96.29629629629629,6.0
+2499,Thomas Russel,Thomas Russell,96.29629629629629,8.0
+2502,Samuel Simpson,Samuel Simson,96.29629629629629,6.0
+2508,William Brown,William Browne,96.29629629629629,2.0
+2509,William Brown,William Browne,96.29629629629629,6.0
+2514,John Treadwell,John Tredwell,96.29629629629629,2.0
+2520,William Morris,William Moris,96.29629629629629,6.0
+2526,Joseph Powell,Joseph Prowell,96.29629629629629,6.0
+2532,Francis Cabot,Francis Cabbot,96.29629629629629,2.0
+2538,Jacob Johnston,Jacob Johnson,96.29629629629629,3.0
+2539,Jacob Johnston,Jacob Johnson,96.29629629629629,6.0
+2544,John Anderson,John Sanderson,96.29629629629629,2.0
+2550,Daniel Rodgers,Daniel Rogers,96.29629629629629,2.0
+2556,William Mason,William Malson,96.29629629629629,3.0
+2568,Joseph Kimball,Joseph Kimbal,96.29629629629629,1.0
+2574,Samuel Langdon,Samuel Landon,96.29629629629629,3.0
+2580,David Gilmore,David Gillmore,96.29629629629629,2.0
+2586,William Jones,William Johnes,96.29629629629629,3.0
+2592,William Abbott,William Abbot,96.29629629629629,2.0
+2598,Joseph Mosely,Joseph Moseley,96.29629629629629,3.0
+2604,Peter Lefferts,Peter Leffert,96.29629629629629,6.0
+2610,Robert Wilson,Robert Willson,96.29629629629629,3.0
+2616,John Hamilton,John Hammilton,96.29629629629629,7.0
+2622,William Meyer,William Meyers,96.29629629629629,4.0
+2628,Thomas Walter,Thomas Water,96.0,6.0
+2634,Thomas Jones,Thomas Johnes,96.0,3.0
+2640,John Thompson,John Tompson,96.0,6.0
+2646,David Stuart,David Steuart,96.0,8.0
+2652,William Scott,Wiliam Scott,96.0,6.0
+2658,George Digges,George Diggs,96.0,8.0
+2664,Samuel Mason,Samuel Marson,96.0,6.0
+2670,John Matthews,John Mathews,96.0,6.0
+2682,Peter Vrooman,Peter Vroman,96.0,4.0
+2688,Samuel Orton,Samuel Norton,96.0,2.0
+2689,Samuel Orton,Samuel Norton,96.0,3.0
+2694,John Richards,John Richard,96.0,6.0
+2700,George Truitt,George Truit,96.0,8.0
+2706,John Williams,John William,96.0,6.0
+2712,Joseph Barker,Joseph Baker,96.0,2.0
+2718,John Williams,John Wiliams,96.0,3.0
+2719,John Williams,John Wiliams,96.0,6.0
+2724,Thomas Walke,Thomas Walker,96.0,2.0
+2730,Williams John,William John,96.0,6.0
+2736,John Johnston,John Johnson,96.0,3.0
+2737,John Johnston,John Johnson,96.0,4.0
+2738,John Johnston,John Johnson,96.0,5.0
+2739,John Johnston,John Johnson,96.0,6.0
+2740,John Johnston,John Johnson,96.0,8.0
+2742,John Stevens,John Steven,95.65217391304348,6.0
+2748,John Wilson,John Willson,95.65217391304348,3.0
+2754,John Curtiss,John Curtis,95.65217391304348,2.0
+2760,Isaac Clarke,Isaac Clark,95.65217391304348,3.0
+2766,John Elliot,John Elliott,95.65217391304348,2.0
+2767,John Elliot,John Elliott,95.65217391304348,3.0
+2772,John Neilson,John Nilson,95.65217391304348,6.0
+2778,John Neilson,John Nelson,95.65217391304348,5.0
+2784,John Simmons,John Simons,95.65217391304348,6.0
+2790,Walter Smith,Water Smith,95.65217391304348,5.0
+2796,John Lindsey,John Linsey,95.65217391304348,6.0
+2802,John Parnham,John Parham,95.65217391304348,2.0
+2808,Elisha Mills,Eisha Mills,95.65217391304348,3.0
+2814,John Collins,John Collin,95.65217391304348,3.0
+2815,John Collins,John Collin,95.65217391304348,4.0
+2820,Frederick A. Muhlenberg,Fredrick A Muhlenberg,95.45454545454545,6.0
+2826,John Steele,John Steel,95.23809523809524,3.0
+2827,John Steele,John Steel,95.23809523809524,6.0
+2832,John Brooks,John Brook,95.23809523809524,6.0
+2838,John Beatty,John Beaty,95.23809523809524,5.0
+2844,John  Allen,John Allen,95.23809523809524,2.0
+2845,John  Allen,John Allen,95.23809523809524,5.0
+2846,John  Allen,John Allen,95.23809523809524,8.0
+2850,John Brown,John Browne,95.23809523809524,2.0
+2856,John Dabney,John Abney,95.23809523809524,9.0
+2862,John Baker,John Banker,95.23809523809524,6.0
+2868,John Fowler,John Fowle,95.23809523809524,2.0
+2874,John Minot,John Minots,95.23809523809524,2.0
+2880,John Minot,John Minott,95.23809523809524,2.0
+2886,John Baker,John Barker,95.23809523809524,2.0
+2887,John Baker,John Barker,95.23809523809524,3.0
+2888,John Baker,John Barker,95.23809523809524,6.0
+2892,Dexter John S,John Dexter,95.0,2.0
+2898,John G. Scull,John Scull,95.0,6.0
+2904,John Williams,John F Williams,95.0,2.0
+2910,John Pickering,John Gee Pickering,95.0,1.0
+2916,John  Fox,John Fox,95.0,2.0
+2917,John  Fox,John Fox,95.0,6.0
+2922,William N. Hill,William Hill,95.0,3.0
+2923,William N. Hill,William Hill,95.0,6.0
+2924,William N. Hill,William Hill,95.0,9.0
+2928,William Richardson Davie,William Richardson,95.0,8.0
+2934,Allen Thomas,Thomas Allen,95.0,2.0
+2935,Allen Thomas,Thomas Allen,95.0,3.0
+2936,Allen Thomas,Thomas Allen,95.0,9.0
+2940,John Williams,John Davis Williams,95.0,2.0
+2946,John K. Smith,John Smith,95.0,2.0
+2947,John K. Smith,John Smith,95.0,3.0
+2948,John K. Smith,John Smith,95.0,4.0
+2949,John K. Smith,John Smith,95.0,5.0
+2950,John K. Smith,John Smith,95.0,6.0
+2951,John K. Smith,John Smith,95.0,9.0
+2952,"Gunning Bedford, Sr.",Gunning Bedford,95.0,6.0
+2953,"Gunning Bedford, Sr.",Gunning Bedford,95.0,7.0
+2958,"Gunning Bedford, Jr.",Gunning Bedford,95.0,6.0
+2959,"Gunning Bedford, Jr.",Gunning Bedford,95.0,7.0
+2964,John Thomas,John A Thomas,95.0,8.0
+2970,Allen Samuel,Samuel Allen,95.0,2.0
+2971,Allen Samuel,Samuel Allen,95.0,6.0
+2976,George H. Berger,George Berger,95.0,6.0
+2982,James Armstrong,James F Armstrong,95.0,6.0
+2988,William Heath,M.G William Heath,95.0,2.0
+2994,Williams John,John Williams,95.0,2.0
+2995,Williams John,John Williams,95.0,3.0
+2996,Williams John,John Williams,95.0,4.0
+2997,Williams John,John Williams,95.0,5.0
+2998,Williams John,John Williams,95.0,6.0
+2999,Williams John,John Williams,95.0,8.0
+3000,"Samuel Hopkins, Jun.",Samuel Hopkins,95.0,3.0
+3006,Thomas H. Perkins,Thomas Perkins,95.0,2.0
+3012,Williams John,John Davis Williams,95.0,2.0
+3018,John Williams,John M Williams,95.0,4.0
+3024,Brown Elisha,Elisha Brown,95.0,1.0
+3030,Samuel W. Stockton,Samuel Stockton,95.0,5.0
+3036,Christopher P.  Yates,Christopher P Yates,95.0,4.0
+3042,Robert R. Livingston,Robert Livingston,95.0,4.0
+3048,John  Fox,John fox,95.0,6.0
+3054,John Schenck,John P Schenck,95.0,4.0
+3060,Ebenezer Smith,Ebenezer Smith PLott,95.0,6.0
+3066,Ebenezer Smith,Ebenezer Smith Fowle,95.0,2.0
+3072,John Smith,John Nic Smith,95.0,6.0
+3078,William Smith,William P Smith,95.0,6.0
+3084,William Smith,William D Smith,95.0,6.0
+3090,Stone Peter,Peter Stone,95.0,6.0
+3096,Henry Lee III,Henry Lee,95.0,6.0
+3102,Cornelius C. Schoonmaker,Cornelius Schoonmaker,95.0,4.0
+3108,Christopher P.  Yates,Christopher Yates,95.0,4.0
+3114,William Smith,William O. Smith,95.0,6.0
+3120,Brown John,John Brown,95.0,1.0
+3121,Brown John,John Brown,95.0,2.0
+3122,Brown John,John Brown,95.0,4.0
+3123,Brown John,John Brown,95.0,5.0
+3124,Brown John,John Brown,95.0,6.0
+3126,Frederick A. Muhlenberg,Frederick Muhlenberg,95.0,6.0
+3132,Gilbert Livingston,Gilbert R Livingston,95.0,4.0
+3138,Gilbert Livingston,Gilbert K Livingston,95.0,4.0
+3144,Anthony Ten Eyck,Anthony J. Ten Eyck,95.0,4.0
+3150,John A. Campbell,John Campbell,95.0,4.0
+3151,John A. Campbell,John Campbell,95.0,6.0
+3156,"William Deakins, Jun.",William Deakins,95.0,8.0
+3162,Stephen Mix Mitchell,Stephen Mitchell,95.0,3.0
+3168,Thomas Williams,Thomas M Williams,95.0,8.0
+3174,Williams John,John M Williams,95.0,4.0
+3180,Barton William,William Barton,95.0,6.0
+3186,Clark John I,John Clark,95.0,2.0
+3187,Clark John I,John Clark,95.0,6.0
+3188,Clark John I,John Clark,95.0,7.0
+3192,Howard Jonathan J,Jonathan Howard,95.0,2.0
+3198,Reynolds Joseph,Joseph Reynolds,95.0,4.0
+3204,Thomas P. Williams,Thomas Williams,95.0,3.0
+3205,Thomas P. Williams,Thomas Williams,95.0,6.0
+3206,Thomas P. Williams,Thomas Williams,95.0,8.0
+3207,Thomas P. Williams,Thomas Williams,95.0,9.0
+3210,Bradford William,William C Bradford,95.0,6.0
+3216,"John Davenport, Jun.",John Davenport,95.0,3.0
+3222,"John Tyler, Sr.",John Tyler,95.0,3.0
+3234,Williams John,John F Williams,95.0,2.0
+3240,Bradford William,William Bradford,95.0,6.0
+3246,Robert Wilson,Robert Wilson 3rd,95.0,2.0
+3252,Joseph Moss White,Joseph White,95.0,2.0
+3258,James G. Hunt,James Hunt,95.0,5.0
+3264,William Gray Jun.,William Gray,95.0,2.0
+3270,Thomas Owen,Owen Thomas,95.0,6.0
+3276,Davis John,John Davis,95.0,3.0
+3277,Davis John,John Davis,95.0,6.0
+3282,William Johnston Dawson,William Johnston,95.0,9.0
+3288,George Carrington,George Carrington Jr,95.0,9.0
+3294,William Williams,William Williamson,94.11764705882354,5.0
+3295,William Williams,William Williamson,94.11764705882354,8.0
+3300,William Johnston,Williams Johnson,93.75,8.0
+3306,Williams John,William St John,92.85714285714286,3.0
+3312,Nichols William,William Nicholls,91.93548387096774,2.0
+3318,Thomas Williams,William Thomas,91.72413793103448,2.0
+3319,Thomas Williams,William Thomas,91.72413793103448,6.0
+3320,Thomas Williams,William Thomas,91.72413793103448,8.0
+3324,Reynolds Joseph,Joseph Renolds,91.72413793103448,3.0
+3330,Richard Smith,Smith Richards,91.48148148148147,5.0
+3336,James Williams,William James,91.48148148148147,6.0
+3342,Williams John,John Wiliams,91.19999999999999,3.0
+3343,Williams John,John Wiliams,91.19999999999999,6.0
+3348,Williams John,John William,91.19999999999999,6.0
+3354,John Williams,William John,91.19999999999999,6.0
+3360,William Williams,William Willamson,90.9090909090909,5.0
+3366,Brown John,John Browne,90.47619047619048,2.0
+3372,Joseph Moss White,Joseph Moss,90.0,2.0
+3378,John Taylor,John Taylor Gilman,90.0,1.0
+3384,John Howell Briggs,John Howell,90.0,5.0
+3385,John Howell Briggs,John Howell,90.0,6.0
+3386,John Howell Briggs,John Howell,90.0,8.0
+3390,John Francis Mercer,John Francis,90.0,6.0
+3396,Joseph Jackson,Joseph Jackson brookline,90.0,2.0
+3402,John Jacob Faesch ,John Jacob,90.0,6.0
+3408,Gustavus Richard Brown,Richard Brown,90.0,6.0
+3409,Gustavus Richard Brown,Richard Brown,90.0,9.0
+3414,John Jay,John Jay Bleecker,90.0,4.0
+3426,John Lewis Bourquin,John Lewis,90.0,2.0
+3427,John Lewis Bourquin,John Lewis,90.0,3.0
+3428,John Lewis Bourquin,John Lewis,90.0,6.0
+3429,John Lewis Bourquin,John Lewis,90.0,9.0
+3432,William S. Marnes,William S,90.0,6.0
+3438,John Lewis Gervias,John Lewis,90.0,2.0
+3439,John Lewis Gervias,John Lewis,90.0,3.0
+3440,John Lewis Gervias,John Lewis,90.0,6.0
+3441,John Lewis Gervias,John Lewis,90.0,9.0
+3444,James Gordon Heron,James Gordon,90.0,4.0
+3450,John Carter Littlepage,John Carter,90.0,9.0
+3456,John Davis,John Davis Williams,90.0,2.0
+3462,John Taylor Gilman,John Taylor,90.0,2.0
+3463,John Taylor Gilman,John Taylor,90.0,4.0
+3464,John Taylor Gilman,John Taylor,90.0,6.0
+3465,John Taylor Gilman,John Taylor,90.0,7.0
+3466,John Taylor Gilman,John Taylor,90.0,9.0
+3468,William Williams,William Wills,89.65517241379311,4.0
+3474,Daniel Rodgers,Daniel D Rogers,89.65517241379311,2.0
+3480,Robert Williams,William Roberts,88.66666666666666,2.0
+3486,Robert Edwards,Edward Roberts,88.21428571428571,5.0
+3492,John Simmons,John C Simons,88.0,5.0
+3498,John Schenck,John P Schenk,88.0,6.0
+3504,William Houston,William C. Huston,87.5,5.0
+3510,Robert B. Wilkins,Robert Wilkin,86.66666666666667,6.0
+3516,William Williams,William Gillis,86.66666666666667,8.0
+3522,William Williams,William Willes,86.66666666666667,4.0
+3528,Williams John,William John Molnerear,86.4,2.0
+3534,John Richards,John Richard Watrous,86.4,3.0
+3540,Thomas P. Williams,William Thomas,85.80645161290323,2.0
+3541,Thomas P. Williams,William Thomas,85.80645161290323,6.0
+3542,Thomas P. Williams,William Thomas,85.80645161290323,8.0
+3546,John Jacob Faesch ,John Jacobs,85.71428571428572,3.0
+3547,John Jacob Faesch ,John Jacobs,85.71428571428572,6.0
+3552,John A. Campbell,John Campbel,85.71428571428571,1.0
+3553,John A. Campbell,John Campbel,85.71428571428571,6.0
+3558,William Williams,William Churchill Huston,85.5,5.0
+3564,William Williams,William Rodham Kennar Est,85.5,9.0
+3570,William Williams,William S,85.5,6.0
+3576,Davis John,John Davis Williams,85.5,2.0
+3582,William Houston,William Churchill Huston,85.5,5.0
+3588,William Williams,William Thomas Exos James Ecum,85.5,9.0
+3594,William Williams,William Francis Bickerton,85.5,9.0
+3600,John Williams,William John Molnerear,85.5,2.0
+3606,James Thomas,William Thomas Exos James Ecum,85.5,9.0
+3612,Thomas Williams,William Thomas Exos James Ecum,85.5,9.0
+3618,Daniel Rodgers,Daniel Denison Rogers,85.5,2.0
+3624,John Jones,John Paul Jones,85.5,2.0
+3625,John Jones,John Paul Jones,85.5,6.0
+3630,Nicholas Lewis Sewall,Lewis Nichols,85.5,5.0
+3631,Nicholas Lewis Sewall,Lewis Nichols,85.5,6.0
+3636,William Williams,William Worthington Gale,85.5,3.0
+3642,Robert Williams,William Robert Buchanan,85.5,6.0
+3648,James Williams,William Thomas Exos James Ecum,85.5,9.0
+3654,John Taylor Gilman,John Gilman,85.5,1.0
+3660,John Jones,John Coffin Jones,85.5,2.0
+3666,John Williams,John Foster Williams,85.5,2.0
+3672,Williams John,John Foster Williams,85.5,2.0
+0,John Stevens,John Stevens,100.0,MA
+1,John Stevens,John Stevens,100.0,unspecified
+2,John Stevens,John Stevens,100.0,CT
+3,John Stevens,John Stevens,100.0,PA
+12,John Blake,John Blake,100.0,MA
+13,John Blake,John Blake,100.0,unspecified
+24,Edward Blake,Edward Blake,100.0,MA
+25,Edward Blake,Edward Blake,100.0,PA
+26,Edward Blake,Edward Blake,100.0,unspecified
+36,John Matthews,John Matthews,100.0,NH
+37,John Matthews,John Matthews,100.0,MA
+48,Ephraim Fitch,Ephraim Fitch,100.0,CT
+60,Jonathan Smith,Jonathan Smith,100.0,MA
+61,Jonathan Smith,Jonathan Smith,100.0,unspecified
+62,Jonathan Smith,Jonathan Smith,100.0,MD
+72,Lemuel Collins,Lemuel Collins,100.0,MA
+84,John Ashley,John Ashley,100.0,unspecified
+85,John Ashley,John Ashley,100.0,VA
+96,James Carr,James Carr,100.0,CT
+97,James Carr,James Carr,100.0,NH
+98,James Carr,James Carr,100.0,unspecified
+99,James Carr,James Carr,100.0,VA
+100,James Carr,James Carr,100.0,NC
+108,Samuel Grant,Samuel Grant,100.0,NH
+109,Samuel Grant,Samuel Grant,100.0,RI
+110,Samuel Grant,Samuel Grant,100.0,MA
+120,William Jones,William Jones,100.0,PA
+121,William Jones,William Jones,100.0,CT
+122,William Jones,William Jones,100.0,NH
+123,William Jones,William Jones,100.0,NJ
+124,William Jones,William Jones,100.0,unspecified
+125,William Jones,William Jones,100.0,CS
+126,William Jones,William Jones,100.0,MA
+127,William Jones,William Jones,100.0,DE
+128,William Jones,William Jones,100.0,NY
+129,William Jones,William Jones,100.0,VA
+130,William Jones,William Jones,100.0,MD
+131,William Jones,William Jones,100.0,NC
+132,David Murray,David Murray,100.0,CS
+133,David Murray,David Murray,100.0,unspecified
+144,Thomas Rice,Thomas Rice,100.0,MA
+145,Thomas Rice,Thomas Rice,100.0,NH
+146,Thomas Rice,Thomas Rice,100.0,unspecified
+156,Isaac Snow,Isaac Snow,100.0,CT
+168,John Dunlap,John Dunlap,100.0,NY
+169,John Dunlap,John Dunlap,100.0,unspecified
+180,Samuel Merrill,Samuel Merrill,100.0,MA
+181,Samuel Merrill,Samuel Merrill,100.0,unspecified
+192,Josiah Goddard,Josiah Goddard,100.0,unspecified
+204,Timothy Fuller,Timothy Fuller,100.0,unspecified
+216,John Taylor,John Taylor,100.0,CT
+217,John Taylor,John Taylor,100.0,MA
+218,John Taylor,John Taylor,100.0,NH
+219,John Taylor,John Taylor,100.0,unspecified
+220,John Taylor,John Taylor,100.0,NY
+221,John Taylor,John Taylor,100.0,PA
+222,John Taylor,John Taylor,100.0,VA
+223,John Taylor,John Taylor,100.0,MD
+224,John Taylor,John Taylor,100.0,NC
+228,Timothy Parker,Timothy Parker,100.0,CT
+240,Samuel Baker,Samuel Baker,100.0,unspecified
+241,Samuel Baker,Samuel Baker,100.0,MA
+252,Jonathan Day,Jonathan Day,100.0,MA
+253,Jonathan Day,Jonathan Day,100.0,CT
+264,Joshua Whitney,Joshua Whitney,100.0,CT
+265,Joshua Whitney,Joshua Whitney,100.0,unspecified
+266,Joshua Whitney,Joshua Whitney,100.0,MA
+276,Samuel Willard,Samuel Willard,100.0,MA
+277,Samuel Willard,Samuel Willard,100.0,unspecified
+288,John Fuller,John Fuller,100.0,PA
+289,John Fuller,John Fuller,100.0,CT
+290,John Fuller,John Fuller,100.0,MA
+291,John Fuller,John Fuller,100.0,unspecified
+292,John Fuller,John Fuller,100.0,NC
+300,Jonathan Bullard,Jonathan Bullard,100.0,MA
+312,Samuel Hay,Samuel Hay,100.0,PA
+313,Samuel Hay,Samuel Hay,100.0,unspecified
+324,Samuel Denny,Samuel Denny,100.0,MD
+336,William Mayhew,William Mayhew,100.0,unspecified
+348,Jacob Bradbury,Jacob Bradbury,100.0,MA
+360,James Neal,James Neal,100.0,MA
+361,James Neal,James Neal,100.0,PA
+362,James Neal,James Neal,100.0,unspecified
+372,William Johnson,William Johnson,100.0,CT
+373,William Johnson,William Johnson,100.0,unspecified
+374,William Johnson,William Johnson,100.0,MA
+375,William Johnson,William Johnson,100.0,NJ
+376,William Johnson,William Johnson,100.0,NY
+377,William Johnson,William Johnson,100.0,VA
+378,William Johnson,William Johnson,100.0,MD
+384,Daniel Stevens,Daniel Stevens,100.0,MA
+385,Daniel Stevens,Daniel Stevens,100.0,CT
+386,Daniel Stevens,Daniel Stevens,100.0,unspecified
+387,Daniel Stevens,Daniel Stevens,100.0,MD
+396,John Pratt,John Pratt,100.0,MA
+397,John Pratt,John Pratt,100.0,unspecified
+398,John Pratt,John Pratt,100.0,NY
+399,John Pratt,John Pratt,100.0,PA
+408,Nathaniel Russell,Nathaniel Russell,100.0,unspecified
+420,John Hampton,John Hampton,100.0,VA
+421,John Hampton,John Hampton,100.0,PA
+432,William Fitzpatrick,William Fitzpatrick,100.0,PA
+433,William Fitzpatrick,William Fitzpatrick,100.0,unspecified
+444,John Thomas,John Thomas,100.0,PA
+445,John Thomas,John Thomas,100.0,CT
+446,John Thomas,John Thomas,100.0,NJ
+447,John Thomas,John Thomas,100.0,MA
+448,John Thomas,John Thomas,100.0,NH
+449,John Thomas,John Thomas,100.0,unspecified
+450,John Thomas,John Thomas,100.0,NY
+451,John Thomas,John Thomas,100.0,VA
+452,John Thomas,John Thomas,100.0,MD
+456,William Butler,William Butler,100.0,CT
+457,William Butler,William Butler,100.0,MA
+458,William Butler,William Butler,100.0,unspecified
+459,William Butler,William Butler,100.0,PA
+468,John Montgomery,John Montgomery,100.0,PA
+469,John Montgomery,John Montgomery,100.0,unspecified
+480,Hugh White,Hugh White,100.0,PA
+492,John Lowry,John Lowry,100.0,CS
+504,John Palmer,John Palmer,100.0,CS
+505,John Palmer,John Palmer,100.0,unspecified
+516,John Simmons,John Simmons,100.0,MA
+517,John Simmons,John Simmons,100.0,NY
+518,John Simmons,John Simmons,100.0,NC
+528,John Burgess,John Burgess,100.0,NY
+529,John Burgess,John Burgess,100.0,PA
+530,John Burgess,John Burgess,100.0,MD
+540,James Pettigrew,James Pettigrew,100.0,PA
+552,William Reed,William Reed,100.0,unspecified
+553,William Reed,William Reed,100.0,CT
+554,William Reed,William Reed,100.0,NJ
+555,William Reed,William Reed,100.0,PA
+556,William Reed,William Reed,100.0,NC
+564,Samuel Smith,Samuel Smith,100.0,PA
+565,Samuel Smith,Samuel Smith,100.0,MA
+566,Samuel Smith,Samuel Smith,100.0,NH
+567,Samuel Smith,Samuel Smith,100.0,unspecified
+568,Samuel Smith,Samuel Smith,100.0,RI
+569,Samuel Smith,Samuel Smith,100.0,CT
+570,Samuel Smith,Samuel Smith,100.0,NY
+571,Samuel Smith,Samuel Smith,100.0,VA
+572,Samuel Smith,Samuel Smith,100.0,NC
+576,John Bowman,John Bowman,100.0,PA
+577,John Bowman,John Bowman,100.0,unspecified
+588,Samuel Warren,Samuel Warren,100.0,MA
+589,Samuel Warren,Samuel Warren,100.0,NC
+600,James Stewart,James Stewart,100.0,NY
+601,James Stewart,James Stewart,100.0,NJ
+602,James Stewart,James Stewart,100.0,unspecified
+603,James Stewart,James Stewart,100.0,PA
+604,James Stewart,James Stewart,100.0,MD
+605,James Stewart,James Stewart,100.0,NC
+612,John Joyner,John Joyner,100.0,NH
+624,John Lloyd,John Lloyd,100.0,NJ
+625,John Lloyd,John Lloyd,100.0,MA
+626,John Lloyd,John Lloyd,100.0,unspecified
+636,William Washington,William Washington,100.0,VA
+648,Isaac Parker,Isaac Parker,100.0,CT
+649,Isaac Parker,Isaac Parker,100.0,unspecified
+650,Isaac Parker,Isaac Parker,100.0,MA
+660,Isaac Harleston,Isaac Harleston,100.0,unspecified
+672,John Parker,John Parker,100.0,CT
+673,John Parker,John Parker,100.0,unspecified
+674,John Parker,John Parker,100.0,MA
+675,John Parker,John Parker,100.0,PA
+684,William Smith,William Smith,100.0,CT
+685,William Smith,William Smith,100.0,unspecified
+686,William Smith,William Smith,100.0,MA
+687,William Smith,William Smith,100.0,CS
+688,William Smith,William Smith,100.0,DE
+689,William Smith,William Smith,100.0,NY
+690,William Smith,William Smith,100.0,PA
+691,William Smith,William Smith,100.0,VA
+692,William Smith,William Smith,100.0,MD
+693,William Smith,William Smith,100.0,NC
+696,Benjamin Smith,Benjamin Smith,100.0,MA
+697,Benjamin Smith,Benjamin Smith,100.0,NH
+698,Benjamin Smith,Benjamin Smith,100.0,RI
+699,Benjamin Smith,Benjamin Smith,100.0,NY
+700,Benjamin Smith,Benjamin Smith,100.0,MD
+701,Benjamin Smith,Benjamin Smith,100.0,NC
+708,Peter Smith,Peter Smith,100.0,CT
+709,Peter Smith,Peter Smith,100.0,MA
+710,Peter Smith,Peter Smith,100.0,NH
+711,Peter Smith,Peter Smith,100.0,NJ
+712,Peter Smith,Peter Smith,100.0,unspecified
+713,Peter Smith,Peter Smith,100.0,PA
+714,Peter Smith,Peter Smith,100.0,MD
+715,Peter Smith,Peter Smith,100.0,NC
+720,William Scott,William Scott,100.0,CT
+721,William Scott,William Scott,100.0,unspecified
+722,William Scott,William Scott,100.0,NH
+723,William Scott,William Scott,100.0,MA
+724,William Scott,William Scott,100.0,NY
+725,William Scott,William Scott,100.0,PA
+726,William Scott,William Scott,100.0,VA
+727,William Scott,William Scott,100.0,GA
+732,Thomas Fuller,Thomas Fuller,100.0,MA
+733,Thomas Fuller,Thomas Fuller,100.0,NH
+744,William Read,William Read,100.0,MA
+745,William Read,William Read,100.0,unspecified
+746,William Read,William Read,100.0,PA
+756,John Edwards,John Edwards,100.0,NJ
+757,John Edwards,John Edwards,100.0,unspecified
+758,John Edwards,John Edwards,100.0,PA
+759,John Edwards,John Edwards,100.0,VA
+760,John Edwards,John Edwards,100.0,MD
+768,Samuel West,Samuel West,100.0,NC
+780,Thomas Durfee,Thomas Durfee,100.0,MA
+792,James Jordan,James Jordan,100.0,CT
+804,Benjamin Morse,Benjamin Morse,100.0,MA
+805,Benjamin Morse,Benjamin Morse,100.0,NH
+816,William Thompson,William Thompson,100.0,unspecified
+817,William Thompson,William Thompson,100.0,CT
+818,William Thompson,William Thompson,100.0,MA
+819,William Thompson,William Thompson,100.0,NH
+820,William Thompson,William Thompson,100.0,NY
+821,William Thompson,William Thompson,100.0,PA
+822,William Thompson,William Thompson,100.0,NC
+828,Aaron Wood,Aaron Wood,100.0,NH
+840,Israel Clark,Israel Clark,100.0,CT
+841,Israel Clark,Israel Clark,100.0,unspecified
+852,Thomas Mighill,Thomas Mighill,100.0,unspecified
+864,Thomas Kittridge,Thomas Kittridge,100.0,MA
+876,John Burnham,John Burnham,100.0,unspecified
+877,John Burnham,John Burnham,100.0,CT
+878,John Burnham,John Burnham,100.0,MA
+888,John Low,John Low,100.0,MA
+900,John Glover,John Glover,100.0,NC
+912,Michael Farley,Michael Farley,100.0,unspecified
+924,Thomas Jones,Thomas Jones,100.0,CT
+925,Thomas Jones,Thomas Jones,100.0,MA
+926,Thomas Jones,Thomas Jones,100.0,unspecified
+927,Thomas Jones,Thomas Jones,100.0,NY
+928,Thomas Jones,Thomas Jones,100.0,PA
+929,Thomas Jones,Thomas Jones,100.0,VA
+930,Thomas Jones,Thomas Jones,100.0,MD
+931,Thomas Jones,Thomas Jones,100.0,NC
+936,Benjamin Randall,Benjamin Randall,100.0,MA
+948,John Baxter,John Baxter,100.0,MD
+960,William M'Intosh,William M'Intosh,100.0,VA
+961,William M'Intosh,William M'Intosh,100.0,unspecified
+972,Joseph Jackson,Joseph Jackson,100.0,CT
+973,Joseph Jackson,Joseph Jackson,100.0,MA
+974,Joseph Jackson,Joseph Jackson,100.0,PA
+975,Joseph Jackson,Joseph Jackson,100.0,unspecified
+984,Daniel Shute,Daniel Shute,100.0,CT
+985,Daniel Shute,Daniel Shute,100.0,MA
+996,Ebenezer Wales,Ebenezer Wales,100.0,CT
+997,Ebenezer Wales,Ebenezer Wales,100.0,MA
+998,Ebenezer Wales,Ebenezer Wales,100.0,unspecified
+1008,William Heath,William Heath,100.0,NH
+1009,William Heath,William Heath,100.0,NC
+1020,Charles Jarvis,Charles Jarvis,100.0,unspecified
+1032,William Phillips,William Phillips,100.0,CT
+1033,William Phillips,William Phillips,100.0,PA
+1044,Samuel Adams,Samuel Adams,100.0,CT
+1045,Samuel Adams,Samuel Adams,100.0,MA
+1046,Samuel Adams,Samuel Adams,100.0,NH
+1047,Samuel Adams,Samuel Adams,100.0,unspecified
+1056,John Hancock,John Hancock,100.0,CT
+1057,John Hancock,John Hancock,100.0,unspecified
+1058,John Hancock,John Hancock,100.0,MA
+1059,John Hancock,John Hancock,100.0,NY
+1060,John Hancock,John Hancock,100.0,MD
+1068,William Brown,William Brown,100.0,unspecified
+1069,William Brown,William Brown,100.0,NH
+1070,William Brown,William Brown,100.0,NJ
+1071,William Brown,William Brown,100.0,MA
+1072,William Brown,William Brown,100.0,CS
+1073,William Brown,William Brown,100.0,CT
+1074,William Brown,William Brown,100.0,PA
+1075,William Brown,William Brown,100.0,MD
+1076,William Brown,William Brown,100.0,NC
+1080,James Edgar,James Edgar,100.0,PA
+1092,James Marshall,James Marshall,100.0,PA
+1104,Joseph Powell,Joseph Powell,100.0,MA
+1116,John Bishop,John Bishop,100.0,CT
+1117,John Bishop,John Bishop,100.0,unspecified
+1118,John Bishop,John Bishop,100.0,NJ
+1128,John Reynolds,John Reynolds,100.0,CT
+1129,John Reynolds,John Reynolds,100.0,NJ
+1130,John Reynolds,John Reynolds,100.0,MA
+1131,John Reynolds,John Reynolds,100.0,CS
+1132,John Reynolds,John Reynolds,100.0,unspecified
+1133,John Reynolds,John Reynolds,100.0,PA
+1134,John Reynolds,John Reynolds,100.0,MD
+1140,John Harris,John Harris,100.0,CT
+1141,John Harris,John Harris,100.0,MA
+1142,John Harris,John Harris,100.0,unspecified
+1143,John Harris,John Harris,100.0,PA
+1144,John Harris,John Harris,100.0,VA
+1145,John Harris,John Harris,100.0,MD
+1152,James Campbell,James Campbell,100.0,NH
+1153,James Campbell,James Campbell,100.0,unspecified
+1154,James Campbell,James Campbell,100.0,MA
+1155,James Campbell,James Campbell,100.0,DE
+1156,James Campbell,James Campbell,100.0,PA
+1164,John Brooks,John Brooks,100.0,unspecified
+1165,John Brooks,John Brooks,100.0,MA
+1166,John Brooks,John Brooks,100.0,RI
+1167,John Brooks,John Brooks,100.0,VA
+1176,John Webber,John Webber,100.0,MA
+1177,John Webber,John Webber,100.0,NH
+1188,David Brown,David Brown,100.0,CT
+1189,David Brown,David Brown,100.0,NJ
+1190,David Brown,David Brown,100.0,unspecified
+1191,David Brown,David Brown,100.0,MA
+1192,David Brown,David Brown,100.0,NH
+1200,Samuel Reed,Samuel Reed,100.0,MA
+1201,Samuel Reed,Samuel Reed,100.0,PA
+1202,Samuel Reed,Samuel Reed,100.0,unspecified
+1212,Nathaniel Leonard,Nathaniel Leonard,100.0,NJ
+1213,Nathaniel Leonard,Nathaniel Leonard,100.0,unspecified
+1224,James Williams,James Williams,100.0,MA
+1225,James Williams,James Williams,100.0,NH
+1226,James Williams,James Williams,100.0,unspecified
+1227,James Williams,James Williams,100.0,PA
+1228,James Williams,James Williams,100.0,MD
+1236,Joseph Palmer,Joseph Palmer,100.0,unspecified
+1237,Joseph Palmer,Joseph Palmer,100.0,PA
+1248,Levi Whitman,Levi Whitman,100.0,NH
+1260,Samuel Niles,Samuel Niles,100.0,MA
+1272,Josiah Smith,Josiah Smith,100.0,CT
+1273,Josiah Smith,Josiah Smith,100.0,MA
+1274,Josiah Smith,Josiah Smith,100.0,NH
+1275,Josiah Smith,Josiah Smith,100.0,unspecified
+1284,John Turner,John Turner,100.0,CT
+1285,John Turner,John Turner,100.0,DE
+1286,John Turner,John Turner,100.0,PA
+1287,John Turner,John Turner,100.0,MD
+1296,Isaac Thompson,Isaac Thompson,100.0,NY
+1308,Benjamin Thomas,Benjamin Thomas,100.0,NY
+1320,Daniel Howard,Daniel Howard,100.0,PA
+1332,Elisha Mitchell,Elisha Mitchell,100.0,CT
+1344,William Shaw,William Shaw,100.0,MA
+1345,William Shaw,William Shaw,100.0,unspecified
+1346,William Shaw,William Shaw,100.0,PA
+1356,Charles Turner,Charles Turner,100.0,MA
+1368,Nathan Cushing,Nathan Cushing,100.0,CT
+1380,William Cushing,William Cushing,100.0,NH
+1392,John Davis,John Davis,100.0,NY
+1393,John Davis,John Davis,100.0,unspecified
+1394,John Davis,John Davis,100.0,MA
+1395,John Davis,John Davis,100.0,NH
+1396,John Davis,John Davis,100.0,CT
+1397,John Davis,John Davis,100.0,PA
+1398,John Davis,John Davis,100.0,VA
+1399,John Davis,John Davis,100.0,MD
+1400,John Davis,John Davis,100.0,NC
+1404,Thomas Davis,Thomas Davis,100.0,unspecified
+1405,Thomas Davis,Thomas Davis,100.0,NJ
+1406,Thomas Davis,Thomas Davis,100.0,NH
+1407,Thomas Davis,Thomas Davis,100.0,CS
+1408,Thomas Davis,Thomas Davis,100.0,PA
+1409,Thomas Davis,Thomas Davis,100.0,NC
+1410,Thomas Davis,Thomas Davis,100.0,MD
+1416,Joshua Thomas,Joshua Thomas,100.0,MA
+1428,Jonathan Hubbard,Jonathan Hubbard,100.0,unspecified
+1440,John Jennings,John Jennings,100.0,NH
+1441,John Jennings,John Jennings,100.0,MA
+1452,Jesse Reed,Jesse Reed,100.0,MA
+1453,Jesse Reed,Jesse Reed,100.0,NC
+1464,David Shepard,David Shepard,100.0,VA
+1476,Samuel Eddy,Samuel Eddy,100.0,unspecified
+1477,Samuel Eddy,Samuel Eddy,100.0,MA
+1488,John Hamilton,John Hamilton,100.0,NH
+1489,John Hamilton,John Hamilton,100.0,PA
+1490,John Hamilton,John Hamilton,100.0,MD
+1491,John Hamilton,John Hamilton,100.0,unspecified
+1500,Ebenezer James,Ebenezer James,100.0,NY
+1512,Robert Wilson,Robert Wilson,100.0,NH
+1513,Robert Wilson,Robert Wilson,100.0,NY
+1514,Robert Wilson,Robert Wilson,100.0,PA
+1524,John Ingersoll,John Ingersoll,100.0,MA
+1525,John Ingersoll,John Ingersoll,100.0,unspecified
+1536,Jonathan Green,Jonathan Green,100.0,MA
+1537,Jonathan Green,Jonathan Green,100.0,NH
+1538,Jonathan Green,Jonathan Green,100.0,unspecified
+1548,Benjamin Adams,Benjamin Adams,100.0,MA
+1560,John Hunter,John Hunter,100.0,MA
+1561,John Hunter,John Hunter,100.0,PA
+1562,John Hunter,John Hunter,100.0,unspecified
+1572,Thomas Taylor,Thomas Taylor,100.0,CT
+1573,Thomas Taylor,Thomas Taylor,100.0,MA
+1574,Thomas Taylor,Thomas Taylor,100.0,unspecified
+1584,James Morris,James Morris,100.0,CT
+1585,James Morris,James Morris,100.0,NJ
+1586,James Morris,James Morris,100.0,unspecified
+1587,James Morris,James Morris,100.0,MD
+1596,William Hayes,William Hayes,100.0,unspecified
+1597,William Hayes,William Hayes,100.0,NC
+1608,Solomon Green,Solomon Green,100.0,MD
+1620,Benjamin Hawkins,Benjamin Hawkins,100.0,unspecified
+1644,Thomas Stewart,Thomas Stewart,100.0,unspecified
+1656,Thomas Johnston,Thomas Johnston,100.0,PA
+1668,John Drew,John Drew,100.0,VA
+1680,John Overton,John Overton,100.0,unspecified
+1681,John Overton,John Overton,100.0,NC
+1692,David Wilson,David Wilson,100.0,MD
+1693,David Wilson,David Wilson,100.0,MA
+1694,David Wilson,David Wilson,100.0,NY
+1704,Daniel Smith,Daniel Smith,100.0,unspecified
+1705,Daniel Smith,Daniel Smith,100.0,PA
+1706,Daniel Smith,Daniel Smith,100.0,CT
+1707,Daniel Smith,Daniel Smith,100.0,MA
+1708,Daniel Smith,Daniel Smith,100.0,NY
+1709,Daniel Smith,Daniel Smith,100.0,MD
+1716,William King,William King,100.0,MA
+1717,William King,William King,100.0,MD
+1728,Hardy Holmes,Hardy Holmes,100.0,NC
+1740,James Thompson,James Thompson,100.0,unspecified
+1741,James Thompson,James Thompson,100.0,PA
+1742,James Thompson,James Thompson,100.0,CT
+1743,James Thompson,James Thompson,100.0,NJ
+1744,James Thompson,James Thompson,100.0,MA
+1745,James Thompson,James Thompson,100.0,NH
+1746,James Thompson,James Thompson,100.0,NY
+1752,Joseph Martin,Joseph Martin,100.0,unspecified
+1753,Joseph Martin,Joseph Martin,100.0,MA
+1754,Joseph Martin,Joseph Martin,100.0,CS
+1764,John Scott,John Scott,100.0,PA
+1765,John Scott,John Scott,100.0,MA
+1766,John Scott,John Scott,100.0,NH
+1767,John Scott,John Scott,100.0,unspecified
+1768,John Scott,John Scott,100.0,VA
+1769,John Scott,John Scott,100.0,MD
+1776,John Rhea,John Rhea,100.0,PA
+1777,John Rhea,John Rhea,100.0,unspecified
+1788,Elias Barnes,Elias Barnes,100.0,MA
+1800,John Willis,John Willis,100.0,unspecified
+1801,John Willis,John Willis,100.0,VA
+1802,John Willis,John Willis,100.0,MD
+1812,Isaac Clarke,Isaac Clarke,100.0,NC
+1824,Richard Lewis,Richard Lewis,100.0,MD
+1825,Richard Lewis,Richard Lewis,100.0,NC
+1836,William Porter,William Porter,100.0,CT
+1837,William Porter,William Porter,100.0,unspecified
+1838,William Porter,William Porter,100.0,PA
+1839,William Porter,William Porter,100.0,MD
+1848,William Robinson,William Robinson,100.0,MA
+1849,William Robinson,William Robinson,100.0,NY
+1850,William Robinson,William Robinson,100.0,PA
+1851,William Robinson,William Robinson,100.0,MD
+1852,William Robinson,William Robinson,100.0,unspecified
+1860,Alexander Watson,Alexander Watson,100.0,NC
+1872,Edward Williams,Edward Williams,100.0,PA
+1873,Edward Williams,Edward Williams,100.0,NC
+1884,William Bailey ,William Bailey,100.0,CT
+1885,William Bailey ,William Bailey,100.0,unspecified
+1886,William Bailey ,William Bailey,100.0,VA
+1896,Samuel Simpson,Samuel Simpson,100.0,NC
+1908,James Armstrong,James Armstrong,100.0,MA
+1909,James Armstrong,James Armstrong,100.0,unspecified
+1910,James Armstrong,James Armstrong,100.0,PA
+1920,Benjamin Perry,Benjamin Perry,100.0,MA
+1921,Benjamin Perry,Benjamin Perry,100.0,PA
+1932,Joseph Harvey,Joseph Harvey,100.0,MA
+1933,Joseph Harvey,Joseph Harvey,100.0,PA
+1944,John Skinner,John Skinner,100.0,unspecified
+1945,John Skinner,John Skinner,100.0,NC
+1956,Joel Lane,Joel Lane,100.0,CT
+1957,Joel Lane,Joel Lane,100.0,unspecified
+1968,John Brown,John Brown,100.0,unspecified
+1969,John Brown,John Brown,100.0,CT
+1970,John Brown,John Brown,100.0,MA
+1971,John Brown,John Brown,100.0,NH
+1972,John Brown,John Brown,100.0,CS
+1973,John Brown,John Brown,100.0,DE
+1974,John Brown,John Brown,100.0,NY
+1975,John Brown,John Brown,100.0,PA
+1976,John Brown,John Brown,100.0,VA
+1977,John Brown,John Brown,100.0,MD
+1978,John Brown,John Brown,100.0,NC
+1980,John Swan,John Swan,100.0,MA
+1981,John Swan,John Swan,100.0,unspecified
+1992,Benjamin Jones,Benjamin Jones,100.0,MA
+1993,Benjamin Jones,Benjamin Jones,100.0,unspecified
+1994,Benjamin Jones,Benjamin Jones,100.0,DE
+1995,Benjamin Jones,Benjamin Jones,100.0,PA
+1996,Benjamin Jones,Benjamin Jones,100.0,NC
+2004,Ebenezer Smith,Ebenezer Smith,100.0,CT
+2005,Ebenezer Smith,Ebenezer Smith,100.0,MA
+2006,Ebenezer Smith,Ebenezer Smith,100.0,NH
+2007,Ebenezer Smith,Ebenezer Smith,100.0,unspecified
+2016,Joseph Hutchins,Joseph Hutchins,100.0,MA
+2028,Nathaniel Bean,Nathaniel Bean,100.0,NH
+2040,Timothy Taylor,Timothy Taylor,100.0,unspecified
+2041,Timothy Taylor,Timothy Taylor,100.0,CT
+2052,William Hunt,William Hunt,100.0,CT
+2053,William Hunt,William Hunt,100.0,unspecified
+2054,William Hunt,William Hunt,100.0,NY
+2055,William Hunt,William Hunt,100.0,PA
+2056,William Hunt,William Hunt,100.0,VA
+2064,John Cochran,John Cochran,100.0,unspecified
+2065,John Cochran,John Cochran,100.0,CS
+2066,John Cochran,John Cochran,100.0,NJ
+2067,John Cochran,John Cochran,100.0,PA
+2068,John Cochran,John Cochran,100.0,MD
+2076,William Page,William Page,100.0,MA
+2088,David Page,David Page,100.0,MA
+2089,David Page,David Page,100.0,NH
+2090,David Page,David Page,100.0,unspecified
+2100,Robert Steward,Robert Steward,100.0,MA
+2101,Robert Steward,Robert Steward,100.0,PA
+2112,Benjamin Stone,Benjamin Stone,100.0,NH
+2124,Benjamin Clough,BenJamin Clough,100.0,NY
+2136,John Weeks,John Weeks,100.0,NH
+2148,Nathaniel Rogers,Nathaniel Rogers,100.0,MA
+2160,Samuel Young,Samuel Young,100.0,MD
+2172,Isaac Patterson,Isaac Patterson,100.0,NH
+2184,William Simpson,William Simpson,100.0,NH
+2185,William Simpson,William Simpson,100.0,DE
+2186,William Simpson,William Simpson,100.0,NC
+2196,William Abbott,William Abbott,100.0,MA
+2197,William Abbott,William Abbott,100.0,unspecified
+2208,Jeremiah Fogg,Jeremiah Fogg,100.0,NH
+2220,Benjamin Thurston,Benjamin Thurston,100.0,NJ
+2232,Samuel Hale,Samuel Hale,100.0,MD
+2244,Joseph Kimball,Joseph Kimball,100.0,MA
+2256,John Sullivan,John Sullivan,100.0,unspecified
+2257,John Sullivan,John Sullivan,100.0,NY
+2258,John Sullivan,John Sullivan,100.0,PA
+2259,John Sullivan,John Sullivan,100.0,NC
+2268,Jonathan Chase,Jonathan Chase,100.0,CS
+2280,Joseph Blanchard,Joseph Blanchard,100.0,MA
+2281,Joseph Blanchard,Joseph Blanchard,100.0,unspecified
+2292,Moses Chamberlain,Moses Chamberlain,100.0,MA
+2293,Moses Chamberlain,Moses Chamberlain,100.0,MD
+2304,John Pickering,John Pickering,100.0,MA
+2305,John Pickering,John Pickering,100.0,MD
+2316,Aaron Hall,Aaron Hall,100.0,MA
+2317,Aaron Hall,Aaron Hall,100.0,CT
+2328,James Gray,James Gray,100.0,CT
+2329,James Gray,James Gray,100.0,MA
+2330,James Gray,James Gray,100.0,unspecified
+2331,James Gray,James Gray,100.0,VA
+2332,James Gray,James Gray,100.0,MD
+2333,James Gray,James Gray,100.0,PA
+2340,Isaac Guion,Isaac Guion,100.0,NY
+2352,Samuel Johnston,Samuel Johnston,100.0,NJ
+2353,Samuel Johnston,Samuel Johnston,100.0,MA
+2354,Samuel Johnston,Samuel Johnston,100.0,CS
+2355,Samuel Johnston,Samuel Johnston,100.0,unspecified
+2356,Samuel Johnston,Samuel Johnston,100.0,NY
+2357,Samuel Johnston,Samuel Johnston,100.0,PA
+2358,Samuel Johnston,Samuel Johnston,100.0,MD
+2364,George Mitchell,George Mitchell,100.0,CT
+2365,George Mitchell,George Mitchell,100.0,unspecified
+2366,George Mitchell,George Mitchell,100.0,VA
+2367,George Mitchell,George Mitchell,100.0,NC
+2376,Thomas Howell,Thomas Howell,100.0,PA
+2377,Thomas Howell,Thomas Howell,100.0,unspecified
+2388,John Easton,John Easton,100.0,MA
+2400,Thomas Williams,Thomas Williams,100.0,CT
+2401,Thomas Williams,Thomas Williams,100.0,NJ
+2402,Thomas Williams,Thomas Williams,100.0,unspecified
+2403,Thomas Williams,Thomas Williams,100.0,MA
+2404,Thomas Williams,Thomas Williams,100.0,PA
+2405,Thomas Williams,Thomas Williams,100.0,VA
+2406,Thomas Williams,Thomas Williams,100.0,MD
+2412,John Allen,John Allen,100.0,MA
+2413,John Allen,John Allen,100.0,NH
+2414,John Allen,John Allen,100.0,unspecified
+2415,John Allen,John Allen,100.0,NY
+2416,John Allen,John Allen,100.0,PA
+2424,John Carson,John Carson,100.0,CS
+2425,John Carson,John Carson,100.0,MD
+2436,Thomas Brown,Thomas Brown,100.0,unspecified
+2437,Thomas Brown,Thomas Brown,100.0,PA
+2438,Thomas Brown,Thomas Brown,100.0,CT
+2439,Thomas Brown,Thomas Brown,100.0,NJ
+2440,Thomas Brown,Thomas Brown,100.0,NH
+2441,Thomas Brown,Thomas Brown,100.0,RI
+2442,Thomas Brown,Thomas Brown,100.0,MA
+2443,Thomas Brown,Thomas Brown,100.0,MD
+2444,Thomas Brown,Thomas Brown,100.0,NC
+2448,Thomas Owen,Thomas Owen,100.0,MA
+2460,John Hall,John Hall,100.0,MA
+2461,John Hall,John Hall,100.0,NH
+2462,John Hall,John Hall,100.0,NY
+2463,John Hall,John Hall,100.0,MD
+2464,John Hall,John Hall,100.0,unspecified
+2465,John Hall,John Hall,100.0,NC
+2472,David Stone,David Stone,100.0,MA
+2484,David Turner,David Turner,100.0,MA
+2485,David Turner,David Turner,100.0,unspecified
+2486,David Turner,David Turner,100.0,NC
+2496,John Johnston,John Johnston,100.0,unspecified
+2497,John Johnston,John Johnston,100.0,CT
+2498,John Johnston,John Johnston,100.0,NJ
+2499,John Johnston,John Johnston,100.0,MA
+2500,John Johnston,John Johnston,100.0,DE
+2501,John Johnston,John Johnston,100.0,PA
+2502,John Johnston,John Johnston,100.0,MD
+2508,David Jameson,David Jameson,100.0,NJ
+2509,David Jameson,David Jameson,100.0,unspecified
+2520,Thomas Wade,Thomas Wade,100.0,PA
+2521,Thomas Wade,Thomas Wade,100.0,VA
+2532,Jesse Gilbert,Jesse Gilbert,100.0,CT
+2533,Jesse Gilbert,Jesse Gilbert,100.0,unspecified
+2544,Samuel Spencer,Samuel Spencer,100.0,unspecified
+2545,Samuel Spencer,Samuel Spencer,100.0,MA
+2556,James Thomas,James Thomas,100.0,PA
+2557,James Thomas,James Thomas,100.0,MD
+2558,James Thomas,James Thomas,100.0,NC
+2568,Jonathan Clark,Jonathan Clark,100.0,MA
+2569,Jonathan Clark,Jonathan Clark,100.0,unspecified
+2570,Jonathan Clark,Jonathan Clark,100.0,MD
+2580,John Collins,John Collins,100.0,unspecified
+2581,John Collins,John Collins,100.0,NJ
+2582,John Collins,John Collins,100.0,CS
+2583,John Collins,John Collins,100.0,PA
+2584,John Collins,John Collins,100.0,MD
+2585,John Collins,John Collins,100.0,NC
+2592,William Dunbar,William Dunbar,100.0,MA
+2593,William Dunbar,William Dunbar,100.0,NY
+2604,Stephen Smith,Stephen Smith,100.0,NC
+2605,Stephen Smith,Stephen Smith,100.0,unspecified
+2616,Benjamin Hicks,Benjamin Hicks,100.0,MA
+2617,Benjamin Hicks,Benjamin Hicks,100.0,NY
+2628,Samuel Taylor,Samuel Taylor,100.0,CT
+2629,Samuel Taylor,Samuel Taylor,100.0,MA
+2630,Samuel Taylor,Samuel Taylor,100.0,unspecified
+2631,Samuel Taylor,Samuel Taylor,100.0,PA
+2632,Samuel Taylor,Samuel Taylor,100.0,MD
+2633,Samuel Taylor,Samuel Taylor,100.0,NC
+2640,John Linton,John Linton,100.0,unspecified
+2652,Andrew Love,Andrew Love,100.0,unspecified
+2664,Robert Patton,Robert Patton,100.0,unspecified
+2665,Robert Patton,Robert Patton,100.0,PA
+2676,William Hill,William Hill,100.0,NH
+2677,William Hill,William Hill,100.0,unspecified
+2678,William Hill,William Hill,100.0,CT
+2679,William Hill,William Hill,100.0,MA
+2680,William Hill,William Hill,100.0,MD
+2681,William Hill,William Hill,100.0,NC
+2688,William Miles,William Miles,100.0,MA
+2700,Joseph Brown,Joseph Brown,100.0,RI
+2701,Joseph Brown,Joseph Brown,100.0,MA
+2702,Joseph Brown,Joseph Brown,100.0,unspecified
+2703,Joseph Brown,Joseph Brown,100.0,NY
+2704,Joseph Brown,Joseph Brown,100.0,PA
+2705,Joseph Brown,Joseph Brown,100.0,NC
+2712,John Cook,John Cook,100.0,CT
+2713,John Cook,John Cook,100.0,MA
+2714,John Cook,John Cook,100.0,NH
+2715,John Cook,John Cook,100.0,DE
+2716,John Cook,John Cook,100.0,NY
+2724,Jacob Brown,Jacob Brown,100.0,CT
+2725,Jacob Brown,Jacob Brown,100.0,MA
+2736,James Craig,James Craig,100.0,PA
+2737,James Craig,James Craig,100.0,unspecified
+2748,James Moore,James Moore,100.0,NH
+2749,James Moore,James Moore,100.0,DE
+2750,James Moore,James Moore,100.0,unspecified
+2751,James Moore,James Moore,100.0,NY
+2752,James Moore,James Moore,100.0,PA
+2753,James Moore,James Moore,100.0,MD
+2754,James Moore,James Moore,100.0,NC
+2755,James Moore,James Moore,100.0,GA
+2760,John Fulford,John Fulford,100.0,unspecified
+2761,John Fulford,John Fulford,100.0,MD
+2772,John Spicer,John Spicer,100.0,NJ
+2773,John Spicer,John Spicer,100.0,unspecified
+2784,John Wallace,John Wallace,100.0,NH
+2796,Robert Peebles,Robert Peebles,100.0,PA
+2808,James Turner,James Turner,100.0,MA
+2809,James Turner,James Turner,100.0,DE
+2810,James Turner,James Turner,100.0,PA
+2820,William Johnston,William Johnston,100.0,NJ
+2821,William Johnston,William Johnston,100.0,unspecified
+2822,William Johnston,William Johnston,100.0,DE
+2823,William Johnston,William Johnston,100.0,NY
+2824,William Johnston,William Johnston,100.0,PA
+2825,William Johnston,William Johnston,100.0,MD
+2826,William Johnston,William Johnston,100.0,NC
+2832,James Porter,James Porter,100.0,PA
+2833,James Porter,James Porter,100.0,unspecified
+2844,Joseph Graham,Joseph Graham,100.0,unspecified
+2856,Joseph Douglass,Joseph Douglass,100.0,PA
+2857,Joseph Douglass,Joseph Douglass,100.0,unspecified
+2868,William Martin,William Martin,100.0,unspecified
+2869,William Martin,William Martin,100.0,PA
+2870,William Martin,William Martin,100.0,CT
+2871,William Martin,William Martin,100.0,NJ
+2872,William Martin,William Martin,100.0,NH
+2873,William Martin,William Martin,100.0,VA
+2874,William Martin,William Martin,100.0,MD
+2880,John Moore,John Moore,100.0,NJ
+2881,John Moore,John Moore,100.0,MA
+2882,John Moore,John Moore,100.0,unspecified
+2883,John Moore,John Moore,100.0,NY
+2884,John Moore,John Moore,100.0,PA
+2885,John Moore,John Moore,100.0,MD
+2892,Jacob Johnston,Jacob Johnston,100.0,PA
+2893,Jacob Johnston,Jacob Johnston,100.0,NC
+2904,William Hackney,William Hackney,100.0,NY
+2916,John Hunt,John Hunt,100.0,CT
+2928,James White,James White,100.0,MA
+2929,James White,James White,100.0,unspecified
+2930,James White,James White,100.0,NY
+2931,James White,James White,100.0,VA
+2932,James White,James White,100.0,MD
+2940,John Anderson,John Anderson,100.0,MA
+2941,John Anderson,John Anderson,100.0,NH
+2942,John Anderson,John Anderson,100.0,unspecified
+2943,John Anderson,John Anderson,100.0,NY
+2944,John Anderson,John Anderson,100.0,PA
+2945,John Anderson,John Anderson,100.0,VA
+2946,John Anderson,John Anderson,100.0,MD
+2952,James Watson,James Watson,100.0,PA
+2964,Henry Baker,Henry Baker,100.0,MD
+2976,Hardy Murfee,Hardy Murfee,100.0,NC
+2988,George Doherty,George Doherty,100.0,NC
+3000,John Baker,John Baker,100.0,NJ
+3001,John Baker,John Baker,100.0,MA
+3002,John Baker,John Baker,100.0,unspecified
+3003,John Baker,John Baker,100.0,NY
+3004,John Baker,John Baker,100.0,PA
+3005,John Baker,John Baker,100.0,MD
+3006,John Baker,John Baker,100.0,NC
+3012,Henry Hill,Henry Hill,100.0,NH
+3013,Henry Hill,Henry Hill,100.0,NY
+3024,Thomas Blount,Thomas Blount,100.0,NC
+3036,Joel Rice,Joel Rice,100.0,NH
+3048,Charles Gerrard,Charles Gerrard,100.0,NC
+3060,James Gillespie,James Gillespie,100.0,NY
+3072,James Anderson,James Anderson,100.0,PA
+3073,James Anderson,James Anderson,100.0,CT
+3074,James Anderson,James Anderson,100.0,unspecified
+3075,James Anderson,James Anderson,100.0,NY
+3076,James Anderson,James Anderson,100.0,VA
+3084,John Thompson,John Thompson,100.0,unspecified
+3085,John Thompson,John Thompson,100.0,MA
+3086,John Thompson,John Thompson,100.0,NH
+3087,John Thompson,John Thompson,100.0,NY
+3088,John Thompson,John Thompson,100.0,PA
+3089,John Thompson,John Thompson,100.0,MD
+3090,John Thompson,John Thompson,100.0,NC
+3096,Robert Edwards,Robert Edwards,100.0,unspecified
+3097,Robert Edwards,Robert Edwards,100.0,MA
+3108,Robert Payne,Robert Payne,100.0,MA
+3120,John Graves,John Graves,100.0,PA
+3121,John Graves,John Graves,100.0,CT
+3122,John Graves,John Graves,100.0,unspecified
+3132,Henry Abbott,Henry Abbott,100.0,MA
+3144,John Allison,John Allison,100.0,NY
+3145,John Allison,John Allison,100.0,PA
+3146,John Allison,John Allison,100.0,unspecified
+3156,Abraham Smith,Abraham Smith,100.0,NJ
+3157,Abraham Smith,Abraham Smith,100.0,unspecified
+3168,Ebenezer Webster,Ebenezer Webster,100.0,unspecified
+3180,William White,William White,100.0,CT
+3181,William White,William White,100.0,unspecified
+3182,William White,William White,100.0,MA
+3183,William White,William White,100.0,NH
+3184,William White,William White,100.0,CS
+3185,William White,William White,100.0,VA
+3186,William White,William White,100.0,NC
+3192,Simeon Smith,Simeon Smith,100.0,CT
+3193,Simeon Smith,Simeon Smith,100.0,MA
+3194,Simeon Smith,Simeon Smith,100.0,NH
+3195,Simeon Smith,Simeon Smith,100.0,MD
+3204,Moses Cleveland,Moses Cleveland,100.0,NJ
+3216,John Steele,John Steele,100.0,PA
+3217,John Steele,John Steele,100.0,MA
+3228,John Evans,John Evans,100.0,MA
+3229,John Evans,John Evans,100.0,PA
+3230,John Evans,John Evans,100.0,VA
+3231,John Evans,John Evans,100.0,MD
+3232,John Evans,John Evans,100.0,NC
+3240,Thomas Allen,Thomas Allen,100.0,CT
+3252,William Williams,William Williams,100.0,NJ
+3253,William Williams,William Williams,100.0,unspecified
+3254,William Williams,William Williams,100.0,CT
+3255,William Williams,William Williams,100.0,PA
+3256,William Williams,William Williams,100.0,VA
+3257,William Williams,William Williams,100.0,NH
+3258,William Williams,William Williams,100.0,NC
+3264,James Bradford,James Bradford,100.0,NY
+3276,David Smith,David Smith,100.0,CT
+3277,David Smith,David Smith,100.0,NH
+3278,David Smith,David Smith,100.0,MA
+3279,David Smith,David Smith,100.0,unspecified
+3280,David Smith,David Smith,100.0,NY
+3281,David Smith,David Smith,100.0,MD
+3282,David Smith,David Smith,100.0,NC
+3288,John Miller,John Miller,100.0,PA
+3289,John Miller,John Miller,100.0,CT
+3290,John Miller,John Miller,100.0,MA
+3291,John Miller,John Miller,100.0,NJ
+3292,John Miller,John Miller,100.0,CS
+3293,John Miller,John Miller,100.0,unspecified
+3294,John Miller,John Miller,100.0,DE
+3295,John Miller,John Miller,100.0,NY
+3296,John Miller,John Miller,100.0,NC
+3300,William Hart,William Hart,100.0,NY
+3312,Hezekiah Rogers,Hezekiah Rogers,100.0,unspecified
+3313,Hezekiah Rogers,Hezekiah Rogers,100.0,CT
+3314,Hezekiah Rogers,Hezekiah Rogers,100.0,NJ
+3324,James Gordon,James Gordon,100.0,NH
+3325,James Gordon,James Gordon,100.0,PA
+3336,Benjamin Temple,Benjamin Temple,100.0,PA
+3337,Benjamin Temple,Benjamin Temple,100.0,unspecified
+3348,Samuel Shipman,Samuel Shipman,100.0,unspecified
+3360,William Thornton,William Thornton,100.0,NY
+3361,William Thornton,William Thornton,100.0,unspecified
+3372,Nathaniel Burwell,Nathaniel Burwell,100.0,VA
+3384,Jeremiah West,Jeremiah West,100.0,CT
+3396,James Johnson,James Johnson,100.0,NJ
+3397,James Johnson,James Johnson,100.0,unspecified
+3398,James Johnson,James Johnson,100.0,CT
+3399,James Johnson,James Johnson,100.0,MA
+3400,James Johnson,James Johnson,100.0,NY
+3401,James Johnson,James Johnson,100.0,PA
+3402,James Johnson,James Johnson,100.0,VA
+3408,Samuel Chapman,Samuel Chapman,100.0,CT
+3409,Samuel Chapman,Samuel Chapman,100.0,unspecified
+3410,Samuel Chapman,Samuel Chapman,100.0,NC
+3420,John Phelps,John Phelps,100.0,MA
+3432,James Davenport,James Davenport,100.0,MA
+3444,John Beach,John Beach,100.0,CT
+3445,John Beach,John Beach,100.0,MD
+3468,Gideon Buckingham,Gideon Buckingham,100.0,CT
+3469,Gideon Buckingham,Gideon Buckingham,100.0,unspecified
+3480,John Dawson,John Dawson,100.0,MA
+3481,John Dawson,John Dawson,100.0,MD
+3482,John Dawson,John Dawson,100.0,NC
+3492,John Curtiss,John Curtiss,100.0,CT
+3493,John Curtiss,John Curtiss,100.0,MA
+3504,John Chester,John Chester,100.0,PA
+3505,John Chester,John Chester,100.0,NC
+3516,John Williams,John Williams,100.0,CT
+3517,John Williams,John Williams,100.0,NJ
+3518,John Williams,John Williams,100.0,MA
+3519,John Williams,John Williams,100.0,unspecified
+3520,John Williams,John Williams,100.0,NY
+3521,John Williams,John Williams,100.0,PA
+3522,John Williams,John Williams,100.0,VA
+3523,John Williams,John Williams,100.0,MD
+3524,John Williams,John Williams,100.0,NC
+3528,Henry Dickenson,Henry Dickenson,100.0,NC
+3540,Thomas Carter,Thomas Carter,100.0,unspecified
+3552,Thomas Lewis,Thomas Lewis,100.0,MA
+3553,Thomas Lewis,Thomas Lewis,100.0,MD
+3554,Thomas Lewis,Thomas Lewis,100.0,unspecified
+3555,Thomas Lewis,Thomas Lewis,100.0,NC
+3564,Andrew Moore,Andrew Moore,100.0,MD
+3576,Samuel Beach,Samuel Beach,100.0,MA
+3577,Samuel Beach,Samuel Beach,100.0,NH
+3588,Joseph Hopkins,Joseph Hopkins,100.0,NC
+3600,William Noyes,William Noyes,100.0,unspecified
+3601,William Noyes,William Noyes,100.0,NY
+3612,John Wilson,John Wilson,100.0,CT
+3613,John Wilson,John Wilson,100.0,NJ
+3614,John Wilson,John Wilson,100.0,MA
+3615,John Wilson,John Wilson,100.0,DE
+3616,John Wilson,John Wilson,100.0,unspecified
+3617,John Wilson,John Wilson,100.0,MD
+3618,John Wilson,John Wilson,100.0,PA
+3619,John Wilson,John Wilson,100.0,NC
+3624,Samuel Huntington,Samuel Huntington,100.0,unspecified
+3636,Benjamin Edwards,Benjamin Edwards,100.0,MA
+3637,Benjamin Edwards,Benjamin Edwards,100.0,unspecified
+3648,Robert Williams,Robert Williams,100.0,CT
+3649,Robert Williams,Robert Williams,100.0,NJ
+3650,Robert Williams,Robert Williams,100.0,MA
+3651,Robert Williams,Robert Williams,100.0,unspecified
+3652,Robert Williams,Robert Williams,100.0,PA
+3653,Robert Williams,Robert Williams,100.0,NC
+3660,Thomas Gaskins,Thomas Gaskins,100.0,VA
+3672,John Stringer,John Stringer,100.0,MA
+3673,John Stringer,John Stringer,100.0,NC
+3684,Stephen Billings,Stephen Billings,100.0,CT
+3685,Stephen Billings,Stephen Billings,100.0,unspecified
+3696,Andrew Lee,Andrew Lee,100.0,unspecified
+3697,Andrew Lee,Andrew Lee,100.0,NY
+3708,James Webb,James Webb,100.0,MA
+3720,Thomas Pierce,Thomas Pierce,100.0,MA
+3721,Thomas Pierce,Thomas Pierce,100.0,NJ
+3722,Thomas Pierce,Thomas Pierce,100.0,unspecified
+3723,Thomas Pierce,Thomas Pierce,100.0,PA
+3732,Thomas Cooper,Thomas Cooper,100.0,MD
+3744,John Marshall,John Marshall,100.0,CS
+3745,John Marshall,John Marshall,100.0,PA
+3756,William Fleming,William Fleming,100.0,MA
+3768,Edward Lloyd,Edward Lloyd,100.0,unspecified
+3780,John Stewart,John Stewart,100.0,CT
+3781,John Stewart,John Stewart,100.0,unspecified
+3782,John Stewart,John Stewart,100.0,MA
+3783,John Stewart,John Stewart,100.0,PA
+3792,Thomas Read,Thomas Read,100.0,unspecified
+3793,Thomas Read,Thomas Read,100.0,MA
+3804,James Taylor,James Taylor,100.0,CT
+3805,James Taylor,James Taylor,100.0,MA
+3806,James Taylor,James Taylor,100.0,NH
+3807,James Taylor,James Taylor,100.0,unspecified
+3808,James Taylor,James Taylor,100.0,VA
+3809,James Taylor,James Taylor,100.0,NC
+3816,John Gale,John Gale,100.0,unspecified
+3828,William Richardson,William Richardson,100.0,NH
+3829,William Richardson,William Richardson,100.0,MD
+3830,William Richardson,William Richardson,100.0,NC
+3831,William Richardson,William Richardson,100.0,unspecified
+3840,Joseph Richardson,Joseph Richardson,100.0,NH
+3841,Joseph Richardson,Joseph Richardson,100.0,MA
+3852,Henry Lee,Henry Lee,100.0,unspecified
+3864,John Coulter,John Coulter,100.0,PA
+3876,Zachariah Johnston,Zachariah Johnston,100.0,unspecified
+3888,Isaac Foot,Isaac Foot,100.0,NY
+3900,James Martin,James Martin,100.0,MA
+3901,James Martin,James Martin,100.0,NJ
+3902,James Martin,James Martin,100.0,unspecified
+3903,James Martin,James Martin,100.0,PA
+3912,George Parker,George Parker,100.0,unspecified
+3913,George Parker,George Parker,100.0,PA
+3914,George Parker,George Parker,100.0,MD
+3924,William Pinkney,William Pinkney,100.0,NJ
+3925,William Pinkney,William Pinkney,100.0,unspecified
+3936,John Love,John Love,100.0,MD
+3948,Benjamin Harrison,Benjamin Harrison,100.0,CT
+3949,Benjamin Harrison,Benjamin Harrison,100.0,unspecified
+3950,Benjamin Harrison,Benjamin Harrison,100.0,MD
+3960,John Richards,John Richards,100.0,MA
+3961,John Richards,John Richards,100.0,unspecified
+3972,William Morris,William Morris,100.0,unspecified
+3973,William Morris,William Morris,100.0,MA
+3974,William Morris,William Morris,100.0,NY
+3975,William Morris,William Morris,100.0,VA
+3976,William Morris,William Morris,100.0,NC
+3984,Samuel Chase,Samuel Chase,100.0,MA
+3985,Samuel Chase,Samuel Chase,100.0,NH
+3986,Samuel Chase,Samuel Chase,100.0,unspecified
+3996,Thomas Johnson,Thomas Johnson,100.0,MA
+3997,Thomas Johnson,Thomas Johnson,100.0,PA
+4008,Benjamin Hall,Benjamin Hall,100.0,MA
+4009,Benjamin Hall,Benjamin Hall,100.0,unspecified
+4020,Samuel Evans,Samuel Evans,100.0,MA
+4021,Samuel Evans,Samuel Evans,100.0,MD
+4032,James Shaw,James Shaw,100.0,PA
+4044,Joseph Jones,Joseph Jones,100.0,unspecified
+4045,Joseph Jones,Joseph Jones,100.0,NJ
+4046,Joseph Jones,Joseph Jones,100.0,CS
+4047,Joseph Jones,Joseph Jones,100.0,MA
+4048,Joseph Jones,Joseph Jones,100.0,NY
+4049,Joseph Jones,Joseph Jones,100.0,PA
+4050,Joseph Jones,Joseph Jones,100.0,VA
+4051,Joseph Jones,Joseph Jones,100.0,MD
+4056,Daniel Perkins,Daniel Perkins,100.0,PA
+4057,Daniel Perkins,Daniel Perkins,100.0,CT
+4058,Daniel Perkins,Daniel Perkins,100.0,MA
+4059,Daniel Perkins,Daniel Perkins,100.0,unspecified
+4068,Alexander King,Alexander King,100.0,PA
+4080,Daniel Humphry,Daniel Humphry,100.0,unspecified
+4092,David Brooks,David Brooks,100.0,unspecified
+4104,George Carrington,George Carrington,100.0,unspecified
+4116,Daniel Hall,Daniel Hall,100.0,MA
+4117,Daniel Hall,Daniel Hall,100.0,unspecified
+4118,Daniel Hall,Daniel Hall,100.0,CT
+4119,Daniel Hall,Daniel Hall,100.0,MD
+4128,Daniel Bassett,Daniel Bassett,100.0,MD
+4140,William Mason,William Mason,100.0,CS
+4141,William Mason,William Mason,100.0,unspecified
+4142,William Mason,William Mason,100.0,NC
+4152,John Stuart,John Stuart,100.0,NC
+4164,Samuel Whiting,Samuel Whiting,100.0,MA
+4176,Constant Southworth,Constant Southworth,100.0,MA
+4188,Thomas Smith,Thomas Smith,100.0,MA
+4189,Thomas Smith,Thomas Smith,100.0,NJ
+4190,Thomas Smith,Thomas Smith,100.0,unspecified
+4191,Thomas Smith,Thomas Smith,100.0,NY
+4192,Thomas Smith,Thomas Smith,100.0,PA
+4193,Thomas Smith,Thomas Smith,100.0,MD
+4194,Thomas Smith,Thomas Smith,100.0,NC
+4200,Thomas Arthur,Thomas Arthur,100.0,MD
+4212,John Early,John Early,100.0,unspecified
+4224,Alexander White,Alexander White,100.0,CS
+4236,Thomas Goodman,Thomas Goodman,100.0,VA
+4248,John Fowler,John Fowler,100.0,PA
+4249,John Fowler,John Fowler,100.0,unspecified
+4260,William Watkins,William Watkins,100.0,MD
+4272,Walter Smith,Walter Smith,100.0,CT
+4273,Walter Smith,Walter Smith,100.0,unspecified
+4284,James Potter,James Potter,100.0,MA
+4285,James Potter,James Potter,100.0,NH
+4296,Moses Rawlings,Moses Rawlings,100.0,VA
+4308,James Clinton,James Clinton,100.0,MA
+4309,James Clinton,James Clinton,100.0,unspecified
+4310,James Clinton,James Clinton,100.0,PA
+4320,John DeWitt,John DeWitt,100.0,MA
+4332,John Winn,John Winn,100.0,CT
+4333,John Winn,John Winn,100.0,unspecified
+4344,John Black,John Black,100.0,NY
+4356,James Black,James Black,100.0,unspecified
+4357,James Black,James Black,100.0,NC
+4368,Thomas Campbell,Thomas Campbell,100.0,MA
+4369,Thomas Campbell,Thomas Campbell,100.0,PA
+4370,Thomas Campbell,Thomas Campbell,100.0,unspecified
+4380,William Moore,William Moore,100.0,PA
+4381,William Moore,William Moore,100.0,MA
+4382,William Moore,William Moore,100.0,NJ
+4383,William Moore,William Moore,100.0,unspecified
+4384,William Moore,William Moore,100.0,MD
+4385,William Moore,William Moore,100.0,NC
+4392,Henry Wisner,Henry Wisner,100.0,PA
+4404,John Wood,John Wood,100.0,PA
+4405,John Wood,John Wood,100.0,MA
+4406,John Wood,John Wood,100.0,unspecified
+4407,John Wood,John Wood,100.0,VA
+4408,John Wood,John Wood,100.0,NC
+4416,Samuel Jones,Samuel Jones,100.0,CT
+4417,Samuel Jones,Samuel Jones,100.0,MA
+4418,Samuel Jones,Samuel Jones,100.0,unspecified
+4419,Samuel Jones,Samuel Jones,100.0,NY
+4420,Samuel Jones,Samuel Jones,100.0,NC
+4428,Albert Baker,Albert Baker,100.0,unspecified
+4440,William Crawford ,William Crawford,100.0,unspecified
+4452,John Barclay,John Barclay,100.0,PA
+4453,John Barclay,John Barclay,100.0,unspecified
+4464,Jonathan Sturges,Jonathan Sturges,100.0,PA
+4476,John Smith,John Smith,100.0,unspecified
+4477,John Smith,John Smith,100.0,CT
+4478,John Smith,John Smith,100.0,NJ
+4479,John Smith,John Smith,100.0,MA
+4480,John Smith,John Smith,100.0,NH
+4481,John Smith,John Smith,100.0,RI
+4482,John Smith,John Smith,100.0,CS
+4483,John Smith,John Smith,100.0,NY
+4484,John Smith,John Smith,100.0,PA
+4485,John Smith,John Smith,100.0,VA
+4486,John Smith,John Smith,100.0,MD
+4487,John Smith,John Smith,100.0,NC
+4488,Thomas Reynolds,Thomas Reynolds,100.0,MA
+4489,Thomas Reynolds,Thomas Reynolds,100.0,unspecified
+4490,Thomas Reynolds,Thomas Reynolds,100.0,PA
+4500,Jeremiah Eldredge,Jeremiah Eldredge,100.0,MA
+4512,Thomas Cheney,Thomas Cheney,100.0,MA
+4524,Edward White,Edward White,100.0,unspecified
+4525,Edward White,Edward White,100.0,MA
+4526,Edward White,Edward White,100.0,CS
+4527,Edward White,Edward White,100.0,NC
+4536,Anthony Wayne,Anthony Wayne,100.0,unspecified
+4548,James Sykes,James Sykes,100.0,NC
+4572,Richard Smith,Richard Smith,100.0,NY
+4573,Richard Smith,Richard Smith,100.0,MA
+4574,Richard Smith,Richard Smith,100.0,VA
+4575,Richard Smith,Richard Smith,100.0,MD
+4576,Richard Smith,Richard Smith,100.0,NC
+4584,Abraham Stout,Abraham Stout,100.0,unspecified
+4585,Abraham Stout,Abraham Stout,100.0,CT
+4586,Abraham Stout,Abraham Stout,100.0,NJ
+4596,Thomas Evans,Thomas Evans,100.0,MA
+4597,Thomas Evans,Thomas Evans,100.0,unspecified
+4598,Thomas Evans,Thomas Evans,100.0,MD
+4599,Thomas Evans,Thomas Evans,100.0,NC
+4608,William Hall,William Hall,100.0,NH
+4609,William Hall,William Hall,100.0,MA
+4610,William Hall,William Hall,100.0,unspecified
+4611,William Hall,William Hall,100.0,VA
+4612,William Hall,William Hall,100.0,NC
+4620,Isaac Cooper,Isaac Cooper,100.0,NY
+4632,William Harper,William Harper,100.0,PA
+4633,William Harper,William Harper,100.0,MD
+4634,William Harper,William Harper,100.0,NC
+4644,John Beatty,John Beatty,100.0,PA
+4645,John Beatty,John Beatty,100.0,unspecified
+4656,John DeWitt,John Dewitt,100.0,MA
+4668,John Jones,John Jones,100.0,MA
+4669,John Jones,John Jones,100.0,NH
+4670,John Jones,John Jones,100.0,RI
+4671,John Jones,John Jones,100.0,unspecified
+4672,John Jones,John Jones,100.0,CS
+4673,John Jones,John Jones,100.0,NY
+4674,John Jones,John Jones,100.0,PA
+4675,John Jones,John Jones,100.0,VA
+4676,John Jones,John Jones,100.0,MD
+4677,John Jones,John Jones,100.0,NC
+4680,William Judd,William Judd,100.0,CT
+4681,William Judd,William Judd,100.0,unspecified
+4692,David Hopkins,David Hopkins,100.0,PA
+4693,David Hopkins,David Hopkins,100.0,unspecified
+4704,John Nevill,John Nevill,100.0,PA
+4716,Thomas Edmunds,Thomas Edmunds,100.0,VA
+4728,Thomas Scott,Thomas Scott,100.0,PA
+4729,Thomas Scott,Thomas Scott,100.0,NC
+4730,Thomas Scott,Thomas Scott,100.0,unspecified
+4740,John Watson,John Watson,100.0,NH
+4741,John Watson,John Watson,100.0,NJ
+4742,John Watson,John Watson,100.0,CT
+4743,John Watson,John Watson,100.0,unspecified
+4744,John Watson,John Watson,100.0,PA
+4752,David Crane ,David Crane,100.0,MA
+4753,David Crane ,David Crane,100.0,NH
+4764,Selah Hart,Selah Hart,100.0,CT
+4776,Lewis Morris,Lewis Morris,100.0,NY
+4788,James Montgomery,James Montgomery,100.0,PA
+4789,James Montgomery,James Montgomery,100.0,unspecified
+4812,Thomas Anderson,Thomas Anderson,100.0,CT
+4813,Thomas Anderson,Thomas Anderson,100.0,MA
+4814,Thomas Anderson,Thomas Anderson,100.0,unspecified
+4815,Thomas Anderson,Thomas Anderson,100.0,DE
+4816,Thomas Anderson,Thomas Anderson,100.0,PA
+4817,Thomas Anderson,Thomas Anderson,100.0,NC
+4824,John Boyd,John Boyd,100.0,NJ
+4825,John Boyd,John Boyd,100.0,unspecified
+4826,John Boyd,John Boyd,100.0,PA
+4836,John Neilson,John Neilson,100.0,MD
+4837,John Neilson,John Neilson,100.0,unspecified
+4848,George Handley,George Handley,100.0,GA
+4860,James Maxwell,James Maxwell,100.0,NH
+4861,James Maxwell,James Maxwell,100.0,unspecified
+4862,James Maxwell,James Maxwell,100.0,PA
+4863,James Maxwell,James Maxwell,100.0,MD
+4872,George Gray,George Gray,100.0,unspecified
+4884,Thomas Matthews,Thomas Matthews,100.0,NH
+4885,Thomas Matthews,Thomas Matthews,100.0,MA
+4896,John Elliot,John Elliot,100.0,NY
+4897,John Elliot,John Elliot,100.0,MD
+4908,Ebenezer Clark,Ebenezer Clark,100.0,unspecified
+4909,Ebenezer Clark,Ebenezer Clark,100.0,MA
+4910,Ebenezer Clark,Ebenezer Clark,100.0,MD
+4920,William Wilson,William Wilson,100.0,MA
+4921,William Wilson,William Wilson,100.0,PA
+4922,William Wilson,William Wilson,100.0,unspecified
+4923,William Wilson,William Wilson,100.0,MD
+4932,John King,John King,100.0,unspecified
+4933,John King,John King,100.0,MA
+4934,John King,John King,100.0,DE
+4935,John King,John King,100.0,NY
+4936,John King,John King,100.0,PA
+4937,John King,John King,100.0,MD
+4944,David Potter,David Potter,100.0,PA
+4945,David Potter,David Potter,100.0,MA
+4946,David Potter,David Potter,100.0,RI
+4947,David Potter,David Potter,100.0,unspecified
+4956,William Stevens,William Stevens,100.0,MA
+4957,William Stevens,William Stevens,100.0,NY
+4958,William Stevens,William Stevens,100.0,VA
+4968,Thomas Bull,Thomas Bull,100.0,NC
+4980,Samuel  Richardson,Samuel Richardson,97.14285714285714,NH
+4981,Samuel  Richardson,Samuel Richardson,97.14285714285714,unspecified
+4982,Samuel  Richardson,Samuel Richardson,97.14285714285714,CS
+4983,Samuel  Richardson,Samuel Richardson,97.14285714285714,MD
+4992,Jonathan Patteson,Jonathan Patterson,97.14285714285714,CS
+4993,Jonathan Patteson,Jonathan Patterson,97.14285714285714,MA
+5004,Thomas Kittridge,Thomas Kitteridge,96.96969696969697,MA
+5016,Jonathan Randall,Jonathan Crandall,96.96969696969697,RI
+5017,Jonathan Randall,Jonathan Crandall,96.96969696969697,MA
+5028,Robert B. Wilkins,Robert B Wilkins,96.96969696969697,CT
+5029,Robert B. Wilkins,Robert B Wilkins,96.96969696969697,NH
+5040,Nathaniel Russell,Nathaniel Russel,96.96969696969697,unspecified
+5052,William Moultrie,William Moultrice,96.96969696969697,unspecified
+5064,Moses Chamberlain,Moses Chamberlin,96.96969696969697,MA
+5076,Samuel H. Parsons,Samuel H Parsons,96.96969696969697,CT
+5077,Samuel H. Parsons,Samuel H Parsons,96.96969696969697,unspecified
+5088,Ebenezer Cummings,Ebenezer Cummins,96.96969696969697,NY
+5100,William Johnston,William Johnstone,96.96969696969697,DE
+5101,William Johnston,William Johnstone,96.96969696969697,PA
+5112,Nicholas Breading,Nicholas Reading,96.96969696969697,unspecified
+5124,William Johnston,William Johnstons,96.96969696969697,unspecified
+5136,Stephen Billings,Stephens Billings,96.96969696969697,CT
+5148,William Phillips,William Philips,96.7741935483871,PA
+5149,William Phillips,William Philips,96.7741935483871,unspecified
+5150,William Phillips,William Philips,96.7741935483871,NC
+5160,William Robison,William Robinson,96.7741935483871,MA
+5161,William Robison,William Robinson,96.7741935483871,NY
+5162,William Robison,William Robinson,96.7741935483871,PA
+5163,William Robison,William Robinson,96.7741935483871,MD
+5164,William Robison,William Robinson,96.7741935483871,unspecified
+5172,Joseph Hutchins,Joseph Hutchings,96.7741935483871,unspecified
+5184,Benjamin Wilson,Benjamin Willson,96.7741935483871,CS
+5185,Benjamin Wilson,Benjamin Willson,96.7741935483871,unspecified
+5196,William  Findley,William Findley,96.7741935483871,NJ
+5197,William  Findley,William Findley,96.7741935483871,unspecified
+5208,William Johnston,William Johnson,96.7741935483871,CT
+5209,William Johnston,William Johnson,96.7741935483871,unspecified
+5210,William Johnston,William Johnson,96.7741935483871,MA
+5211,William Johnston,William Johnson,96.7741935483871,NJ
+5212,William Johnston,William Johnson,96.7741935483871,NY
+5213,William Johnston,William Johnson,96.7741935483871,VA
+5214,William Johnston,William Johnson,96.7741935483871,MD
+5220,William Thompson,William Thomson,96.7741935483871,NY
+5221,William Thompson,William Thomson,96.7741935483871,PA
+5232,Archelaus Temple,Archelus Temple,96.7741935483871,NH
+5244,William Johnson,William Johnston,96.7741935483871,NJ
+5245,William Johnson,William Johnston,96.7741935483871,unspecified
+5246,William Johnson,William Johnston,96.7741935483871,DE
+5247,William Johnson,William Johnston,96.7741935483871,NY
+5248,William Johnson,William Johnston,96.7741935483871,PA
+5249,William Johnson,William Johnston,96.7741935483871,MD
+5250,William Johnson,William Johnston,96.7741935483871,NC
+5256,Jonathan Clark,Jonathan Clarke,96.55172413793103,MA
+5268,William Wilson,William Willson,96.55172413793103,MA
+5269,William Wilson,William Willson,96.55172413793103,PA
+5270,William Wilson,William Willson,96.55172413793103,unspecified
+5271,William Wilson,William Willson,96.55172413793103,MD
+5272,William Wilson,William Willson,96.55172413793103,NC
+5280,William Elliot,William Elliott,96.55172413793103,CT
+5292,Charles Grahame,Charles Graham,96.55172413793103,unspecified
+5293,Charles Grahame,Charles Graham,96.55172413793103,MA
+5304,Charles Barrett,Charles Barret,96.55172413793103,CT
+5316,Thomas Johnson,Thomas Johnston,96.55172413793103,PA
+5328,William Butler,William Buttler,96.55172413793103,PA
+5340,Robert Williams,Robert William,96.55172413793103,unspecified
+5352,Thomas  Collins,Thomas Collins,96.55172413793103,unspecified
+5353,Thomas  Collins,Thomas Collins,96.55172413793103,DE
+5354,Thomas  Collins,Thomas Collins,96.55172413793103,PA
+5364,Samuel Edmison,Samuel Edmiston,96.55172413793103,unspecified
+5376,Thomas Matthews,Thomas Mathews,96.55172413793103,NH
+5377,Thomas Matthews,Thomas Mathews,96.55172413793103,VA
+5378,Thomas Matthews,Thomas Mathews,96.55172413793103,MD
+5388,George Matthews,George Mathews,96.55172413793103,VA
+5400,Samuel Johnston,Samuel Johnson,96.55172413793103,MA
+5401,Samuel Johnston,Samuel Johnson,96.55172413793103,NJ
+5402,Samuel Johnston,Samuel Johnson,96.55172413793103,RI
+5403,Samuel Johnston,Samuel Johnson,96.55172413793103,CS
+5404,Samuel Johnston,Samuel Johnson,96.55172413793103,NY
+5405,Samuel Johnston,Samuel Johnson,96.55172413793103,unspecified
+5412,Jonathan Green,Jonathan Greene,96.55172413793103,unspecified
+5424,Joseph Douglass,Joseph Douglas,96.55172413793103,CT
+5436,William Martin,William Martain,96.55172413793103,CT
+5448,William Houston,William Huston,96.55172413793103,PA
+5460,Thomas Mighill,Thomas Mighills,96.55172413793103,MA
+5472,Benjamin Browne,Benjamin Brown,96.55172413793103,PA
+5473,Benjamin Browne,Benjamin Brown,96.55172413793103,CT
+5474,Benjamin Browne,Benjamin Brown,96.55172413793103,NH
+5475,Benjamin Browne,Benjamin Brown,96.55172413793103,unspecified
+5476,Benjamin Browne,Benjamin Brown,96.55172413793103,MA
+5477,Benjamin Browne,Benjamin Brown,96.55172413793103,NC
+5484,William Baylies,William Baylis,96.55172413793103,MA
+5496,Thomas Johnston,Thomas Johnson,96.55172413793103,MA
+5497,Thomas Johnston,Thomas Johnson,96.55172413793103,PA
+5508,William Dobbin,William Dobbins,96.55172413793103,NC
+5520,Ebenezer Clark,Ebenezer Clarke,96.55172413793103,MA
+5532,John Johnston,John Johnstone,96.29629629629629,MA
+5544,William Hayes,William Haynes,96.29629629629629,NH
+5545,William Hayes,William Haynes,96.29629629629629,unspecified
+5546,William Hayes,William Haynes,96.29629629629629,NY
+5547,William Hayes,William Haynes,96.29629629629629,NC
+5556,Joseph Heister,Joseph Hester,96.29629629629629,NC
+5568,James Thompson,James Thomson,96.29629629629629,unspecified
+5580,Thomas Wastson,Thomas Watson,96.29629629629629,CT
+5581,Thomas Wastson,Thomas Watson,96.29629629629629,unspecified
+5582,Thomas Wastson,Thomas Watson,96.29629629629629,NH
+5583,Thomas Wastson,Thomas Watson,96.29629629629629,MD
+5592,Daniel Rodgers,Daniel Rogers,96.29629629629629,CT
+5593,Daniel Rodgers,Daniel Rogers,96.29629629629629,MA
+5604,Robert Wilson,Robert Willson,96.29629629629629,CS
+5605,Robert Wilson,Robert Willson,96.29629629629629,CT
+5606,Robert Wilson,Robert Willson,96.29629629629629,unspecified
+5607,Robert Wilson,Robert Willson,96.29629629629629,PA
+5608,Robert Wilson,Robert Willson,96.29629629629629,NC
+5616,Jesse Gilbert,Jessee Gilbert,96.29629629629629,unspecified
+5628,Thomas Arthur,Thomas Arthurs,96.29629629629629,MD
+5640,Thomas Cheney,Thomas Chesney,96.29629629629629,PA
+5652,William Brown,William Browne,96.29629629629629,NJ
+5664,Peter Fayssoux,Peter Fassoux,96.29629629629629,unspecified
+5676,Thomas Person,Thomas Pierson,96.29629629629629,NJ
+5688,George Clinton,George Linton,96.29629629629629,MD
+5700,Jacob Johnston,Jacob Johnson,96.29629629629629,MA
+5701,Jacob Johnston,Jacob Johnson,96.29629629629629,NH
+5702,Jacob Johnston,Jacob Johnson,96.29629629629629,PA
+5712,John Anderson,John Vanderson,96.29629629629629,unspecified
+5724,William Mayhew,William Mahew,96.29629629629629,MA
+5736,Samuel Langdon,Samuel Landon,96.29629629629629,NJ
+5748,James Johnson,James Johnston,96.29629629629629,NY
+5749,James Johnson,James Johnston,96.29629629629629,PA
+5750,James Johnson,James Johnston,96.29629629629629,unspecified
+5760,Thomas Person,Thomas Pearson,96.29629629629629,NC
+5772,Thomas Russel,Thomas Russell,96.29629629629629,NY
+5784,William Abbott,William Abbot,96.29629629629629,MA
+5785,William Abbott,William Abbot,96.29629629629629,unspecified
+5786,William Abbott,William Abbot,96.29629629629629,MD
+5796,Richard Barnes,Richard Barns,96.29629629629629,PA
+5797,Richard Barnes,Richard Barns,96.29629629629629,unspecified
+5808,George Houser,George House,96.0,CT
+5820,James Martin,James Martain,96.0,unspecified
+5832,John Chester,John Chesters,96.0,NJ
+5833,John Chester,John Chesters,96.0,unspecified
+5844,John Johnston,John Johnson,96.0,NY
+5845,John Johnston,John Johnson,96.0,CT
+5846,John Johnston,John Johnson,96.0,NJ
+5847,John Johnston,John Johnson,96.0,MA
+5848,John Johnston,John Johnson,96.0,unspecified
+5849,John Johnston,John Johnson,96.0,DE
+5850,John Johnston,John Johnson,96.0,PA
+5851,John Johnston,John Johnson,96.0,MD
+5852,John Johnston,John Johnson,96.0,NC
+5856,James Handley,James Hanley,96.0,NY
+5868,Samuel Orton,Samuel Norton,96.0,PA
+5869,Samuel Orton,Samuel Norton,96.0,unspecified
+5880,Joseph Barker,Joseph Baker,96.0,unspecified
+5881,Joseph Barker,Joseph Baker,96.0,CS
+5882,Joseph Barker,Joseph Baker,96.0,NC
+5892,Peter Bennett,Peter Bennet,96.0,MA
+5904,William  Gold,William Gold,96.0,MD
+5916,Simeon Bright,Simon Bright,96.0,NC
+5928,Thomas Chase,Thomas Chasey,96.0,unspecified
+5940,John Thompson,John Thomson,96.0,MA
+5941,John Thompson,John Thomson,96.0,unspecified
+5942,John Thompson,John Thomson,96.0,PA
+5952,David Wilson,David Willson,96.0,MA
+5953,David Wilson,David Willson,96.0,NY
+5964,John Richards,John Richard,96.0,MD
+5976,Samuel Adams,Samuel Addams,96.0,MA
+5988,Samuel Earle,Samuel Searle,96.0,MA
+6000,Samuel Baker,Samuel Barker,96.0,CT
+6001,Samuel Baker,Samuel Barker,96.0,unspecified
+6002,Samuel Baker,Samuel Barker,96.0,MA
+6012,John Simmons,John Simmonds,96.0,MA
+6013,John Simmons,John Simmonds,96.0,NY
+6014,John Simmons,John Simmonds,96.0,NC
+6024,Caleb Curtiss,Caleb Curtis,96.0,PA
+6036,John K. Smith,John K Smith,96.0,unspecified
+6037,John K. Smith,John K Smith,96.0,CT
+6038,John K. Smith,John K Smith,96.0,MA
+6060,Samuel Baker,Samuel Blaker,96.0,MA
+6072,Thomas Davis,Thomas Davies,96.0,MD
+6084,Thomas Walke,Thomas Walker,96.0,unspecified
+6096,Levi Whitman,Levi Whiteman,96.0,NH
+6108,Joshua Saxon,Joshua Saxton,96.0,CS
+6120,John Matthews,John Mathews,96.0,NH
+6121,John Matthews,John Mathews,96.0,unspecified
+6122,John Matthews,John Mathews,96.0,MA
+6123,John Matthews,John Mathews,96.0,PA
+6124,John Matthews,John Mathews,96.0,MD
+6125,John Matthews,John Mathews,96.0,NC
+6132,John Chester,John Hester,95.65217391304348,NC
+6144,John Lindsey,John Linsey,95.65217391304348,MA
+6156,Isaac Clarke,Isaac Clark,95.65217391304348,unspecified
+6157,Isaac Clarke,Isaac Clark,95.65217391304348,NC
+6168,John Coulter,John Colter,95.65217391304348,PA
+6169,John Coulter,John Colter,95.65217391304348,unspecified
+6170,John Coulter,John Colter,95.65217391304348,MD
+6180,John Curtiss,John Curtis,95.65217391304348,NJ
+6181,John Curtiss,John Curtis,95.65217391304348,MA
+6182,John Curtiss,John Curtis,95.65217391304348,unspecified
+6192,John Haring,John Harding,95.65217391304348,NJ
+6193,John Haring,John Harding,95.65217391304348,PA
+6194,John Haring,John Harding,95.65217391304348,unspecified
+6204,James Taylor,James Tylor,95.65217391304348,MA
+6216,John Brooks,John Brookes,95.65217391304348,VA
+6228,John Wilson,John Willson,95.65217391304348,NJ
+6229,John Wilson,John Willson,95.65217391304348,MA
+6230,John Wilson,John Willson,95.65217391304348,CT
+6231,John Wilson,John Willson,95.65217391304348,DE
+6232,John Wilson,John Willson,95.65217391304348,unspecified
+6233,John Wilson,John Willson,95.65217391304348,NY
+6234,John Wilson,John Willson,95.65217391304348,PA
+6235,John Wilson,John Willson,95.65217391304348,MD
+6240,John Collins,John Collin,95.65217391304348,MD
+6252,John Elliot,John Elliott,95.65217391304348,NY
+6253,John Elliot,John Elliott,95.65217391304348,MD
+6264,John Simmons,John Simons,95.65217391304348,MA
+6265,John Simmons,John Simons,95.65217391304348,NC
+6276,John Neilson,John Nelson,95.65217391304348,NY
+6277,John Neilson,John Nelson,95.65217391304348,VA
+6278,John Neilson,John Nelson,95.65217391304348,MD
+6279,John Neilson,John Nelson,95.65217391304348,unspecified
+6280,John Neilson,John Nelson,95.65217391304348,NC
+6288,John Burnham,John Burnam,95.65217391304348,MA
+6300,John Burnham,John Burham,95.65217391304348,MA
+6312,Simeon Smith,Simon Smith,95.65217391304348,CT
+6324,John Burgess,John Burges,95.65217391304348,MA
+6325,John Burgess,John Burges,95.65217391304348,NY
+6326,John Burgess,John Burges,95.65217391304348,MD
+6336,James Moore,James Mooree,95.65217391304348,MD
+6348,John Ashley,John Lashley,95.65217391304348,MD
+6360,David Brooks,David Brook,95.65217391304348,NH
+6372,John Cochran,John Cohran,95.65217391304348,MA
+6384,John Davis,John Davies,95.23809523809524,NY
+6385,John Davis,John Davies,95.23809523809524,VA
+6386,John Davis,John Davies,95.23809523809524,MD
+6408,John  Allen,John Allen,95.23809523809524,MA
+6409,John  Allen,John Allen,95.23809523809524,NH
+6410,John  Allen,John Allen,95.23809523809524,unspecified
+6411,John  Allen,John Allen,95.23809523809524,NY
+6412,John  Allen,John Allen,95.23809523809524,PA
+6420,John Fowler,John Fowle,95.23809523809524,MA
+6432,John Moore,John Moores,95.23809523809524,NH
+6433,John Moore,John Moores,95.23809523809524,MA
+6444,John Easton,John Eaton,95.23809523809524,NH
+6445,John Easton,John Eaton,95.23809523809524,PA
+6456,John Steele,John Steel,95.23809523809524,unspecified
+6457,John Steele,John Steel,95.23809523809524,PA
+6458,John Steele,John Steel,95.23809523809524,VA
+6468,John Steele,John Seele,95.23809523809524,MA
+6480,John Lowry,John Lowrey,95.23809523809524,CS
+6481,John Lowry,John Lowrey,95.23809523809524,MD
+6492,John Allen,John Alleng,95.23809523809524,NY
+6504,John Taylor,John Tylor,95.23809523809524,unspecified
+6516,John Baker,John Barker,95.23809523809524,CT
+6517,John Baker,John Barker,95.23809523809524,MA
+6518,John Baker,John Barker,95.23809523809524,unspecified
+6519,John Baker,John Barker,95.23809523809524,PA
+6528,John Cragin,John Crain,95.23809523809524,MA
+6540,John Jones,John Joynes,95.23809523809524,unspecified
+6552,John Jones,John Johnes,95.23809523809524,MD
+6564,John Brown,John 2d Brown,95.0,unspecified
+6576,John  Fox,John Fox,95.0,CT
+6577,John  Fox,John Fox,95.0,NH
+6578,John  Fox,John Fox,95.0,MA
+6588,John K. Smith,John Smith,95.0,unspecified
+6589,John K. Smith,John Smith,95.0,CT
+6590,John K. Smith,John Smith,95.0,NJ
+6591,John K. Smith,John Smith,95.0,MA
+6592,John K. Smith,John Smith,95.0,NH
+6593,John K. Smith,John Smith,95.0,RI
+6594,John K. Smith,John Smith,95.0,CS
+6595,John K. Smith,John Smith,95.0,NY
+6596,John K. Smith,John Smith,95.0,PA
+6597,John K. Smith,John Smith,95.0,VA
+6598,John K. Smith,John Smith,95.0,MD
+6599,John K. Smith,John Smith,95.0,NC
+6600,William Johnston,William Sr. Johnston,95.0,PA
+6612,William Brown,William Sh Brown,95.0,CS
+6624,William Brown,William Sheph Brown,95.0,CS
+6636,Philip Van Cortlandt,Philip Cortlandt,95.0,NY
+6637,Philip Van Cortlandt,Philip Cortlandt,95.0,NJ
+6648,William Heath,William (M.G) Heath,95.0,unspecified
+6660,Thomas Davis,Thomas I Davis,95.0,CT
+6672,William Gray Jun.,William Gray,95.0,MA
+6673,William Gray Jun.,William Gray,95.0,PA
+6674,William Gray Jun.,William Gray,95.0,unspecified
+6675,William Gray Jun.,William Gray,95.0,VA
+6684,John A. Campbell,John Campbell,95.0,CT
+6685,John A. Campbell,John Campbell,95.0,MA
+6686,John A. Campbell,John Campbell,95.0,NY
+6687,John A. Campbell,John Campbell,95.0,unspecified
+6688,John A. Campbell,John Campbell,95.0,PA
+6689,John A. Campbell,John Campbell,95.0,MD
+6690,John A. Campbell,John Campbell,95.0,NC
+6696,Thomas H. Perkins,Thomas Perkins,95.0,MA
+6697,Thomas H. Perkins,Thomas Perkins,95.0,NC
+6720,"Samuel Hopkins, Jun.",Samuel Hopkins,95.0,MA
+6721,"Samuel Hopkins, Jun.",Samuel Hopkins,95.0,unspecified
+6732,John Miller,John M'Miller,95.0,unspecified
+6744,William Jones,William 1st Jones,95.0,CT
+6745,William Jones,William 1st Jones,95.0,MD
+6756,John Moore,John W Moore,95.0,NH
+6768,John Neilson,John Jr. Neilson,95.0,NY
+6780,William Jones,William 2nd Jones,95.0,CT
+6792,John Ludwig,John M'Ludwig,95.0,PA
+6804,John Miller,John P Miller,95.0,unspecified
+6816,John H. Bryan,John Bryan,95.0,DE
+6817,John H. Bryan,John Bryan,95.0,PA
+6818,John H. Bryan,John Bryan,95.0,MD
+6828,John Miller,John C Miller,95.0,MD
+6840,John Miller,John 2d Miller,95.0,PA
+6852,John Harris,John Jr. Harris,95.0,PA
+6864,John Miller,John 1st Miller,95.0,PA
+6876,Samuel H. Parsons,Samuel Parsons,95.0,unspecified
+6877,Samuel H. Parsons,Samuel Parsons,95.0,CT
+6878,Samuel H. Parsons,Samuel Parsons,95.0,NY
+6888,John Harris,John 2d Harris,95.0,MA
+6900,John Edwards,John Jr. Edwards,95.0,NC
+6912,John Baker,John F Baker,95.0,MA
+6924,Robert B. Wilkins,Robert Wilkins,95.0,PA
+6936,John Smith,John Sr. Smith,95.0,NY
+6937,John Smith,John Sr. Smith,95.0,PA
+6948,John Taylor,John 2d Taylor,95.0,CT
+6949,John Taylor,John 2d Taylor,95.0,unspecified
+6960,William N. Hill,William Hill,95.0,NH
+6961,William N. Hill,William Hill,95.0,unspecified
+6962,William N. Hill,William Hill,95.0,CT
+6963,William N. Hill,William Hill,95.0,MA
+6964,William N. Hill,William Hill,95.0,MD
+6965,William N. Hill,William Hill,95.0,NC
+6972,John Brown,John A Brown,95.0,NY
+6984,John Brown,John Jr. Brown,95.0,NY
+6996,John Davis,John G Davis,95.0,MA
+7008,Henry Lee III,Henry Lee,95.0,unspecified
+7020,John Brown,John Sr. Brown,95.0,NY
+7032,Joseph Moss White,Joseph White,95.0,CT
+7033,Joseph Moss White,Joseph White,95.0,unspecified
+7034,Joseph Moss White,Joseph White,95.0,MA
+7035,Joseph Moss White,Joseph White,95.0,PA
+7036,Joseph Moss White,Joseph White,95.0,MD
+7044,A. Fisher,John A Fisher,95.0,PA
+7056,Benjamin Jones,Jones Benjamin,95.0,MA
+7068,John Williams,John 2d Williams,95.0,unspecified
+7080,John Edwards,John Sr. Edwards,95.0,NC
+7092,William Stevens,William S Stevens,95.0,unspecified
+7104,Joseph Martin,Joseph P Martin,95.0,unspecified
+7116,Stephen Mix Mitchell,Stephen Mitchell,95.0,MA
+7128,William Richardson Davie,William Richardson,95.0,NH
+7129,William Richardson Davie,William Richardson,95.0,MD
+7130,William Richardson Davie,William Richardson,95.0,NC
+7131,William Richardson Davie,William Richardson,95.0,unspecified
+7140,John Williams,John 1st Williams,95.0,MA
+7152,John Taylor,John 1st Taylor,95.0,CT
+7164,"John Lansing, Jun. ",John Lansing,95.0,unspecified
+7176,James Gray,James W Gray,95.0,unspecified
+7188,John Hamilton,John A Hamilton,95.0,MD
+7200,Robert R. Livingston,Robert Livingston,95.0,NH
+7201,Robert R. Livingston,Robert Livingston,95.0,MD
+7212,Samuel Jones,Samuel P Jones,95.0,MA
+7213,Samuel Jones,Samuel P Jones,95.0,NH
+7214,Samuel Jones,Samuel P Jones,95.0,unspecified
+7224,John Smith,John 1st Smith,95.0,MA
+7225,John Smith,John 1st Smith,95.0,unspecified
+7236,John Smith,John 2d Smith,95.0,MA
+7237,John Smith,John 2d Smith,95.0,unspecified
+7248,John Wilson,John 2d Wilson,95.0,unspecified
+7260,John Smith,John 3d Smith,95.0,unspecified
+7261,John Smith,John 3d Smith,95.0,PA
+7272,John Smith,John 4th Smith,95.0,unspecified
+7284,John Smith,John C Smith,95.0,unspecified
+7296,John Smith,John Jr. Smith,95.0,NY
+7308,Samuel Baker,Samuel A Baker,95.0,CT
+7320,John Smith,John K Smith,95.0,unspecified
+7321,John Smith,John K Smith,95.0,CT
+7322,John Smith,John K Smith,95.0,MA
+7332,James Williams,James M'Williams,95.0,unspecified
+7344,John Hunt,John S Hunt,95.0,MD
+7368,Brown Elisha,Elisha Brown,95.0,NH
+7369,Brown Elisha,Elisha Brown,95.0,CS
+7370,Brown Elisha,Elisha Brown,95.0,MD
+7380,Dexter John S,John S Dexter,95.0,MA
+7392,James Thomas,Thomas James,95.0,NJ
+7393,James Thomas,Thomas James,95.0,CS
+7394,James Thomas,Thomas James,95.0,MA
+7395,James Thomas,Thomas James,95.0,unspecified
+7404,James Thomas,James Jr. Thomas,95.0,MD
+7416,James Thomas,James Sr. Thomas,95.0,MD
+7428,Brown John,John Brown,95.0,unspecified
+7429,Brown John,John Brown,95.0,CT
+7430,Brown John,John Brown,95.0,MA
+7431,Brown John,John Brown,95.0,NH
+7432,Brown John,John Brown,95.0,CS
+7433,Brown John,John Brown,95.0,DE
+7434,Brown John,John Brown,95.0,NY
+7435,Brown John,John Brown,95.0,PA
+7436,Brown John,John Brown,95.0,VA
+7437,Brown John,John Brown,95.0,MD
+7438,Brown John,John Brown,95.0,NC
+7440,Brown John,John 2d Brown,95.0,unspecified
+7452,Brown John,John A Brown,95.0,NY
+7464,Brown John,John Jr. Brown,95.0,NY
+7476,Brown John,John Sr. Brown,95.0,NY
+7488,King William,William King,95.0,MA
+7489,King William,William King,95.0,MD
+7500,Allen Thomas,Thomas Allen,95.0,CT
+7512,Pearce Samuel,Samuel Pearce,95.0,CT
+7524,William Moultrie,William Sr. Moultrie,95.0,unspecified
+7536,Allen Samuel,Samuel G Allen,95.0,NH
+7548,Howard William,William Howard,95.0,MA
+7549,Howard William,William Howard,95.0,PA
+7550,Howard William,William Howard,95.0,NC
+7560,Williams John,John Williams,95.0,CT
+7561,Williams John,John Williams,95.0,NJ
+7562,Williams John,John Williams,95.0,MA
+7563,Williams John,John Williams,95.0,unspecified
+7564,Williams John,John Williams,95.0,NY
+7565,Williams John,John Williams,95.0,PA
+7566,Williams John,John Williams,95.0,VA
+7567,Williams John,John Williams,95.0,MD
+7568,Williams John,John Williams,95.0,NC
+7572,Williams John,John 1st Williams,95.0,MA
+7584,Williams John,John 2d Williams,95.0,unspecified
+7596,John Thomas,John G Thomas,95.0,unspecified
+7608,John Thomas,Thomas John,95.0,MD
+7620,William Johnston Dawson,William Johnston,95.0,NJ
+7621,William Johnston Dawson,William Johnston,95.0,unspecified
+7622,William Johnston Dawson,William Johnston,95.0,DE
+7623,William Johnston Dawson,William Johnston,95.0,NY
+7624,William Johnston Dawson,William Johnston,95.0,PA
+7625,William Johnston Dawson,William Johnston,95.0,MD
+7626,William Johnston Dawson,William Johnston,95.0,NC
+7632,Benjamin Harrison V,Benjamin Harrison,95.0,CT
+7633,Benjamin Harrison V,Benjamin Harrison,95.0,unspecified
+7634,Benjamin Harrison V,Benjamin Harrison,95.0,MD
+7644,Dexter John S,John Dexter,95.0,unspecified
+7656,Miller Nathan,Nathan Miller,95.0,unspecified
+7668,"John Tyler, Sr.",John Tyler,95.0,MA
+7669,"John Tyler, Sr.",John Tyler,95.0,unspecified
+7670,"John Tyler, Sr.",John Tyler,95.0,PA
+7692,James G. Hunt,James Hunt,95.0,MD
+7704,Joseph Brown,Joseph T Brown,95.0,RI
+7705,Joseph Brown,Joseph T Brown,95.0,MA
+7716,Thomas Sim Lee,Thomas Lee,95.0,NC
+7717,Thomas Sim Lee,Thomas Lee,95.0,unspecified
+7728,Joseph Brown,Joseph J Brown,95.0,RI
+7740,Joseph Brown,Joseph 1st Brown,95.0,RI
+7752,John Cook,John Sr. Cook,95.0,NY
+7764,John Cook,John Jr. Cook,95.0,NY
+7776,James Martin,James Sr. Martin,95.0,PA
+7788,John Collins,John Jr. Collins,95.0,CS
+7800,Jacob Brown,Jacob R Brown,95.0,unspecified
+7812,Bowen Jabez,Jabez Bowen,95.0,MA
+7813,Bowen Jabez,Jabez Bowen,95.0,PA
+7824,Davis John,John G Davis,95.0,MA
+7836,Barton William,William Barton,95.0,unspecified
+7837,Barton William,William Barton,95.0,NJ
+7848,Clark John I,John Clark,95.0,PA
+7849,Clark John I,John Clark,95.0,CT
+7850,Clark John I,John Clark,95.0,MA
+7851,Clark John I,John Clark,95.0,NH
+7852,Clark John I,John Clark,95.0,unspecified
+7853,Clark John I,John Clark,95.0,NY
+7854,Clark John I,John Clark,95.0,VA
+7855,Clark John I,John Clark,95.0,MD
+7860,Rice Thomas,Thomas Rice,95.0,MA
+7861,Rice Thomas,Thomas Rice,95.0,NH
+7862,Rice Thomas,Thomas Rice,95.0,unspecified
+7872,Potter Samuel J,Samuel Potter,95.0,NH
+7873,Potter Samuel J,Samuel Potter,95.0,NJ
+7874,Potter Samuel J,Samuel Potter,95.0,unspecified
+7875,Potter Samuel J,Samuel Potter,95.0,NY
+7884,Stanton Joseph,Joseph Stanton,95.0,MA
+7885,Stanton Joseph,Joseph Stanton,95.0,DE
+7896,Nichols William,William Nichols,95.0,unspecified
+7897,Nichols William,William Nichols,95.0,NC
+7908,Reynolds Joseph,Joseph Reynolds,95.0,MA
+7909,Reynolds Joseph,Joseph Reynolds,95.0,PA
+7910,Reynolds Joseph,Joseph Reynolds,95.0,unspecified
+7920,Wilcox Job,Job Wilcox,95.0,unspecified
+7932,Bradford William,William Bradford,95.0,unspecified
+7944,Davis John,John Davis,95.0,NY
+7945,Davis John,John Davis,95.0,unspecified
+7946,Davis John,John Davis,95.0,MA
+7947,Davis John,John Davis,95.0,NH
+7948,Davis John,John Davis,95.0,CT
+7949,Davis John,John Davis,95.0,PA
+7950,Davis John,John Davis,95.0,VA
+7951,Davis John,John Davis,95.0,MD
+7952,Davis John,John Davis,95.0,NC
+7956,William E. Lord,William Lord,95.0,CT
+7957,William E. Lord,William Lord,95.0,MA
+7968,Allen Samuel,Samuel Allen,95.0,CT
+7969,Allen Samuel,Samuel Allen,95.0,NH
+7970,Allen Samuel,Samuel Allen,95.0,MA
+7971,Allen Samuel,Samuel Allen,95.0,unspecified
+7972,Allen Samuel,Samuel Allen,95.0,PA
+7980,William Smith,William V Smith,95.0,unspecified
+7992,Thomas Brown,Thomas Jr. Brown,95.0,PA
+8004,Samuel Smith,Samuel 2d Smith,95.0,MA
+8016,Benjamin Smith,Benjamin 1st Smith,95.0,MA
+8028,Benjamin Smith,Benjamin 2d Smith,95.0,MA
+8040,William E. Erwin,William Erwin,95.0,NJ
+8052,William Smith,William S Smith,95.0,MA
+8053,William Smith,William S Smith,95.0,NH
+8054,William Smith,William S Smith,95.0,unspecified
+8055,William Smith,William S Smith,95.0,VA
+8064,William Smith,William P Smith,95.0,unspecified
+8076,Thomas Brown,Thomas Sr. Brown,95.0,PA
+8088,Thomas P. Williams,Thomas Williams,95.0,CT
+8089,Thomas P. Williams,Thomas Williams,95.0,NJ
+8090,Thomas P. Williams,Thomas Williams,95.0,unspecified
+8091,Thomas P. Williams,Thomas Williams,95.0,MA
+8092,Thomas P. Williams,Thomas Williams,95.0,PA
+8093,Thomas P. Williams,Thomas Williams,95.0,VA
+8094,Thomas P. Williams,Thomas Williams,95.0,MD
+8100,John Carter Littlepage,John Littlepage,95.0,unspecified
+8112,John Cowan,John M'Cowan,95.0,PA
+8124,William Smith,William J Smith,95.0,unspecified
+8136,William Smith,William 2d Smith,95.0,CT
+8148,William Williams,William Williamson,94.11764705882354,NC
+8160,Nichols William,Nicholas Williams,93.75,NC
+8172,William Williams,William Willis,93.33333333333333,unspecified
+8173,William Williams,William Willis,93.33333333333333,VA
+8174,William Williams,William Willis,93.33333333333333,PA
+8184,William  Findley,William Finley,93.33333333333333,NJ
+8196,Greene Christopher,Christopher Green,92.28571428571428,MA
+8208,Robert Alexander,Alexander Roberts,92.12121212121211,unspecified
+8220,Nichols William,William Nicholas,91.93548387096774,NY
+8221,Nichols William,William Nicholas,91.93548387096774,NC
+8232,Leonard Williams,William Leonard,91.93548387096774,MA
+8244,Edward Williams,William Edward,91.72413793103448,RI
+8256,Richard Thomas,Thomas Prichard,91.72413793103448,MA
+8268,Bourne Benjamin,Benjamin Bourn,91.72413793103448,MA
+8280,Thomas Matthews,Matthew Thomas,91.72413793103448,NJ
+8281,Thomas Matthews,Matthew Thomas,91.72413793103448,unspecified
+8292,Thomas Williams,William Thomas,91.72413793103448,MA
+8293,Thomas Williams,William Thomas,91.72413793103448,NJ
+8294,Thomas Williams,William Thomas,91.72413793103448,RI
+8295,Thomas Williams,William Thomas,91.72413793103448,PA
+8296,Thomas Williams,William Thomas,91.72413793103448,unspecified
+8297,Thomas Williams,William Thomas,91.72413793103448,NC
+8304,Reynolds Joseph,Joseph Rynolds,91.72413793103448,PA
+8316,Richard Thomas,Thomas Richards,91.72413793103448,unspecified
+8317,Richard Thomas,Thomas Richards,91.72413793103448,VA
+8328,Thomas Edmunds,Edmund Thomas,91.48148148148147,MA
+8340,Robert Daniel,Daniel Roberts,91.48148148148147,PA
+8352,James Williams,William James,91.48148148148147,CT
+8353,James Williams,William James,91.48148148148147,NC
+8364,Stanton Joseph,Joseph Staton,91.48148148148147,DE
+8376,John  Allen,John Alleng,90.9090909090909,NY
+8388,Barker Peter,Peter Baker,90.86956521739131,MA
+8400,Wilcox Job,Job Willcox,90.47619047619048,CT
+8401,Wilcox Job,Job Willcox,90.47619047619048,unspecified
+8412,Davis John,John Davies,90.47619047619048,NY
+8413,Davis John,John Davies,90.47619047619048,VA
+8414,Davis John,John Davies,90.47619047619048,MD
+8424,John Taylor Gilman,John Taylor,90.0,CT
+8425,John Taylor Gilman,John Taylor,90.0,MA
+8426,John Taylor Gilman,John Taylor,90.0,NH
+8427,John Taylor Gilman,John Taylor,90.0,unspecified
+8428,John Taylor Gilman,John Taylor,90.0,NY
+8429,John Taylor Gilman,John Taylor,90.0,PA
+8430,John Taylor Gilman,John Taylor,90.0,VA
+8431,John Taylor Gilman,John Taylor,90.0,MD
+8432,John Taylor Gilman,John Taylor,90.0,NC
+8436,John Brown,John Brown Cutting,90.0,unspecified
+8448,John Francis Mercer,John Francis,90.0,CT
+8449,John Francis Mercer,John Francis,90.0,MA
+8450,John Francis Mercer,John Francis,90.0,unspecified
+8451,John Francis Mercer,John Francis,90.0,PA
+8452,John Francis Mercer,John Francis,90.0,MD
+8460,John Howell Briggs,John Howel,90.0,NJ
+8472,John Howell Briggs,John Howell,90.0,unspecified
+8473,John Howell Briggs,John Howell,90.0,NJ
+8474,John Howell Briggs,John Howell,90.0,MD
+8484,John Allen,John Allen McClay,90.0,PA
+8508,"John Blair, Jun.",John Blair,90.0,MA
+8509,"John Blair, Jun.",John Blair,90.0,NJ
+8510,"John Blair, Jun.",John Blair,90.0,PA
+8511,"John Blair, Jun.",John Blair,90.0,unspecified
+8512,"John Blair, Jun.",John Blair,90.0,MD
+8520,John Carter Littlepage,John Carter,90.0,unspecified
+8521,John Carter Littlepage,John Carter,90.0,CS
+8522,John Carter Littlepage,John Carter,90.0,CT
+8523,John Carter Littlepage,John Carter,90.0,MA
+8524,John Carter Littlepage,John Carter,90.0,NC
+8532,John Baptista Ashe,John Baptist,90.0,MA
+8533,John Baptista Ashe,John Baptist,90.0,NJ
+8534,John Baptista Ashe,John Baptist,90.0,CS
+8535,John Baptista Ashe,John Baptist,90.0,PA
+8544,John Lewis Bourquin,John Lewis,90.0,MA
+8545,John Lewis Bourquin,John Lewis,90.0,CT
+8546,John Lewis Bourquin,John Lewis,90.0,PA
+8547,John Lewis Bourquin,John Lewis,90.0,VA
+8548,John Lewis Bourquin,John Lewis,90.0,NC
+8556,Joseph Moss White,Joseph Moss,90.0,unspecified
+8568,Gustavus Richard Brown,Richard Brown,90.0,NY
+8580,Philip Burr Bradley,Burr Bradley,90.0,unspecified
+8592,Stephen Mix Mitchell,Stephen Mix,90.0,NY
+8604,James Gordon Heron,James Gordon,90.0,NH
+8605,James Gordon Heron,James Gordon,90.0,PA
+8616,John Lewis Gervias,John Lewis,90.0,MA
+8617,John Lewis Gervias,John Lewis,90.0,CT
+8618,John Lewis Gervias,John Lewis,90.0,PA
+8619,John Lewis Gervias,John Lewis,90.0,VA
+8620,John Lewis Gervias,John Lewis,90.0,NC
+8628,Thomas Wastson,Thomas W Watson,89.65517241379311,PA
+8640,William Williams,Will Williams,89.65517241379311,unspecified
+8652,Thomas Russel,Thomas C Russell,89.65517241379311,unspecified
+8664,James Thompson,James E Thomson,89.65517241379311,unspecified
+8676,Robert Williams,William Roberts,88.66666666666666,RI
+8677,Robert Williams,William Roberts,88.66666666666666,MA
+8678,Robert Williams,William Roberts,88.66666666666666,CS
+8679,Robert Williams,William Roberts,88.66666666666666,unspecified
+8680,Robert Williams,William Roberts,88.66666666666666,PA
+8681,Robert Williams,William Roberts,88.66666666666666,MD
+8682,Robert Williams,William Roberts,88.66666666666666,NC
+8688,Edward Williams,William Edwards,88.66666666666666,RI
+8689,Edward Williams,William Edwards,88.66666666666666,MA
+8700,Philip Burr Bradley,PhilipB Bradley,88.23529411764706,CT
+8712,Robert Edwards,Edward Roberts,88.21428571428571,MD
+8724,Thomas Williams,William Thoms,88.21428571428571,MA
+8725,Thomas Williams,William Thoms,88.21428571428571,unspecified
+8736,John H. Bryan,John O'Bryan,88.0,NJ
+8737,John H. Bryan,John O'Bryan,88.0,CS
+8738,John H. Bryan,John O'Bryan,88.0,CT
+8739,John H. Bryan,John O'Bryan,88.0,unspecified
+8740,John H. Bryan,John O'Bryan,88.0,NY
+8741,John H. Bryan,John O'Bryan,88.0,MD
+8748,John Steele,John P Steel,86.95652173913044,PA
+8760,William E. Erwin,William Erwine,86.66666666666667,NJ
+8772,William Williams,William Wallis,86.66666666666667,MA
+8784,Robert B. Wilkins,Robert Wilkin,86.66666666666667,PA
+8785,Robert B. Wilkins,Robert Wilkin,86.66666666666667,NH
+8796,William Williams,William Willes,86.66666666666667,VA
+8808,William B. Grove,William Groves,86.66666666666667,MD
+8820,John Sheaman Woodcock,John Shearman,86.4,NJ
+8821,John Sheaman Woodcock,John Shearman,86.4,unspecified
+8822,John Sheaman Woodcock,John Shearman,86.4,PA
+8832,John Carter Littlepage,John Cartier,86.08695652173914,CS
+8844,Thomas P. Williams,William Thomas,85.80645161290323,MA
+8845,Thomas P. Williams,William Thomas,85.80645161290323,NJ
+8846,Thomas P. Williams,William Thomas,85.80645161290323,RI
+8847,Thomas P. Williams,William Thomas,85.80645161290323,PA
+8848,Thomas P. Williams,William Thomas,85.80645161290323,unspecified
+8849,Thomas P. Williams,William Thomas,85.80645161290323,NC
+8856,John Jacob Faesch ,John Jacobs,85.71428571428572,NJ
+8857,John Jacob Faesch ,John Jacobs,85.71428571428572,unspecified
+8858,John Jacob Faesch ,John Jacobs,85.71428571428572,NY
+8859,John Jacob Faesch ,John Jacobs,85.71428571428572,MA
+8860,John Jacob Faesch ,John Jacobs,85.71428571428572,PA
+8868,William Johnson,William Sr. Johnston,85.71428571428571,PA
+8880,John Baker,John Frederick Baker,85.5,MA
+8892,John Budd,John Shivers Budd,85.5,unspecified
+8904,William Brown,William Shepard Brown,85.5,CS
+8916,Roger Parker Saunders,Roger Sanders,85.5,MD
+8928,E. Brooks,Moses E Brooks,85.5,MA
+8940,Roger Parker Saunders,Parker Rogers,85.5,NC
+8952,John Miller,John George Miller,85.5,CS
+8964,John Brown,John Alex Brown,85.5,NY
+8976,Brown John,John Alex Brown,85.5,NY
+8988,Brown John,John Brown Cutting,85.5,unspecified
+9000,John Wilder,John George Wilder,85.5,MA
+9012,Allen Samuel,Samuel Green Allen,85.5,MD
+9024,Jeremiah Townley Chase,Jeremiah Chase,85.5,MA
+9036,Robert Daniel,Daniel P Roberts,85.17241379310344,MA
+9048,Thomas Edmunds,Edmund D Thomas,85.17241379310344,unspecified
+9049,Thomas Edmunds,Edmund D Thomas,85.17241379310344,NJ
+4516,John Taylor,John Taylor,100.0,Marine
+2439,John Williams,John Williams,100.0,Marine
+6035,John Hunter,John Hunter,100.0,Marine
+4715,Jonathan Smith,Jonathan Smith,100.0,Marine
+4669,William Jones,William Jones,100.0,Marine
+4621,John Dunlap,John Dunlap,100.0,Marine
+248,John Jones,John Jones,100.0,Marine
+4416,James Neal,James Neal,100.0,Marine
+4254,John Davis,John Davis,100.0,Marine
+3812,Thomas Jones,Thomas Jones,100.0,Marine
+5148,William Smith,William Smith,100.0,Marine
+3104,Samuel Jones,samuel jones,100.0,Marine
+3133,John Smith,John Smith,100.0,Marine
+1683,David Bell,David Bell,100.0,Marine
+1382,William Morris,William Morris,100.0,Marine
+991,William Hart,William Hart,100.0,Marine
+6977,David Rice,David Rice,100.0,Marine
+7759,John Rhea,John Rhea,100.0,Marine
+7948,John Brown,John Brown,100.0,Marine
+5096,William Scott,William Scott,100.0,Marine
+3971,Benjamin Browne,Benjamin Brown,96.55172413793103,Marine
+7605,Samuel Johnston,Samuel Johnson,96.55172413793103,Marine
+7757,George Houser,George House,96.0,Marine
+434,John Elliot,John Elliott,95.65217391304348,Marine
+6463,Williams John,John Williams,95.0,Marine
+6423,Brown John,John Brown,95.0,Marine
+6375,Davis John,John Davis,95.0,Marine
+6266,Clark John I,John Clark,95.0,Marine
+8280,Nathaniel Rogers,Nathaniel R Rogers,95.0,Marine
+4579,John K. Smith,John Smith,95.0,Marine
+3590,William Brown,william brown foggo,95.0,Marine
+7162,James White,James white deceased,90.0,Marine
+467,John Rutherford,John rutherford deceased,90.0,Marine
+435,John Elliot,John elliott deceased,90.0,Marine
+8122,John Taylor Gilman,John Taylor,90.0,Marine
+114,Thomas Reynolds,Thomas reynolds deceased,90.0,Marine
+2344,Robert Williams,william roberts,88.66666666666666,Marine
+4998,Daniel Cannon,Daniel mc cannon deceased,85.5,Marine
+3712,John Coffin Jones,John Jones,85.5,Marine
+906,William Williams,William hamilton deceased,85.5,Marine
+905,William Williams,William russell deceased,85.5,Marine
+210,Jeremiah Wadsworth,Jeremiah Wadsworth,100.0,CT
+471,Cornelius Higgins,Cornelius Higgins,100.0,CT
+483,Ephraim Root,Ephraim Root,100.0,CT
+218,Elisha Pitkin,Elisha Pitkin,100.0,CT
+487,Isaac Foot,Isaac Foot,100.0,CT
+492,Seth Crocker,Seth Crocker,100.0,CT
+494,Hezekiah Holcomb,Hezekiah Holcomb,100.0,CT
+496,David Todd,David Todd,100.0,CT
+665,William Morris,William Morris,100.0,CT
+1531,Jonathan Roberts,Jonathan Roberts,100.0,CT
+1886,Ephraim Williams,Ephraim Williams,100.0,CT
+2838,John Allen,John Allen,100.0,CT
+2967,John Baker,John Baker,100.0,CT
+3223,John Skinner,John Skinner,100.0,CT
+474,Hezekiah Lane,Hezekiah Lane,100.0,CT
+485,John Phelps,John Phelps,100.0,CT
+470,Jabez Chapman,Jabez Chapman,100.0,CT
+304,Charles Phelps,Charles Phelps,100.0,CT
+251,Samuel Canfield,Samuel Canfield,100.0,CT
+252,Daniel Everitt,Daniel Everitt,100.0,CT
+256,Joseph Mosely,Joseph Mosely,100.0,CT
+257,Wait Goodrich,Wait Goodrich,100.0,CT
+264,John Chester,John Chester,100.0,CT
+272,Daniel Holbrook,Daniel Holbrook,100.0,CT
+282,Samuel Huntington,Samuel Huntington,100.0,CT
+428,Charles Burrall,Charles Burrall,100.0,CT
+412,Asa Witter,Asa Witter,100.0,CT
+461,Asher Miller,Asher Miller,100.0,CT
+431,Daniel Miles,Daniel Miles,100.0,CT
+430,Nathan Hale,Nathan Hale,100.0,CT
+286,Jedediah Huntington,Jeddediah Huntington,97.43589743589743,CT
+1339,Peter Vandevoort,Peter Vandervoort,96.96969696969697,CT
+435,John  Whittlesey,John Whittlesey,96.7741935483871,CT
+2910,John Thompson,John Thomson,96.0,CT
+258,John Curtiss,John Curtis,95.65217391304348,CT
+1181,John  Allen,John Allen,95.23809523809524,CT
+320,"John Davenport, Jun.",John Davenport,95.0,CT
+2622,William Kennedy,William Mc Kenney,87.5,CT
+1573,John Bishop,John Bishop,100.0,DE
+1527,John Black,John Black,100.0,DE
+2842,John Hall,John Hall,100.0,DE
+2659,Jacob Brown,Jacob Brown,100.0,DE
+2337,John Kean,John Kean,100.0,DE
+1673,Joseph Jackson,Joseph Jackson,100.0,DE
+1586,William Brown,William Brown,100.0,DE
+99,William Hall,William Hall,100.0,DE
+3156,David Caldwell,David Caldwell,100.0,DE
+1120,William McKee,William McKee,100.0,DE
+1031,John Evans,John Evans,100.0,DE
+1014,William White,William White,100.0,DE
+767,Thomas Read,Thomas Read,100.0,DE
+738,George Parker,George Parker,100.0,DE
+133,Solomon Maxwell,Solomon Maxwell,100.0,DE
+126,James Black,James Black,100.0,DE
+132,Thomas Wastson,Thomas Watson,96.29629629629629,DE
+1548,James Morris,James Morriss,96.0,DE
+2778,Williams John,William John,96.0,DE
+12,John Beatty,John Beaty,95.23809523809524,DE
+1799,Daniel Adams,Daniel J Adams,95.0,DE
+2750,Bradford William,William Bradford,95.0,DE
+1577,William  Findley,William Finley,93.33333333333333,DE
+1129,John Williams,William John,91.19999999999999,DE
+1800,Daniel Adams,Daniel Jenifer Adams,85.5,DE
+5136,James Stewart,James Stewart,100.0,MA
+4618,Comstock Betts,Comstock Betts,100.0,MA
+4609,John Ashley,John Ashley,100.0,MA
+4597,Moses Davis,Moses Davis,100.0,MA
+4521,Joseph Stone,Joseph Stone,100.0,MA
+4461,Seth Newton,Seth Newton,100.0,MA
+4437,John Sprague,John Sprague,100.0,MA
+4367,Joseph Palmer,Joseph Palmer,100.0,MA
+4086,Benjamin Sheldon,Benjamin Sheldon,100.0,MA
+7768,Thomas Chase,Thomas Chase,100.0,MA
+7710,William Simpson,William Simpson,100.0,MA
+7371,Benjamin Jones,Benjamin Jones ,100.0,MA
+7303,Thomas Johnston,Thomas Johnston,100.0,MA
+6678,Robert Montgomery,Robert Montgomery,100.0,MA
+6527,Henry Hill,Henry Hill,100.0,MA
+6431,Enoch Sawyer,Enoch Sawyer,100.0,MA
+6289,John Hay,John Hay,100.0,MA
+4006,Daniel Whitney,Daniel Whitney,100.0,MA
+2519,John Williams,john williams,100.0,MA
+1055,Ebenezer White,Ebenezer White,100.0,MA
+606,John Holbrook,John Holbrook,100.0,MA
+605,Daniel Holbrook,Daniel Holbrook,100.0,MA
+7833,John Cochran,John Cochran,100.0,MA
+3653,William Phillips,William Phillips,100.0,MA
+3656,John Coffin Jones,John Coffin Jones,100.0,MA
+3978,Francis Dana,Francis Dana,100.0,MA
+3864,John Glover,John Glover,100.0,MA
+3827,Ebenezer Warren,Ebenezer Warren,100.0,MA
+3815,George Payson,George Payson,100.0,MA
+3770,William Heath,William Heath,100.0,MA
+3839,Tristam Dalton,Tristram Dalton,96.55172413793103,MA
+1455,Thomas Johnson,Thomas Johnston,96.55172413793103,MA
+3767,Thomas Russel,Thomas Russell,96.29629629629629,MA
+3983,Joseph Hosmer,Joseph Osmer,96.0,MA
+1030,Samuel Orton,Samuel Norton,96.0,MA
+4951,John Edwards,John Edward,95.65217391304348,MA
+7176,Edward Williams,edward p williams,95.0,MA
+6041,Williams John,john williams,95.0,MA
+7252,John Scott,John Scott Clark,90.0,MA
+2182,Stevens Thomson Mason,Stevens Mason,85.5,MA
+3735,John Coffin Jones,John Jones,85.5,MA
+260,John Jones,John Coffin Jones,85.5,MA
+547,John Marshall,John Marshall,100.0,NH
+589,John Evans,John Evans,100.0,NH
+927,Isaac Mansfield,Isaac Mansfield,100.0,NH
+1978,Benjamin Bellows,Benjamin Bellows,100.0,NH
+1981,Icabod Weeks,Ichabod Weeks,96.0,NH
+186,"John Davenport, Jun.",John Davenport,95.0,NH
+335,Gustavus Richard Brown,Richard Brown,90.0,NH
+0,John Stevens,John Stevens,100.0,NJ
+9830,Thomas Taylor,Thomas Taylor,100.0,NJ
+8794,Samuel Smith,Samuel Smith,100.0,NJ
+8598,John Lloyd,John Lloyd ,100.0,NJ
+8395,William Smith,William Smith,100.0,NJ
+8391,Benjamin Smith,Benjamin Smith,100.0,NJ
+7748,Moses Davis,Moses Davis,100.0,NJ
+7691,John Dunlap,John Dunlap,100.0,NJ
+7469,John Taylor,John Taylor,100.0,NJ
+7440,Samuel Baker,Samuel Baker,100.0,NJ
+14,John Fell,John Fell,100.0,NJ
+7199,John Turner,John Turner,100.0,NJ
+6771,Samuel Reed,Samuel Reed,100.0,NJ
+6479,Joseph Wood,Joseph Wood,100.0,NJ
+6458,Thomas Jones,Thomas Jones,100.0,NJ
+6408,Joseph Jackson,Joseph Jackson,100.0,NJ
+6251,John Hancock,John Hancock,100.0,NJ
+6134,James Edgar,James Edgar,100.0,NJ
+9800,John Hampton,John Hampton,100.0,NJ
+9848,John Cook,John Cook,100.0,NJ
+5943,Thomas Scott,Thomas Scott,100.0,NJ
+10022,Joseph Brown,Joseph Brown,100.0,NJ
+13506,William Abbott,William Abbott,100.0,NJ
+13498,Jonathan Freeman,Jonathan Freeman,100.0,NJ
+12947,John Brown,John Brown,100.0,NJ
+12738,Daniel Smith,Daniel Smith,100.0,NJ
+11797,Jacob Johnston,Jacob Johnston,100.0,NJ
+11583,John Hunt,John Hunt,100.0,NJ
+11565,John Anderson,John Anderson,100.0,NJ
+11516,Henry Baker,Henry Baker,100.0,NJ
+11121,James Anderson,James Anderson,100.0,NJ
+11101,John Thompson,John Thompson,100.0,NJ
+10978,John Easton,John Easton,100.0,NJ
+10817,John Allen,John Allen,100.0,NJ
+10343,James Thomas,James Thomas,100.0,NJ
+5979,James Campbell,James Campbell,100.0,NJ
+13509,William Simpson,William Simpson,100.0,NJ
+1715,William Hart,William Hart,100.0,NJ
+1974,Walter Smith,Walter Smith,100.0,NJ
+5745,John Black,John Black,100.0,NJ
+1233,John Beach,John Beach,100.0,NJ
+2542,Richard Potts,Richard Potts,100.0,NJ
+1153,Samuel Huntington,Samuel Huntington,100.0,NJ
+1048,John Chandler,John Chandler,100.0,NJ
+3662,Robert Andrews,Robert Andrews,100.0,NJ
+3839,William White,William White,100.0,NJ
+3847,John Logan,John Logan,100.0,NJ
+800,Jacob Weed,Jacob Weed,100.0,NJ
+626,James Black,James Black,100.0,NJ
+215,Thomas Reynolds,Thomas Reynolds,100.0,NJ
+109,John Chetwood,John Chetwood,100.0,NJ
+5572,Lewis Morris,Lewis Morris,100.0,NJ
+153,David Crane ,David Crane,100.0,NJ
+178,Benjamin Manning ,Benjamin Manning,100.0,NJ
+179,Elisha Lawrence,Elisha Lawrence,100.0,NJ
+5424,Samuel Jones,Samuel Jones,100.0,NJ
+420,John Jones,John Jones,100.0,NJ
+5335,John Wood,John Wood,100.0,NJ
+4868,John DeWitt,John Dewitt,100.0,NJ
+361,Robert Ogden,Robert Ogden,100.0,NJ
+363,Thomas Anderson,Thomas Anderson,100.0,NJ
+1675,David Smith,David Smith,100.0,NJ
+253,John Jacob Faesch ,John Jacob Faesh,96.96969696969697,NJ
+5852,William Wilson,William Willson,96.55172413793103,NJ
+7274,William Baylies,William Bayles,96.55172413793103,NJ
+7740,William Jones,William Johnes,96.29629629629629,NJ
+11313,Thomas Person,Thomas Pearson,96.29629629629629,NJ
+4256,Thomas Walke,Thomas Walker,96.0,NJ
+12930,Thomas Hines,Thomas Haines,96.0,NJ
+615,Joseph Barker,Joseph Baker,96.0,NJ
+11102,John Thompson,John Thomson,96.0,NJ
+5428,John Schenck,John Schenk,95.65217391304348,NJ
+12458,Isaac Clarke,Isaac Clark,95.65217391304348,NJ
+11802,John Moore,John Moores,95.23809523809524,NJ
+4406,John  Allen,John Allen,95.23809523809524,NJ
+172,John Beatty,John Beaty,95.23809523809524,NJ
+11519,John Eborn,John Heborn,95.23809523809524,NJ
+11984,John G. Scull,John Scull,95.0,NJ
+12042,John A. Campbell,John Campbell,95.0,NJ
+1716,William Hart,William D Hart,95.0,NJ
+10063,James G. Hunt,James Hunt,95.0,NJ
+10325,Miller Nathan,Nathan Miller,95.0,NJ
+10350,Brown John,John Brown,95.0,NJ
+2538,Thomas Sim Lee,Thomas Lee,95.0,NJ
+8396,William Smith,William L Smith,95.0,NJ
+1537,William Williams,William Williamson,94.11764705882354,NJ
+173,John Beatty,Honorable John Beatty,90.0,NJ
+13346,John Taylor Gilman,John Taylor,90.0,NJ
+1977,Gustavus Richard Brown,Richard Brown,90.0,NJ
+5429,John Schenck,John P Schenk,88.0,NJ
+5326,John Haring,John D Harring,88.0,NJ
+8397,William Smith,William Lovett Smith,85.5,NJ
+6292,John Coffin Jones,John Jones,85.5,NJ
+6157,John Andre Hanna,John Hanna,85.5,NJ
+0,John Stevens,John Stevens,100.0,
+11554,Jonathan Smith,Jonathan Smith,100.0,
+9901,Daniel Adams,Daniel Adams,100.0,
+10381,John Davis,John Davis,100.0,
+10557,John Turner,John Turner,100.0,
+10671,James Williams,James Williams,100.0,
+11066,John Taylor,John Taylor,100.0,
+11361,John Dunlap,John Dunlap,100.0,
+11440,David Murray,David Murray,100.0,
+11841,William Johnson,William Johnson,100.0,
+7586,Henry Wisner,Henry Wisner,100.0,
+11942,John Blake,John Blake,100.0,
+12279,William Scott,William Scott,100.0,
+12426,Benjamin Smith,Benjamin Smith,100.0,
+12430,William Smith,William Smith,100.0,
+12683,Isaac Parker,Isaac Parker,100.0,
+13048,James Stewart,James Stewart,100.0,
+13056,Samuel Warren,Samuel Warren,100.0,
+9885,Benjamin Morse,Benjamin Morse,100.0,
+9848,John Brooks,John Brooks,100.0,
+9741,William Thompson,William Thompson,100.0,
+9457,Joseph Wood,Joseph Wood,100.0,
+7691,Jesse Woodhull,Jesse Woodhull,100.0,
+7752,John Smith,John Smith,100.0,
+7856,John Cantine,John Cantine,100.0,
+7882,Ebenezer Clark,Ebenezer Clark,100.0,
+7884,George Clinton,George Clinton,100.0,
+7885,James Clinton,James Clinton,100.0,
+7939,Albert Baker,Albert Baker,100.0,
+7946,David Hopkins,David Hopkins,100.0,
+7956,Philip Van Cortlandt,Philip Van Cortlandt,100.0,
+8668,James Campbell,James Campbell,100.0,
+8772,John Reynolds,John Reynolds,100.0,
+8834,John Bishop,John Bishop,100.0,
+9036,William Brown,William Brown,100.0,
+9313,Joseph Jackson,Joseph Jackson,100.0,
+9415,Thomas Jones,Thomas Jones,100.0,
+13123,Samuel Smith,Samuel Smith,100.0,
+13611,John Simmons,John Simmons,100.0,
+13639,John Palmer,John Palmer,100.0,
+17725,William Martin,William Martin,100.0,
+18613,Richard Lewis,Richard Lewis,100.0,
+18617,James Gallaway,James Gallaway,100.0,
+18657,John Willis,John Willis,100.0,
+19020,James Thompson,James Thompson,100.0,
+19026,William King,William King,100.0,
+19048,Daniel Smith,Daniel Smith,100.0,
+19184,Thomas Johnston,Thomas Johnston,100.0,
+19207,John Blair,John Blair,100.0,
+19384,John Brown,John Brown,100.0,
+19613,Isaac Guion,Isaac Guion,100.0,
+19725,John Langdon,John Langdon,100.0,
+20108,Benjamin Thurston,Benjamin Thurston,100.0,
+20130,William Simpson,William Simpson,100.0,
+20442,William Page,William Page,100.0,
+20505,John Cochran,John Cochran,100.0,
+18606,William Robinson,William Robinson,100.0,
+17596,John Moore,John Moore,100.0,
+14321,John Thomas,John Thomas,100.0,
+17364,John Hunt,John Hunt,100.0,
+14649,John Cook,John Cook,100.0,
+14896,William Hill,William Hill,100.0,
+15111,Benjamin Hicks,Benjamin Hicks,100.0,
+15114,Stephen Smith,Stephen Smith,100.0,
+15119,John Collins,John Collins,100.0,
+15754,John Johnston,John Johnston,100.0,
+15883,John Hall,John Hall,100.0,
+16094,Thomas Brown,Thomas Brown,100.0,
+16177,John Allen,John Allen,100.0,
+16280,Thomas Williams,Thomas Williams,100.0,
+16385,James Moore,James Moore,100.0,
+16630,John Thompson,John Thompson,100.0,
+17324,James Watson,James Watson,100.0,
+17332,John Anderson,John Anderson,100.0,
+17352,James White,James White,100.0,
+7591,John Wood,John Wood,100.0,
+20546,William Hunt,William Hunt,100.0,
+7552,John Haring,John Haring,100.0,
+4924,Thomas Smith,Thomas Smith,100.0,
+987,William Stevens,William Stevens,100.0,
+6785,Peter Vrooman,Peter Vrooman,100.0,
+6783,Anthony Ten Eyck,Anthony Ten Eyck,100.0,
+1441,John Watson,John Watson,100.0,
+1596,John Chandler,John Chandler,100.0,
+2638,Matthew Patterson,Matthew Patterson,100.0,
+1700,John Chester,John Chester,100.0,
+6225,John Williams,John Williams,100.0,
+6196,Thomas Lewis,Thomas Lewis,100.0,
+1752,Joseph Hopkins,Joseph Hopkins,100.0,
+5615,John Miller,John Miller,100.0,
+1894,John Beach,John Beach,100.0,
+6894,Peter Van Ness,Peter Van Ness,100.0,
+1990,Hezekiah Rogers,Hezekiah Rogers,100.0,
+4628,Joseph Jones,Joseph Jones,100.0,
+4503,Robert Alexander,Robert Alexander,100.0,
+4143,John Pride,John Pride,100.0,
+3691,Thomas Johnson,Thomas Johnson,100.0,
+3365,William Richardson,William Richardson,100.0,
+3210,John Gale,John Gale,100.0,
+2272,William Williams,William Williams,100.0,
+2427,David Smith,David Smith,100.0,
+3181,John Stewart,John Stewart,100.0,
+2650,Elihu Marvin,Elihu Marvin,100.0,
+6794,John Bay,John Bay,100.0,
+6529,James Montgomery,James Montgomery,100.0,
+790,Richard Smith,Richard Smith,100.0,
+7011,Peter Lefferts,Peter Lefferts,100.0,
+535,John Jones,John Jones,100.0,
+633,William Moore,William Moore,100.0,
+7372,John Jay,John Jay,100.0,
+7257,James Duane,James Duane,100.0,
+640,William Hall,William Hall,100.0,
+7145,John Winn,John Winn,100.0,
+7142,Volkert Veeder,Volkert Veeder,100.0,
+7136,William Harper,William Harper,100.0,
+7036,John Frey,John Frey,100.0,
+2604,Daniel Hall,Daniel Hall,100.0,
+7000,Melancton Smith,Melancton Smith,100.0,
+7006,Jacobus Swartwout,Jacobus Swartwout,100.0,
+842,Edward White,Edward White,100.0,
+6999,Zephaniah Platt,Zephaniah Platt,100.0,
+7472,Robert R. Livingston,Robert R Livingston,97.43589743589743,
+7007,Jacobus Swartwout,Jacobus Swartout,96.96969696969697,
+17772,William Johnston,William Johnson,96.7741935483871,
+15117,William Robison,William Robinson,96.7741935483871,
+9742,William Thompson,William Thomson,96.7741935483871,
+8641,Benjamin Elliott,Benjamin Elliot,96.7741935483871,
+7540,Isaac Roosevelt,Isaac Rosevelt,96.55172413793103,
+3692,Thomas Johnson,Thomas Johnston,96.55172413793103,
+500,Thomas  Collins,Thomas Collins,96.55172413793103,
+9744,Benjamin Browne,Benjamin Brown,96.55172413793103,
+8482,William Wilson,William Willson,96.55172413793103,
+19185,Thomas Johnston,Thomas Johnson,96.55172413793103,
+2653,Richard Barnes,Richard Barns,96.29629629629629,
+5262,James Johnson,James Johnston,96.29629629629629,
+19378,William Hayes,William Haynes,96.29629629629629,
+9293,Thomas Russel,Thomas Russell,96.29629629629629,
+18798,George Houser,George House,96.0,
+15755,John Johnston,John Johnson,96.0,
+6786,Peter Vrooman,Peter Vroman,96.0,
+8015,James Wilson,James Willson,96.0,
+2436,Samuel Orton,Samuel Horton,96.0,
+2239,Simeon Smith,Simon Smith,95.65217391304348,
+5998,John Wilson,John Willson,95.65217391304348,
+18495,John Skinner,John Kinner,95.65217391304348,
+15038,John Linton,John Clinton,95.65217391304348,
+6386,John  Allen,John Allen,95.23809523809524,
+16952,John Baker,John Banker,95.23809523809524,
+211,John Beatty,John Beaty,95.23809523809524,
+2136,William Samuel Johnson,William Johnson,95.0,
+2036,"John Davenport, Jun.",John Davenport,95.0,
+17578,John H. Bryan,John Bryan,95.0,
+2273,William Williams,William Mc Williams,95.0,
+19722,William N. Hill,William Hill,95.0,
+1566,Joseph Moss White,Joseph White,95.0,
+16487,Thomas P. Williams,Thomas Williams,95.0,
+19622,William Richardson Davie,William Richardson,95.0,
+18006,John A. Campbell,John Campbell,95.0,
+14926,James G. Hunt,James Hunt,95.0,
+16179,John Allen,John Van allen,95.0,
+7473,Robert R. Livingston,Robert Livingston,95.0,
+7753,John Smith,John L Smith,95.0,
+7245,Christopher P.  Yates,Christopher Yates,95.0,
+7888,Cornelius C. Schoonmaker,Cornelius Schoonmaker,95.0,
+7143,Volkert Veeder,Volkert S Veeder,95.0,
+6956,John DeWitt,John L Dewitt,95.0,
+6787,Peter Vrooman,Peter C Vrooman,95.0,
+6680,"John Lansing, Jun. ",John Lansing,95.0,
+11238,John K. Smith,John Smith,95.0,
+11250,John  Fox,John Fox,95.0,
+6226,John Williams,John Mc Williams,95.0,
+5114,George Jackson,George H Jackson,95.0,
+16178,John Allen,John Van Allen,95.0,
+7697,John Schenck,John H Schenck,95.0,
+15475,Miller Nathan,Nathan Miller,95.0,
+15619,King William,William King,95.0,
+15650,Williams John,John Williams,95.0,
+3696,Thomas Sim Lee,Thomas Lee,95.0,
+15161,Clark John I,John Clark,95.0,
+15228,Potter Samuel J,Samuel Potter,95.0,
+15649,Williams John,John Mc Williams,95.0,
+15336,Reynolds Joseph,Joseph Reynolds,95.0,
+15377,Davis John,John Davis,95.0,
+15516,Brown John,John Brown,95.0,
+7889,Cornelius C. Schoonmaker,Cornelius Shoonmaker,90.9090909090909,
+2814,Gustavus Richard Brown,Richard Brown,90.0,
+19973,John Taylor Gilman,John Taylor,90.0,
+13255,John Lewis Bourquin,John Lewis,90.0,
+14119,John Lewis Gervias,John Lewis,90.0,
+6560,"John Blair, Jun.",John Blair,90.0,
+14120,John Lewis Gervias,John lewis,90.0,
+13256,John Lewis Bourquin,John lewis,90.0,
+2274,William Williams,William Wills,89.65517241379311,
+6788,Peter Vrooman,Peter I Vroman,88.88888888888889,
+5996,Robert Williams,William Roberts,88.66666666666666,
+18604,Edward Williams,William Edwards,88.66666666666666,
+1754,John Welton,John Welon  Bouch,85.71428571428572,
+9181,John Coffin Jones,John Jones,85.5,
+3518,William Elliot,William Elliot,100.0,PA
+3557,Hugh Wilson,Hugh Wilson,100.0,PA
+3974,William Kennedy,William Kennedy,100.0,PA
+4264,John Hall,John Hall,100.0,PA
+4380,John Wallace,John Wallace,100.0,PA
+4424,James Gillespie,James Gillespie,100.0,PA
+4910,Edward Ward,Edward Ward,100.0,PA
+5105,William Houston,William Houston,100.0,PA
+5124,Henry Lane,Henry Lane,100.0,PA
+3371,Daniel Cannon,Daniel Cannon,100.0,PA
+1557,John Logan,John Logan,100.0,PA
+1727,William McKee,William Mckee,100.0,PA
+2570,William Heath,William Heath,100.0,PA
+4400,Charles Johnson,Charles Johnston,96.7741935483871,PA
+1209,William Watkins,William Atkins,96.55172413793103,PA
+3519,William Elliot,William Elliott,96.55172413793103,PA
+1612,Thomas Gaskins,Thomas Askins,96.29629629629629,PA
+257,John Elliot,John Elliott,95.65217391304348,PA
+2510,John Coffin Jones,John Jones,85.5,PA
+4369,James Moore,James Farncis Moore,85.5,PA
+10498,William Johnson,William Johnson,100.0,PA
+10919,John Glaze,John Glaze,100.0,PA
+11350,John Lloyd,John Lloyd,100.0,PA
+7898,John Whitehill,John Whitehill,100.0,PA
+11839,John McPherson,John McPherson,100.0,PA
+12302,John Chesnut,John Chesnut,100.0,PA
+13046,Thomas Taylor,Thomas Taylor,100.0,PA
+9765,Abraham Smith,Abraham Smith,100.0,PA
+9560,David Brown,David Brown,100.0,PA
+8029,Robert Whitehill,Robert Whitehill,100.0,PA
+8034,Nicholas Lutz,Nicholas Lutz,100.0,PA
+8055,John Bishop,John Bishop,100.0,PA
+8071,Joseph Heister,Joseph Heister,100.0,PA
+8075,John Baird,John Baird,100.0,PA
+8137,William Todd,William Todd,100.0,PA
+8568,Richard Manning,Richard Manning,100.0,PA
+8586,Joseph Wood,Joseph Wood,100.0,PA
+8871,John Brooks,John Brooks,100.0,PA
+8900,Daniel Adams,Daniel Adams,100.0,PA
+13059,Jacob Brown,Jacob Brown,100.0,PA
+13072,John Cook,John Cook,100.0,PA
+16379,Samuel Simpson,Samuel Simpson,100.0,PA
+16391,John Stokes,John Stokes,100.0,PA
+16431,Richard Lewis,Richard Lewis,100.0,PA
+16687,William Nash,William Nash,100.0,PA
+16774,William King,William King,100.0,PA
+16799,David Wilson,David Wilson,100.0,PA
+16931,Thomas Stewart,Thomas Stewart,100.0,PA
+17853,Samuel Young,Samuel Young,100.0,PA
+16218,John Swan,John Swan,100.0,PA
+16065,George Mitchell,George Mitchell,100.0,PA
+13285,James Knox,James Knox,100.0,PA
+13320,William Hill,William Hill,100.0,PA
+13343,Samuel Watson,Samuel Watson,100.0,PA
+14325,Thomas Owen,Thomas Owen,100.0,PA
+14397,John Carson,John Carson,100.0,PA
+14479,John Hay,John Hay,100.0,PA
+15263,Henry Baker,Henry Baker,100.0,PA
+15356,James White,James White,100.0,PA
+15359,John Hunt,John Hunt,100.0,PA
+18127,Timothy Taylor,Timothy Taylor,100.0,PA
+7105,Samuel Jones,Samuel Jones,100.0,PA
+2782,Samuel Evans,Samuel Evans,100.0,PA
+603,William Hall,William Hall,100.0,PA
+6450,Peter Lefferts,Peter Lefferts,100.0,PA
+739,Thomas Evans,Thomas Evans,100.0,PA
+4230,James Taylor,James Taylor,100.0,PA
+2582,Henry Hollingsworth,Henry Hollingsworth,100.0,PA
+5756,Andrew Moore,Andrew Moore,100.0,PA
+1393,James Potter,James Potter,100.0,PA
+2184,William Hart,William Hart,100.0,PA
+5176,William White,William White,100.0,PA
+4859,Thomas Cooper,Thomas Cooper,100.0,PA
+2010,James Bradford,James Bradford,100.0,PA
+4364,French Strother,French Strother,100.0,PA
+3781,John Love,John Love,100.0,PA
+7543,John Hannum,John Hannum,100.0,PA
+7874,Benjamin Elliott,Benjamin Elliott,100.0,PA
+235,William Crawford ,William Crawford,100.0,PA
+7871,James Morris,James Morris,100.0,PA
+7854,John Richards,John Richards,100.0,PA
+7728,David Deshler,David Deshler,100.0,PA
+7589,John Black,John Black,100.0,PA
+7586,David Grier,David Grier,100.0,PA
+7578,Henry Slagle,Henry Slagle,100.0,PA
+2150,David Smith,David Smith,100.0,PA
+7524,Abraham Stout,Abraham Stout,100.0,PA
+7523,Thomas Yardley,Thomas Yardley,100.0,PA
+7266,Lewis Morris,Lewis Morris,100.0,PA
+3566,Richard Thomas,Richard Thomas,100.0,PA
+7481,George Gray,George Gray,100.0,PA
+7500,Enoch Edwards,Enoch Edwards,100.0,PA
+3177,William Richardson,William Richardson,100.0,PA
+7501,Henry Wynkoop,Henry Wynkoop,100.0,PA
+15697,William Johnston,William Johnson,96.7741935483871,PA
+6070,Samuel Edmison,Samuel Edmiston,96.55172413793103,PA
+15675,William Martin,William Martain,96.55172413793103,PA
+3988,William Cabell,William Cambell,96.55172413793103,PA
+7895,James Campbell,James Cambell,96.29629629629629,PA
+16770,James Thompson,James Thomson,96.29629629629629,PA
+10213,Jonathan Smith,Jonathn Smith,96.29629629629629,PA
+1715,William Heron,William Herron,96.29629629629629,PA
+16411,William Bailey ,Willam Bailey,96.29629629629629,PA
+9799,Samuel Baker,Samuel Backer,96.0,PA
+16800,David Wilson,David Willson,96.0,PA
+2156,Samuel Orton,Samuel Morton,96.0,PA
+5801,John Williams,John William,96.0,PA
+5795,Jacob Rinker,Jacob Brinker,96.0,PA
+753,Allen McLane,Allen McClane,96.0,PA
+15264,Henry Baker,Henry Barker,95.65217391304348,PA
+197,John Neilson,John Nelson,95.65217391304348,PA
+11694,Hugh Wilson,Hugh Willson,95.65217391304348,PA
+18047,John Cragin,John Crain,95.23809523809524,PA
+7837,John Nevill,John Neill,95.23809523809524,PA
+8872,John Brooks,John Brook,95.23809523809524,PA
+217,John Beatty,John Beaty,95.23809523809524,PA
+16453,John Willis,John Wills,95.23809523809524,PA
+828,"Gunning Bedford, Sr.",Gunning Bedford,95.0,PA
+854,"Gunning Bedford, Jr.",Gunning Bedford,95.0,PA
+10214,Jonathan Smith,Jonathan B Smith,95.0,PA
+17286,William Richardson Davie,William Richardson,95.0,PA
+17387,William N. Hill,William Hill,95.0,PA
+13690,Bradford William,William Bradford,95.0,PA
+14394,William E. Erwin,William Erwin,95.0,PA
+13875,King William,William King,95.0,PA
+14326,Thomas Owen,Owen Thomas,95.0,PA
+3499,Thomas Sim Lee,Thomas Lee,95.0,PA
+13681,Nichols William,Nicholas Williams,93.75,PA
+8074,William  Findley,William Finley,93.33333333333333,PA
+1206,Thomas Daniell,Daniel Thomas,91.48148148148147,PA
+13903,Williams John,John William,91.19999999999999,PA
+7872,James Morris,James Morris Jones,90.0,PA
+5964,John Howell Briggs,John Howel,90.0,PA
+15464,John Nesbitt (Nisbet),John Nesbitt,90.0,PA
+4724,John Carter Littlepage,John Carter,90.0,PA
+14771,Robert Edwards,Edward Roberts,88.21428571428571,PA
+2009,William Williams,William Will,85.71428571428571,PA
+15883,John A. Campbell,John Cambell,85.71428571428571,PA
+2771,James Gordon Heron,James Herron,85.5,PA
+2828,Michael Jenifer Stone,Michael Stone,85.5,PA
+11016,William Smith,William Hooker Smith,85.5,PA
+123,William Hall,William Hall,100.0,RI
+3387,Stephen Smith,Stephen Smith,100.0,RI
+2400,William Shaw,William Shaw,100.0,RI
+2451,James Williams,James Williams,100.0,RI
+2605,William Jones,William Jones,100.0,RI
+2624,Elisha Carpenter,Elisha Carpenter,100.0,RI
+2980,Samuel Warren,Samuel Warren,100.0,RI
+156,Joseph Barker,Joseph Barker,100.0,RI
+2012,William Brown,William Brown,100.0,RI
+3615,Thomas Brown,Thomas Brown ,100.0,RI
+3632,John Allen,John Allen,100.0,RI
+3691,John Easton,John Easton,100.0,RI
+3894,John Hunt,John Hunt,100.0,RI
+4212,Joseph Martin,Joseph Martin,100.0,RI
+4272,John Brown,John Brown,100.0,RI
+2391,John Davis,John Davis,100.0,RI
+4496,Samuel Young,Samuel Young,100.0,RI
+580,Samuel Davenport,Samuel Davenport,100.0,RI
+588,Ephraim Carpenter,Ephraim Carpenter,100.0,RI
+1451,John Williams,John Williams,100.0,RI
+754,William Richardson,William Richardson,100.0,RI
+200,James Maxwell,James Maxwell,100.0,RI
+1340,John Evans,John Evans,100.0,RI
+1335,Thomas Allen,Thomas Allen,100.0,RI
+1304,William White,William White,100.0,RI
+788,James Martin,James Martin,100.0,RI
+544,Ebenezer White,Ebenezer White,100.0,RI
+2090,Thomas Russel,Thomas Russell,96.29629629629629,RI
+1523,John  Allen,John Allen,95.23809523809524,RI
+3475,Manchester Isaac,Isaac Manchester,95.0,RI
+4056,John A. Campbell,John Campbell,95.0,RI
+4298,William Richardson Davie,William Richardson,95.0,RI
+3517,Williams John,John Williams,95.0,RI
+3515,Allen Samuel,Samuel Allen,95.0,RI
+3513,Allen Thomas,Thomas Allen,95.0,RI
+3511,Brown Elisha,Elisha Brown,95.0,RI
+3500,Brown John,John Brown,95.0,RI
+3491,Dexter John S,John Dexter,95.0,RI
+3490,Pearce Samuel,Samuel Pearce,95.0,RI
+3482,Davis John,John Davis,95.0,RI
+3477,Ladd William,William Ladd,95.0,RI
+3464,Greene Job,Job Greene,95.0,RI
+3472,Bradford William,William Bradford,95.0,RI
+3415,Slocum Giles,Giles Slocum,95.0,RI
+1445,Thomas Lewis,Lewis Thomas,95.0,RI
+3402,Clarke Peleg,Peleg Clarke,95.0,RI
+3404,Sears George,George Sears,95.0,RI
+3407,Bourne Benjamin,Benjamin Bourne,95.0,RI
+3469,Barker Joshua,Joshua Barker,95.0,RI
+3408,Barton William,William Barton,95.0,RI
+3416,Barker Peter,Peter Barker,95.0,RI
+3420,Arnold Benjamin,Benjamin Arnold,95.0,RI
+3427,Sands Ray,Ray Sands,95.0,RI
+3466,Reynolds Joseph,Joseph Reynolds,95.0,RI
+3400,Champlin George,George Champlain,91.93548387096774,RI
+3428,Congdon William,Willam Congdon,91.72413793103448,RI
+3414,Durfree Job,Job Durfee,90.47619047619048,RI
+3338,John Cook,John Wanton Cook,85.5,RI
+3489,Miller Nathan,Nathan Horton Miller,85.5,RI
+2546,John Taylor,John Spencer Taylor,85.5,RI
+3405,Sears George,George Hall  Sears,85.5,RI
