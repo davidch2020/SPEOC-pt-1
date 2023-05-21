@@ -30,6 +30,24 @@ All files from DB
 
 ## cleaning
 
+1. `clean_raw.ipynb`  - aggregates towns + occupations, then assigns counties to towns and organizes geography
+   1. **things to do**
+      1. Add comments
+      2. Find a way to make changing/cleaning final_cw_all more clean (right now it's a mess)
+      3. Check that `geography_cw.csv` and `town_occ_agg.csv` are correct
+      4. Convert notebook into script
+
+**next steps**
+
+1. clean occupations (AvgDeptPerOccupation.ipynb)
+2. clean names 
+
+
+
+
+
+
+
 data_cleaning_cl.ipynb
 
 helper function section, raw data import section, cleaning data section

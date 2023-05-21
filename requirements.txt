@@ -1,6 +1,4 @@
-dash
-dash-html-components
-dash-core-components
-dash-table
-pandas
-jupyter-dash
+dash~=2.9.2
+pandas~=1.4.2
+numpy~=1.22.4
+rapidfuzz~=1.9.1
