@@ -1,5 +1,37 @@
 ## data_raw
 
+## Transforming Post-1790 CD Debt Data
+
+### Objective
+
+Turn raw post-1790 continental debt security data into an organized table indexed by individuals, 
+
+### Inputs
+
+Raw
+
+
+
+[statepop.csv](data_raw/pre1790/statepop.csv)
+
+various helper files
+
+### Ouputs 
+
+helper output files that need to be checked
+
+raw dataset
+
+### Process
+
+
+
+
+
+
+
+
+
 ### Census Data
 
 [statepop.csv](data_raw/census_data/statepop.csv): https://web.viu.ca/davies/H320/population.colonies.htm
