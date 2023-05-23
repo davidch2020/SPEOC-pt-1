@@ -28,7 +28,7 @@ Turn raw post-1790 continental debt (CD) security data into an organized table i
 
 1. Preliminary Data Checkpoints
    1. 
-   2. [aggregated_CD_post1790_names.csv](cleaning_CD/data_clean/aggregated_CD_post1790_names.csv): [aggregated_CD_post1790.csv](cleaning_CD/data_clean/aggregated_CD_post1790.csv) with cleaned names
+   2. [aggregated_CD_post1790_names.csv](data_clean/aggregated_CD_post1790_names.csv): [aggregated_CD_post1790.csv](data_clean/aggregated_CD_post1790.csv) with cleaned names
    3. [name_list.csv](cleaning_CD/clean_tools/name_list.csv): List of all identities in our raw debt data with cleaned names and geographies
       1. Identities have not been aggregated (two slightly mispelled names representing the same identity are denoted as separate identities)
    4. Scraping
@@ -169,8 +169,7 @@ print(df_comp.loc[[0,1,38]].to_markdown())
 
 **Inputs**:
 
-- [aggregated_CD_post1790.csv](cleaning_CD/data_clean/aggregated_CD_post1790.csv): continental debt files with final geographical classification
-- [company_names_fix.csv](cleaning_CD/clean_tools/company_names_fix.csv): database of name changes for data cleaning purposes
+- [name_list.csv](cleaning_CD/clean_tools/name_list.csv): List of all identities in our raw debt data with cleaned names and geographies
 
 **Outputs (for future use)**: 
 
