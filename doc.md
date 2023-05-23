@@ -4,25 +4,104 @@
 
 ### Objective
 
-Turn raw post-1790 continental debt security data into an organized table indexed by individuals, 
+Turn raw post-1790 continental debt (CD) security data into an organized table indexed by individuals, 
 
 ### Inputs
 
-Raw
+1. Raw Data
 
+   1. [Post-1790 Continental Debt Files](data_raw/pre1790): csv files with suffix CD
+   2. Examples
+      1. Connecticut: [CT_post1790_CD_ledger.xlsx](data_raw/post1790/CT_post1790_CD_ledger.xlsx) 
+      2. Georgia: [T694_GA_Loan_Office_CD.xlsx](data_raw/post1790/GA/T694_GA_Loan_Office_CD.xlsx)
 
+2. Various cleaning files
 
-[statepop.csv](data_raw/pre1790/statepop.csv)
+   1. 
+   2. [zip_code_database.xls](data_raw/census_data/zip_code_database.xls): geograhical database matching towns to counties
+   3. 
 
-various helper files
+   4. [company_names_fix.csv](cleaning_CD/clean_tools/company_names_fix.csv): database of name changes for data cleaning purposes
+   5. [name_agg.csv](cleaning_CD/clean_tools/name_agg.csv): database of names spelled differently that correspond to the same identity
+   6. [group_name_state.csv](cleaning_CD/clean_tools/group_name_state.csv): database of names with locations in multiple states that correspond to the same identity
+   7. [occ_correction.csv](cleaning_CD/clean_tools/occ_correction.csv): database of occupation name changes for data cleaning purposes
 
 ### Ouputs 
 
-helper output files that need to be checked
+1. Preliminary Data Checkpoints
+   1. 
+   2. [aggregated_CD_post1790_names.csv](cleaning_CD/data_clean/aggregated_CD_post1790_names.csv): [aggregated_CD_post1790.csv](cleaning_CD/data_clean/aggregated_CD_post1790.csv) with cleaned names
+   3. [name_list.csv](cleaning_CD/clean_tools/name_list.csv): List of all identities in our raw debt data with cleaned names and geographies
+      1. Identities have not been aggregated (two slightly mispelled names representing the same identity are denoted as separate identities)
+   4. Scraping
+      1. [scrape_ids_prelims.csv](cleaning_CD/scrape_tools/scrape_ids_prelim.csv): preliminary dataset of matched identities from Ancestry.com census scraper 
+      2. [scrape_results_prelim.csv](cleaning_CD/clean_tools/scrape_results_prelim.csv): preliminary dataset of data for matched identities from Ancestry.com census scraper 
+      3. [scrape_ids.csv](cleaning_CD/scrape_tools/scrape_ids.csv): cleaned preliminary dataset of matched identities from Ancestry.com census scraper 
+      4. [scrape_results.csv](cleaning_CD/clean_tools/scrape_results.csv): cleaned preliminary dataset of data for matched identities from Ancestry.com census scraper 
+2. Final Data
+   1. [final_data_CD.csv](cleaning_CD/data_clean/final_data_CD.csv): final table, indexed by individual, of aggregate CD debt holdings
+   2. [match_data_CD.csv](cleaning_CD/data_clean/match_data.csv): database of ancestry.com data for final_data_CD
+3. Cleaning Logs
+   1. [final_cw_all.csv](cleaning_CD/data_clean/check/geography_cw.csv): crosswalk mapping raw data geography to cleaned geography
+   2. [change_df_CD](cleaning_CD/data_clean/check/town_occ_agg_check.csv): crosswalk mapping aggregation of multiple towns/occupations (raw data) to one town/occupation ([aggregated_CD_post1790.csv](cleaning_CD/data_clean/aggregated_CD_post1790.csv))
+4. For the Future
+   1. [company_research.csv](cleaning_CD/data_clean/check/company_research.csv): list of companies we want to map to owners/identities 
 
-raw dataset
+
+
 
 ### Process
+
+#### 1. Adding Each Individual's Geography 
+
+**Code**: [clean_1_geo.ipynb](cleaning_CD/clean_tools/clean_1_geo.ipynb) combines the raw CD debt data from all states into one dataset and processes the given geography colum
+
+**Inputs**:
+
+-  [cd_raw.csv](cleaning_CD/clean_tools/cd_raw.csv): arguments for importing state CD files
+- [zip_code_database.xls](data_raw/census_data/zip_code_database.xls): geograhical database matching towns to counties
+  - Downloaded from https://www.unitedstateszipcodes.org/zip_code_database.xls?download_auth=7b5b7133a55eef6807fc6da56f62bf27 
+- [town_fix.csv](cleaning_CD/clean_tools/town_fix.csv): database of changes to the gegographical classification
+
+**Outputs (for future use)**: 
+
+- [aggregated_CD_post1790.csv](cleaning_CD/data_clean/aggregated_CD_post1790.csv): continental debt files with final geographical classification
+
+**Outputs (to check validity of cleaning process)**: 
+
+- [change_df_CD](cleaning_CD/data_clean/check/town_occ_agg_check.csv): crosswalk mapping aggregation of multiple towns/occupations (raw data) to one town/occupation ([aggregated_CD_post1790.csv](cleaning_CD/data_clean/aggregated_CD_post1790.csv))
+
+1. Using the arguments in [cd_raw.csv](cleaning_CD/clean_tools/cd_raw.csv), the raw CD data for each state is imported and aggregated into one table
+2. Our raw data (except for NY) contains a town and state column denoting the place of residence for each debtholder
+   1. When an entry for the state column is missing, we impute the state loan office that the debtholder redeemed debt from
+   2. When there are multiple town or occupation values for one debtholder entry, I select the value with longest string length (since it likely contains the most information). The results of this selection are in [change_df_CD](cleaning_CD/data_clean/check/town_occ_agg_check.csv). 
+3. The town column in our raw data is extremely messy. Here are some of its problems
+   1. The same location can be spelled multiple ways
+      1. GA_24 and GA_33 have the values `Charleston South Carolina` and `Charleston` in their respective town column values
+   2. The listed "town" might be a town, state or column
+      1. PA_115 and PA_655 have the values `Cumberland` and `Cumb County Pennsylvania` in their respective town column values
+4. Using fuzzy string matching with [zip_code_database.xls](data_raw/census_data/zip_code_database.xls), I identify whether a "town" value is a town, county or state, and reformat it
+   1. For towns, I also find the corresponding county name
+5. There are cases where we cannot use fuzzy string matching to clean our geographies (or less commonly, [zip_code_database.xls](data_raw/census_data/zip_code_database.xls) makes a mistake). In this case, I use [town_fix.csv](cleaning_CD/clean_tools/town_fix.csv) to make the required changes
+6. Our final results are in [aggregated_CD_post1790.csv](cleaning_CD/data_clean/aggregated_CD_post1790.csv) 
+
+`town`, `occupation` and `state`  are given columns from the raw data but post step 2
+
+`new_town`, `new_county`, `new_state`, `country`, `name_type ` are columns created post-cleaning and represent the location of an individual
+
+|      | town                      | state | occupation | new_town      | county          | new_state | country | name_type |
+| ---: | :------------------------ | :---- | :--------- | :------------ | :-------------- | :-------- | :------ | :-------- |
+|    0 | Hartford                  | CT    | Merchant   | Hartford      | Hartford County | CT        | US      | town      |
+|    2 | Rhode Island              | RI    | Farmer     | nan           | nan             | RI        | US      | state     |
+|  390 | City of New York          | NY    | Merchant   | New York City | New York County | NY        | US      | town      |
+| 2001 | Bucks County Pennsylvania | PA    | nan        | nan           | Bucks County    | PA        | US      | county    |
+
+```python
+# generate above - run at end of notebook
+print(CD_all[['town', 'state', 'occupation', 'new_town', 'county', 'new_state', 'country', 'name_type']].loc[[0,2,390, 2001]].to_markdown())
+```
+
+#### 2. Cleaning Names
 
 
 

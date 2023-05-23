@@ -6,7 +6,7 @@ Much of the work done by this summer's cohort focused on analyzing the post-1790
 Within this subset, we were most interested in the Continental Debt certificates, rather than the Assumed State Debt Certificates.
 
 Chronologically, the S2022 timeline is as follows. If you just care about our results, see bullet point **8**.
-1. First, [`data_cleaning_cl.ipynb`](cleaning/data_cleaning_cl.ipynb) cleans the post-1790 debt certificates, producing
+1. First, [`data_cleaning_cl.ipynb`](cleaning_CD/data_cleaning_cl.ipynb) cleans the post-1790 debt certificates, producing
    1. [`aggregated_CD.csv`](data_raw/post1790/Aggregated/raw/aggregated_CD.csv), an aggregated version of all post-1790 debt certificates that has the county column added
    2. [`county_cw.csv`](data_raw/AssetGeography/county_cw.csv), a preliminary geographical crosswalk
       1. Geographical labels refers to town, county, state and country names
