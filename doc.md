@@ -13,7 +13,7 @@ Turn raw post-1790 continental debt (CD) security data into an organized table i
 
 **Code**: 
 
-- [clean_1_geo.ipynb](cleaning_CD/clean_tools/clean_1_geo.ipynb) combines the raw CD debt data from all states into one dataset and processes the given geography colum
+- [clean_1_geo.ipynb](cleaning_CD/clean_1_geo.ipynb) combines the raw CD debt data from all states into one dataset and processes the given geography colum
 
 **Inputs**:
 
@@ -73,7 +73,7 @@ print(CD_all[['town', 'state', 'occupation', 'new_town', 'county', 'new_state', 
 
 **Code**: 
 
-- [clean_2_names.ipynb](cleaning_CD/clean_tools/clean_2_names.ipynb) cleans all the names in the CD debt file
+- [clean_2_names.ipynb](cleaning_CD/clean_2_names.ipynb) cleans all the names in the CD debt file
 
 **Inputs**:
 
@@ -185,7 +185,7 @@ print(pd.read_csv('scrape_tools/scrape_results.csv', index_col = 0).loc[[0, 8, 9
 
 **Code**: 
 
-- [clean_4_final.ipynb](cleaning_CD/clean_tools/clean_4_final.ipynb) creates our final dataset
+- [clean_4_final.ipynb](cleaning_CD/clean_4_final.ipynb) creates our final dataset
 
 **Inputs**:
 
@@ -299,7 +299,7 @@ print(pd.read_csv('scrape_tools/scrape_results.csv', index_col = 0).loc[[0, 8, 9
          | 1673 | Gassaway Watkins \| Gassway Watkins                    | MD         |              403 | Gassaway Watkins \| Gassway Watkins                    | Gassway  | Watkins | Anne Arundel County | MD        | US      | county    |        1126 | Complete Match | Gassaway Watkins | Annapolis  | Anne Arundel County | MD          | US            | town            |              1126 | Complete Match     |
          | 1877 | Gassaway Watkins \| Gassway Watkins \| William Marbury | MD         |              589 | Gassaway Watkins \| Gassway Watkins \| William Marbury | Gassaway | Watkins | Anne Arundel County | MD        | US      | town      |        1126 | Complete Match | Gassaway Watkins | Annapolis  | Anne Arundel County | MD          | US            | town            |              1126 | Complete Match     |
          | 1878 | Gassaway Watkins \| Gassway Watkins \| William Marbury | MD         |              589 | Gassaway Watkins \| Gassway Watkins \| William Marbury | Gassway  | Watkins | Anne Arundel County | MD        | US      | town      |        1126 | Complete Match | Gassaway Watkins | Annapolis  | Anne Arundel County | MD          | US            | town            |              1126 | Complete Match     |
-         | 1880 | Gassaway Watkins \| Tristiam Bowdle \| Tristram Bowdle | MD         |              590 | Gassaway Watkins \|Tristiam Bowdle \| Tristram Bowdle  | Gassaway | Watkins | Anne Arundel County | MD        | US      | county    |        1126 | Complete Match | Gassaway Watkins | Annapolis  | Anne Arundel County | MD          | US            | town            |              1126 | Complete Match     |
+         | 1880 | Gassaway Watkins \| Tristiam Bowdle \| Tristram Bowdle | MD         |              590 | Gassaway Watkins \| Tristiam Bowdle \| Tristram Bowdle | Gassaway | Watkins | Anne Arundel County | MD        | US      | county    |        1126 | Complete Match | Gassaway Watkins | Annapolis  | Anne Arundel County | MD          | US            | town            |              1126 | Complete Match     |
 
       2. ```python
          # code
@@ -633,7 +633,7 @@ print(pd.read_csv('scrape_tools/scrape_results.csv', index_col = 0).loc[[0, 8, 9
        print(occ_data[occ_data['Corrected'].apply(lambda x: x in ['Merchant'])].head(9)[['Original', 'Corrected']].to_markdown())
        ```
 
-18. In **Reset Match Data Index**, we reset the index of our match data by removing entries that are no longer in the data, and then reindexing everything so that our match values go from 1... number of match values. This turns out to be a bit more complicated than just using the `.reset_index()` command becuase our two datasets are relational, but the code is essentially the same as in [clean_3_scrape.ipynb](cleaning_CD/clean_tools/clean_3_scrape.ipynb) 
+18. In **Reset Match Data Index**, we reset the index of our match data by removing entries that are no longer in the data, and then reindexing everything so that our match values go from 1... number of match values. This turns out to be a bit more complicated than just using the `.reset_index()` command becuase our two datasets are relational, but the code is essentially the same as in [clean_3_scrape.ipynb](cleaning_CD/clean_3_scrape.ipynb) 
 
 19. In **Aggregate Debt Totals**, we want to calculate an individual's total holdings of 6%, 6% deferred and 3% stock. We calculate two measures. The first measure is the sum of all of an individual's holdings. However, this measure does not take into account that multiple individuals can hold the same debt, so our second measure is the sum of an individual's holdings, where debt held by multiple people is divided into equal shares. For example, if Bob and George both hold \$200 worth of debt together, then their second measure would have value \$100
 
