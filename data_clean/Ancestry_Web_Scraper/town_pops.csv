@@ -1,0 +1,404 @@
+,city,county,state,country,population
+0,Bristol,Bristol,Rhode Island,USA ,253
+1,Hartford,Hartford,Connecticut,USA ,666
+2,North Scituate,Providence,Rhode Island,USA ,NR
+3,New Haven,New Haven,Connecticut,USA ,919
+4,Portsmouth,Rockingham,New Hampshire,USA ,893
+5,Killingworth,Middlesex,Connecticut,USA ,390
+6,Charleston,Charleston,South Carolina,USA ,NR
+7,Providence,Providence,Rhode Island,USA ,1131
+8,East Hartford,Hartford,Connecticut,USA ,473
+9,Philadelphia,Philadelphia,Pennsylvania,USA ,NR
+10,New Milford,Litchfield,Connecticut,USA ,ER
+11,Woodstock,Windham,Connecticut,USA ,40970
+12,Sharon,Litchfield,Connecticut,USA ,NR
+13,Durham,Middlesex,Connecticut,USA ,NR
+14,Derby,New Haven,Connecticut,USA ,562
+15,Canterbury,Rockingham,New Hampshire,USA ,NR
+16,Windsor,Hartford,Connecticut,USA ,456
+17,Colchester,New London,Connecticut,USA ,NR
+18,Rowley,Essex,Massachusetts,USA ,328
+19,Wethersfield,Hartford,Connecticut,USA ,685
+20,Thompson,Windham,Connecticut,USA ,352
+21,New York City,New York,New York,USA ,NR
+22,Middletown,Middlesex,Connecticut,USA ,943
+23,Wallingford,New Haven,Connecticut,USA ,656
+24,East Hampton,Middlesex,Connecticut,USA ,NR
+25,Waterbury,New Haven,Connecticut,USA ,553
+26,Tiverton,Newport,Rhode Island,USA ,407
+27,Whitehall,Northampton,Pennsylvania,USA ,203
+28,Stratford,Fairfield,Connecticut,USA ,548
+29,Woodstock,Ulster,New York,USA ,169
+30,Windsor,York,Pennsylvania,USA ,254
+31,Pittsburgh,Allegheny,Pennsylvania,USA ,77
+32,Amenia,Dutchess,New York,USA ,441
+33,Foster,Providence,Rhode Island,USA ,363
+34,Abbeville,Abbeville,South Carolina,USA ,NR
+35,Middle Paxton Township,Dauphin,Pennsylvania,USA ,NR
+36,Lancaster Borough,Lancaster,Pennsylvania,USA ,419502
+37,Reading,Berks,Pennsylvania,USA ,435
+38,Tyringham,Berkshire,Massachusetts,USA ,237
+39,Baltimore,Baltimore,Maryland,USA ,NR
+40,Westfield,Washington,New York,USA ,NR
+41,Warwick,Orange,New York,USA ,571
+42,Chanceford,York,Pennsylvania,USA ,296
+43,Windham,Windham,Connecticut,USA ,414
+44,Schachticoke,Albany,New York,USA ,NR
+45,Bullskin,Fayette,Pennsylvania,USA ,159
+46,Farmington,Hartford,Connecticut,USA ,443
+47,Bolton,Tolland,Connecticut,USA ,ER
+48,Lebanon,Windham,Connecticut,USA ,574
+49,Coventry,Kent,Rhode Island,USA ,395
+50,Preston,New London,Connecticut,USA ,NR
+51,Johnston,Providence,Rhode Island,USA ,ER
+52,Warwick,Kent,Rhode Island,USA ,11323
+53,New Hartford,Litchfield,Connecticut,USA ,NR
+54,Pelham,Hillsborough,New Hampshire,USA ,NR
+55,Alstead,Cheshire,New Hampshire,USA ,191
+56,East Haddam,Middlesex,Connecticut,USA ,830
+57,Lancaster Township,Lancaster,Pennsylvania,USA ,54
+58,Newport,Newport,Rhode Island,USA ,1243
+59,Fairfield,Fairfield,Connecticut,USA ,707
+60,Sutton,Worcester,Massachusetts,USA ,448
+61,Norwich,New London,Connecticut,USA ,NR
+62,Bushwick,Kings,New York,USA ,NR
+63,Smithfield,Providence,Rhode Island,USA ,419502
+64,Johns Island,Charleston,South Carolina,USA ,NR
+65,Georgetown,Georgetown,South Carolina,USA ,NR
+66,Annapolis,Anne Arundel,Maryland,USA ,NR
+67,Fishkill,Dutchess,New York,USA ,888
+68,Stamford,Fairfield,Connecticut,USA ,1840
+69,East Lyme,New London,Connecticut,USA ,NR
+70,Plainfield,Windham,Connecticut,USA ,239
+71,Watervliet,Albany,New York,USA ,1097
+72,Lower Saucon,Northampton,Pennsylvania,USA ,179
+73,Rensselaerwick,Albany,New York,USA ,NR
+74,Coxsackie,Albany,New York,USA ,NR
+75,East Greenwich,Kent,Rhode Island,USA ,296
+76,Portion Taken From Washington,Allegheny,Pennsylvania,USA ,1077
+77,Norfolk,Litchfield,Connecticut,USA ,NR
+78,Milford,New Haven,Connecticut,USA ,446
+79,Weathersfield,Windsor,Vermont,USA ,207
+80,Canaan,Litchfield,Connecticut,USA ,NR
+81,Rehoboth,Bristol,Massachusetts,USA ,832
+82,Suffield,Hartford,Connecticut,USA ,407
+83,Hudson,Columbia,New York,USA ,382
+84,Amherst,Hillsborough,New Hampshire,USA ,ER
+85,Guilford,New Haven,Connecticut,USA ,731
+86,Wakefield,Carroll,New Hampshire,USA ,NR
+87,Bern,Berks,Pennsylvania,USA ,379
+88,Halifax,Halifax,North Carolina,USA ,52790
+89,New London,New London,Connecticut,USA ,NR
+90,Shelton,Fairfield,Connecticut,USA ,NR
+91,Groton,New London,Connecticut,USA ,NR
+92,Warren,Bristol,Rhode Island,USA ,200
+93,Wells,York,Massachusetts,USA ,NR
+94,Minisink,Orange,New York,USA ,370
+95,Coventry,Tolland,Connecticut,USA ,336
+96,Voluntown,New London,Connecticut,USA ,NR
+97,West Greenwich,Kent,Rhode Island,USA ,300
+98,Barrington,Strafford,New Hampshire,USA ,420
+99,Southbury,New Haven,Connecticut,USA ,NR
+100,North Hampton,Rockingham,New Hampshire,USA ,ER
+101,Charlestown,Washington,Rhode Island,USA ,NR
+102,Norwalk,Fairfield,Connecticut,USA ,1840
+103,Andover,Essex,Massachusetts,USA ,573
+104,Patapsco Lower Hundred,Baltimore,Maryland,USA ,NR
+105,Little Compton,Kent,Rhode Island,USA ,NR
+106,Kensington,Rockingham,New Hampshire,USA ,146
+107,Georgetown,Cecil,Maryland,USA ,NR
+108,Ashford,Windham,Connecticut,USA ,393
+109,Litchfield,Litchfield,Connecticut,USA ,3368
+110,Bozrah,New London,Connecticut,USA ,NR
+111,Dover,Strafford,New Hampshire,USA ,318
+112,Catskill,Albany,New York,USA ,NR
+113,Schenectady,Albany,New York,USA ,NR
+114,North Providence,Providence,Rhode Island,USA ,183
+115,Gloucester,Providence,Rhode Island,USA ,NR
+116,Exeter,Washington,Rhode Island,USA ,425
+117,North Kingston,Washington,Rhode Island,USA ,NR
+118,Chesterfield,Hampshire,Massachusetts,USA ,190
+119,Lancaster,Lancaster,Pennsylvania,USA ,734
+120,New Bern,Craven,North Carolina,USA ,NR
+121,Hoosick,Albany,New York,USA ,NR
+122,Sudbury,Middlesex,Massachusetts,USA ,384
+123,East Nantmill,Chester,Pennsylvania,USA ,319
+124,York,York,Pennsylvania,USA ,641
+125,Cranston,Providence,Rhode Island,USA ,315
+126,New Germantown,Perry,Pennsylvania,USA ,NR
+127,Kittery,York,Massachusetts,USA ,NR
+128,Unknown Township,St Marys,Maryland,USA ,1550
+129,North Kingstown,Washington,Rhode Island,USA ,NR
+130,Elizabeth,Lancaster,Pennsylvania,USA ,86
+131,Hopewell,Newton,Tyborn and Westpensboro,Cumberland,3020
+132,Stonington,New London,Connecticut,USA ,NR
+133,Springfield,Hampshire,Massachusetts,USA ,650
+134,Palatine,Montgomery,New York,USA ,474
+135,Heidelberg,Berks,Pennsylvania,USA ,362
+136,Swansea,Bristol,Massachusetts,USA ,NR
+137,Hampton,Rockingham,New Hampshire,USA ,154
+138,Exeter,Rockingham,New Hampshire,USA ,287
+139,Lebanon,Grafton,New Hampshire,USA ,225
+140,Kingston,Ulster,New York,USA ,536
+141,Livingston,Columbia,New York,USA ,744
+142,Albany Ward 3,Albany,New York,USA ,NR
+143,Bristol,Hartford,Connecticut,USA ,441
+144,Sandwich,Carroll,New Hampshire,USA ,NR
+145,Hebron,Tolland,Connecticut,USA ,345
+146,Willistown,Chester,Pennsylvania,USA ,125
+147,Baltimore Town,Baltimore,Maryland,USA ,NR
+148,Tolland,Tolland,Connecticut,USA ,40970
+149,Hollis,Hillsborough,New Hampshire,USA ,242
+150,Concord,Grafton,New Hampshire,USA ,NR
+151,Boston,Suffolk,Massachusetts,USA ,3358
+152,Huntington,Suffolk,New York,USA ,582
+153,Branford,New Haven,Connecticut,USA ,391
+154,Stoughton,Norfolk,Massachusetts,USA ,NR
+155,Keene,Cheshire,New Hampshire,USA ,208
+156,Pawling,Dutchess,New York,USA ,677
+157,Attleboro,Bristol,Massachusetts,USA ,NR
+158,Greenwich,Fairfield,Connecticut,USA ,321
+159,Worcester,Worcester,Massachusetts,USA ,325
+160,Ipswich,Essex,Massachusetts,USA ,881
+161,Weston,Fairfield,Connecticut,USA ,437
+162,Mansfield Center,Tolland,Connecticut,USA ,NR
+163,Cambridge,Albany,New York,USA ,NR
+164,East Windsor,Hartford,Connecticut,USA ,481
+165,Tamworth,Carroll,New Hampshire,USA ,NR
+166,Montville,New London,Connecticut,USA ,NR
+167,York Township,York,Pennsylvania,USA ,NR
+168,Bedford,Westchester,New York,USA ,420
+169,North Castle,Westchester,New York,USA ,400
+170,Haverhill,Essex,Massachusetts,USA ,434
+171,Charlestown,Chester,Pennsylvania,USA ,211
+172,Newington,Hartford,Connecticut,USA ,NR
+173,Haverstraw,Orange,New York,USA ,NR
+174,York,York,Massachusetts,USA ,ER
+175,Stephen Town,Albany,New York,USA ,NR
+176,Rensselaerville,Albany,New York,USA ,419502
+177,Torrington,Litchfield,Connecticut,USA ,NR
+178,Glastonbury,Hartford,Connecticut,USA ,468
+179,Durham,Strafford,New Hampshire,USA ,230
+180,Littleton,Middlesex,Massachusetts,USA ,158
+181,Newbury,Hillsborough,New Hampshire,USA ,NR
+182,Claverack,Columbia,New York,USA ,471
+183,Herkimer,Montgomery,New York,USA ,NR
+184,Cambridge,Middlesex,Massachusetts,USA ,372
+185,Salem,Rockingham,New Hampshire,USA ,207
+186,South Hampton,Suffolk,New York,USA ,NR
+187,Willington,Tolland,Connecticut,USA ,208
+188,Mount Pleasant,Westchester,New York,USA ,303
+189,Old Saybrook,Middlesex,Connecticut,USA ,560
+190,Cumberland,Providence,Rhode Island,USA ,313
+191,Barrington,Bristol,Rhode Island,USA ,115
+192,Hopkinton,Hillsborough,New Hampshire,USA ,NR
+193,Gloucester,Essex,Massachusetts,USA ,1007
+194,Newburyport,Essex,Massachusetts,USA ,940
+195,Carlisle,Cumberland,Pennsylvania,USA ,ER
+196,Canterbury,Windham,Connecticut,USA ,288
+197,Goshen,Litchfield,Connecticut,USA ,NR
+198,Newton,Rockingham,New Hampshire,USA ,NR
+199,Mixed Township,York,Pennsylvania,USA ,2567
+200,New Windsor,Ulster,New York,USA ,NR
+201,German Flatts,Montgomery,New York,USA ,NR
+202,Kingston,Washington,Rhode Island,USA ,658
+203,Unity,Westmoreland,Pennsylvania,USA ,205
+204,Greenland,Rockingham,New Hampshire,USA ,105
+205,Manor of Moreland,Montgomery,Pennsylvania,USA ,224
+206,Newburgh,Ulster,New York,USA ,NR
+207,Norton,Bristol,Massachusetts,USA ,246
+208,Springfield,Delaware,Pennsylvania,USA ,67
+209,Londonderry,Rockingham,New Hampshire,USA ,422
+210,Tulpehocken,Berks,Pennsylvania,USA ,390
+211,Albany Ward 2,Albany,New York,USA ,NR
+212,Cambridge,Dorchester,Maryland,USA ,NR
+213,Goshen,Orange,New York,USA ,343
+214,Hempfield,Westmoreland,Pennsylvania,USA ,NR
+215,Murfreesboro,Hertford,North Carolina,USA ,NR
+216,Cornwall,Litchfield,Connecticut,USA ,256
+217,Canaan,Columbia,New York,USA ,ER
+218,Poughkeepsie,Dutchess,New York,USA ,371
+219,Haddam,Middlesex,Connecticut,USA ,358
+220,North Franklin,New London,Connecticut,USA ,NR
+221,Redding,Fairfield,Connecticut,USA ,NR
+222,Windsor,Windsor,Vermont,USA ,240
+223,Stafford,Tolland,Connecticut,USA ,315
+224,Prince Fredericks,Georgetown,South Carolina,USA ,NR
+225,Somersworth,Strafford,New Hampshire,USA ,175
+226,Oyster Bay,Queens,New York,USA ,NR
+227,Phillipstown,Dutchess,New York,USA ,NR
+228,New Utrick,Kings,New York,USA ,NR
+229,Newhuntington,Chittenden,Vermont,USA ,28
+230,Martick,Lancaster,Pennsylvania,USA ,234
+231,Berlin,Hartford,Connecticut,USA ,451
+232,New Garden,Chester,Pennsylvania,USA ,127
+233,New Paltz,Ulster,New York,USA ,378
+234,Woodbury,Litchfield,Connecticut,USA ,478
+235,Hartford,Windsor,Vermont,USA ,168
+236,Arlington,Bennington,Vermont,USA ,172
+237,Amesbury,Essex,Massachusetts,USA ,NR
+238,Edenton,Chowan,North Carolina,USA ,178
+239,Albany Ward 1,Albany,New York,USA ,NR
+240,Marbletown,Ulster,New York,USA ,ER
+241,Newtown,Queens,New York,USA ,NR
+242,Somers,Tolland,Connecticut,USA ,200
+243,Scituate,Plymouth,Massachusetts,USA ,521
+244,Fannet,Hamilton,Letterkenney,Montgomery and Peters,1161
+245,Whites,Montgomery,New York,USA ,NR
+246,Hillsdale,Columbia,New York,USA ,755
+247,Berkley,Bristol,Massachusetts,USA ,139
+248,Rostraver,Westmoreland,Pennsylvania,USA ,191
+249,Charlestown,Sullivan,New Hampshire,USA ,NR
+250,North Susquehannah,Cecil,Maryland,USA ,155
+251,Frederick,Frederick,Maryland,USA ,NR
+252,Stillwater,Albany,New York,USA ,NR
+253,Dudley,Worcester,Massachusetts,USA ,187
+254,Smithtown,Suffolk,New York,USA ,157
+255,Crown Point,Clinton,New York,USA ,NR
+256,Newport,Sullivan,New Hampshire,USA ,NR
+257,Rhinebeck,Dutchess,New York,USA ,514
+258,Norwalk and Stamford,Fairfield,Connecticut,USA ,1840
+259,New Cornwall,Orange,New York,USA ,NR
+260,North Haven,New Haven,Connecticut,USA ,419502
+261,Ludlow,Hampden,Massachusetts,USA ,NR
+262,Salem,Essex,Massachusetts,USA ,1491
+263,Armstrong,Lycoming,Pennsylvania,USA ,NR
+264,New Castle,Rockingham,New Hampshire,USA ,NR
+265,Rye,Rockingham,New Hampshire,USA ,NR
+266,Hillsborough,Orange,North Carolina,USA ,NR
+267,Camden,Kershaw,South Carolina,USA ,419502
+268,Acworth,Sullivan,New Hampshire,USA ,NR
+269,Beverly,Essex,Massachusetts,USA ,633
+270,Cheshire,New Haven,Connecticut,USA ,445
+271,Lebanon,Dauphin,Pennsylvania,USA ,ER
+272,Darby,Delaware,Pennsylvania,USA ,252
+273,Colebrookedale,Berks,Pennsylvania,USA ,100
+274,Ellington,Tolland,Connecticut,USA ,172
+275,Tredifferin,Chester,Pennsylvania,USA ,157
+276,Edgecombe,Halifax,North Carolina,USA ,NR
+277,Hampton,Windham,Connecticut,USA ,201
+278,Tarboro,Edgecombe,North Carolina,USA ,NR
+279,Fayetteville,Cumberland,North Carolina,USA ,276
+280,Montgomery,Lycoming,Pennsylvania,USA ,NR
+281,Clinton,Dutchess,New York,USA ,697
+282,Roxbury,Litchfield,Connecticut,USA ,NR
+283,Leicester,Worcester,Massachusetts,USA ,170
+284,Springhill,Fayette,Pennsylvania,USA ,256
+285,York Borough,York,Pennsylvania,USA ,384
+286,Westfield,Richmond,New York,USA ,NR
+287,Alexandria,Grafton,New Hampshire,USA ,24248
+288,Radnor,Delaware,Pennsylvania,USA ,NR
+289,Roxbury,Suffolk,Massachusetts,USA ,353
+290,Hancock,Berkshire,Massachusetts,USA ,190
+291,Somerset,Bristol,Massachusetts,USA ,189
+292,Chambersburg,Franklin,Pennsylvania,USA ,NR
+293,Bladensburg,Prince Georges,Maryland,USA ,NR
+294,East Whiteland,Chester,Pennsylvania,USA ,76
+295,Salem,Washington,New York,USA ,395
+296,Danbury,Fairfield,Connecticut,USA ,ER
+297,Pittsfield,Berkshire,Massachusetts,USA ,312
+298,Balls Town,Albany,New York,USA ,NR
+299,Brook Haven,Suffolk,New York,USA ,NR
+300,Simsbury,Hartford,Connecticut,USA ,424
+301,Mamakating,Ulster,New York,USA ,NR
+302,Grafton,Worcester,Massachusetts,USA ,136
+303,Granby,Hampshire,Massachusetts,USA ,100
+304,Gilmantown,Strafford,New Hampshire,USA ,NR
+305,Nottingham,Rockingham,New Hampshire,USA ,178
+306,Brentwood,Rockingham,New Hampshire,USA ,NR
+307,Caughnawaga,Montgomery,New York,USA ,NR
+308,Madbury,Strafford,New Hampshire,USA ,98
+309,Bethlehem,Northampton,Pennsylvania,USA ,160
+310,Enfield,Hartford,Connecticut,USA ,318
+311,Deerfield,Rockingham,New Hampshire,USA ,299
+312,Ashton,Delaware,Pennsylvania,USA ,75
+313,Portsmouth,Newport,Rhode Island,USA ,243
+314,Woodstock,Windsor,Vermont,USA ,268
+315,Westmoreland City,Westmoreland,Pennsylvania,USA ,NR
+316,West Marlborough,Chester,Pennsylvania,USA ,121
+317,Pomfret,Windham,Connecticut,USA ,246
+318,Brooklyn,Kings,New York,USA ,NR
+319,Kingston,Rockingham,New Hampshire,USA ,167
+320,East Haven,New Haven,Connecticut,USA ,169
+321,Castleton,Rutland,Vermont,USA ,140
+322,Sturbridge,Worcester,Massachusetts,USA ,266
+323,Albany,Albany,New York,USA ,573
+324,Salisbury,Hillsborough,New Hampshire,USA ,NR
+325,New Rochelle,Westchester,New York,USA ,109
+326,Hurley,Ulster,New York,USA ,ER
+327,Kensington,Philadelphia,Pennsylvania,USA ,419502
+328,Franklin,Westmoreland,Pennsylvania,USA ,419502
+329,York,Westchester,New York,USA ,NR
+330,Concord,Delaware,Pennsylvania,USA ,108
+331,Brooklyn,Windham,Connecticut,USA ,NR
+332,Cortlandt,Westchester,New York,USA ,334
+333,Dorchester,Dorchester,South Carolina,USA ,NR
+334,Frederickstown,Dutchess,New York,USA ,NR
+335,Merrimack,Hillsborough,New Hampshire,USA ,NR
+336,Northeast,Dutchess,New York,USA ,NR
+337,Easton,Northampton,Pennsylvania,USA ,134
+338,Dauphin,Dauphin,Pennsylvania,USA ,NR
+339,Candia,Rockingham,New Hampshire,USA ,167
+340,Half Moon,Albany,New York,USA ,NR
+341,Longmeadow,Hampden,Massachusetts,USA ,NR
+342,Warrinton,York,Pennsylvania,USA ,263
+343,Fairley,Orange,Vermont,USA ,80
+344,South Hampton,Rockingham,New Hampshire,USA ,73
+345,South Susquehannah Hundred,Cecil,Maryland,USA ,174
+346,Orange,Orange,New York,USA ,ER
+347,Bridgewater,Plymouth,Massachusetts,USA ,829
+348,Granby,Hartford,Connecticut,USA ,489
+349,New Kensington,Westmoreland,Pennsylvania,USA ,NR
+350,Hempfield,Lancaster,Pennsylvania,USA ,272
+351,Pikeland,Chester,Pennsylvania,USA ,142
+352,Prince Georges,Georgetown,South Carolina,USA ,NR
+353,Kinderhook,Columbia,New York,USA ,697
+354,Ridgefield,Fairfield,Connecticut,USA ,352
+355,Upper Saucon,Northampton,Pennsylvania,USA ,145
+356,Pembroke,Hillsborough,New Hampshire,USA ,NR
+357,East Freetown,Bristol,Massachusetts,USA ,NR
+358,Watertown,Litchfield,Connecticut,USA ,577
+359,Johnstown,Providence,Rhode Island,USA ,NR
+360,Flushing,Queens,New York,USA ,NR
+361,West Whiteland,Chester,Pennsylvania,USA ,72
+362,Yonkers,Westchester,New York,USA ,152
+363,South Huntington,Westmoreland,Pennsylvania,USA ,534
+364,Richmond,Washington,Rhode Island,USA ,290
+365,Barnard,Windsor,Vermont,USA ,132
+366,East Caln,Chester,Pennsylvania,USA ,108
+367,Glocester,Providence,Rhode Island,USA ,621
+368,Maxatany,Berks,Pennsylvania,USA ,177
+369,Rye,Westchester,New York,USA ,162
+370,Hadley,Hampshire,Massachusetts,USA ,143
+371,Tyrone,Fayette,Pennsylvania,USA ,410
+372,Middletown,Newport,Rhode Island,USA ,92
+373,Northampton,Hampshire,Massachusetts,USA ,NR
+374,Manheim,Lancaster,Pennsylvania,USA ,208
+375,Cumru,Berks,Pennsylvania,USA ,245
+376,Hardwick,Worcester,Massachusetts,USA ,297
+377,Stockbridge,Berkshire,Massachusetts,USA ,198
+378,Harrison,Westchester,New York,USA ,152
+379,Beekman,Dutchess,New York,USA ,510
+380,Westminster,Windham,Vermont,USA ,261
+381,Southampton,Windham,Connecticut,USA ,NR
+382,Sterling,Worcester,Massachusetts,USA ,253
+383,Washington,Beaufort,North Carolina,USA ,NR
+384,Falmouth,Barnstable,Massachusetts,USA ,261
+385,Wallkill,Ulster,New York,USA ,392
+386,Back River Upper Hundred,Baltimore,Maryland,USA ,NR
+387,Dighton,Bristol,Massachusetts,USA ,285
+388,Amity,Berks,Pennsylvania,USA ,153
+389,Westerly,Washington,Rhode Island,USA ,360
+390,Manor Township,Lancaster,Pennsylvania,USA ,268
+391,Columbia,Richland,South Carolina,USA ,NR
+392,South Kingston,Washington,Rhode Island,USA ,NR
+393,Northfield,Hampshire,Massachusetts,USA ,122
+394,Oxford,Chester,Pennsylvania,USA ,148
+395,West Springfield,Hampshire,Massachusetts,USA ,650
+396,Westport,Bristol,Massachusetts,USA ,452
+397,St Helena,Beaufort,South Carolina,USA ,NR
+398,Stephen,Westchester,New York,USA ,NR
+399,Sunbury,Northumberland,Pennsylvania,USA ,NR
+400,Fawn,York,Pennsylvania,USA ,230
+401,New London,Chester,Pennsylvania,USA ,120
+402,South Hempstead,Queens,New York,USA ,NR
