@@ -1,0 +1,1322 @@
+,city,county,state,country,population
+0,Brookfield,Fairfield,Connecticut,USA ,189
+1,Danbury,Fairfield,Connecticut,USA ,563
+2,Fairfield,Fairfield,Connecticut,USA ,707
+3,Greenwich,Fairfield,Connecticut,USA ,321
+4,Huntington,Fairfield,Connecticut,USA ,476
+5,New Fairfield,Fairfield,Connecticut,USA ,277
+6,Newtown,Fairfield,Connecticut,USA ,446
+7,Norwalk and Stamford,Fairfield,Connecticut,USA ,1840
+8,Reading,Fairfield,Connecticut,USA ,264
+9,Ridgefield,Fairfield,Connecticut,USA ,352
+10,Stamford,Fairfield,Connecticut,USA ,1840
+11,Stratford,Fairfield,Connecticut,USA ,548
+12,Weston,Fairfield,Connecticut,USA ,437
+13,Berlin,Hartford,Connecticut,USA ,451
+14,Bristol,Hartford,Connecticut,USA ,441
+15,East Hartford,Hartford,Connecticut,USA ,473
+16,East Windsor,Hartford,Connecticut,USA ,481
+17,Enfield,Hartford,Connecticut,USA ,318
+18,Farmington,Hartford,Connecticut,USA ,443
+19,Glastonbury,Hartford,Connecticut,USA ,468
+20,Granby,Hartford,Connecticut,USA ,489
+21,Hartford,Hartford,Connecticut,USA ,666
+22,Simsbury,Hartford,Connecticut,USA ,424
+23,Southington,Hartford,Connecticut,USA ,389
+24,Suffield,Hartford,Connecticut,USA ,407
+25,Wethersfield,Hartford,Connecticut,USA ,685
+26,Windsor,Hartford,Connecticut,USA ,456
+27,Bethlem,Litchfield,Connecticut,USA ,179
+28,Cornwall,Litchfield,Connecticut,USA ,256
+29,Harwinton,Litchfield,Connecticut,USA ,230
+30,Kent,Litchfield,Connecticut,USA ,215
+31,Litchfield,Litchfield,Connecticut,USA ,3368
+32,New Milford,Litchfield,Connecticut,USA ,555
+33,Southbury,Litchfield,Connecticut,USA ,309
+34,Warren,Litchfield,Connecticut,USA ,147
+35,Washington,Litchfield,Connecticut,USA ,268
+36,Watertown,Litchfield,Connecticut,USA ,577
+37,Woodbury,Litchfield,Connecticut,USA ,478
+38,Chatham,Middlesex,Connecticut,USA ,565
+39,East Haddam,Middlesex,Connecticut,USA ,472
+40,Haddam,Middlesex,Connecticut,USA ,358
+41,Killingworth,Middlesex,Connecticut,USA ,390
+42,Middletown,Middlesex,Connecticut,USA ,943
+43,Saybrook,Middlesex,Connecticut,USA ,NR
+44,Branford,New Haven,Connecticut,USA ,391
+45,Cheshire,New Haven,Connecticut,USA ,445
+46,Derby,New Haven,Connecticut,USA ,562
+47,Durham,New Haven,Connecticut,USA ,209
+48,East Haven,New Haven,Connecticut,USA ,169
+49,Guilford,New Haven,Connecticut,USA ,731
+50,Hamden,New Haven,Connecticut,USA ,291
+51,Milford,New Haven,Connecticut,USA ,446
+52,New Haven,New Haven,Connecticut,USA ,919
+53,North Haven,New Haven,Connecticut,USA ,238
+54,Wallingford,New Haven,Connecticut,USA ,656
+55,Waterbury,New Haven,Connecticut,USA ,553
+56,Woodbridge,New Haven,Connecticut,USA ,421
+57,Bolton,Tolland,Connecticut,USA ,228
+58,Coventry,Tolland,Connecticut,USA ,336
+59,Ellington,Tolland,Connecticut,USA ,172
+60,Hebron,Tolland,Connecticut,USA ,345
+61,Somers,Tolland,Connecticut,USA ,NR
+62,Stafford,Tolland,Connecticut,USA ,315
+63,Tolland,Tolland,Connecticut,USA ,NR
+64,Union,Tolland,Connecticut,USA ,NR
+65,Willington,Tolland,Connecticut,USA ,208
+66,Ashford,Windham,Connecticut,USA ,393
+67,Brooklyne,Windham,Connecticut,USA ,177
+68,Canterbury,Windham,Connecticut,USA ,288
+69,Hampton,Windham,Connecticut,USA ,201
+70,Killingley,Windham,Connecticut,USA ,326
+71,Lebanon,Windham,Connecticut,USA ,574
+72,Mansfield,Windham,Connecticut,USA ,393
+73,Plainfield,Windham,Connecticut,USA ,239
+74,Pomfret,Windham,Connecticut,USA ,246
+75,Rames,Windham,Connecticut,USA ,NR
+76,Thompson,Windham,Connecticut,USA ,352
+77,Voluntown,Windham,Connecticut,USA ,292
+78,Windham,Windham,Connecticut,USA ,414
+79,Woodstock,Windham,Connecticut,USA ,331
+80,Bakerstown Plantation,Cumberland,Maine,USA ,217
+81,Bridgetown,Cumberland,Maine,USA ,60
+82,Brunswick,Cumberland,Maine,USA ,196
+83,Bucktown Plantation,Cumberland,Maine,USA ,82
+84,Butterfield Plantation,Cumberland,Maine,USA ,35
+85,Cape Elizabeth,Cumberland,Maine,USA ,231
+86,Durham,Cumberland,Maine,USA ,117
+87,Falmouth,Cumberland,Maine,USA ,446
+88,Flintstown Plantation,Cumberland,Maine,USA ,38
+89,Freeport,Cumberland,Maine,USA ,238
+90,Gorham and Scarborough,Cumberland,Maine,USA ,788
+91,Gray,Cumberland,Maine,USA ,89
+92,Harpswell,Cumberland,Maine,USA ,177
+93,Little Falls,Cumberland,Maine,USA ,117
+94,New Gloucester,Cumberland,Maine,USA ,208
+95,North Yarmouth,Cumberland,Maine,USA ,307
+96,Number 4 Plantation,Cumberland,Maine,USA ,77
+97,Otisfield Plantation,Cumberland,Maine,USA ,32
+98,Portland,Cumberland,Maine,USA ,366
+99,Raffield Gore,Cumberland,Maine,USA ,20
+100,Raymond Towns,Cumberland,Maine,USA ,52
+101,Shepardsfield,Cumberland,Maine,USA ,93
+102,Standish,Cumberland,Maine,USA ,122
+103,Turner,Cumberland,Maine,USA ,57
+104,Waterford Plantation,Cumberland,Maine,USA ,36
+105,Windham,Cumberland,Maine,USA ,152
+106,Alias Bucks Township 1,Hancock,Maine,USA ,104
+107,Bakerstown Plantation,Hancock,Maine,USA ,NR
+108,Barrettstown,Hancock,Maine,USA ,53
+109,Belfast,Hancock,Maine,USA ,43
+110,Bluehill,Hancock,Maine,USA ,55
+111,Camden,Hancock,Maine,USA ,69
+112,Canaan,Hancock,Maine,USA ,27
+113,Condas Keeg Plantation,Hancock,Maine,USA ,102
+114,Deer Isle,Hancock,Maine,USA ,129
+115,Ducktrap,Hancock,Maine,USA ,54
+116,Eastern River Township 2,Hancock,Maine,USA ,54
+117,Eddy,Hancock,Maine,USA ,20
+118,Frankfort,Hancock,Maine,USA ,168
+119,Gouldsborough,Hancock,Maine,USA ,45
+120,Isleborough,Hancock,Maine,USA ,68
+121,Mount Desert,Hancock,Maine,USA ,131
+122,Orphan Island,Hancock,Maine,USA ,26
+123,Orrington,Hancock,Maine,USA ,102
+124,Penofscot,Hancock,Maine,USA ,190
+125,Sedgewick,Hancock,Maine,USA ,100
+126,Small Islands Not Belonging To Any Town,Hancock,Maine,USA ,18
+127,Sullivan,Hancock,Maine,USA ,91
+128,Township 6,Hancock,Maine,USA ,46
+129,Trenton,Hancock,Maine,USA ,54
+130,Vinalhaven,Hancock,Maine,USA ,106
+131,Ball Town,Lincoln,Maine,USA ,156
+132,Bath,Lincoln,Maine,USA ,141
+133,Boothbay,Lincoln,Maine,USA ,164
+134,Bowdoin,Lincoln,Maine,USA ,203
+135,Bowdoinham,Lincoln,Maine,USA ,73
+136,Bristol,Lincoln,Maine,USA ,75
+137,Canaan,Lincoln,Maine,USA ,81
+138,Carratunk,Lincoln,Maine,USA ,25
+139,Cass Plantation Or Unity,Lincoln,Maine,USA ,27
+140,Chester,Lincoln,Maine,USA ,15
+141,Cushing,Lincoln,Maine,USA ,160
+142,Edgecomb,Lincoln,Maine,USA ,133
+143,Fairfield,Lincoln,Maine,USA ,98
+144,Georgetown,Lincoln,Maine,USA ,206
+145,Great Pond Plantation,Lincoln,Maine,USA ,30
+146,Greene,Lincoln,Maine,USA ,190
+147,Hallowell,Lincoln,Maine,USA ,185
+148,Hancock,Lincoln,Maine,USA ,60
+149,Jones Plantation,Lincoln,Maine,USA ,40
+150,Lewiston,Lincoln,Maine,USA ,101
+151,Little River,Lincoln,Maine,USA ,13
+152,Livermore,Lincoln,Maine,USA ,11
+153,Meduncook,Lincoln,Maine,USA ,49
+154,New Castle,Lincoln,Maine,USA ,131
+155,New Sandwich,Lincoln,Maine,USA ,81
+156,Nobleborough,Lincoln,Maine,USA ,427
+157,Norridgewock,Lincoln,Maine,USA ,94
+158,Pittston,Lincoln,Maine,USA ,114
+159,Pownalborough,Lincoln,Maine,USA ,331
+160,Prescott and Whitehouse Plantation,Lincoln,Maine,USA ,13
+161,Rockmeeko,Lincoln,Maine,USA ,27
+162,Sandy River From Mouth To Cass Plantation,Lincoln,Maine,USA ,67
+163,Sandy River,First Twp,Lincoln,Maine,98
+164,Sandy River,Middle Twp,Lincoln,Maine,14
+165,Sandy River,Upper Twp,Lincoln,Maine,10
+166,Seven Mile Brook,Lincoln,Maine,USA ,40
+167,Smithtown Plantation,Lincoln,Maine,USA ,105
+168,Starling Plantation,Lincoln,Maine,USA ,54
+169,Thomaston,Lincoln,Maine,USA ,140
+170,Titeums,Lincoln,Maine,USA ,29
+171,Topsham,Lincoln,Maine,USA ,118
+172,Twenty-Five Mile Pond,Lincoln,Maine,USA ,30
+173,Union,Lincoln,Maine,USA ,42
+174,Vassalborough,Lincoln,Maine,USA ,203
+175,Waldoborough,Lincoln,Maine,USA ,225
+176,Wales Plantation,Lincoln,Maine,USA ,256
+177,Warren,Lincoln,Maine,USA ,106
+178,Washington Plantation,Lincoln,Maine,USA ,157
+179,Winslow,Lincoln,Maine,USA ,169
+180,Winthrop,Lincoln,Maine,USA ,248
+181,Woolwich,Lincoln,Maine,USA ,155
+182,Bucks Harbor Neck,Washington,Maine,USA ,12
+183,MacHias,Washington,Maine,USA ,NR
+184,Township East of MacHias,Washington,Maine,USA ,385
+185,Township West of MacHias,Washington,Maine,USA ,385
+186,Arundel,York,Maine,USA ,259
+187,Berwick,York,Maine,USA ,663
+188,Brownfield,York,Maine,USA ,31
+189,Buddeford,York,Maine,USA ,169
+190,Buxton,York,Maine,USA ,238
+191,Coxhall,York,Maine,USA ,134
+192,Framesborough,York,Maine,USA ,76
+193,Fryeburg,York,Maine,USA ,89
+194,Hiram,York,Maine,USA ,19
+195,Kittery,York,Maine,USA ,870
+196,Lebanon,York,Maine,USA ,224
+197,Limerick,York,Maine,USA ,71
+198,Little Ossipee,York,Maine,USA ,120
+199,New Pennicock,York,Maine,USA ,25
+200,Nobleborough,York,Maine,USA ,NR
+201,Parsonsfield,York,Maine,USA ,132
+202,Pepperell Gore,York,Maine,USA ,297
+203,Porterfield,York,Maine,USA ,17
+204,Sadbury Canada,York,Maine,USA ,60
+205,Sanford,York,Maine,USA ,316
+206,Settlements Adj Sadbury,York,Maine,USA ,13
+207,Shapleigh,York,Maine,USA ,227
+208,Suncook,York,Maine,USA ,17
+209,Washington Plantation,York,Maine,USA ,58
+210,Waterboro,York,Maine,USA ,174
+211,Waterford,York,Maine,USA ,32
+212,Wells,York,Maine,USA ,504
+213,York,York,Maine,USA ,505
+214,Back River Upper Hundred,Baltimore,Maryland,USA ,NR
+215,Baltimore,Baltimore,Maryland,USA ,NR
+216,Baltimore Town,Baltimore,Maryland,USA ,NR
+217,Misc Run Hundred,Baltimore,Maryland,USA ,NR
+218,Patapsco Lower Hundred,Baltimore,Maryland,USA ,NR
+219,Two Delaware Hundreds,Baltimore,Maryland,USA ,NR
+220,Back Creek,Cecil,Maryland,USA ,110
+221,Bohemia Hundred,Cecil,Maryland,USA ,85
+222,Bohemia Manor,Cecil,Maryland,USA ,103
+223,Charles Town,Cecil,Maryland,USA ,59
+224,East Nottingham,Cecil,Maryland,USA ,141
+225,Elk Neck,Cecil,Maryland,USA ,167
+226,Middleneck Hundred,Cecil,Maryland,USA ,20
+227,North Millford,Cecil,Maryland,USA ,401
+228,North Sassafrass Hundred,Cecil,Maryland,USA ,59
+229,North Susquehannah,Cecil,Maryland,USA ,155
+230,Octorara Hundred,Cecil,Maryland,USA ,191
+231,South Millford,Cecil,Maryland,USA ,401
+232,South Susquehannah Hundred,Cecil,Maryland,USA ,174
+233,West Nottingham Hundred,Cecil,Maryland,USA ,133
+234,West Sassafras Hundred,Cecil,Maryland,USA ,100
+235,Unknown Township,St Marys,Maryland,USA ,1550
+236,Back River Upper Hundred,Talbot,Maryland,USA ,NR
+237,Barnstable,Barnstable,Massachusetts,USA ,486
+238,Chatham,Barnstable,Massachusetts,USA ,197
+239,Eastham,Barnstable,Massachusetts,USA ,314
+240,Falmouth,Barnstable,Massachusetts,USA ,261
+241,Harwich,Barnstable,Massachusetts,USA ,422
+242,Plantation,Barnstable,Massachusetts,USA ,NR
+243,Provincetown,Barnstable,Massachusetts,USA ,97
+244,Sandwich,Barnstable,Massachusetts,USA ,327
+245,Truro,Barnstable,Massachusetts,USA ,223
+246,Wellfleet,Barnstable,Massachusetts,USA ,212
+247,Yarmouth,Barnstable,Massachusetts,USA ,455
+248,Adams,Berkshire,Massachusetts,USA ,404
+249,Alford,Berkshire,Massachusetts,USA ,98
+250,Becket,Berkshire,Massachusetts,USA ,127
+251,Bethlehem,Berkshire,Massachusetts,USA ,48
+252,Dalton,Berkshire,Massachusetts,USA ,94
+253,Egremont,Berkshire,Massachusetts,USA ,122
+254,Great Barrington,Berkshire,Massachusetts,USA ,221
+255,Hancock,Berkshire,Massachusetts,USA ,190
+256,Lanesborough,Berkshire,Massachusetts,USA ,346
+257,Lee,Berkshire,Massachusetts,USA ,203
+258,Lenox,Berkshire,Massachusetts,USA ,182
+259,Loudon,Berkshire,Massachusetts,USA ,62
+260,Mount Washington,Berkshire,Massachusetts,USA ,55
+261,New Ashford,Berkshire,Massachusetts,USA ,80
+262,New Marlborough,Berkshire,Massachusetts,USA ,253
+263,Partridgefield,Berkshire,Massachusetts,USA ,172
+264,Pittsfield,Berkshire,Massachusetts,USA ,312
+265,Richmond,Berkshire,Massachusetts,USA ,176
+266,Sandisfield,Berkshire,Massachusetts,USA ,285
+267,Sheffield,Berkshire,Massachusetts,USA ,317
+268,Stockbridge,Berkshire,Massachusetts,USA ,198
+269,Tyringham,Berkshire,Massachusetts,USA ,237
+270,Washington,Berkshire,Massachusetts,USA ,98
+271,West Stockbridge,Berkshire,Massachusetts,USA ,180
+272,Williamstown,Berkshire,Massachusetts,USA ,280
+273,Windsor,Berkshire,Massachusetts,USA ,151
+274,Attleborough,Bristol,Massachusetts,USA ,384
+275,Berkley,Bristol,Massachusetts,USA ,139
+276,Dartmouth,Bristol,Massachusetts,USA ,448
+277,Dighton,Bristol,Massachusetts,USA ,285
+278,Easton,Bristol,Massachusetts,USA ,261
+279,Freetown,Bristol,Massachusetts,USA ,364
+280,Mansfield,Bristol,Massachusetts,USA ,200
+281,New Bedford,Bristol,Massachusetts,USA ,563
+282,Norton,Bristol,Massachusetts,USA ,246
+283,Raynham,Bristol,Massachusetts,USA ,197
+284,Rehoboth,Bristol,Massachusetts,USA ,832
+285,Somerset,Bristol,Massachusetts,USA ,189
+286,Swanzey,Bristol,Massachusetts,USA ,329
+287,Taunton,Bristol,Massachusetts,USA ,661
+288,Westport,Bristol,Massachusetts,USA ,452
+289,Chilmark,Dukes,Massachusetts,USA ,133
+290,Edgarton,Dukes,Massachusetts,USA ,222
+291,Tisbury,Dukes,Massachusetts,USA ,204
+292,Almsbury,Essex,Massachusetts,USA ,350
+293,Andover,Essex,Massachusetts,USA ,573
+294,Beverly,Essex,Massachusetts,USA ,633
+295,Boxford,Essex,Massachusetts,USA ,164
+296,Bradford,Essex,Massachusetts,USA ,253
+297,Danvers,Essex,Massachusetts,USA ,461
+298,Gloucester,Essex,Massachusetts,USA ,1007
+299,Haverhill,Essex,Massachusetts,USA ,434
+300,Ipswich,Essex,Massachusetts,USA ,881
+301,Lanesboro,Essex,Massachusetts,USA ,NR
+302,Lynn,Essex,Massachusetts,USA ,405
+303,Lynnfield,Essex,Massachusetts,USA ,80
+304,Manchester,Essex,Massachusetts,USA ,NR
+305,Marblehead,Essex,Massachusetts,USA ,1287
+306,Methuen,Essex,Massachusetts,USA ,221
+307,Middleton,Essex,Massachusetts,USA ,119
+308,Newbury,Essex,Massachusetts,USA ,723
+309,Newburyport,Essex,Massachusetts,USA ,940
+310,Rowley,Essex,Massachusetts,USA ,328
+311,Salem,Essex,Massachusetts,USA ,1491
+312,Salisbury,Essex,Massachusetts,USA ,325
+313,Topsfield,Essex,Massachusetts,USA ,150
+314,Wenham,Essex,Massachusetts,USA ,93
+315,Amherst,Hampshire,Massachusetts,USA ,183
+316,Ashfield,Hampshire,Massachusetts,USA ,261
+317,Belchertown,Hampshire,Massachusetts,USA ,240
+318,Bernardston,Hampshire,Massachusetts,USA ,108
+319,Blandford,Hampshire,Massachusetts,USA ,239
+320,Brimfield,Hampshire,Massachusetts,USA ,277
+321,Buckland,Hampshire,Massachusetts,USA ,124
+322,Charlemont,Hampshire,Massachusetts,USA ,110
+323,Chester,Hampshire,Massachusetts,USA ,187
+324,Chesterfield,Hampshire,Massachusetts,USA ,190
+325,Colrain,Hampshire,Massachusetts,USA ,237
+326,Conway,Hampshire,Massachusetts,USA ,321
+327,Cummington,Hampshire,Massachusetts,USA ,148
+328,Deerfield,Hampshire,Massachusetts,USA ,192
+329,Easthampton,Hampshire,Massachusetts,USA ,77
+330,Goshen,Hampshire,Massachusetts,USA ,103
+331,Granby,Hampshire,Massachusetts,USA ,100
+332,Granville,Hampshire,Massachusetts,USA ,334
+333,Greenfield,Hampshire,Massachusetts,USA ,239
+334,Greenwich,Hampshire,Massachusetts,USA ,173
+335,Hadley,Hampshire,Massachusetts,USA ,143
+336,Hatfield,Hampshire,Massachusetts,USA ,110
+337,Heath,Hampshire,Massachusetts,USA ,58
+338,Holland,Hampshire,Massachusetts,USA ,66
+339,Leverett,Hampshire,Massachusetts,USA ,87
+340,Leyden,Hampshire,Massachusetts,USA ,155
+341,Longmeadow,Hampshire,Massachusetts,USA ,126
+342,Ludlow,Hampshire,Massachusetts,USA ,94
+343,Middlefield,Hampshire,Massachusetts,USA ,101
+344,Montague,Hampshire,Massachusetts,USA ,154
+345,Montgomery,Hampshire,Massachusetts,USA ,74
+346,New Salem,Hampshire,Massachusetts,USA ,262
+347,Northampton,Hampshire,Massachusetts,USA ,NR
+348,Northfield,Hampshire,Massachusetts,USA ,122
+349,Norwich,Hampshire,Massachusetts,USA ,129
+350,Orange,Hampshire,Massachusetts,USA ,122
+351,Palmer,Hampshire,Massachusetts,USA ,125
+352,Pelham,Hampshire,Massachusetts,USA ,159
+353,Plainfield,Hampshire,Massachusetts,USA ,85
+354,Plantation 7,Hampshire,Massachusetts,USA ,90
+355,Rochester,Hampshire,Massachusetts,USA ,118
+356,Rowe,Hampshire,Massachusetts,USA ,79
+357,Shelburne,Hampshire,Massachusetts,USA ,186
+358,Shutesbury,Hampshire,Massachusetts,USA ,117
+359,South Brimfield,Hampshire,Massachusetts,USA ,277
+360,South Hadley,Hampshire,Massachusetts,USA ,118
+361,Southampton,Hampshire,Massachusetts,USA ,135
+362,Southwick,Hampshire,Massachusetts,USA ,148
+363,Springfield,Hampshire,Massachusetts,USA ,650
+364,Sunderland,Hampshire,Massachusetts,USA ,74
+365,Ware,Hampshire,Massachusetts,USA ,118
+366,Warwick,Hampshire,Massachusetts,USA ,179
+367,Wendell,Hampshire,Massachusetts,USA ,80
+368,West Springfield,Hampshire,Massachusetts,USA ,650
+369,Westfield,Hampshire,Massachusetts,USA ,349
+370,Westhampton,Hampshire,Massachusetts,USA ,102
+371,Whately,Hampshire,Massachusetts,USA ,130
+372,Wilbraham,Hampshire,Massachusetts,USA ,231
+373,Williamsburgh,Hampshire,Massachusetts,USA ,173
+374,Worthington,Hampshire,Massachusetts,USA ,188
+375,Acton,Middlesex,Massachusetts,USA ,140
+376,Ashby,Middlesex,Massachusetts,USA ,122
+377,Bedford,Middlesex,Massachusetts,USA ,94
+378,Billerica,Middlesex,Massachusetts,USA ,223
+379,Boxborough,Middlesex,Massachusetts,USA ,67
+380,Cambridge,Middlesex,Massachusetts,USA ,372
+381,Carlisle,Middlesex,Massachusetts,USA ,101
+382,Charlestown,Middlesex,Massachusetts,USA ,313
+383,Chelmsford,Middlesex,Massachusetts,USA ,219
+384,Concord,Middlesex,Massachusetts,USA ,298
+385,Dracut,Middlesex,Massachusetts,USA ,189
+386,Dunstable,Middlesex,Massachusetts,USA ,67
+387,East Sudbury,Middlesex,Massachusetts,USA ,384
+388,Framingham,Middlesex,Massachusetts,USA ,292
+389,Groton,Middlesex,Massachusetts,USA ,341
+390,Holliston,Middlesex,Massachusetts,USA ,150
+391,Hopkinton,Middlesex,Massachusetts,USA ,221
+392,Lexington,Middlesex,Massachusetts,USA ,175
+393,Lincoln,Middlesex,Massachusetts,USA ,129
+394,Littleton,Middlesex,Massachusetts,USA ,158
+395,Malden,Middlesex,Massachusetts,USA ,196
+396,Marlborough,Middlesex,Massachusetts,USA ,346
+397,Medford,Middlesex,Massachusetts,USA ,189
+398,Natick,Middlesex,Massachusetts,USA ,113
+399,Newton,Middlesex,Massachusetts,USA ,239
+400,Pepperell,Middlesex,Massachusetts,USA ,208
+401,Reading,Middlesex,Massachusetts,USA ,353
+402,Sherburn,Middlesex,Massachusetts,USA ,150
+403,Shirley,Middlesex,Massachusetts,USA ,115
+404,Stoneham,Middlesex,Massachusetts,USA ,74
+405,Stow,Middlesex,Massachusetts,USA ,145
+406,Sudbury,Middlesex,Massachusetts,USA ,384
+407,Tewksbury,Middlesex,Massachusetts,USA ,163
+408,Townsend,Middlesex,Massachusetts,USA ,185
+409,Tyngsborough,Middlesex,Massachusetts,USA ,67
+410,Waltham,Middlesex,Massachusetts,USA ,144
+411,Watertown,Middlesex,Massachusetts,USA ,167
+412,Westford,Middlesex,Massachusetts,USA ,226
+413,Weston,Middlesex,Massachusetts,USA ,173
+414,Wilmington,Middlesex,Massachusetts,USA ,136
+415,Woburn,Middlesex,Massachusetts,USA ,349
+416,Sherburn,Nantucket,Massachusetts,USA ,872
+417,Abington,Plymouth,Massachusetts,USA ,NR
+418,Bridgewater,Plymouth,Massachusetts,USA ,829
+419,Carver,Plymouth,Massachusetts,USA ,150
+420,Duxborough,Plymouth,Massachusetts,USA ,271
+421,Halifax,Plymouth,Massachusetts,USA ,114
+422,Hanover,Plymouth,Massachusetts,USA ,184
+423,Kingston,Plymouth,Massachusetts,USA ,166
+424,Marshfield,Plymouth,Massachusetts,USA ,226
+425,Middleborough,Plymouth,Massachusetts,USA ,804
+426,Pembroke,Plymouth,Massachusetts,USA ,340
+427,Plymouth,Plymouth,Massachusetts,USA ,578
+428,Plymton,Plymouth,Massachusetts,USA ,163
+429,Rochester,Plymouth,Massachusetts,USA ,327
+430,Scituate,Plymouth,Massachusetts,USA ,521
+431,Wareham,Plymouth,Massachusetts,USA ,135
+432,Bellingham,Suffolk,Massachusetts,USA ,121
+433,Boston,Suffolk,Massachusetts,USA ,3358
+434,Braintree,Suffolk,Massachusetts,USA ,488
+435,Brookline,Suffolk,Massachusetts,USA ,68
+436,Chelsea,Suffolk,Massachusetts,USA ,81
+437,Cohasset,Suffolk,Massachusetts,USA ,159
+438,Dedham,Suffolk,Massachusetts,USA ,288
+439,Dorchester,Suffolk,Massachusetts,USA ,311
+440,Dover,Suffolk,Massachusetts,USA ,90
+441,Foxborough,Suffolk,Massachusetts,USA ,118
+442,Franklin,Suffolk,Massachusetts,USA ,186
+443,Harwich,Suffolk,Massachusetts,USA ,2
+444,Hingham,Suffolk,Massachusetts,USA ,411
+445,Hull,Suffolk,Massachusetts,USA ,24
+446,Islands In Boston Harbor,Suffolk,Massachusetts,USA ,17
+447,Medfield,Suffolk,Massachusetts,USA ,129
+448,Medway,Suffolk,Massachusetts,USA ,187
+449,Milton,Suffolk,Massachusetts,USA ,184
+450,Needham,Suffolk,Massachusetts,USA ,208
+451,Roxbury,Suffolk,Massachusetts,USA ,353
+452,Sharon,Suffolk,Massachusetts,USA ,189
+453,Stoughton,Suffolk,Massachusetts,USA ,356
+454,Walpole,Suffolk,Massachusetts,USA ,175
+455,Weymouth,Suffolk,Massachusetts,USA ,278
+456,Wrentham,Suffolk,Massachusetts,USA ,278
+457,Ashburnham,Worcester,Massachusetts,USA ,164
+458,Athol,Worcester,Massachusetts,USA ,142
+459,Barre,Worcester,Massachusetts,USA ,264
+460,Batin,Worcester,Massachusetts,USA ,NR
+461,Berlin,Worcester,Massachusetts,USA ,94
+462,Bolton,Worcester,Massachusetts,USA ,151
+463,Boylston,Worcester,Massachusetts,USA ,129
+464,Brookfield,Worcester,Massachusetts,USA ,520
+465,Charlton,Worcester,Massachusetts,USA ,NR
+466,Douglas,Worcester,Massachusetts,USA ,201
+467,Dudley,Worcester,Massachusetts,USA ,187
+468,Fitchburgh,Worcester,Massachusetts,USA ,185
+469,Gardner,Worcester,Massachusetts,USA ,90
+470,Gerry,Worcester,Massachusetts,USA ,111
+471,Grafton,Worcester,Massachusetts,USA ,136
+472,Hardwick,Worcester,Massachusetts,USA ,297
+473,Harvard,Worcester,Massachusetts,USA ,253
+474,Holden,Worcester,Massachusetts,USA ,172
+475,Hubbardston,Worcester,Massachusetts,USA ,158
+476,Lancaster,Worcester,Massachusetts,USA ,265
+477,Leicester,Worcester,Massachusetts,USA ,170
+478,Leominster,Worcester,Massachusetts,USA ,197
+479,Lunenburgh,Worcester,Massachusetts,USA ,234
+480,Mendon,Worcester,Massachusetts,USA ,281
+481,Milford,Worcester,Massachusetts,USA ,165
+482,New Braintree,Worcester,Massachusetts,USA ,140
+483,Northborough,Worcester,Massachusetts,USA ,103
+484,Northbridge,Worcester,Massachusetts,USA ,97
+485,Oakham,Worcester,Massachusetts,USA ,122
+486,Oxford,Worcester,Massachusetts,USA ,204
+487,Paxton,Worcester,Massachusetts,USA ,99
+488,Petersham,Worcester,Massachusetts,USA ,255
+489,Princeton,Worcester,Massachusetts,USA ,164
+490,Royalston,Worcester,Massachusetts,USA ,193
+491,Rutland,Worcester,Massachusetts,USA ,179
+492,Shrewsbury,Worcester,Massachusetts,USA ,145
+493,Southborough,Worcester,Massachusetts,USA ,155
+494,Spencer,Worcester,Massachusetts,USA ,221
+495,Sterling,Worcester,Massachusetts,USA ,253
+496,Sturbridge,Worcester,Massachusetts,USA ,266
+497,Sutton,Worcester,Massachusetts,USA ,448
+498,Templeton,Worcester,Massachusetts,USA ,156
+499,Upton,Worcester,Massachusetts,USA ,157
+500,Uxbridge,Worcester,Massachusetts,USA ,229
+501,Ward,Worcester,Massachusetts,USA ,76
+502,Westborough,Worcester,Massachusetts,USA ,144
+503,Western,Worcester,Massachusetts,USA ,145
+504,Westminster,Worcester,Massachusetts,USA ,199
+505,Winchendon,Worcester,Massachusetts,USA ,161
+506,Worcester,Worcester,Massachusetts,USA ,325
+507,Acworth,Cheshire,New Hampshire,USA ,NR
+508,Alstead,Cheshire,New Hampshire,USA ,191
+509,Charlestown,Cheshire,New Hampshire,USA ,NR
+510,Chesterfield,Cheshire,New Hampshire,USA ,315
+511,Claremont,Cheshire,New Hampshire,USA ,NR
+512,Cornish,Cheshire,New Hampshire,USA ,NR
+513,Croydon,Cheshire,New Hampshire,USA ,NR
+514,Dublin,Cheshire,New Hampshire,USA ,157
+515,Fitzwilliam,Cheshire,New Hampshire,USA ,186
+516,Gilsom,Cheshire,New Hampshire,USA ,NR
+517,Hampstead,Cheshire,New Hampshire,USA ,NR
+518,Hinsdale,Cheshire,New Hampshire,USA ,86
+519,Jaffrey,Cheshire,New Hampshire,USA ,202
+520,Keene,Cheshire,New Hampshire,USA ,208
+521,Langdon,Cheshire,New Hampshire,USA ,NR
+522,Lempster,Cheshire,New Hampshire,USA ,NR
+523,Marlborough,Cheshire,New Hampshire,USA ,138
+524,Marlow,Cheshire,New Hampshire,USA ,64
+525,New Grantham,Cheshire,New Hampshire,USA ,NR
+526,Newport,Cheshire,New Hampshire,USA ,NR
+527,Packersfield,Cheshire,New Hampshire,USA ,NR
+528,Plainfield,Cheshire,New Hampshire,USA ,NR
+529,Protectworth,Cheshire,New Hampshire,USA ,NR
+530,Richmond,Cheshire,New Hampshire,USA ,221
+531,Rindge,Cheshire,New Hampshire,USA ,188
+532,Stoddard,Cheshire,New Hampshire,USA ,123
+533,Sullivan,Cheshire,New Hampshire,USA ,37
+534,Surry,Cheshire,New Hampshire,USA ,79
+535,Swanzey,Cheshire,New Hampshire,USA ,192
+536,Unity,Cheshire,New Hampshire,USA ,NR
+537,Walpole,Cheshire,New Hampshire,USA ,195
+538,Washington,Cheshire,New Hampshire,USA ,NR
+539,Wendell,Cheshire,New Hampshire,USA ,NR
+540,Westmoreland,Cheshire,New Hampshire,USA ,NR
+541,Winchester,Cheshire,New Hampshire,USA ,189
+542,Alexandria,Grafton,New Hampshire,USA ,54
+543,Bartlett,Grafton,New Hampshire,USA ,NR
+544,Bath,Grafton,New Hampshire,USA ,85
+545,Bridgewater,Grafton,New Hampshire,USA ,61
+546,Burton,Grafton,New Hampshire,USA ,NR
+547,Campton,Grafton,New Hampshire,USA ,75
+548,Canaan,Grafton,New Hampshire,USA ,123
+549,Chatham,Grafton,New Hampshire,USA ,NR
+550,Cockburn,Grafton,New Hampshire,USA ,NR
+551,Cockermouth,Grafton,New Hampshire,USA ,NR
+552,Colburne,Grafton,New Hampshire,USA ,NR
+553,Concord,Grafton,New Hampshire,USA ,NR
+554,Coventry,Grafton,New Hampshire,USA ,NR
+555,Dalton,Grafton,New Hampshire,USA ,NR
+556,Dames Location,Grafton,New Hampshire,USA ,NR
+557,Dartmouth,Grafton,New Hampshire,USA ,NR
+558,Dorchester,Grafton,New Hampshire,USA ,37
+559,Enfield,Grafton,New Hampshire,USA ,125
+560,Franconia,Grafton,New Hampshire,USA ,15
+561,Grafton,Grafton,New Hampshire,USA ,70
+562,Hales Location,Grafton,New Hampshire,USA ,NR
+563,Hanover,Grafton,New Hampshire,USA ,213
+564,Harts Location,Grafton,New Hampshire,USA ,NR
+565,Haverhill,Grafton,New Hampshire,USA ,101
+566,Lancaster,Grafton,New Hampshire,USA ,NR
+567,Landaff,Grafton,New Hampshire,USA ,56
+568,Lebanon,Grafton,New Hampshire,USA ,225
+569,Lincoln,Grafton,New Hampshire,USA ,5
+570,Littleton,Grafton,New Hampshire,USA ,19
+571,Lyman,Grafton,New Hampshire,USA ,43
+572,Lyme,Grafton,New Hampshire,USA ,175
+573,New Chester,Grafton,New Hampshire,USA ,NR
+574,New Holderness,Grafton,New Hampshire,USA ,NR
+575,Northumberland,Grafton,New Hampshire,USA ,NR
+576,Orange,Grafton,New Hampshire,USA ,21
+577,Orford,Grafton,New Hampshire,USA ,92
+578,Percy,Grafton,New Hampshire,USA ,NR
+579,Piermont,Grafton,New Hampshire,USA ,73
+580,Plymouth,Grafton,New Hampshire,USA ,131
+581,Rumney,Grafton,New Hampshire,USA ,71
+582,Senters Location,Grafton,New Hampshire,USA ,NR
+583,Shelburne,Grafton,New Hampshire,USA ,NR
+584,Starks Location,Grafton,New Hampshire,USA ,NR
+585,Sterlings Location,Grafton,New Hampshire,USA ,NR
+586,Stratford,Grafton,New Hampshire,USA ,NR
+587,Thornton,Grafton,New Hampshire,USA ,70
+588,Warren,Grafton,New Hampshire,USA ,35
+589,Wentworth,Grafton,New Hampshire,USA ,42
+590,Amherst,Hillsborough,New Hampshire,USA ,384
+591,Andover,Hillsborough,New Hampshire,USA ,NR
+592,Antrim,Hillsborough,New Hampshire,USA ,97
+593,Bedford,Hillsborough,New Hampshire,USA ,141
+594,Boscowen,Hillsborough,New Hampshire,USA ,NR
+595,Bradford,Hillsborough,New Hampshire,USA ,NR
+596,Cornish,Hillsborough,New Hampshire,USA ,NR
+597,Dearing,Hillsborough,New Hampshire,USA ,NR
+598,Derryfield,Hillsborough,New Hampshire,USA ,NR
+599,Dunbarton,Hillsborough,New Hampshire,USA ,NR
+600,Dunstable,Hillsborough,New Hampshire,USA ,NR
+601,Duxbury Mile,Hillsborough,New Hampshire,USA ,NR
+602,Fishersfield,Hillsborough,New Hampshire,USA ,NR
+603,Francetown,Hillsborough,New Hampshire,USA ,NR
+604,Goffstown,Hillsborough,New Hampshire,USA ,201
+605,Hancock,Hillsborough,New Hampshire,USA ,117
+606,Heniker,Hillsborough,New Hampshire,USA ,NR
+607,Hillsborough,Hillsborough,New Hampshire,USA ,NR
+608,Hollis,Hillsborough,New Hampshire,USA ,242
+609,Hopkinton,Hillsborough,New Hampshire,USA ,NR
+610,Jaffrey,Hillsborough,New Hampshire,USA ,NR
+611,Kersarge Gore,Hillsborough,New Hampshire,USA ,NR
+612,Litchfield,Hillsborough,New Hampshire,USA ,57
+613,Lyndeborough,Hillsborough,New Hampshire,USA ,NR
+614,Lyndeborough Gore,Hillsborough,New Hampshire,USA ,NR
+615,Mason,Hillsborough,New Hampshire,USA ,177
+616,Merrimac,Hillsborough,New Hampshire,USA ,NR
+617,New Boston,Hillsborough,New Hampshire,USA ,177
+618,New Ipswich,Hillsborough,New Hampshire,USA ,176
+619,New London,Hillsborough,New Hampshire,USA ,NR
+620,Nottingham West,Hillsborough,New Hampshire,USA ,NR
+621,Packersfield,Hillsborough,New Hampshire,USA ,NR
+622,Peterborough,Hillsborough,New Hampshire,USA ,136
+623,Raby,Hillsborough,New Hampshire,USA ,NR
+624,Salisbury,Hillsborough,New Hampshire,USA ,NR
+625,Sharon,Hillsborough,New Hampshire,USA ,45
+626,Society Land,Hillsborough,New Hampshire,USA ,NR
+627,Sutton,Hillsborough,New Hampshire,USA ,NR
+628,Temple,Hillsborough,New Hampshire,USA ,154
+629,Warner,Hillsborough,New Hampshire,USA ,NR
+630,Weare,Hillsborough,New Hampshire,USA ,286
+631,Wilton,Hillsborough,New Hampshire,USA ,159
+632,Atkinson,Rockingham,New Hampshire,USA ,79
+633,Bow,Rockingham,New Hampshire,USA ,NR
+634,Brintwood,Rockingham,New Hampshire,USA ,NR
+635,Candia,Rockingham,New Hampshire,USA ,167
+636,Canterbury,Rockingham,New Hampshire,USA ,NR
+637,Chester,Rockingham,New Hampshire,USA ,343
+638,Chichester,Rockingham,New Hampshire,USA ,NR
+639,Concord,Rockingham,New Hampshire,USA ,NR
+640,Deerfield,Rockingham,New Hampshire,USA ,NR
+641,East Kingstown,Rockingham,New Hampshire,USA ,NR
+642,Epping,Rockingham,New Hampshire,USA ,223
+643,Epsom,Rockingham,New Hampshire,USA ,NR
+644,Exeter,Rockingham,New Hampshire,USA ,287
+645,Fitzwilliam,Rockingham,New Hampshire,USA ,NR
+646,Gosport,Rockingham,New Hampshire,USA ,NR
+647,Greenland,Rockingham,New Hampshire,USA ,105
+648,Hampstead,Rockingham,New Hampshire,USA ,120
+649,Hampton,Rockingham,New Hampshire,USA ,154
+650,Hampton Falls,Rockingham,New Hampshire,USA ,91
+651,Hawke,Rockingham,New Hampshire,USA ,NR
+652,Kensington,Rockingham,New Hampshire,USA ,146
+653,Kingston,Rockingham,New Hampshire,USA ,167
+654,Londonderry,Rockingham,New Hampshire,USA ,422
+655,Loudon,Rockingham,New Hampshire,USA ,NR
+656,Newcastle,Rockingham,New Hampshire,USA ,NR
+657,Newington,Rockingham,New Hampshire,USA ,89
+658,Newmarket,Rockingham,New Hampshire,USA ,194
+659,Newtown,Rockingham,New Hampshire,USA ,NR
+660,Northampton,Rockingham,New Hampshire,USA ,NR
+661,Northfield,Rockingham,New Hampshire,USA ,NR
+662,Northwood,Rockingham,New Hampshire,USA ,124
+663,Nottingham,Rockingham,New Hampshire,USA ,178
+664,Pelham,Rockingham,New Hampshire,USA ,NR
+665,Pembrook,Rockingham,New Hampshire,USA ,NR
+666,Pittsfield,Rockingham,New Hampshire,USA ,NR
+667,Plaistow,Rockingham,New Hampshire,USA ,94
+668,Poplin,Rockingham,New Hampshire,USA ,NR
+669,Portsmouth,Rockingham,New Hampshire,USA ,893
+670,Raymond,Rockingham,New Hampshire,USA ,128
+671,Rye,Rockingham,New Hampshire,USA ,NR
+672,Salem,Rockingham,New Hampshire,USA ,207
+673,Sandown,Rockingham,New Hampshire,USA ,105
+674,Seabrook,Rockingham,New Hampshire,USA ,132
+675,South Hampton,Rockingham,New Hampshire,USA ,73
+676,Stratham,Rockingham,New Hampshire,USA ,143
+677,Windham,Rockingham,New Hampshire,USA ,102
+678,Barnstead,Strafford,New Hampshire,USA ,NR
+679,Barrington,Strafford,New Hampshire,USA ,420
+680,Conway,Strafford,New Hampshire,USA ,NR
+681,Dover,Strafford,New Hampshire,USA ,318
+682,Durham,Strafford,New Hampshire,USA ,230
+683,Eaton,Strafford,New Hampshire,USA ,NR
+684,Effingham,Strafford,New Hampshire,USA ,NR
+685,Gilmantown,Strafford,New Hampshire,USA ,NR
+686,Lee,Strafford,New Hampshire,USA ,NR
+687,Madbury,Strafford,New Hampshire,USA ,98
+688,Merideth,Strafford,New Hampshire,USA ,NR
+689,Middleton,Strafford,New Hampshire,USA ,107
+690,Moultonborough,Strafford,New Hampshire,USA ,NR
+691,New Durham,Strafford,New Hampshire,USA ,179
+692,New Durham Gore,Strafford,New Hampshire,USA ,NR
+693,New Hampton,Strafford,New Hampshire,USA ,NR
+694,Ossipee,Strafford,New Hampshire,USA ,NR
+695,Rochester,Strafford,New Hampshire,USA ,506
+696,Sanborntown,Strafford,New Hampshire,USA ,NR
+697,Sandwich,Strafford,New Hampshire,USA ,NR
+698,Somersworth,Strafford,New Hampshire,USA ,175
+699,Tamworth,Strafford,New Hampshire,USA ,NR
+700,Tuftonborough,Strafford,New Hampshire,USA ,NR
+701,Wakefield,Strafford,New Hampshire,USA ,NR
+702,Wolfborough,Strafford,New Hampshire,USA ,NR
+703,Albany Ward 1,Albany,New York,USA ,NR
+704,Albany Ward 2,Albany,New York,USA ,NR
+705,Albany Ward 3,Albany,New York,USA ,NR
+706,Balls Town,Albany,New York,USA ,NR
+707,Cambridge,Albany,New York,USA ,NR
+708,Catskill,Albany,New York,USA ,NR
+709,Coxsackie,Albany,New York,USA ,NR
+710,Duanesburgh,Albany,New York,USA ,NR
+711,Easton,Albany,New York,USA ,NR
+712,Freehold,Albany,New York,USA ,NR
+713,Germantown,Albany,New York,USA ,NR
+714,Half Moon,Albany,New York,USA ,NR
+715,Hoosick,Albany,New York,USA ,NR
+716,Pitts Town,Albany,New York,USA ,NR
+717,Rensselaerville,Albany,New York,USA ,499
+718,Rensselaerwick,Albany,New York,USA ,NR
+719,Saratoga,Albany,New York,USA ,NR
+720,Schachticoke,Albany,New York,USA ,NR
+721,Schenectady,Albany,New York,USA ,NR
+722,Schoharie,Albany,New York,USA ,NR
+723,Stephen Town,Albany,New York,USA ,NR
+724,Stillwater,Albany,New York,USA ,NR
+725,Watervliet,Albany,New York,USA ,1097
+726,Champlain,Clinton,New York,USA ,128
+727,Crown Point,Clinton,New York,USA ,NR
+728,Plattsburgh,Clinton,New York,USA ,86
+729,Wellsburgh,Clinton,New York,USA ,NR
+730,Canaan,Columbia,New York,USA ,1020
+731,Claverack,Columbia,New York,USA ,471
+732,Clermont,Columbia,New York,USA ,130
+733,Germantown,Columbia,New York,USA ,81
+734,Hillsdale,Columbia,New York,USA ,755
+735,Hudson,Columbia,New York,USA ,382
+736,Kinderhook,Columbia,New York,USA ,697
+737,Livingston,Columbia,New York,USA ,744
+738,Amenia,Dutchess,New York,USA ,441
+739,Beekman,Dutchess,New York,USA ,510
+740,Clinton,Dutchess,New York,USA ,697
+741,Fishkill,Dutchess,New York,USA ,888
+742,Frederickstown,Dutchess,New York,USA ,NR
+743,Northeast,Dutchess,New York,USA ,NR
+744,Pawling,Dutchess,New York,USA ,677
+745,Phillipstown,Dutchess,New York,USA ,NR
+746,Poughkeepsie,Dutchess,New York,USA ,371
+747,Rhinebeck,Dutchess,New York,USA ,514
+748,Southeast,Dutchess,New York,USA ,NR
+749,Washington,Dutchess,New York,USA ,743
+750,Brooklyn,Kings,New York,USA ,NR
+751,Bushwick,Kings,New York,USA ,NR
+752,Flatbush,Kings,New York,USA ,NR
+753,Flatlands,Kings,New York,USA ,NR
+754,Gravesend,Kings,New York,USA ,NR
+755,New Utrick,Kings,New York,USA ,NR
+756,Canajoxharrie,Montgomery,New York,USA ,NR
+757,Caughnawaga,Montgomery,New York,USA ,NR
+758,Chemung,Montgomery,New York,USA ,NR
+759,Chenango,Montgomery,New York,USA ,NR
+760,German Flatts,Montgomery,New York,USA ,NR
+761,Harpersfield,Montgomery,New York,USA ,NR
+762,Herkimer,Montgomery,New York,USA ,NR
+763,Mohawk,Montgomery,New York,USA ,NR
+764,Otsego,Montgomery,New York,USA ,NR
+765,Palatine,Montgomery,New York,USA ,474
+766,Whites,Montgomery,New York,USA ,NR
+767,New York City,New York,New York,USA ,NR
+768,New York City Dock Ward,New York,New York,USA ,NR
+769,New York City East Ward,New York,New York,USA ,NR
+770,New York City Montgomery Ward,New York,New York,USA ,NR
+771,New York City North Ward,New York,New York,USA ,NR
+772,New York City Out Ward,New York,New York,USA ,NR
+773,New York City South Ward,New York,New York,USA ,NR
+774,New York City West Ward,New York,New York,USA ,NR
+775,New York Harlem Division,New York,New York,USA ,NR
+776,Canandaigua,Ontario,New York,USA ,88
+777,Erwin District,Ontario,New York,USA ,NR
+778,Genesee District,Ontario,New York,USA ,NR
+779,Jerusalem District,Ontario,New York,USA ,NR
+780,Goshen,Orange,New York,USA ,343
+781,Haverstraw,Orange,New York,USA ,NR
+782,Minisink,Orange,New York,USA ,370
+783,New Cornwall,Orange,New York,USA ,NR
+784,Orange,Orange,New York,USA ,NR
+785,Warwick,Orange,New York,USA ,571
+786,Flushing,Queens,New York,USA ,NR
+787,Jamaica,Queens,New York,USA ,NR
+788,Newtown,Queens,New York,USA ,NR
+789,North Hempstead,Queens,New York,USA ,NR
+790,Oyster Bay,Queens,New York,USA ,NR
+791,South Hempstead,Queens,New York,USA ,NR
+792,Castleton,Richmond,New York,USA ,NR
+793,Northfield,Richmond,New York,USA ,NR
+794,Southfield,Richmond,New York,USA ,NR
+795,Westfield,Richmond,New York,USA ,NR
+796,Brook Haven,Suffolk,New York,USA ,NR
+797,East Hampton,Suffolk,New York,USA ,249
+798,Huntington,Suffolk,New York,USA ,582
+799,Islip,Suffolk,New York,USA ,106
+800,Shelter Island,Suffolk,New York,USA ,35
+801,Smithtown,Suffolk,New York,USA ,157
+802,South Hampton,Suffolk,New York,USA ,NR
+803,Southold,Suffolk,New York,USA ,593
+804,Hurley,Ulster,New York,USA ,104
+805,Kingston,Ulster,New York,USA ,536
+806,Mamakating,Ulster,New York,USA ,NR
+807,Marbletown,Ulster,New York,USA ,304
+808,Middletown,Ulster,New York,USA ,NR
+809,Montgomery,Ulster,New York,USA ,NR
+810,New Marlborough,Ulster,New York,USA ,NR
+811,New Paltz,Ulster,New York,USA ,378
+812,New Windsor,Ulster,New York,USA ,NR
+813,Newburgh,Ulster,New York,USA ,NR
+814,Rochester,Ulster,New York,USA ,223
+815,Shawangunk,Ulster,New York,USA ,279
+816,Wallkill,Ulster,New York,USA ,392
+817,Woodstock,Ulster,New York,USA ,169
+818,Argyle,Washington,New York,USA ,400
+819,Granville,Washington,New York,USA ,392
+820,Hampton,Washington,New York,USA ,75
+821,Hebron,Washington,New York,USA ,305
+822,Kingsbury,Washington,New York,USA ,179
+823,Queensbury,Washington,New York,USA ,NR
+824,Salem,Washington,New York,USA ,395
+825,Westfield,Washington,New York,USA ,NR
+826,Whitehall,Washington,New York,USA ,152
+827,Bedford,Westchester,New York,USA ,NR
+828,Cortlandt,Westchester,New York,USA ,334
+829,Eastchester,Westchester,New York,USA ,102
+830,Greenburgh,Westchester,New York,USA ,213
+831,Harrison,Westchester,New York,USA ,152
+832,Mamaroneck,Westchester,New York,USA ,65
+833,Morrisania,Westchester,New York,USA ,NR
+834,Mount Pleasant,Westchester,New York,USA ,303
+835,New Rochelle,Westchester,New York,USA ,109
+836,North Castle,Westchester,New York,USA ,400
+837,North Salem,Westchester,New York,USA ,181
+838,Pelham,Westchester,New York,USA ,31
+839,Poundridge,Westchester,New York,USA ,NR
+840,Rye,Westchester,New York,USA ,162
+841,Salem,Westchester,New York,USA ,NR
+842,Scarsdale,Westchester,New York,USA ,33
+843,Stephen,Westchester,New York,USA ,NR
+844,Westchester,Westchester,New York,USA ,NR
+845,White Plains,Westchester,New York,USA ,75
+846,Yonkers,Westchester,New York,USA ,152
+847,York,Westchester,New York,USA ,NR
+848,Edenton,Chowan,North Carolina,USA ,178
+849,Fayetteville,Cumberland,North Carolina,USA ,276
+850,Edgecombe,Halifax,North Carolina,USA ,NR
+851,Edgecombe,Martin,North Carolina,USA ,NR
+852,,Moore,North Carolina,USA ,NR
+853,New Bern,Newbern,North Carolina,USA ,NR
+854,Depriciation Tract,Allegheny,Pennsylvania,USA ,39
+855,Elizabeth,Allegheny,Pennsylvania,USA ,259
+856,Pitt,Allegheny,Pennsylvania,USA ,266
+857,Pittsburgh,Allegheny,Pennsylvania,USA ,77
+858,Plum,Allegheny,Pennsylvania,USA ,70
+859,Portion Taken From Washington,Allegheny,Pennsylvania,USA ,1077
+860,Versailles,Allegheny,Pennsylvania,USA ,67
+861,Albany,Berks,Pennsylvania,USA ,134
+862,Alsace,Berks,Pennsylvania,USA ,163
+863,Amity,Berks,Pennsylvania,USA ,153
+864,Bern,Berks,Pennsylvania,USA ,379
+865,Bethel,Berks,Pennsylvania,USA ,175
+866,Branswick and Manheim,Berks,Pennsylvania,USA ,242
+867,Brecknock,Berks,Pennsylvania,USA ,65
+868,Caernarvon,Berks,Pennsylvania,USA ,91
+869,Colebrookedale,Berks,Pennsylvania,USA ,100
+870,Cumru,Berks,Pennsylvania,USA ,245
+871,Douglas,Berks,Pennsylvania,USA ,89
+872,Earl,Berks,Pennsylvania,USA ,101
+873,East District,Berks,Pennsylvania,USA ,121
+874,Exeter,Berks,Pennsylvania,USA ,151
+875,Greenwich,Berks,Pennsylvania,USA ,133
+876,Heidelberg,Berks,Pennsylvania,USA ,362
+877,Hereford,Berks,Pennsylvania,USA ,174
+878,Long Swamp,Berks,Pennsylvania,USA ,130
+879,Maiden Creek,Berks,Pennsylvania,USA ,120
+880,Maxatany,Berks,Pennsylvania,USA ,177
+881,Oley,Berks,Pennsylvania,USA ,161
+882,Pine Grove,Berks,Pennsylvania,USA ,145
+883,Reading,Berks,Pennsylvania,USA ,435
+884,Richmond,Berks,Pennsylvania,USA ,109
+885,Robeson,Berks,Pennsylvania,USA ,200
+886,Rockland,Berks,Pennsylvania,USA ,143
+887,Ruscomb,Berks,Pennsylvania,USA ,94
+888,Tulpehocken,Berks,Pennsylvania,USA ,390
+889,Union,Berks,Pennsylvania,USA ,NR
+890,Windsor,Berks,Pennsylvania,USA ,204
+891,Birmingham,Chester,Pennsylvania,USA ,37
+892,Brandywine,Chester,Pennsylvania,USA ,127
+893,Charlestown,Chester,Pennsylvania,USA ,211
+894,Coventry,Chester,Pennsylvania,USA ,196
+895,East Bradford,Chester,Pennsylvania,USA ,125
+896,East Caln,Chester,Pennsylvania,USA ,108
+897,East Fallowfield,Chester,Pennsylvania,USA ,86
+898,East Marlborough,Chester,Pennsylvania,USA ,145
+899,East Nantmill,Chester,Pennsylvania,USA ,319
+900,East Nottingham,Chester,Pennsylvania,USA ,125
+901,East Town,Chester,Pennsylvania,USA ,4464
+902,East Whiteland,Chester,Pennsylvania,USA ,76
+903,Fallowfield,Chester,Pennsylvania,USA ,211
+904,Goshen,Chester,Pennsylvania,USA ,207
+905,Honeybrook,Chester,Pennsylvania,USA ,119
+906,Kennet,Chester,Pennsylvania,USA ,99
+907,London Britain,Chester,Pennsylvania,USA ,43
+908,Londonderry,Chester,Pennsylvania,USA ,96
+909,Londongrove,Chester,Pennsylvania,USA ,110
+910,New Garden,Chester,Pennsylvania,USA ,127
+911,New London,Chester,Pennsylvania,USA ,120
+912,Newlin,Chester,Pennsylvania,USA ,89
+913,Oxford,Chester,Pennsylvania,USA ,148
+914,Pennsbury,Chester,Pennsylvania,USA ,87
+915,Pikeland,Chester,Pennsylvania,USA ,142
+916,Sadsbury,Chester,Pennsylvania,USA ,89
+917,Thornbury,Chester,Pennsylvania,USA ,27
+918,Tredifferin,Chester,Pennsylvania,USA ,157
+919,Uwchland,Chester,Pennsylvania,USA ,167
+920,Vincent,Chester,Pennsylvania,USA ,182
+921,West Bradford,Chester,Pennsylvania,USA ,118
+922,West Caln,Chester,Pennsylvania,USA ,134
+923,West Marlborough,Chester,Pennsylvania,USA ,121
+924,West Nantmill,Chester,Pennsylvania,USA ,319
+925,West Nottingham,Chester,Pennsylvania,USA ,69
+926,West Town,Chester,Pennsylvania,USA ,4464
+927,West Whiteland,Chester,Pennsylvania,USA ,72
+928,Willistown,Chester,Pennsylvania,USA ,125
+929,Hopewell,Newton,Tyborn,and Westpensboro,3020
+930,Harrisburgh,Dauphin,Pennsylvania,USA ,185
+931,Lebanon,Dauphin,Pennsylvania,USA ,180
+932,Ashton,Delaware,Pennsylvania,USA ,75
+933,Bethel,Delaware,Pennsylvania,USA ,39
+934,Birmingham,Delaware,Pennsylvania,USA ,64
+935,Chester,Delaware,Pennsylvania,USA ,NR
+936,Concord,Delaware,Pennsylvania,USA ,108
+937,Darby,Delaware,Pennsylvania,USA ,NR
+938,Edgmont,Delaware,Pennsylvania,USA ,63
+939,Haverford,Delaware,Pennsylvania,USA ,NR
+940,Lower Chichester,Delaware,Pennsylvania,USA ,NR
+941,Lower Providence,Delaware,Pennsylvania,USA ,52
+942,Marple,Delaware,Pennsylvania,USA ,NR
+943,Middletown,Delaware,Pennsylvania,USA ,NR
+944,Newton,Delaware,Pennsylvania,USA ,73
+945,Radnor,Delaware,Pennsylvania,USA ,NR
+946,Ridley,Delaware,Pennsylvania,USA ,NR
+947,Springfield,Delaware,Pennsylvania,USA ,67
+948,Thornbury,Delaware,Pennsylvania,USA ,63
+949,Tinicum,Delaware,Pennsylvania,USA ,NR
+950,Upper Chichester,Delaware,Pennsylvania,USA ,NR
+951,Upper Darby,Delaware,Pennsylvania,USA ,86
+952,Upper Providence,Delaware,Pennsylvania,USA ,NR
+953,Bullskin,Fayette,Pennsylvania,USA ,159
+954,Franklin,Fayette,Pennsylvania,USA ,18
+955,Georges,Fayette,Pennsylvania,USA ,262
+956,German,Fayette,Pennsylvania,USA ,278
+957,Hopewell,Newton,Tyborn,and Westpensboro,NR
+958,Luzerne,Fayette,Pennsylvania,USA ,152
+959,Manallen,Fayette,Pennsylvania,USA ,296
+960,Springhill,Fayette,Pennsylvania,USA ,256
+961,Tyrone,Fayette,Pennsylvania,USA ,410
+962,Union,Fayette,Pennsylvania,USA ,291
+963,Washington,Fayette,Pennsylvania,USA ,206
+964,Wharton,Fayette,Pennsylvania,USA ,70
+965,Fannet,Hamilton,Letterkenney,Montgomery,1161
+966,Fannet;Peters;Montgomery;Hamistonand;Letterhenney,Franklin,Pennsylvania,USA ,1161
+967,Bart,Lancaster,Pennsylvania,USA ,137
+968,Brecknock,Lancaster,Pennsylvania,USA ,120
+969,Caemarvon,Lancaster,Pennsylvania,USA ,NR
+970,Caernarvon,Lancaster,Pennsylvania,USA ,131
+971,Cocalico,Lancaster,Pennsylvania,USA ,539
+972,Colerain,Lancaster,Pennsylvania,USA ,113
+973,Conestoga,Lancaster,Pennsylvania,USA ,170
+974,Donegal,Lancaster,Pennsylvania,USA ,270
+975,Drumore,Lancaster,Pennsylvania,USA ,157
+976,Earl,Lancaster,Pennsylvania,USA ,570
+977,Elizabeth,Lancaster,Pennsylvania,USA ,86
+978,Heidelberg,Lancaster,Pennsylvania,USA ,12
+979,Hempfield,Lancaster,Pennsylvania,USA ,272
+980,Lampeter,Lancaster,Pennsylvania,USA ,238
+981,Lancaster,Lancaster,Pennsylvania,USA ,734
+982,Lancaster Borough,Lancaster,Pennsylvania,USA ,680
+983,Lancaster Township,Lancaster,Pennsylvania,USA ,54
+984,Leacock,Lancaster,Pennsylvania,USA ,213
+985,Lttle Britain,Lancaster,Pennsylvania,USA ,196
+986,Manheim,Lancaster,Pennsylvania,USA ,208
+987,Manor Township,Lancaster,Pennsylvania,USA ,268
+988,Martick,Lancaster,Pennsylvania,USA ,234
+989,Mountjoy,Lancaster,Pennsylvania,USA ,136
+990,Rapho,Lancaster,Pennsylvania,USA ,255
+991,Sadsbury,Lancaster,Pennsylvania,USA ,108
+992,Salisbury,Lancaster,Pennsylvania,USA ,207
+993,Strasburg,Lancaster,Pennsylvania,USA ,264
+994,Warwick,Lancaster,Pennsylvania,USA ,355
+995,Abington,Montgomery,Pennsylvania,USA ,NR
+996,Cheltenham,Montgomery,Pennsylvania,USA ,NR
+997,Manor of Moreland,Montgomery,Pennsylvania,USA ,224
+998,Springfield,Montgomery,Pennsylvania,USA ,NR
+999,Allen,Northampton,Pennsylvania,USA ,241
+1000,Bethlehem,Northampton,Pennsylvania,USA ,160
+1001,Chestnut Hill,Northampton,Pennsylvania,USA ,107
+1002,Cosikton District,Northampton,Pennsylvania,USA ,56
+1003,Delaware,Northampton,Pennsylvania,USA ,77
+1004,Easton,Northampton,Pennsylvania,USA ,134
+1005,Forks,Northampton,Pennsylvania,USA ,116
+1006,Hamilton,Northampton,Pennsylvania,USA ,95
+1007,Heidelberg,Northampton,Pennsylvania,USA ,166
+1008,Lehigh,Northampton,Pennsylvania,USA ,106
+1009,Low Hill,Northampton,Pennsylvania,USA ,75
+1010,Lower Mount Bethel,Northampton,Pennsylvania,USA ,164
+1011,Lower Saucon,Northampton,Pennsylvania,USA ,179
+1012,Lower Smithfield,Northampton,Pennsylvania,USA ,235
+1013,Lynn,Northampton,Pennsylvania,USA ,169
+1014,MacUnge,Northampton,Pennsylvania,USA ,210
+1015,More,Northampton,Pennsylvania,USA ,127
+1016,Nazareth,Northampton,Pennsylvania,USA ,155
+1017,Northampton,Northampton,Pennsylvania,USA ,NR
+1018,Penn,Northampton,Pennsylvania,USA ,110
+1019,Plainfield,Northampton,Pennsylvania,USA ,146
+1020,Salisbury,Northampton,Pennsylvania,USA ,170
+1021,Towamensink,Northampton,Pennsylvania,USA ,74
+1022,Upper Milford,Northampton,Pennsylvania,USA ,202
+1023,Upper Mount Bethel,Northampton,Pennsylvania,USA ,153
+1024,Upper Saucon,Northampton,Pennsylvania,USA ,145
+1025,Upper Smithfield,Northampton,Pennsylvania,USA ,63
+1026,Wallen Papeck,Northampton,Pennsylvania,USA ,30
+1027,Weisenbergh,Northampton,Pennsylvania,USA ,101
+1028,Whitehall,Northampton,Pennsylvania,USA ,203
+1029,Williams,Northampton,Pennsylvania,USA ,132
+1030,Blockley,Philadelphia,Pennsylvania,USA ,150
+1031,Blockley;Kingsessing,Philadelphia,Pennsylvania,USA ,150
+1032,Bristol,Philadelphia,Pennsylvania,USA ,124
+1033,Bullskin,Philadelphia,Pennsylvania,USA ,15
+1034,Byberry,Philadelphia,Pennsylvania,USA ,95
+1035,Germantown,Philadelphia,Pennsylvania,USA ,555
+1036,Kingsessing Town,Philadelphia,Pennsylvania,USA ,109
+1037,Lower Dublin,Philadelphia,Pennsylvania,USA ,228
+1038,Manor of Moreland,Philadelphia,Pennsylvania,USA ,65
+1039,Mojamensing and Passyunk,Philadelphia,Pennsylvania,USA ,261
+1040,Northern Liberties,Philadelphia,Pennsylvania,USA ,2171
+1041,Oxford,Philadelphia,Pennsylvania,USA ,175
+1042,Philadelphia City,Philadelphia,Pennsylvania,USA ,546
+1043,Roxborough,Philadelphia,Pennsylvania,USA ,135
+1044,Southwark,Philadelphia,Pennsylvania,USA ,1064
+1045,Water Street East Side,Philadelphia,Pennsylvania,USA ,4796
+1046,Armstrong,Westmoreland,Pennsylvania,USA ,272
+1047,Derry,Westmoreland,Pennsylvania,USA ,288
+1048,Donegal,Westmoreland,Pennsylvania,USA ,142
+1049,Fairfield,Westmoreland,Pennsylvania,USA ,118
+1050,Franklin,Westmoreland,Pennsylvania,USA ,141
+1051,French Creek,Westmoreland,Pennsylvania,USA ,15
+1052,Hempfield,Westmoreland,Pennsylvania,USA ,NR
+1053,Mount Pleasant,Westmoreland,Pennsylvania,USA ,174
+1054,North Huntington,Westmoreland,Pennsylvania,USA ,534
+1055,Rostraver,Westmoreland,Pennsylvania,USA ,191
+1056,Salem,Westmoreland,Pennsylvania,USA ,144
+1057,South Huntington,Westmoreland,Pennsylvania,USA ,534
+1058,Unity,Westmoreland,Pennsylvania,USA ,205
+1059,Versailles,Westmoreland,Pennsylvania,USA ,2
+1060,Washington,Westmoreland,Pennsylvania,USA ,134
+1061,Wheatfeld,Westmoreland,Pennsylvania,USA ,73
+1062,Chanceford,York,Pennsylvania,USA ,296
+1063,Codorus,York,Pennsylvania,USA ,268
+1064,Dover,York,Pennsylvania,USA ,253
+1065,Fawn,York,Pennsylvania,USA ,230
+1066,Hellam,York,Pennsylvania,USA ,129
+1067,Hopewell,York,Pennsylvania,USA ,211
+1068,Manallan;Huntington;Gieone;Manhiem,York,Pennsylvania,USA ,NR
+1069,Manchester,York,Pennsylvania,USA ,302
+1070,Mixed Township,York,Pennsylvania,USA ,2567
+1071,Monaghan,York,Pennsylvania,USA ,273
+1072,Newberry,York,Pennsylvania,USA ,404
+1073,Paradise,York,Pennsylvania,USA ,214
+1074,Reading,York,Pennsylvania,USA ,178
+1075,Shrewsbury,York,Pennsylvania,USA ,220
+1076,Warrinton,York,Pennsylvania,USA ,263
+1077,Windsor,York,Pennsylvania,USA ,254
+1078,York,York,Pennsylvania,USA ,641
+1079,York Borough,York,Pennsylvania,USA ,384
+1080,Barrington,Bristol,Rhode Island,USA ,115
+1081,Bristol,Bristol,Rhode Island,USA ,253
+1082,Warren,Bristol,Rhode Island,USA ,200
+1083,Coventry,Kent,Rhode Island,USA ,395
+1084,East Greenwich,Kent,Rhode Island,USA ,296
+1085,Little Compton,Kent,Rhode Island,USA ,NR
+1086,Middletown,Kent,Rhode Island,USA ,NR
+1087,New Shoreham,Kent,Rhode Island,USA ,NR
+1088,Newport,Kent,Rhode Island,USA ,NR
+1089,Warwick,Kent,Rhode Island,USA ,398
+1090,West Greenwich,Kent,Rhode Island,USA ,300
+1091,Jamestown,Newport,Rhode Island,USA ,NR
+1092,Middletown,Newport,Rhode Island,USA ,92
+1093,Newport,Newport,Rhode Island,USA ,1243
+1094,Portsmouth,Newport,Rhode Island,USA ,243
+1095,Tiverton,Newport,Rhode Island,USA ,407
+1096,Cranston,Providence,Rhode Island,USA ,315
+1097,Cumberland,Providence,Rhode Island,USA ,313
+1098,Foster,Providence,Rhode Island,USA ,363
+1099,Glocester,Providence,Rhode Island,USA ,621
+1100,Johnstown,Providence,Rhode Island,USA ,NR
+1101,North Providence,Providence,Rhode Island,USA ,183
+1102,Providence,Providence,Rhode Island,USA ,1131
+1103,Scituate,Providence,Rhode Island,USA ,382
+1104,Smithfield,Providence,Rhode Island,USA ,494
+1105,Charleston,Washington,Rhode Island,USA ,NR
+1106,Exeter,Washington,Rhode Island,USA ,425
+1107,Hopkinton,Washington,Rhode Island,USA ,404
+1108,North Kingston,Washington,Rhode Island,USA ,NR
+1109,Richmond,Washington,Rhode Island,USA ,290
+1110,South Kingston,Washington,Rhode Island,USA ,NR
+1111,Westerly,Washington,Rhode Island,USA ,360
+1112,Christ Church,Charleston,South Carolina,USA ,NR
+1113,St Andrews,Charleston,South Carolina,USA ,193
+1114,St Bartholomes,Charleston,South Carolina,USA ,NR
+1115,St Georges,Charleston,South Carolina,USA ,NR
+1116,St James Goose Creek,Charleston,South Carolina,USA ,NR
+1117,St James Santee,Charleston,South Carolina,USA ,NR
+1118,St Johns,Charleston,South Carolina,USA ,NR
+1119,St Pauls,Charleston,South Carolina,USA ,100
+1120,St Phillips and St Michaels,Charleston,South Carolina,USA ,NR
+1121,St Stephens,Charleston,South Carolina,USA ,NR
+1122,St Thomas,Charleston,South Carolina,USA ,NR
+1123,St Phillips and St Michaels,Cheraws District,South Carolina,USA ,NR
+1124,St Thomas,Cheraws District,South Carolina,USA ,NR
+1125,St Paul,Edgefield,South Carolina,USA ,NR
+1126,All Saints,Georgetown,South Carolina,USA ,NR
+1127,Prince Fredericks,Georgetown,South Carolina,USA ,NR
+1128,Prince Georges,Georgetown,South Carolina,USA ,NR
+1129,Addison,Addison,Vermont,USA ,68
+1130,Bridport,Addison,Vermont,USA ,79
+1131,Bristol,Addison,Vermont,USA ,61
+1132,Cornwall,Addison,Vermont,USA ,149
+1133,Ferrisburg,Addison,Vermont,USA ,NR
+1134,Hancock,Addison,Vermont,USA ,9
+1135,Kingston,Addison,Vermont,USA ,20
+1136,Leicester,Addison,Vermont,USA ,337
+1137,Middlebury,Addison,Vermont,USA ,74
+1138,Monkton,Addison,Vermont,USA ,79
+1139,New Haven,Addison,Vermont,USA ,132
+1140,Panton,Addison,Vermont,USA ,40
+1141,Salisbury,Addison,Vermont,USA ,140
+1142,Shoreham,Addison,Vermont,USA ,135
+1143,Vergennes,Addison,Vermont,USA ,39
+1144,Weybridge,Addison,Vermont,USA ,32
+1145,Whiting,Addison,Vermont,USA ,46
+1146,Arlington,Bennington,Vermont,USA ,172
+1147,Bennington,Bennington,Vermont,USA ,375
+1148,Bromley,Bennington,Vermont,USA ,15
+1149,Dorsett,Bennington,Vermont,USA ,155
+1150,Glastonbury,Bennington,Vermont,USA ,6
+1151,Landgrove,Bennington,Vermont,USA ,6
+1152,Manchester,Bennington,Vermont,USA ,200
+1153,Pownal,Bennington,Vermont,USA ,282
+1154,Reedsborough,Bennington,Vermont,USA ,14
+1155,Rupert,Bennington,Vermont,USA ,179
+1156,Sandgate,Bennington,Vermont,USA ,136
+1157,Shaftsbury,Bennington,Vermont,USA ,301
+1158,Stamford,Bennington,Vermont,USA ,48
+1159,Sunderland,Bennington,Vermont,USA ,69
+1160,Winhall,Bennington,Vermont,USA ,29
+1161,Woodford,Bennington,Vermont,USA ,14
+1162,Alburgh,Chittenden,Vermont,USA ,90
+1163,Bakersfield,Chittenden,Vermont,USA ,2
+1164,Bolton,Chittenden,Vermont,USA ,16
+1165,Burlington,Chittenden,Vermont,USA ,60
+1166,Burlington;Jerico,Chittenden,Vermont,USA ,124
+1167,Cambridge,Chittenden,Vermont,USA ,62
+1168,Cambridge Gore,Chittenden,Vermont,USA ,3
+1169,Charlotte,Chittenden,Vermont,USA ,118
+1170,Colchester,Chittenden,Vermont,USA ,28
+1171,Duxbury,Chittenden,Vermont,USA ,8
+1172,Elmore,Chittenden,Vermont,USA ,7
+1173,Essex,Chittenden,Vermont,USA ,62
+1174,Fairfax,Chittenden,Vermont,USA ,51
+1175,Fairfield,Chittenden,Vermont,USA ,27
+1176,Fletcher,Chittenden,Vermont,USA ,8
+1177,Georgia,Chittenden,Vermont,USA ,56
+1178,Highgate,Chittenden,Vermont,USA ,17
+1179,Hinesburgh,Chittenden,Vermont,USA ,85
+1180,Hungerford,Chittenden,Vermont,USA ,7
+1181,Huntsburgh,Chittenden,Vermont,USA ,10
+1182,Hydespark,Chittenden,Vermont,USA ,7
+1183,Isle-Mott,Chittenden,Vermont,USA ,14
+1184,Jerico,Chittenden,Vermont,USA ,64
+1185,Johnson,Chittenden,Vermont,USA ,21
+1186,Middlesex,Chittenden,Vermont,USA ,14
+1187,Milton,Chittenden,Vermont,USA ,49
+1188,Minden,Chittenden,Vermont,USA ,2
+1189,Moretown,Chittenden,Vermont,USA ,6
+1190,Morristown,Chittenden,Vermont,USA ,4
+1191,Newhuntington,Chittenden,Vermont,USA ,28
+1192,Newhuntington Gore,Chittenden,Vermont,USA ,7
+1193,North Hero,Chittenden,Vermont,USA ,126
+1194,Shelburne,Chittenden,Vermont,USA ,77
+1195,Smithfield,Chittenden,Vermont,USA ,14
+1196,South Hero,Chittenden,Vermont,USA ,126
+1197,St Albans,Chittenden,Vermont,USA ,44
+1198,St George,Chittenden,Vermont,USA ,12
+1199,Starksborough,Chittenden,Vermont,USA ,9
+1200,Swanton,Chittenden,Vermont,USA ,14
+1201,Underhill,Chittenden,Vermont,USA ,12
+1202,Waitsfield,Chittenden,Vermont,USA ,13
+1203,Waterbury,Chittenden,Vermont,USA ,16
+1204,Westford,Chittenden,Vermont,USA ,14
+1205,Williston,Chittenden,Vermont,USA ,93
+1206,Wolcot,Chittenden,Vermont,USA ,5
+1207,Barnet,Orange,Vermont,USA ,98
+1208,Berlin,Orange,Vermont,USA ,23
+1209,Bradford,Orange,Vermont,USA ,108
+1210,Braintree,Orange,Vermont,USA ,37
+1211,Brookfield,Orange,Vermont,USA ,76
+1212,Brunswick,Orange,Vermont,USA ,12
+1213,Cabot,Orange,Vermont,USA ,21
+1214,Calais,Orange,Vermont,USA ,8
+1215,Canaan,Orange,Vermont,USA ,3
+1216,Chelsea,Orange,Vermont,USA ,45
+1217,Concord,Orange,Vermont,USA ,12
+1218,Corinth,Orange,Vermont,USA ,96
+1219,Danville,Orange,Vermont,USA ,107
+1220,Dewey Gore,Orange,Vermont,USA ,1
+1221,Fairley,Orange,Vermont,USA ,80
+1222,Greensburrough,Orange,Vermont,USA ,5
+1223,Groton,Orange,Vermont,USA ,8
+1224,Guildhall,Orange,Vermont,USA ,27
+1225,Hardwick,Orange,Vermont,USA ,2
+1226,Lemington,Orange,Vermont,USA ,5
+1227,Littleton,Orange,Vermont,USA ,11
+1228,Lunenburgh,Orange,Vermont,USA ,23
+1229,Lyndon,Orange,Vermont,USA ,12
+1230,Maidstone,Orange,Vermont,USA ,19
+1231,Montpelier,Orange,Vermont,USA ,17
+1232,Newbury,Orange,Vermont,USA ,144
+1233,Northfield,Orange,Vermont,USA ,7
+1234,Peachum,Orange,Vermont,USA ,63
+1235,Randolph,Orange,Vermont,USA ,150
+1236,Roxbury,Orange,Vermont,USA ,3
+1237,Ryegate,Orange,Vermont,USA ,36
+1238,Strafford,Orange,Vermont,USA ,148
+1239,Thetford,Orange,Vermont,USA ,157
+1240,Topsham,Orange,Vermont,USA ,27
+1241,Tunbridge,Orange,Vermont,USA ,86
+1242,Vershire,Orange,Vermont,USA ,81
+1243,Walden,Orange,Vermont,USA ,2
+1244,Waldens Gore,Orange,Vermont,USA ,7
+1245,Washington,Orange,Vermont,USA ,17
+1246,Wheelock,Orange,Vermont,USA ,10
+1247,Wildersburgh,Orange,Vermont,USA ,16
+1248,Williamstown,Orange,Vermont,USA ,31
+1249,Benson,Rutland,Vermont,USA ,130
+1250,Brandon,Rutland,Vermont,USA ,117
+1251,Castleton,Rutland,Vermont,USA ,140
+1252,Chittenden,Rutland,Vermont,USA ,28
+1253,Clarendon,Rutland,Vermont,USA ,258
+1254,Danby,Rutland,Vermont,USA ,212
+1255,Fair Haven,Rutland,Vermont,USA ,100
+1256,Harwich,Rutland,Vermont,USA ,29
+1257,Hubbardton,Rutland,Vermont,USA ,81
+1258,Ira,Rutland,Vermont,USA ,53
+1259,Killington,Rutland,Vermont,USA ,8
+1260,Middletown,Rutland,Vermont,USA ,123
+1261,Midway,Rutland,Vermont,USA ,6
+1262,Orwell,Rutland,Vermont,USA ,150
+1263,Pawlet,Rutland,Vermont,USA ,249
+1264,Philadelphia,Rutland,Vermont,USA ,9
+1265,Pittsfield,Rutland,Vermont,USA ,12
+1266,Pittsford,Rutland,Vermont,USA ,156
+1267,Poultney,Rutland,Vermont,USA ,191
+1268,Rutland,Rutland,Vermont,USA ,243
+1269,Shrewsbury,Rutland,Vermont,USA ,73
+1270,Sudbury,Rutland,Vermont,USA ,46
+1271,Tinmouth,Rutland,Vermont,USA ,171
+1272,Wallingford,Rutland,Vermont,USA ,96
+1273,Wells,Rutland,Vermont,USA ,115
+1274,Athens,Windham,Vermont,USA ,84
+1275,Brattleboro,Windham,Vermont,USA ,260
+1276,Dummerston,Windham,Vermont,USA ,274
+1277,Guilford,Windham,Vermont,USA ,411
+1278,Hallifax,Windham,Vermont,USA ,199
+1279,Hinsdale,Windham,Vermont,USA ,76
+1280,Jamaica,Windham,Vermont,USA ,48
+1281,Johnsons Gore,Windham,Vermont,USA ,10
+1282,Londonderry,Windham,Vermont,USA ,71
+1283,Marlborough,Windham,Vermont,USA ,112
+1284,New Fane,Windham,Vermont,USA ,114
+1285,Putney,Windham,Vermont,USA ,291
+1286,Rockingham,Windham,Vermont,USA ,208
+1287,Somerset,Windham,Vermont,USA ,21
+1288,Stratton,Windham,Vermont,USA ,24
+1289,Thomlinson,Windham,Vermont,USA ,106
+1290,Townsend,Windham,Vermont,USA ,132
+1291,Wardsborough,Windham,Vermont,USA ,150
+1292,Westminster,Windham,Vermont,USA ,261
+1293,Whitingham,Windham,Vermont,USA ,78
+1294,Wilmington,Windham,Vermont,USA ,116
+1295,Aldburgh,Windsor,Vermont,USA ,NR
+1296,Andover,Windsor,Vermont,USA ,47
+1297,Barnard,Windsor,Vermont,USA ,132
+1298,Barnet,Windsor,Vermont,USA ,NR
+1299,Benson,Windsor,Vermont,USA ,NR
+1300,Bethel,Windsor,Vermont,USA ,87
+1301,Bridgwater,Windsor,Vermont,USA ,60
+1302,Cavendish,Windsor,Vermont,USA ,87
+1303,Chester,Windsor,Vermont,USA ,170
+1304,Hartford,Windsor,Vermont,USA ,168
+1305,Hartland,Windsor,Vermont,USA ,271
+1306,Ludlow,Windsor,Vermont,USA ,29
+1307,Norwich,Windsor,Vermont,USA ,181
+1308,Pomfret,Windsor,Vermont,USA ,116
+1309,Reading,Windsor,Vermont,USA ,137
+1310,Rochester,Windsor,Vermont,USA ,47
+1311,Royalton,Windsor,Vermont,USA ,141
+1312,Saltash,Windsor,Vermont,USA ,20
+1313,Sharon,Windsor,Vermont,USA ,102
+1314,Springfield,Windsor,Vermont,USA ,204
+1315,Stockbridge,Windsor,Vermont,USA ,22
+1316,Weathersfield,Windsor,Vermont,USA ,207
+1317,Weathersfield;Springfield,Windsor,Vermont,USA ,411
+1318,Windham,Windsor,Vermont,USA ,NR
+1319,Windsor,Windsor,Vermont,USA ,240
+1320,Woodstock,Windsor,Vermont,USA ,268
