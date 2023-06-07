@@ -6,7 +6,7 @@ The purpose of this application is to find the populations of all towns in ```fi
 In order to create this application, the two most important Python libraries I used were Selenium and Pandas. Selenium is a Python library that can act as a web scraper. The Pandas library allowed me to convert the data I gathered from Ancestry's website into readable Dataframes and then into a CSV file. 
 
 ## Challenges 
-Most issues I encountered came from using Selenium. Although Selenium gave me many different errors, I noticed that it oftentimes crashed while going through the list of towns. Although I am still not fully sure why, my best guess at this moment is that it could not handle opening so many tabs. 
+Most issues I encountered came from using Selenium. Although Selenium gave me many different errors, I noticed that it oftentimes crashed while going through the list of towns. Although I am still not fully sure why, my best guess at this moment is that it could not handle opening so many tabs. This problem will need further testing, but as of right now, I simply added a try-catch statement. 
 
 ## Running the Program (Step-by-Step)
 
