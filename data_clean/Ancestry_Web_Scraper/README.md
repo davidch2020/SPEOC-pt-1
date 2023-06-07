@@ -15,9 +15,10 @@ Most issues I encountered came from using Selenium. Although Selenium gave me ma
 3. Install Selenium, Pandas using ```pip install Selenium``` and ```pip install Pandas```, respectively. 
 4. Open ```web_scraper.ipynb```.
 5. Run all code cells going from the top, up to the section labeled "Part II". Details for each code cell can be found in the headers in ```web_scraper.ipynb```. 
-6. By this point, hopefully you have a .csv file titled town_pops_clean.csv that has all the populations for every town in ```final_data_CD.csv```. 
+6. By this point, hopefully you have a .csv file titled ```town_pops_clean.csv``` that has all the populations for every town in ```final_data_CD.csv```. 
 7. Run all code in "Part II". This will return a .csv file: ```town_pops_2.csv```. This contains the populations of all the towns in Ancestry's databases. Further instructions and details can be found underneath the headers of each section as well as in the comments. 
-8. If needed, you can run the error handling code (Fix Formatting - Rerunning the Program), again. Just make sure filenames have been changed from ```town_pops.csv``` to ```town_pops_2.csv```. 
+8. If needed, you can run the error handling code (Fix Formatting - Rerunning the Program), again. Just make sure filenames have been changed from ```town_pops.csv``` to ```town_pops_2.csv```. This will return a new file, ```town_pops_clean_2.csv```
+9. Note: I actually removed ```town_pops_clean.csv``` since it was no longer needed and renamed ```town_pops_clean_2.csv``` to ```town_pops_clean.csv```. 
 
 ## Credits
 Thanks to ```@liaochris``` for all his help on this. 
