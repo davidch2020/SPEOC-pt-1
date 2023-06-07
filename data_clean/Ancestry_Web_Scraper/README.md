@@ -1,8 +1,8 @@
 # Ancestry Web Scraping
 
-The purpose of this application is to find the populations of all towns in ```final_data_CD.csv```. This way, the percentage of people in each town that held debt can be found. Next, the populations of **all** towns in Ancestry's database were found. This way, the program wouldn't have to be run again when assumed state debt is added. 
+The purpose of this application is to find the populations of all towns in ```final_data_CD.csv```. This way, the percentage of people in each town that held debt can be found. Next, the populations of **all** towns in Ancestry's database were found. This way, the program wouldn't have to be run again when assumed state debt was added. 
 
-## What Libraries did I use?
+## What Libraries Did I Use?
 In order to create this application, the two most important Python libraries I used were Selenium and Pandas. Selenium is a Python library that can act as a web scraper. The Pandas library allowed me to convert the data I gathered from Ancestry's website into readable Dataframes and then into a CSV file. 
 
 ## Challenges 
