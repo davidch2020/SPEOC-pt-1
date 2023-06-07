@@ -14,9 +14,9 @@ Most issues I encountered came from using Selenium. Although Selenium gave me ma
 2. The latest version of Python is assumed to be installed. 
 3. Install Selenium, Pandas using ```pip install Selenium``` and ```pip install Pandas```, respectively. 
 4. Open ```web_scraper.ipynb```.
-5. Run all code cells going from the top up to the section labeled "Part II". Details for each code cell can be found in the headers in ```web_scraper.ipynb```. 
+5. Run all code cells going from the top, up to the section labeled "Part II". Details for each code cell can be found in the headers in ```web_scraper.ipynb```. 
 6. By this point, hopefully you have a .csv file titled town_pops_clean.csv that has all the populations for every town in ```final_data_CD.csv```. 
-7. Run all code in "Part II". This will return a .csv file: ```town_pops_2.csv```. Further instructions and details can be found underneath the headers of each section. 
+7. Run all code in "Part II". This will return a .csv file: ```town_pops_2.csv```. Further instructions and details can be found underneath the headers of each section as well as in the comments. 
 8. If needed, you can run the error handling code (Fix Formatting - Rerunning the Program), again. Just make sure filenames have been changed from ```town_pops.csv``` to ```town_pops_2.csv```. 
 
 ## Credits
