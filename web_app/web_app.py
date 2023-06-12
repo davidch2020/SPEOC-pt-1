@@ -7,6 +7,9 @@ from dash.dependencies import Input, Output
 from dash import dash_table
 import pandas as pd
 import plotly.express as px
+import geopandas as gpd
+import topojson as tp
+import json
 
 # create web app, import bootstrap stylesheet + external stylesheet
 app = dash.Dash(__name__, external_stylesheets=[dbc.themes.BOOTSTRAP, 'assets/style.css'])
@@ -34,6 +37,46 @@ project_desc = html.Div(className='box', children=[
     ]),
 ])
 
+# map options
+map_ops = dcc.Checklist(options=[" Display Total Population", " Display Total Slave Population", 
+                                 " Display Towns", " Total Debt Ownership", " Percentage Debt Ownership",
+                                  " Occupations With Highest Debt Ownership" ], 
+                        value=[" Display Total Population"])
+
+# title: "map options"
+map_op_title = html.H5(children="Map Options", id="map_op_title")
+
+# dropdown menu of states 
+state_pops = pd.read_csv("../data_raw/census_data/statepop.csv")
+states = state_pops["State"].dropna()
+states_drp = dcc.Dropdown(
+    options=states,
+    value=states[0]
+)
+
+# title: "choose a state and a county"
+drpdwn_title = html.H5(children="Choose a State and a County", id="drpdwn_title")
+
+"""
+Hold off on this for now 
+# dropdown menu of counties 
+# find all the state codes
+# use a for loop to go through each state code and 
+county_pops = pd.read_csv("../data_raw/census_data/countyPopulation.csv")
+state_codes = county_pops["State/US Abbreviation"].dropna().unique().tolist()
+del state_codes[0]
+print(state_codes)
+"""
+
+# import map shapefile
+map_df = gpd.read_file("../data_raw/shapefiles/historicalcounties")
+
+map_df.rename(columns = {'NHGISNAM':'county'}, inplace = True)
+map_df.rename(columns = {'STATENAM':'state'}, inplace = True)
+
+map_gj = map_df.to_json()
+print(type(map_df))
+
 # Left tab with map and table options
 # Use this to select whether you want a map or table
 # Also use this to select what type of map/table you want to show (not implemented yet)
@@ -49,7 +92,15 @@ left_tab = html.Div(className='box', children=[
             value='map',
             labelStyle={'display': 'block'}
         )
-    ]),
+    ]), 
+    html.Div(id="st_c_drpdwn", children=[
+        drpdwn_title,
+        states_drp 
+    ], style={"display":"block"}), 
+    html.Div(id="map_ops", children=[
+        map_op_title,
+        map_ops
+    ], style={"display":"block"}) 
 ], style={'width': '40%', 'height': '600px'})
 
 # Right tab with DataFrame/Map
@@ -60,6 +111,27 @@ right_tab = html.Div(className='box', children=[
              )
 ], style={'width': '60%', 'height': '600px'})
 
+# call back function to display dropdown menus when 'map' is clicked
+@app.callback( 
+        Output("st_c_drpdwn", "style"),
+        Input("left-tab-options", "value")
+)
+def add_map_options(value):
+    if value == "map":
+        return {"display":"block"}
+    else:
+        return {"display":"none"}
+
+# call back function to display map options when 'map' is clicked 
+@app.callback( 
+        Output("map_ops", "style"),
+        Input("left-tab-options", "value")
+)
+def add_map_options(value):
+    if value == "map":
+        return {"display":"block"}
+    else:
+        return {"display":"none"}
 
 # call back function that changes the text shown when we move through arrows.
 @app.callback(
@@ -78,6 +150,26 @@ def update_project_desc(left_clicks, right_clicks):
     return 'This is some text. We are currently displaying text at for the {} slide.'.format(
         number)
 
+# create national choropleth map 
+# import map shapefile
+map_df = gpd.read_file("../data_raw/shapefiles/historicalcounties")
+
+# rename columns and simplify map geometry (to make it run faster)
+map_df.rename(columns = {'NHGISNAM':'county'}, inplace = True)
+map_df.rename(columns = {'STATENAM':'state'}, inplace = True)
+map_df["geometry"] = map_df["geometry"].simplify(0.01).buffer(0)
+
+# save as a geojson
+map_str = map_df.to_json()
+map_gj = json.loads(map_str) # convert string json to dictionary json 
+
+# get county populations 
+county_pops = pd.read_csv("../data_raw/census_data/countyPopulation.csv", header=1)
+county_pops = county_pops[county_pops["SE_T001_001"].notna()]
+county_pops = county_pops.astype({"SE_T001_001":"int", "Geo_FIPS":"str"})
+county_pops = county_pops[["Geo_FIPS", "SE_T001_001"]]
+county_pops.rename(columns = {'SE_T001_001':'population'}, inplace = True)
+
 # call back function that outputs either map or table depending on your choice
 @app.callback(
     Output('right-tab-content', 'children'),
@@ -85,6 +177,7 @@ def update_project_desc(left_clicks, right_clicks):
 )
 def render_right_tab_content(option):
     if option == 'map':
+        """
         # placeholder map
         df = px.data.election()  # replace with your own data source
         geojson = px.data.election_geojson()
@@ -94,7 +187,20 @@ def render_right_tab_content(option):
             projection="mercator", range_color=[0, 6500])
         fig.update_geos(fitbounds="locations", visible=False)
         fig.update_layout(margin={"r": 0, "t": 0, "l": 0, "b": 0})
+        return dcc.Graph(figure = fig)        
+        """
+
+        # create choropleth map 
+        fig = px.choropleth(county_pops, geojson=map_gj, locations='Geo_FIPS', color='population',
+                                color_continuous_scale="Viridis",
+                                range_color=(county_pops["population"].min(), county_pops["population"].max()),
+                                    featureidkey="properties.Geo_FIPS",
+                                scope="usa",
+                            )
+        fig.update_layout(margin={"r":0,"t":0,"l":0,"b":0})
+
         return dcc.Graph(figure = fig)
+        
     elif option == 'table':
         # Display the DataFrame as a table
         df = pd.read_csv('../data_clean/final_data_CD.csv', index_col=0)
@@ -113,7 +219,6 @@ def render_right_tab_content(option):
                 'fontWeight': 'bold'
             }
         )
-
 
 # Layout of the app
 app.layout = html.Div(className='app-container', children=[
