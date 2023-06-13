@@ -18,7 +18,7 @@ Geo_FIPS,Geo_STATE,Geo_COUNTY,Geo_recnum,Geo_name,Geo_name2,Geo_QName,Geo_SUMLEV
 1301190,130,1190,16,Franklin County,"Franklin County, GA","Franklin County, Georgia",50,GA,Franklin,130,1190,1301190,44,1190,13119,Franklin,1647.277,4266428187,1041,1041,0.631951952,1647.277134,468,243,225
 1301270,130,1270,17,Glynn County,"Glynn County, GA","Glynn County, Georgia",50,GA,Glynn,130,1270,1301270,44,1270,13127,Glynn,660.7437,1711318380,413,413,0.625053234,660.7437214,106,36,70
 1301330,130,1330,18,Greene County,"Greene County, GA","Greene County, Georgia",50,GA,Greene,130,1330,1301330,44,1330,13133,Greene,712.4304,1845186135,5405,5405,7.586706542,712.4303504,2138,1111,1027
-1301535,130,1535,19,Indian Lands,"Indian Lands, GA","Indian Lands, Georgia",50,GA,Indian Lands,130,1535,1301535,,,,,99651.1,2.58095E+11,,,,99651.10176,,,
+1301535,130,1535,19,Indian Lands,"Indian Lands, GA","Indian Lands, Georgia",50,GA,Indian Lands,130,1535,1301535,,,,,99651.1,2.58E+11,,,,99651.10176,,,
 1301790,130,1790,20,Liberty County,"Liberty County, GA","Liberty County, Georgia",50,GA,Liberty,130,1790,1301790,44,1790,13179,Liberty,1689.833,4376647697,5355,5355,3.168951964,1689.833125,690,264,426
 1302450,130,2450,21,Richmond County,"Richmond County, GA","Richmond County, Georgia",50,GA,Richmond,130,2450,1302450,44,2450,13245,Richmond,1199.903,3107733771,11317,11317,9.431597934,1199.902718,3819,1925,1894
 1303030,130,3030,22,Washington County,"Washington County, GA","Washington County, Georgia",50,GA,Washington,130,3030,1303030,44,3030,13303,Washington,3809.848,9867459936,4552,4552,1.194798453,3809.847585,1971,1024,947
@@ -148,7 +148,7 @@ Geo_FIPS,Geo_STATE,Geo_COUNTY,Geo_recnum,Geo_name,Geo_name2,Geo_QName,Geo_SUMLEV
 3701850,370,1850,146,Warren County,"Warren County, NC","Warren County, North Carolina",50,NC,Warren,370,1850,3701850,47,1850,37185,Warren,523.6307,1356197249,9379,9379,17.91147894,523.6306857,2385,1318,1067
 3701910,370,1910,147,Wayne County,"Wayne County, NC","Wayne County, North Carolina",50,NC,Wayne,370,1910,3701910,47,1910,37191,Wayne,615.1991,1593358464,6115,6115,9.939870806,615.1991429,2283,1219,1064
 3701930,370,1930,148,Wilkes County,"Wilkes County, NC","Wilkes County, North Carolina",50,NC,Wilkes,370,1930,3701930,47,1930,37193,Wilkes,1829.207,4737625256,8157,8157,4.459308588,1829.20734,3868,2253,1615
-3850000,385,0,149,Territory outline (No Population),"Territory outline (No Population), Northwest Territory","Territory outline (No Population), Northwest Territory",50,,Territory outline (No Population),385,0,3850000,,,,,274561,7.1111E+11,,,,274560.9644,,,
+3850000,385,0,149,Territory outline (No Population),"Territory outline (No Population), Northwest Territory","Territory outline (No Population), Northwest Territory",50,,Territory outline (No Population),385,0,3850000,,,,,274561,7.11E+11,,,,274560.9644,,,
 4200030,420,30,150,Allegheny County,"Allegheny County, PA","Allegheny County, Pennsylvania",50,PA,Allegheny,420,30,4200030,14,30,42003,Allegheny,5783.398,14978931835,10203,10203,1.764187791,5783.397921,5269,2745,2524
 4200090,420,90,151,Bedford County,"Bedford County, PA","Bedford County, Pennsylvania",50,PA,Bedford,420,90,4200090,14,90,42009,Bedford,3092.352,8009153965,13132,13132,4.246606317,3092.351638,6727,3840,2887
 4200110,420,110,152,Berks County,"Berks County, PA","Berks County, Pennsylvania",50,PA,Berks,420,110,4200110,14,110,42011,Berks,1436.949,3721680463,30189,30189,21.00909838,1436.948862,15262,7551,7711
@@ -197,7 +197,7 @@ Geo_FIPS,Geo_STATE,Geo_COUNTY,Geo_recnum,Geo_name,Geo_name2,Geo_QName,Geo_SUMLEV
 4500870,450,870,195,Union County,"Union County, SC","Union County, South Carolina",50,SC,Union,450,870,4500870,48,870,45087,Union,629.9195,1631483933,7693,7693,12.21267222,629.9194689,3309,1809,1500
 4500875,450,875,196,Unorganized (No Data),"Unorganized (No Data), SC","Unorganized (No Data), South Carolina",50,SC,Unorganized (No Data),450,875,4500875,,,,,89.5625,231965700.1,,,,89.56245763,,,
 4500910,450,910,197,York County,"York County, SC","York County, South Carolina",50,SC,York,450,910,4500910,48,910,45091,York,822.5806,2130473906,6604,6604,8.028392843,822.5805749,2962,1612,1350
-4650000,465,0,198,Southwest Territory,"Southwest Territory,",Southwest Territory,50,,Southwest Territory,465,0,4650000,,,,,42462.59,1.09978E+11,,,,42462.58525,,,
+4650000,465,0,198,Southwest Territory,"Southwest Territory,",Southwest Territory,50,,Southwest Territory,465,0,4650000,,,,,42462.59,1.10E+11,,,,42462.58525,,,
 5000010,500,10,199,Addison County,"Addison County, VT","Addison County, Vermont",50,VT,Addison,500,10,5000010,6,10,50001,Addison,752.6628,1949387790,6420,6420,8.529715706,752.6628344,3424,1656,1768
 5000030,500,30,200,Bennington County,"Bennington County, VT","Bennington County, Vermont",50,VT,Bennington,500,30,5000030,6,30,50003,Bennington,678.2315,1756611623,12206,12206,17.99680386,678.23154,6308,3205,3103
 5000070,500,70,201,Chittenden County,"Chittenden County, VT","Chittenden County, Vermont",50,VT,Chittenden,500,70,5000070,6,70,50007,Chittenden,2690.701,6968883136,7287,7287,2.708216363,2690.700825,4012,1761,2251

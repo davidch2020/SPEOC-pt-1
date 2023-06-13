@@ -10,6 +10,7 @@ import plotly.express as px
 import geopandas as gpd
 import topojson as tp
 import json
+import dash_leaflet as dl
 
 # create web app, import bootstrap stylesheet + external stylesheet
 app = dash.Dash(__name__, external_stylesheets=[dbc.themes.BOOTSTRAP, 'assets/style.css'])
@@ -49,7 +50,9 @@ map_op_title = html.H5(children="Map Options", id="map_op_title")
 # dropdown menu of states 
 state_pops = pd.read_csv("../data_raw/census_data/statepop.csv")
 states = state_pops["State"].dropna()
+states = pd.concat([pd.Series(["All States"]), states])
 states_drp = dcc.Dropdown(
+    id="states_drpdwn",
     options=states,
     value=states[0]
 )
@@ -106,8 +109,8 @@ left_tab = html.Div(className='box', children=[
 # Right tab with DataFrame/Map
 right_tab = html.Div(className='box', children=[
     html.H3(children='Display', className='box-title', style={'textAlign': 'center'}),
-    html.Div(id='right-tab-content',
-             style={'overflow': 'scroll'}
+    html.Div(id='right-tab-content', 
+                style={'overflow': 'scroll'}
              )
 ], style={'width': '60%', 'height': '600px'})
 
@@ -170,32 +173,67 @@ county_pops = county_pops.astype({"SE_T001_001":"int", "Geo_FIPS":"str"})
 county_pops = county_pops[["Geo_FIPS", "SE_T001_001"]]
 county_pops.rename(columns = {'SE_T001_001':'population'}, inplace = True)
 
+@app.callback(
+        Output('right-tab-content', 'children'),
+        Input("states_drpdwn", "value")
+)
+def handle_state_dropdown(state):
+    print("State=" + state)
+    fitbounds = False
+    basemap_visible = True
+    map_df = gpd.read_file("../data_raw/shapefiles/historicalcounties")
+
+    # rename columns and simplify map geometry (to make it run faster)
+    map_df.rename(columns = {'NHGISNAM':'county'}, inplace = True)
+    map_df.rename(columns = {'STATENAM':'state'}, inplace = True)
+    map_df["geometry"] = map_df["geometry"].simplify(0.01).buffer(0)
+
+    if (state != "All States"):
+        map_df = map_df.loc[map_df['state'] == state]
+        fitbounds = "locations"
+        basemap_visible = False
+
+    # save as a geojson
+    map_str = map_df.to_json()
+    map_gj = json.loads(map_str) # convert string json to dictionary json 
+
+    # get county populations 
+    county_pops = pd.read_csv("../data_raw/census_data/countyPopulation.csv", header=1)
+    county_pops = county_pops[county_pops["SE_T001_001"].notna()]
+    county_pops = county_pops.astype({"SE_T001_001":"int", "Geo_FIPS":"str"})
+    county_pops.rename(columns = {'SE_T001_001':'Population', "Geo_name":"County"}, inplace = True)
+    county_pops = county_pops[["Geo_FIPS", "Population", "County"]]
+
+    # create choropleth map 
+    fig = px.choropleth(county_pops, geojson=map_gj, locations='Geo_FIPS', color='Population',
+                            color_continuous_scale="Viridis",
+                            range_color=(county_pops["Population"].min(), county_pops["Population"].max()),
+                            featureidkey="properties.Geo_FIPS",
+                            scope="usa",
+                            basemap_visible=basemap_visible,
+                            fitbounds=fitbounds,
+                            hover_data=["County"]
+                        )
+
+    return dcc.Graph(figure = fig)
+
 # call back function that outputs either map or table depending on your choice
+
+"""
 @app.callback(
     Output('right-tab-content', 'children'),
     [Input('left-tab-options', 'value')]
 )
 def render_right_tab_content(option):
     if option == 'map':
-        """
-        # placeholder map
-        df = px.data.election()  # replace with your own data source
-        geojson = px.data.election_geojson()
-        fig = px.choropleth(
-            df, geojson=geojson, color="Bergeron",
-            locations="district", featureidkey="properties.district",
-            projection="mercator", range_color=[0, 6500])
-        fig.update_geos(fitbounds="locations", visible=False)
-        fig.update_layout(margin={"r": 0, "t": 0, "l": 0, "b": 0})
-        return dcc.Graph(figure = fig)        
-        """
-
         # create choropleth map 
         fig = px.choropleth(county_pops, geojson=map_gj, locations='Geo_FIPS', color='population',
                                 color_continuous_scale="Viridis",
                                 range_color=(county_pops["population"].min(), county_pops["population"].max()),
-                                    featureidkey="properties.Geo_FIPS",
+                                featureidkey="properties.Geo_FIPS",
                                 scope="usa",
+                                basemap_visible=False,
+                                fitbounds="locations"
                             )
         fig.update_layout(margin={"r":0,"t":0,"l":0,"b":0})
 
@@ -219,6 +257,7 @@ def render_right_tab_content(option):
                 'fontWeight': 'bold'
             }
         )
+"""
 
 # Layout of the app
 app.layout = html.Div(className='app-container', children=[
