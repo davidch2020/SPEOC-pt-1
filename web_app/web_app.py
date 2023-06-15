@@ -8,9 +8,8 @@ from dash import dash_table
 import pandas as pd
 import plotly.express as px
 import geopandas as gpd
-import topojson as tp
 import json
-import dash_leaflet as dl
+import os
 
 # create web app, import bootstrap stylesheet + external stylesheet
 app = dash.Dash(__name__, external_stylesheets=[dbc.themes.BOOTSTRAP, 'assets/style.css'])
@@ -102,12 +101,12 @@ left_tab = html.Div(id="left_tab", className='box', children=[
         map_op_title,
         map_ops
     ], style={"display":"block"}), 
-    html.Div(id="c_drpdwn",
-              style={"display":"block"}),
     html.Div(id="st_info", children=[
         st_info_title,
         html.Ul(id="st_infolist")
-    ])
+    ]), 
+    html.Div(id="c_drpdwn",
+              style={"display":"block"})
 ], style={'width': '40%', 'height': 'auto', "display":"block"})
 
 # Right tab with DataFrame/Map
@@ -128,11 +127,30 @@ right_tab = html.Div(className='box', children=[
         Input("states_drpdwn", "value")]
 )
 def handle_state_ops(options, sel_state):
+    state_codes = {
+        "New Hampshire":"NH",
+        "Vermont":"VT",
+        "Rhode Island":"RI",
+        "Connecticut":"CT",
+        "New York":"NY",
+        "New Jersey":"NJ",
+        "Pennsylvania":"PA",
+        "Delaware":"DE",
+        "Maryland":"MD",
+        "Virginia":"VA",
+        "North Carolina":"NC",
+        "South Carolina":"SC",
+        "Georgia":"GA",
+        "Massachusetts":"MA"
+    }
+
     display_items = []
 
     # remove whitespace at the beginning
     for i in range(len(options)):
         options[i] = options[i].strip()
+
+    final_cd_df = pd.read_csv("../data_clean/final_data_CD.csv")
     
     for option in options:
         if option == "Total State Population":
@@ -144,9 +162,45 @@ def handle_state_ops(options, sel_state):
             display_items.append(html.Li(html.B(children="Total Slave Population")))
             display_items.append(tot_sl_pop) 
         elif option == "Total Number of Debt Holders":
-            tot_sl_pop = state_pops.loc[state_pops["State"] == sel_state, "Slave Pop"].iloc[0]
-            display_items.append(html.Li(html.B(children="Total Slave Population")))
-            display_items.append(tot_sl_pop) 
+            debt_holder_st = final_cd_df.loc[final_cd_df["Group State"] == state_codes[sel_state]] 
+            total_num_holders = len(debt_holder_st) 
+            display_items.append(html.Li(html.B(children="Total Number of Debt Holders")))
+            display_items.append(total_num_holders)  
+        elif option == "Percentage Debt Holders Nationally":
+            total_cd_df = len(final_cd_df) 
+            debt_holder_st = final_cd_df.loc[final_cd_df["Group State"] == state_codes[sel_state]] 
+            total_num_holders = len(debt_holder_st) 
+            display_items.append(html.Li(html.B(children="Percentage of Debt Holders Nationally")))
+            display_items.append(str(round((total_num_holders / total_cd_df) * 100, 3)) + "%")  
+        elif option == "Total Amount of Debt":
+            total_debt_st = final_cd_df.loc[final_cd_df["Group State"] == state_codes[sel_state], "6p_total"].sum()
+            display_items.append(html.Li(html.B(children="Total Amount of Debt (6p)")))
+            display_items.append(round(total_debt_st, 2))  
+        elif option == "Percentage of Total National Debt":
+            total_debt_col = final_cd_df["6p_total"].sum()
+            total_debt_st = final_cd_df.loc[final_cd_df["Group State"] == state_codes[sel_state], "6p_total"].sum()
+            display_items.append(html.Li(html.B(children="Percentage of Total National Debt (6p)")))
+            display_items.append(str(round((total_debt_st / total_debt_col) * 100, 3)) + "%")  
+        elif option == "Occupations with Most Debt": 
+            occ_exists = os.path.isfile("../archive/S2022/occupational_analysis/avg_debt_occupation/FinishedSpreadsheets/Occupations" 
+                                        + state_codes[sel_state] + ".csv") # check if occupations data exists for that state
+            if occ_exists:
+                occ_data_st = pd.read_csv("../archive/S2022/occupational_analysis/avg_debt_occupation/FinishedSpreadsheets/Occupations" 
+                                        + state_codes[sel_state] + ".csv")
+                occs = occ_data_st["occupation"].tolist()
+                occ_list = ["Occupations with the Most Debt (up to 5)"]
+                if len(occs) > 5:
+                    i = 0
+                    while i < 5:
+                        occ_list.append(html.Li(occs[i]))
+                        i += 1; 
+                else:
+                    for occ in occs:
+                        occ_list.append(html.Li(occ)) 
+                
+                display_items.append(html.Ul(html.B(children=occ_list)))
+            else:
+                display_items.append(html.Li(html.Ul(children="No occupation data available for " + sel_state)))
 
     return display_items
 # call back function to display dropdown menus when 'map' is clicked
