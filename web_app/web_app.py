@@ -338,16 +338,22 @@ def handle_c_ops(options, sel_state, sel_county):
     return display_items 
 
 #display county options when a county is chosen
+# st_info, c_info, t_ops, t_drpdwn, t_info
 @app.callback(
-        Output("c_ops", "style"),
+        [Output("c_ops", "style"),
+         Output("c_info", "style"),
+         Output("st_info", "style"), 
+         Output("t_ops", "style"),
+         Output("t_drpdwn", "style"),
+         Output("t_info", "style")],
         [Input("county_drpdwn", "value"),
          Input("left-tab-options", "value")]
 )
 def add_c_options(county, value):
     if value == "map" and county != "Not Selected":
-        return {"display":"block"}
+        return {"display":"block"}, {"display":"block"}, {"display":"block"}, {"display":"block"}, {"display":"block"}, {"display":"block"}
     else:
-        return {"display":"none"}
+        return {"display":"none"}, {"display":"none"}, {"display":"none"}, {"display":"none"}, {"display":"none"}, {"display":"none"}
 
 # call back function to display dropdown menus when 'map' is clicked
 @app.callback( 
