@@ -84,6 +84,7 @@ c_op_title = html.H5(children="County Options", id="c_op_title")
 state_pops = pd.read_csv("../data_raw/census_data/statepop.csv")
 states = state_pops["State"].dropna()
 states = pd.concat([pd.Series(["All States"]), states]).tolist()
+print(states)
 
 # remove states that have no map data 
 states.remove("Maine")
@@ -134,8 +135,9 @@ left_tab = html.Div(id="left_tab", className='box', children=[
         st_info_title,
         html.Ul(id="st_infolist")
     ]), 
-    html.Div(id="c_drpdwn",
-              style={"display":"block"}), 
+    html.Div(id="c_drpdwn", children=[
+        dcc.Dropdown(id="county_drpdwn", style={"display":"none"})
+    ]), 
     html.Div(id="c_ops", children=[
         c_op_title,
         c_ops 
@@ -144,8 +146,12 @@ left_tab = html.Div(id="left_tab", className='box', children=[
         c_info_title, 
         html.Ul(id="c_infolist")
     ]), 
-    html.Div(id="t_drpdwn", style={"display":"block"}), 
-    html.Div(id="t_ops"),
+    html.Div(id="t_drpdwn", children=[
+        dcc.Dropdown(id="towns_drpdwn", style={"display":"none"})
+    ], style={"display":"block"}), 
+    html.Div(id="t_ops", children=[
+        dcc.Checklist(id="t_checklist", style={"display":"none"})
+    ]),
     html.Div(id="t_info", children=[
         t_info_title, 
         html.Ul(id="t_infolist")
@@ -171,22 +177,21 @@ right_tab = html.Div(className='box', children=[
 )
 def handle_t_ops(options, sel_state, sel_county, sel_town):
     display_items = []
-    towns_pops = pd.read_csv("../data_clean/Ancestry_Web_Scraper/town_pops_clean.csv")
-    town_pop = towns_pops.loc[(towns_pops["city"] == sel_town) & (towns_pops["county"] == sel_county) & 
-                                  (towns_pops["state"] == sel_state), "population"].iloc[0]
-    for option in options:
-        if option == "Total Town Population":
-            display_items.append(html.Li(html.B(children="Total Town Population")))
-            display_items.append(town_pop)
-        elif option == "Percentage of Town Holding Debt" and town_pop != "NR":
-            final_cd_df = pd.read_csv("../data_clean/final_data_CD.csv") 
-            total_t_holders = len(final_cd_df.loc[(final_cd_df["Group State"] == state_codes[sel_state]) & (final_cd_df["Group County"] == sel_county + " County")
-                                                & (final_cd_df["Group Town"] == sel_town)])
-            display_items.append(html.Li(html.B(children="Percentage of Town Holding Debt")))
-            print(type(total_t_holders))
-            print(type(town_pop))
-            display_items.append(str(round(total_t_holders / float(town_pop), 2) * 100) + "%")
-            print(display_items)
+
+    if sel_state != "All States" and sel_county != "Not Selected":
+        towns_pops = pd.read_csv("../data_clean/Ancestry_Web_Scraper/town_pops_clean.csv")
+        town_pop = towns_pops.loc[(towns_pops["city"] == sel_town) & (towns_pops["county"] == sel_county) & 
+                                    (towns_pops["state"] == sel_state), "population"].iloc[0]
+        for option in options:
+            if option == "Total Town Population":
+                display_items.append(html.Li(html.B(children="Total Town Population")))
+                display_items.append(town_pop)
+            elif option == "Percentage of Town Holding Debt" and town_pop != "NR":
+                final_cd_df = pd.read_csv("../data_clean/final_data_CD.csv") 
+                total_t_holders = len(final_cd_df.loc[(final_cd_df["Group State"] == state_codes[sel_state]) & (final_cd_df["Group County"] == sel_county + " County")
+                                                    & (final_cd_df["Group Town"] == sel_town)])
+                display_items.append(html.Li(html.B(children="Percentage of Town Holding Debt")))
+                display_items.append(str(round(total_t_holders / float(town_pop), 2) * 100) + "%")
 
     return display_items
 
@@ -244,57 +249,58 @@ def display_t_drpdwn(sel_county, sel_state):
 def handle_state_ops(options, sel_state):
     display_items = []
 
-    final_cd_df = pd.read_csv("../data_clean/final_data_CD.csv")
-    
-    for option in options:
-        if option == "Total State Population":
-            tot_st_pop = state_pops.loc[state_pops["State"] == sel_state, "Total Pop"].iloc[0]
-            display_items.append(html.Li(html.B(children="Total State Population")))
-            display_items.append(tot_st_pop)
-        elif option == "Total Slave Population":
-            tot_sl_pop = state_pops.loc[state_pops["State"] == sel_state, "Slave Pop"].iloc[0]
-            display_items.append(html.Li(html.B(children="Total Slave Population")))
-            display_items.append(tot_sl_pop) 
-        elif option == "Total Number of Debt Holders":
-            debt_holder_st = final_cd_df.loc[final_cd_df["Group State"] == state_codes[sel_state]] 
-            total_num_holders = len(debt_holder_st) 
-            display_items.append(html.Li(html.B(children="Total Number of Debt Holders")))
-            display_items.append(total_num_holders)  
-        elif option == "Percentage Debt Holders Nationally":
-            total_cd_df = len(final_cd_df) 
-            debt_holder_st = final_cd_df.loc[final_cd_df["Group State"] == state_codes[sel_state]] 
-            total_num_holders = len(debt_holder_st) 
-            display_items.append(html.Li(html.B(children="Percentage of Debt Holders Nationally")))
-            display_items.append(str(round((total_num_holders / total_cd_df) * 100, 3)) + "%")  
-        elif option == "Total Amount of Debt":
-            total_debt_st = final_cd_df.loc[final_cd_df["Group State"] == state_codes[sel_state], "final_total"].sum()
-            display_items.append(html.Li(html.B(children="Total Amount of Debt")))
-            display_items.append(round(total_debt_st, 2))  
-        elif option == "Percentage of Total National Debt":
-            total_debt_col = final_cd_df["final_total"].sum()
-            total_debt_st = final_cd_df.loc[final_cd_df["Group State"] == state_codes[sel_state], "final_total"].sum()
-            display_items.append(html.Li(html.B(children="Percentage of Total National Debt")))
-            display_items.append(str(round((total_debt_st / total_debt_col) * 100, 3)) + "%")  
-        elif option == "Occupations with Most Debt": 
-            occ_exists = os.path.isfile("../archive/S2022/occupational_analysis/avg_debt_occupation/FinishedSpreadsheets/Occupations" 
-                                        + state_codes[sel_state] + ".csv") # check if occupations data exists for that state
-            if occ_exists:
-                occ_data_st = pd.read_csv("../archive/S2022/occupational_analysis/avg_debt_occupation/FinishedSpreadsheets/Occupations" 
-                                        + state_codes[sel_state] + ".csv")
-                occs = occ_data_st["occupation"].tolist()
-                occ_list = ["Occupations with the Most Debt (up to 5)"]
-                if len(occs) > 5:
-                    i = 0
-                    while i < 5:
-                        occ_list.append(html.Li(occs[i]))
-                        i += 1; 
+    if sel_state != "All States":
+        final_cd_df = pd.read_csv("../data_clean/final_data_CD.csv")
+        
+        for option in options:
+            if option == "Total State Population":
+                tot_st_pop = state_pops.loc[state_pops["State"] == sel_state, "Total Pop"].iloc[0]
+                display_items.append(html.Li(html.B(children="Total State Population")))
+                display_items.append(tot_st_pop)
+            elif option == "Total Slave Population":
+                tot_sl_pop = state_pops.loc[state_pops["State"] == sel_state, "Slave Pop"].iloc[0]
+                display_items.append(html.Li(html.B(children="Total Slave Population")))
+                display_items.append(tot_sl_pop) 
+            elif option == "Total Number of Debt Holders":
+                debt_holder_st = final_cd_df.loc[final_cd_df["Group State"] == state_codes[sel_state]] 
+                total_num_holders = len(debt_holder_st) 
+                display_items.append(html.Li(html.B(children="Total Number of Debt Holders")))
+                display_items.append(total_num_holders)  
+            elif option == "Percentage Debt Holders Nationally":
+                total_cd_df = len(final_cd_df) 
+                debt_holder_st = final_cd_df.loc[final_cd_df["Group State"] == state_codes[sel_state]] 
+                total_num_holders = len(debt_holder_st) 
+                display_items.append(html.Li(html.B(children="Percentage of Debt Holders Nationally")))
+                display_items.append(str(round((total_num_holders / total_cd_df) * 100, 3)) + "%")  
+            elif option == "Total Amount of Debt":
+                total_debt_st = final_cd_df.loc[final_cd_df["Group State"] == state_codes[sel_state], "final_total"].sum()
+                display_items.append(html.Li(html.B(children="Total Amount of Debt")))
+                display_items.append(round(total_debt_st, 2))  
+            elif option == "Percentage of Total National Debt":
+                total_debt_col = final_cd_df["final_total"].sum()
+                total_debt_st = final_cd_df.loc[final_cd_df["Group State"] == state_codes[sel_state], "final_total"].sum()
+                display_items.append(html.Li(html.B(children="Percentage of Total National Debt")))
+                display_items.append(str(round((total_debt_st / total_debt_col) * 100, 3)) + "%")  
+            elif option == "Occupations with Most Debt": 
+                occ_exists = os.path.isfile("../archive/S2022/occupational_analysis/avg_debt_occupation/FinishedSpreadsheets/Occupations" 
+                                            + state_codes[sel_state] + ".csv") # check if occupations data exists for that state
+                if occ_exists:
+                    occ_data_st = pd.read_csv("../archive/S2022/occupational_analysis/avg_debt_occupation/FinishedSpreadsheets/Occupations" 
+                                            + state_codes[sel_state] + ".csv")
+                    occs = occ_data_st["occupation"].tolist()
+                    occ_list = ["Occupations with the Most Debt (up to 5)"]
+                    if len(occs) > 5:
+                        i = 0
+                        while i < 5:
+                            occ_list.append(html.Li(occs[i]))
+                            i += 1; 
+                    else:
+                        for occ in occs:
+                            occ_list.append(html.Li(occ)) 
+                    
+                    display_items.append(html.Ul(html.B(children=occ_list)))
                 else:
-                    for occ in occs:
-                        occ_list.append(html.Li(occ)) 
-                
-                display_items.append(html.Ul(html.B(children=occ_list)))
-            else:
-                display_items.append(html.Li(html.Ul(children="No occupation data available for " + sel_state)))
+                    display_items.append(html.Li(html.Ul(children="No occupation data available for " + sel_state)))
 
     return display_items
 
@@ -308,32 +314,33 @@ def handle_state_ops(options, sel_state):
 )
 def handle_c_ops(options, sel_state, sel_county):
     display_items = []
-    for option in options:
-        if option == "Total County Population":
-            county_pops = pd.read_csv("../data_raw/census_data/countyPopulation.csv", header=1)
-            county_pops.rename(columns={"Geo_STUSAB":"state", "Geo_NHGISNAM":"county"}, inplace=True)
-            c_pop = county_pops.loc[(county_pops["state"] == state_codes[sel_state]) & (county_pops["county"] == sel_county), "SE_T001_001"].iloc[0]
-            display_items.append(html.Li(html.B(children="Total County Population")))
-            display_items.append(c_pop)
-        elif option == "Total Number of Debt Holders":
-            final_cd_df = pd.read_csv("../data_clean/final_data_CD.csv") 
-            total_c_holders = len(final_cd_df.loc[(final_cd_df["Group State"] == state_codes[sel_state]) & (final_cd_df["Group County"] == sel_county + " County")])
-            display_items.append(html.Li(html.B(children="Total Number of Debt Holders")))
-            display_items.append(total_c_holders)
-        elif option == "Percentage of Debt Holders (Statewide)":
-            total_st_holders = len(final_cd_df.loc[final_cd_df["Group State"] == state_codes[sel_state]])
-            total_c_holders = len(final_cd_df.loc[(final_cd_df["Group State"] == state_codes[sel_state]) & (final_cd_df["Group County"] == sel_county + " County")])
-            display_items.append(html.Li(html.B(children="Percentage of Debt Holders (Statewide)")))
-            display_items.append(str(round(total_c_holders / total_st_holders, 3) * 100) + "%")
-        elif option == "Total Amount of Debt":
-            total_c_debt = final_cd_df.loc[(final_cd_df["Group State"] == state_codes[sel_state]) & (final_cd_df["Group County"] == sel_county + " County"), "final_total"].sum()
-            display_items.append(html.Li(html.B(children="Total Amount of Debt in County")))
-            display_items.append(round(total_c_debt, 2))
-        elif option == "Percentage of Total Debt (Statewide)":
-            total_st_debt = final_cd_df.loc[final_cd_df["Group State"] == state_codes[sel_state], "final_total"].sum()
-            total_c_debt = final_cd_df.loc[(final_cd_df["Group State"] == state_codes[sel_state]) & (final_cd_df["Group County"] == sel_county + " County"), "final_total"].sum()
-            display_items.append(html.Li(html.B(children="Percentage of Total Debt (Statewide)")))
-            display_items.append(str(round(total_c_debt / total_st_debt, 3) * 100) + "%")
+    if sel_state != "All States":
+        for option in options:
+            if option == "Total County Population":
+                county_pops = pd.read_csv("../data_raw/census_data/countyPopulation.csv", header=1)
+                county_pops.rename(columns={"Geo_STUSAB":"state", "Geo_NHGISNAM":"county"}, inplace=True)
+                c_pop = county_pops.loc[(county_pops["state"] == state_codes[sel_state]) & (county_pops["county"] == sel_county), "SE_T001_001"].iloc[0]
+                display_items.append(html.Li(html.B(children="Total County Population")))
+                display_items.append(c_pop)
+            elif option == "Total Number of Debt Holders":
+                final_cd_df = pd.read_csv("../data_clean/final_data_CD.csv") 
+                total_c_holders = len(final_cd_df.loc[(final_cd_df["Group State"] == state_codes[sel_state]) & (final_cd_df["Group County"] == sel_county + " County")])
+                display_items.append(html.Li(html.B(children="Total Number of Debt Holders")))
+                display_items.append(total_c_holders)
+            elif option == "Percentage of Debt Holders (Statewide)":
+                total_st_holders = len(final_cd_df.loc[final_cd_df["Group State"] == state_codes[sel_state]])
+                total_c_holders = len(final_cd_df.loc[(final_cd_df["Group State"] == state_codes[sel_state]) & (final_cd_df["Group County"] == sel_county + " County")])
+                display_items.append(html.Li(html.B(children="Percentage of Debt Holders (Statewide)")))
+                display_items.append(str(round(total_c_holders / total_st_holders, 3) * 100) + "%")
+            elif option == "Total Amount of Debt":
+                total_c_debt = final_cd_df.loc[(final_cd_df["Group State"] == state_codes[sel_state]) & (final_cd_df["Group County"] == sel_county + " County"), "final_total"].sum()
+                display_items.append(html.Li(html.B(children="Total Amount of Debt in County")))
+                display_items.append(round(total_c_debt, 2))
+            elif option == "Percentage of Total Debt (Statewide)":
+                total_st_debt = final_cd_df.loc[final_cd_df["Group State"] == state_codes[sel_state], "final_total"].sum()
+                total_c_debt = final_cd_df.loc[(final_cd_df["Group State"] == state_codes[sel_state]) & (final_cd_df["Group County"] == sel_county + " County"), "final_total"].sum()
+                display_items.append(html.Li(html.B(children="Percentage of Total Debt (Statewide)")))
+                display_items.append(str(round(total_c_debt / total_st_debt, 3) * 100) + "%")
 
     return display_items 
 
@@ -350,7 +357,7 @@ def handle_c_ops(options, sel_state, sel_county):
          Input("left-tab-options", "value")]
 )
 def add_c_options(county, value):
-    if value == "map" and county != "Not Selected":
+    if value == "map" and county != "Not Selected" and county != None:
         return {"display":"block"}, {"display":"block"}, {"display":"block"}, {"display":"block"}, {"display":"block"}, {"display":"block"}
     else:
         return {"display":"none"}, {"display":"none"}, {"display":"none"}, {"display":"none"}, {"display":"none"}, {"display":"none"}
@@ -423,17 +430,18 @@ def display_c_drpdwn(value):
         Input("left-tab-options", "value")] 
 )
 def handle_state_dropdown(state, county, option):
+    print("here")
     if option == "map":
         fitbounds = False
         basemap_visible = True
         map_df_c = map_df.copy()
 
-        if (state != "All States"):
+        if (state != "All States" and state != None):
             map_df_c = map_df_c.loc[map_df['state'] == state]
             fitbounds = "locations"
             basemap_visible = False
 
-        if (county != "Not Selected"):
+        if (county != "Not Selected" and county != None):
             map_df_c = map_df_c.loc[map_df_c['county'] == county]
 
         # save as a geojson
