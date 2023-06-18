@@ -353,11 +353,11 @@ def handle_c_ops(options, sel_state, sel_county):
          Output("t_ops", "style"),
          Output("t_drpdwn", "style"),
          Output("t_info", "style")],
-        [Input("county_drpdwn", "value"),
+        [Input("states_drpdwn", "value"),
          Input("left-tab-options", "value")]
 )
-def add_c_options(county, value):
-    if value == "map" and county != "Not Selected" and county != None:
+def add_c_options(sel_state, value):
+    if value == "map" and sel_state != "All States":
         return {"display":"block"}, {"display":"block"}, {"display":"block"}, {"display":"block"}, {"display":"block"}, {"display":"block"}
     else:
         return {"display":"none"}, {"display":"none"}, {"display":"none"}, {"display":"none"}, {"display":"none"}, {"display":"none"}
