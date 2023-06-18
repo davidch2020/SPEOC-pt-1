@@ -466,7 +466,7 @@ def handle_state_dropdown(state, county, option):
                                 basemap_visible=basemap_visible,
                                 fitbounds=fitbounds,
                                 hover_name="County",
-                                hover_data="Population"
+                                hover_data=["Population"]
                             )
 
         return dcc.Graph(figure = fig)
