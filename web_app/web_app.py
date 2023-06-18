@@ -178,10 +178,11 @@ right_tab = html.Div(className='box', children=[
 def handle_t_ops(options, sel_state, sel_county, sel_town):
     display_items = []
 
-    if sel_state != "All States" and sel_county != "Not Selected":
+    if sel_state != "All States" and sel_county != "Not Selected" and sel_town != None:
         towns_pops = pd.read_csv("../data_clean/Ancestry_Web_Scraper/town_pops_clean.csv")
-        town_pop = towns_pops.loc[(towns_pops["city"] == sel_town) & (towns_pops["county"] == sel_county) & 
-                                    (towns_pops["state"] == sel_state), "population"].iloc[0]
+        town_pop_df = towns_pops.loc[(towns_pops["city"] == sel_town) & (towns_pops["county"] == sel_county) & 
+                                    (towns_pops["state"] == sel_state), "population"]
+        town_pop = town_pop_df.iloc[0]
         for option in options:
             if option == "Total Town Population":
                 display_items.append(html.Li(html.B(children="Total Town Population")))
@@ -314,7 +315,7 @@ def handle_state_ops(options, sel_state):
 )
 def handle_c_ops(options, sel_state, sel_county):
     display_items = []
-    if sel_state != "All States":
+    if sel_state != "All States" and sel_county != "Not Selected":
         for option in options:
             if option == "Total County Population":
                 county_pops = pd.read_csv("../data_raw/census_data/countyPopulation.csv", header=1)
