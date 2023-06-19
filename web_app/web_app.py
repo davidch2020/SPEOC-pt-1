@@ -63,11 +63,18 @@ project_desc = html.Div(className='box', children=[
     ]),
 ])
 
+"""
 # state options
 map_ops = dcc.Checklist(id="st_checklist", options=["Total State Population", "Total Slave Population", 
                                  "Total Number of Debt Holders", "Percentage Debt Holders Nationally", 
                                  "Total Amount of Debt", "Percentage of Total National Debt", "Occupations with Most Debt"], 
                         value=["Total State Population"])
+"""
+
+map_ops = dcc.Dropdown(id="st_checklist", options=["Total State Population", "Total Slave Population", 
+                                 "Total Number of Debt Holders", "Percentage Debt Holders Nationally", 
+                                 "Total Amount of Debt", "Percentage of Total National Debt", "Occupations with Most Debt"], 
+                        value=["Total State Population"], multi=True)
 
 # county options
 c_ops = dcc.Checklist(id="c_checklist", options=["Total County Population", "Total Number of Debt Holders", 
