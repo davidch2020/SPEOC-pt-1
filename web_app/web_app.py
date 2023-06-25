@@ -372,15 +372,16 @@ def handle_c_ops(options, sel_state, sel_county):
          Output("st_info", "style"), 
          Output("t_ops", "style"),
          Output("t_drpdwn", "style"),
-         Output("t_info", "style")],
+         Output("t_info", "style"),
+         Output("display_ops", "style")],
         [Input("states_drpdwn", "value"),
          Input("left-tab-options", "value")]
 )
 def add_c_options(sel_state, value):
     if value == "map" and sel_state != "All States":
-        return {"display":"block"}, {"display":"block"}, {"display":"block"}, {"display":"block"}, {"display":"block"}, {"display":"block"}
+        return {"display":"block"}, {"display":"block"}, {"display":"block"}, {"display":"block"}, {"display":"block"}, {"display":"block"}, {"display":"block"}
     else:
-        return {"display":"none"}, {"display":"none"}, {"display":"none"}, {"display":"none"}, {"display":"none"}, {"display":"none"}
+        return {"display":"none"}, {"display":"none"}, {"display":"none"}, {"display":"none"}, {"display":"none"}, {"display":"none"}, {"display":"none"}
 
 # call back function to display dropdown menus when 'map' is clicked
 @app.callback( 
