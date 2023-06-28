@@ -10,6 +10,8 @@ import plotly.express as px
 import geopandas as gpd
 import json
 import os
+import matplotlib.pyplot as plt 
+import numpy as np
 
 state_codes = {
     "New Hampshire":"NH",
@@ -127,7 +129,17 @@ left_tab = html.Div(id="left_tab", className='box', children=[
             ],
             value='map',
             labelStyle={'display':'block'}
-        )
+        ),
+        html.Br(),
+        dcc.RadioItems(
+           id="map_type_ops",
+           options=[
+               {'label':'Population', 'value':'population'},
+               {'label':'Debt Distribution', 'value':'debt dist'} 
+           ],
+           value='population',
+           labelStyle={"display":"block"}
+       ) 
     ]), 
     html.Div(id="display_ops", children=[
         disp_op_title,
@@ -164,7 +176,7 @@ left_tab = html.Div(id="left_tab", className='box', children=[
     ]),
     html.Div(id="t_info", children=[
         t_info_title, 
-        html.Ul(id="t_infolist")
+        html.Ul(id="t_infolist"),
     ])
 ], style={'width': '40%', 'height': 'auto', "display":"block"})
 
@@ -386,14 +398,15 @@ def add_c_options(sel_state, value):
 # call back function to display dropdown menus when 'map' is clicked
 @app.callback( 
         [Output("st_c_drpdwn", "style"),
-         Output("c_drpdwn", "style")],
+         Output("c_drpdwn", "style"),
+         Output('map_type_ops', 'labelStyle')],
         Input("left-tab-options", "value")
 )
 def add_map_options(value):
     if value == "map":
-        return {"display":"block"}, {"display":"block"}
+        return {"display":"block"}, {"display":"block"}, {"display":"block"}
     else:
-        return {"display":"none"}, {"display":"none"}
+        return {"display":"none"}, {"display":"none"}, {"display":"none"}
 
 # call back function to display map options when 'a state' is clicked 
 @app.callback( 
@@ -448,9 +461,10 @@ def display_c_drpdwn(value):
         Output('right-tab-content', 'children'),
         [Input("states_drpdwn", "value"),
          Input("county_drpdwn", "value"),
-        Input("left-tab-options", "value")] 
+        Input("left-tab-options", "value"), 
+        Input('map_type_ops', 'value')] 
 )
-def handle_state_dropdown(state, county, option):
+def handle_state_dropdown(state, county, option, map_type):
     if option == "map":
         fitbounds = False
         basemap_visible = True
@@ -468,26 +482,65 @@ def handle_state_dropdown(state, county, option):
         map_str = map_df_c.to_json()
         map_gj = json.loads(map_str) # convert string json to dictionary json 
 
-        # get county populations 
-        county_pops = pd.read_csv("../data_raw/census_data/countyPopulation.csv", header=1)
-        county_pops = county_pops[county_pops["SE_T001_001"].notna()]
-        county_pops = county_pops.astype({"SE_T001_001":"int", "Geo_FIPS":"str"})
-        county_pops.rename(columns = {'SE_T001_001':'Population', "Geo_name":"County"}, inplace = True)
-        county_pops = county_pops[["Geo_FIPS", "Population", "County"]]
+        if map_type == 'population':
 
-        # create choropleth map 
-        fig = px.choropleth(county_pops, geojson=map_gj, locations='Geo_FIPS', 
-                                color='Population',
-                                color_continuous_scale="Viridis",
-                                range_color=(county_pops["Population"].min(), 
-                                             county_pops["Population"].max()),
-                                featureidkey="properties.Geo_FIPS",
-                                scope="usa",
-                                basemap_visible=basemap_visible,
-                                fitbounds=fitbounds,
-                                hover_name="County",
-                                hover_data=["Population"]
-                            )
+            # get county populations 
+            county_pops = pd.read_csv("../data_raw/census_data/countyPopulation.csv", header=1)
+            county_pops = county_pops[county_pops["SE_T001_001"].notna()]
+            county_pops = county_pops.astype({"SE_T001_001":"int", "Geo_FIPS":"str"})
+            county_pops.rename(columns = {'SE_T001_001':'Population', "Geo_name":"County"}, inplace = True)
+            county_pops = county_pops[["Geo_FIPS", "Population", "County"]]
+
+            # create choropleth map 
+            fig = px.choropleth(county_pops, geojson=map_gj, locations='Geo_FIPS', 
+                                    color='Population',
+                                    color_continuous_scale="Viridis",
+                                    range_color=(county_pops["Population"].min(), 
+                                                county_pops["Population"].max()),
+                                    featureidkey="properties.Geo_FIPS",
+                                    scope="usa",
+                                    basemap_visible=basemap_visible,
+                                    fitbounds=fitbounds,
+                                    hover_name="County",
+                                    hover_data=["Population"]
+                                )
+        
+        elif map_type == 'debt dist':
+            # Create the debt distribution map
+            # Input: archive/.../CD_geographical_table_summary.csv, countyPops.csv (GEO_FIPS column), Map geojson file 
+            # Create a dataframe of all county names and their GEO_FIPS code 
+            # Merge dataframe with CD_geographical_table_summary.csv 
+            basemap_visible = True
+
+            debt_by_county = pd.read_csv("../data_clean/final_data_CD.csv")[["Group State", "Group County", "6p_total"]]
+            debt_by_county = debt_by_county.groupby(by="Group County")["6p_total"].sum()
+            debt_by_county = debt_by_county.to_frame()
+            debt_by_county.reset_index(inplace=True)
+            debt_by_county.index.name = "info"
+            debt_by_county.rename(columns={"Group County":"county", "Group State":"state"}, inplace=True)
+
+
+            county_geo_fips = pd.read_csv("../data_raw/census_data/countyPopulation.csv", header=1)[["Geo_FIPS", "Geo_name"]]
+            county_geo_fips.rename(columns={"Geo_name":"county"}, inplace=True)
+            county_debt_geo = pd.merge(debt_by_county, county_geo_fips, on="county")
+
+            # test debt distribution map 
+            # fig = px.choropleth()
+            six_p_tot = county_debt_geo["6p_total"]
+            x = six_p_tot[six_p_tot.between(six_p_tot.quantile(.15), six_p_tot.quantile(.85))] # remove outliers
+
+            fig = px.choropleth(county_debt_geo, geojson=map_gj, locations='Geo_FIPS', 
+                            color='6p_total',
+                            color_continuous_scale="Viridis",
+                            range_color=(x.min(), 
+                                        x.max()),
+                            featureidkey="properties.Geo_FIPS",
+                            scope="usa",
+                            basemap_visible=basemap_visible,
+                            fitbounds=fitbounds,
+                            hover_name="county",
+                            hover_data=["6p_total"]
+                        )
 
         return dcc.Graph(figure = fig)
     else: # option is table
