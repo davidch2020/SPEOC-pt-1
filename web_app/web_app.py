@@ -135,7 +135,7 @@ left_tab = html.Div(id="left_tab", className='box', children=[
            id="map_type_ops",
            options=[
                {'label':'Population', 'value':'population'},
-               {'label':'Debt Distribution', 'value':'debt dist'} 
+               {'label':'Debt Distribution', 'value':'debt dist'},
                {'label':'Slave Population', 'value':'slavery'}
            ],
            value='population',
