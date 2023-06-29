@@ -526,10 +526,7 @@ def handle_state_dropdown(state, county, option, map_type):
                             fitbounds=fitbounds,
                             hover_name="State",
                             hover_data=["Slave Pop"]
-                        )
-
-        return dcc.Graph(figure = fig)
-        
+                        )        
         elif map_type == 'debt dist':
             # Create the debt distribution map
             # Input: archive/.../CD_geographical_table_summary.csv, countyPops.csv (GEO_FIPS column), Map geojson file 
