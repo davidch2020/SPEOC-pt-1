@@ -136,6 +136,7 @@ left_tab = html.Div(id="left_tab", className='box', children=[
            options=[
                {'label':'Population', 'value':'population'},
                {'label':'Debt Distribution', 'value':'debt dist'} 
+               {'label':'Slave Population', 'value':'slavery'}
            ],
            value='population',
            labelStyle={"display":"block"}
@@ -504,6 +505,30 @@ def handle_state_dropdown(state, county, option, map_type):
                                     hover_name="County",
                                     hover_data=["Population"]
                                 )
+        elif map_type == 'slavery':
+            # Create the debt distribution map
+            # Input: ../data_raw/census_data/statepop.csv, Map geojson file 
+    
+            basemap_visible = True
+
+            state_pop = gpd.read_file("../data_raw/census_data/statepop.csv")
+            state_pop = state_pop[["State", "Slave Pop"]]
+            state_pop.replace({"State": state_codes}, inplace = True)
+
+            fig = px.choropleth(state_pop, geojson=map_gj, locations='State', 
+                            color='Slave Pop',
+                            color_continuous_scale="Viridis",
+                            range_color=(state_pop['Slave Pop'].min(), 
+                                        state_pop('Slave Pop').max()),
+                            featureidkey="properties.State",
+                            scope="usa",
+                            basemap_visible=basemap_visible,
+                            fitbounds=fitbounds,
+                            hover_name="State",
+                            hover_data=["Slave Pop"]
+                        )
+
+        return dcc.Graph(figure = fig)
         
         elif map_type == 'debt dist':
             # Create the debt distribution map
