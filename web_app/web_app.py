@@ -510,7 +510,7 @@ def handle_state_dropdown(state, county, option, map_type):
             basemap_visible = True
 
             state_pop = gpd.read_file("../data_raw/census_data/statepop.csv")
-            state_pop = state_pop[["State", "Slave Pop"]]
+            state_pop = state_pop[["State", "Slave Pop"]].head(15)
             state_pop.replace({"State": state_codes}, inplace = True)
             state_pop = state_pop.astype({"Slave Pop":"int"})
 
