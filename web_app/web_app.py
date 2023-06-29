@@ -506,9 +506,7 @@ def handle_state_dropdown(state, county, option, map_type):
                                     hover_data=["Population"]
                                 )
         elif map_type == 'slavery':
-            # Create the debt distribution map
-            # Input: ../data_raw/census_data/statepop.csv, Map geojson file 
-    
+            
             basemap_visible = True
 
             state_pop = gpd.read_file("../data_raw/census_data/statepop.csv")
@@ -519,7 +517,7 @@ def handle_state_dropdown(state, county, option, map_type):
                             color='Slave Pop',
                             color_continuous_scale="Viridis",
                             range_color=(state_pop['Slave Pop'].min(), 
-                                        state_pop('Slave Pop').max()),
+                                        state_pop['Slave Pop'].max()),
                             featureidkey="properties.State",
                             scope="usa",
                             basemap_visible=basemap_visible,
