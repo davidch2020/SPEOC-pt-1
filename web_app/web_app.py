@@ -512,6 +512,7 @@ def handle_state_dropdown(state, county, option, map_type):
             state_pop = gpd.read_file("../data_raw/census_data/statepop.csv")
             state_pop = state_pop[["State", "Slave Pop"]]
             state_pop.replace({"State": state_codes}, inplace = True)
+            state_pop = state_pop.astype({"Slave Pop":"int"})
 
             fig = px.choropleth(state_pop, geojson=map_gj, locations='State', 
                             color='Slave Pop',
