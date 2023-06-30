@@ -199,18 +199,6 @@ right_tab = html.Div(className='box', children=[
         prevent_initial_call=True
 )
 
-map_slider = html.Div([
-    dcc.RangeSlider(0, 20, 1, value=[5, 15], id='my-range-slider'),
-    html.Div(id='output-container-range-slider')
-])
-
-@app.callback(
-    Output('output-container-range-slider', 'children'),
-    Input('my-range-slider', 'value'))
-
-def update_output(value):
-    return 'You have selected "{}"'.format(value)
-
 def handle_st_disp_ops(options):
     new_display_ops = [{"display":"block"}, {"display":"block"}, {"display":"block"}]
     for option in options:
