@@ -512,7 +512,8 @@ def handle_state_dropdown(state, county, option, map_type):
                                      step = 10,000, 
                                      marks = rangeslider_marks,
                                     updatemode = 'drag',
-                                     id = 'my-rangeslider')
+                                     id = 'my-rangeslider'
+                                     )
         elif map_type == 'slavery':
             
             basemap_visible = True
