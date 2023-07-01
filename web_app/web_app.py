@@ -507,6 +507,7 @@ def handle_state_dropdown(state, county, option, map_type):
                                     hover_name="County",
                                     hover_data=["Population"]
                                 )
+            slider =  dcc.RangeSlider(0, 20, value=[5, 15])
         elif map_type == 'slavery':
             
             basemap_visible = True
@@ -528,7 +529,8 @@ def handle_state_dropdown(state, county, option, map_type):
                             fitbounds=fitbounds,
                             hover_name="State",
                             hover_data=["Slave Pop"]
-                        )     
+                        )   
+            slider =  dcc.RangeSlider(0, 20, value=[5, 15])
 
         elif map_type == 'debt dist':
             # Create the debt distribution map
@@ -566,8 +568,9 @@ def handle_state_dropdown(state, county, option, map_type):
                             hover_name="county",
                             hover_data=["6p_total"]
                         )
+            slider =  dcc.RangeSlider(0, 20, value=[5, 15])
 
-        return dcc.Graph(figure = fig), dcc.RangeSlider(0, 20, value=[5, 15])
+        return dcc.Graph(figure = fig), slider
     else: # option is table
         # Display the DataFrame as a table
         df = pd.read_csv('../data_clean/final_data_CD.csv', index_col=0)
