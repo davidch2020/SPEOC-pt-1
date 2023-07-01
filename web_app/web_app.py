@@ -597,7 +597,7 @@ def handle_state_dropdown(state, county, option, map_type):
 #@app.callback(
 #    Output(),
 #    Input()
-)
+#)
 # Layout of the app
 app.layout = html.Div(className='app-container', children=[
     dbc.Container(className='header-container', children=[
