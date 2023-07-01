@@ -594,10 +594,10 @@ def handle_state_dropdown(state, county, option, map_type):
                 'fontWeight': 'bold'
             }
         )
-#@app.callback(
-#    Output(),
-#    Input()
-#)
+@app.callback(
+    Output('my-map', 'figure'),
+    Input('my-rangeslider', 'value')
+)
 # Layout of the app
 app.layout = html.Div(className='app-container', children=[
     dbc.Container(className='header-container', children=[
