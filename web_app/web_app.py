@@ -596,7 +596,7 @@ def handle_state_dropdown(state, county, option, map_type):
         )
 @app.callback(
     Output('my-map', 'figure'),
-    Input('my-rangeslider', 'value')
+    [Input('my-rangeslider', 'value')]
 )
 # Layout of the app
 app.layout = html.Div(className='app-container', children=[
