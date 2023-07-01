@@ -575,7 +575,7 @@ def handle_state_dropdown(state, county, option, map_type):
                         )
             slider =  dcc.RangeSlider(0, 20, value=[5, 15])
 
-        return dcc.Graph(figure = fig), slider
+        return dcc.Graph(figure = fig, id = "my-map"), slider
     else: # option is table
         # Display the DataFrame as a table
         df = pd.read_csv('../data_clean/final_data_CD.csv', index_col=0)
@@ -594,7 +594,10 @@ def handle_state_dropdown(state, county, option, map_type):
                 'fontWeight': 'bold'
             }
         )
-
+#@app.callback(
+#    Output(),
+#    Input()
+)
 # Layout of the app
 app.layout = html.Div(className='app-container', children=[
     dbc.Container(className='header-container', children=[
