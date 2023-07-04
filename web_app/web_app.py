@@ -529,14 +529,14 @@ def handle_state_dropdown(state, county, option, map_type):
                                       value=[county_pops["Population"].min(), county_pops["Population"].max()],
                                       id = "my-rangeslider"
                                      )
-            dcc.Graph(fig, id = 'my-map')
             @app.callback(
-                Output('my-map','figure'),
+                Output('right-tab-content', 'children'),
                 [Input('my-rangeslider', 'value')]
             )
             def update_map(sliderrange):
                 fig.update_layout(coloraxis=dict(cmax=sliderrange[0], cmin=sliderrange[1]))
                 return fig
+        
         elif map_type == 'slavery':
             
             basemap_visible = True
