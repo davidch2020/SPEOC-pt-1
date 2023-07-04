@@ -512,7 +512,7 @@ def handle_state_dropdown(state, county, option, map_type):
             dcc.Store(data = county_pops, id = 'county_data')
             
             slider =  dcc.RangeSlider(min = county_pops["Population"].min(), 
-                                      max = 50000,#county_pops["Population"].max(), 
+                                      max = county_pops["Population"].max(), 
                                       step= 10000, 
                                       value=[county_pops["Population"].min(), county_pops["Population"].max()],
                                       id = "my-rangeslider"
@@ -524,6 +524,7 @@ def handle_state_dropdown(state, county, option, map_type):
 
             def update_data(sliderrange):
                 county_pops = county_pops[county_pops['Population']>=sliderrange[0]&county_pops['Population']<=sliderrange[1]]
+                print(sliderrange[0])
                 return county_pops
 
             # create choropleth map 
