@@ -521,15 +521,14 @@ def handle_state_dropdown(state, county, option, map_type):
                                     basemap_visible=basemap_visible,
                                     fitbounds=fitbounds,
                                     hover_name="County",
-                                    hover_data=["Population"],
-                                    animation_frame=[10000,20000,30000],
-                                )
-            #slider =  dcc.RangeSlider(min = county_pops["Population"].min(), 
-            #                          max = county_pops["Population"].max(), 
-            #                          step= 10000, 
-            #                          value=[county_pops["Population"].min(), county_pops["Population"].max()],
-            #                          id = "my-rangeslider"
-            #                         )
+                                    hover_data=["Population"]
+                               )
+            slider =  dcc.RangeSlider(min = county_pops["Population"].min(), 
+                                      max = county_pops["Population"].max(), 
+                                      step= 10000, 
+                                      value=[county_pops["Population"].min(), county_pops["Population"].max()],
+                                      id = "my-rangeslider"
+                                     )
         
         elif map_type == 'slavery':
             
