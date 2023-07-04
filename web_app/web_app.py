@@ -522,7 +522,6 @@ def handle_state_dropdown(state, county, option, map_type):
                                     fitbounds=fitbounds,
                                     hover_name="County",
                                     hover_data=["Population"],
-                                    id = 'my-map'
                                 )
             slider =  dcc.RangeSlider(min = county_pops["Population"].min(), 
                                       max = county_pops["Population"].max(), 
@@ -531,7 +530,7 @@ def handle_state_dropdown(state, county, option, map_type):
                                       id = "my-rangeslider"
                                      )
             @app.callback(
-                Output('my-map','figure'),
+                Output(fig,'figure'),
                 Input('my-rangeslider', 'value')
             )
             def update_map(lower, upper):
