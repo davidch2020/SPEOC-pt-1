@@ -510,6 +510,20 @@ def handle_state_dropdown(state, county, option, map_type):
             county_pops.rename(columns = {'SE_T001_001':'Population', "Geo_name":"County"}, inplace = True)
             county_pops = county_pops[["Geo_FIPS", "Population", "County"]]
 
+            slider =  dcc.RangeSlider(min = county_pops["Population"].min(), 
+                                      max = county_pops["Population"].max(), 
+                                      step= 10000, 
+                                      value=[county_pops["Population"].min(), county_pops["Population"].max()],
+                                      id = "my-rangeslider"
+                                     )
+           @app.callback(
+                Output(county_pops, 'data'),
+                [Input('my-rangeslider', 'value')]
+            )
+            def update_map(sliderrange):
+                new_df= df[df['Population']>=sliderrange[0]&df['Population']<=sliderrange[1]]
+                return new_df
+
             # create choropleth map 
             fig = px.choropleth(county_pops, geojson=map_gj, locations='Geo_FIPS', 
                                     color='Population',
@@ -523,12 +537,6 @@ def handle_state_dropdown(state, county, option, map_type):
                                     hover_name="County",
                                     hover_data=["Population"]
                                )
-            slider =  dcc.RangeSlider(min = county_pops["Population"].min(), 
-                                      max = county_pops["Population"].max(), 
-                                      step= 10000, 
-                                      value=[county_pops["Population"].min(), county_pops["Population"].max()],
-                                      id = "my-rangeslider"
-                                     )
         
         elif map_type == 'slavery':
             
