@@ -628,6 +628,7 @@ def handle_state_dropdown(state, county, option, map_type):
             )
 def update_map(mapfig, lower, upper):
     mapfig.update_layout(coloraxis=dict(cmax=lower, cmin=upper))
+    return mapfig
 
 # Layout of the app
 app.layout = html.Div(className='app-container', children=[
