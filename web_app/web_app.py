@@ -558,8 +558,6 @@ def handle_state_dropdown(state, county, option, map_type):
             # Input: archive/.../CD_geographical_table_summary.csv, countyPops.csv (GEO_FIPS column), Map geojson file 
             # Create a dataframe of all county names and their GEO_FIPS code 
             # Merge dataframe with CD_geographical_table_summary.csv 
-            basemap_visible = True
-
             # test debt distribution map 
             # fig = px.choropleth()
             six_p_tot = county_debt_geo["count"]
@@ -577,6 +575,7 @@ def handle_state_dropdown(state, county, option, map_type):
                             hover_name="county",
                             hover_data=["count"]
                         )
+
             slider =  dcc.RangeSlider(0, 20, value=[5, 15])
         
         elif map_type == 'debt density':
