@@ -509,7 +509,7 @@ def handle_state_dropdown(state, county, option, map_type):
             county_pops = county_pops.astype({"SE_T001_001":"int", "Geo_FIPS":"str"})
             county_pops.rename(columns = {'SE_T001_001':'Population', "Geo_name":"County"}, inplace = True)
             county_pops = county_pops[["Geo_FIPS", "Population", "County"]]
-            dcc.Store(data = county_pops, id = 'county_data')
+            #dcc.Store(data = county_pops, id = 'county_data')
             
             slider =  dcc.RangeSlider(min = county_pops["Population"].min(), 
                                       max = county_pops["Population"].max(), 
@@ -517,21 +517,23 @@ def handle_state_dropdown(state, county, option, map_type):
                                       value=[county_pops["Population"].min(), county_pops["Population"].max()],
                                       id = "my-rangeslider"
                                     )
-            @app.callback(
-                Output('county_data', 'data'),
-                [Input('my-rangeslider', 'value')]
-            )
+            #@app.callback(
+            #    Output('county_data', 'data'),
+            #    [Input('my-rangeslider', 'value')]
+            #)
 
-            def update_data(sliderrange):
-                county_pops = county_pops[county_pops['Population']>=sliderrange[0]&county_pops['Population']<=sliderrange[1]]
-                return county_pops
+            #def update_data(sliderrange):
+            #    county_pops = county_pops[county_pops['Population']>=sliderrange[0]&county_pops['Population']<=sliderrange[1]]
+            #    return county_pops
 
             # create choropleth map 
             fig = px.choropleth(county_pops, geojson=map_gj, locations='Geo_FIPS', 
                                     color='Population',
                                     color_continuous_scale="Viridis",
-                                    range_color=(county_pops["Population"].min(), 
-                                                county_pops["Population"].max()),
+                                    #range_color=(county_pops["Population"].min(), 
+                                    #            county_pops["Population"].max()),
+                                    range_color=(slider.getValues().min(), 
+                                                slider.getValues().max()),
                                     featureidkey="properties.Geo_FIPS",
                                     scope="usa",
                                     basemap_visible=basemap_visible,
