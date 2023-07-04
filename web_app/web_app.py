@@ -529,7 +529,13 @@ def handle_state_dropdown(state, county, option, map_type):
                                       value=[county_pops["Population"].min(), county_pops["Population"].max()],
                                       id = "my-rangeslider"
                                      )
-            
+            @app.callback(
+                Output('properties.Geo_FIPS','figure'),
+                [Input('my-rangeslider', 'value')]
+            )
+        def update_map(sliderrange):
+            fig.update_layout(coloraxis=dict(cmax=sliderrange[0], cmin=sliderrange[1]))
+            return fig
         elif map_type == 'slavery':
             
             basemap_visible = True
@@ -623,13 +629,6 @@ def handle_state_dropdown(state, county, option, map_type):
                 'fontWeight': 'bold'
             }
         )
-@app.callback(
-                Output('my-map','figure'),
-                [Input('my-rangeslider', 'value')]
-            )
-def update_map(sliderrange):
-    fig.update_layout(coloraxis=dict(cmax=sliderrange[0], cmin=sliderrange[1]))
-    return fig
     
 # Layout of the app
 app.layout = html.Div(className='app-container', children=[
