@@ -529,7 +529,7 @@ def handle_state_dropdown(state, county, option, map_type):
             #                          step= 10000, 
             #                          value=[county_pops["Population"].min(), county_pops["Population"].max()],
             #                          id = "my-rangeslider"
-                                     )
+            #                         )
         
         elif map_type == 'slavery':
             
