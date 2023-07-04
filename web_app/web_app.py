@@ -516,6 +516,13 @@ def handle_state_dropdown(state, county, option, map_type):
                                       value=[county_pops["Population"].min(), county_pops["Population"].max()],
                                       id = "my-rangeslider"
                                     )
+            @app.callback(
+                Output(county_pops, 'data'),
+                [Input('my-rangeslider', 'value')]
+            )
+            def update_data(sliderrange):
+                new_df= df[df['Population']>=sliderrange[0]&df['Population']<=sliderrange[1]]
+                return new_df
 
             # create choropleth map 
             fig = px.choropleth(county_pops, geojson=map_gj, locations='Geo_FIPS', 
