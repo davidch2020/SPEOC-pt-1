@@ -529,27 +529,6 @@ def handle_state_dropdown(state, county, option, map_type):
                                       value=[county_pops["Population"].min(), county_pops["Population"].max()],
                                       id = "my-rangeslider"
                                      )
-            @app.callback(
-                Output(fig,'figure'),
-                Input('my-rangeslider', 'value')
-            )
-            def update_map(lower, upper):
-                bool_series = df.between(lower, upper)
-                new_df = df[bool_series]
-                fig = px.choropleth(new_df, geojson=map_gj, locations='Geo_FIPS', 
-                                    color='Population',
-                                    color_continuous_scale="Viridis",
-                                    range_color=(county_pops["Population"].min(), 
-                                                county_pops["Population"].max()),
-                                    featureidkey="properties.Geo_FIPS",
-                                    scope="usa",
-                                    basemap_visible=basemap_visible,
-                                    fitbounds=fitbounds,
-                                    hover_name="County",
-                                    hover_data=["Population"]
-                                )
-                
-    
         elif map_type == 'slavery':
             
             basemap_visible = True
@@ -624,7 +603,7 @@ def handle_state_dropdown(state, county, option, map_type):
 
             slider =  dcc.RangeSlider(0, 20, value=[5, 15], id = "my-rangeslider")
 
-        return dcc.Graph(figure = fig), slider
+        return dcc.Graph(figure = fig, id = 'my-map'), slider
     else: # option is table
         # Display the DataFrame as a table
         df = pd.read_csv('../data_clean/final_data_CD.csv', index_col=0)
