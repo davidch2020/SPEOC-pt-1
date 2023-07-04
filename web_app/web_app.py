@@ -522,7 +522,7 @@ def handle_state_dropdown(state, county, option, map_type):
                                     fitbounds=fitbounds,
                                     hover_name="County",
                                     hover_data=["Population"],
-                                    animation_frame='Population',
+                                    animation_frame=[10000,20000,30000],
                                 )
             #slider =  dcc.RangeSlider(min = county_pops["Population"].min(), 
             #                          max = county_pops["Population"].max(), 
