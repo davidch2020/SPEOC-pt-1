@@ -509,7 +509,7 @@ def handle_state_dropdown(state, county, option, map_type):
             county_pops = county_pops.astype({"SE_T001_001":"int", "Geo_FIPS":"str"})
             county_pops.rename(columns = {'SE_T001_001':'Population', "Geo_name":"County"}, inplace = True)
             county_pops = county_pops[["Geo_FIPS", "Population", "County"]]
-            dcc.Store(id = 'county_data')
+            dcc.Store(data = county_pops, id = 'county_data')
             
             slider =  dcc.RangeSlider(min = county_pops["Population"].min(), 
                                       max = county_pops["Population"].max(), 
