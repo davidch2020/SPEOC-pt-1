@@ -523,8 +523,8 @@ def handle_state_dropdown(state, county, option, map_type):
             )
 
             def update_data(sliderrange):
-                new_df = county_pops[county_pops['Population']>=sliderrange[0]&county_pops['Population']<=sliderrange[1]]
-                return new_df
+                county_pops = county_pops[county_pops['Population']>=sliderrange[0]&county_pops['Population']<=sliderrange[1]]
+                return county_pops
 
             # create choropleth map 
             fig = px.choropleth(county_pops, geojson=map_gj, locations='Geo_FIPS', 
