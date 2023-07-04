@@ -622,6 +622,12 @@ def handle_state_dropdown(state, county, option, map_type):
                 'fontWeight': 'bold'
             }
         )
+@app.callback(
+                Output('my-map','figure'),
+                Input('my-rangeslider', 'value')
+            )
+def update_map(mapfig, lower, upper):
+    mapfig.update_layout(coloraxis=dict(cmax=lower, cmin=upper))
 
 # Layout of the app
 app.layout = html.Div(className='app-container', children=[
