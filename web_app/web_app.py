@@ -531,11 +531,11 @@ def handle_state_dropdown(state, county, option, map_type):
                                      )
             @app.callback(
                 Output(fig,'figure'),
-                Input('my-rangeslider', 'value')
+                [Input('my-rangeslider', 'value')]
             )
             def update_map(sliderrange):
                 fig.update_layout(coloraxis=dict(cmax=sliderrange[0], cmin=sliderrange[1]))
-                #return fig
+                return fig
             
         elif map_type == 'slavery':
             
