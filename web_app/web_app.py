@@ -31,7 +31,7 @@ state_codes = {
 }
 
 # create web app, import bootstrap stylesheet + external stylesheet
-app = dash.Dash(__name__, external_stylesheets=[dbc.themes.BOOTSTRAP, 'assets/style.css'])
+app = dash.Dash(__name__, external_stylesheets=[dbc.themes.BOOTSTRAP, 'assets/style.css'], suppress_callback_exceptions=True)
 
 # Title
 title = html.H1(children='My Dash App', style={'textAlign': 'left'}, className='title')
