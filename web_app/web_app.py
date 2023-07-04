@@ -524,7 +524,6 @@ def handle_state_dropdown(state, county, option, map_type):
 
             def update_data(sliderrange):
                 county_pops = county_pops[county_pops['Population']>=sliderrange[0]&county_pops['Population']<=sliderrange[1]]
-                print(sliderrange[0])
                 return county_pops
 
             # create choropleth map 
