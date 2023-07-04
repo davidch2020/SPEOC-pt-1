@@ -626,8 +626,8 @@ def handle_state_dropdown(state, county, option, map_type):
                 Output('my-map','figure'),
                 Input('my-rangeslider', 'value')
             )
-def update_map(mapfig, lower, upper):
-    mapfig.update_layout(coloraxis=dict(cmax=lower, cmin=upper))
+def update_map(mapfig, sliderrange):
+    mapfig.update_layout(coloraxis=dict(cmax=sliderrange[0], cmin=sliderrange[1]))
     return mapfig
 
 # Layout of the app
