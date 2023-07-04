@@ -31,7 +31,7 @@ state_codes = {
 }
 
 # create web app, import bootstrap stylesheet + external stylesheet
-app = dash.Dash(__name__, external_stylesheets=[dbc.themes.BOOTSTRAP, 'assets/style.css'], suppress_callback_exceptions=True)
+app = dash.Dash(__name__, external_stylesheets=[dbc.themes.BOOTSTRAP, 'assets/style.css'])
 
 # Title
 title = html.H1(children='My Dash App', style={'textAlign': 'left'}, className='title')
@@ -529,6 +529,14 @@ def handle_state_dropdown(state, county, option, map_type):
                                       value=[county_pops["Population"].min(), county_pops["Population"].max()],
                                       id = "my-rangeslider"
                                      )
+            @app.callback(
+                Output(fig,'figure'),
+                Input('my-rangeslider', 'value')
+            )
+            def update_map(sliderrange):
+                fig.update_layout(coloraxis=dict(cmax=sliderrange[0], cmin=sliderrange[1]))
+                return fig
+            
         elif map_type == 'slavery':
             
             basemap_visible = True
@@ -622,13 +630,6 @@ def handle_state_dropdown(state, county, option, map_type):
                 'fontWeight': 'bold'
             }
         )
-@app.callback(
-                Output('my-map','figure'),
-                Input('my-rangeslider', 'value')
-            )
-def update_map(mapfig, sliderrange):
-    mapfig.update_layout(coloraxis=dict(cmax=sliderrange[0], cmin=sliderrange[1]))
-    return mapfig
 
 # Layout of the app
 app.layout = html.Div(className='app-container', children=[
