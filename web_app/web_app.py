@@ -107,7 +107,7 @@ regions_drop = dcc.Dropdown(
 # title : "Pick a state"
 region_title = html.H5(children="Region")
 # title : "state information"
-st_info_title = html.H5(children="State Info")
+#st_info_title = html.H5(children="State Info")
 # title : "county information"
 c_info_title = html.H5(children="County Info")
 # title : "town information"
