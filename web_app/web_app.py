@@ -100,7 +100,8 @@ states_drp = dcc.Dropdown(
 )
 regions_drop = dcc.Dropdown(
     id = "reg_drpdwn",
-    options=['Nation','State','County']
+    options=['Not Selected','Nation','State','County'],
+    value = 'Not Selected'
 )
 
 # title : "Pick a state"
@@ -150,6 +151,9 @@ left_tab = html.Div(id="left_tab", className='box', children=[
     ]), 
     html.Div(id="c_drpdwn", children=[
         dcc.Dropdown(id="county_drpdwn", style={"display":"none"})
+    ]), 
+    html.Div(id="bord_c_drpdwn", children=[
+        dcc.Dropdown(id="border_drpdwn", style={"display":"none"})
     ]), 
     html.Div(id="c_ops", children=[
         c_op_title,
@@ -252,9 +256,9 @@ def display_t_ops(town):
     else:
         return ''
 
-# check if county is selected 
-# get list of towns in the county 
-# display dropdown in id=t_drpdwn 
+'''
+        
+'''
 @app.callback(
         Output("t_drpdwn", "children"), 
         [Input("county_drpdwn", "value"), 
@@ -272,7 +276,6 @@ def display_t_drpdwn(sel_county, sel_state):
         return t_title, t_drpdwn 
     else: 
         return ''
-
 # get checked box values 
 # find data for each checked box 
 # populate div with id=st_info 
@@ -429,7 +432,39 @@ def update_project_desc(left_clicks, right_clicks):
     number = number % 10
     return 'This is some text. We are currently displaying text at for the {} slide.'.format(
         number)
-
+'''
+# when region is chosen, display border dropdown 
+@app.callback(
+    Output("bord_c_drpdwn", "children"),
+    Input("reg_drpdwn", "value")
+)
+def display_border_drpdwn(value):
+    if value != "Not Selected":
+        if value == "Nation":
+            bord_drpdwn_title = html.H5(children="Choose a Border Type", id="bord_drpdwn_t")
+            bord_drp = dcc.Dropdown(
+                id="border_drpdwn",
+                options=['Not Selected', 'Nationwide', 'Statewide', 'Countywide'],
+                value='Not Selected'
+            )
+        elif value == "State":
+            bord_drpdwn_title = html.H5(children="Choose a Border Type", id="bord_drpdwn_t")
+            bord_drp = dcc.Dropdown(
+                id="border_drpdwn",
+                options=['Not Selected', 'Statewide', 'Countywide'],
+                value='Not Selected'
+            )
+        elif value == "County":
+            bord_drpdwn_title = html.H5(children="Choose a Border Type", id="bord_drpdwn_t")
+            bord_drp = dcc.Dropdown(
+                id="border_drpdwn",
+                options=['Not Selected', 'Countywide'],
+                value='Countywide'
+            )
+        return bord_drpdwn_title, bord_drp 
+    else:
+        return ''
+'''
 # when state is chosen, display county dropdown 
 @app.callback(
     Output("c_drpdwn", "children"),
