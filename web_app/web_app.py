@@ -99,8 +99,13 @@ states_drp = dcc.Dropdown(
     value=states[0]
 )
 
+regions_drop = dcc.Dropdown(
+    id = "reg_drpdwn",
+    options=['Nation','State','County'],
+    value=['Nation']
+
 # title : "Pick a state"
-st_title = html.H5(children="Choose a State")
+region_title = html.H5(children="Region")
 # title : "state information"
 st_info_title = html.H5(children="State Info")
 # title : "county information"
@@ -143,9 +148,9 @@ left_tab = html.Div(id="left_tab", className='box', children=[
             labelStyle={'display': 'inline-block', 'text-align': 'justify', "margin-left": "15px"} 
         ) 
     ]), 
-    html.Div(id="st_c_drpdwn", children=[
-        st_title,
-        states_drp 
+    html.Div(id="regions_c_drpdwn", children=[
+        region_title,
+        regions_drop
     ], style={"display":"block"}), 
     html.Div(id="state_ops", children=[
         map_op_title,
