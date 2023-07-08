@@ -137,11 +137,11 @@ left_tab = html.Div(id="left_tab", className='box', children=[
            options=[
                {'label':'National', 'value':'nation'}, 
                {'label':'State', 'value':'state'},
-               {'label':'County', 'value':'county'},
+               {'label':'County', 'value':'county'}
            ],
            value='nation',
-           labelStyle={'display': 'inline-block', 'text-align': 'justify', "margin-left": "15px"} 
-       ) 
+            labelStyle={'display': 'inline-block', 'text-align': 'justify', "margin-left": "15px"} 
+        ) 
     ]), 
     '''
     html.Div(id="display_ops", children=[ #some title stuff that can be altered later
