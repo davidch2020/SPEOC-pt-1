@@ -130,20 +130,19 @@ left_tab = html.Div(id="left_tab", className='box', children=[
             value='map',
             labelStyle={'display':'block'}
         ),
-        html.Br(),
+        html.Br(), #FIRST LEVEL
         dcc.RadioItems(
-           id="map_type_ops",
+           id="map_type_ops", #keep id same for now; change it at the end...
            options=[
-               {'label':'Population', 'value':'population'},
-               {'label':'Debt Distribution', 'value':'debt dist'},
-               {'label':'Debt Density', 'value':'debt density'},
-               {'label':'Slave Population', 'value':'slavery'}
+               {'label':'National', 'value':'nation'}, 
+               {'label':'State', 'value':'state'},
+               {'label':'County', 'value':'county'},
            ],
-           value='population',
+           value='nation',
            labelStyle={"display":"block"}
        ) 
     ]), 
-    html.Div(id="display_ops", children=[
+    html.Div(id="display_ops", children=[ #some title stuff that can be altered later
         disp_op_title,
         disp_ops_checklist
     ]), 
@@ -190,7 +189,8 @@ right_tab = html.Div(className='box', children=[
              )
 ], style={'width': '60%', 'height': '600px'})
 
-# check if a display option is selected 
+'''
+# check if a display option is selected   #NOT SURE IF THIS IS NEEDED KEEP FOR NOW
 # edit layout accordingly 
 @app.callback(
         [Output("st_c_drpdwn", "style", allow_duplicate=True), 
@@ -634,7 +634,7 @@ def handle_state_dropdown(state, county, option, map_type):
                 'fontWeight': 'bold'
             }
         )
-    
+  '''  
 # Layout of the app
 app.layout = html.Div(className='app-container', children=[
     dbc.Container(className='header-container', children=[
