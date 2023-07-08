@@ -141,10 +141,11 @@ left_tab = html.Div(id="left_tab", className='box', children=[
         region_title,
         regions_drop
     ], style={"display":"block"}), 
+'''
     html.Div(id="state_ops", children=[
         map_op_title,
         map_ops
-    ], style={"display":"block"}), 
+    ], style={"display":"block"}), '''
     html.Div(id="st_info", children=[
         st_info_title,
         html.Ul(id="st_infolist")
@@ -458,7 +459,7 @@ def display_border_drpdwn(value):
             bord_drpdwn_title = html.H5(children="Choose a Border Type", id="bord_drpdwn_t")
             bord_drp = dcc.Dropdown(
                 id="border_drpdwn",
-                options=['Not Selected', 'Countywide'],
+                options=['Countywide'],
                 value='Countywide'
             )
         return bord_drpdwn_title, bord_drp 
