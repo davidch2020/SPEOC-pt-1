@@ -129,7 +129,7 @@ left_tab = html.Div(id="left_tab", className='box', children=[
             ],
             value='map',
             #labelStyle={'display':'block'}
-            labelStyle={'display': 'inline-block', 'text-align': 'justify'} #THIS IS WHERE IT IS ADDED
+            labelStyle={'display': 'inline-block', 'text-align': 'justify', "margin-left": "15px"} 
         ),
         html.Br(), #FIRST LEVEL
         dcc.RadioItems(
