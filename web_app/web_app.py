@@ -101,7 +101,6 @@ states_drp = dcc.Dropdown(
 regions_drop = dcc.Dropdown(
     id = "reg_drpdwn",
     options=['Nation','State','County']
-    #value='Choose a Region'
 )
 
 # title : "Pick a state"
@@ -135,18 +134,7 @@ left_tab = html.Div(id="left_tab", className='box', children=[
             ],
             value='map',
             labelStyle={'display': 'inline-block', 'text-align': 'justify', "margin-left": "15px"} 
-        ),
-        html.Br(), #FIRST LEVEL
-        dcc.RadioItems(
-           id="map_type_ops", #keep id same for now; change it at the end...
-           options=[
-               {'label':'National', 'value':'nation'}, 
-               {'label':'State', 'value':'state'},
-               {'label':'County', 'value':'county'}
-           ],
-           value='nation',
-            labelStyle={'display': 'inline-block', 'text-align': 'justify', "margin-left": "15px"} 
-        ) 
+        )
     ]), 
     html.Div(id="regions_c_drpdwn", children=[
         region_title,
