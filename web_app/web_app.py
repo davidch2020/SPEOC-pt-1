@@ -141,10 +141,6 @@ left_tab = html.Div(id="left_tab", className='box', children=[
         region_title,
         regions_drop
     ], style={"display":"block"}), 
-    html.Div(id="st_info", children=[
-        st_info_title,
-        html.Ul(id="st_infolist")
-    ]), 
     html.Div(id="c_drpdwn", children=[
         dcc.Dropdown(id="county_drpdwn", style={"display":"none"})
     ]), 
