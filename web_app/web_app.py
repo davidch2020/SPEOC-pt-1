@@ -101,7 +101,7 @@ states_drp = dcc.Dropdown(
 regions_drop = dcc.Dropdown(
     id = "reg_drpdwn",
     options=['Nation','State','County'],
-    value='Nation'
+    value='Choose a Region'
 )
 
 # title : "Pick a state"
