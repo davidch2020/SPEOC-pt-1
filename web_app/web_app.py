@@ -143,11 +143,6 @@ left_tab = html.Div(id="left_tab", className='box', children=[
             labelStyle={'display': 'inline-block', 'text-align': 'justify', "margin-left": "15px"} 
         ) 
     ]), 
-    '''
-    html.Div(id="display_ops", children=[ #some title stuff that can be altered later
-        disp_op_title,
-        disp_ops_checklist
-    ]), '''
     html.Div(id="st_c_drpdwn", children=[
         st_title,
         states_drp 
