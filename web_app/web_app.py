@@ -432,22 +432,20 @@ def update_project_desc(left_clicks, right_clicks):
 )
 def display_border_drpdwn(value):
     if value != "Not Selected":
+        bord_drpdwn_title = html.H5(children="Border Type", id="bord_drpdwn_t")
         if value == "Nation":
-            bord_drpdwn_title = html.H5(children="Choose a Border Type", id="bord_drpdwn_t")
             bord_drp = dcc.Dropdown(
                 id="border_drpdwn",
                 options=['Not Selected', 'Nationwide', 'Statewide', 'Countywide'],
                 value='Not Selected'
             )
         elif value == "State":
-            bord_drpdwn_title = html.H5(children="Choose a Border Type", id="bord_drpdwn_t")
             bord_drp = dcc.Dropdown(
                 id="border_drpdwn",
                 options=['Not Selected', 'Statewide', 'Countywide'],
                 value='Not Selected'
             )
         elif value == "County":
-            bord_drpdwn_title = html.H5(children="Choose a Border Type", id="bord_drpdwn_t")
             bord_drp = dcc.Dropdown(
                 id="border_drpdwn",
                 options=['Countywide'],
