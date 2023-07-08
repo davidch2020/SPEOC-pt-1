@@ -108,12 +108,13 @@ c_info_title = html.H5(children="County Info")
 # title : "town information"
 t_info_title = html.H5(children="Town Info")
 
+'''
 # display options checklist: choose what to display 
 disp_ops_checklist = dcc.Checklist(id="disp_ops_checklist", options=[
     "Hide Choose a State", 
     "Hide State Options", 
     "Hide State Info" 
-])
+])'''
 
 # Left tab with map and table options
 # Use this to select whether you want a map or table
@@ -128,7 +129,6 @@ left_tab = html.Div(id="left_tab", className='box', children=[
                 {'label': 'Table', 'value': 'table'}
             ],
             value='map',
-            #labelStyle={'display':'block'}
             labelStyle={'display': 'inline-block', 'text-align': 'justify', "margin-left": "15px"} 
         ),
         html.Br(), #FIRST LEVEL
@@ -140,7 +140,7 @@ left_tab = html.Div(id="left_tab", className='box', children=[
                {'label':'County', 'value':'county'},
            ],
            value='nation',
-           labelStyle={"display":"block"}
+           labelStyle={'display': 'inline-block', 'text-align': 'justify', "margin-left": "15px"} 
        ) 
     ]), 
     html.Div(id="display_ops", children=[ #some title stuff that can be altered later
