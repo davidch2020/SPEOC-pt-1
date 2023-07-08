@@ -124,7 +124,7 @@ disp_ops_checklist = dcc.Checklist(id="disp_ops_checklist", options=[
 # Use this to select whether you want a map or table
 # Also use this to select what type of map/table you want to show (not implemented yet)
 left_tab = html.Div(id="left_tab", className='box', children=[
-    html.H3(children='Left Tab', className='box-title', style={'textAlign': 'center'}),
+    html.H3(children='Customize', className='box-title', style={'textAlign': 'center'}),
     html.Div(className='left-tab-options-container options-container', children=[
         dcc.RadioItems(
             id='left-tab-options',
