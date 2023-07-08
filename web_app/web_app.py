@@ -77,7 +77,7 @@ c_ops = dcc.Dropdown(id="c_checklist", options=["Total County Population", "Tota
                         value=["Total County Population"], multi=True)
 
 # title: "display options"
-disp_op_title = html.H5(children="Display Options (State)", id="disp_op_title")
+#disp_op_title = html.H5(children="Display Options (State)", id="disp_op_title")
 # title: "map options"
 map_op_title = html.H5(children="State Options", id="map_op_title")
 # title: "county options"
@@ -143,10 +143,11 @@ left_tab = html.Div(id="left_tab", className='box', children=[
            labelStyle={'display': 'inline-block', 'text-align': 'justify', "margin-left": "15px"} 
        ) 
     ]), 
+    '''
     html.Div(id="display_ops", children=[ #some title stuff that can be altered later
         disp_op_title,
         disp_ops_checklist
-    ]), 
+    ]), '''
     html.Div(id="st_c_drpdwn", children=[
         st_title,
         states_drp 
