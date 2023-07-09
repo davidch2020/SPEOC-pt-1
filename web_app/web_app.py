@@ -105,6 +105,8 @@ regions_drop = dcc.Dropdown(
 )
 
 # title : "Pick a state"
+state_title: html.H5(children="Pick a State")
+#title: Region
 region_title = html.H5(children="Region")
 # title : "state information"
 #st_info_title = html.H5(children="State Info")
@@ -141,6 +143,10 @@ left_tab = html.Div(id="left_tab", className='box', children=[
         region_title,
         regions_drop
     ], style={"display":"block"}), 
+    html.Div(id="states_c_drpdwn", children=[
+        state_title,
+        states_drp
+    ], style={"display":"none"})
     html.Div(id="c_drpdwn", children=[
         dcc.Dropdown(id="county_drpdwn", style={"display":"none"})
     ]), 
@@ -425,6 +431,24 @@ def update_project_desc(left_clicks, right_clicks):
     return 'This is some text. We are currently displaying text at for the {} slide.'.format(
         number)
 '''
+#when state is chosen as the region, display state dropdown
+@app.callback(
+    Output("states_c_drpdwn", "children"),
+    Input("reg_drpdwn", "value")
+)
+def display_state_drpdwn(value):
+    if value == "State":
+        state_drpdwn_title = html.H5(children="Choose a State", id="state_drpdwn_t")
+        state_drp = dcc.Dropdown(
+            id="states_drpdwn",
+            options=states,
+            value=states[0],
+            width = '50%'
+        )
+        return state_drpdwn_title, state_drp 
+    else:
+        return ''
+
 # when region is chosen, display border dropdown 
 @app.callback(
     Output("bord_c_drpdwn", "children"),
