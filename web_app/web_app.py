@@ -146,7 +146,7 @@ left_tab = html.Div(id="left_tab", className='box', children=[
     html.Div(id="states_c_drpdwn", children=[
         state_title,
         states_drp
-    ], style={"display":"none"}),
+    ], style={"display":"none", 'width': '50%'}),
     html.Div(id="c_drpdwn", children=[
         dcc.Dropdown(id="county_drpdwn", style={"display":"none"})
     ]), 
@@ -442,8 +442,7 @@ def display_state_drpdwn(value):
         state_drp = dcc.Dropdown(
             id="states_drpdwn",
             options=states,
-            value=states[0],
-            width = '50%'
+            value=states[0]
         )
         return state_drpdwn_title, state_drp 
     else:
