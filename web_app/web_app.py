@@ -146,7 +146,7 @@ left_tab = html.Div(id="left_tab", className='box', children=[
     html.Div(id="states_c_drpdwn", children=[
         state_title,
         states_drp
-    ], style={"display":"none"})
+    ], style={"display":"none"}),
     html.Div(id="c_drpdwn", children=[
         dcc.Dropdown(id="county_drpdwn", style={"display":"none"})
     ]), 
