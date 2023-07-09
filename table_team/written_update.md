@@ -1,5 +1,5 @@
-Table team has worked on three areas of coding.
-  ##1. Creating Tables
+#Table Team Update
+##1. Creating Tables
   
   ##2. Creating separate About Us and Project Description pages
   ##3. Merging and adjusting above code to the main web app
