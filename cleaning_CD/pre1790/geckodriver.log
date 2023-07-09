@@ -1,0 +1,38 @@
+1688859066645	geckodriver	INFO	Listening on 127.0.0.1:52523
+1688859069758	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "--remote-debugging-port" "52524" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "C:\\Users\\david\\AppData\\Local\\Temp\\rust_mozprofilejTypz4"
+console.warn: services.settings: Ignoring preference override of remote settings server
+console.warn: services.settings: Allow by setting MOZ_REMOTE_SETTINGS_DEVTOOLS=1 in the environment
+1688859070001	Marionette	INFO	Marionette enabled
+Dynamically enable window occlusion 0
+1688859070005	Marionette	INFO	Listening on port 52540
+WebDriver BiDi listening on ws://127.0.0.1:52524
+Read port: 52540
+1688859070216	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+DevTools listening on ws://127.0.0.1:52524/devtools/browser/b4e4ace0-ebab-4532-bbf2-5b37f878d8ef
+1688859074420	Marionette	INFO	Stopped listening on port 52540
+Dynamically enable window occlusion 1
+1688859193002	geckodriver	INFO	Listening on 127.0.0.1:52719
+1688859196092	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "--headless" "--window-size=1000,1000" "--d ... 0" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "C:\\Users\\david\\AppData\\Local\\Temp\\rust_mozprofileclQgjr"
+*** You are running in headless mode.
+console.warn: services.settings: Ignoring preference override of remote settings server
+console.warn: services.settings: Allow by setting MOZ_REMOTE_SETTINGS_DEVTOOLS=1 in the environment
+1688859196341	Marionette	INFO	Marionette enabled
+Dynamically enable window occlusion 0
+1688859196344	Marionette	INFO	Listening on port 52732
+console.error: "Warning: unrecognized command line flag -window-size\n"
+console.error: "Warning: unrecognized command line flag -disable-blink-features\n"
+console.error: "Warning: unrecognized command line flag -no-sandbox\n"
+WebDriver BiDi listening on ws://127.0.0.1:52720
+Read port: 52732
+1688859196515	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+[GFX1-]: RenderCompositorSWGL failed mapping default framebuffer, no dt
+console.error: ({})
+DevTools listening on ws://127.0.0.1:52720/devtools/browser/89d3a989-0f47-464e-90f4-39f251cbac62
+console.warn: LoginRecipes: "Falling back to a synchronous message for: https://proxy.library.emory.edu."
+JavaScript error: https://login.emory.edu/idp/profile/SAML2/POST/SSO?execution=e1s1, line 16: ReferenceError: jQuery is not defined
+JavaScript error: https://www.emory.edu/template_shared/emergency_include.js, line 57: ReferenceError: jQuery is not defined
+console.warn: LoginRecipes: "Falling back to a synchronous message for: https://login.emory.edu."
+console.warn: LoginRecipes: "Falling back to a synchronous message for: https://login.emory.edu."
+JavaScript error: https://login.emory.edu/idp/profile/SAML2/POST/SSO?execution=e1s2, line 16: ReferenceError: jQuery is not defined
+JavaScript error: https://www.emory.edu/template_shared/emergency_include.js, line 57: ReferenceError: jQuery is not defined
+JavaScript error: , line 0: NS_ERROR_NOT_AVAILABLE
