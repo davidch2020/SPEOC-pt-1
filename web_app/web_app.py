@@ -93,9 +93,10 @@ states.remove("Maine")
 states.remove("Kentucky")
 states.remove("Tennessee")
 
+'''
 #dropdown menu of counties
 counties = map_df.query("state==" + "'" + value + "'")["county"].tolist()
-counties.insert(0, "All Counties")
+counties.insert(0, "All Counties")'''
 
 '''
 states_drp = dcc.Dropdown(
@@ -453,13 +454,13 @@ def display_state_drpdwn(value):
         return state_drpdwn_title, state_drp 
     else:
         return ''
-
+'''
 #when county is chosen as the region, display county dropdown
 @app.callback(
     Output("c_drpdwn", "children"),
     Input("reg_drpdwn", "value")
 )
-def display_state_drpdwn(value):
+def display_county_drpdwn(value):
     if value == "County":
         county_drpdwn_title = html.H5(children="Pick a County", id="county_drpdwn_t", style = {"margin-left": "200px"})
         county_drp = dcc.Dropdown(
@@ -471,20 +472,20 @@ def display_state_drpdwn(value):
         return county_drpdwn_title, county_drp 
     else:
         return ''
-
+'''
 # when region is chosen, display border dropdown 
 @app.callback(
     Output("bord_c_drpdwn", "children"),
     [Input("reg_drpdwn", "value"),
-     Input("states_drpdwn", "value"),
-     Input("county_drpdwn", "value")]
+     Input("states_drpdwn", "value")]
+     #Input("county_drpdwn", "value")
 )
-def display_border_drpdwn(reg_value, state_value, county_value):
+def display_border_drpdwn(reg_value, state_value): #county value...
     if reg_value != "Not Selected":
         if (reg_value == "State") and (state_value=="All States"):
             return ''
-        if (reg_value == "County") and (county_value=="All Counties"):
-            return ''
+        #if (reg_value == "County") and (county_value=="All Counties"):
+        #    return ''
         bord_drpdwn_title = html.H5(children="Border Type", id="bord_drpdwn_t")
         if reg_value == "Nation":
             bord_drp = dcc.Dropdown(
