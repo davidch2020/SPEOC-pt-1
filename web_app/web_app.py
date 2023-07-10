@@ -493,8 +493,8 @@ def display_border_drpdwn(reg_value, state_value): #county value...
     if reg_value != "Not Selected":
         if (reg_value == "State") and (state_value=="All States"):
             return ''
-        #if (reg_value == "County") and (county_value=="All Counties"):
-        #    return ''
+        if (reg_value == "County") and (state_value=="All Counties"):
+            return ''
         bord_drpdwn_title = html.H5(children="Border Type", id="bord_drpdwn_t")
         if reg_value == "Nation":
             bord_drp = dcc.Dropdown(
