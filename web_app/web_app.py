@@ -105,7 +105,7 @@ regions_drop = dcc.Dropdown(
 )
 
 # title : "Pick a state"
-state_title = html.H5(children="Pick a State")
+#state_title = html.H5(children="Pick a State")
 #title: Region
 region_title = html.H5(children="Region")
 # title : "state information"
@@ -437,7 +437,7 @@ def update_project_desc(left_clicks, right_clicks):
 )
 def display_state_drpdwn(value):
     if value == "State":
-        state_drpdwn_title = state_title,
+        state_drpdwn_title = html.H5(children="Pick a State", id="state_drpdwn_t")
         state_drp = dcc.Dropdown(
             id="states_drpdwn",
             options=states,
