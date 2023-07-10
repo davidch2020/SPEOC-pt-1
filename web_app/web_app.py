@@ -92,12 +92,12 @@ states = pd.concat([pd.Series(["All States"]), states]).tolist()
 states.remove("Maine")
 states.remove("Kentucky")
 states.remove("Tennessee")
-
+'''
 states_drp = dcc.Dropdown(
     id="states_drpdwn",
     options=states,
     value=states[0]
-)
+)'''
 regions_drop = dcc.Dropdown(
     id = "reg_drpdwn",
     options=['Not Selected','Nation','State','County'],
@@ -144,9 +144,8 @@ left_tab = html.Div(id="left_tab", className='box', children=[
         regions_drop
     ], style={"display":"block"}), 
     html.Div(id="states_c_drpdwn", children=[
-        state_title,
-        states_drp
-    ], style={"display":"none", 'width': '50%'}),
+        dcc.Dropdown(id="states_drpdwn", style={"display":"none"})
+    ]), 
     html.Div(id="c_drpdwn", children=[
         dcc.Dropdown(id="county_drpdwn", style={"display":"none"})
     ]), 
@@ -438,8 +437,7 @@ def update_project_desc(left_clicks, right_clicks):
 )
 def display_state_drpdwn(value):
     if value == "State":
-        print("yes")
-        state_drpdwn_title = html.H5(children="Choose a State", id="state_drpdwn_t")
+        state_drpdwn_title = state_title,
         state_drp = dcc.Dropdown(
             id="states_drpdwn",
             options=states,
@@ -447,7 +445,6 @@ def display_state_drpdwn(value):
         )
         return state_drpdwn_title, state_drp 
     else:
-        print("no")
         return ''
 
 # when region is chosen, display border dropdown 
