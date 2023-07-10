@@ -486,14 +486,16 @@ def display_county_drpdwn(state_value, reg_value):
 @app.callback(
     Output("bord_c_drpdwn", "children"),
     [Input("reg_drpdwn", "value"),
-     Input("states_drpdwn", "value")]
-     #Input("county_drpdwn", "value")
+     Input("states_drpdwn", "value"),
+     Input("county_drpdwn", "value")]
 )
-def display_border_drpdwn(reg_value, state_value): #county value...
+def display_border_drpdwn(reg_value, state_value, county_value): 
     if reg_value != "Not Selected":
         if (reg_value == "State") and (state_value=="All States"):
             return ''
         if (reg_value == "County") and (state_value=="All States"):
+            return ''
+        if(reg_value == "County") and (county_value == "All Counties"):
             return ''
         bord_drpdwn_title = html.H5(children="Border Type", id="bord_drpdwn_t")
         if reg_value == "Nation":
