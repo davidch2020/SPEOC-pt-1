@@ -490,7 +490,7 @@ def display_border_drpdwn(reg_value, state_value):
     Input("border_drpdwn", "value")
 )
 def display_heatmap_drpdwn(value):
-    if value != "Not Selected":
+    if (value != "Not Selected") and (value is not None):
         print(value)
         heatmap_drpdwn_title = html.H5(children="Pick a Heatmap", id="heatmap_drpdwn_t")
         heatmap_drp = dcc.Dropdown(
