@@ -394,14 +394,18 @@ def add_c_options(sel_state, value):
 '''
 # call back function to display dropdown menus when 'map' is clicked
 @app.callback( 
-        Output("regions_c_drpdwn", "style"),
+        [Output("regions_c_drpdwn", "style"),
+        Output("bord_c_drpdwn", "style"),
+        Output("heatmap_c_drpdwn", "style"),
+        Output("states_c_drpdwn", "style"),
+        Output("c_drpdwn", "style")]
         Input("left-tab-options", "value")
 )
 def add_map_options(value):
     if value == "map":
-        return {"display":"block"}
+        return {"display":"block", "display":"none", "display":"none", "display":"none", "display":"none"}
     else:
-        return {"display":"none"}
+        return {"display":"none", "display":"none", "display":"none", "display":"none", "display":"none"}
 '''
 # call back function to display map options when 'a state' is clicked 
 @app.callback( 
