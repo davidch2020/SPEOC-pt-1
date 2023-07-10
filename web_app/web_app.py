@@ -146,14 +146,14 @@ left_tab = html.Div(id="left_tab", className='box', children=[
     html.Div(id="states_c_drpdwn", children=[
         dcc.Dropdown(id="states_drpdwn", style={"display":"none"})
     ]), 
-    html.Div(id="heatmap_c_drpdwn", children=[
-        dcc.Dropdown(id="heatmap_drpdwn", style={"display":"none"})
-    ]), 
     html.Div(id="c_drpdwn", children=[
         dcc.Dropdown(id="county_drpdwn", style={"display":"none"})
     ]), 
     html.Div(id="bord_c_drpdwn", children=[
         dcc.Dropdown(id="border_drpdwn", style={"display":"none"})
+    ]), 
+    html.Div(id="heatmap_c_drpdwn", children=[
+        dcc.Dropdown(id="heatmap_drpdwn", style={"display":"none"})
     ]), 
     html.Div(id="c_ops", children=[
         c_op_title,
