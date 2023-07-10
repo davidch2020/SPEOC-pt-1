@@ -439,7 +439,7 @@ def update_project_desc(left_clicks, right_clicks):
 '''
 #when state is chosen as the region, display state dropdown
 @app.callback(
-    Output("states_c_drpdwn", "children"),
+    Output("states_c_drpdwn", "children", allow_duplicate=True),
     Input("reg_drpdwn", "value")
 )
 def display_state_drpdwn(value):
@@ -456,7 +456,7 @@ def display_state_drpdwn(value):
         return ''
 #when county is chosen as the region, display state dropdown
 @app.callback(
-    Output("states_c_drpdwn", "children"),
+    Output("states_c_drpdwn", "children", allow_duplicate=True),
     Input("reg_drpdwn", "value")
 )
 def display_county_state_drpdwn(value):
