@@ -527,7 +527,7 @@ def display_border_drpdwn(reg_value, state_value, county_value):
 #when border is chosen, display heatmap dropdown
 @app.callback(
     Output("heatmap_c_drpdwn", "children"),
-    [Input("border_drpdwn", "value"),
+    [Input("border_drpdwn", "value"), #need more input so it doesnt show up in county/state ex
     Input("reg_drpdwn", "value")]
 )
 def display_heatmap_drpdwn(border_value, region_value):
