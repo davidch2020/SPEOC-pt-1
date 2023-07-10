@@ -454,6 +454,23 @@ def display_state_drpdwn(value):
         return state_drpdwn_title, state_drp 
     else:
         return ''
+#when county is chosen as the region, display state dropdown
+@app.callback(
+    Output("states_c_drpdwn", "children"),
+    Input("reg_drpdwn", "value")
+)
+def display_county_state_drpdwn(value):
+    if value == "County":
+        county_state_drpdwn_title = html.H5(children="Which State is Your County In?", id="county_state_drpdwn_t", style = {"margin-left": "200px"})
+        county_state_drp = dcc.Dropdown(
+            id="states_drpdwn",
+            options=states,
+            value=states[0],
+            style = {'width': '70%', "margin-left": "100px"}
+        )
+        return county_state_drpdwn_title, county_state_drp 
+    else:
+        return ''
 '''
 #when county is chosen as the region, display county dropdown
 @app.callback(
