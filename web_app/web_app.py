@@ -144,7 +144,7 @@ left_tab = html.Div(id="left_tab", className='box', children=[
         regions_drop
     ], style={"display":"block"}), 
     html.Div(id="states_c_drpdwn", children=[
-        dcc.Dropdown(id="states_drpdwn", style={"display":"none", 'width': '50%', "margin-left": "30px"})
+        dcc.Dropdown(id="states_drpdwn", style={"display":"none"})
     ]), 
     html.Div(id="c_drpdwn", children=[
         dcc.Dropdown(id="county_drpdwn", style={"display":"none"})
@@ -441,7 +441,8 @@ def display_state_drpdwn(value):
         state_drp = dcc.Dropdown(
             id="states_drpdwn",
             options=states,
-            value=states[0]
+            value=states[0],
+            style = {'width': '50%', "margin-left": "30px"}
         )
         return state_drpdwn_title, state_drp 
     else:
@@ -459,7 +460,7 @@ def display_border_drpdwn(value):
             bord_drp = dcc.Dropdown(
                 id="border_drpdwn",
                 options=['Not Selected', 'Nationwide', 'Statewide', 'Countywide'],
-                value='Not Selected'
+                value='Not Selected',
             )
         elif value == "State":
             bord_drp = dcc.Dropdown(
