@@ -437,11 +437,10 @@ def update_project_desc(left_clicks, right_clicks):
     return 'This is some text. We are currently displaying text at for the {} slide.'.format(
         number)
 '''
-#when state is chosen as the region, display state dropdown
+#when state/county is chosen as the region, display state dropdown
 @app.callback(
-    Output("states_c_drpdwn", "children", allow_duplicate=True),
-    Input("reg_drpdwn", "value"),
-    prevent_initial_call=True
+    Output("states_c_drpdwn", "children"),
+    Input("reg_drpdwn", "value")
 )
 def display_state_drpdwn(value):
     if value == "State":
@@ -452,24 +451,15 @@ def display_state_drpdwn(value):
             value=states[0],
             style = {'width': '70%', "margin-left": "100px"}
         )
-        return state_drpdwn_title, state_drp 
-    else:
-        return ''
-#when county is chosen as the region, display state dropdown
-@app.callback(
-    Output("states_c_drpdwn", "children"),
-    Input("reg_drpdwn", "value")
-)
-def display_county_state_drpdwn(value):
     if value == "County":
-        county_state_drpdwn_title = html.H5(children="Which State is Your County In?", id="county_state_drpdwn_t", style = {"margin-left": "200px"})
-        county_state_drp = dcc.Dropdown(
+        state_drpdwn_title = html.H5(children="State of Your County", id="state_drpdwn_t", style = {"margin-left": "200px"})
+        state_drp = dcc.Dropdown(
             id="states_drpdwn",
             options=states,
             value=states[0],
             style = {'width': '70%', "margin-left": "100px"}
         )
-        return county_state_drpdwn_title, county_state_drp 
+        return state_drpdwn_title, state_drp 
     else:
         return ''
 '''
