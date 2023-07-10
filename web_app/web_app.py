@@ -403,9 +403,9 @@ def add_c_options(sel_state, value):
 )
 def add_map_options(value):
     if value == "map":
-        return {"display":"block", "display":"none", "display":"none", "display":"none", "display":"none"}
+        return {"display":"block"}, {"display":"none"}, {"display":"none"}, {"display":"none"}, {"display":"none"}
     else:
-        return {"display":"none", "display":"none", "display":"none", "display":"none", "display":"none"}
+        return {"display":"none"}, {"display":"none"}, {"display":"none"}, {"display":"none"}, {"display":"none"}
 '''
 # call back function to display map options when 'a state' is clicked 
 @app.callback( 
