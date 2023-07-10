@@ -440,7 +440,8 @@ def update_project_desc(left_clicks, right_clicks):
 #when state is chosen as the region, display state dropdown
 @app.callback(
     Output("states_c_drpdwn", "children", allow_duplicate=True),
-    Input("reg_drpdwn", "value")
+    Input("reg_drpdwn", "value"),
+    prevent_initial_call=True
 )
 def display_state_drpdwn(value):
     if value == "State":
