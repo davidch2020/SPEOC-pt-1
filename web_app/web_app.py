@@ -98,7 +98,7 @@ states_drp = dcc.Dropdown(
     options=states,
     value=states[0]
 )'''
-regions_drop = dcc.Dropdown(
+regions_drop = dcc.Dropdown( #probably move this down
     id = "reg_drpdwn",
     options=['Not Selected','Nation','State','County'],
     value = 'Not Selected'
@@ -145,6 +145,9 @@ left_tab = html.Div(id="left_tab", className='box', children=[
     ], style={"display":"block"}), 
     html.Div(id="states_c_drpdwn", children=[
         dcc.Dropdown(id="states_drpdwn", style={"display":"none"})
+    ]), 
+    html.Div(id="heatmap_c_drpdwn", children=[
+        dcc.Dropdown(id="heatmap_drpdwn", style={"display":"none"})
     ]), 
     html.Div(id="c_drpdwn", children=[
         dcc.Dropdown(id="county_drpdwn", style={"display":"none"})
@@ -481,6 +484,22 @@ def display_border_drpdwn(reg_value, state_value):
     else:
         return ''
 
+#when border is chosen, display heatmap dropdown
+@app.callback(
+    Output("heatmap_c_drpdwn", "children"),
+    Input("bord_drpdwn", "value")
+)
+def display_heatmap_drpdwn(value):
+    if value != "Not Selected":
+        heatmap_drpdwn_title = html.H5(children="Pick a Heatmap", id="heatmap_drpdwn_t")
+        heatmap_drp = dcc.Dropdown(
+            id="heatmap_drpdwn",
+            options=['Not Selected', 'Population', 'Slave Population', 'Debt Density', 'Total Debt Owned'], #add more if more needed
+            value="Not Selected"
+        )
+        return heatmap_drpdwn_title, heatmap_drp 
+    else:
+        return ''
 '''
 # when state is chosen, display county dropdown 
 @app.callback(
