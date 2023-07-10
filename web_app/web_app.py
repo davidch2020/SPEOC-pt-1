@@ -438,6 +438,7 @@ def update_project_desc(left_clicks, right_clicks):
 )
 def display_state_drpdwn(value):
     if value == "State":
+        print("yes")
         state_drpdwn_title = html.H5(children="Choose a State", id="state_drpdwn_t")
         state_drp = dcc.Dropdown(
             id="states_drpdwn",
@@ -447,7 +448,7 @@ def display_state_drpdwn(value):
         return state_drpdwn_title, state_drp 
     else:
         return ''
-'''
+
 # when region is chosen, display border dropdown 
 @app.callback(
     Output("bord_c_drpdwn", "children"),
@@ -477,7 +478,7 @@ def display_border_drpdwn(value):
         return bord_drpdwn_title, bord_drp 
     else:
         return ''
-'''
+
 '''
 # when state is chosen, display county dropdown 
 @app.callback(
