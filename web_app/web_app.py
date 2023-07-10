@@ -79,9 +79,9 @@ c_ops = dcc.Dropdown(id="c_checklist", options=["Total County Population", "Tota
 # title: "display options"
 #disp_op_title = html.H5(children="Display Options (State)", id="disp_op_title")
 # title: "map options"
-map_op_title = html.H5(children="State Options", id="map_op_title")
+#map_op_title = html.H5(children="State Options", id="map_op_title")
 # title: "county options"
-c_op_title = html.H5(children="County Options", id="c_op_title")
+#c_op_title = html.H5(children="County Options", id="c_op_title")
 
 # dropdown menu of states 
 state_pops = pd.read_csv("../data_raw/census_data/statepop.csv")
@@ -92,6 +92,11 @@ states = pd.concat([pd.Series(["All States"]), states]).tolist()
 states.remove("Maine")
 states.remove("Kentucky")
 states.remove("Tennessee")
+
+#dropdown menu of counties
+counties = map_df.query("state==" + "'" + value + "'")["county"].tolist()
+counties.insert(0, "All Counties")
+
 '''
 states_drp = dcc.Dropdown(
     id="states_drpdwn",
@@ -111,9 +116,9 @@ region_title = html.H5(children="Region")
 # title : "state information"
 #st_info_title = html.H5(children="State Info")
 # title : "county information"
-c_info_title = html.H5(children="County Info")
+#c_info_title = html.H5(children="County Info")
 # title : "town information"
-t_info_title = html.H5(children="Town Info")
+#t_info_title = html.H5(children="Town Info")
 
 '''
 # display options checklist: choose what to display 
@@ -449,15 +454,36 @@ def display_state_drpdwn(value):
     else:
         return ''
 
+#when county is chosen as the region, display county dropdown
+@app.callback(
+    Output("c_drpdwn", "children"),
+    Input("reg_drpdwn", "value")
+)
+def display_state_drpdwn(value):
+    if value == "County":
+        county_drpdwn_title = html.H5(children="Pick a County", id="county_drpdwn_t", style = {"margin-left": "200px"})
+        county_drp = dcc.Dropdown(
+            id="county_drpdwn",
+            options=counties,
+            value=counties[0],
+            style = {'width': '70%', "margin-left": "100px"}
+        )
+        return county_drpdwn_title, county_drp 
+    else:
+        return ''
+
 # when region is chosen, display border dropdown 
 @app.callback(
     Output("bord_c_drpdwn", "children"),
     [Input("reg_drpdwn", "value"),
-     Input("states_drpdwn", "value")]
+     Input("states_drpdwn", "value"),
+     Input("county_drpdwn", "value")]
 )
-def display_border_drpdwn(reg_value, state_value):
+def display_border_drpdwn(reg_value, state_value, county_value):
     if reg_value != "Not Selected":
         if (reg_value == "State") and (state_value=="All States"):
+            return ''
+        if (reg_value == "County") and (county_value=="All Counties"):
             return ''
         bord_drpdwn_title = html.H5(children="Border Type", id="bord_drpdwn_t")
         if reg_value == "Nation":
