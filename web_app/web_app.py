@@ -468,7 +468,7 @@ def display_state_drpdwn(value):
 def display_county_drpdwn(state_value, reg_value):
     if reg_value != "County":
         return ''
-    if state_value != "All States":
+    if (state_value != "All States") and (state_value is not None):
         counties = map_df.query("state==" + "'" + state_value + "'")["county"].tolist()
         counties.insert(0, "All Counties")
         county_drpdwn_title = html.H5(children="Choose a County", id="county_drpdwn_t", style = {"margin-left": "200px"})
