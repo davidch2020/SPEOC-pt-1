@@ -511,8 +511,8 @@ def display_border_drpdwn(reg_value, state_value): #county value...
         elif reg_value == "County":
             bord_drp = dcc.Dropdown(
                 id="border_drpdwn",
-                options=['Countywide'],
-                value='Countywide'
+                options=['Not Selected','Countywide'],
+                value='Not Selected'
             )
         return bord_drpdwn_title, bord_drp 
     else:
