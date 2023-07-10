@@ -403,7 +403,7 @@ def add_c_options(sel_state, value):
 )
 def add_map_options(value):
     if value == "map":
-        return {"display":"block"}, {"display":"none"}, {"display":"none"}, {"display":"none"}, {"display":"none"}
+        return {"display":"block"}, {"display":"block"}, {"display":"block"}, {"display":"block"}, {"display":"block"}
     else:
         return {"display":"none"}, {"display":"none"}, {"display":"none"}, {"display":"none"}, {"display":"none"}
 '''
