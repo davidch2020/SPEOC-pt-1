@@ -26,4 +26,8 @@ Description.
 
 ### Adding Changes to the Web App
 
-We have taken the above codes, modifications, and efforts to create a web app with more visualizations and descriptions. (add file name here) has a fully functional web app with tables and pages. The separate pages were added first with their respective page layouts, then the table customization for the main/home page.
+We have taken the above codes, modifications, and efforts to create a web app with more visualizations and descriptions. '3-trial-app.py' has a fully functional web app with tables and pages. The separate pages were added first with their respective page layouts, then the table customization for the main/home page.
+Some problems we've encountered and things we need to work on:
+1) Integrating the separate pages into the existing web app creates an issue of not being apple to separate the map and table creation from the other pages. We plan to investigate further how to isolate code onto the home page.
+2) Hoping to figure out how to put the table code into the app in the next few days especially once the app is fully functional on its own as a multi-page app
+3) Adding some overall aesthetic pizzaz to the web app
