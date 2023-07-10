@@ -521,10 +521,13 @@ def display_border_drpdwn(reg_value, state_value): #county value...
 #when border is chosen, display heatmap dropdown
 @app.callback(
     Output("heatmap_c_drpdwn", "children"),
-    Input("border_drpdwn", "value")
+    [Input("border_drpdwn", "value"),
+    Input("reg_drpdwn", "value")]
 )
-def display_heatmap_drpdwn(value):
-    if (value != "Not Selected") or (value is not None):
+def display_heatmap_drpdwn(border_value, region_value):
+    if region_value == "Not Selected":
+        return ''
+    if (border_value != "Not Selected") and (border_value is not None):
         heatmap_drpdwn_title = html.H5(children="Pick a Heatmap", id="heatmap_drpdwn_t")
         heatmap_drp = dcc.Dropdown(
             id="heatmap_drpdwn",
