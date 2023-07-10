@@ -437,7 +437,7 @@ def update_project_desc(left_clicks, right_clicks):
 )
 def display_state_drpdwn(value):
     if value == "State":
-        state_drpdwn_title = html.H5(children="Pick a State", id="state_drpdwn_t", style = {"margin-left": "200px",'size':'70%'})
+        state_drpdwn_title = html.H5(children="Pick a State", id="state_drpdwn_t", style = {"margin-left": "200px"})
         state_drp = dcc.Dropdown(
             id="states_drpdwn",
             options=states,
@@ -451,24 +451,27 @@ def display_state_drpdwn(value):
 # when region is chosen, display border dropdown 
 @app.callback(
     Output("bord_c_drpdwn", "children"),
-    Input("reg_drpdwn", "value")
+    [Input("reg_drpdwn", "value"),
+     Input("states_c_drpdwn", "value")]
 )
-def display_border_drpdwn(value):
-    if value != "Not Selected":
+def display_border_drpdwn(reg_value, state_value):
+    if reg_value != "Not Selected":
+        if (reg_value == "State") and (state_value=="All States"):
+            return ''
         bord_drpdwn_title = html.H5(children="Border Type", id="bord_drpdwn_t")
-        if value == "Nation":
+        if reg_value == "Nation":
             bord_drp = dcc.Dropdown(
                 id="border_drpdwn",
                 options=['Not Selected', 'Nationwide', 'Statewide', 'Countywide'],
                 value='Not Selected',
             )
-        elif value == "State":
+        elif reg_value == "State":
             bord_drp = dcc.Dropdown(
                 id="border_drpdwn",
                 options=['Not Selected', 'Statewide', 'Countywide'],
                 value='Not Selected'
             )
-        elif value == "County":
+        elif reg_value == "County":
             bord_drp = dcc.Dropdown(
                 id="border_drpdwn",
                 options=['Countywide'],
