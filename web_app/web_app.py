@@ -451,6 +451,7 @@ def display_state_drpdwn(value):
             value=states[0],
             style = {'width': '70%', "margin-left": "100px"}
         )
+        return state_drpdwn_title, state_drp 
     if value == "County":
         state_drpdwn_title = html.H5(children="State of Your County", id="state_drpdwn_t", style = {"margin-left": "200px"})
         state_drp = dcc.Dropdown(
