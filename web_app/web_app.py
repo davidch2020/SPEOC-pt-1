@@ -437,7 +437,7 @@ def update_project_desc(left_clicks, right_clicks):
 )
 def display_state_drpdwn(value):
     if value == "State":
-        state_drpdwn_title = html.H5(children="Pick a State", id="state_drpdwn_t", style = {"margin-left": "200px"})
+        state_drpdwn_title = html.H5(children="Pick a State", id="state_drpdwn_t", style = {"margin-left": "200px",'size':'70%'})
         state_drp = dcc.Dropdown(
             id="states_drpdwn",
             options=states,
