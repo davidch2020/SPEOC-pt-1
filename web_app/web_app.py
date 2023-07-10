@@ -393,7 +393,7 @@ def add_c_options(sel_state, value):
 '''
 # call back function to display dropdown menus when 'map' is clicked
 @app.callback( 
-        Output("bord_c_drpdwn", "style"),
+        Output("regions_c_drpdwn", "style"),
         Input("left-tab-options", "value")
 )
 def add_map_options(value):
