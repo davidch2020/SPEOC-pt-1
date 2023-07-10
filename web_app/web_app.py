@@ -487,7 +487,7 @@ def display_border_drpdwn(reg_value, state_value):
 #when border is chosen, display heatmap dropdown
 @app.callback(
     Output("heatmap_c_drpdwn", "children"),
-    Input("bord_drpdwn", "value")
+    Input("border_drpdwn", "value")
 )
 def display_heatmap_drpdwn(value):
     if value != "Not Selected":
