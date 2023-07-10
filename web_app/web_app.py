@@ -79,9 +79,9 @@ c_ops = dcc.Dropdown(id="c_checklist", options=["Total County Population", "Tota
 # title: "display options"
 #disp_op_title = html.H5(children="Display Options (State)", id="disp_op_title")
 # title: "map options"
-#map_op_title = html.H5(children="State Options", id="map_op_title")
+map_op_title = html.H5(children="State Options", id="map_op_title")
 # title: "county options"
-#c_op_title = html.H5(children="County Options", id="c_op_title")
+c_op_title = html.H5(children="County Options", id="c_op_title")
 
 # dropdown menu of states 
 state_pops = pd.read_csv("../data_raw/census_data/statepop.csv")
