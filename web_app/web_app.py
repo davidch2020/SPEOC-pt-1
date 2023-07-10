@@ -452,7 +452,7 @@ def display_state_drpdwn(value):
 @app.callback(
     Output("bord_c_drpdwn", "children"),
     [Input("reg_drpdwn", "value"),
-     Input("states_c_drpdwn", "value")]
+     Input("states_drpdwn", "value")]
 )
 def display_border_drpdwn(reg_value, state_value):
     if reg_value != "Not Selected":
