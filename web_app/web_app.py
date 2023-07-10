@@ -447,7 +447,7 @@ def display_state_drpdwn(value):
         return state_drpdwn_title, state_drp 
     else:
         return ''
-
+'''
 # when region is chosen, display border dropdown 
 @app.callback(
     Output("bord_c_drpdwn", "children"),
@@ -477,6 +477,7 @@ def display_border_drpdwn(value):
         return bord_drpdwn_title, bord_drp 
     else:
         return ''
+'''
 '''
 # when state is chosen, display county dropdown 
 @app.callback(
