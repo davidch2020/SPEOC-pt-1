@@ -447,6 +447,7 @@ def display_state_drpdwn(value):
         )
         return state_drpdwn_title, state_drp 
     else:
+        print("no")
         return ''
 
 # when region is chosen, display border dropdown 
