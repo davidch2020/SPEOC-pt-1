@@ -165,20 +165,20 @@ left_tab = html.Div(id="left_tab", className='box', children=[
         c_op_title,
         c_ops 
     ], style={"display":"none"}),
-    html.Div(id="c_info", children=[
-        c_info_title, 
-        html.Ul(id="c_infolist")
-    ]), 
+    #html.Div(id="c_info", children=[
+    #    c_info_title, 
+    #    html.Ul(id="c_infolist")
+    #]), 
     html.Div(id="t_drpdwn", children=[
         dcc.Dropdown(id="towns_drpdwn", style={"display":"none"})
     ], style={"display":"block"}), 
     html.Div(id="t_ops", children=[
         dcc.Checklist(id="t_checklist", style={"display":"none"})
-    ]),
-    html.Div(id="t_info", children=[
-        t_info_title, 
-        html.Ul(id="t_infolist"),
     ])
+    #html.Div(id="t_info", children=[
+    #    t_info_title, 
+    #    html.Ul(id="t_infolist"),
+    #])
 ], style={'width': '40%', 'height': 'auto', "display":"block"})
 
 # Right tab with DataFrame/Map
