@@ -45,6 +45,16 @@ map_df.rename(columns = {'STATENAM':'state'}, inplace = True)
 map_df["geometry"] = map_df["geometry"].simplify(0.01).buffer(0)
 map_df["Geo_FIPS"] = map_df["Geo_FIPS"].map(lambda x: int(str(x.lstrip("0"))))
 
+
+# declare map_df
+state_map_df = gpd.read_file("../data_raw/shapefiles/historicalstates")
+print(state_map_df)
+'''
+# rename columns and simplify map geometry (to make it run faster)
+map_df.rename(columns = {'STATENAM':'state'}, inplace = True)
+map_df["geometry"] = map_df["geometry"].simplify(0.01).buffer(0)
+map_df["Geo_FIPS"] = map_df["Geo_FIPS"].map(lambda x: int(str(x.lstrip("0"))))'''
+
 # Navigation bar to get to different pages of the web app
 nav_bar = dbc.Nav(className='nav-bar', children=[
     dbc.NavLink(children='Home', href='/home', className='nav-link'),
