@@ -47,9 +47,9 @@ map_df["Geo_FIPS"] = map_df["Geo_FIPS"].map(lambda x: int(str(x.lstrip("0"))))
 
 
 # declare map_df
-state_map_df = gpd.read_file("../data_raw/shapefiles/historicalstates")
+#state_map_df = gpd.read_file("../data_raw/shapefiles/historicalstates")
 with pd.option_context('display.max_rows', None, 'display.max_columns', None):  # more options can be specified also
-    print(state_map_df)
+    print(map_df)
 '''
 # rename columns and simplify map geometry (to make it run faster)
 map_df.rename(columns = {'STATENAM':'state'}, inplace = True)
@@ -582,14 +582,16 @@ def display_c_drpdwn(value):
         [Input("states_drpdwn", "value"),
          Input("county_drpdwn", "value"),
         Input("left-tab-options", "value"), 
-        Input('heatmap_drpdwn', 'value')] 
+        Input('heatmap_drpdwn', 'value'), 
+        Input('border_drpdwn', 'value')] 
 )
 
-def handle_state_dropdown(state, county, option, map_type):
+def handle_state_dropdown(state, county, option, map_type, border_type):
     if option == "map":
         fitbounds = False
         basemap_visible = True
         map_df_c = map_df.copy()
+        #map_df_s = map_df.copy()
 
         if (map_type == "Not Selected") or (map_type is None):
             return ''
