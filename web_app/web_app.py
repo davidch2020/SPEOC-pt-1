@@ -286,6 +286,7 @@ def display_t_drpdwn(sel_county, sel_state):
         [Input("st_checklist", "value"),
         Input("states_drpdwn", "value")]
 )
+
 def handle_state_ops(options, sel_state):
     display_items = []
 
@@ -564,12 +565,13 @@ def display_c_drpdwn(value):
     else:
         return '' '''
 '''
+'''
 @app.callback(
         Output('right-tab-content', 'children'),
         [Input("states_drpdwn", "value"),
          Input("county_drpdwn", "value"),
         Input("left-tab-options", "value"), 
-        Input('map_type_ops', 'value')] 
+        Input('heatmap_drpdwn', 'value')] 
 )
 
 def handle_state_dropdown(state, county, option, map_type):
@@ -603,9 +605,9 @@ def handle_state_dropdown(state, county, option, map_type):
         county_geo_fips.rename(columns={"Geo_name":"county", 'Geo_STUSAB':'state', "SE_T001_001":'population'}, inplace=True)
         county_debt_geo = pd.merge(debt_by_county, county_geo_fips, on=["county", 'state'])
 
-        print(county_debt_geo)
+        #print(county_debt_geo)
 
-        if map_type == 'population':
+        if map_type == 'Population':
 
             # get county populations 
             county_pops = pd.read_csv("../data_raw/census_data/countyPopulation.csv", header=1)
@@ -643,8 +645,8 @@ def handle_state_dropdown(state, county, option, map_type):
                                     hover_name="County",
                                     hover_data=["Population"]
                                )
-        
-        elif map_type == 'slavery':
+
+        elif map_type == 'Slave Population':
             
             basemap_visible = True
 
@@ -668,7 +670,7 @@ def handle_state_dropdown(state, county, option, map_type):
                         )   
             slider =  dcc.RangeSlider(0, 20, value=[5, 15], id = "my-rangeslider")
 
-        elif map_type == 'debt dist':
+        elif map_type == 'Total Debt Owned':
             # Create the debt distribution map
             # Input: archive/.../CD_geographical_table_summary.csv, countyPops.csv (GEO_FIPS column), Map geojson file 
             # Create a dataframe of all county names and their GEO_FIPS code 
@@ -692,8 +694,8 @@ def handle_state_dropdown(state, county, option, map_type):
                         )
 
             slider =  dcc.RangeSlider(0, 20, value=[5, 15], id = "my-rangeslider")
-        
-        elif map_type == 'debt density':
+
+        elif map_type == 'Debt Density':
             # Create county map
             # Create a new column in debt_by_county: divide number of debt holders by county population 
             # Disiplay new column 
@@ -738,6 +740,7 @@ def handle_state_dropdown(state, county, option, map_type):
                 'fontWeight': 'bold'
             }
         )
+'''
   '''  
 # Layout of the app
 app.layout = html.Div(className='app-container', children=[
