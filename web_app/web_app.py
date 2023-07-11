@@ -580,6 +580,9 @@ def handle_state_dropdown(state, county, option, map_type):
         basemap_visible = True
         map_df_c = map_df.copy()
 
+        if (map_type == "Not Selected") or (map_type is None):
+            return ''
+
         if (state != "All States" and state != None):
             map_df_c = map_df_c.loc[map_df['state'] == state]
             fitbounds = "locations"
@@ -720,8 +723,7 @@ def handle_state_dropdown(state, county, option, map_type):
 
             slider =  dcc.RangeSlider(0, 20, value=[5, 15], id = "my-rangeslider")
         
-        if fig is not None:
-            return dcc.Graph(figure = fig, id = 'my-map'), slider
+        return dcc.Graph(figure = fig, id = 'my-map'), slider
         
     else: # option is table
         # Display the DataFrame as a table
