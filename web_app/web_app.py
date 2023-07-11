@@ -48,7 +48,8 @@ map_df["Geo_FIPS"] = map_df["Geo_FIPS"].map(lambda x: int(str(x.lstrip("0"))))
 
 # declare map_df
 state_map_df = gpd.read_file("../data_raw/shapefiles/historicalstates")
-display(state_map_df.to_string())
+with pd.option_context('display.max_rows', None, 'display.max_columns', None):  # more options can be specified also
+    print(state_map_df)
 '''
 # rename columns and simplify map geometry (to make it run faster)
 map_df.rename(columns = {'STATENAM':'state'}, inplace = True)
