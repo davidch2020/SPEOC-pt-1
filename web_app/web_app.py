@@ -555,28 +555,7 @@ def display_heatmap_drpdwn(border_value, region_value):
         return heatmap_drpdwn_title, heatmap_drp 
     else:
         return ''
-'''
-# when state is chosen, display county dropdown 
-@app.callback(
-    Output("c_drpdwn", "children"),
-    Input("states_drpdwn", "value")
-)
-def display_c_drpdwn(value):
-    if value != "All States":
-        counties = map_df.query("state==" + "'" + value + "'")["county"].tolist()
-        counties.insert(0, "Not Selected")
-        # title: "choose a county"
-        c_drpdwn_title = html.H5(children="Choose a County", id="c_drpdwn_t")
-        c_drp = dcc.Dropdown(
-            id="county_drpdwn",
-            options=counties,
-            value=counties[0]
-        )
-        return c_drpdwn_title, c_drp 
-    else:
-        return '' '''
-'''
-'''
+
 @app.callback(
         Output('right-tab-content', 'children'),
         [Input("states_drpdwn", "value"),
@@ -592,6 +571,7 @@ def handle_state_dropdown(state, county, option, map_type, border_type):
         basemap_visible = True
         map_df_c = map_df.copy()
         #map_df_s = map_df.copy()
+        #map_df_s.replace({"state": state_codes}, inplace = True) #better to add a row...
 
         if (map_type == "Not Selected") or (map_type is None):
             return ''
