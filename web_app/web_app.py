@@ -659,7 +659,7 @@ def handle_state_dropdown(state, county, option, map_type, border_type):
                             color_continuous_scale="Viridis",
                             range_color=(state_pop['Slave Pop'].min(), 
                                         state_pop['Slave Pop'].max()),
-                            featureidkey="properties.State", #Fix this
+                            featureidkey="properties.state_abrev", #Fix this
                             scope="usa", 
                             basemap_visible=basemap_visible,
                             fitbounds=fitbounds,
