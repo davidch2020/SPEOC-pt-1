@@ -42,6 +42,8 @@ map_df = gpd.read_file("../data_raw/shapefiles/historicalcounties")
 # rename columns and simplify map geometry (to make it run faster)
 map_df.rename(columns = {'NHGISNAM':'county'}, inplace = True)
 map_df.rename(columns = {'STATENAM':'state'}, inplace = True)
+map_df['state_abrev'] = map_df.loc[:, 'state']
+map_df.replace({"state_abrev": state_codes}, inplace = True) 
 map_df["geometry"] = map_df["geometry"].simplify(0.01).buffer(0)
 map_df["Geo_FIPS"] = map_df["Geo_FIPS"].map(lambda x: int(str(x.lstrip("0"))))
 
