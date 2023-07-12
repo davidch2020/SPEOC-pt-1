@@ -652,7 +652,7 @@ def handle_state_dropdown(state, county, option, map_type, border_type):
             state_pop = state_pop.astype({"Slave Pop":"int"})
 
             fig = px.choropleth(state_pop, geojson=map_gj, locations='State', 
-                            #locationmode='USA-states', 
+                            locationmode='USA-states', 
                             color='Slave Pop',
                             color_continuous_scale="Viridis",
                             range_color=(state_pop['Slave Pop'].min(), 
