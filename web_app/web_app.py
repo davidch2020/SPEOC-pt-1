@@ -648,17 +648,17 @@ def handle_state_dropdown(state, county, option, map_type, border_type):
 
             state_pop = gpd.read_file("../data_raw/census_data/statepop.csv")
             state_pop = state_pop[["State", "Slave Pop"]].head(15)
-            #state_pop.replace({"State": state_codes}, inplace = True) #maybe full name is fine
+            state_pop.replace({"State": state_codes}, inplace = True) #maybe full name is fine
             state_pop = state_pop.astype({"Slave Pop":"int"})
 
             fig = px.choropleth(state_pop, geojson=map_gj, locations='State', 
-                            locationmode='USA-states', #issue
+                            locationmode='USA-states', 
                             color='Slave Pop',
                             color_continuous_scale="Viridis",
                             range_color=(state_pop['Slave Pop'].min(), 
                                         state_pop['Slave Pop'].max()),
                             featureidkey="properties.State",
-                            scope="usa",
+                            #scope="usa", #issue
                             basemap_visible=basemap_visible,
                             fitbounds=fitbounds,
                             hover_name="State",
