@@ -571,7 +571,7 @@ def handle_state_dropdown(state, county, option, map_type, border_type):
         basemap_visible = True
         map_df_c = map_df.copy()
         #map_df_s = map_df.copy()
-        #map_df_s.replace({"state": state_codes}, inplace = True) #better to add a row...
+        #map_df_s.replace({"state": state_codes}, inplace = True) #better to add a col...
 
         if (map_type == "Not Selected") or (map_type is None):
             return ''
@@ -648,11 +648,11 @@ def handle_state_dropdown(state, county, option, map_type, border_type):
 
             state_pop = gpd.read_file("../data_raw/census_data/statepop.csv")
             state_pop = state_pop[["State", "Slave Pop"]].head(15)
-            state_pop.replace({"State": state_codes}, inplace = True)
+            #state_pop.replace({"State": state_codes}, inplace = True) #maybe full name is fine
             state_pop = state_pop.astype({"Slave Pop":"int"})
 
             fig = px.choropleth(state_pop, geojson=map_gj, locations='State', 
-                            locationmode='USA-states',
+                            locationmode='USA-states', #issue
                             color='Slave Pop',
                             color_continuous_scale="Viridis",
                             range_color=(state_pop['Slave Pop'].min(), 
