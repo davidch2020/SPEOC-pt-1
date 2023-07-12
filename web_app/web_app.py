@@ -644,7 +644,7 @@ def handle_state_dropdown(state, county, option, map_type, border_type):
                                     hover_data=["Population"]
                                )
 
-        elif map_type == 'Slave Population':
+        elif map_type == 'Slave Population': #just change scope if needed tbh
             
             basemap_visible = True
 
