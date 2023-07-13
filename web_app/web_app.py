@@ -568,6 +568,13 @@ def handle_state_dropdown(state, county, option, map_type, border_type):
         map_df_c = map_df.copy()
         state_map_df_c = state_map_df.copy()
 
+        # save as a geojson
+        map_str = map_df_c.to_json()
+        map_gj = json.loads(map_str) # convert string json to dictionary json 
+
+        states_str = state_map_df_c.to_json()
+        states_gj = json.loads(states_str)
+
         if (map_type == "Not Selected") or (map_type is None):
             return ''
 
@@ -581,13 +588,6 @@ def handle_state_dropdown(state, county, option, map_type, border_type):
 
         if (county != "All Counties" and county != None):
             map_df_c = map_df_c.loc[map_df_c['county'] == county]
-
-        # save as a geojson
-        map_str = map_df_c.to_json()
-        map_gj = json.loads(map_str) # convert string json to dictionary json 
-
-        states_str = state_map_df_c.to_json()
-        states_gj = json.loads(states_str)
 
         # debt info per county 
         debt_by_county = pd.read_csv("../data_clean/final_data_CD.csv")[["Group State", "Group County"]]
@@ -615,8 +615,10 @@ def handle_state_dropdown(state, county, option, map_type, border_type):
             dcc.Store(data = county_pops, id = 'county_data')
 
             #state pop
-            #read the statepopulation.csv
-            
+            state_pops = pd.read_csv("../data_raw/census_data/statepop.csv", header=1)
+            state_pops = state_pops[["State", "Total Pop"]].head(15)
+            state_pops = state_pops.astype({"Total Pop":"int"})
+                        
             slider =  dcc.RangeSlider(min = county_pops["Population"].min(), 
                                       max = county_pops["Population"].max(), 
                                       step= 10000, 
