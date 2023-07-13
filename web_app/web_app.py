@@ -1,4 +1,5 @@
 # import packages
+import math
 import dash
 import dash_bootstrap_components as dbc
 from dash import html
@@ -552,7 +553,7 @@ def display_heatmap_drpdwn(border_value, region_value):
         heatmap_drpdwn_title = html.H5(children="Pick a Heatmap", id="heatmap_drpdwn_t")
         heatmap_drp = dcc.Dropdown(
             id="heatmap_drpdwn",
-            options=['Not Selected', 'Population', 'Slave Population', 'Debt Density', 'Total Debt Owned'], #add more if more needed
+            options=['Not Selected', 'Population', 'Slave Population', 'Debt Density', 'Debt Distribution', 'Average Debt Holdings'], #add more if more needed
             value="Not Selected"
         )
         return heatmap_drpdwn_title, heatmap_drp 
@@ -596,6 +597,8 @@ def handle_state_dropdown(state, county, option, map_type, border_type):
         states_str = state_map_df_c.to_json()
         states_gj = json.loads(states_str)
 
+        """
+        
         # debt info per county 
         debt_by_county = pd.read_csv("../data_clean/final_data_CD.csv")[["Group State", "Group County"]]
         debt_by_county = debt_by_county.groupby(by=["Group County", "Group State"]).size()
@@ -604,6 +607,21 @@ def handle_state_dropdown(state, county, option, map_type, border_type):
         debt_by_county.reset_index(inplace=True)
 
         debt_by_county.rename(columns={"Group County":"county", "Group State":"state"}, inplace=True)
+
+        county_geo_fips = pd.read_csv("../data_raw/census_data/countyPopulation.csv", header=1)[["Geo_FIPS", "Geo_name", 'Geo_STUSAB', "SE_T001_001"]]
+        county_geo_fips.rename(columns={"Geo_name":"county", 'Geo_STUSAB':'state', "SE_T001_001":'population'}, inplace=True)
+        county_debt_geo = pd.merge(debt_by_county, county_geo_fips, on=["county", 'state'])
+        
+        """
+        # debt info per county 
+        debt_by_county = pd.read_csv("../data_clean/final_data_CD.csv")[["Group State", "Group County", '6p_total']]
+        debt_by_county = debt_by_county.groupby(by=["Group County", "Group State"]).agg(['size', 'sum'])
+        # debt_by_county = debt_by_county.to_frame()
+        # debt_by_county.rename(columns={'size':'count'}, inplace=True)
+        debt_by_county.reset_index(inplace=True)
+
+        debt_by_county.columns = debt_by_county.columns.droplevel(1)
+        debt_by_county.columns = ['county', 'state', 'count', '6p_total']
 
         county_geo_fips = pd.read_csv("../data_raw/census_data/countyPopulation.csv", header=1)[["Geo_FIPS", "Geo_name", 'Geo_STUSAB', "SE_T001_001"]]
         county_geo_fips.rename(columns={"Geo_name":"county", 'Geo_STUSAB':'state', "SE_T001_001":'population'}, inplace=True)
@@ -673,14 +691,14 @@ def handle_state_dropdown(state, county, option, map_type, border_type):
                         )   
             slider =  dcc.RangeSlider(0, 20, value=[5, 15], id = "my-rangeslider")
 
-        elif map_type == 'Total Debt Owned':
+        elif map_type == 'Debt Distribution':
             # Create the debt distribution map
             # Input: archive/.../CD_geographical_table_summary.csv, countyPops.csv (GEO_FIPS column), Map geojson file 
             # Create a dataframe of all county names and their GEO_FIPS code 
             # Merge dataframe with CD_geographical_table_summary.csv 
             # test debt distribution map 
             # fig = px.choropleth()
-            six_p_tot = county_debt_geo["count"]
+            six_p_tot = county_debt_geo["6p_total"]
             x = six_p_tot[six_p_tot.between(six_p_tot.quantile(.15), six_p_tot.quantile(.85))] # remove outliers
 
             fig = px.choropleth(county_debt_geo, geojson=map_gj, locations='Geo_FIPS', 
@@ -703,7 +721,7 @@ def handle_state_dropdown(state, county, option, map_type, border_type):
             # Create a new column in debt_by_county: divide number of debt holders by county population 
             # Disiplay new column 
 
-            county_debt_geo['density'] = county_debt_geo['count'] / county_debt_geo['population']
+            county_debt_geo['density'] = county_debt_geo['6p_total'] / county_debt_geo['population']
             
             six_p_tot = county_debt_geo["density"]
             x = six_p_tot[six_p_tot.between(six_p_tot.quantile(.15), six_p_tot.quantile(.85))] # remove outliers
@@ -722,6 +740,28 @@ def handle_state_dropdown(state, county, option, map_type, border_type):
             )
 
             slider =  dcc.RangeSlider(0, 20, value=[5, 15], id = "my-rangeslider")
+
+        elif map_type == 'Average Debt Holdings':
+            county_debt_geo['mean_6p_held'] = county_debt_geo['6p_total'] / county_debt_geo['count']
+
+            six_p_tot = county_debt_geo['mean_6p_held']
+            x = six_p_tot[six_p_tot.between(six_p_tot.quantile(.15), six_p_tot.quantile(.85))] # remove outliers
+
+
+            fig = px.choropleth(county_debt_geo, geojson=map_gj, locations='Geo_FIPS', 
+                color='mean_6p_held',
+                color_continuous_scale="Viridis",
+                range_color=(x.min(), 
+                            x.max()),
+                featureidkey="properties.Geo_FIPS",
+                scope="usa",
+                basemap_visible=basemap_visible,
+                fitbounds=fitbounds,
+                hover_name="county",
+                hover_data=["mean_6p_held"]
+            )
+
+            slider =  dcc.RangeSlider(six_p_tot.min(), six_p_tot.max(), value=[six_p_tot.min(), six_p_tot.max()], id = "my-rangeslider")
         
         return dcc.Graph(figure = fig, id = 'my-map'), slider
         
