@@ -585,7 +585,7 @@ def handle_state_dropdown(state, county, option, map_type, border_type):
             "North Carolina","North Dakota","Ohio","Oklahoma","Oregon","Pennsylvania",
             "Rhode Island","South Carolina","South Dakota","Tennessee","Texas","Utah",
             "Vermont","Virginia","Washington","West Virginia","Wisconsin","Wyoming"]}
-                 state_fips = {
+        state_fips = {
             'WA': '53', 'DE': '10', 'DC': '11', 'WI': '55', 'WV': '54', 'HI': '15',
             'FL': '12', 'WY': '56', 'PR': '72', 'NJ': '34', 'NM': '35', 'TX': '48',
             'LA': '22', 'NC': '37', 'ND': '38', 'NE': '31', 'TN': '47', 'NY': '36',
