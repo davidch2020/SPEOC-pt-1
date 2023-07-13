@@ -572,14 +572,20 @@ def handle_state_dropdown(state, county, option, map_type, border_type):
         fitbounds = False
         basemap_visible = True
         map_df_c = map_df.copy()
-        states = [ 'AK', 'AL', 'AR', 'AZ', 'CA', 'CO', 'CT', 'DC', 'DE', 'FL', 'GA',
+        states = {"df_abrev": [ 'AK', 'AL', 'AR', 'AZ', 'CA', 'CO', 'CT', 'DC', 'DE', 'FL', 'GA',
            'HI', 'IA', 'ID', 'IL', 'IN', 'KS', 'KY', 'LA', 'MA', 'MD', 'ME',
            'MI', 'MN', 'MO', 'MS', 'MT', 'NC', 'ND', 'NE', 'NH', 'NJ', 'NM',
            'NV', 'NY', 'OH', 'OK', 'OR', 'PA', 'RI', 'SC', 'SD', 'TN', 'TX',
-           'UT', 'VA', 'VT', 'WA', 'WI', 'WV', 'WY']
-        #states_df = pd.DataFrame(states, columns = ["df_abrev"])
-        states_df = pd.DataFrame.from_dict(state_codes)
-        states_df.columns = ["state","df_abrev"]
+           'UT', 'VA', 'VT', 'WA', 'WI', 'WV', 'WY'], 
+            "state": ["Alabama","Alaska","Arizona","Arkansas","California","Colorado",
+            "Connecticut","Delaware","Florida","Georgia","Hawaii","Idaho","Illinois",
+            "Indiana","Iowa","Kansas","Kentucky","Louisiana","Maine","Maryland",
+            "Massachusetts","Michigan","Minnesota","Mississippi","Missouri","Montana",
+            "Nebraska","Nevada","New Hampshire","New Jersey","New Mexico","New York",
+            "North Carolina","North Dakota","Ohio","Oklahoma","Oregon","Pennsylvania",
+            "Rhode Island","South Carolina","South Dakota","Tennessee","Texas","Utah",
+            "Vermont","Virginia","Washington","West Virginia","Wisconsin","Wyoming"]}
+        states_df = pd.DataFrame.from_dict(states)
         states_df2 = states_df.copy()
         #map_df_s = map_df.copy()
         #map_df_s.replace({"state": state_codes}, inplace = True)
