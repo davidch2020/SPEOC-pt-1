@@ -51,13 +51,6 @@ map_df["Geo_FIPS"] = map_df["Geo_FIPS"].map(lambda x: int(str(x.lstrip("0"))))
 # declare map_df
 state_map_df = gpd.read_file("../data_raw/shapefiles/stateshape_1790")
 state_map_df.rename(columns = {'STATENAM':'state'}, inplace = True)
-#with pd.option_context('display.max_rows', None, 'display.max_columns', None):  
-#    print(state_map_df)
-'''
-# rename columns and simplify map geometry (to make it run faster)
-map_df.rename(columns = {'STATENAM':'state'}, inplace = True)
-map_df["geometry"] = map_df["geometry"].simplify(0.01).buffer(0)
-map_df["Geo_FIPS"] = map_df["Geo_FIPS"].map(lambda x: int(str(x.lstrip("0"))))'''
 
 # Navigation bar to get to different pages of the web app
 nav_bar = dbc.Nav(className='nav-bar', children=[
@@ -602,8 +595,8 @@ def handle_state_dropdown(state, county, option, map_type, border_type):
         debt_by_county = debt_by_county.to_frame()
         debt_by_county.rename(columns={0:'count'}, inplace=True)
         debt_by_county.reset_index(inplace=True)
-
         debt_by_county.rename(columns={"Group County":"county", "Group State":"state"}, inplace=True)
+
 
         county_geo_fips = pd.read_csv("../data_raw/census_data/countyPopulation.csv", header=1)[["Geo_FIPS", "Geo_name", 'Geo_STUSAB', "SE_T001_001"]]
         county_geo_fips.rename(columns={"Geo_name":"county", 'Geo_STUSAB':'state', "SE_T001_001":'population'}, inplace=True)
@@ -620,6 +613,9 @@ def handle_state_dropdown(state, county, option, map_type, border_type):
             county_pops.rename(columns = {'SE_T001_001':'Population', "Geo_name":"County"}, inplace = True)
             county_pops = county_pops[["Geo_FIPS", "Population", "County"]]
             dcc.Store(data = county_pops, id = 'county_data')
+
+            #state pop
+            #read the statepopulation.csv
             
             slider =  dcc.RangeSlider(min = county_pops["Population"].min(), 
                                       max = county_pops["Population"].max(), 
