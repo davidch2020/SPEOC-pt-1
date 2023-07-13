@@ -611,7 +611,7 @@ def handle_state_dropdown(state, county, option, map_type, border_type):
             fitbounds = "locations"
             basemap_visible = False
 
-        if (county != "Not Selected" and county != None):
+        if (county != "All Counties" and county != None):
             map_df_c = map_df_c.loc[map_df_c['county'] == county]
 
         # save as a geojson
