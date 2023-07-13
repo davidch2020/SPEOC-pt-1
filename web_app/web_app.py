@@ -579,8 +579,10 @@ def handle_state_dropdown(state, county, option, map_type, border_type):
             return ''
 
         if (state != "All States" and state != None):
-            #map_df_c = map_df_c.loc[map_df['state'] == state]
-            state_map_df_c = state_map_df_c.loc[state_map_df['state']==state]
+            if border_type == "Countywide":
+                map_df_c = map_df_c.loc[map_df['state'] == state]
+            if border_type == "Statewide":
+                state_map_df_c = state_map_df_c.loc[state_map_df['state']==state]
             fitbounds = "locations"
             basemap_visible = False
 
