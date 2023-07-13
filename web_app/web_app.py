@@ -577,15 +577,18 @@ def handle_state_dropdown(state, county, option, map_type, border_type):
            'MI', 'MN', 'MO', 'MS', 'MT', 'NC', 'ND', 'NE', 'NH', 'NJ', 'NM',
            'NV', 'NY', 'OH', 'OK', 'OR', 'PA', 'RI', 'SC', 'SD', 'TN', 'TX',
            'UT', 'VA', 'VT', 'WA', 'WI', 'WV', 'WY']
-        states_df = pd.DataFrame(states, columns = ["df_abrev"])
+        #states_df = pd.DataFrame(states, columns = ["df_abrev"])
+        states_df = pd.DataFrame.from_dict(state_codes, columns = ["state","df_abrev"])
+        states_df2 = states_df.copy()
         #map_df_s = map_df.copy()
-        #map_df_s.replace({"state": state_codes}, inplace = True) 
+        #map_df_s.replace({"state": state_codes}, inplace = True)
 
         if (map_type == "Not Selected") or (map_type is None):
             return ''
 
         if (state != "All States" and state != None):
-            map_df_c = map_df_c.loc[map_df['state'] == state]
+            #map_df_c = map_df_c.loc[map_df['state'] == state]
+            states_df2 = states_df2.loc[states_df['state']==state]
             fitbounds = "locations"
             basemap_visible = False
 
@@ -596,7 +599,7 @@ def handle_state_dropdown(state, county, option, map_type, border_type):
         map_str = map_df_c.to_json()
         map_gj = json.loads(map_str) # convert string json to dictionary json 
 
-        states_str = states_df.to_json()
+        states_str = states_df2.to_json()
         states_gj = json.loads(states_str)
 
         # debt info per county 
