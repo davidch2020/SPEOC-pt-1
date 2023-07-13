@@ -572,6 +572,12 @@ def handle_state_dropdown(state, county, option, map_type, border_type):
         fitbounds = False
         basemap_visible = True
         map_df_c = map_df.copy()
+        states = [ 'AK', 'AL', 'AR', 'AZ', 'CA', 'CO', 'CT', 'DC', 'DE', 'FL', 'GA',
+           'HI', 'IA', 'ID', 'IL', 'IN', 'KS', 'KY', 'LA', 'MA', 'MD', 'ME',
+           'MI', 'MN', 'MO', 'MS', 'MT', 'NC', 'ND', 'NE', 'NH', 'NJ', 'NM',
+           'NV', 'NY', 'OH', 'OK', 'OR', 'PA', 'RI', 'SC', 'SD', 'TN', 'TX',
+           'UT', 'VA', 'VT', 'WA', 'WI', 'WV', 'WY']
+        states_df = pd.DataFrame(states, columns="df_abrev")
         #map_df_s = map_df.copy()
         #map_df_s.replace({"state": state_codes}, inplace = True) 
 
@@ -589,6 +595,9 @@ def handle_state_dropdown(state, county, option, map_type, border_type):
         # save as a geojson
         map_str = map_df_c.to_json()
         map_gj = json.loads(map_str) # convert string json to dictionary json 
+
+        states_str = states_df.to_json()
+        states_gj = json.loads(states_str)
 
         # debt info per county 
         debt_by_county = pd.read_csv("../data_clean/final_data_CD.csv")[["Group State", "Group County"]]
@@ -653,13 +662,13 @@ def handle_state_dropdown(state, county, option, map_type, border_type):
             state_pop.replace({"State": state_codes}, inplace = True) 
             state_pop = state_pop.astype({"Slave Pop":"int"})
 
-            fig = px.choropleth(state_pop, geojson=map_gj, locations='State', 
-                            locationmode='USA-states',  #only highlights first alphabetical county
+            fig = px.choropleth(state_pop, geojson=states_gj, locations='State', #map_gj or states_gj
+                            #locationmode='USA-states',  #only highlights first alphabetical county
                             color='Slave Pop',
                             color_continuous_scale="Viridis",
                             range_color=(state_pop['Slave Pop'].min(), 
                                         state_pop['Slave Pop'].max()),
-                            featureidkey="properties.state_abrev", #Fix this
+                            featureidkey="properties.df_abrev", #state_abrev vs df_abred
                             scope="usa", 
                             basemap_visible=basemap_visible,
                             fitbounds=fitbounds,
