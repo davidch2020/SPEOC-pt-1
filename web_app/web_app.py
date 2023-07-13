@@ -578,7 +578,8 @@ def handle_state_dropdown(state, county, option, map_type, border_type):
            'NV', 'NY', 'OH', 'OK', 'OR', 'PA', 'RI', 'SC', 'SD', 'TN', 'TX',
            'UT', 'VA', 'VT', 'WA', 'WI', 'WV', 'WY']
         #states_df = pd.DataFrame(states, columns = ["df_abrev"])
-        states_df = pd.DataFrame.from_dict(state_codes, columns = ["state","df_abrev"])
+        states_df = pd.DataFrame.from_dict(state_codes)
+        states_df.columns = ["state","df_abrev"]
         states_df2 = states_df.copy()
         #map_df_s = map_df.copy()
         #map_df_s.replace({"state": state_codes}, inplace = True)
