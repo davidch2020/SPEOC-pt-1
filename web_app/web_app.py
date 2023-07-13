@@ -49,7 +49,7 @@ map_df["Geo_FIPS"] = map_df["Geo_FIPS"].map(lambda x: int(str(x.lstrip("0"))))
 
 
 # declare map_df
-state_map_df = gpd.read_file("../data_raw/shapefiles/stateshape")
+state_map_df = gpd.read_file("../data_raw/shapefiles/stateshape_1790")
 with pd.option_context('display.max_rows', None, 'display.max_columns', None):  
     print(state_map_df)
 '''
