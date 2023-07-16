@@ -627,7 +627,7 @@ def handle_state_dropdown(state, county, option, map_type, border_type):
         county_geo_fips.rename(columns={"Geo_name":"county", 'Geo_STUSAB':'state', "SE_T001_001":'population'}, inplace=True)
         county_debt_geo = pd.merge(debt_by_county, county_geo_fips, on=["county", 'state'])
 
-        #print(county_debt_geo)
+        print(county_debt_geo)
 
         if map_type == 'Population':
 
