@@ -640,7 +640,7 @@ def handle_state_dropdown(state, county, option, map_type, border_type):
             dcc.Store(data = county_pops, id = 'county_data')
 
             #state pop
-            state_pops = pd.read_csv("../data_raw/census_data/statepop.csv", header=1)
+            state_pops = gpd.read_file("../data_raw/census_data/statepop.csv")
             state_pops = state_pops[["State", "Total Pop"]].head(15)
             state_pops = state_pops.astype({"Total Pop":"int"})
                         
