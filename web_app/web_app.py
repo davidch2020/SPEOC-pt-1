@@ -724,10 +724,8 @@ def handle_state_dropdown(state, county, option, map_type, border_type):
             x = six_p_tot[six_p_tot.between(six_p_tot.quantile(.15), six_p_tot.quantile(.85))] # remove outliers
 
             state_sixp_count = county_debt_geo.groupby('state', as_index = False)['count'].sum()
-            state_sixp_count.rename(columns = {'state':'State'}, inplace = True)
+            state_sixp_count.rename(columns = {'state':'State'}, inplace = True) #Just for consistency...
             
-            print(state_sixp_count)
-
             if border_type == "Countywide":
                 fig = px.choropleth(county_debt_geo, geojson=map_gj, locations='Geo_FIPS', 
                             color='count',
@@ -766,6 +764,11 @@ def handle_state_dropdown(state, county, option, map_type, border_type):
             
             six_p_tot = county_debt_geo["density"]
             x = six_p_tot[six_p_tot.between(six_p_tot.quantile(.15), six_p_tot.quantile(.85))] # remove outliers
+
+            state_sixp_agg = county_debt_geo.groupby('state', as_index = False).sum()
+            state_sixp_agg['density'] == state_sixp_agg['6p_total'] / state_sixp_agg['population']
+            print(state_sixp_agg)
+            
 
             fig = px.choropleth(county_debt_geo, geojson=map_gj, locations='Geo_FIPS', 
                 color='density',
