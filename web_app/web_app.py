@@ -819,7 +819,7 @@ def handle_state_dropdown(state, county, option, map_type, border_type):
                     hover_data=["mean_6p_held"]
                 )
 
-            else if border_type == "Statewide":
+            elif border_type == "Statewide":
                 fig = px.choropleth(state_sixp_agg, geojson=states_gj, locations='state', 
                     color='mean_6p_held',
                     color_continuous_scale="Viridis",
