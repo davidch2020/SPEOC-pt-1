@@ -749,7 +749,7 @@ def handle_state_dropdown(state, county, option, map_type, border_type):
                                     scope="usa",
                                     basemap_visible=basemap_visible,
                                     fitbounds=fitbounds,
-                                    hover_name="State",
+                                    hover_name="state",
                                     hover_data=["count"]
                                )
 
