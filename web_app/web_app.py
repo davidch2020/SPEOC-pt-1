@@ -723,6 +723,7 @@ def handle_state_dropdown(state, county, option, map_type, border_type):
 
             state_sixp_count = county_debt_geo.groupby('state', as_index = False)['count'].sum()
             state_sixp_count.rename(columns = {'state':'State'}, inplace = True)
+            
             print(state_sixp_count)
 
             if border_type == "Countywide":
@@ -744,7 +745,7 @@ def handle_state_dropdown(state, county, option, map_type, border_type):
                                     color_continuous_scale="Viridis",
                                     range_color=(state_sixp_count["count"].min(), 
                                                 state_sixp_count["count"].max()),
-                                    featureidkey="properties.state",
+                                    featureidkey="properties.state_abrev",
                                     scope="usa",
                                     basemap_visible=basemap_visible,
                                     fitbounds=fitbounds,
