@@ -627,7 +627,7 @@ def handle_state_dropdown(state, county, option, map_type, border_type):
         county_geo_fips.rename(columns={"Geo_name":"county", 'Geo_STUSAB':'state', "SE_T001_001":'population'}, inplace=True)
         county_debt_geo = pd.merge(debt_by_county, county_geo_fips, on=["county", 'state'])
 
-        print(county_debt_geo)
+        #print(county_debt_geo)
 
         if map_type == 'Population':
 
@@ -720,6 +720,9 @@ def handle_state_dropdown(state, county, option, map_type, border_type):
             # fig = px.choropleth()
             six_p_tot = county_debt_geo["6p_total"]
             x = six_p_tot[six_p_tot.between(six_p_tot.quantile(.15), six_p_tot.quantile(.85))] # remove outliers
+
+            state_sixp = county_debt_geo.groupby('state')['6p_total'].sum()
+            print(state_sixp)
 
             fig = px.choropleth(county_debt_geo, geojson=map_gj, locations='Geo_FIPS', 
                             color='count',
