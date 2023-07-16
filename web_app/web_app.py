@@ -766,7 +766,7 @@ def handle_state_dropdown(state, county, option, map_type, border_type):
             x = six_p_tot[six_p_tot.between(six_p_tot.quantile(.15), six_p_tot.quantile(.85))] # remove outliers
 
             state_sixp_agg = county_debt_geo.groupby('state', as_index = False).sum()
-            state_sixp_agg['density'] == state_sixp_agg['6p_total'] / state_sixp_agg['population']
+            state_sixp_agg['density'] = state_sixp_agg['6p_total'] / state_sixp_agg['population']
             print(state_sixp_agg)
             
 
