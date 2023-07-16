@@ -52,6 +52,8 @@ map_df["Geo_FIPS"] = map_df["Geo_FIPS"].map(lambda x: int(str(x.lstrip("0"))))
 # declare map_df
 state_map_df = gpd.read_file("../data_raw/shapefiles/stateshape_1790")
 state_map_df.rename(columns = {'STATENAM':'state'}, inplace = True)
+state_map_df['state_abrev'] = state_map_df.loc[:, 'state']
+state_map_df.replace({"state_abrev": state_codes}, inplace = True) 
 
 # Navigation bar to get to different pages of the web app
 nav_bar = dbc.Nav(className='nav-bar', children=[
