@@ -722,7 +722,8 @@ def handle_state_dropdown(state, county, option, map_type, border_type):
             x = six_p_tot[six_p_tot.between(six_p_tot.quantile(.15), six_p_tot.quantile(.85))] # remove outliers
 
             state_sixp_count = county_debt_geo.groupby('state', as_index = False)['count'].sum()
-            #print(state_sixp_count)
+            state_sixp_count.rename(columns = {'state':'State'}, inplace = True)
+            print(state_sixp_count)
 
             if border_type == "Countywide":
                 fig = px.choropleth(county_debt_geo, geojson=map_gj, locations='Geo_FIPS', 
@@ -738,7 +739,7 @@ def handle_state_dropdown(state, county, option, map_type, border_type):
                             hover_data=["count"]
                         )
             elif border_type == "Statewide":
-                fig = px.choropleth(state_sixp_count, geojson=states_gj, locations='state', 
+                fig = px.choropleth(state_sixp_count, geojson=states_gj, locations='State', 
                                     color='count',
                                     color_continuous_scale="Viridis",
                                     range_color=(state_sixp_count["count"].min(), 
@@ -747,7 +748,7 @@ def handle_state_dropdown(state, county, option, map_type, border_type):
                                     scope="usa",
                                     basemap_visible=basemap_visible,
                                     fitbounds=fitbounds,
-                                    hover_name="state",
+                                    hover_name="State",
                                     hover_data=["count"]
                                )
 
