@@ -630,7 +630,7 @@ def handle_state_dropdown(state, county, option, map_type, border_type):
         county_debt_geo = pd.merge(debt_by_county, county_geo_fips, on=["county", 'state'])
 
         state_sixp_agg = county_debt_geo.groupby('state', as_index = False).sum()
-        state_sixp_agg.drop('Geo_FIPS', inplace=True) #the summing messes it up; also not necessary for states anyways
+        state_sixp_agg.drop('Geo_FIPS', inplace=True, axis = 1) #the summing messes it up; also not necessary for states anyways
 
         #print(county_debt_geo)
 
