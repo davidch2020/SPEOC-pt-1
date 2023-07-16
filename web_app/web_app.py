@@ -767,18 +767,33 @@ def handle_state_dropdown(state, county, option, map_type, border_type):
 
             state_sixp_agg['density'] = state_sixp_agg['6p_total'] / state_sixp_agg['population']            
 
-            fig = px.choropleth(county_debt_geo, geojson=map_gj, locations='Geo_FIPS', 
-                color='density',
-                color_continuous_scale="Viridis",
-                range_color=(x.min(), 
+            if border_type == "Countywide":
+                fig = px.choropleth(county_debt_geo, geojson=map_gj, locations='Geo_FIPS', 
+                    color='density',
+                    color_continuous_scale="Viridis",
+                    range_color=(x.min(), 
                             x.max()),
-                featureidkey="properties.Geo_FIPS",
-                scope="usa",
-                basemap_visible=basemap_visible,
-                fitbounds=fitbounds,
-                hover_name="county",
-                hover_data=["density"]
-            )
+                    featureidkey="properties.Geo_FIPS",
+                    scope="usa",
+                    basemap_visible=basemap_visible,
+                    fitbounds=fitbounds,
+                    hover_name="county",
+                    hover_data=["density"]
+                )
+
+            elif border_type == "Statewide":
+                fig = px.choropleth(state_sixp_agg, geojson=states_gj, locations='state', 
+                    color='density',
+                    color_continuous_scale="Viridis",
+                    range_color=(state_sixp_agg['density'].min(), 
+                            state_sixp_agg['density'].max()),
+                    featureidkey="properties.state_abrev",
+                    scope="usa",
+                    basemap_visible=basemap_visible,
+                    fitbounds=fitbounds,
+                    hover_name="state",
+                    hover_data=["density"]
+                )
 
             slider =  dcc.RangeSlider(0, 20, value=[5, 15], id = "my-rangeslider")
 
