@@ -654,7 +654,7 @@ def handle_state_dropdown(state, county, option, map_type, border_type, sliderra
             slider =  dcc.RangeSlider(min = county_pops["Population"].min(), 
                                       max = county_pops["Population"].max(), 
                                       step= 10000, 
-                                      value=[sliderrange[0], sliderrange[1]],
+                                      #value=[sliderrange[0], sliderrange[1]],
                                       id = "slider"
                                     )
                         
