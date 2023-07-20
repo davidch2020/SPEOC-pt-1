@@ -171,7 +171,7 @@ left_tab = html.Div(id="left_tab", className='box', children=[
         c_ops 
     ], style={"display":"none"}),
     html.Div(id = "range-slider", children=[
-        dcc.RangeSlider(id="slider", min = 0, max = 10, step = 2, value = [0, 10])
+        dcc.RangeSlider(id="slider") #, min = 0, max = 10, step = 2, value = [0, 10]
     ], style={"display":"none"}),
     #html.Div(id="c_info", children=[
     #    c_info_title, 
@@ -645,6 +645,18 @@ def handle_state_dropdown(state, county, option, map_type, border_type, sliderra
             county_pops.rename(columns = {'SE_T001_001':'Population', "Geo_name":"County"}, inplace = True)
             county_pops = county_pops[["Geo_FIPS", "Population", "County"]]
 
+            if sliderrange[0] is None:
+                slider =  dcc.RangeSlider(min = 0, 
+                                      max = county_pops["Population"].max(), 
+                                      step= 10000, 
+                                      #value=[sliderrange[0], sliderrange[1]],
+                                      id = "slider"
+                                    )
+            else:
+                county_pops = county_pops[county_pops['Population'].between(sliderrange[0], sliderrange[1], inclusive="both")]
+
+            
+            '''
             slider =  dcc.RangeSlider(min = 0, 
                                       max = county_pops["Population"].max(), 
                                       step= 10000, 
@@ -653,8 +665,7 @@ def handle_state_dropdown(state, county, option, map_type, border_type, sliderra
                                     )
             county_pops = county_pops[county_pops['Population'].between(sliderrange[0], sliderrange[1], inclusive="both")]
             print(sliderrange[0])
-            print(sliderrange[1])
-            #county_pops1 = county_pops[(county_pops['Population'] >= sliderrange[0]) & (county_pops['Population'] <= sliderrange[1])] #countypops1
+            print(sliderrange[1])'''
             
             #dcc.Store(data = county_pops, id = 'county_data')
 
