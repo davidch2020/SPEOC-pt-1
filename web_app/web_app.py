@@ -171,7 +171,7 @@ left_tab = html.Div(id="left_tab", className='box', children=[
         c_ops 
     ], style={"display":"none"}),
     html.Div(id = "range-slider", children=[
-        dcc.RangeSlider(id="slider") #, min = 0, max = 10, step = 2, value = [0, 10]
+        dcc.RangeSlider(id="slider", min = 0, max = 10, step = 2, value = [2.3, 10]) #weird value strat
     ], style={"display":"none"}),
     #html.Div(id="c_info", children=[
     #    c_info_title, 
@@ -645,14 +645,19 @@ def handle_state_dropdown(state, county, option, map_type, border_type, sliderra
             county_pops.rename(columns = {'SE_T001_001':'Population', "Geo_name":"County"}, inplace = True)
             county_pops = county_pops[["Geo_FIPS", "Population", "County"]]
 
-            if sliderrange is None:
+            if sliderrange[0] == 2.3:
                 slider =  dcc.RangeSlider(min = 0, 
                                       max = county_pops["Population"].max(), 
                                       step= 10000, 
-                                      #value=[sliderrange[0], sliderrange[1]],
                                       id = "slider"
                                     )
             else:
+                slider =  dcc.RangeSlider(min = 0, 
+                                      max = county_pops["Population"].max(), 
+                                      step= 10000, 
+                                      value=[sliderrange[0], sliderrange[1]],
+                                      id = "slider"
+                                    )
                 county_pops = county_pops[county_pops['Population'].between(sliderrange[0], sliderrange[1], inclusive="both")]
 
             
