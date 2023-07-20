@@ -170,7 +170,7 @@ left_tab = html.Div(id="left_tab", className='box', children=[
         c_op_title,
         c_ops 
     ], style={"display":"none"}),
-    html.Div(id = "range-slider", children=[
+    html.Div(id = "range-slider", children=[ #should be put with right-tab stuff
         dcc.RangeSlider(id="slider", min = 0, max = 10, step = 2, value = [2.3, 10]) #weird value strat
     ], style={"display":"none"}),
     #html.Div(id="c_info", children=[
@@ -565,7 +565,7 @@ def display_heatmap_drpdwn(border_value, region_value):
         Input("left-tab-options", "value"), 
         Input('heatmap_drpdwn', 'value'), 
         Input('border_drpdwn', 'value'),
-        Input('slider', 'value')] 
+        Input('slider', 'value')] #issue
 )
 
 def handle_state_dropdown(state, county, option, map_type, border_type, sliderrange):
@@ -645,7 +645,7 @@ def handle_state_dropdown(state, county, option, map_type, border_type, sliderra
             county_pops.rename(columns = {'SE_T001_001':'Population', "Geo_name":"County"}, inplace = True)
             county_pops = county_pops[["Geo_FIPS", "Population", "County"]]
 
-            if sliderrange[0] == 2.3:
+            if sliderrange[0] == 2.3: #when the map is loaded for the first time
                 slider =  dcc.RangeSlider(min = 0, 
                                       max = county_pops["Population"].max(), 
                                       step= 10000, 
