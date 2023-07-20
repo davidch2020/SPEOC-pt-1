@@ -170,13 +170,13 @@ left_tab = html.Div(id="left_tab", className='box', children=[
         c_op_title,
         c_ops 
     ], style={"display":"none"}),
+    html.Div(id = "range-slider", children=[
+        dcc.RangeSlider(id="slider", style={"display":"none"})
+    ]),
     #html.Div(id="c_info", children=[
     #    c_info_title, 
     #    html.Ul(id="c_infolist")
     #]), 
-    html.Div(id = "range-slider", children=[
-        dcc.RangeSlider(id="slider", style={"display":"none"})
-        )
     html.Div(id="t_drpdwn", children=[
         dcc.Dropdown(id="towns_drpdwn", style={"display":"none"})
     ], style={"display":"block"}), 
