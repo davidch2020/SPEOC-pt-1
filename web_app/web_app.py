@@ -652,6 +652,8 @@ def handle_state_dropdown(state, county, option, map_type, border_type, sliderra
                                       id = "slider"
                                     )
             county_pops = county_pops[county_pops['Population'].between(sliderrange[0], sliderrange[1], inclusive="both")]
+            print(sliderrange[0])
+            print(sliderrange[1])
             #county_pops1 = county_pops[(county_pops['Population'] >= sliderrange[0]) & (county_pops['Population'] <= sliderrange[1])] #countypops1
             
             #dcc.Store(data = county_pops, id = 'county_data')
