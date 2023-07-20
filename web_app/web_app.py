@@ -174,6 +174,9 @@ left_tab = html.Div(id="left_tab", className='box', children=[
     #    c_info_title, 
     #    html.Ul(id="c_infolist")
     #]), 
+    html.Div(id = "range-slider", children=[
+        dcc.RangeSlider(id="slider", style={"display":"none"})
+        )
     html.Div(id="t_drpdwn", children=[
         dcc.Dropdown(id="towns_drpdwn", style={"display":"none"})
     ], style={"display":"block"}), 
@@ -653,7 +656,7 @@ def handle_state_dropdown(state, county, option, map_type, border_type):
                                       max = county_pops["Population"].max(), 
                                       step= 10000, 
                                       value=[county_pops["Population"].min(), county_pops["Population"].max()],
-                                      id = "my-rangeslider"
+                                      id = "slider"
                                     )
             #@app.callback(
             #    Output('county_data', 'data'),
