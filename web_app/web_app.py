@@ -637,19 +637,13 @@ def handle_state_dropdown(state, county, option, map_type, border_type, sliderra
         state_sixp_agg.drop('Geo_FIPS', inplace=True, axis = 1) #the summing messes it up; also not necessary for states anyways
 
         if map_type == 'Population':
-
+            
             # get county populations 
             county_pops = pd.read_csv("../data_raw/census_data/countyPopulation.csv", header=1)
             county_pops = county_pops[county_pops["SE_T001_001"].notna()]
             county_pops = county_pops.astype({"SE_T001_001":"int", "Geo_FIPS":"str"})
             county_pops.rename(columns = {'SE_T001_001':'Population', "Geo_name":"County"}, inplace = True)
             county_pops = county_pops[["Geo_FIPS", "Population", "County"]]
-            #dcc.Store(data = county_pops, id = 'county_data')
-
-            #state pop
-            state_pops = gpd.read_file("../data_raw/census_data/statepop.csv")
-            state_pops = state_pops[["State", "Total Pop"]].head(15)
-            state_pops = state_pops.astype({"Total Pop":"int"})
 
             slider =  dcc.RangeSlider(min = county_pops["Population"].min(), 
                                       max = county_pops["Population"].max(), 
@@ -657,6 +651,14 @@ def handle_state_dropdown(state, county, option, map_type, border_type, sliderra
                                       #value=[sliderrange[0], sliderrange[1]],
                                       id = "slider"
                                     )
+            county_pops = county_pops[county_pops['Population'].between(sliderrange[0], sliderrange[1], inclusive=True)]
+            #dcc.Store(data = county_pops, id = 'county_data')
+
+            #state pop
+            state_pops = gpd.read_file("../data_raw/census_data/statepop.csv")
+            state_pops = state_pops[["State", "Total Pop"]].head(15)
+            state_pops = state_pops.astype({"Total Pop":"int"})
+
                         
             '''slider =  dcc.RangeSlider(min = county_pops["Population"].min(), 
                                       max = county_pops["Population"].max(), 
