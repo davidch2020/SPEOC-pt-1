@@ -679,7 +679,7 @@ def handle_state_dropdown(state, county, option, map_type, border_type, sliderra
 
             # create choropleth map based on border type
             if border_type == "Countywide":
-                fig = px.choropleth(county_pops1, geojson=map_gj, locations='Geo_FIPS',  #countypops --> countypops1
+                fig = px.choropleth(county_pops, geojson=map_gj, locations='Geo_FIPS',  #countypops --> countypops1
                                     color='Population',
                                     color_continuous_scale="Viridis",
                                     range_color=(county_pops["Population"].min(), 
