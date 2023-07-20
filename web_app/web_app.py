@@ -171,7 +171,7 @@ left_tab = html.Div(id="left_tab", className='box', children=[
         c_ops 
     ], style={"display":"none"}),
     html.Div(id = "range-slider", children=[
-        dcc.RangeSlider(id="slider", min = 0, max = 1000, step = 200, value = [0, 1000])
+        dcc.RangeSlider(id="slider", min = 0, max = 10, step = 2, value = [0, 10])
     ], style={"display":"none"}),
     #html.Div(id="c_info", children=[
     #    c_info_title, 
@@ -564,10 +564,11 @@ def display_heatmap_drpdwn(border_value, region_value):
          Input("county_drpdwn", "value"),
         Input("left-tab-options", "value"), 
         Input('heatmap_drpdwn', 'value'), 
-        Input('border_drpdwn', 'value')] 
+        Input('border_drpdwn', 'value'),
+        Input('slider', 'value')] 
 )
 
-def handle_state_dropdown(state, county, option, map_type, border_type):
+def handle_state_dropdown(state, county, option, map_type, border_type, sliderrange):
     if option == "map":
         fitbounds = False
         basemap_visible = True
@@ -635,8 +636,6 @@ def handle_state_dropdown(state, county, option, map_type, border_type):
         state_sixp_agg = county_debt_geo.groupby('state', as_index = False).sum()
         state_sixp_agg.drop('Geo_FIPS', inplace=True, axis = 1) #the summing messes it up; also not necessary for states anyways
 
-        #print(county_debt_geo)
-
         if map_type == 'Population':
 
             # get county populations 
@@ -651,13 +650,20 @@ def handle_state_dropdown(state, county, option, map_type, border_type):
             state_pops = gpd.read_file("../data_raw/census_data/statepop.csv")
             state_pops = state_pops[["State", "Total Pop"]].head(15)
             state_pops = state_pops.astype({"Total Pop":"int"})
-                        
+
             slider =  dcc.RangeSlider(min = county_pops["Population"].min(), 
                                       max = county_pops["Population"].max(), 
                                       step= 10000, 
-                                      value=[county_pops["Population"].min(), county_pops["Population"].max()],
+                                      value=[sliderrange[0], sliderrange[1]],
                                       id = "slider"
                                     )
+                        
+            '''slider =  dcc.RangeSlider(min = county_pops["Population"].min(), 
+                                      max = county_pops["Population"].max(), 
+                                      step= 10000, 
+                                      value=[county_pops["Population"].min(), county_pops["Population"].max()],
+                                      id = "my-rangeslider"
+                                    )'''
             #@app.callback(
             #    Output('county_data', 'data'),
             #    [Input('my-rangeslider', 'value')]
