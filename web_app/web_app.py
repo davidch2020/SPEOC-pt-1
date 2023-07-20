@@ -651,7 +651,9 @@ def handle_state_dropdown(state, county, option, map_type, border_type, sliderra
                                       #value=[sliderrange[0], sliderrange[1]],
                                       id = "slider"
                                     )
-            county_pops = county_pops[county_pops['Population'].between(sliderrange[0], sliderrange[1], inclusive=True)]
+            #county_pops = county_pops[county_pops['Population'].between(sliderrange[0], sliderrange[1], inclusive=True)]
+            county_pops1 = county_pops[(county_pops['Population'] >= sliderrange[0]) & (county_pops['Population'] <= sliderrange[1])] #countypops1
+            
             #dcc.Store(data = county_pops, id = 'county_data')
 
             #state pop
@@ -677,7 +679,7 @@ def handle_state_dropdown(state, county, option, map_type, border_type, sliderra
 
             # create choropleth map based on border type
             if border_type == "Countywide":
-                fig = px.choropleth(county_pops, geojson=map_gj, locations='Geo_FIPS', 
+                fig = px.choropleth(county_pops1, geojson=map_gj, locations='Geo_FIPS',  #countypops --> countypops1
                                     color='Population',
                                     color_continuous_scale="Viridis",
                                     range_color=(county_pops["Population"].min(), 
