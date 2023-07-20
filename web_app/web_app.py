@@ -171,8 +171,8 @@ left_tab = html.Div(id="left_tab", className='box', children=[
         c_ops 
     ], style={"display":"none"}),
     html.Div(id = "range-slider", children=[
-        dcc.RangeSlider(id="slider", style={"display":"none"})
-    ]),
+        dcc.RangeSlider(id="slider")
+    ], style={"display":"none"}),
     #html.Div(id="c_info", children=[
     #    c_info_title, 
     #    html.Ul(id="c_infolist")
