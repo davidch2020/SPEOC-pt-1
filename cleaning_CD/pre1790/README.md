@@ -6,12 +6,12 @@ The goal of this exercise was to clean the names of the individuals in the pre-1
 2. The latest version of Python is assumed to be installed. 
 3. Enter your default terminal. 
 3. Use Python's ```pip``` package or any other package installer to install the following libraries:
-- ```pip install pandas```
-- ```pip install nameparser```
-- ```pip install numpy```
-- ```pip install selenium```
-- ```pip install phonetics```
-- ```pip install fuzzywuzzy```
+    - ```pip install pandas```
+    - ```pip install nameparser```
+    - ```pip install numpy```
+    - ```pip install selenium```
+    - ```pip install phonetics```
+    - ```pip install fuzzywuzzy```
 
 
 
