@@ -755,11 +755,14 @@ def handle_state_dropdown(state, county, option, map_type, border_type, sliderra
             # test debt distribution map 
             # fig = px.choropleth()
             six_p_tot = county_debt_geo["6p_total"]
+
             x = six_p_tot[six_p_tot.between(six_p_tot.quantile(.15), six_p_tot.quantile(.85))] # remove outliers
+
+            print(six_p_tot[six_p_tot.between(six_p_tot.quantile(.85), six_p_tot.quantile(1))])
             
             if border_type == "Countywide":
                 fig = px.choropleth(county_debt_geo, geojson=map_gj, locations='Geo_FIPS', 
-                            color='count',
+                            color='6p_total',
                             color_continuous_scale="Viridis",
                             range_color=(x.min(), 
                                         x.max()),
@@ -768,11 +771,11 @@ def handle_state_dropdown(state, county, option, map_type, border_type, sliderra
                             basemap_visible=basemap_visible,
                             fitbounds=fitbounds,
                             hover_name="county",
-                            hover_data=["count"]
+                            hover_data=["6p_total"]
                         )
             elif border_type == "Statewide":
                 fig = px.choropleth(state_sixp_agg, geojson=states_gj, locations='state', 
-                                    color='count',
+                                    color='6p_total',
                                     color_continuous_scale="Viridis",
                                     range_color=(state_sixp_agg["count"].min(), 
                                                 state_sixp_agg["count"].max()),
@@ -781,7 +784,7 @@ def handle_state_dropdown(state, county, option, map_type, border_type, sliderra
                                     basemap_visible=basemap_visible,
                                     fitbounds=fitbounds,
                                     hover_name="state",
-                                    hover_data=["count"]
+                                    hover_data=["6p_total"]
                                )
 
             slider =  dcc.RangeSlider(0, 20, value=[5, 15], id = "my-rangeslider")
@@ -832,6 +835,7 @@ def handle_state_dropdown(state, county, option, map_type, border_type, sliderra
             county_debt_geo['mean_6p_held'] = county_debt_geo['6p_total'] / county_debt_geo['count']
 
             six_p_tot = county_debt_geo['mean_6p_held']
+
             x = six_p_tot[six_p_tot.between(six_p_tot.quantile(.15), six_p_tot.quantile(.85))] # remove outliers
 
             state_sixp_agg['mean_6p_held'] = state_sixp_agg['6p_total'] / state_sixp_agg['count']            
