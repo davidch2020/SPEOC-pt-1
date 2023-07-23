@@ -116,6 +116,8 @@ regions_drop = dcc.Dropdown( #probably move this down
     value = 'Not Selected'
 )
 
+rangeslider = dcc.RangeSlider(id="slider", min = 0, max = 10, step = 2, value = [2.3, 10])
+
 # title : "Pick a state"
 #state_title = html.H5(children="Pick a State")
 #title: Region
@@ -197,7 +199,7 @@ right_tab = html.Div(className='box', children=[
                 style={'overflow': 'scroll'}
              ),
     html.Div(id = "range-slider", children=[ #should be put with right-tab stuff
-        dcc.RangeSlider(id="slider", min = 0, max = 10, step = 2, value = [2.3, 10]) #weird value strat
+        rangeslider #weird value strat
     ], style={"display":"none"})
 ], style={'width': '60%', 'height': '600px'})
 
@@ -597,7 +599,7 @@ def handle_state_dropdown(state, county, option, map_type, border_type, sliderra
         states_gj = json.loads(states_str)
 
         if (map_type == "Not Selected") or (map_type is None):
-            return '', '' #added another 
+            return '', rangeslider #added another 
 
         if (state != "All States" and state != None):
             if border_type == "Countywide":
