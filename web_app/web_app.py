@@ -195,7 +195,7 @@ right_tab = html.Div(className='box', children=[
     html.H3(children='Display', className='box-title', style={'textAlign': 'center'}),
     html.Div(id='right-tab-content', 
                 style={'overflow': 'scroll'}
-             )
+             ),
     html.Div(id = "range-slider", children=[ #should be put with right-tab stuff
         dcc.RangeSlider(id="slider", min = 0, max = 10, step = 2, value = [2.3, 10]) #weird value strat
     ], style={"display":"none"})
