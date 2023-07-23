@@ -418,7 +418,7 @@ def add_c_options(sel_state, value):
         Output("bord_c_drpdwn", "style"),
         Output("heatmap_c_drpdwn", "style"),
         Output("states_c_drpdwn", "style"),
-        Output("c_drpdwn", "style")],
+        Output("c_drpdwn", "style"),
         Output("range-slider", "style")],
         Input("left-tab-options", "value")
 )
