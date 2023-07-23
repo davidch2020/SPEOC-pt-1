@@ -922,7 +922,7 @@ def handle_state_dropdown(state, county, option, map_type, border_type, sliderra
                 'backgroundColor': 'rgb(230, 230, 230)',
                 'fontWeight': 'bold'
             }
-        ), '' #no rangeslider here
+        ), rangeslider #prevent it from becoming nonetype. should not show up though
 '''
   '''  
 # Layout of the app
