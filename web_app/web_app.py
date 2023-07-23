@@ -668,7 +668,7 @@ def handle_state_dropdown(state, county, option, map_type, border_type, sliderra
                                       id = "slider"
                                     )
             else:
-                slider =  dcc.RangeSlider(min = 0, 
+                slider =  dcc.RangeSlider(min = 0,   #proposal: try making it rangeslider instead of slider. So you'll have to fix right-tab stuff
                                       max = county_pops["Population"].max(), 
                                       step= 10000, 
                                       value=[sliderrange[0], sliderrange[1]],
