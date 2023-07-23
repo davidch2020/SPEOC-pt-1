@@ -574,12 +574,12 @@ def display_slider_vals(value):
 @app.callback(
         Output('right-tab-content', 'children'),
         Output('range-slider', 'children'),
-        Input("states_drpdwn", "value"), #bracket removed
-         Input("county_drpdwn", "value"),
+        [Input("states_drpdwn", "value"), 
+        Input("county_drpdwn", "value"),
         Input("left-tab-options", "value"), 
         Input('heatmap_drpdwn', 'value'), 
         Input('border_drpdwn', 'value'),
-        Input('slider', 'value') #issue #bracket removed
+        Input('slider', 'value')] #issue 
 )
 
 def handle_state_dropdown(state, county, option, map_type, border_type, sliderrange):
@@ -901,7 +901,7 @@ def handle_state_dropdown(state, county, option, map_type, border_type, sliderra
 
             #slider =  dcc.RangeSlider(six_p_tot.min(), six_p_tot.max(), value=[six_p_tot.min(), six_p_tot.max()], id = "my-rangeslider")
         
-        return dcc.Graph(figure = fig, id = 'my-map'), slider
+        return [dcc.Graph(figure = fig, id = 'my-map'), slider]
         
     else: # option is table
         # Display the DataFrame as a table
