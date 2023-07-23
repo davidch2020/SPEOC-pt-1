@@ -574,12 +574,12 @@ def display_slider_vals(value):
 @app.callback(
         Output('right-tab-content', 'children'),
         Output('range-slider', 'children'),
-        [Input("states_drpdwn", "value"),
+        Input("states_drpdwn", "value"), #bracket removed
          Input("county_drpdwn", "value"),
         Input("left-tab-options", "value"), 
         Input('heatmap_drpdwn', 'value'), 
         Input('border_drpdwn', 'value'),
-        Input('slider', 'value')] #issue
+        Input('slider', 'value') #issue #bracket removed
 )
 
 def handle_state_dropdown(state, county, option, map_type, border_type, sliderrange):
