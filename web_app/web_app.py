@@ -597,7 +597,7 @@ def handle_state_dropdown(state, county, option, map_type, border_type, sliderra
         states_gj = json.loads(states_str)
 
         if (map_type == "Not Selected") or (map_type is None):
-            return ''
+            return '', '' #added another 
 
         if (state != "All States" and state != None):
             if border_type == "Countywide":
