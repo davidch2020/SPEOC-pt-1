@@ -116,7 +116,7 @@ regions_drop = dcc.Dropdown( #probably move this down
     value = 'Not Selected'
 )
 
-rangeslider = dcc.RangeSlider(id="slider", min = 0, max = 10, step = 2, value = [2.3, 10])
+rangeslider = dcc.RangeSlider(id="slider", min = 0, max = 10, step = 2, value = [2.3, 10]) #weird value strat
 
 # title : "Pick a state"
 #state_title = html.H5(children="Pick a State")
@@ -198,10 +198,9 @@ right_tab = html.Div(className='box', children=[
     html.Div(id='right-tab-content', 
                 style={'overflow': 'scroll'}
              ),
-    rangeslider
-    #html.Div(id = "range-slider", children=[ 
-    #    rangeslider #weird value strat
-    #], style={"display":"none"})
+    html.Div(id = "range-slider", children=[ 
+        rangeslider 
+    ], style={"display":"none"})
 ], style={'width': '60%', 'height': '600px'})
 
 '''
@@ -576,6 +575,7 @@ def display_slider_vals(value):
 
 @app.callback(
         Output('right-tab-content', 'children'),
+        Output('range-slider', 'children'),
         [Input("states_drpdwn", "value"), 
         Input("county_drpdwn", "value"),
         Input("left-tab-options", "value"), 
@@ -599,7 +599,7 @@ def handle_state_dropdown(state, county, option, map_type, border_type, sliderra
         states_gj = json.loads(states_str)
 
         if (map_type == "Not Selected") or (map_type is None):
-            return ''
+            return '', rangeslider
 
         if (state != "All States" and state != None):
             if border_type == "Countywide":
@@ -922,7 +922,7 @@ def handle_state_dropdown(state, county, option, map_type, border_type, sliderra
                 'backgroundColor': 'rgb(230, 230, 230)',
                 'fontWeight': 'bold'
             }
-        )
+        ), '' #no rangeslider here
 '''
   '''  
 # Layout of the app
