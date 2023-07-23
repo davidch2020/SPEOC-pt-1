@@ -562,8 +562,17 @@ def display_heatmap_drpdwn(border_value, region_value):
     else:
         return ''
 
+'''@app.callback(
+        Output('range-slider', 'children'),
+        Input('slider', 'value')
+)
+
+def display_slider_vals(value):'''
+    
+
 @app.callback(
-        Output('right-tab-content', 'children'),
+        [Output('right-tab-content', 'children'),
+        Output('range-slider', 'children')],
         [Input("states_drpdwn", "value"),
          Input("county_drpdwn", "value"),
         Input("left-tab-options", "value"), 
@@ -749,7 +758,7 @@ def handle_state_dropdown(state, county, option, map_type, border_type, sliderra
                             hover_name="State",
                             hover_data=["Slave Pop"]
                         )   
-            slider =  dcc.RangeSlider(0, 20, value=[5, 15], id = "my-rangeslider")
+            #slider =  dcc.RangeSlider(0, 20, value=[5, 15], id = "my-rangeslider")
 
         elif map_type == 'Debt Distribution':
             # Create the debt distribution map
@@ -808,7 +817,7 @@ def handle_state_dropdown(state, county, option, map_type, border_type, sliderra
                                     hover_data=["6p_total"]
                                )
 
-            slider =  dcc.RangeSlider(0, 20, value=[5, 15], id = "my-rangeslider")
+            #slider =  dcc.RangeSlider(0, 20, value=[5, 15], id = "my-rangeslider")
 
         elif map_type == 'Debt Density':
             # Create county map
@@ -850,7 +859,7 @@ def handle_state_dropdown(state, county, option, map_type, border_type, sliderra
                     hover_data=["density"]
                 )
 
-            slider =  dcc.RangeSlider(0, 20, value=[5, 15], id = "my-rangeslider")
+            #slider =  dcc.RangeSlider(0, 20, value=[5, 15], id = "my-rangeslider")
 
         elif map_type == 'Average Debt Holdings':
             county_debt_geo['mean_6p_held'] = county_debt_geo['6p_total'] / county_debt_geo['count']
@@ -889,7 +898,7 @@ def handle_state_dropdown(state, county, option, map_type, border_type, sliderra
                     hover_data=["mean_6p_held"]
                 )
 
-            slider =  dcc.RangeSlider(six_p_tot.min(), six_p_tot.max(), value=[six_p_tot.min(), six_p_tot.max()], id = "my-rangeslider")
+            #slider =  dcc.RangeSlider(six_p_tot.min(), six_p_tot.max(), value=[six_p_tot.min(), six_p_tot.max()], id = "my-rangeslider")
         
         return dcc.Graph(figure = fig, id = 'my-map'), slider
         
