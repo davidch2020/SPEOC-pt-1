@@ -419,15 +419,15 @@ def add_c_options(sel_state, value):
         Output("bord_c_drpdwn", "style"),
         Output("heatmap_c_drpdwn", "style"),
         Output("states_c_drpdwn", "style"),
-        Output("c_drpdwn", "style"),
-        Output("range-slider", "style")],
+        Output("c_drpdwn", "style")],
+        #Output("range-slider", "style")],
         Input("left-tab-options", "value")
 )
 def add_map_options(value):
     if value == "map":
-        return {"display":"block"}, {"display":"block"}, {"display":"block"}, {"display":"block"}, {"display":"block"}, {"display":"block"}
+        return {"display":"block"}, {"display":"block"}, {"display":"block"}, {"display":"block"}, {"display":"block"}#, {"display":"block"}
     else:
-        return {"display":"none"}, {"display":"none"}, {"display":"none"}, {"display":"none"}, {"display":"none"}, {"display":"none"}
+        return {"display":"none"}, {"display":"none"}, {"display":"none"}, {"display":"none"}, {"display":"none"}#, {"display":"none"}
 '''
 # call back function to display map options when 'a state' is clicked 
 @app.callback( 
