@@ -198,9 +198,10 @@ right_tab = html.Div(className='box', children=[
     html.Div(id='right-tab-content', 
                 style={'overflow': 'scroll'}
              ),
-    html.Div(id = "range-slider", children=[ #should be put with right-tab stuff
+    rangeslider
+    '''html.Div(id = "range-slider", children=[ 
         rangeslider #weird value strat
-    ], style={"display":"none"})
+    ], style={"display":"none"})'''
 ], style={'width': '60%', 'height': '600px'})
 
 '''
@@ -598,7 +599,7 @@ def handle_state_dropdown(state, county, option, map_type, border_type, sliderra
         states_gj = json.loads(states_str)
 
         if (map_type == "Not Selected") or (map_type is None):
-            return '', rangeslider #added another 
+            return ''
 
         if (state != "All States" and state != None):
             if border_type == "Countywide":
