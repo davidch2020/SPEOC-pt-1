@@ -13,6 +13,7 @@ import json
 import os
 import matplotlib.pyplot as plt 
 import numpy as np
+import seaborn as sns 
 
 state_codes = {
     "New Hampshire":"NH",
@@ -627,7 +628,7 @@ def handle_state_dropdown(state, county, option, map_type, border_type, sliderra
         debt_by_county.reset_index(inplace=True)
 
         debt_by_county.columns = debt_by_county.columns.droplevel(1)
-        debt_by_county.columns = ['county', 'state', 'count', '6p_total']
+        debt_by_county.columns = ['county', 'state', 'count', '6p_total'] 
 
         county_geo_fips = pd.read_csv("../data_raw/census_data/countyPopulation.csv", header=1)[["Geo_FIPS", "Geo_name", 'Geo_STUSAB', "SE_T001_001"]]
         county_geo_fips.rename(columns={"Geo_name":"county", 'Geo_STUSAB':'state', "SE_T001_001":'population'}, inplace=True)
@@ -759,6 +760,23 @@ def handle_state_dropdown(state, county, option, map_type, border_type, sliderra
             x = six_p_tot[six_p_tot.between(six_p_tot.quantile(.15), six_p_tot.quantile(.85))] # remove outliers
 
             print(six_p_tot[six_p_tot.between(six_p_tot.quantile(.85), six_p_tot.quantile(1))])
+
+            Q1 = np.percentile(county_debt_geo['6p_total'], 25, method='midpoint')
+            Q3 = np.percentile(county_debt_geo['6p_total'], 75, method='midpoint')
+            IQR = Q3 - Q1 
+
+            # Above Upper bound
+            upper=Q3+1.5*IQR
+            upper_array=np.array(county_debt_geo['6p_total']>=upper)
+            print('upper bound')
+            print("Upper Bound:",upper)
+            print(upper_array.sum())
+            
+            #Below Lower bound
+            lower=Q1-1.5*IQR
+            lower_array=np.array(county_debt_geo['6p_total']<=lower)
+            print("Lower Bound:",lower)
+            print(lower_array.sum())
             
             if border_type == "Countywide":
                 fig = px.choropleth(county_debt_geo, geojson=map_gj, locations='Geo_FIPS', 
