@@ -199,9 +199,9 @@ right_tab = html.Div(className='box', children=[
                 style={'overflow': 'scroll'}
              ),
     rangeslider
-    '''html.Div(id = "range-slider", children=[ 
-        rangeslider #weird value strat
-    ], style={"display":"none"})'''
+    #html.Div(id = "range-slider", children=[ 
+    #    rangeslider #weird value strat
+    #], style={"display":"none"})
 ], style={'width': '60%', 'height': '600px'})
 
 '''
