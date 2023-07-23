@@ -575,7 +575,6 @@ def display_slider_vals(value):
 
 @app.callback(
         Output('right-tab-content', 'children'),
-        Output('range-slider', 'children'),
         [Input("states_drpdwn", "value"), 
         Input("county_drpdwn", "value"),
         Input("left-tab-options", "value"), 
