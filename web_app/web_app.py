@@ -820,7 +820,7 @@ def handle_state_dropdown(state, county, option, map_type, border_type, sliderra
                                     hover_data=["6p_total"]
                                )
 
-            #slider =  dcc.RangeSlider(0, 20, value=[5, 15], id = "my-rangeslider")
+            slider =  dcc.RangeSlider(0, 20, value=[5, 15], id = "my-rangeslider")
 
         elif map_type == 'Debt Density':
             # Create county map
@@ -862,7 +862,7 @@ def handle_state_dropdown(state, county, option, map_type, border_type, sliderra
                     hover_data=["density"]
                 )
 
-            #slider =  dcc.RangeSlider(0, 20, value=[5, 15], id = "my-rangeslider")
+            slider =  dcc.RangeSlider(0, 20, value=[5, 15], id = "my-rangeslider")
 
         elif map_type == 'Average Debt Holdings':
             county_debt_geo['mean_6p_held'] = county_debt_geo['6p_total'] / county_debt_geo['count']
@@ -901,7 +901,7 @@ def handle_state_dropdown(state, county, option, map_type, border_type, sliderra
                     hover_data=["mean_6p_held"]
                 )
 
-            #slider =  dcc.RangeSlider(six_p_tot.min(), six_p_tot.max(), value=[six_p_tot.min(), six_p_tot.max()], id = "my-rangeslider")
+            slider =  dcc.RangeSlider(six_p_tot.min(), six_p_tot.max(), value=[six_p_tot.min(), six_p_tot.max()], id = "my-rangeslider")
         
         return [dcc.Graph(figure = fig, id = 'my-map'), slider]
         
