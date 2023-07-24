@@ -761,7 +761,7 @@ def handle_state_dropdown(state, county, option, map_type, border_type, sliderra
                             hover_name="State",
                             hover_data=["Slave Pop"]
                         )   
-            #slider =  dcc.RangeSlider(0, 20, value=[5, 15], id = "my-rangeslider")
+            slider =  dcc.RangeSlider(0, 20, value=[5, 15], id = "my-rangeslider")
 
         elif map_type == 'Debt Distribution':
             # Create the debt distribution map
