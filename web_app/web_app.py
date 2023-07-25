@@ -201,7 +201,7 @@ right_tab = html.Div(className='box', children=[
     html.Div(id = "range-slider", children=[ 
         rangeslider 
     ], style={"display":"none"})
-], style={'width': '60%', 'height': '600px'})
+], style={'width': '100%', 'height': '600px'})
 
 '''
 # check if a display option is selected   #NOT SURE IF THIS IS NEEDED KEEP FOR NOW
@@ -713,18 +713,21 @@ def handle_state_dropdown(state, county, option, map_type, border_type, sliderra
 
             # create choropleth map based on border type
             if border_type == "Countywide":
+                
                 fig = px.choropleth(county_pops, geojson=map_gj, locations='Geo_FIPS',  #countypops --> countypops1
-                                    color='Population',
-                                    color_continuous_scale="Viridis",
-                                    range_color=(county_pops["Population"].min(), 
-                                                county_pops["Population"].max()),
-                                    featureidkey="properties.Geo_FIPS",
-                                    scope="usa",
-                                    basemap_visible=basemap_visible,
-                                    fitbounds=fitbounds,
-                                    hover_name="County",
-                                    hover_data=["Population"]
-                               )
+                        color='Population',
+                        color_continuous_scale="Viridis",
+                        range_color=(county_pops["Population"].min(), 
+                                    county_pops["Population"].max()),
+                        featureidkey="properties.Geo_FIPS",
+                        scope="usa",
+                        basemap_visible=basemap_visible,
+                        fitbounds=fitbounds,
+                        hover_name="County",
+                        hover_data=["Population"],
+                    )
+                
+                
             elif border_type == "Statewide":
                 fig = px.choropleth(state_pops, geojson=states_gj, locations='State', 
                                     color='Total Pop',
@@ -774,8 +777,9 @@ def handle_state_dropdown(state, county, option, map_type, border_type, sliderra
 
             x = six_p_tot[six_p_tot.between(six_p_tot.quantile(.15), six_p_tot.quantile(.85))] # remove outliers
 
-            print(six_p_tot[six_p_tot.between(six_p_tot.quantile(.85), six_p_tot.quantile(1))])
+            #print(six_p_tot[six_p_tot.between(six_p_tot.quantile(.85), six_p_tot.quantile(1))])
 
+            '''
             Q1 = np.percentile(county_debt_geo['6p_total'], 25, method='midpoint')
             Q3 = np.percentile(county_debt_geo['6p_total'], 75, method='midpoint')
             IQR = Q3 - Q1 
@@ -792,19 +796,29 @@ def handle_state_dropdown(state, county, option, map_type, border_type, sliderra
             lower_array=np.array(county_debt_geo['6p_total']<=lower)
             print("Lower Bound:",lower)
             print(lower_array.sum())
-            
+            '''
+
+            xiv = pd.Interval(x.min(), x.max())
+            xmid = xiv.mid
+            print(xmid)
+
             if border_type == "Countywide":
                 fig = px.choropleth(county_debt_geo, geojson=map_gj, locations='Geo_FIPS', 
                             color='6p_total',
-                            color_continuous_scale="Viridis",
-                            range_color=(x.min(), 
-                                        x.max()),
+                            #color_continuous_scale="Viridis",
+                            range_color=(county_debt_geo['6p_total'].min(), 
+                                        county_debt_geo['6p_total'].max()),
                             featureidkey="properties.Geo_FIPS",
                             scope="usa",
                             basemap_visible=basemap_visible,
                             fitbounds=fitbounds,
                             hover_name="county",
-                            hover_data=["6p_total"]
+                            hover_data=["6p_total"],
+                            color_continuous_scale=[[0, 'rgb(240,240,240)'],
+                                [0.1, 'rgb(126, 191, 113)'],
+                                [0.2, 'rgb(91, 161, 77)'],
+                                [0.9, 'rgb(24, 66, 16)'],
+                                [1, 'rgb(227,26,28,0.5)']]
                         )
             elif border_type == "Statewide":
                 fig = px.choropleth(state_sixp_agg, geojson=states_gj, locations='state', 
@@ -923,8 +937,7 @@ def handle_state_dropdown(state, county, option, map_type, border_type, sliderra
                 'fontWeight': 'bold'
             }
         ), rangeslider #prevent it from becoming nonetype. should not show up though
-'''
-  '''  
+
 # Layout of the app
 app.layout = html.Div(className='app-container', children=[
     dbc.Container(className='header-container', children=[
@@ -938,7 +951,8 @@ app.layout = html.Div(className='app-container', children=[
         ])
     ]),
     project_desc,
-    html.Div(className='tabs-container', children=[left_tab, right_tab])
+    html.Div(className='tabs-container', children=left_tab),
+    html.Div(className='right-tab', children=right_tab)
 ])
 
 # run app
