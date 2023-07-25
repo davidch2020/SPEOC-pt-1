@@ -431,7 +431,7 @@ def add_map_options(value):
 # call back function to display range slider when heatmap type is chosen
 @app.callback( 
         Output("range-slider", "style"),
-        Input("left-tab-options", "value")
+        Input("heatmap_drpdwn", "value")
 )
 def add_range_slider(value):
     if (value is not None) and (value != "Not Selected"):
