@@ -593,10 +593,11 @@ def display_slider_vals(value):
         Input("left-tab-options", "value"), 
         Input('heatmap_drpdwn', 'value'), 
         Input('border_drpdwn', 'value'),
-        Input('slider', 'value')] #issue 
+        Input('slider', 'value'),
+        Input('slider', 'max')] #to keep track of when the heatmap type changes--> means that the rangeslider maximum must be adjusted 
 )
 
-def handle_state_dropdown(state, county, option, map_type, border_type, sliderrange):
+def handle_state_dropdown(state, county, option, map_type, border_type, sliderrange, slidermax):
     if option == "map":
         fitbounds = False
         basemap_visible = True
@@ -673,7 +674,7 @@ def handle_state_dropdown(state, county, option, map_type, border_type, sliderra
             county_pops.rename(columns = {'SE_T001_001':'Population', "Geo_name":"County"}, inplace = True)
             county_pops = county_pops[["Geo_FIPS", "Population", "County"]]
 
-            if sliderrange[0] == 2.3: #when the map is loaded for the first time
+            '''if sliderrange[0] == 2.3: #when the map is loaded for the first time
                 slider =  dcc.RangeSlider(min = 0, 
                                       max = county_pops["Population"].max(), 
                                       step= 10000, 
@@ -681,6 +682,21 @@ def handle_state_dropdown(state, county, option, map_type, border_type, sliderra
                                     )
             else:
                 slider =  dcc.RangeSlider(min = 0,   #proposal: try making it rangeslider instead of slider. So you'll have to fix right-tab stuff
+                                      max = county_pops["Population"].max(), 
+                                      step= 10000, 
+                                      value=[sliderrange[0], sliderrange[1]],
+                                      id = "slider"
+                                    )
+                county_pops = county_pops[county_pops['Population'].between(sliderrange[0], sliderrange[1], inclusive="both")]'''
+
+            if slidermax != county_pops["Population"].max(): #when the map is loaded for the first time, maximum value will not match county_pops["Population"].max()
+                slider =  dcc.RangeSlider(min = 0, 
+                                      max = county_pops["Population"].max(), 
+                                      step= 10000, 
+                                      id = "slider"
+                                    )
+            else: #otherwise, this is the case where the map was not loaded for the first time, and the user just adjusted the rangeslider
+                slider =  dcc.RangeSlider(min = 0,   
                                       max = county_pops["Population"].max(), 
                                       step= 10000, 
                                       value=[sliderrange[0], sliderrange[1]],
