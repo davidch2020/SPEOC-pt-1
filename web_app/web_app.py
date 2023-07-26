@@ -696,19 +696,6 @@ def handle_state_dropdown(state, county, option, map_type, border_type, sliderra
             # create choropleth map based on border type
             if border_type == "Countywide":
                 
-                fig = px.choropleth(county_pops, geojson=map_gj, locations='Geo_FIPS',  #countypops --> countypops1
-                        color='Population',
-                        color_continuous_scale="Viridis",
-                        range_color=(county_pops["Population"].min(), 
-                                    county_pops["Population"].max()),
-                        featureidkey="properties.Geo_FIPS",
-                        scope="usa",
-                        basemap_visible=basemap_visible,
-                        fitbounds=fitbounds,
-                        hover_name="County",
-                        hover_data=["Population"]
-                    )
-
                 if slidermax != county_pops["Population"].max(): #when the map is loaded for the first time, maximum value will not match county_pops["Population"].max()
                     slider =  dcc.RangeSlider(min = 0,  
                                       max = county_pops["Population"].max(), 
@@ -724,19 +711,21 @@ def handle_state_dropdown(state, county, option, map_type, border_type, sliderra
                                     )
                     county_pops = county_pops[county_pops['Population'].between(sliderrange[0], sliderrange[1], inclusive="both")]
                 
+                fig = px.choropleth(county_pops, geojson=map_gj, locations='Geo_FIPS',  #countypops --> countypops1
+                        color='Population',
+                        color_continuous_scale="Viridis",
+                        range_color=(county_pops["Population"].min(), 
+                                    county_pops["Population"].max()),
+                        featureidkey="properties.Geo_FIPS",
+                        scope="usa",
+                        basemap_visible=basemap_visible,
+                        fitbounds=fitbounds,
+                        hover_name="County",
+                        hover_data=["Population"]
+                    )
+                
             elif border_type == "Statewide":
-                fig = px.choropleth(state_pops, geojson=states_gj, locations='State', 
-                                    color='Total Pop',
-                                    color_continuous_scale="Viridis",
-                                    range_color=(state_pops["Total Pop"].min(), 
-                                                state_pops["Total Pop"].max()),
-                                    featureidkey="properties.state",
-                                    scope="usa",
-                                    basemap_visible=basemap_visible,
-                                    fitbounds=fitbounds,
-                                    hover_name="State",
-                                    hover_data=["Total Pop"]
-                               )
+                
                 if slidermax != state_pops["Total Pop"].max(): 
                     slider =  dcc.RangeSlider(min = 0, 
                                       max = state_pops["Total Pop"].max(), 
@@ -752,6 +741,18 @@ def handle_state_dropdown(state, county, option, map_type, border_type, sliderra
                                     )
                     state_pops = state_pops[state_pops['Total Pop'].between(sliderrange[0], sliderrange[1], inclusive="both")]
                 
+                fig = px.choropleth(state_pops, geojson=states_gj, locations='State', 
+                                    color='Total Pop',
+                                    color_continuous_scale="Viridis",
+                                    range_color=(state_pops["Total Pop"].min(), 
+                                                state_pops["Total Pop"].max()),
+                                    featureidkey="properties.state",
+                                    scope="usa",
+                                    basemap_visible=basemap_visible,
+                                    fitbounds=fitbounds,
+                                    hover_name="State",
+                                    hover_data=["Total Pop"]
+                               )
 
         elif map_type == 'Slave Population': #only uses statewide data so far...but check the county data later
             
