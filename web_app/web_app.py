@@ -727,23 +727,25 @@ def handle_state_dropdown(state, county, option, map_type, border_type, sliderra
                     )
                 
             elif border_type == "Statewide":
+
+                state_pops_adj = state_pops.copy()
                 
                 if slidermax != state_pops["Total Pop"].max(): 
                     slider =  dcc.RangeSlider(min = 0, 
                                       max = state_pops["Total Pop"].max(), 
-                                      step= 10000, 
+                                      #step= 10000, 
                                       id = "slider"
                                     )
                 else:
                     slider =  dcc.RangeSlider(min = 0,   
                                       max = state_pops["Total Pop"].max(), 
-                                      step= 10000, 
+                                      #step= 10000, 
                                       value=[sliderrange[0], sliderrange[1]],
                                       id = "slider"
                                     )
-                    state_pops = state_pops[state_pops['Total Pop'].between(sliderrange[0], sliderrange[1], inclusive="both")]
+                    state_pops_adj = state_pops[state_pops['Total Pop'].between(sliderrange[0], sliderrange[1], inclusive="both")]
                 
-                fig = px.choropleth(state_pops, geojson=states_gj, locations='State', 
+                fig = px.choropleth(state_pops_adj, geojson=states_gj, locations='State', 
                                     color='Total Pop',
                                     color_continuous_scale="Viridis",
                                     range_color=(state_pops["Total Pop"].min(), 
