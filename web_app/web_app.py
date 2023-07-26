@@ -695,6 +695,8 @@ def handle_state_dropdown(state, county, option, map_type, border_type, sliderra
 
             # create choropleth map based on border type
             if border_type == "Countywide":
+
+                county_pops_adj = county_pops.copy()
                 
                 if slidermax != county_pops["Population"].max(): #when the map is loaded for the first time, maximum value will not match county_pops["Population"].max()
                     slider =  dcc.RangeSlider(min = 0,  
@@ -709,9 +711,9 @@ def handle_state_dropdown(state, county, option, map_type, border_type, sliderra
                                       value=[sliderrange[0], sliderrange[1]],
                                       id = "slider"
                                     )
-                    county_pops = county_pops[county_pops['Population'].between(sliderrange[0], sliderrange[1], inclusive="both")]
+                    county_pops_adj = county_pops[county_pops['Population'].between(sliderrange[0], sliderrange[1], inclusive="both")]
                 
-                fig = px.choropleth(county_pops, geojson=map_gj, locations='Geo_FIPS',  #countypops --> countypops1
+                fig = px.choropleth(county_pops_adj, geojson=map_gj, locations='Geo_FIPS', 
                         color='Population',
                         color_continuous_scale="Viridis",
                         range_color=(county_pops["Population"].min(), 
