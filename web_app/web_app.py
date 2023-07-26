@@ -672,21 +672,6 @@ def handle_state_dropdown(state, county, option, map_type, border_type, sliderra
             county_pops = county_pops.astype({"SE_T001_001":"int", "Geo_FIPS":"str"})
             county_pops.rename(columns = {'SE_T001_001':'Population', "Geo_name":"County"}, inplace = True)
             county_pops = county_pops[["Geo_FIPS", "Population", "County"]]
-
-            '''if slidermax != county_pops["Population"].max(): #when the map is loaded for the first time, maximum value will not match county_pops["Population"].max()
-                slider =  dcc.RangeSlider(min = 0, 
-                                      max = county_pops["Population"].max(), 
-                                      step= 10000, 
-                                      id = "slider"
-                                    )
-            else: #otherwise, this is the case where the map was not loaded for the first time, and the user just adjusted the rangeslider
-                slider =  dcc.RangeSlider(min = 0,   
-                                      max = county_pops["Population"].max(), 
-                                      step= 10000, 
-                                      value=[sliderrange[0], sliderrange[1]],
-                                      id = "slider"
-                                    )
-                county_pops = county_pops[county_pops['Population'].between(sliderrange[0], sliderrange[1], inclusive="both")]'''
             
             #state pop
             state_pops = gpd.read_file("../data_raw/census_data/statepop.csv")
@@ -701,13 +686,13 @@ def handle_state_dropdown(state, county, option, map_type, border_type, sliderra
                 if slidermax != county_pops["Population"].max(): #when the map is loaded for the first time, maximum value will not match county_pops["Population"].max()
                     slider =  dcc.RangeSlider(min = 0,  
                                       max = county_pops["Population"].max(), 
-                                      step= 10000, 
+                                      #step= 10000, 
                                       id = "slider"
                                     )
                 else: #otherwise, this is the case where the map was not loaded for the first time, and the user just adjusted the rangeslider
                     slider =  dcc.RangeSlider(min = 0,   
                                       max = county_pops["Population"].max(), 
-                                      step= 10000, 
+                                      #step= 10000, 
                                       value=[sliderrange[0], sliderrange[1]],
                                       id = "slider"
                                     )
