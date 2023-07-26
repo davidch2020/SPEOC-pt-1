@@ -116,7 +116,7 @@ regions_drop = dcc.Dropdown( #probably move this down
     value = 'Not Selected'
 )
 
-rangeslider = dcc.RangeSlider(id="slider", min = 0, max = 10, step = 2, value = [2.3, 10]) #weird value strat
+slider = dcc.RangeSlider(id="slider", min = 0, max = 10, step = 2) 
 
 # title : "Pick a state"
 #state_title = html.H5(children="Pick a State")
@@ -199,7 +199,7 @@ right_tab = html.Div(className='box', children=[
                 style={'overflow': 'scroll'}
              ),
     html.Div(id = "range-slider", children=[ 
-        rangeslider 
+        slider 
     ], style={"display":"none"})
 ], style={'width': '100%', 'height': '600px'})
 
@@ -419,14 +419,13 @@ def add_c_options(sel_state, value):
         Output("heatmap_c_drpdwn", "style"),
         Output("states_c_drpdwn", "style"),
         Output("c_drpdwn", "style")],
-        #Output("range-slider", "style")],
         Input("left-tab-options", "value")
 )
 def add_map_options(value):
     if value == "map":
-        return {"display":"block"}, {"display":"block"}, {"display":"block"}, {"display":"block"}, {"display":"block"}#, {"display":"block"}
+        return {"display":"block"}, {"display":"block"}, {"display":"block"}, {"display":"block"}, {"display":"block"}
     else:
-        return {"display":"none"}, {"display":"none"}, {"display":"none"}, {"display":"none"}, {"display":"none"}#, {"display":"none"}
+        return {"display":"none"}, {"display":"none"}, {"display":"none"}, {"display":"none"}, {"display":"none"}
 
 # call back function to display range slider when heatmap type is chosen
 @app.callback( 
@@ -612,7 +611,7 @@ def handle_state_dropdown(state, county, option, map_type, border_type, sliderra
         states_gj = json.loads(states_str)
 
         if (map_type == "Not Selected") or (map_type is None):
-            return '', rangeslider
+            return '', slider
 
         if (state != "All States" and state != None):
             if border_type == "Countywide":
@@ -674,22 +673,7 @@ def handle_state_dropdown(state, county, option, map_type, border_type, sliderra
             county_pops.rename(columns = {'SE_T001_001':'Population', "Geo_name":"County"}, inplace = True)
             county_pops = county_pops[["Geo_FIPS", "Population", "County"]]
 
-            '''if sliderrange[0] == 2.3: #when the map is loaded for the first time
-                slider =  dcc.RangeSlider(min = 0, 
-                                      max = county_pops["Population"].max(), 
-                                      step= 10000, 
-                                      id = "slider"
-                                    )
-            else:
-                slider =  dcc.RangeSlider(min = 0,   #proposal: try making it rangeslider instead of slider. So you'll have to fix right-tab stuff
-                                      max = county_pops["Population"].max(), 
-                                      step= 10000, 
-                                      value=[sliderrange[0], sliderrange[1]],
-                                      id = "slider"
-                                    )
-                county_pops = county_pops[county_pops['Population'].between(sliderrange[0], sliderrange[1], inclusive="both")]'''
-
-            if slidermax != county_pops["Population"].max(): #when the map is loaded for the first time, maximum value will not match county_pops["Population"].max()
+            '''if slidermax != county_pops["Population"].max(): #when the map is loaded for the first time, maximum value will not match county_pops["Population"].max()
                 slider =  dcc.RangeSlider(min = 0, 
                                       max = county_pops["Population"].max(), 
                                       step= 10000, 
@@ -702,42 +686,12 @@ def handle_state_dropdown(state, county, option, map_type, border_type, sliderra
                                       value=[sliderrange[0], sliderrange[1]],
                                       id = "slider"
                                     )
-                county_pops = county_pops[county_pops['Population'].between(sliderrange[0], sliderrange[1], inclusive="both")]
-
+                county_pops = county_pops[county_pops['Population'].between(sliderrange[0], sliderrange[1], inclusive="both")]'''
             
-            '''
-            slider =  dcc.RangeSlider(min = 0, 
-                                      max = county_pops["Population"].max(), 
-                                      step= 10000, 
-                                      #value=[sliderrange[0], sliderrange[1]],
-                                      id = "slider"
-                                    )
-            county_pops = county_pops[county_pops['Population'].between(sliderrange[0], sliderrange[1], inclusive="both")]
-            print(sliderrange[0])
-            print(sliderrange[1])'''
-            
-            #dcc.Store(data = county_pops, id = 'county_data')
-
             #state pop
             state_pops = gpd.read_file("../data_raw/census_data/statepop.csv")
             state_pops = state_pops[["State", "Total Pop"]].head(15)
             state_pops = state_pops.astype({"Total Pop":"int"})
-
-                        
-            '''slider =  dcc.RangeSlider(min = county_pops["Population"].min(), 
-                                      max = county_pops["Population"].max(), 
-                                      step= 10000, 
-                                      value=[county_pops["Population"].min(), county_pops["Population"].max()],
-                                      id = "my-rangeslider"
-                                    )'''
-            #@app.callback(
-            #    Output('county_data', 'data'),
-            #    [Input('my-rangeslider', 'value')]
-            #)
-
-            #def update_data(sliderrange):
-            #    county_pops = county_pops[county_pops['Population'].between(sliderrange[0], sliderrange[1], inclusive=True)]
-            #    return county_pops
 
             # create choropleth map based on border type
             if border_type == "Countywide":
@@ -752,9 +706,23 @@ def handle_state_dropdown(state, county, option, map_type, border_type, sliderra
                         basemap_visible=basemap_visible,
                         fitbounds=fitbounds,
                         hover_name="County",
-                        hover_data=["Population"],
+                        hover_data=["Population"]
                     )
-                
+
+                if slidermax != county_pops["Population"].max(): #when the map is loaded for the first time, maximum value will not match county_pops["Population"].max()
+                    slider =  dcc.RangeSlider(min = 0,  
+                                      max = county_pops["Population"].max(), 
+                                      step= 10000, 
+                                      id = "slider"
+                                    )
+                else: #otherwise, this is the case where the map was not loaded for the first time, and the user just adjusted the rangeslider
+                    slider =  dcc.RangeSlider(min = 0,   
+                                      max = county_pops["Population"].max(), 
+                                      step= 10000, 
+                                      value=[sliderrange[0], sliderrange[1]],
+                                      id = "slider"
+                                    )
+                    county_pops = county_pops[county_pops['Population'].between(sliderrange[0], sliderrange[1], inclusive="both")]
                 
             elif border_type == "Statewide":
                 fig = px.choropleth(state_pops, geojson=states_gj, locations='State', 
@@ -769,6 +737,20 @@ def handle_state_dropdown(state, county, option, map_type, border_type, sliderra
                                     hover_name="State",
                                     hover_data=["Total Pop"]
                                )
+                if slidermax != state_pops["Population"].max(): 
+                    slider =  dcc.RangeSlider(min = 0, 
+                                      max = state_pops["Population"].max(), 
+                                      step= 10000, 
+                                      id = "slider"
+                                    )
+                else:
+                    slider =  dcc.RangeSlider(min = 0,   
+                                      max = state_pops["Population"].max(), 
+                                      step= 10000, 
+                                      value=[sliderrange[0], sliderrange[1]],
+                                      id = "slider"
+                                    )
+                    state_pops = state_pops[state_pops['Total Pop'].between(sliderrange[0], sliderrange[1], inclusive="both")]
                 
 
         elif map_type == 'Slave Population': #only uses statewide data so far...but check the county data later
@@ -964,7 +946,7 @@ def handle_state_dropdown(state, county, option, map_type, border_type, sliderra
                 'backgroundColor': 'rgb(230, 230, 230)',
                 'fontWeight': 'bold'
             }
-        ), rangeslider #prevent it from becoming nonetype. should not show up though
+        ), slider #prevent it from becoming nonetype. should not show up though
 
 # Layout of the app
 app.layout = html.Div(className='app-container', children=[
