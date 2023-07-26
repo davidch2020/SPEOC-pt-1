@@ -737,15 +737,15 @@ def handle_state_dropdown(state, county, option, map_type, border_type, sliderra
                                     hover_name="State",
                                     hover_data=["Total Pop"]
                                )
-                if slidermax != state_pops["Population"].max(): 
+                if slidermax != state_pops["Total Pop"].max(): 
                     slider =  dcc.RangeSlider(min = 0, 
-                                      max = state_pops["Population"].max(), 
+                                      max = state_pops["Total Pop"].max(), 
                                       step= 10000, 
                                       id = "slider"
                                     )
                 else:
                     slider =  dcc.RangeSlider(min = 0,   
-                                      max = state_pops["Population"].max(), 
+                                      max = state_pops["Total Pop"].max(), 
                                       step= 10000, 
                                       value=[sliderrange[0], sliderrange[1]],
                                       id = "slider"
