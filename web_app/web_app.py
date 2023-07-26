@@ -708,7 +708,7 @@ def handle_state_dropdown(state, county, option, map_type, border_type, sliderra
                         basemap_visible=basemap_visible,
                         fitbounds=fitbounds,
                         hover_name="County",
-                        hover_data=["Population"]
+                        hover_data=["Population"],
                     )
                 
             elif border_type == "Statewide":
@@ -779,7 +779,6 @@ def handle_state_dropdown(state, county, option, map_type, border_type, sliderra
 
             #print(six_p_tot[six_p_tot.between(six_p_tot.quantile(.85), six_p_tot.quantile(1))])
 
-            '''
             Q1 = np.percentile(county_debt_geo['6p_total'], 25, method='midpoint')
             Q3 = np.percentile(county_debt_geo['6p_total'], 75, method='midpoint')
             IQR = Q3 - Q1 
@@ -789,14 +788,12 @@ def handle_state_dropdown(state, county, option, map_type, border_type, sliderra
             upper_array=np.array(county_debt_geo['6p_total']>=upper)
             print('upper bound')
             print("Upper Bound:",upper)
-            print(upper_array.sum())
             
             #Below Lower bound
             lower=Q1-1.5*IQR
             lower_array=np.array(county_debt_geo['6p_total']<=lower)
             print("Lower Bound:",lower)
-            print(lower_array.sum())
-            '''
+            
 
             xiv = pd.Interval(x.min(), x.max())
             xmid = xiv.mid
@@ -817,8 +814,8 @@ def handle_state_dropdown(state, county, option, map_type, border_type, sliderra
                             color_continuous_scale=[[0, 'rgb(240,240,240)'],
                                 [0.1, 'rgb(126, 191, 113)'],
                                 [0.2, 'rgb(91, 161, 77)'],
-                                [0.9, 'rgb(24, 66, 16)'],
-                                [1, 'rgb(227,26,28,0.5)']]
+                                [0.75, 'rgb(227, 72, 54)'],
+                                [1, 'rgb(227, 26, 28)']]
                         )
             elif border_type == "Statewide":
                 fig = px.choropleth(state_sixp_agg, geojson=states_gj, locations='state', 
@@ -843,23 +840,28 @@ def handle_state_dropdown(state, county, option, map_type, border_type, sliderra
 
             county_debt_geo['density'] = county_debt_geo['6p_total'] / county_debt_geo['population']
             
-            six_p_tot = county_debt_geo["density"]
-            x = six_p_tot[six_p_tot.between(six_p_tot.quantile(.15), six_p_tot.quantile(.85))] # remove outliers
+            density = county_debt_geo["density"]
+            #x = six_p_tot[six_p_tot.between(six_p_tot.quantile(.15), six_p_tot.quantile(.85))] # remove outliers
 
             state_sixp_agg['density'] = state_sixp_agg['6p_total'] / state_sixp_agg['population']            
 
             if border_type == "Countywide":
                 fig = px.choropleth(county_debt_geo, geojson=map_gj, locations='Geo_FIPS', 
                     color='density',
-                    color_continuous_scale="Viridis",
-                    range_color=(x.min(), 
-                            x.max()),
+                    # color_continuous_scale="Viridis",
+                    range_color=(density.min(), 
+                            density.max()),
                     featureidkey="properties.Geo_FIPS",
                     scope="usa",
                     basemap_visible=basemap_visible,
                     fitbounds=fitbounds,
                     hover_name="county",
-                    hover_data=["density"]
+                    hover_data=["density"],
+                    color_continuous_scale=[[0, 'rgb(240,240,240)'],
+                        [0.1, 'rgb(126, 191, 113)'],
+                        [0.2, 'rgb(91, 161, 77)'],
+                        [0.75, 'rgb(227, 72, 54)'],
+                        [1, 'rgb(227, 26, 28)']]
                 )
 
             elif border_type == "Statewide":
@@ -883,22 +885,27 @@ def handle_state_dropdown(state, county, option, map_type, border_type, sliderra
 
             six_p_tot = county_debt_geo['mean_6p_held']
 
-            x = six_p_tot[six_p_tot.between(six_p_tot.quantile(.15), six_p_tot.quantile(.85))] # remove outliers
+            # x = six_p_tot[six_p_tot.between(six_p_tot.quantile(.15), six_p_tot.quantile(.85))] # remove outliers
 
             state_sixp_agg['mean_6p_held'] = state_sixp_agg['6p_total'] / state_sixp_agg['count']            
 
             if border_type == "Countywide":
                 fig = px.choropleth(county_debt_geo, geojson=map_gj, locations='Geo_FIPS', 
                     color='mean_6p_held',
-                    color_continuous_scale="Viridis",
-                    range_color=(x.min(), 
-                            x.max()),
+                    # color_continuous_scale="Viridis",
+                    range_color=(six_p_tot.min(), 
+                            six_p_tot.max()),
                     featureidkey="properties.Geo_FIPS",
                     scope="usa",
                     basemap_visible=basemap_visible,
                     fitbounds=fitbounds,
                     hover_name="county",
-                    hover_data=["mean_6p_held"]
+                    hover_data=["mean_6p_held"],
+                    color_continuous_scale=[[0, 'rgb(240,240,240)'],
+                        [0.1, 'rgb(126, 191, 113)'],
+                        [0.2, 'rgb(91, 161, 77)'],
+                        [0.75, 'rgb(227, 72, 54)'],
+                        [1, 'rgb(227, 26, 28)']]
                 )
 
             elif border_type == "Statewide":
