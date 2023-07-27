@@ -974,7 +974,22 @@ def handle_state_dropdown(state, county, option, map_type, border_type, sliderra
             state_sixp_agg['mean_6p_held'] = state_sixp_agg['6p_total'] / state_sixp_agg['count']            
 
             if border_type == "Countywide":
-                fig = px.choropleth(county_debt_geo, geojson=map_gj, locations='Geo_FIPS', 
+                county_debt_geo_adj = county_debt_geo.copy()
+                if slidermax != round(county_debt_geo["mean_6p_held"].max(), 2): 
+                        slider =  dcc.RangeSlider(min = 0, 
+                                      max = round(county_debt_geo["mean_6p_held"].max(), 2), 
+                                      id = "slider"
+                                    )
+                else:
+                        slider =  dcc.RangeSlider(min = 0,   
+                                      max = round(county_debt_geo["mean_6p_held"].max(), 2), 
+                                      value=[sliderrange[0], sliderrange[1]],
+                                      id = "slider"
+                                    )
+                        county_debt_geo_adj = county_debt_geo[county_debt_geo['mean_6p_held'].between(sliderrange[0], sliderrange[1], inclusive="both")]
+
+                
+                fig = px.choropleth(county_debt_geo_adj, geojson=map_gj, locations='Geo_FIPS', 
                     color='mean_6p_held',
                     # color_continuous_scale="Viridis",
                     range_color=(six_p_tot.min(), 
@@ -993,7 +1008,22 @@ def handle_state_dropdown(state, county, option, map_type, border_type, sliderra
                 )
 
             elif border_type == "Statewide":
-                fig = px.choropleth(state_sixp_agg, geojson=states_gj, locations='state', 
+                state_sixp_agg_adj = state_sixp_agg.copy()
+                if slidermax != round(state_sixp_agg["mean_6p_held"].max(),2): 
+                        slider =  dcc.RangeSlider(min = 0, 
+                                      max = round(state_sixp_agg["mean_6p_held"].max(), 2), 
+                                      id = "slider"
+                                    )
+                else:
+                        slider =  dcc.RangeSlider(min = 0,   
+                                      max = round(state_sixp_agg["mean_6p_held"].max(), 2), 
+                                      value=[sliderrange[0], sliderrange[1]],
+                                      id = "slider"
+                                    )
+                        state_sixp_agg_adj = state_sixp_agg[state_sixp_agg['mean_6p_held'].between(sliderrange[0], sliderrange[1], inclusive="both")]
+
+
+                fig = px.choropleth(state_sixp_agg_adj, geojson=states_gj, locations='state', 
                     color='mean_6p_held',
                     color_continuous_scale="Viridis",
                     range_color=(state_sixp_agg['mean_6p_held'].min(), 
@@ -1005,8 +1035,6 @@ def handle_state_dropdown(state, county, option, map_type, border_type, sliderra
                     hover_name="state",
                     hover_data=["mean_6p_held"]
                 )
-
-            slider =  dcc.RangeSlider(six_p_tot.min(), six_p_tot.max(), value=[six_p_tot.min(), six_p_tot.max()], id = "slider")
         
         return dcc.Graph(figure = fig, id = 'my-map'), [slider, 'You have selected "{}"'.format(sliderrange)]
         
