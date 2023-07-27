@@ -576,7 +576,7 @@ def display_heatmap_drpdwn(border_value, region_value):
     else:
         return ''
 
-@app.callback(
+'''@app.callback(
         Output('range-slider', 'children'),
         Input('slider', 'value'),
         Input('slider', 'max')
@@ -587,7 +587,7 @@ def display_slider_vals(value, max):
         return 'You have selected "{}"'.format(value)  
     else:
         return ''
-
+'''
 
 @app.callback(
         Output('right-tab-content', 'children'),
@@ -929,7 +929,7 @@ def handle_state_dropdown(state, county, option, map_type, border_type, sliderra
 
             slider =  dcc.RangeSlider(six_p_tot.min(), six_p_tot.max(), value=[six_p_tot.min(), six_p_tot.max()], id = "slider")
         
-        return [dcc.Graph(figure = fig, id = 'my-map'), slider]
+        return [dcc.Graph(figure = fig, id = 'my-map'), slider, 'You have selected "{}"'.format(value)]
         
     else: # option is table
         # Display the DataFrame as a table
