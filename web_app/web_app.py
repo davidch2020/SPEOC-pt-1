@@ -118,10 +118,13 @@ regions_drop = dcc.Dropdown( #probably move this down
 
 rangeslider = dcc.RangeSlider(id="slider", min = 0, max = 10) 
 
-# title : "Pick a state"
-#state_title = html.H5(children="Pick a State")
 #title: Region
 region_title = html.H5(children="Region")
+#title: Slider
+slider_title = html.H5(children="Choose a metric threshold")
+
+# title : "Pick a state"
+#state_title = html.H5(children="Pick a State")
 # title : "state information"
 #st_info_title = html.H5(children="State Info")
 # title : "county information"
@@ -199,7 +202,8 @@ right_tab = html.Div(className='box', children=[
                 style={'overflow': 'scroll'}
              ),
     html.Div(id = "range-slider", children=[ 
-        rangeslider 
+        rangeslider,
+        slider_title
     ], style={"display":"none"})
 ], style={'width': '100%', 'height': '600px'})
 
@@ -576,7 +580,7 @@ def display_heatmap_drpdwn(border_value, region_value):
     else:
         return ''
 
-@app.callback(
+'''@app.callback(
         Output('range-slider', 'children', allow_duplicate=True),
         Input('slider', 'value'),
         Input('slider', 'max'),
@@ -588,6 +592,7 @@ def display_slider_vals(value, max):
         return 'You have selected "{}"'.format(value)  
     else:
         return ''
+'''
 
 @app.callback(
         Output('right-tab-content', 'children'),
