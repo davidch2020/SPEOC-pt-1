@@ -770,7 +770,7 @@ def handle_state_dropdown(state, county, option, map_type, border_type, sliderra
                                     )
             else:
                     slider =  dcc.RangeSlider(min = 0,   
-                                      max = state_pop["Sla ve Pop"].max(), 
+                                      max = state_pop["Slave Pop"].max(), 
                                       value=[sliderrange[0], sliderrange[1]],
                                       id = "slider"
                                     )
