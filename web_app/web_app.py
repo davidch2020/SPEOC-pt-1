@@ -823,8 +823,23 @@ def handle_state_dropdown(state, county, option, map_type, border_type, sliderra
             xmid = xiv.mid
             print(xmid)
 
+            county_debt_geo_adj = county_debt_geo.copy()
+
             if border_type == "Countywide":
-                fig = px.choropleth(county_debt_geo, geojson=map_gj, locations='Geo_FIPS', 
+                if slidermax != county_debt_geo["6p_total"].max(): 
+                    slider =  dcc.RangeSlider(min = 0, 
+                                      max = county_debt_geo["6p_total"].max(), 
+                                      id = "slider"
+                                    )
+                else:
+                    slider =  dcc.RangeSlider(min = 0,   
+                                      max = county_debt_geo["6p_total"].max(), 
+                                      value=[sliderrange[0], sliderrange[1]],
+                                      id = "slider"
+                                    )
+                    county_debt_geo_adj = county_debt_geo[county_debt_geo['6p_total'].between(sliderrange[0], sliderrange[1], inclusive="both")]
+                
+                fig = px.choropleth(county_debt_geo_adj, geojson=map_gj, locations='Geo_FIPS', 
                             color='6p_total',
                             #color_continuous_scale="Viridis",
                             range_color=(county_debt_geo['6p_total'].min(), 
@@ -842,7 +857,23 @@ def handle_state_dropdown(state, county, option, map_type, border_type, sliderra
                                 [1, 'rgb(227, 26, 28)']]
                         )
             elif border_type == "Statewide":
-                fig = px.choropleth(state_sixp_agg, geojson=states_gj, locations='state', 
+                state_sixp_agg_adj = state_sixp_agg.copy()
+
+                if border_type == "Countywide":
+                    if slidermax != state_sixp_agg["6p_total"].max(): 
+                        slider =  dcc.RangeSlider(min = 0, 
+                                      max = state_sixp_agg["6p_total"].max(), 
+                                      id = "slider"
+                                    )
+                    else:
+                        slider =  dcc.RangeSlider(min = 0,   
+                                      max = state_sixp_agg["6p_total"].max(), 
+                                      value=[sliderrange[0], sliderrange[1]],
+                                      id = "slider"
+                                    )
+                        state_sixp_agg_adj = state_sixp_agg[state_sixp_agg['6p_total'].between(sliderrange[0], sliderrange[1], inclusive="both")]
+
+                fig = px.choropleth(state_sixp_agg_adj, geojson=states_gj, locations='state', 
                                     color='6p_total',
                                     color_continuous_scale="Viridis",
                                     range_color=(state_sixp_agg["count"].min(), 
@@ -855,7 +886,6 @@ def handle_state_dropdown(state, county, option, map_type, border_type, sliderra
                                     hover_data=["6p_total"]
                                )
 
-            slider =  dcc.RangeSlider(0, 20, value=[5, 15], id = "slider")
 
         elif map_type == 'Debt Density':
             # Create county map
