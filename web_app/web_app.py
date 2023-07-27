@@ -116,7 +116,7 @@ regions_drop = dcc.Dropdown( #probably move this down
     value = 'Not Selected'
 )
 
-rangeslider = dcc.RangeSlider(id="slider", min = 0, max = 10, step = 2) 
+rangeslider = dcc.RangeSlider(id="slider", min = 0, max = 10) 
 
 # title : "Pick a state"
 #state_title = html.H5(children="Pick a State")
@@ -576,13 +576,18 @@ def display_heatmap_drpdwn(border_value, region_value):
     else:
         return ''
 
-'''@app.callback(
+@app.callback(
         Output('range-slider', 'children'),
-        Input('slider', 'value')
+        Input('slider', 'value'),
+        Input('slider', 'max')
 )
 
-def display_slider_vals(value):
-    return 'You have selected "{}"'.format(value)  '''
+def display_slider_vals(value, max):
+    if max != 10: #prevent from printing initial slider
+        return 'You have selected "{}"'.format(value)  
+    else:
+        return ''
+
 
 @app.callback(
         Output('right-tab-content', 'children'),
