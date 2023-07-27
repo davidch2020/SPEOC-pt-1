@@ -110,7 +110,7 @@ states_drp = dcc.Dropdown(
     options=states,
     value=states[0]
 )'''
-regions_drop = dcc.Dropdown( #probably move this down
+regions_drop = dcc.Dropdown( 
     id = "reg_drpdwn",
     options=['Not Selected','Nation','State','County'],
     value = 'Not Selected'
@@ -120,8 +120,9 @@ rangeslider = dcc.RangeSlider(id="slider", min = 0, max = 10)
 
 #title: Region
 region_title = html.H5(children="Region")
+
 #title: Slider
-slider_title = html.H5(children="Choose a metric threshold")
+#slider_title = html.H5(children="Choose a metric threshold")
 
 # title : "Pick a state"
 #state_title = html.H5(children="Pick a State")
@@ -202,8 +203,7 @@ right_tab = html.Div(className='box', children=[
                 style={'overflow': 'scroll'}
              ),
     html.Div(id = "range-slider", children=[ 
-        rangeslider,
-        slider_title
+        rangeslider
     ], style={"display":"none"})
 ], style={'width': '100%', 'height': '600px'})
 
@@ -761,7 +761,22 @@ def handle_state_dropdown(state, county, option, map_type, border_type, sliderra
             state_pop = state_pop[["State", "Slave Pop"]].head(15)
             state_pop = state_pop.astype({"Slave Pop":"int"})
 
-            fig = px.choropleth(state_pop, geojson=states_gj, locations='State', #map_gj or states_gj
+            state_pop_adj = state_pop.copy()
+                
+            if slidermax != state_pop["Slave Pop"].max(): 
+                    slider =  dcc.RangeSlider(min = 0, 
+                                      max = state_pop["Slave Pop"].max(), 
+                                      id = "slider"
+                                    )
+            else:
+                    slider =  dcc.RangeSlider(min = 0,   
+                                      max = state_pop["Sla ve Pop"].max(), 
+                                      value=[sliderrange[0], sliderrange[1]],
+                                      id = "slider"
+                                    )
+                    state_pop_adj = state_pop[state_pop['Slave Pop'].between(sliderrange[0], sliderrange[1], inclusive="both")]
+
+            fig = px.choropleth(state_pop_adj, geojson=states_gj, locations='State', #map_gj vs states_gj
                             #locationmode='USA-states',  #only highlights first alphabetical county
                             color='Slave Pop',
                             color_continuous_scale="Viridis",
@@ -774,7 +789,6 @@ def handle_state_dropdown(state, county, option, map_type, border_type, sliderra
                             hover_name="State",
                             hover_data=["Slave Pop"]
                         )   
-            slider =  dcc.RangeSlider(0, 20, value=[5, 15], id = "slider")
 
         elif map_type == 'Debt Distribution':
             # Create the debt distribution map
