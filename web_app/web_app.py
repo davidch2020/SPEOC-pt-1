@@ -948,7 +948,7 @@ def handle_state_dropdown(state, county, option, map_type, border_type, sliderra
 
             slider =  dcc.RangeSlider(six_p_tot.min(), six_p_tot.max(), value=[six_p_tot.min(), six_p_tot.max()], id = "slider")
         
-        return [dcc.Graph(figure = fig, id = 'my-map'), slider]
+        return dcc.Graph(figure = fig, id = 'my-map'), [slider, 'You have selected "{}"'.format(sliderrange)]
         
     else: # option is table
         # Display the DataFrame as a table
