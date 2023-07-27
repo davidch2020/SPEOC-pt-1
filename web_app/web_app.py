@@ -902,7 +902,7 @@ def handle_state_dropdown(state, county, option, map_type, border_type, sliderra
             if border_type == "Countywide":
                 
                 county_debt_geo_adj = county_debt_geo.copy()
-                if slidermax != county_debt_geo["density"].max(): 
+                if slidermax != round(county_debt_geo["density"].max(), 2): 
                         slider =  dcc.RangeSlider(min = 0, 
                                       max = round(county_debt_geo["density"].max(), 2), 
                                       id = "slider"
@@ -936,7 +936,7 @@ def handle_state_dropdown(state, county, option, map_type, border_type, sliderra
 
             elif border_type == "Statewide":
                 state_sixp_agg_adj = state_sixp_agg.copy()
-                if slidermax != state_sixp_agg["density"].max(): 
+                if slidermax != round(state_sixp_agg["density"].max(),2): 
                         slider =  dcc.RangeSlider(min = 0, 
                                       max = round(state_sixp_agg["density"].max(), 2), 
                                       id = "slider"
