@@ -950,7 +950,7 @@ def handle_state_dropdown(state, county, option, map_type, border_type, sliderra
                         state_sixp_agg_adj = state_sixp_agg[state_sixp_agg['density'].between(sliderrange[0], sliderrange[1], inclusive="both")]
 
                 
-                fig = px.choropleth(state_sixp_agg, geojson=states_gj, locations='state', 
+                fig = px.choropleth(state_sixp_agg_adj, geojson=states_gj, locations='state', 
                     color='density',
                     color_continuous_scale="Viridis",
                     range_color=(state_sixp_agg['density'].min(), 
