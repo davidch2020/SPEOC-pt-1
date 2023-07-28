@@ -803,8 +803,8 @@ def handle_state_dropdown(state, county, option, map_type, border_type, sliderra
 
             #print(six_p_tot[six_p_tot.between(six_p_tot.quantile(.85), six_p_tot.quantile(1))])
 
-            Q1 = np.percentile(county_debt_geo['6p_total'], 25, method='midpoint')
-            Q3 = np.percentile(county_debt_geo['6p_total'], 75, method='midpoint')
+            Q1 = np.percentile(county_debt_geo['6p_total'].astype(int), 25, method='midpoint')
+            Q3 = np.percentile(county_debt_geo['6p_total'].astyoe(int), 75, method='midpoint')
             IQR = Q3 - Q1 
 
             # Above Upper bound
