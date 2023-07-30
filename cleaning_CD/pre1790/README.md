@@ -17,35 +17,44 @@ The goal of this exercise was to clean the names of the individuals in the pre-1
 Run code cells from top-to-bottom. Here are the different sections of my code. Detailed steps are in the section headers of ```clean_names_david.ipynb```. 
 
 ### Before Cleaning
-**Goal**: Import all libraries and files. 
-**Input**: ```final_agg_debt.csv``` type: CSV file
+**Goal**: Import all libraries and files. <br>
+**Input**: ```final_agg_debt.csv``` type: CSV file <br>
 **Output**: ```agg_debt``` type: Pandas dataframe
 
 ### Documenting Changes
-**Goal**: We need to document changes we make to agg_debt.csv in a separate dataframe: name_changes. This way, we can double-check whether those changes were appropriate.
-**Input**: No inputs. 
+**Goal**: We need to document changes we make to agg_debt.csv in a separate dataframe: name_changes. This way, we can double-check whether those changes were appropriate. <br>
+**Input**: No inputs. <br>
 **Output**: ```name_changes``` type: Pandas dataframe
 
 [Add columns here]
 
 ### Company Names
-**Goal**: Some debt entries are actually company names or represent a group of people (example: ```James Vernon & Co.```).
+**Goal**: Some debt entries are actually company names or represent a group of people (example: ```James Vernon & Co.```).<br>
 
 [Add examples of company debt entries here]
 
-**Input**: ```agg_debt```, ```name_changes```
+**Input**: ```agg_debt```, ```name_changes```<br>
 **Output**: ```agg_debt```: Company names changed to people's names, ```name_changes``` + Company names
 
 [Add example output here]
 
 ### Cleaning Entries with Two Names
-<b>Goal: </b>There are debt entries that have two names in a single cell: ```NY_2422: Messes Williamson & Beckman```. The plan is to split the name across the first name and last name columns. 
+<b>Goal: </b>There are debt entries that have two names in a single cell: ```NY_2422: Messes Williamson & Beckman```. The plan is to split the name across the first name and last name columns. <br>
 
 [Add examples here]
 
-**Input**: ```agg_debt```, ```name_changes```
-**Output**: ```agg_debt```: Debt entries with two names reformatted, ```name_changes``` + Debt entries with two names 
+**Input**: ```agg_debt```, ```name_changes``` <br>
+**Output**: ```agg_debt```: Debt entries with two names reformatted, ```name_changes``` + Debt entries with two names
 
+### Grouping Consecutive Names
+<b>Goal: </b> By grouping consecutive names, standardizing names using Ancestry will go faster. <br>
+
+[Add example here]
+
+**Input**:```agg_debt``` (as ```og_df```) <br>
+**Output**: ```agg_debt``` (as ```agg_df```): Consecutive names grouped together 
+
+[Add expected output here] 
 
 
 
