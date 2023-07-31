@@ -567,7 +567,7 @@ def display_border_drpdwn(reg_value, state_value, county_value):
     Input("reg_drpdwn", "value")]
 )
 def display_heatmap_drpdwn(border_value, region_value):
-    if (region_value == "Not Selected") and (region_value is None):
+    if (region_value == "Not Selected") or (region_value is None):
         return ''
     if (border_value != "Not Selected") and (border_value is not None):
         heatmap_drpdwn_title = html.H5(children="Pick a Heatmap", id="heatmap_drpdwn_t")
