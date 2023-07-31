@@ -479,21 +479,21 @@ def update_project_desc(left_clicks, right_clicks):
 )
 def display_state_drpdwn(value):
     if value == "State":
-        state_drpdwn_title = html.H5(children="Pick a State", id="state_drpdwn_t", style = {"align-items": "right"}) #"margin-left": "200px"
+        state_drpdwn_title = html.H5(children="Pick a State", id="state_drpdwn_t", style = {"float": "right"}) #"margin-left": "200px"
         state_drp = dcc.Dropdown(
             id="states_drpdwn",
             options=states,
             value=states[0],
-            style = {'width': '70%', "align-items": "right"}#{'width': '70%', "margin-left": "100px"} 
+            style = {'width': '70%', "float": "right"}#{'width': '70%', "margin-left": "100px"} 
         )
         return state_drpdwn_title, state_drp 
     if value == "County":
-        state_drpdwn_title = html.H5(children="State of Your County", id="state_drpdwn_t", style = {"align-items": "right"}) #"margin-left": "200px"
+        state_drpdwn_title = html.H5(children="State of Your County", id="state_drpdwn_t", style = {"float": "right"}) #"margin-left": "200px"
         state_drp = dcc.Dropdown(
             id="states_drpdwn",
             options=states,
             value=states[0],
-            style = {'width': '70%', "align-items": "right"} #{'width': '70%', "margin-left": "100px"}
+            style = {'width': '70%', "float": "right"} #{'width': '70%', "margin-left": "100px"}
         )
         return state_drpdwn_title, state_drp 
     else:
@@ -511,12 +511,12 @@ def display_county_drpdwn(state_value, reg_value):
     if (state_value != "All States") and (state_value is not None):
         counties = map_df.query("state==" + "'" + state_value + "'")["county"].tolist()
         counties.insert(0, "All Counties")
-        county_drpdwn_title = html.H5(children="Choose a County", id="county_drpdwn_t", style = {"align-items": "right"}) #"margin-left": "200px"
+        county_drpdwn_title = html.H5(children="Choose a County", id="county_drpdwn_t", style = {"float": "right"}) #"margin-left": "200px"
         county_drp = dcc.Dropdown(
             id="county_drpdwn",
             options=counties,
             value=counties[0],
-            style = {'width': '70%', "align-items": "right"} #"margin-left": "100px"
+            style = {'width': '70%', "float": "right"} #"margin-left": "100px"
         )
         return county_drpdwn_title, county_drp 
     else:
@@ -567,7 +567,7 @@ def display_border_drpdwn(reg_value, state_value, county_value):
     Input("reg_drpdwn", "value")]
 )
 def display_heatmap_drpdwn(border_value, region_value):
-    if region_value == "Not Selected":
+    if (region_value == "Not Selected") and (region_value is not None):
         return ''
     if (border_value != "Not Selected") and (border_value is not None):
         heatmap_drpdwn_title = html.H5(children="Pick a Heatmap", id="heatmap_drpdwn_t")
