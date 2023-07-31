@@ -484,7 +484,8 @@ def display_state_drpdwn(value):
             id="states_drpdwn",
             options=states,
             value=states[0],
-            style = {'width': '70%', "float": "right"}#{'width': '70%', "margin-left": "100px"} 
+            align_end=True,
+            style = {'width': '70%'}#{'width': '70%', "margin-left": "100px"} 
         )
         return state_drpdwn_title, state_drp 
     if value == "County":
@@ -493,7 +494,8 @@ def display_state_drpdwn(value):
             id="states_drpdwn",
             options=states,
             value=states[0],
-            style = {'width': '70%', "float": "right"} #{'width': '70%', "margin-left": "100px"}
+            align_end=True,
+            style = {'width': '70%'} #{'width': '70%', "margin-left": "100px"}
         )
         return state_drpdwn_title, state_drp 
     else:
@@ -516,7 +518,8 @@ def display_county_drpdwn(state_value, reg_value):
             id="county_drpdwn",
             options=counties,
             value=counties[0],
-            style = {'width': '70%', "float": "right"} #"margin-left": "100px"
+            align_end=True,
+            style = {'width': '70%'} #"margin-left": "100px"
         )
         return county_drpdwn_title, county_drp 
     else:
@@ -567,7 +570,7 @@ def display_border_drpdwn(reg_value, state_value, county_value):
     Input("reg_drpdwn", "value")]
 )
 def display_heatmap_drpdwn(border_value, region_value):
-    if (region_value == "Not Selected") and (region_value is not None):
+    if (region_value == "Not Selected") and (region_value is None):
         return ''
     if (border_value != "Not Selected") and (border_value is not None):
         heatmap_drpdwn_title = html.H5(children="Pick a Heatmap", id="heatmap_drpdwn_t")
