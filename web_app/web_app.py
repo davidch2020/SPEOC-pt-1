@@ -733,7 +733,6 @@ def handle_state_dropdown(state, county, option, map_type, border_type, sliderra
                 else:
                     slider =  dcc.RangeSlider(min = 0,   
                                       max = state_pops["Total Pop"].max(), 
-                                      #step= 10000, 
                                       value=[sliderrange[0], sliderrange[1]],
                                       id = "slider"
                                     )
@@ -859,7 +858,7 @@ def handle_state_dropdown(state, county, option, map_type, border_type, sliderra
             print(xmid)
 
 
-            if border_type == "Countywide":
+            if border_type == "Countywide": #automatic rounding issue
                 
                 county_debt_geo_adj = county_debt_geo.copy()
                 if slidermax != county_debt_geo["6p_total"].max(): 
@@ -920,7 +919,6 @@ def handle_state_dropdown(state, county, option, map_type, border_type, sliderra
                                     hover_name="state",
                                     hover_data=["6p_total"]
                                )
-            #slider =  dcc.RangeSlider(0, 20, value=[5, 15], id = "slider")
 
         elif map_type == 'Debt Density':
             # Create county map
