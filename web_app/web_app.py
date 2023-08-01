@@ -983,6 +983,9 @@ def handle_state_dropdown(state, county, option, map_type, border_type, sliderra
                                       id = "slider"
                                     )
                         state_sixp_agg_adj = state_sixp_agg[state_sixp_agg['density'].between(sliderrange[0], sliderrange[1], inclusive="both")]
+                        print(sliderrange[0])
+                        print(sliderrange[1])
+                        print(state_sixp_agg["density"].max())
 
                 
                 fig = px.choropleth(state_sixp_agg_adj, geojson=states_gj, locations='state', 
