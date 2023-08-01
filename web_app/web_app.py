@@ -900,7 +900,7 @@ def handle_state_dropdown(state, county, option, map_type, border_type, sliderra
                                       max = state_sixp_agg["6p_total"].max(), 
                                       id = "slider"
                                     )
-                    else:
+                else:
                         slider =  dcc.RangeSlider(min = 0,   
                                       max = state_sixp_agg["6p_total"].max(), 
                                       value=[sliderrange[0], sliderrange[1]],
