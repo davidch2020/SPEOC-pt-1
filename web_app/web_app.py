@@ -782,7 +782,7 @@ def handle_state_dropdown(state, county, option, map_type, border_type, sliderra
                                     basemap_visible=basemap_visible,
                                     fitbounds=fitbounds,
                                     hover_name="State",
-                                    hover_data= round(["National"],2)
+                                    hover_data= ["National"]
                                )
                 
                 
