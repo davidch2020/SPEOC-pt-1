@@ -971,14 +971,14 @@ def handle_state_dropdown(state, county, option, map_type, border_type, sliderra
 
             elif border_type == "Statewide":
                 state_sixp_agg_adj = state_sixp_agg.copy()#.round(2)
-                if slidermax != state_sixp_agg["density"].max():  
-                        slider =  dcc.RangeSlider(min = 0, 
-                                      max = state_sixp_agg["density"].max(), 
+                if slidermax != state_sixp_agg["density"].max().ceil():  #round up. Otherwise, slider automatically rounds to 2 places 
+                        slider =  dcc.RangeSlider(min = 0,                #in this case, it will round down without ceil(), which then eliminates the max value
+                                      max = state_sixp_agg["density"].max().ceil(), 
                                       id = "slider"
                                     )
                 else:
                         slider =  dcc.RangeSlider(min = 0,   
-                                      max = state_sixp_agg["density"].max(), 
+                                      max = state_sixp_agg["density"].max().ceil(), 
                                       value=[sliderrange[0], sliderrange[1]],
                                       id = "slider"
                                     )
