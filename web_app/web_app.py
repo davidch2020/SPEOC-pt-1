@@ -623,15 +623,15 @@ def handle_state_dropdown(state, county, option, map_type, border_type, sliderra
         if (map_type == "Not Selected") or (map_type is None):
             return '', rangeslider
 
-        if (state != "All States" and state != None):
+        if (state != "All States") and (state is not None):
             if border_type == "Countywide":
                 map_df_c = map_df_c.loc[map_df['state'] == state]
-            if border_type == "Statewide":
+            if border_type == "Statewide" or border_type == "Nationwide":
                 state_map_df_c = state_map_df_c.loc[state_map_df['state']==state]
             fitbounds = "locations"
             basemap_visible = False
 
-        if (county != "All Counties" and county != None):
+        if (county != "All Counties") and (county is not None):
             map_df_c = map_df_c.loc[map_df_c['county'] == county]
 
         # save as a geojson
@@ -728,7 +728,6 @@ def handle_state_dropdown(state, county, option, map_type, border_type, sliderra
                 if slidermax != state_pops["Total Pop"].max(): 
                     slider =  dcc.RangeSlider(min = 0, 
                                       max = state_pops["Total Pop"].max(), 
-                                      #step= 10000, 
                                       id = "slider"
                                     )
                 else:
@@ -752,6 +751,42 @@ def handle_state_dropdown(state, county, option, map_type, border_type, sliderra
                                     hover_name="State",
                                     hover_data=["Total Pop"]
                                )
+                
+            elif border_type == "Nationwide":
+                
+                nat_pops = state_pops.copy()
+
+                nat_val = state_pops["Total Pop"].sum()
+                national = [nat_val]*15
+                nat_pops["National"] = national
+
+                if slidermax != nat_val: 
+                    slider =  dcc.RangeSlider(min = 0, 
+                                      max = state_pops["Total Pop"].sum(), 
+                                      id = "slider"
+                                    )
+                else:
+                    slider =  dcc.RangeSlider(min = 0,   
+                                      max = nat_val, 
+                                      value=[sliderrange[0], sliderrange[1]],
+                                      id = "slider"
+                                    )
+                    nat_pops = nat_pops[nat_pops['National'].between(sliderrange[0], sliderrange[1], inclusive="both")]
+
+                fig = px.choropleth(nat_pops, geojson=states_gj, locations='State', 
+                                    color='National',
+                                    color_continuous_scale="Viridis",
+                                    range_color=(0, nat_val),
+                                    featureidkey="properties.state",
+                                    scope="usa",
+                                    basemap_visible=basemap_visible,
+                                    fitbounds=fitbounds,
+                                    hover_name="State",
+                                    hover_data=["National"]
+                               )
+                
+                
+                
 
         elif map_type == 'Slave Population': #only uses statewide data so far...but check the county data later
             
