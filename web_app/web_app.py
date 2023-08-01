@@ -911,8 +911,8 @@ def handle_state_dropdown(state, county, option, map_type, border_type, sliderra
                 fig = px.choropleth(state_sixp_agg_adj, geojson=states_gj, locations='state', 
                                     color='6p_total',
                                     color_continuous_scale="Viridis",
-                                    range_color=(state_sixp_agg["count"].min(), 
-                                                state_sixp_agg["count"].max()),
+                                    range_color=(state_sixp_agg["6p_total"].min(), #count --> 6p_total
+                                                state_sixp_agg["6p_total"].max()),
                                     featureidkey="properties.state_abrev",
                                     scope="usa",
                                     basemap_visible=basemap_visible,
