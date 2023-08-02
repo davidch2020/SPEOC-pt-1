@@ -696,13 +696,11 @@ def handle_state_dropdown(state, county, option, map_type, border_type, sliderra
                 if slidermax != county_pops["Population"].max(): #when the map is loaded for the first time, maximum value will not match county_pops["Population"].max()
                     slider =  dcc.RangeSlider(min = 0,  
                                       max = county_pops["Population"].max(), 
-                                      #step= 10000, 
                                       id = "slider"
                                     )
                 else: #otherwise, this is the case where the map was not loaded for the first time, and the user just adjusted the rangeslider
                     slider =  dcc.RangeSlider(min = 0,   
                                       max = county_pops["Population"].max(), 
-                                      #step= 10000, 
                                       value=[sliderrange[0], sliderrange[1]],
                                       id = "slider"
                                     )
@@ -858,17 +856,19 @@ def handle_state_dropdown(state, county, option, map_type, border_type, sliderra
             print(xmid)
 
 
-            if border_type == "Countywide": #automatic rounding issue
+            if border_type == "Countywide": #automatic rounding issue. See explanation in debt density section
+                
+                ceiling_var = county_debt_geo["6p_total"].max() + 1000 #so that the slider does not round down and exclude the actual max value
                 
                 county_debt_geo_adj = county_debt_geo.copy()
-                if slidermax != county_debt_geo["6p_total"].max(): 
+                if slidermax != ceiling_var: 
                     slider =  dcc.RangeSlider(min = 0, 
-                                      max = county_debt_geo["6p_total"].max(), 
+                                      max = ceiling_var, 
                                       id = "slider"
                                     )
                 else:
                     slider =  dcc.RangeSlider(min = 0,   
-                                      max = county_debt_geo["6p_total"].max(), 
+                                      max = ceiling_var, 
                                       value=[sliderrange[0], sliderrange[1]],
                                       id = "slider"
                                     )
@@ -968,9 +968,9 @@ def handle_state_dropdown(state, county, option, map_type, border_type, sliderra
                 )
 
             elif border_type == "Statewide":
-                state_sixp_agg_adj = state_sixp_agg.copy()#.round(2)
+                state_sixp_agg_adj = state_sixp_agg.copy()
                 if slidermax != math.ceil(state_sixp_agg["density"].max()):  #round up. Otherwise, slider automatically rounds to 2 places 
-                        slider =  dcc.RangeSlider(min = 0,                #in this case, it will round down without ceil(), which then eliminates the max value
+                        slider =  dcc.RangeSlider(min = 0,                # Without ceil(), it will round down, which then eliminates the max value
                                       max = math.ceil(state_sixp_agg["density"].max()), 
                                       id = "slider"
                                     )
@@ -981,9 +981,6 @@ def handle_state_dropdown(state, county, option, map_type, border_type, sliderra
                                       id = "slider"
                                     )
                         state_sixp_agg_adj = state_sixp_agg[state_sixp_agg['density'].between(sliderrange[0], sliderrange[1], inclusive="both")]
-                        print(sliderrange[0])
-                        print(sliderrange[1])
-                        print(state_sixp_agg["density"].max())
 
                 
                 fig = px.choropleth(state_sixp_agg_adj, geojson=states_gj, locations='state', 
