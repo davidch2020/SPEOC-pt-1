@@ -785,6 +785,7 @@ def handle_state_dropdown(state, county, option, map_type, border_type, sliderra
             county_slaves['GISJOIN'] = county_slaves['GISJOIN'].str.replace('G', '') #convert to geo_fips
             county_slaves.rename(columns = {'GISJOIN':'Geo_FIPS'}, inplace = True)
             merged = pd.merge(county_pops, county_slaves, on=['Geo_FIPS'])
+            merged = merged[["Geo_FIPS", "slavePopulation", "County"]]
             #print(merged)
 
             state_pop = gpd.read_file("../data_raw/census_data/statepop.csv")
