@@ -814,7 +814,7 @@ def handle_state_dropdown(state, county, option, map_type, border_type, sliderra
 
                 fig = px.choropleth(county_slaves_adj, geojson=map_gj, locations='Geo_FIPS', 
                         color='slavePopulation',
-                        color_continuous_scale="Viridis",
+                        #color_continuous_scale="Viridis",
                         range_color=(merged["slavePopulation"].min(), 
                                     merged["slavePopulation"].max()),
                         featureidkey="properties.Geo_FIPS",
@@ -822,7 +822,12 @@ def handle_state_dropdown(state, county, option, map_type, border_type, sliderra
                         basemap_visible=basemap_visible,
                         fitbounds=fitbounds,
                         hover_name="County",
-                        hover_data=["slavePopulation"]
+                        hover_data=["slavePopulation"],
+                        color_continuous_scale=[[0, 'rgb(240,240,240)'],
+                                [0.1, 'rgb(126, 191, 113)'],
+                                [0.2, 'rgb(91, 161, 77)'],
+                                [0.75, 'rgb(227, 72, 54)'],
+                                [1, 'rgb(227, 26, 28)']]
                     )
 
 
