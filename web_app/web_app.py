@@ -771,7 +771,7 @@ def handle_state_dropdown(state, county, option, map_type, border_type, sliderra
                 
                 
 
-        elif map_type == 'Slave Population': #only uses statewide data so far...but check the county data later
+        elif map_type == 'Slave Population': 
             
             #basemap_visible = True
             county_pops = pd.read_csv("../data_raw/census_data/countyPopulation.csv", header=1)
@@ -785,20 +785,51 @@ def handle_state_dropdown(state, county, option, map_type, border_type, sliderra
             county_slaves['GISJOIN'] = county_slaves['GISJOIN'].str.replace('G', '') #convert to geo_fips
             county_slaves.rename(columns = {'GISJOIN':'Geo_FIPS'}, inplace = True)
             merged = pd.merge(county_pops, county_slaves, on=['Geo_FIPS'])
-            print(merged)
+            #print(merged)
 
             state_pop = gpd.read_file("../data_raw/census_data/statepop.csv")
             state_pop = state_pop[["State", "Slave Pop"]].head(15)
             state_pop = state_pop.astype({"Slave Pop":"int"})
 
-            state_pop_adj = state_pop.copy()
+            if border_type == "Countywide":
+                county_slaves_adj = merged.copy()
+
+                if slidermax != merged["slavePopulation"].max(): 
+                    slider =  dcc.RangeSlider(min = 0, 
+                                      max = state_pop["slavePopulation"].max(), 
+                                      id = "slider"
+                                    )
+                else:
+                    slider =  dcc.RangeSlider(min = 0,   
+                                      max = state_pop["slavePopulation"].max(), 
+                                      value=[sliderrange[0], sliderrange[1]],
+                                      id = "slider"
+                                    )
+                    county_slaves_adj = merged[merged['slavePopulation'].between(sliderrange[0], sliderrange[1], inclusive="both")]
+
+                fig = px.choropleth(county_slaves_adj, geojson=map_gj, locations='Geo_FIPS', 
+                        color='slavePopulation',
+                        color_continuous_scale="Viridis",
+                        range_color=(merged["slavePopulation"].min(), 
+                                    merged["slavePopulation"].max()),
+                        featureidkey="properties.Geo_FIPS",
+                        scope="usa",
+                        basemap_visible=basemap_visible,
+                        fitbounds=fitbounds,
+                        hover_name="County",
+                        hover_data=["slavePopulation"],
+                    )
+
+
+            elif border_type == "Statewide":
+                state_pop_adj = state_pop.copy()
                 
-            if slidermax != state_pop["Slave Pop"].max(): 
+                if slidermax != state_pop["Slave Pop"].max(): 
                     slider =  dcc.RangeSlider(min = 0, 
                                       max = state_pop["Slave Pop"].max(), 
                                       id = "slider"
                                     )
-            else:
+                else:
                     slider =  dcc.RangeSlider(min = 0,   
                                       max = state_pop["Slave Pop"].max(), 
                                       value=[sliderrange[0], sliderrange[1]],
@@ -806,8 +837,7 @@ def handle_state_dropdown(state, county, option, map_type, border_type, sliderra
                                     )
                     state_pop_adj = state_pop[state_pop['Slave Pop'].between(sliderrange[0], sliderrange[1], inclusive="both")]
 
-            fig = px.choropleth(state_pop_adj, geojson=states_gj, locations='State', #map_gj vs states_gj
-                            #locationmode='USA-states',  #only highlights first alphabetical county
+                fig = px.choropleth(state_pop_adj, geojson=states_gj, locations='State', #map_gj vs states_gj
                             color='Slave Pop',
                             color_continuous_scale="Viridis",
                             range_color=(state_pop['Slave Pop'].min(), 
