@@ -774,6 +774,18 @@ def handle_state_dropdown(state, county, option, map_type, border_type, sliderra
         elif map_type == 'Slave Population': #only uses statewide data so far...but check the county data later
             
             #basemap_visible = True
+            county_pops = pd.read_csv("../data_raw/census_data/countyPopulation.csv", header=1)
+            county_pops = county_pops[county_pops["SE_T001_001"].notna()]
+            county_pops = county_pops.astype({"SE_T001_001":"int", "Geo_FIPS":"str"})
+            county_pops.rename(columns = {'SE_T001_001':'Population', "Geo_name":"County"}, inplace = True)
+
+            county_slaves = gpd.read_file("../data_raw/census_data/census.csv")
+            county_slaves = county_slaves[["GISJOIN", "slavePopulation"]].head(290)
+            county_slaves['GISJOIN'] = county_slaves['GISJOIN'].str.replace('G0', '')
+            county_slaves['GISJOIN'] = county_slaves['GISJOIN'].str.replace('G', '') #convert to geo_fips
+            county_slaves.rename(columns = {'GISJOIN':'Geo_FIPS'}, inplace = True)
+            merged = pd.merge(county_pops, county_slaves, on=['Geo_FIPS'])
+            print(merged)
 
             state_pop = gpd.read_file("../data_raw/census_data/statepop.csv")
             state_pop = state_pop[["State", "Slave Pop"]].head(15)
