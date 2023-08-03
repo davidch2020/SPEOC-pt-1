@@ -580,20 +580,6 @@ def display_heatmap_drpdwn(border_value, region_value):
     else:
         return ''
 
-'''@app.callback(
-        Output('range-slider', 'children', allow_duplicate=True),
-        Input('slider', 'value'),
-        Input('slider', 'max'),
-        prevent_initial_call = True
-)
-
-def display_slider_vals(value, max):
-    if max != 10: #prevent from printing initial slider
-        return 'You have selected "{}"'.format(value)  
-    else:
-        return ''
-'''
-
 @app.callback(
         Output('right-tab-content', 'children'),
         Output('range-slider', 'children'),
@@ -787,7 +773,7 @@ def handle_state_dropdown(state, county, option, map_type, border_type, sliderra
 
         elif map_type == 'Slave Population': #only uses statewide data so far...but check the county data later
             
-            basemap_visible = True
+            #basemap_visible = True
 
             state_pop = gpd.read_file("../data_raw/census_data/statepop.csv")
             state_pop = state_pop[["State", "Slave Pop"]].head(15)
