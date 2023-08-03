@@ -793,6 +793,9 @@ def handle_state_dropdown(state, county, option, map_type, border_type, sliderra
 
             if border_type == "Countywide":
                 county_slaves_adj = merged.copy()
+                
+                with pd.option_context('display.max_rows', None, 'display.max_columns', None):  # more options can be specified also
+                    print(county_slaves_adj)
 
                 if slidermax != merged["slavePopulation"].max(): 
                     slider =  dcc.RangeSlider(min = 0, 
@@ -817,7 +820,7 @@ def handle_state_dropdown(state, county, option, map_type, border_type, sliderra
                         basemap_visible=basemap_visible,
                         fitbounds=fitbounds,
                         hover_name="County",
-                        hover_data=["slavePopulation"],
+                        hover_data=["slavePopulation"]
                     )
 
 
