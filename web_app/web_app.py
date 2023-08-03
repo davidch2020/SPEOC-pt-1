@@ -796,12 +796,12 @@ def handle_state_dropdown(state, county, option, map_type, border_type, sliderra
 
                 if slidermax != merged["slavePopulation"].max(): 
                     slider =  dcc.RangeSlider(min = 0, 
-                                      max = state_pop["slavePopulation"].max(), 
+                                      max = merged["slavePopulation"].max(), 
                                       id = "slider"
                                     )
                 else:
                     slider =  dcc.RangeSlider(min = 0,   
-                                      max = state_pop["slavePopulation"].max(), 
+                                      max = merged["slavePopulation"].max(), 
                                       value=[sliderrange[0], sliderrange[1]],
                                       id = "slider"
                                     )
