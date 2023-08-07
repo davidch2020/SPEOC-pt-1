@@ -766,9 +766,7 @@ def handle_state_dropdown(state, county, option, map_type, border_type, sliderra
                                     fitbounds=fitbounds,
                                     hover_name="State",
                                     hover_data= ["National"]
-                               )
-                
-                
+                               )        
                 
 
         elif map_type == 'Slave Population': 
@@ -858,7 +856,40 @@ def handle_state_dropdown(state, county, option, map_type, border_type, sliderra
                             fitbounds=fitbounds,
                             hover_name="State",
                             hover_data=["Slave Pop"]
-                        )   
+                        ) 
+
+            elif border_type == "Nationwide":
+                
+                nat_slave = state_pop.copy()
+
+                nat_val = state_pop["Slave Pop"].sum()
+                national = [nat_val]*15
+                nat_slave["National"] = national
+
+                if slidermax != nat_val: 
+                    slider =  dcc.RangeSlider(min = 0, 
+                                      max = nat_val, 
+                                      id = "slider"
+                                    )
+                else:
+                    slider =  dcc.RangeSlider(min = 0,   
+                                      max = nat_val, 
+                                      value=[sliderrange[0], sliderrange[1]],
+                                      id = "slider"
+                                    )
+                    nat_slave = nat_slave[nat_slave['National'].between(sliderrange[0], sliderrange[1], inclusive="both")]
+
+                fig = px.choropleth(nat_slave, geojson=states_gj, locations='State', 
+                                    color='National',
+                                    color_continuous_scale="Viridis",
+                                    range_color=(0, nat_val),
+                                    featureidkey="properties.state",
+                                    scope="usa",
+                                    basemap_visible=basemap_visible,
+                                    fitbounds=fitbounds,
+                                    hover_name="State",
+                                    hover_data= ["National"]
+                               )        
 
         elif map_type == 'Debt Distribution':
             # Create the debt distribution map
@@ -960,6 +991,39 @@ def handle_state_dropdown(state, county, option, map_type, border_type, sliderra
                                     hover_name="state",
                                     hover_data=["6p_total"]
                                )
+                
+            elif border_type == "Nationwide":
+                
+                nat_dist = state_sixp_agg.copy()
+
+                nat_val = state_sixp_agg["6p_total"].sum()
+                national = [nat_val]*15
+                nat_dist["National"] = national
+
+                if slidermax != nat_val: 
+                    slider =  dcc.RangeSlider(min = 0, 
+                                      max = nat_val, 
+                                      id = "slider"
+                                    )
+                else:
+                    slider =  dcc.RangeSlider(min = 0,   
+                                      max = nat_val, 
+                                      value=[sliderrange[0], sliderrange[1]],
+                                      id = "slider"
+                                    )
+                    nat_dist = nat_dist[nat_dist['National'].between(sliderrange[0], sliderrange[1], inclusive="both")]
+
+                fig = px.choropleth(nat_dist, geojson=states_gj, locations='State', 
+                                    color='National',
+                                    color_continuous_scale="Viridis",
+                                    range_color=(0, nat_val),
+                                    featureidkey="properties.state",
+                                    scope="usa",
+                                    basemap_visible=basemap_visible,
+                                    fitbounds=fitbounds,
+                                    hover_name="state",
+                                    hover_data= ["National"]
+                               )        
 
         elif map_type == 'Debt Density':
             # Create county map
@@ -1036,6 +1100,40 @@ def handle_state_dropdown(state, county, option, map_type, border_type, sliderra
                     hover_name="state",
                     hover_data=["density"]
                 )
+                
+            elif border_type == "Nationwide":
+                
+                nat_dens = state_sixp_agg.copy()
+
+                nat_val = (state_sixp_agg["6p_total"].sum())/(state_sixp_agg["population"].sum())
+                national = [nat_val]*15
+                nat_dens["National"] = national
+
+                if slidermax != nat_val: 
+                    slider =  dcc.RangeSlider(min = 0, 
+                                      max = nat_val, 
+                                      id = "slider"
+                                    )
+                else:
+                    slider =  dcc.RangeSlider(min = 0,   
+                                      max = nat_val, 
+                                      value=[sliderrange[0], sliderrange[1]],
+                                      id = "slider"
+                                    )
+                    nat_dens = nat_dens[nat_dens['National'].between(sliderrange[0], sliderrange[1], inclusive="both")]
+
+                fig = px.choropleth(nat_dens, geojson=states_gj, locations='State', 
+                                    color='National',
+                                    color_continuous_scale="Viridis",
+                                    range_color=(0, nat_val),
+                                    featureidkey="properties.state",
+                                    scope="usa",
+                                    basemap_visible=basemap_visible,
+                                    fitbounds=fitbounds,
+                                    hover_name="state",
+                                    hover_data= ["National"]
+                               )        
+            
 
 
         elif map_type == 'Average Debt Holdings':
@@ -1109,6 +1207,39 @@ def handle_state_dropdown(state, county, option, map_type, border_type, sliderra
                     hover_name="state",
                     hover_data=["mean_6p_held"]
                 )
+                
+            elif border_type == "Nationwide":
+                
+                nat_avg = state_sixp_agg.copy()
+
+                nat_val = (state_sixp_agg["6p_total"].sum())/(state_sixp_agg["count"].sum())
+                national = [nat_val]*15
+                nat_dens["National"] = national
+
+                if slidermax != nat_val: 
+                    slider =  dcc.RangeSlider(min = 0, 
+                                      max = nat_val, 
+                                      id = "slider"
+                                    )
+                else:
+                    slider =  dcc.RangeSlider(min = 0,   
+                                      max = nat_val, 
+                                      value=[sliderrange[0], sliderrange[1]],
+                                      id = "slider"
+                                    )
+                    nat_avg = nat_avg[nat_avg['National'].between(sliderrange[0], sliderrange[1], inclusive="both")]
+
+                fig = px.choropleth(nat_avg, geojson=states_gj, locations='State', 
+                                    color='National',
+                                    color_continuous_scale="Viridis",
+                                    range_color=(0, nat_val),
+                                    featureidkey="properties.state",
+                                    scope="usa",
+                                    basemap_visible=basemap_visible,
+                                    fitbounds=fitbounds,
+                                    hover_name="state",
+                                    hover_data= ["National"]
+                               )    
         
         return dcc.Graph(figure = fig, id = 'my-map'), [slider, 'You have selected "{}"'.format(sliderrange)]
         
