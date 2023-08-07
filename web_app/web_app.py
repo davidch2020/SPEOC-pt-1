@@ -997,7 +997,7 @@ def handle_state_dropdown(state, county, option, map_type, border_type, sliderra
                 nat_dist = state_sixp_agg.copy()
 
                 nat_val = state_sixp_agg["6p_total"].sum()
-                national = [nat_val]*15
+                national = [nat_val]*14
                 nat_dist["National"] = national
 
                 if slidermax != nat_val: 
@@ -1106,7 +1106,7 @@ def handle_state_dropdown(state, county, option, map_type, border_type, sliderra
                 nat_dens = state_sixp_agg.copy()
 
                 nat_val = (state_sixp_agg["6p_total"].sum())/(state_sixp_agg["population"].sum())
-                national = [nat_val]*15
+                national = [nat_val]*14
                 nat_dens["National"] = national
 
                 if slidermax != nat_val: 
@@ -1213,8 +1213,8 @@ def handle_state_dropdown(state, county, option, map_type, border_type, sliderra
                 nat_avg = state_sixp_agg.copy()
 
                 nat_val = (state_sixp_agg["6p_total"].sum())/(state_sixp_agg["count"].sum())
-                national = [nat_val]*15
-                nat_dens["National"] = national
+                national = [nat_val]*14
+                nat_avg["National"] = national
 
                 if slidermax != nat_val: 
                     slider =  dcc.RangeSlider(min = 0, 
