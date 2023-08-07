@@ -1013,11 +1013,11 @@ def handle_state_dropdown(state, county, option, map_type, border_type, sliderra
                                     )
                     nat_dist = nat_dist[nat_dist['National'].between(sliderrange[0], sliderrange[1], inclusive="both")]
 
-                fig = px.choropleth(nat_dist, geojson=states_gj, locations='State', 
+                fig = px.choropleth(nat_dist, geojson=states_gj, locations='state', 
                                     color='National',
                                     color_continuous_scale="Viridis",
                                     range_color=(0, nat_val),
-                                    featureidkey="properties.state",
+                                    featureidkey="properties.state_abrev",
                                     scope="usa",
                                     basemap_visible=basemap_visible,
                                     fitbounds=fitbounds,
@@ -1122,11 +1122,11 @@ def handle_state_dropdown(state, county, option, map_type, border_type, sliderra
                                     )
                     nat_dens = nat_dens[nat_dens['National'].between(sliderrange[0], sliderrange[1], inclusive="both")]
 
-                fig = px.choropleth(nat_dens, geojson=states_gj, locations='State', 
+                fig = px.choropleth(nat_dens, geojson=states_gj, locations='state', 
                                     color='National',
                                     color_continuous_scale="Viridis",
                                     range_color=(0, nat_val),
-                                    featureidkey="properties.state",
+                                    featureidkey="properties.state_abrev",
                                     scope="usa",
                                     basemap_visible=basemap_visible,
                                     fitbounds=fitbounds,
@@ -1229,11 +1229,11 @@ def handle_state_dropdown(state, county, option, map_type, border_type, sliderra
                                     )
                     nat_avg = nat_avg[nat_avg['National'].between(sliderrange[0], sliderrange[1], inclusive="both")]
 
-                fig = px.choropleth(nat_avg, geojson=states_gj, locations='State', 
+                fig = px.choropleth(nat_avg, geojson=states_gj, locations='state', 
                                     color='National',
                                     color_continuous_scale="Viridis",
                                     range_color=(0, nat_val),
-                                    featureidkey="properties.state",
+                                    featureidkey="properties.state_abrev",
                                     scope="usa",
                                     basemap_visible=basemap_visible,
                                     fitbounds=fitbounds,
