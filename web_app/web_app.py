@@ -740,7 +740,7 @@ def handle_state_dropdown(state, county, option, map_type, border_type, sliderra
                 nat_pops = state_pops.copy()
 
                 nat_val = state_pops["Total Pop"].sum()
-                national = [nat_val]*15
+                national = [nat_val]*14
                 nat_pops["National"] = national
 
                 if slidermax != nat_val: 
@@ -863,7 +863,7 @@ def handle_state_dropdown(state, county, option, map_type, border_type, sliderra
                 nat_slave = state_pop.copy()
 
                 nat_val = state_pop["Slave Pop"].sum()
-                national = [nat_val]*15
+                national = [nat_val]*14
                 nat_slave["National"] = national
 
                 if slidermax != nat_val: 
