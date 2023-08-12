@@ -58,6 +58,10 @@ print(agg_debt['to whom due | first name'].loc[[5776, 8879]].to_markdown())
 
 Source: ```name_changes```
 
+```python
+print(name_changes[['first_name_org', 'last_name_org', 'first_name_new', 'last_name_new']].head(1).to_markdown())
+```
+
 ### Cleaning Entries with Two Names
 <b>Goal: </b>There are debt entries that have two names in a single cell: ```NY_2422: Messes Williamson & Beckman```. The plan is to split the name across the first name and last name columns. <br>
 
@@ -68,6 +72,10 @@ Source: ```name_changes```
 
 Source: ```agg_debt```
 
+```python 
+print(agg_debt['to whom due | first name'].loc[[182, 178682]].to_markdown())
+```
+
 **Input**: ```agg_debt```, ```name_changes``` <br>
 **Output**: ```agg_debt```: Debt entries with two names reformatted, ```name_changes``` + Debt entries with two names
 
@@ -77,6 +85,10 @@ Source: ```agg_debt```
 
 Source: ```name_changes```
 
+```python
+print(name_changes.loc[name_changes['first_name_org'] == 'Furman and Hunt'][['first_name_org', 'last_name_org', 'first_name_new', 'last_name_new']].head(1).to_markdown())
+```
+
 ### Handle Abbreviations of Names
 <b>Goal: </b>There are individuals who have a handwritten abbreviation of a name in their debt entry. Thanks to Chris, he found a website with all these [abbreviations](https://hull-awe.org.uk/index.php/Conventional_abbreviations_for_forenames). 
 
@@ -85,6 +97,10 @@ Source: ```name_changes```
 | 102117 | And                        | Wardleberger              |
 
 Source: ```agg_debt```
+
+```python 
+print(agg_debt.loc[agg_debt['to whom due | first name'] == 'And'][['to whom due | first name', 'to whom due | last name']].head(1).to_markdown())
+```
 
 **Input**: ```agg_debt```, ```name_changes```, ```abbreviations``` dictionary <br>
 **Output**: ```agg_debt```: Renamed abbreviations, ```name_changes``` + Abbreviations
@@ -98,22 +114,39 @@ Source: ```name_changes```
 ### Grouping Consecutive Names
 <b>Goal: </b> By grouping consecutive names, standardizing names using Ancestry will go faster. <br>
 
-[Add example here]
+|        | to whom due - first name   | to whom due - last name   |
+|-------:|:---------------------------|:--------------------------|
+| 107216 | James                      | Wood                      |
+| 107217 | James                      | Wood                      |
+| 107218 | James                      | Wood                      |
+| 107219 | James                      | Wood                      |
+| 107220 | James                      | Wood                      |
+| 107221 | James                      | Wood                      |
+
+```python
+print(agg_debt.loc[107216:107221].to_markdown())
+```
 
 **Input**:```agg_debt``` (as ```og_df```) <br>
 **Output**: ```agg_debt``` (as ```agg_df```): Consecutive names grouped together 
 
-[Add expected output here] 
+|       | to whom due - first name   | to whom due - last name   |
+|------:|:---------------------------|:--------------------------|
+| 50683 | James                      | Wood                      |
+
+```python
+print(agg_debt.loc[(agg_debt['to whom due | first name'] == 'James') & (agg_debt['to whom due | last name'] == 'Wood')][['to whom due | first name', 'to whom due | last name']].to_markdown())
+```
 
 ### Ancestry Search : ```ancestry_search_david.ipynb```
-<b>Goal: </b>Multiple different spellings of a name can be referring to the same identity. We will use a phonetics library and Ancestry to fix this. An example: ```David Schaffer``` and ```David Schafer``` from `MA`. 
+<b>Goal: </b>Multiple different spellings of a name can be referring to the same identity. We will use a phonetics library and Ancestry to fix this. An example: ```David Schaffer``` and ```David Schafer``` from `MA`. There is a possibility that both of these individuals are the same, but were incorrectly spelled. 
 
 **Input**: ```agg_debt```, ```name_changes```
 **Output**: ```ancestry_name_changes```, ```agg_debt``` : Ancestry name fixes, ```name_changes``` + Ancestry name fixes 
 
 ## Areas of Future Improvement and Research
 
-
+1. 
 
 
 
