@@ -124,7 +124,7 @@ Source: ```name_changes```
 | 107221 | James                      | Wood                      |
 
 ```python
-print(agg_debt.loc[107216:107221].to_markdown())
+print(agg_debt.loc[107216:107221][['to whom due | first name', 'to whom due | last name']].to_markdown())
 ```
 
 **Input**:```agg_debt``` (as ```og_df```) <br>
@@ -146,7 +146,7 @@ print(agg_debt.loc[(agg_debt['to whom due | first name'] == 'James') & (agg_debt
 
 ## Areas of Future Improvement and Research
 
-1. 
+1. Currently, ```.itertuples``` is being used to iterate through ```agg_debt``` and group consecutive rows. Although faster than ```.iterrows```, ```.itertuples``` is still slower than other dataframe iteration methods. Check this [out](https://mlabonne.github.io/blog/posts/2022-03-21-Efficiently_iterating_over_rows_in_a_Pandas_DataFrame.html). There are resources on StackOverflow that cover a very similar [problem](https://stackoverflow.com/questions/44373668/python-pandas-merging-consecutive-rows-only-if-matching-columns)
 
 
 
