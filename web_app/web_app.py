@@ -10,10 +10,7 @@ import pandas as pd
 import plotly.express as px
 import geopandas as gpd
 import json
-import os
-import matplotlib.pyplot as plt 
 import numpy as np
-import seaborn as sns 
 
 state_codes = {
     "New Hampshire":"NH",
@@ -119,7 +116,7 @@ regions_drop = dcc.Dropdown(
 rangeslider = dcc.RangeSlider(id="slider", min = 0, max = 10) 
 
 #title: Region
-region_title = html.H5(children="Region")
+region_title = html.H5(children=["Region", html.Button('ℹ', id='more_info_regions')])
 
 #title: Slider
 #slider_title = html.H5(children="Choose a metric threshold")
@@ -159,7 +156,13 @@ left_tab = html.Div(id="left_tab", className='box', children=[
     ]), 
     html.Div(id="regions_c_drpdwn", children=[
         region_title,
-        regions_drop
+        regions_drop, 
+        dbc.Modal(
+            [
+                dbc.ModalHeader("More Information"),
+                dbc.ModalBody("This is a test.")
+            ]
+        )
     ], style={"display":"block"}), 
     html.Div(id="states_c_drpdwn", children=[
         dcc.Dropdown(id="states_drpdwn", style={"display":"none"})
@@ -628,7 +631,6 @@ def handle_state_dropdown(state, county, option, map_type, border_type, sliderra
         states_gj = json.loads(states_str)
 
         """
-        
         # debt info per county 
         debt_by_county = pd.read_csv("../data_clean/final_data_CD.csv")[["Group State", "Group County"]]
         debt_by_county = debt_by_county.groupby(by=["Group County", "Group State"]).size()
@@ -641,8 +643,8 @@ def handle_state_dropdown(state, county, option, map_type, border_type, sliderra
         county_geo_fips = pd.read_csv("../data_raw/census_data/countyPopulation.csv", header=1)[["Geo_FIPS", "Geo_name", 'Geo_STUSAB', "SE_T001_001"]]
         county_geo_fips.rename(columns={"Geo_name":"county", 'Geo_STUSAB':'state', "SE_T001_001":'population'}, inplace=True)
         county_debt_geo = pd.merge(debt_by_county, county_geo_fips, on=["county", 'state'])
-        
         """
+
         # debt info per county 
         debt_by_county = pd.read_csv("../data_clean/final_data_CD.csv")[["Group State", "Group County", '6p_total']]
         debt_by_county = debt_by_county.groupby(by=["Group County", "Group State"]).agg(['size', 'sum'])
