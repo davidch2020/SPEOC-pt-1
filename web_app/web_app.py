@@ -116,7 +116,7 @@ regions_drop = dcc.Dropdown(
 rangeslider = dcc.RangeSlider(id="slider", min = 0, max = 10) 
 
 #title: Region
-region_title = html.H5(children=["Region", html.Button('ℹ', id='more_info_regions')])
+region_title = html.H5(children=["Region", html.Button(children='ℹ', id='more_info_regions', n_clicks=0)])
 
 #title: Slider
 #slider_title = html.H5(children="Choose a metric threshold")
@@ -160,8 +160,9 @@ left_tab = html.Div(id="left_tab", className='box', children=[
         dbc.Modal(
             [
                 dbc.ModalHeader("More Information"),
-                dbc.ModalBody("This is a test.")
-            ]
+                dbc.ModalBody("Select the region. The region is the scope of the map that gets displayed in the map box. For example, if the user selects `Nation`, an entire map of the US will appear, but if they select `State`, they can choose only a state map to appear. ")
+            ], 
+            id = 'regions_modal' 
         )
     ], style={"display":"block"}), 
     html.Div(id="states_c_drpdwn", children=[
@@ -171,10 +172,17 @@ left_tab = html.Div(id="left_tab", className='box', children=[
         dcc.Dropdown(id="county_drpdwn", style={"display":"none"})
     ]), 
     html.Div(id="bord_c_drpdwn", children=[
-        dcc.Dropdown(id="border_drpdwn", style={"display":"none"})
+        dcc.Dropdown(id="border_drpdwn", style={"display":"none"}),
+        dbc.Modal(
+            [
+                dbc.ModalHeader("More Information"),
+                dbc.ModalBody("Display the kind of borders that will appear on the map. For example, if you choose `Nation` as the region, you can choose whether to have the map divided by state or by each individual county.")
+            ], 
+            id='border_type_modal' 
+        )
     ]), 
     html.Div(id="heatmap_c_drpdwn", children=[
-        dcc.Dropdown(id="heatmap_drpdwn", style={"display":"none"})
+        dcc.Dropdown(id="heatmap_drpdwn", style={"display":"none"}),
     ]), 
     html.Div(id="c_ops", children=[
         c_op_title,
@@ -192,11 +200,12 @@ left_tab = html.Div(id="left_tab", className='box', children=[
     ], style={"display":"block"}), 
     html.Div(id="t_ops", children=[
         dcc.Checklist(id="t_checklist", style={"display":"none"})
-    ])
+    ]), 
     #html.Div(id="t_info", children=[
     #    t_info_title, 
     #    html.Ul(id="t_infolist"),
-    #])
+    #]),
+    html.Button(children='ℹ', id='more_info_border_type', n_clicks=0)
 ], style={'width': '40%', 'height': 'auto', "display":"block"})
 
 # Right tab with DataFrame/Map
@@ -419,6 +428,19 @@ def add_c_options(sel_state, value):
     else:
         return {"display":"none"}, {"display":"none"}, {"display":"none"}, {"display":"none"}, {"display":"none"}, {"display":"none"}, {"display":"none"}
 '''
+
+# Callback functions to handle additional information button 
+@app.callback(
+        Output('regions_modal', 'is_open'),
+        Input('more_info_regions', 'n_clicks')
+)
+def open_regions_information(n_clicks):
+    if n_clicks > 0:
+        return True     
+    else:
+        return False
+
+
 # call back function to display dropdown menus when 'map' is clicked
 @app.callback( 
         [Output("regions_c_drpdwn", "style"),
@@ -541,11 +563,12 @@ def display_border_drpdwn(reg_value, state_value, county_value):
         if(reg_value == "County") and (county_value == "All Counties"):
             return ''
         bord_drpdwn_title = html.H5(children="Border Type", id="bord_drpdwn_t")
+
         if reg_value == "Nation":
             bord_drp = dcc.Dropdown(
                 id="border_drpdwn",
                 options=['Not Selected', 'Nationwide', 'Statewide', 'Countywide'],
-                value='Not Selected',
+                value='Not Selected'
             )
         elif reg_value == "State":
             bord_drp = dcc.Dropdown(
@@ -563,6 +586,20 @@ def display_border_drpdwn(reg_value, state_value, county_value):
     else:
         return ''
 
+'''
+# Display more information about what border type means 
+@app.callback(
+        Output('border_type_modal', 'is_open'),
+        Input('more_info_border_type', 'n_clicks')
+)
+def open_border_type_modal(n_clicks):
+    print('here')
+    if n_clicks > 0:
+        return True 
+    else:
+        return False 
+'''
+
 #when border is chosen, display heatmap dropdown
 @app.callback(
     Output("heatmap_c_drpdwn", "children"),
@@ -579,9 +616,20 @@ def display_heatmap_drpdwn(border_value, region_value):
             options=['Not Selected', 'Population', 'Slave Population', 'Debt Density', 'Debt Distribution', 'Average Debt Holdings'], #add more if more needed
             value="Not Selected"
         )
-        return heatmap_drpdwn_title, heatmap_drp 
+        more_info_btn = html.Button('ℹ', id='more_info_heatmap')
+
+        return heatmap_drpdwn_title, more_info_btn, heatmap_drp
     else:
         return ''
+
+'''
+@app.callback(
+    Output("heatmap_c_drpdwn", "children"),
+    Input('more_info_heatmap', 'n_clicks')
+)
+def open_heatmap_more_info(n_clicks):
+    print(n_clicks)
+'''
 
 @app.callback(
         Output('right-tab-content', 'children'),
