@@ -239,7 +239,7 @@ right_tab = html.Div(className='box', children=[
 right_tab_2 = html.Div(className='box')
 
 '''
-# check if a display option is selected   #NOT SURE IF THIS IS NEEDED KEEP FOR NOW
+# check if a display option is selected
 # edit layout accordingly 
 @app.callback(
         [Output("st_c_drpdwn", "style", allow_duplicate=True), 
