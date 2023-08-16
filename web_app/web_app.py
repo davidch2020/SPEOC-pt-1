@@ -668,6 +668,8 @@ def display_checkbox(border_value, region_value):
     [Input('compare_checkbox', 'value')]
 )
 def create_new_heatmap(values):
+    if values is None: #creates an error during first callback otherwise, since the checkbox doesn't exist yet
+        return ''
     value = values[0]
     if value == 'Compare Two Heatmaps':
         heatmap_title = html.H5(children=["Pick a Heatmap to Compare With"], id="heatmap_drpdwn_t")
