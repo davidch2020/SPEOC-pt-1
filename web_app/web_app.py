@@ -4,7 +4,7 @@ import dash
 import dash_bootstrap_components as dbc
 from dash import html
 from dash import dcc
-from dash.dependencies import Input, Output
+from dash.dependencies import Input, Output, State
 from dash import dash_table
 import pandas as pd
 import plotly.express as px
@@ -30,7 +30,7 @@ state_codes = {
 }
 
 # create web app, import bootstrap stylesheet + external stylesheet
-app = dash.Dash(__name__, external_stylesheets=[dbc.themes.BOOTSTRAP, 'assets/style.css'])
+app = dash.Dash(__name__, external_stylesheets=[dbc.themes.BOOTSTRAP, 'assets/style.css'], suppress_callback_exceptions = True)
 
 # Title
 title = html.H1(children='My Dash App', style={'textAlign': 'left'}, className='title')
@@ -116,7 +116,7 @@ regions_drop = dcc.Dropdown(
 rangeslider = dcc.RangeSlider(id="slider", min = 0, max = 10) 
 
 #title: Region
-region_title = html.H5(children=["Region", html.Button(children='ℹ', id='more_info_regions', n_clicks=0)])
+region_title = html.H5(children=["Region", html.Button(children='ℹ', className='more_info_btn', id='more_info_regions', n_clicks=0)])
 
 #title: Slider
 #slider_title = html.H5(children="Choose a metric threshold")
@@ -141,6 +141,7 @@ disp_ops_checklist = dcc.Checklist(id="disp_ops_checklist", options=[
 # Left tab with map and table options
 # Use this to select whether you want a map or table
 # Also use this to select what type of map/table you want to show (not implemented yet)
+
 left_tab = html.Div(id="left_tab", className='box', children=[
     html.H3(children='Customize', className='box-title', style={'textAlign': 'center'}),
     html.Div(className='left-tab-options-container options-container', children=[
@@ -162,8 +163,23 @@ left_tab = html.Div(id="left_tab", className='box', children=[
                 dbc.ModalHeader("More Information"),
                 dbc.ModalBody("Select the region. The region is the scope of the map that gets displayed in the map box. For example, if the user selects `Nation`, an entire map of the US will appear, but if they select `State`, they can choose only a state map to appear. ")
             ], 
-            id = 'regions_modal' 
+            id='regions_modal' 
+        ), 
+        dbc.Modal(
+            [
+                dbc.ModalHeader("More Information"),
+                dbc.ModalBody("Select the border type. The border type will change the borders that are displayed on the map. For example, you can choose `Nation` as the map and choose whether to show each individual county or all the states.")
+            ], 
+            id='border_type_modal' 
+        ),
+        dbc.Modal(
+            [
+                dbc.ModalHeader("More Information"),
+                dbc.ModalBody("Select the heatmap. The heatmap will change the type of information that is displayed on the map. For example, if you choose 'Population', the population distribution will be displayed on the map.")
+            ],
+            id='heatmap_modal'
         )
+
     ], style={"display":"block"}), 
     html.Div(id="states_c_drpdwn", children=[
         dcc.Dropdown(id="states_drpdwn", style={"display":"none"})
@@ -173,13 +189,6 @@ left_tab = html.Div(id="left_tab", className='box', children=[
     ]), 
     html.Div(id="bord_c_drpdwn", children=[
         dcc.Dropdown(id="border_drpdwn", style={"display":"none"}),
-        dbc.Modal(
-            [
-                dbc.ModalHeader("More Information"),
-                dbc.ModalBody("Display the kind of borders that will appear on the map. For example, if you choose `Nation` as the region, you can choose whether to have the map divided by state or by each individual county.")
-            ], 
-            id='border_type_modal' 
-        )
     ]), 
     html.Div(id="heatmap_c_drpdwn", children=[
         dcc.Dropdown(id="heatmap_drpdwn", style={"display":"none"}),
@@ -205,7 +214,14 @@ left_tab = html.Div(id="left_tab", className='box', children=[
     #    t_info_title, 
     #    html.Ul(id="t_infolist"),
     #]),
-    html.Button(children='ℹ', id='more_info_border_type', n_clicks=0)
+    dcc.Checklist(
+        options=['Compare Two Heatmaps'],
+        id='compare_checkbox',
+        style={'display':'block'}
+    ), 
+    html.Div(id='heatmap_c_drpdwn_2', children=[
+        dcc.Dropdown(id='heatmap_drpdwn_2', style={'display':'none'})
+    ]) 
 ], style={'width': '40%', 'height': 'auto', "display":"block"})
 
 # Right tab with DataFrame/Map
@@ -218,6 +234,9 @@ right_tab = html.Div(className='box', children=[
         rangeslider
     ], style={"display":"none"})
 ], style={'width': '100%', 'height': '600px'})
+
+# Right tab 2 with the map you want to compare with 
+right_tab_2 = html.Div(className='box')
 
 '''
 # check if a display option is selected   #NOT SURE IF THIS IS NEEDED KEEP FOR NOW
@@ -562,7 +581,7 @@ def display_border_drpdwn(reg_value, state_value, county_value):
             return ''
         if(reg_value == "County") and (county_value == "All Counties"):
             return ''
-        bord_drpdwn_title = html.H5(children="Border Type", id="bord_drpdwn_t")
+        bord_drpdwn_title = html.H5(children=["Border Type", html.Button(children="ℹ", className='more_info_btn', id="more_info_border_button")], id="bord_drpdwn_t")
 
         if reg_value == "Nation":
             bord_drp = dcc.Dropdown(
@@ -586,19 +605,16 @@ def display_border_drpdwn(reg_value, state_value, county_value):
     else:
         return ''
 
-'''
 # Display more information about what border type means 
 @app.callback(
-        Output('border_type_modal', 'is_open'),
-        Input('more_info_border_type', 'n_clicks')
+        Output("border_type_modal", "is_open"),
+        Input('more_info_border_button', 'n_clicks'),
+        State('border_type_modal', 'is_open')
 )
-def open_border_type_modal(n_clicks):
-    print('here')
-    if n_clicks > 0:
-        return True 
-    else:
-        return False 
-'''
+def open_border_type_modal(n_click, state):
+    if n_click:
+        return not state 
+    return state 
 
 #when border is chosen, display heatmap dropdown
 @app.callback(
@@ -610,26 +626,69 @@ def display_heatmap_drpdwn(border_value, region_value):
     if (region_value == "Not Selected") or (region_value is None):
         return ''
     if (border_value != "Not Selected") and (border_value is not None):
-        heatmap_drpdwn_title = html.H5(children="Pick a Heatmap", id="heatmap_drpdwn_t")
+        heatmap_chklist_title = html.H5(children=["Pick a Heatmap", html.Button(children='ℹ', className='more_info_btn', id='heatmap_more_info_button')], id="heatmap_drpdwn_t")
+        heatmap_chklist = dcc.Checklist(
+            id='heatmap_drpdwn', 
+            options=['Not Selected', 'Population', 'Slave Population', 'Debt Density', 'Debt Distribution', 'Average Debt Holdings'],
+            value=['Not Selected']
+        )
         heatmap_drp = dcc.Dropdown(
             id="heatmap_drpdwn",
             options=['Not Selected', 'Population', 'Slave Population', 'Debt Density', 'Debt Distribution', 'Average Debt Holdings'], #add more if more needed
-            value="Not Selected"
+            value=["Not Selected"]
         )
-        more_info_btn = html.Button('ℹ', id='more_info_heatmap')
 
-        return heatmap_drpdwn_title, more_info_btn, heatmap_drp
+        '''
+        # Create the option for a user to compare two heatmaps
+        compare_checkbox = dcc.Checklist(
+            options=['Compare Two Heatmaps'],
+            id='compare_checkbox'
+        )
+        '''
+
+        return heatmap_chklist_title, heatmap_drp
     else:
         return ''
 
-'''
+# Set 'compare two heatmaps' visiblity checkbox to True
 @app.callback(
-    Output("heatmap_c_drpdwn", "children"),
-    Input('more_info_heatmap', 'n_clicks')
+    Output("compare_checkbox", "style"),
+    [Input("border_drpdwn", "value"), #need more input so it doesnt show up in county/state ex
+    Input("reg_drpdwn", "value")]
 )
-def open_heatmap_more_info(n_clicks):
-    print(n_clicks)
-'''
+def display_checkbox(border_value, region_value):
+    if (region_value == "Not Selected") or (region_value is None) or (border_value == "Not Selected"):
+        return {'display':'none'}
+    else:
+        return {'display':'block'}
+    
+# If the `compare two heatmaps` checkbox was clicked, create a new heatmap dropdown. 
+@app.callback(
+    Output('heatmap_c_drpdwn_2', 'children'), 
+    [Input('compare_checkbox', 'value')]
+)
+def create_new_heatmap(values):
+    value = values[0]
+    if value == 'Compare Two Heatmaps':
+        heatmap_title = html.H5(children=["Pick a Heatmap to Compare With"], id="heatmap_drpdwn_t")
+        heatmap_drp = dcc.Dropdown(
+            id="heatmap_drpdwn_2",
+            options=['Not Selected', 'Population', 'Slave Population', 'Debt Density', 'Debt Distribution', 'Average Debt Holdings'], #add more if more needed
+            value=["Not Selected"]
+        )
+        return heatmap_title, heatmap_drp
+    else:
+        return '' 
+
+@app.callback(
+    Output("heatmap_modal", "is_open"),
+    Input('heatmap_more_info_button', 'n_clicks'), 
+    State('heatmap_modal', 'is_open')
+)
+def open_heatmap_more_info(n_clicks, state):
+    if n_clicks:
+        return not state 
+    return state
 
 @app.callback(
         Output('right-tab-content', 'children'),
@@ -731,14 +790,14 @@ def handle_state_dropdown(state, county, option, map_type, border_type, sliderra
                 
                 if slidermax != county_pops["Population"].max(): #when the map is loaded for the first time, maximum value will not match county_pops["Population"].max()
                     slider =  dcc.RangeSlider(min = 0,  
-                                      max = county_pops["Population"].max(), 
-                                      id = "slider"
+                                    max = county_pops["Population"].max(), 
+                                    id = "slider"
                                     )
                 else: #otherwise, this is the case where the map was not loaded for the first time, and the user just adjusted the rangeslider
                     slider =  dcc.RangeSlider(min = 0,   
-                                      max = county_pops["Population"].max(), 
-                                      value=[sliderrange[0], sliderrange[1]],
-                                      id = "slider"
+                                    max = county_pops["Population"].max(), 
+                                    value=[sliderrange[0], sliderrange[1]],
+                                    id = "slider"
                                     )
                     county_pops_adj = county_pops[county_pops['Population'].between(sliderrange[0], sliderrange[1], inclusive="both")]
                 
@@ -761,14 +820,14 @@ def handle_state_dropdown(state, county, option, map_type, border_type, sliderra
                 
                 if slidermax != state_pops["Total Pop"].max(): 
                     slider =  dcc.RangeSlider(min = 0, 
-                                      max = state_pops["Total Pop"].max(), 
-                                      id = "slider"
+                                    max = state_pops["Total Pop"].max(), 
+                                    id = "slider"
                                     )
                 else:
                     slider =  dcc.RangeSlider(min = 0,   
-                                      max = state_pops["Total Pop"].max(), 
-                                      value=[sliderrange[0], sliderrange[1]],
-                                      id = "slider"
+                                    max = state_pops["Total Pop"].max(), 
+                                    value=[sliderrange[0], sliderrange[1]],
+                                    id = "slider"
                                     )
                     state_pops_adj = state_pops[state_pops['Total Pop'].between(sliderrange[0], sliderrange[1], inclusive="both")]
                 
@@ -783,7 +842,7 @@ def handle_state_dropdown(state, county, option, map_type, border_type, sliderra
                                     fitbounds=fitbounds,
                                     hover_name="State",
                                     hover_data=["Total Pop"]
-                               )
+                            )
                 
             elif border_type == "Nationwide":
                 
@@ -795,14 +854,14 @@ def handle_state_dropdown(state, county, option, map_type, border_type, sliderra
 
                 if slidermax != nat_val: 
                     slider =  dcc.RangeSlider(min = 0, 
-                                      max = nat_val, 
-                                      id = "slider"
+                                    max = nat_val, 
+                                    id = "slider"
                                     )
                 else:
                     slider =  dcc.RangeSlider(min = 0,   
-                                      max = nat_val, 
-                                      value=[sliderrange[0], sliderrange[1]],
-                                      id = "slider"
+                                    max = nat_val, 
+                                    value=[sliderrange[0], sliderrange[1]],
+                                    id = "slider"
                                     )
                     nat_pops = nat_pops[nat_pops['National'].between(sliderrange[0], sliderrange[1], inclusive="both")]
 
@@ -816,7 +875,7 @@ def handle_state_dropdown(state, county, option, map_type, border_type, sliderra
                                     fitbounds=fitbounds,
                                     hover_name="State",
                                     hover_data= ["National"]
-                               )        
+                            )        
                 
 
         elif map_type == 'Slave Population': 
@@ -849,14 +908,14 @@ def handle_state_dropdown(state, county, option, map_type, border_type, sliderra
 
                 if slidermax != merged["slavePopulation"].max(): #issue with choosing state of max county
                     slider =  dcc.RangeSlider(min = 0, 
-                                      max = merged["slavePopulation"].max(), 
-                                      id = "slider"
+                                    max = merged["slavePopulation"].max(), 
+                                    id = "slider"
                                     )
                 else:
                     slider =  dcc.RangeSlider(min = 0,   
-                                      max = merged["slavePopulation"].max(), 
-                                      value=[sliderrange[0], sliderrange[1]],
-                                      id = "slider"
+                                    max = merged["slavePopulation"].max(), 
+                                    value=[sliderrange[0], sliderrange[1]],
+                                    id = "slider"
                                     )
                     county_slaves_adj = merged[merged['slavePopulation'].between(sliderrange[0], sliderrange[1], inclusive="both")]
 
@@ -884,14 +943,14 @@ def handle_state_dropdown(state, county, option, map_type, border_type, sliderra
                 
                 if slidermax != state_pop["Slave Pop"].max(): 
                     slider =  dcc.RangeSlider(min = 0, 
-                                      max = state_pop["Slave Pop"].max(), 
-                                      id = "slider"
+                                    max = state_pop["Slave Pop"].max(), 
+                                    id = "slider"
                                     )
                 else:
                     slider =  dcc.RangeSlider(min = 0,   
-                                      max = state_pop["Slave Pop"].max(), 
-                                      value=[sliderrange[0], sliderrange[1]],
-                                      id = "slider"
+                                    max = state_pop["Slave Pop"].max(), 
+                                    value=[sliderrange[0], sliderrange[1]],
+                                    id = "slider"
                                     )
                     state_pop_adj = state_pop[state_pop['Slave Pop'].between(sliderrange[0], sliderrange[1], inclusive="both")]
 
@@ -918,14 +977,14 @@ def handle_state_dropdown(state, county, option, map_type, border_type, sliderra
 
                 if slidermax != nat_val: 
                     slider =  dcc.RangeSlider(min = 0, 
-                                      max = nat_val, 
-                                      id = "slider"
+                                    max = nat_val, 
+                                    id = "slider"
                                     )
                 else:
                     slider =  dcc.RangeSlider(min = 0,   
-                                      max = nat_val, 
-                                      value=[sliderrange[0], sliderrange[1]],
-                                      id = "slider"
+                                    max = nat_val, 
+                                    value=[sliderrange[0], sliderrange[1]],
+                                    id = "slider"
                                     )
                     nat_slave = nat_slave[nat_slave['National'].between(sliderrange[0], sliderrange[1], inclusive="both")]
 
@@ -939,7 +998,7 @@ def handle_state_dropdown(state, county, option, map_type, border_type, sliderra
                                     fitbounds=fitbounds,
                                     hover_name="State",
                                     hover_data= ["National"]
-                               )        
+                            )        
 
         elif map_type == 'Debt Distribution':
             # Create the debt distribution map
@@ -961,14 +1020,10 @@ def handle_state_dropdown(state, county, option, map_type, border_type, sliderra
             # Above Upper bound
             upper=Q3+1.5*IQR
             upper_array=np.array(county_debt_geo['6p_total']>=upper)
-            print('upper bound')
-            print("Upper Bound:",upper)
             
             #Below Lower bound
             lower=Q1-1.5*IQR
-            lower_array=np.array(county_debt_geo['6p_total']<=lower)
-            print("Lower Bound:",lower)
-            
+            lower_array=np.array(county_debt_geo['6p_total']<=lower)                
 
             xiv = pd.Interval(x.min(), x.max())
             xmid = xiv.mid
@@ -982,14 +1037,14 @@ def handle_state_dropdown(state, county, option, map_type, border_type, sliderra
                 county_debt_geo_adj = county_debt_geo.copy()
                 if slidermax != ceiling_var: 
                     slider =  dcc.RangeSlider(min = 0, 
-                                      max = ceiling_var, 
-                                      id = "slider"
+                                    max = ceiling_var, 
+                                    id = "slider"
                                     )
                 else:
                     slider =  dcc.RangeSlider(min = 0,   
-                                      max = ceiling_var, 
-                                      value=[sliderrange[0], sliderrange[1]],
-                                      id = "slider"
+                                    max = ceiling_var, 
+                                    value=[sliderrange[0], sliderrange[1]],
+                                    id = "slider"
                                     )
                     county_debt_geo_adj = county_debt_geo[county_debt_geo['6p_total'].between(sliderrange[0], sliderrange[1], inclusive="both")]
                 
@@ -1018,14 +1073,14 @@ def handle_state_dropdown(state, county, option, map_type, border_type, sliderra
 
                 if slidermax != ceiling_var: 
                         slider =  dcc.RangeSlider(min = 0, 
-                                      max = ceiling_var, 
-                                      id = "slider"
+                                    max = ceiling_var, 
+                                    id = "slider"
                                     )
                 else:
                         slider =  dcc.RangeSlider(min = 0,   
-                                      max = ceiling_var, 
-                                      value=[sliderrange[0], sliderrange[1]],
-                                      id = "slider"
+                                    max = ceiling_var, 
+                                    value=[sliderrange[0], sliderrange[1]],
+                                    id = "slider"
                                     )
                         state_sixp_agg_adj = state_sixp_agg[state_sixp_agg['6p_total'].between(sliderrange[0], sliderrange[1], inclusive="both")]
 
@@ -1040,7 +1095,7 @@ def handle_state_dropdown(state, county, option, map_type, border_type, sliderra
                                     fitbounds=fitbounds,
                                     hover_name="state",
                                     hover_data=["6p_total"]
-                               )
+                            )
                 
             elif border_type == "Nationwide":
                 
@@ -1052,14 +1107,14 @@ def handle_state_dropdown(state, county, option, map_type, border_type, sliderra
 
                 if slidermax != nat_val: 
                     slider =  dcc.RangeSlider(min = 0, 
-                                      max = nat_val, 
-                                      id = "slider"
+                                    max = nat_val, 
+                                    id = "slider"
                                     )
                 else:
                     slider =  dcc.RangeSlider(min = 0,   
-                                      max = nat_val, 
-                                      value=[sliderrange[0], sliderrange[1]],
-                                      id = "slider"
+                                    max = nat_val, 
+                                    value=[sliderrange[0], sliderrange[1]],
+                                    id = "slider"
                                     )
                     nat_dist = nat_dist[nat_dist['National'].between(sliderrange[0], sliderrange[1], inclusive="both")]
 
@@ -1073,7 +1128,7 @@ def handle_state_dropdown(state, county, option, map_type, border_type, sliderra
                                     fitbounds=fitbounds,
                                     hover_name="state",
                                     hover_data= ["National"]
-                               )        
+                            )        
 
         elif map_type == 'Debt Density':
             # Create county map
@@ -1092,14 +1147,14 @@ def handle_state_dropdown(state, county, option, map_type, border_type, sliderra
                 county_debt_geo_adj = county_debt_geo.copy()
                 if slidermax != round(county_debt_geo["density"].max(), 2): 
                         slider =  dcc.RangeSlider(min = 0, 
-                                      max = round(county_debt_geo["density"].max(), 2), 
-                                      id = "slider"
+                                    max = round(county_debt_geo["density"].max(), 2), 
+                                    id = "slider"
                                     )
                 else:
                         slider =  dcc.RangeSlider(min = 0,   
-                                      max = round(county_debt_geo["density"].max(), 2), 
-                                      value=[sliderrange[0], sliderrange[1]],
-                                      id = "slider"
+                                    max = round(county_debt_geo["density"].max(), 2), 
+                                    value=[sliderrange[0], sliderrange[1]],
+                                    id = "slider"
                                     )
                         county_debt_geo_adj = county_debt_geo[county_debt_geo['density'].between(sliderrange[0], sliderrange[1], inclusive="both")]
 
@@ -1126,14 +1181,14 @@ def handle_state_dropdown(state, county, option, map_type, border_type, sliderra
                 state_sixp_agg_adj = state_sixp_agg.copy()
                 if slidermax != math.ceil(state_sixp_agg["density"].max()):  #round up. Otherwise, slider automatically rounds to 2 places 
                         slider =  dcc.RangeSlider(min = 0,                # Without ceil(), it will round down, which then eliminates the max value
-                                      max = math.ceil(state_sixp_agg["density"].max()), 
-                                      id = "slider"
+                                    max = math.ceil(state_sixp_agg["density"].max()), 
+                                    id = "slider"
                                     )
                 else:
                         slider =  dcc.RangeSlider(min = 0,   
-                                      max = math.ceil(state_sixp_agg["density"].max()), 
-                                      value=[sliderrange[0], sliderrange[1]],
-                                      id = "slider"
+                                    max = math.ceil(state_sixp_agg["density"].max()), 
+                                    value=[sliderrange[0], sliderrange[1]],
+                                    id = "slider"
                                     )
                         state_sixp_agg_adj = state_sixp_agg[state_sixp_agg['density'].between(sliderrange[0], sliderrange[1], inclusive="both")]
 
@@ -1161,14 +1216,14 @@ def handle_state_dropdown(state, county, option, map_type, border_type, sliderra
 
                 if slidermax != nat_val: 
                     slider =  dcc.RangeSlider(min = 0, 
-                                      max = nat_val, 
-                                      id = "slider"
+                                    max = nat_val, 
+                                    id = "slider"
                                     )
                 else:
                     slider =  dcc.RangeSlider(min = 0,   
-                                      max = nat_val, 
-                                      value=[sliderrange[0], sliderrange[1]],
-                                      id = "slider"
+                                    max = nat_val, 
+                                    value=[sliderrange[0], sliderrange[1]],
+                                    id = "slider"
                                     )
                     nat_dens = nat_dens[nat_dens['National'].between(sliderrange[0], sliderrange[1], inclusive="both")]
 
@@ -1182,7 +1237,7 @@ def handle_state_dropdown(state, county, option, map_type, border_type, sliderra
                                     fitbounds=fitbounds,
                                     hover_name="state",
                                     hover_data= ["National"]
-                               )        
+                            )        
             
 
 
@@ -1199,14 +1254,14 @@ def handle_state_dropdown(state, county, option, map_type, border_type, sliderra
                 county_debt_geo_adj = county_debt_geo.copy()
                 if slidermax != round(county_debt_geo["mean_6p_held"].max(), 2): 
                         slider =  dcc.RangeSlider(min = 0, 
-                                      max = round(county_debt_geo["mean_6p_held"].max(), 2), 
-                                      id = "slider"
+                                    max = round(county_debt_geo["mean_6p_held"].max(), 2), 
+                                    id = "slider"
                                     )
                 else:
                         slider =  dcc.RangeSlider(min = 0,   
-                                      max = round(county_debt_geo["mean_6p_held"].max(), 2), 
-                                      value=[sliderrange[0], sliderrange[1]],
-                                      id = "slider"
+                                    max = round(county_debt_geo["mean_6p_held"].max(), 2), 
+                                    value=[sliderrange[0], sliderrange[1]],
+                                    id = "slider"
                                     )
                         county_debt_geo_adj = county_debt_geo[county_debt_geo['mean_6p_held'].between(sliderrange[0], sliderrange[1], inclusive="both")]
 
@@ -1233,14 +1288,14 @@ def handle_state_dropdown(state, county, option, map_type, border_type, sliderra
                 state_sixp_agg_adj = state_sixp_agg.copy()
                 if slidermax != round(state_sixp_agg["mean_6p_held"].max(),2): 
                         slider =  dcc.RangeSlider(min = 0, 
-                                      max = round(state_sixp_agg["mean_6p_held"].max(), 2), 
-                                      id = "slider"
+                                    max = round(state_sixp_agg["mean_6p_held"].max(), 2), 
+                                    id = "slider"
                                     )
                 else:
                         slider =  dcc.RangeSlider(min = 0,   
-                                      max = round(state_sixp_agg["mean_6p_held"].max(), 2), 
-                                      value=[sliderrange[0], sliderrange[1]],
-                                      id = "slider"
+                                    max = round(state_sixp_agg["mean_6p_held"].max(), 2), 
+                                    value=[sliderrange[0], sliderrange[1]],
+                                    id = "slider"
                                     )
                         state_sixp_agg_adj = state_sixp_agg[state_sixp_agg['mean_6p_held'].between(sliderrange[0], sliderrange[1], inclusive="both")]
 
@@ -1268,14 +1323,14 @@ def handle_state_dropdown(state, county, option, map_type, border_type, sliderra
 
                 if slidermax != nat_val: 
                     slider =  dcc.RangeSlider(min = 0, 
-                                      max = nat_val, 
-                                      id = "slider"
+                                    max = nat_val, 
+                                    id = "slider"
                                     )
                 else:
                     slider =  dcc.RangeSlider(min = 0,   
-                                      max = nat_val, 
-                                      value=[sliderrange[0], sliderrange[1]],
-                                      id = "slider"
+                                    max = nat_val, 
+                                    value=[sliderrange[0], sliderrange[1]],
+                                    id = "slider"
                                     )
                     nat_avg = nat_avg[nat_avg['National'].between(sliderrange[0], sliderrange[1], inclusive="both")]
 
@@ -1289,10 +1344,10 @@ def handle_state_dropdown(state, county, option, map_type, border_type, sliderra
                                     fitbounds=fitbounds,
                                     hover_name="state",
                                     hover_data= ["National"]
-                               )    
-        
+                            ) 
+    
         return dcc.Graph(figure = fig, id = 'my-map'), [slider, 'You have selected "{}"'.format(sliderrange)]
-        
+    
     else: # option is table
         # Display the DataFrame as a table
         df = pd.read_csv('../data_clean/final_data_CD.csv', index_col=0)
