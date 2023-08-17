@@ -114,6 +114,7 @@ regions_drop = dcc.Dropdown(
 )
 
 rangeslider = dcc.RangeSlider(id="slider", min = 0, max = 10) 
+rangeslider2 = dcc.RangeSlider(id="slider-2", min = 0, max = 10) 
 
 #title: Region
 region_title = html.H5(children=["Region", html.Button(children='ℹ', className='more_info_btn', id='more_info_regions', n_clicks=0)])
@@ -236,7 +237,15 @@ right_tab = html.Div(className='box', children=[
 ], style={'width': '100%', 'height': '600px'})
 
 # Right tab 2 with the map you want to compare with 
-right_tab_2 = html.Div(className='box')
+right_tab_2 = html.Div(className='box', children=[
+    html.H3(children='Display', className='box-title', style={'textAlign':'center'}), 
+    html.Div(id='right-tab-content-2',
+             style={'overflow':'scroll'}
+             ),
+    html.Div(id = "range-slider-2", children=[ 
+        rangeslider2
+    ], style={"display":"none"})
+], style={'width': '100%', 'height': '600px'})
 
 '''
 # check if a display option is selected   #NOT SURE IF THIS IS NEEDED KEEP FOR NOW
@@ -668,17 +677,18 @@ def display_checkbox(border_value, region_value):
     [Input('compare_checkbox', 'value')]
 )
 def create_new_heatmap(values):
-    value = values[0]
-    if value == 'Compare Two Heatmaps':
-        heatmap_title = html.H5(children=["Pick a Heatmap to Compare With"], id="heatmap_drpdwn_t")
-        heatmap_drp = dcc.Dropdown(
-            id="heatmap_drpdwn_2",
-            options=['Not Selected', 'Population', 'Slave Population', 'Debt Density', 'Debt Distribution', 'Average Debt Holdings'], #add more if more needed
-            value=["Not Selected"]
-        )
-        return heatmap_title, heatmap_drp
-    else:
-        return '' 
+    if values is not None:
+        value = values[0]
+        if value == 'Compare Two Heatmaps':
+            heatmap_title = html.H5(children=["Pick a Heatmap to Compare With"], id="heatmap_drpdwn_t")
+            heatmap_drp = dcc.Dropdown(
+                id="heatmap_drpdwn_2",
+                options=['Not Selected', 'Population', 'Slave Population', 'Debt Density', 'Debt Distribution', 'Average Debt Holdings'], #add more if more needed
+                value=["Not Selected"]
+            )
+            return heatmap_title, heatmap_drp
+    
+    return '' 
 
 @app.callback(
     Output("heatmap_modal", "is_open"),
@@ -703,6 +713,8 @@ def open_heatmap_more_info(n_clicks, state):
 )
 
 def handle_state_dropdown(state, county, option, map_type, border_type, sliderrange, slidermax):
+    global fig
+
     if option == "map":
         fitbounds = False
         basemap_visible = True
@@ -1345,8 +1357,694 @@ def handle_state_dropdown(state, county, option, map_type, border_type, sliderra
                                     hover_name="state",
                                     hover_data= ["National"]
                             ) 
-    
+        else:
+             fig = px.choropleth()
+             slider = dcc.RangeSlider(id="slider-2", min = 0, max = 10) 
+
         return dcc.Graph(figure = fig, id = 'my-map'), [slider, 'You have selected "{}"'.format(sliderrange)]
+    
+    else: # option is table
+        # Display the DataFrame as a table
+        df = pd.read_csv('../data_clean/final_data_CD.csv', index_col=0)
+        return dash_table.DataTable(
+            id='data-table',
+            columns=[{"name": col, "id": col} for col in df.columns],
+            data=df.to_dict('records'),
+            sort_action='native',  # Enable sorting
+            filter_action='native',  # Enable filtering
+            page_action='native',  # Enable pagination
+            page_size=13,  # Number of rows per page
+            style_table={'overflowX': 'scroll'},
+            style_cell={'minWidth': '150px', 'textAlign': 'left'},
+            style_header={
+                'backgroundColor': 'rgb(230, 230, 230)',
+                'fontWeight': 'bold'
+            }
+        ), rangeslider #prevent it from becoming nonetype. should not show up though
+
+@app.callback(
+        Output('right-tab-content-2', 'children'),
+        Output('range-slider-2', 'children'),
+        [Input("states_drpdwn", "value"), 
+        Input("county_drpdwn", "value"),
+        Input("left-tab-options", "value"), 
+        Input('heatmap_drpdwn_2', 'value'), 
+        Input('border_drpdwn', 'value'),
+        Input('slider', 'value'),
+        Input('slider', 'max')] #to keep track of when the heatmap type changes--> means that the rangeslider maximum must be adjusted 
+)
+def create_new_heatmap(state, county, option, map_type, border_type, sliderrange, slidermax):
+    global fig 
+
+    if option == "map":
+        fitbounds = False
+        basemap_visible = True
+        map_df_c = map_df.copy()
+        state_map_df_c = state_map_df.copy()
+
+        # save as a geojson
+        map_str = map_df_c.to_json()
+        map_gj = json.loads(map_str) # convert string json to dictionary json 
+
+        states_str = state_map_df_c.to_json()
+        states_gj = json.loads(states_str)
+
+        if (map_type == "Not Selected") or (map_type is None):
+            return '', rangeslider
+
+        if (state != "All States") and (state is not None):
+            if border_type == "Countywide":
+                map_df_c = map_df_c.loc[map_df['state'] == state]
+            if border_type == "Statewide" or border_type == "Nationwide":
+                state_map_df_c = state_map_df_c.loc[state_map_df['state']==state]
+            fitbounds = "locations"
+            basemap_visible = False
+
+        if (county != "All Counties") and (county is not None):
+            map_df_c = map_df_c.loc[map_df_c['county'] == county]
+
+        # save as a geojson
+        map_str = map_df_c.to_json()
+        map_gj = json.loads(map_str) # convert string json to dictionary json 
+
+        states_str = state_map_df_c.to_json()
+        states_gj = json.loads(states_str)
+
+        """
+        # debt info per county 
+        debt_by_county = pd.read_csv("../data_clean/final_data_CD.csv")[["Group State", "Group County"]]
+        debt_by_county = debt_by_county.groupby(by=["Group County", "Group State"]).size()
+        debt_by_county = debt_by_county.to_frame()
+        debt_by_county.rename(columns={0:'count'}, inplace=True)
+        debt_by_county.reset_index(inplace=True)
+        debt_by_county.rename(columns={"Group County":"county", "Group State":"state"}, inplace=True)
+
+
+        county_geo_fips = pd.read_csv("../data_raw/census_data/countyPopulation.csv", header=1)[["Geo_FIPS", "Geo_name", 'Geo_STUSAB', "SE_T001_001"]]
+        county_geo_fips.rename(columns={"Geo_name":"county", 'Geo_STUSAB':'state', "SE_T001_001":'population'}, inplace=True)
+        county_debt_geo = pd.merge(debt_by_county, county_geo_fips, on=["county", 'state'])
+        """
+
+        # debt info per county 
+        debt_by_county = pd.read_csv("../data_clean/final_data_CD.csv")[["Group State", "Group County", '6p_total']]
+        debt_by_county = debt_by_county.groupby(by=["Group County", "Group State"]).agg(['size', 'sum'])
+        # debt_by_county = debt_by_county.to_frame()
+        # debt_by_county.rename(columns={'size':'count'}, inplace=True)
+        debt_by_county.reset_index(inplace=True)
+
+        debt_by_county.columns = debt_by_county.columns.droplevel(1)
+        debt_by_county.columns = ['county', 'state', 'count', '6p_total'] 
+
+        county_geo_fips = pd.read_csv("../data_raw/census_data/countyPopulation.csv", header=1)[["Geo_FIPS", "Geo_name", 'Geo_STUSAB', "SE_T001_001"]]
+        county_geo_fips.rename(columns={"Geo_name":"county", 'Geo_STUSAB':'state', "SE_T001_001":'population'}, inplace=True)
+        county_debt_geo = pd.merge(debt_by_county, county_geo_fips, on=["county", 'state'])
+
+        state_sixp_agg = county_debt_geo.groupby('state', as_index = False).sum()
+        state_sixp_agg.drop('Geo_FIPS', inplace=True, axis = 1) #the summing messes it up; also not necessary for states anyways
+
+        if map_type == 'Population':
+            
+            # get county populations 
+            county_pops = pd.read_csv("../data_raw/census_data/countyPopulation.csv", header=1)
+            county_pops = county_pops[county_pops["SE_T001_001"].notna()]
+            county_pops = county_pops.astype({"SE_T001_001":"int", "Geo_FIPS":"str"})
+            county_pops.rename(columns = {'SE_T001_001':'Population', "Geo_name":"County"}, inplace = True)
+            county_pops = county_pops[["Geo_FIPS", "Population", "County"]]
+            
+            #state pop
+            state_pops = gpd.read_file("../data_raw/census_data/statepop.csv")
+            state_pops = state_pops[["State", "Total Pop"]].head(15)
+            state_pops = state_pops.astype({"Total Pop":"int"})
+
+            # create choropleth map based on border type
+            if border_type == "Countywide":
+
+                county_pops_adj = county_pops.copy()
+                
+                if slidermax != county_pops["Population"].max(): #when the map is loaded for the first time, maximum value will not match county_pops["Population"].max()
+                    slider =  dcc.RangeSlider(min = 0,  
+                                    max = county_pops["Population"].max(), 
+                                    id = "slider-2"
+                                    )
+                else: #otherwise, this is the case where the map was not loaded for the first time, and the user just adjusted the rangeslider
+                    slider =  dcc.RangeSlider(min = 0,   
+                                    max = county_pops["Population"].max(), 
+                                    value=[sliderrange[0], sliderrange[1]],
+                                    id = "slider-2"
+                                    )
+                    county_pops_adj = county_pops[county_pops['Population'].between(sliderrange[0], sliderrange[1], inclusive="both")]
+                
+                fig = px.choropleth(county_pops_adj, geojson=map_gj, locations='Geo_FIPS', 
+                        color='Population',
+                        color_continuous_scale="Viridis",
+                        range_color=(county_pops["Population"].min(), 
+                                    county_pops["Population"].max()),
+                        featureidkey="properties.Geo_FIPS",
+                        scope="usa",
+                        basemap_visible=basemap_visible,
+                        fitbounds=fitbounds,
+                        hover_name="County",
+                        hover_data=["Population"],
+                    )
+                
+            elif border_type == "Statewide":
+
+                state_pops_adj = state_pops.copy()
+                
+                if slidermax != state_pops["Total Pop"].max(): 
+                    slider =  dcc.RangeSlider(min = 0, 
+                                    max = state_pops["Total Pop"].max(), 
+                                    id = "slider-2"
+                                    )
+                else:
+                    slider =  dcc.RangeSlider(min = 0,   
+                                    max = state_pops["Total Pop"].max(), 
+                                    value=[sliderrange[0], sliderrange[1]],
+                                    id = "slider-2"
+                                    )
+                    state_pops_adj = state_pops[state_pops['Total Pop'].between(sliderrange[0], sliderrange[1], inclusive="both")]
+                
+                fig = px.choropleth(state_pops_adj, geojson=states_gj, locations='State', 
+                                    color='Total Pop',
+                                    color_continuous_scale="Viridis",
+                                    range_color=(state_pops["Total Pop"].min(), 
+                                                state_pops["Total Pop"].max()),
+                                    featureidkey="properties.state",
+                                    scope="usa",
+                                    basemap_visible=basemap_visible,
+                                    fitbounds=fitbounds,
+                                    hover_name="State",
+                                    hover_data=["Total Pop"]
+                            )
+                
+            elif border_type == "Nationwide":
+                
+                nat_pops = state_pops.copy()
+
+                nat_val = state_pops["Total Pop"].sum()
+                national = [nat_val]*15
+                nat_pops["National"] = national
+
+                if slidermax != nat_val: 
+                    slider =  dcc.RangeSlider(min = 0, 
+                                    max = nat_val, 
+                                    id = "slider-2"
+                                    )
+                else:
+                    slider =  dcc.RangeSlider(min = 0,   
+                                    max = nat_val, 
+                                    value=[sliderrange[0], sliderrange[1]],
+                                    id = "slider-2"
+                                    )
+                    nat_pops = nat_pops[nat_pops['National'].between(sliderrange[0], sliderrange[1], inclusive="both")]
+
+                fig = px.choropleth(nat_pops, geojson=states_gj, locations='State', 
+                                    color='National',
+                                    color_continuous_scale="Viridis",
+                                    range_color=(0, nat_val),
+                                    featureidkey="properties.state",
+                                    scope="usa",
+                                    basemap_visible=basemap_visible,
+                                    fitbounds=fitbounds,
+                                    hover_name="State",
+                                    hover_data= ["National"]
+                            )        
+                
+
+        elif map_type == 'Slave Population': 
+            
+            #basemap_visible = True
+            county_pops = pd.read_csv("../data_raw/census_data/countyPopulation.csv", header=1)
+            county_pops = county_pops[county_pops["SE_T001_001"].notna()]
+            county_pops = county_pops.astype({"SE_T001_001":"int", "Geo_FIPS":"str"})
+            county_pops.rename(columns = {'SE_T001_001':'Population', "Geo_name":"County"}, inplace = True)
+
+            county_slaves = gpd.read_file("../data_raw/census_data/census.csv")
+            county_slaves = county_slaves[["GISJOIN", "slavePopulation"]].head(290)
+            county_slaves['GISJOIN'] = county_slaves['GISJOIN'].str.replace('G0', '')
+            county_slaves['GISJOIN'] = county_slaves['GISJOIN'].str.replace('G', '') #convert to geo_fips
+            county_slaves.rename(columns = {'GISJOIN':'Geo_FIPS'}, inplace = True)
+            merged = pd.merge(county_pops, county_slaves, on=['Geo_FIPS'])
+            merged = merged[["Geo_FIPS", "slavePopulation", "County"]]
+            merged = merged.astype({"slavePopulation":"int", "Geo_FIPS":"str"})
+            #print(merged)
+
+            state_pop = gpd.read_file("../data_raw/census_data/statepop.csv")
+            state_pop = state_pop[["State", "Slave Pop"]].head(15)
+            state_pop = state_pop.astype({"Slave Pop":"int"})
+
+            if border_type == "Countywide":
+                county_slaves_adj = merged.copy()
+                
+                #with pd.option_context('display.max_rows', None, 'display.max_columns', None):  # more options can be specified also
+                #    print(county_slaves_adj)
+
+                if slidermax != merged["slavePopulation"].max(): #issue with choosing state of max county
+                    slider =  dcc.RangeSlider(min = 0, 
+                                    max = merged["slavePopulation"].max(), 
+                                    id = "slider-2"
+                                    )
+                else:
+                    slider =  dcc.RangeSlider(min = 0,   
+                                    max = merged["slavePopulation"].max(), 
+                                    value=[sliderrange[0], sliderrange[1]],
+                                    id = "slider-2"
+                                    )
+                    county_slaves_adj = merged[merged['slavePopulation'].between(sliderrange[0], sliderrange[1], inclusive="both")]
+
+                fig = px.choropleth(county_slaves_adj, geojson=map_gj, locations='Geo_FIPS', 
+                        color='slavePopulation',
+                        #color_continuous_scale="Viridis",
+                        range_color=(merged["slavePopulation"].min(), 
+                                    merged["slavePopulation"].max()),
+                        featureidkey="properties.Geo_FIPS",
+                        scope="usa",
+                        basemap_visible=basemap_visible,
+                        fitbounds=fitbounds,
+                        hover_name="County",
+                        hover_data=["slavePopulation"],
+                        color_continuous_scale=[[0, 'rgb(240,240,240)'],
+                                [0.1, 'rgb(126, 191, 113)'],
+                                [0.2, 'rgb(91, 161, 77)'],
+                                [0.75, 'rgb(227, 72, 54)'],
+                                [1, 'rgb(227, 26, 28)']]
+                    )
+
+
+            elif border_type == "Statewide":
+                state_pop_adj = state_pop.copy()
+                
+                if slidermax != state_pop["Slave Pop"].max(): 
+                    slider =  dcc.RangeSlider(min = 0, 
+                                    max = state_pop["Slave Pop"].max(), 
+                                    id = "slider-2"
+                                    )
+                else:
+                    slider =  dcc.RangeSlider(min = 0,   
+                                    max = state_pop["Slave Pop"].max(), 
+                                    value=[sliderrange[0], sliderrange[1]],
+                                    id = "slider-2"
+                                    )
+                    state_pop_adj = state_pop[state_pop['Slave Pop'].between(sliderrange[0], sliderrange[1], inclusive="both")]
+
+                fig = px.choropleth(state_pop_adj, geojson=states_gj, locations='State', #map_gj vs states_gj
+                            color='Slave Pop',
+                            color_continuous_scale="Viridis",
+                            range_color=(state_pop['Slave Pop'].min(), 
+                                        state_pop['Slave Pop'].max()),
+                            featureidkey="properties.state", 
+                            scope="usa", 
+                            basemap_visible=basemap_visible,
+                            fitbounds=fitbounds,
+                            hover_name="State",
+                            hover_data=["Slave Pop"]
+                        ) 
+
+            elif border_type == "Nationwide":
+                
+                nat_slave = state_pop.copy()
+
+                nat_val = state_pop["Slave Pop"].sum()
+                national = [nat_val]*15
+                nat_slave["National"] = national
+
+                if slidermax != nat_val: 
+                    slider =  dcc.RangeSlider(min = 0, 
+                                    max = nat_val, 
+                                    id = "slider-2"
+                                    )
+                else:
+                    slider =  dcc.RangeSlider(min = 0,   
+                                    max = nat_val, 
+                                    value=[sliderrange[0], sliderrange[1]],
+                                    id = "slider-2"
+                                    )
+                    nat_slave = nat_slave[nat_slave['National'].between(sliderrange[0], sliderrange[1], inclusive="both")]
+
+                fig = px.choropleth(nat_slave, geojson=states_gj, locations='State', 
+                                    color='National',
+                                    color_continuous_scale="Viridis",
+                                    range_color=(0, nat_val),
+                                    featureidkey="properties.state",
+                                    scope="usa",
+                                    basemap_visible=basemap_visible,
+                                    fitbounds=fitbounds,
+                                    hover_name="State",
+                                    hover_data= ["National"]
+                            )        
+
+        elif map_type == 'Debt Distribution':
+            # Create the debt distribution map
+            # Input: archive/.../CD_geographical_table_summary.csv, countyPops.csv (GEO_FIPS column), Map geojson file 
+            # Create a dataframe of all county names and their GEO_FIPS code 
+            # Merge dataframe with CD_geographical_table_summary.csv 
+            # test debt distribution map 
+            # fig = px.choropleth()
+            six_p_tot = county_debt_geo["6p_total"]
+
+            x = six_p_tot[six_p_tot.between(six_p_tot.quantile(.15), six_p_tot.quantile(.85))] # remove outliers
+
+            #print(six_p_tot[six_p_tot.between(six_p_tot.quantile(.85), six_p_tot.quantile(1))])
+
+            Q1 = np.percentile(county_debt_geo['6p_total'], 25, method='midpoint')
+            Q3 = np.percentile(county_debt_geo['6p_total'], 75, method='midpoint')
+            IQR = Q3 - Q1 
+
+            # Above Upper bound
+            upper=Q3+1.5*IQR
+            upper_array=np.array(county_debt_geo['6p_total']>=upper)
+            
+            #Below Lower bound
+            lower=Q1-1.5*IQR
+            lower_array=np.array(county_debt_geo['6p_total']<=lower)                
+
+            xiv = pd.Interval(x.min(), x.max())
+            xmid = xiv.mid
+
+            if border_type == "Countywide": #automatic rounding issue. See explanation in debt density section
+                
+                ceiling_var = county_debt_geo["6p_total"].max() + 1000 #so that the slider does not round down and exclude the actual max value
+                
+                county_debt_geo_adj = county_debt_geo.copy()
+                if slidermax != ceiling_var: 
+                    slider =  dcc.RangeSlider(min = 0, 
+                                    max = ceiling_var, 
+                                    id = "slider-2"
+                                    )
+                else:
+                    slider =  dcc.RangeSlider(min = 0,   
+                                    max = ceiling_var, 
+                                    value=[sliderrange[0], sliderrange[1]],
+                                    id = "slider-2"
+                                    )
+                    county_debt_geo_adj = county_debt_geo[county_debt_geo['6p_total'].between(sliderrange[0], sliderrange[1], inclusive="both")]
+
+                print(sliderrange)
+                
+                fig = px.choropleth(county_debt_geo_adj, geojson=map_gj, locations='Geo_FIPS', 
+                            color='6p_total',
+                            #color_continuous_scale="Viridis",
+                            range_color=(county_debt_geo['6p_total'].min(), 
+                                        county_debt_geo['6p_total'].max()),
+                            featureidkey="properties.Geo_FIPS",
+                            scope="usa",
+                            basemap_visible=basemap_visible,
+                            fitbounds=fitbounds,
+                            hover_name="county",
+                            hover_data=["6p_total"],
+                            color_continuous_scale=[[0, 'rgb(240,240,240)'],
+                                [0.1, 'rgb(126, 191, 113)'],
+                                [0.2, 'rgb(91, 161, 77)'],
+                                [0.75, 'rgb(227, 72, 54)'],
+                                [1, 'rgb(227, 26, 28)']]
+                        )
+            elif border_type == "Statewide":
+                
+                ceiling_var = state_sixp_agg["6p_total"].max() + 1000 #same reasoning as for county-wide
+                
+                state_sixp_agg_adj = state_sixp_agg.copy()
+
+                if slidermax != ceiling_var: 
+                        slider =  dcc.RangeSlider(min = 0, 
+                                    max = ceiling_var, 
+                                    id = "slider-2"
+                                    )
+                else:
+                        slider =  dcc.RangeSlider(min = 0,   
+                                    max = ceiling_var, 
+                                    value=[sliderrange[0], sliderrange[1]],
+                                    id = "slider-2"
+                                    )
+                        state_sixp_agg_adj = state_sixp_agg[state_sixp_agg['6p_total'].between(sliderrange[0], sliderrange[1], inclusive="both")]
+
+                fig = px.choropleth(state_sixp_agg_adj, geojson=states_gj, locations='state', 
+                                    color='6p_total',
+                                    color_continuous_scale="Viridis",
+                                    range_color=(state_sixp_agg["6p_total"].min(), #count --> 6p_total
+                                                state_sixp_agg["6p_total"].max()),
+                                    featureidkey="properties.state_abrev",
+                                    scope="usa",
+                                    basemap_visible=basemap_visible,
+                                    fitbounds=fitbounds,
+                                    hover_name="state",
+                                    hover_data=["6p_total"]
+                            )
+                
+            elif border_type == "Nationwide":
+                
+                nat_dist = state_sixp_agg.copy()
+
+                nat_val = state_sixp_agg["6p_total"].sum()
+                national = [nat_val]*14
+                nat_dist["National"] = national
+
+                if slidermax != nat_val: 
+                    slider =  dcc.RangeSlider(min = 0, 
+                                    max = nat_val, 
+                                    id = "slider-2"
+                                    )
+                else:
+                    slider =  dcc.RangeSlider(min = 0,   
+                                    max = nat_val, 
+                                    value=[sliderrange[0], sliderrange[1]],
+                                    id = "slider-2"
+                                    )
+                    nat_dist = nat_dist[nat_dist['National'].between(sliderrange[0], sliderrange[1], inclusive="both")]
+
+                fig = px.choropleth(nat_dist, geojson=states_gj, locations='state', 
+                                    color='National',
+                                    color_continuous_scale="Viridis",
+                                    range_color=(0, nat_val),
+                                    featureidkey="properties.state_abrev",
+                                    scope="usa",
+                                    basemap_visible=basemap_visible,
+                                    fitbounds=fitbounds,
+                                    hover_name="state",
+                                    hover_data= ["National"]
+                            )        
+
+        elif map_type == 'Debt Density':
+            # Create county map
+            # Create a new column in debt_by_county: divide number of debt holders by county population 
+            # Disiplay new column 
+
+            county_debt_geo['density'] = county_debt_geo['6p_total'] / county_debt_geo['population']
+            
+            density = county_debt_geo["density"]
+            #x = six_p_tot[six_p_tot.between(six_p_tot.quantile(.15), six_p_tot.quantile(.85))] # remove outliers
+
+            state_sixp_agg['density'] = state_sixp_agg['6p_total'] / state_sixp_agg['population']            
+
+            if border_type == "Countywide":
+                
+                county_debt_geo_adj = county_debt_geo.copy()
+                if slidermax != round(county_debt_geo["density"].max(), 2): 
+                        slider =  dcc.RangeSlider(min = 0, 
+                                    max = round(county_debt_geo["density"].max(), 2), 
+                                    id = "slider-2"
+                                    )
+                else:
+                        slider =  dcc.RangeSlider(min = 0,   
+                                    max = round(county_debt_geo["density"].max(), 2), 
+                                    value=[sliderrange[0], sliderrange[1]],
+                                    id = "slider-2"
+                                    )
+                        county_debt_geo_adj = county_debt_geo[county_debt_geo['density'].between(sliderrange[0], sliderrange[1], inclusive="both")]
+
+                
+                fig = px.choropleth(county_debt_geo_adj, geojson=map_gj, locations='Geo_FIPS', 
+                    color='density',
+                    # color_continuous_scale="Viridis",
+                    range_color=(density.min(), 
+                            density.max()),
+                    featureidkey="properties.Geo_FIPS",
+                    scope="usa",
+                    basemap_visible=basemap_visible,
+                    fitbounds=fitbounds,
+                    hover_name="county",
+                    hover_data=["density"],
+                    color_continuous_scale=[[0, 'rgb(240,240,240)'],
+                        [0.1, 'rgb(126, 191, 113)'],
+                        [0.2, 'rgb(91, 161, 77)'],
+                        [0.75, 'rgb(227, 72, 54)'],
+                        [1, 'rgb(227, 26, 28)']]
+                )
+
+            elif border_type == "Statewide":
+                state_sixp_agg_adj = state_sixp_agg.copy()
+                if slidermax != math.ceil(state_sixp_agg["density"].max()):  #round up. Otherwise, slider automatically rounds to 2 places 
+                        slider =  dcc.RangeSlider(min = 0,                # Without ceil(), it will round down, which then eliminates the max value
+                                    max = math.ceil(state_sixp_agg["density"].max()), 
+                                    id = "slider-2"
+                                    )
+                else:
+                        slider =  dcc.RangeSlider(min = 0,   
+                                    max = math.ceil(state_sixp_agg["density"].max()), 
+                                    value=[sliderrange[0], sliderrange[1]],
+                                    id = "slider-2"
+                                    )
+                        state_sixp_agg_adj = state_sixp_agg[state_sixp_agg['density'].between(sliderrange[0], sliderrange[1], inclusive="both")]
+
+                
+                fig = px.choropleth(state_sixp_agg_adj, geojson=states_gj, locations='state', 
+                    color='density',
+                    color_continuous_scale="Viridis",
+                    range_color=(state_sixp_agg['density'].min(), 
+                            state_sixp_agg['density'].max()),
+                    featureidkey="properties.state_abrev",
+                    scope="usa",
+                    basemap_visible=basemap_visible,
+                    fitbounds=fitbounds,
+                    hover_name="state",
+                    hover_data=["density"]
+                )
+                
+            elif border_type == "Nationwide":
+                
+                nat_dens = state_sixp_agg.copy()
+
+                nat_val = (state_sixp_agg["6p_total"].sum())/(state_sixp_agg["population"].sum())
+                national = [nat_val]*14
+                nat_dens["National"] = national
+
+                if slidermax != nat_val: 
+                    slider =  dcc.RangeSlider(min = 0, 
+                                    max = nat_val, 
+                                    id = "slider-2"
+                                    )
+                else:
+                    slider =  dcc.RangeSlider(min = 0,   
+                                    max = nat_val, 
+                                    value=[sliderrange[0], sliderrange[1]],
+                                    id = "slider-2"
+                                    )
+                    nat_dens = nat_dens[nat_dens['National'].between(sliderrange[0], sliderrange[1], inclusive="both")]
+
+                fig = px.choropleth(nat_dens, geojson=states_gj, locations='state', 
+                                    color='National',
+                                    color_continuous_scale="Viridis",
+                                    range_color=(0, nat_val),
+                                    featureidkey="properties.state_abrev",
+                                    scope="usa",
+                                    basemap_visible=basemap_visible,
+                                    fitbounds=fitbounds,
+                                    hover_name="state",
+                                    hover_data= ["National"]
+                            )        
+            
+
+
+        elif map_type == 'Average Debt Holdings':
+            county_debt_geo['mean_6p_held'] = county_debt_geo['6p_total'] / county_debt_geo['count']
+
+            six_p_tot = county_debt_geo['mean_6p_held']
+
+            # x = six_p_tot[six_p_tot.between(six_p_tot.quantile(.15), six_p_tot.quantile(.85))] # remove outliers
+
+            state_sixp_agg['mean_6p_held'] = state_sixp_agg['6p_total'] / state_sixp_agg['count']            
+
+            if border_type == "Countywide":
+                county_debt_geo_adj = county_debt_geo.copy()
+                if slidermax != round(county_debt_geo["mean_6p_held"].max(), 2): 
+                        slider =  dcc.RangeSlider(min = 0, 
+                                    max = round(county_debt_geo["mean_6p_held"].max(), 2), 
+                                    id = "slider-2"
+                                    )
+                else:
+                        slider =  dcc.RangeSlider(min = 0,   
+                                    max = round(county_debt_geo["mean_6p_held"].max(), 2), 
+                                    value=[sliderrange[0], sliderrange[1]],
+                                    id = "slider-2"
+                                    )
+                        county_debt_geo_adj = county_debt_geo[county_debt_geo['mean_6p_held'].between(sliderrange[0], sliderrange[1], inclusive="both")]
+
+                
+                fig = px.choropleth(county_debt_geo_adj, geojson=map_gj, locations='Geo_FIPS', 
+                    color='mean_6p_held',
+                    # color_continuous_scale="Viridis",
+                    range_color=(six_p_tot.min(), 
+                            six_p_tot.max()),
+                    featureidkey="properties.Geo_FIPS",
+                    scope="usa",
+                    basemap_visible=basemap_visible,
+                    fitbounds=fitbounds,
+                    hover_name="county",
+                    hover_data=["mean_6p_held"],
+                    color_continuous_scale=[[0, 'rgb(240,240,240)'],
+                        [0.1, 'rgb(126, 191, 113)'],
+                        [0.2, 'rgb(91, 161, 77)'],
+                        [0.75, 'rgb(227, 72, 54)'],
+                        [1, 'rgb(227, 26, 28)']]
+                )
+
+            elif border_type == "Statewide":
+                state_sixp_agg_adj = state_sixp_agg.copy()
+                if slidermax != round(state_sixp_agg["mean_6p_held"].max(),2): 
+                        slider =  dcc.RangeSlider(min = 0, 
+                                    max = round(state_sixp_agg["mean_6p_held"].max(), 2), 
+                                    id = "slider-2"
+                                    )
+                else:
+                        slider =  dcc.RangeSlider(min = 0,   
+                                    max = round(state_sixp_agg["mean_6p_held"].max(), 2), 
+                                    value=[sliderrange[0], sliderrange[1]],
+                                    id = "slider-2"
+                                    )
+                        state_sixp_agg_adj = state_sixp_agg[state_sixp_agg['mean_6p_held'].between(sliderrange[0], sliderrange[1], inclusive="both")]
+
+
+                fig = px.choropleth(state_sixp_agg_adj, geojson=states_gj, locations='state', 
+                    color='mean_6p_held',
+                    color_continuous_scale="Viridis",
+                    range_color=(state_sixp_agg['mean_6p_held'].min(), 
+                            state_sixp_agg['mean_6p_held'].max()),
+                    featureidkey="properties.state_abrev",
+                    scope="usa",
+                    basemap_visible=basemap_visible,
+                    fitbounds=fitbounds,
+                    hover_name="state",
+                    hover_data=["mean_6p_held"]
+                )
+                
+            elif border_type == "Nationwide":
+                
+                nat_avg = state_sixp_agg.copy()
+
+                nat_val = (state_sixp_agg["6p_total"].sum())/(state_sixp_agg["count"].sum())
+                national = [nat_val]*14
+                nat_avg["National"] = national
+
+                if slidermax != nat_val: 
+                    slider =  dcc.RangeSlider(min = 0, 
+                                    max = nat_val, 
+                                    id = "slider-2"
+                                    )
+                else:
+                    slider =  dcc.RangeSlider(min = 0,   
+                                    max = nat_val, 
+                                    value=[sliderrange[0], sliderrange[1]],
+                                    id = "slider-2"
+                                    )
+                    nat_avg = nat_avg[nat_avg['National'].between(sliderrange[0], sliderrange[1], inclusive="both")]
+
+                fig = px.choropleth(nat_avg, geojson=states_gj, locations='state', 
+                                    color='National',
+                                    color_continuous_scale="Viridis",
+                                    range_color=(0, nat_val),
+                                    featureidkey="properties.state_abrev",
+                                    scope="usa",
+                                    basemap_visible=basemap_visible,
+                                    fitbounds=fitbounds,
+                                    hover_name="state",
+                                    hover_data= ["National"]
+                            ) 
+        
+        else:
+             fig = px.choropleth()
+             slider = dcc.RangeSlider(id="slider-2", min = 0, max = 10) 
+        
+        return dcc.Graph(figure=fig, id='my-map-2'), [slider, 'You have selected "{}"'.format(sliderrange)]
+
     
     else: # option is table
         # Display the DataFrame as a table
@@ -1381,7 +2079,8 @@ app.layout = html.Div(className='app-container', children=[
     ]),
     project_desc,
     html.Div(className='tabs-container', children=left_tab),
-    html.Div(className='right-tab', children=right_tab)
+    html.Div(className='right-tab', children=right_tab),
+    html.Div(className='right-tab-2', children=right_tab_2)
 ])
 
 # run app
