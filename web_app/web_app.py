@@ -248,7 +248,7 @@ right_tab_2 = html.Div(className='box', children=[
 ], style={'width': '100%', 'height': '600px'})
 
 '''
-# check if a display option is selected   #NOT SURE IF THIS IS NEEDED KEEP FOR NOW
+# check if a display option is selected
 # edit layout accordingly 
 @app.callback(
         [Output("st_c_drpdwn", "style", allow_duplicate=True), 
@@ -677,18 +677,19 @@ def display_checkbox(border_value, region_value):
     [Input('compare_checkbox', 'value')]
 )
 def create_new_heatmap(values):
-    if values is not None:
-        value = values[0]
-        if value == 'Compare Two Heatmaps':
-            heatmap_title = html.H5(children=["Pick a Heatmap to Compare With"], id="heatmap_drpdwn_t")
-            heatmap_drp = dcc.Dropdown(
-                id="heatmap_drpdwn_2",
-                options=['Not Selected', 'Population', 'Slave Population', 'Debt Density', 'Debt Distribution', 'Average Debt Holdings'], #add more if more needed
-                value=["Not Selected"]
-            )
-            return heatmap_title, heatmap_drp
-    
-    return '' 
+    if values is None: #creates an error during first callback otherwise, since the checkbox doesn't exist yet
+        return ''
+    value = values[0]
+    if value == 'Compare Two Heatmaps':
+        heatmap_title = html.H5(children=["Pick a Heatmap to Compare With"], id="heatmap_drpdwn_t")
+        heatmap_drp = dcc.Dropdown(
+            id="heatmap_drpdwn_2",
+            options=['Not Selected', 'Population', 'Slave Population', 'Debt Density', 'Debt Distribution', 'Average Debt Holdings'], #add more if more needed
+            value=["Not Selected"]
+        )
+        return heatmap_title, heatmap_drp
+    else:
+        return '' 
 
 @app.callback(
     Output("heatmap_modal", "is_open"),
