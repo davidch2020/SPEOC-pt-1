@@ -2049,7 +2049,7 @@ def create_new_heatmap(state, county, option, map_type, border_type, sliderrange
         return dcc.Graph(figure=fig, id='my-map-2'), [slider, 'You have selected "{}"'.format(sliderrange)]
 
     
-    else: # option is table
+    '''else: # option is table
         # Display the DataFrame as a table
         df = pd.read_csv('../data_clean/final_data_CD.csv', index_col=0)
         return dash_table.DataTable(
@@ -2066,7 +2066,7 @@ def create_new_heatmap(state, county, option, map_type, border_type, sliderrange
                 'backgroundColor': 'rgb(230, 230, 230)',
                 'fontWeight': 'bold'
             }
-        ), rangeslider #prevent it from becoming nonetype. should not show up though
+        ), rangeslider #prevent it from becoming nonetype. should not show up though'''
 
 # Layout of the app
 app.layout = html.Div(className='app-container', children=[
