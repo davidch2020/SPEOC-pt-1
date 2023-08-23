@@ -1407,8 +1407,8 @@ def handle_state_dropdown(state, county, option, map_type, border_type, sliderra
         Input("left-tab-options", "value"), 
         Input('heatmap_drpdwn_2', 'value'), 
         Input('border_drpdwn', 'value'),
-        Input('slider', 'value'),
-        Input('slider', 'max')] #to keep track of when the heatmap type changes--> means that the rangeslider maximum must be adjusted 
+        Input('slider-2', 'value'),
+        Input('slider-2', 'max')] #to keep track of when the heatmap type changes--> means that the rangeslider maximum must be adjusted 
 )
 def create_new_heatmap(state, county, option, map_type, border_type, sliderrange, slidermax):
     global fig 
