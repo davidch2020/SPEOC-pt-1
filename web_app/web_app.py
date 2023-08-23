@@ -2048,6 +2048,9 @@ def create_new_heatmap(state, county, option, map_type, border_type, sliderrange
         
         return dcc.Graph(figure=fig, id='my-map-2'), [slider, 'You have selected "{}"'.format(sliderrange)]
 
+    else: 
+        return '', rangeslider
+
     
     '''else: # option is table
         # Display the DataFrame as a table
