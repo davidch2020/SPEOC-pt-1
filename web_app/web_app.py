@@ -681,7 +681,7 @@ def display_checkbox(border_value, region_value, option, heatmap):
     Input("left-tab-options", "value")]  
 )
 def create_new_heatmap(values, option):
-    if (values is None) #or (option != "map"): #creates an error during first callback otherwise, since the checkbox doesn't exist yet
+    if values is None: #or (option != "map"): #creates an error during first callback otherwise, since the checkbox doesn't exist yet
         return ''
     value = values[0]
     if value == 'Compare Two Heatmaps':
