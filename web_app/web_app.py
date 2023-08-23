@@ -675,10 +675,11 @@ def display_checkbox(border_value, region_value, option):
 # If the `compare two heatmaps` checkbox was clicked, create a new heatmap dropdown. 
 @app.callback(
     Output('heatmap_c_drpdwn_2', 'children'), 
-    [Input('compare_checkbox', 'value')]
+    [Input('compare_checkbox', 'value'),
+    Input("left-tab-options", "value")]
 )
-def create_new_heatmap(values):
-    if values is None: #creates an error during first callback otherwise, since the checkbox doesn't exist yet
+def create_new_heatmap(values, option):
+    if (values is None) or (option != "map"): #creates an error during first callback otherwise, since the checkbox doesn't exist yet
         return ''
     value = values[0]
     if value == 'Compare Two Heatmaps':
