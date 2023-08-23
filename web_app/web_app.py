@@ -496,6 +496,18 @@ def add_range_slider(heatvalue, tabvalue):
         return {"display":"block"}
     else:
         return {"display":"none"}
+
+# call back function to display second range slider when heatmap type is chosen
+@app.callback( 
+        Output("range-slider-2", "style"),
+        [Input("heatmap_drpdwn_2", "value"),
+         Input("left-tab-options", "value")]
+)
+def add_range_slider_2(heatvalue, tabvalue):
+    if (heatvalue is not None) and (heatvalue != "Not Selected") and (tabvalue == "map"):
+        return {"display":"block"}
+    else:
+        return {"display":"none"}
 '''
 # call back function to display map options when 'a state' is clicked 
 @app.callback( 
