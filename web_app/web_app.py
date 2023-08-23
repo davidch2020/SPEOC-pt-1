@@ -668,7 +668,7 @@ def display_heatmap_drpdwn(border_value, region_value):
     Input("heatmap_drpdwn", "value")]
 )
 def display_checkbox(border_value, region_value, option, heatmap):
-    if (region_value == "Not Selected") or (region_value is None) or (border_value == "Not Selected") or (option != "map") or (heatmap == "Not Selected") or (heatmap is None):
+    if (region_value == "Not Selected") or (region_value is None) or (border_value == "Not Selected") or (border_value is None) or (option != "map") or (heatmap == "Not Selected") or (heatmap is None):
         return {'display':'none'}
     else:
         return {'display':'block'}
