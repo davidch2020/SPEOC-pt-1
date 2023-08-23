@@ -474,15 +474,16 @@ def open_regions_information(n_clicks):
         [Output("regions_c_drpdwn", "style"),
         Output("bord_c_drpdwn", "style"),
         Output("heatmap_c_drpdwn", "style"),
+        Output("heatmap_c_drpdwn_2", "style"),
         Output("states_c_drpdwn", "style"),
         Output("c_drpdwn", "style")],
         Input("left-tab-options", "value")
 )
 def add_map_options(value):
     if value == "map":
-        return {"display":"block"}, {"display":"block"}, {"display":"block"}, {"display":"block"}, {"display":"block"}
+        return {"display":"block"}, {"display":"block"}, {"display":"block"}, {"display":"block"}, {"display":"block"}, {"display":"block"}
     else:
-        return {"display":"none"}, {"display":"none"}, {"display":"none"}, {"display":"none"}, {"display":"none"}
+        return {"display":"none"}, {"display":"none"}, {"display":"none"}, {"display":"none"}, {"display":"none"}, {"display":"none"}
 
 # call back function to display range slider when heatmap type is chosen
 @app.callback( 
@@ -677,10 +678,10 @@ def display_checkbox(border_value, region_value, option, heatmap):
 @app.callback(
     Output('heatmap_c_drpdwn_2', 'children'), 
     [Input('compare_checkbox', 'value'),
-    Input("left-tab-options", "value")]
+    Input("left-tab-options", "value")]  
 )
 def create_new_heatmap(values, option):
-    if (values is None) or (option != "map"): #creates an error during first callback otherwise, since the checkbox doesn't exist yet
+    if (values is None) #or (option != "map"): #creates an error during first callback otherwise, since the checkbox doesn't exist yet
         return ''
     value = values[0]
     if value == 'Compare Two Heatmaps':
@@ -688,7 +689,7 @@ def create_new_heatmap(values, option):
         heatmap_drp = dcc.Dropdown(
             id="heatmap_drpdwn_2",
             options=['Not Selected', 'Population', 'Slave Population', 'Debt Density', 'Debt Distribution', 'Average Debt Holdings'], #add more if more needed
-            value=["Not Selected"]
+            value= "Not Selected"
         )
         return heatmap_title, heatmap_drp
     else:
@@ -2070,7 +2071,7 @@ def create_new_heatmap(state, county, option, map_type, border_type, sliderrange
                 'backgroundColor': 'rgb(230, 230, 230)',
                 'fontWeight': 'bold'
             }
-        ), rangeslider #prevent it from becoming nonetype. should not show up though'''
+        ), rangeslider2 #prevent it from becoming nonetype. should not show up though'''
 
 # Layout of the app
 app.layout = html.Div(className='app-container', children=[
