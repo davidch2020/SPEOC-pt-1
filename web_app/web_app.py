@@ -663,10 +663,11 @@ def display_heatmap_drpdwn(border_value, region_value):
 @app.callback(
     Output("compare_checkbox", "style"),
     [Input("border_drpdwn", "value"), #need more input so it doesnt show up in county/state ex
-    Input("reg_drpdwn", "value")]
+    Input("reg_drpdwn", "value"), 
+    Input("left-tab-options", "value")]
 )
-def display_checkbox(border_value, region_value):
-    if (region_value == "Not Selected") or (region_value is None) or (border_value == "Not Selected"):
+def display_checkbox(border_value, region_value, option):
+    if (region_value == "Not Selected") or (region_value is None) or (border_value == "Not Selected") or (option != "map"):
         return {'display':'none'}
     else:
         return {'display':'block'}
