@@ -1414,7 +1414,7 @@ def create_new_heatmap(state, county, option, map_type, border_type, sliderrange
         states_gj = json.loads(states_str)
 
         if (map_type == "Not Selected") or (map_type is None):
-            return '', rangeslider
+            return '', rangeslider2
 
         if (state != "All States") and (state is not None):
             if border_type == "Countywide":
@@ -2050,7 +2050,7 @@ def create_new_heatmap(state, county, option, map_type, border_type, sliderrange
         return dcc.Graph(figure=fig, id='my-map-2'), [slider, 'You have selected "{}"'.format(sliderrange)]
 
     else: 
-        return '', rangeslider
+        return '', rangeslider2
 
     
     '''else: # option is table
