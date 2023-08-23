@@ -644,7 +644,7 @@ def display_heatmap_drpdwn(border_value, region_value):
         heatmap_drp = dcc.Dropdown(
             id="heatmap_drpdwn",
             options=['Not Selected', 'Population', 'Slave Population', 'Debt Density', 'Debt Distribution', 'Average Debt Holdings'], #add more if more needed
-            value=["Not Selected"]
+            value="Not Selected"
         )
 
         '''
