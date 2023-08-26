@@ -1,0 +1,119 @@
+/* Global styles */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f0f8ff; /* Sea Blue */
+}
+
+/* Navigation bar styles */
+
+.navbar {
+  background-color: #007bff; /* Navbar Blue */
+}
+
+.navbar-toggler-icon {
+    background-color: white; /* White hamburger icon */
+}
+
+.nav-link {
+    color: white !important; /* White text color for nav links */
+}
+
+/* Increase font size of the header text */
+.navbar-brand div:first-child {
+    font-size: 50px;
+}
+
+/* Center-align the header text */
+.navbar-brand div {
+    text-align: center;
+}
+
+/* Add margin below the header text */
+.navbar-brand div:last-child {
+    margin-top: 5px;
+}
+
+.navbar a {
+  color: #000;
+  text-decoration: none;
+  margin-left: 20px;
+}
+
+.navbar a:hover {
+  font-weight: bold;
+}
+
+.navbar .active {
+  text-decoration: underline;
+  font-weight: bold;
+}
+
+/* Page styles */
+.page {
+    margin-top: 50px; /* To make space for the fixed navigation bar */
+    text-align: center;
+}
+
+.container {
+    background-color: white; /* White content background */
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1); /* Light shadow */
+}
+
+/* About Us page styles */
+.about-us-content {
+    text-align: center;
+    padding: 50px;
+    color: #007bff; /* Navbar Blue text color */
+}
+
+.headshot-element {
+    display: inline-block;
+    width: 220px; /* Adjust the width as needed */
+    text-align: center;
+    margin: 10px;
+    transition: transform 0.2s; /* Add transition for smooth animation */
+}
+
+.headshot-element:hover {
+    transform: scale(1.1); /* Increase the size on hover */
+}
+
+.headshot-name {
+    font-size: 0.9rem; /* Adjust the font size as needed */
+    transition: font-size 0.2s; /* Add transition for smooth animation */
+}
+
+.headshot-element:hover .headshot-name {
+    font-size: 1rem; /* Increase the font size on hover */
+}
+
+.project-page {
+  /* Set top and bottom margins to 20px and left and right margins to 250px */
+  margin: 20px 250px;
+}
+
+/*Project Description Page Style*/
+.project-header {
+    transition: opacity 0.5s, transform 0.5s;
+    position: sticky;
+    top: 0;
+    z-index: 2;
+}
+
+.content-transparent {
+    position: relative;
+    z-index: 1;
+    background: rgba(255, 255, 255, 0.9);
+    padding: 20px;
+}
+
+/* Responsive styles for smaller screens */
+@media (max-width: 768px) {
+    .container {
+        padding: 10px;
+    }
+}
