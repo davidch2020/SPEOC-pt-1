@@ -1,49 +1,119 @@
 # import packages
+import json
+import math
+
 import dash
 import dash_bootstrap_components as dbc
-from dash import html
-from dash import dcc
-from dash.dependencies import Input, Output
-from dash import dash_table
+import geopandas as gpd
+import numpy as np
 import pandas as pd
 import plotly.express as px
-import geopandas as gpd
-import json
-import os
-import matplotlib.pyplot as plt 
-import numpy as np
+from dash import dcc
+from dash import html
+from dash.dependencies import Input, Output, State
+import time
+from shapely import wkt
 
-state_codes = {
-    "New Hampshire":"NH",
-    "Vermont":"VT",
-    "Rhode Island":"RI",
-    "Connecticut":"CT",
-    "New York":"NY",
-    "New Jersey":"NJ",
-    "Pennsylvania":"PA",
-    "Delaware":"DE",
-    "Maryland":"MD",
-    "Virginia":"VA",
-    "North Carolina":"NC",
-    "South Carolina":"SC",
-    "Georgia":"GA",
-    "Massachusetts":"MA"
-}
+# import json file that converts full name of a state to two character abbreviation
+with open('assets/state_codes.json', "r") as file:
+    state_codes = json.load(file)
+state_codes_inv = {v: k for k, v in state_codes.items()}
 
+########################################################################################################################
+###################################### dataframes used for maps ########################################################
+########################################################################################################################
+# data for counties is preprocessed elsewhere, saves us 3s
+df_raw = pd.read_csv('assets/map_df.csv', index_col = 0)
+df_raw['geometry'] = df_raw['geometry'].apply(wkt.loads)
+map_df = gpd.GeoDataFrame(df_raw)
+
+
+# only contains state borders, no county borders
+# don't optimize time because it's fast enough without optimizing 
+state_map_df = gpd.read_file("../data_raw/shapefiles/stateshape_1790")
+state_map_df.rename(columns={'STATENAM': 'state'}, inplace=True)
+state_map_df['state_abrev'] = state_map_df.loc[:, 'state']
+state_map_df.replace({"state_abrev": state_codes}, inplace=True)
+
+# list of states we include in dropdown menu
+states = pd.read_csv("../data_raw/census_data/statepop.csv")["State"].dropna()
+states = pd.concat([pd.Series(["All States"]), states]).tolist()
+# remove states that have no map data
+states.remove("Maine")
+states.remove("Kentucky")
+states.remove("Tennessee")
+
+########################################################################################################################
+###################################### dataframes used for maps ########################################################
+########################################################################################################################
+# DEBT - COUNTY + STATE LEVEL
+# county - import debt
+debt_by_county = pd.read_csv("../data_clean/final_data_CD.csv")[["Group State", "Group County", '6p_total']]
+debt_by_county = debt_by_county.groupby(by=["Group County", "Group State"]).agg(['size', 'sum'])
+debt_by_county.reset_index(inplace=True)
+debt_by_county.columns = debt_by_county.columns.droplevel(1)
+debt_by_county.columns = ['county', 'state', 'count', '6p_total']
+# county - import geography and population data
+county_pop_data_raw = pd.read_csv("../data_raw/census_data/countyPopulation.csv", header=1)
+county_geo_fips = county_pop_data_raw[county_pop_data_raw["SE_T001_001"].notna()]
+county_geo_fips = county_geo_fips.astype({"SE_T001_001": "int", "Geo_FIPS": "str"})
+county_geo_fips = county_geo_fips[["Geo_FIPS", "Geo_name", 'Geo_STUSAB', "SE_T001_001"]]
+county_geo_fips.rename(columns={"Geo_name": "county", 'Geo_STUSAB': 'state', "SE_T001_001": 'population'},
+                       inplace=True)
+county_debt_geo = pd.merge(debt_by_county, county_geo_fips, on=["county", 'state'])
+county_debt_geo['density'] = county_debt_geo['6p_total'] / county_debt_geo['population']
+county_debt_geo['mean_6p_total'] = county_debt_geo['6p_total']/county_debt_geo['count']
+# state
+state_debt_geo = county_debt_geo.groupby('state', as_index=False).sum()
+state_debt_geo['state'] = state_debt_geo['state'].apply(lambda x: state_codes_inv[x])
+state_debt_geo['density'] = state_debt_geo['6p_total'] / state_debt_geo['population']
+state_debt_geo['mean_6p_total'] = state_debt_geo['6p_total']/county_debt_geo['count']
+# national
+nat_debt_geo = state_debt_geo.copy()
+nat_debt_geo['count'] = nat_debt_geo['count'].sum()
+nat_debt_geo['6p_total'] = nat_debt_geo['6p_total'].sum()
+nat_debt_geo['population'] = nat_debt_geo['population'].sum()
+nat_debt_geo["density"] = state_debt_geo['6p_total'].sum()/state_debt_geo["population"].sum()
+nat_debt_geo["mean_6p_total"] = state_debt_geo['6p_total'].sum()/state_debt_geo["count"].sum()
+
+# SLAVE POPULATION - COUNTY + STATE LEVEL
+# county
+county_slaves = gpd.read_file("../data_raw/census_data/census.csv")
+county_slaves = county_slaves[["GISJOIN", "slavePopulation"]].head(290)
+county_slaves['GISJOIN'] = county_slaves['GISJOIN'].str.replace('G0', '')
+county_slaves['GISJOIN'] = county_slaves['GISJOIN'].str.replace('G', '')  # convert to geo_fips
+county_slaves.rename(columns={'GISJOIN': 'Geo_FIPS'}, inplace=True)
+county_slaves_data = pd.merge(county_geo_fips, county_slaves, on=['Geo_FIPS'])
+county_slaves_data = county_slaves_data.astype({"slavePopulation": "int", "Geo_FIPS": "str"})
+# state
+state_slaves_data = county_slaves_data.groupby('state')['slavePopulation'].sum().reset_index()
+state_slaves_data['state'] = state_slaves_data['state'].apply(lambda x: state_codes_inv[x])
+# national
+nat_slaves_data = state_slaves_data.copy()
+nat_slaves_data["slavePopulation"] = state_slaves_data["slavePopulation"].sum()
+
+# create final dataset
+county_data_final = pd.merge(county_slaves_data, county_debt_geo, how = 'outer')
+state_data_final = pd.merge(state_slaves_data, state_debt_geo, how = 'outer')
+national_data_final = pd.merge(nat_slaves_data, nat_debt_geo, how = 'outer')
+
+# MAP from parameter option to column
+map_to_col = {'Population': 'population',
+              'Slave Population': 'slavePopulation',
+              'Debt Distribution': '6p_total',
+              'Debt Density': 'density',
+              'Average Debt Holdings': 'debt density'}
+
+
+########################################################################################################################
+######################################### Define App Components ########################################################
+########################################################################################################################
 # create web app, import bootstrap stylesheet + external stylesheet
-app = dash.Dash(__name__, external_stylesheets=[dbc.themes.BOOTSTRAP, 'assets/style.css'])
+app = dash.Dash(__name__, external_stylesheets=[dbc.themes.BOOTSTRAP, 'assets/style.css'], \
+                suppress_callback_exceptions=True)
 
-# Title
-title = html.H1(children='My Dash App', style={'textAlign': 'left'}, className='title')
-
-# declare map_df
-map_df = gpd.read_file("../data_raw/shapefiles/historicalcounties")
-
-# rename columns and simplify map geometry (to make it run faster)
-map_df.rename(columns = {'NHGISNAM':'county'}, inplace = True)
-map_df.rename(columns = {'STATENAM':'state'}, inplace = True)
-map_df["geometry"] = map_df["geometry"].simplify(0.01).buffer(0)
-map_df["Geo_FIPS"] = map_df["Geo_FIPS"].map(lambda x: int(str(x.lstrip("0"))))
+# Title Bar
+title = html.H1(children='American National Debt in the Late 18th Century', style={'textAlign': 'left'}, className='title')
 
 # Navigation bar to get to different pages of the web app
 nav_bar = dbc.Nav(className='nav-bar', children=[
@@ -65,604 +135,326 @@ project_desc = html.Div(className='box', children=[
     ]),
 ])
 
-map_ops = dcc.Dropdown(id="st_checklist", options=["Total State Population", "Total Slave Population", 
-                                 "Total Number of Debt Holders", "Percentage Debt Holders Nationally", 
-                                 "Total Amount of Debt", "Percentage of Total National Debt", "Occupations with Most Debt"], 
-                        value=["Total State Population"], multi=True)
 
-# county options
-c_ops = dcc.Dropdown(id="c_checklist", options=["Total County Population", "Total Number of Debt Holders", 
-                                                 "Percentage of Debt Holders (Statewide)", "Total Amount of Debt", 
-                                                 "Percentage of Total Debt (Statewide)"], 
-                        value=["Total County Population"], multi=True)
-
-# title: "display options"
-disp_op_title = html.H5(children="Display Options (State)", id="disp_op_title")
-# title: "map options"
-map_op_title = html.H5(children="State Options", id="map_op_title")
-# title: "county options"
-c_op_title = html.H5(children="County Options", id="c_op_title")
-
-# dropdown menu of states 
-state_pops = pd.read_csv("../data_raw/census_data/statepop.csv")
-states = state_pops["State"].dropna()
-states = pd.concat([pd.Series(["All States"]), states]).tolist()
-
-# remove states that have no map data 
-states.remove("Maine")
-states.remove("Kentucky")
-states.remove("Tennessee")
-
-states_drp = dcc.Dropdown(
-    id="states_drpdwn",
-    options=states,
-    value=states[0]
-)
-
-# title : "Pick a state"
-st_title = html.H5(children="Choose a State")
-# title : "state information"
-st_info_title = html.H5(children="State Info")
-# title : "county information"
-c_info_title = html.H5(children="County Info")
-# title : "town information"
-t_info_title = html.H5(children="Town Info")
-
-# display options checklist: choose what to display 
-disp_ops_checklist = dcc.Checklist(id="disp_ops_checklist", options=[
-    "Hide Choose a State", 
-    "Hide State Options", 
-    "Hide State Info" 
-])
-
-# Left tab with map and table options
-# Use this to select whether you want a map or table
-# Also use this to select what type of map/table you want to show (not implemented yet)
+# Left tab with map options
 left_tab = html.Div(id="left_tab", className='box', children=[
-    html.H3(children='Left Tab', className='box-title', style={'textAlign': 'center'}),
-    html.Div(className='left-tab-options-container options-container', children=[
-        dcc.RadioItems(
-            id='left-tab-options',
-            options=[
-                {'label': 'Map', 'value': 'map'},
-                {'label': 'Table', 'value': 'table'}
-            ],
-            value='map',
-            labelStyle={'display':'block'}
+    html.H3(children='Customize', className='box-title', style={'textAlign': 'center'}),
+    html.Div(id="regions_c_drpdwn", children=[
+        html.H5(
+            children=["Region", html.Button(children='ℹ', className='more_info_btn', id='more_info_regions', n_clicks=0)]),
+        dcc.Dropdown(
+            id="reg_drpdwn",
+            options=['Not Selected', 'Nation', 'State', 'County'],
+            value='Not Selected'
         ),
-        html.Br(),
-        dcc.RadioItems(
-           id="map_type_ops",
-           options=[
-               {'label':'Population', 'value':'population'},
-               {'label':'Debt Distribution', 'value':'debt dist'},
-               {'label':'Debt Density', 'value':'debt density'},
-               {'label':'Average Debt Holdings', 'value':'average debt holdings'},
-               {'label':'Slave Population', 'value':'slavery'}
-           ],
-           value='population',
-           labelStyle={"display":"block"}
-       ) 
-    ]), 
-    html.Div(id="display_ops", children=[
-        disp_op_title,
-        disp_ops_checklist
-    ]), 
-    html.Div(id="st_c_drpdwn", children=[
-        st_title,
-        states_drp 
-    ], style={"display":"block"}), 
-    html.Div(id="state_ops", children=[
-        map_op_title,
-        map_ops
-    ], style={"display":"block"}), 
-    html.Div(id="st_info", children=[
-        st_info_title,
-        html.Ul(id="st_infolist")
-    ]), 
-    html.Div(id="c_drpdwn", children=[
-        dcc.Dropdown(id="county_drpdwn", style={"display":"none"})
-    ]), 
-    html.Div(id="c_ops", children=[
-        c_op_title,
-        c_ops 
-    ], style={"display":"none"}),
-    html.Div(id="c_info", children=[
-        c_info_title, 
-        html.Ul(id="c_infolist")
-    ]), 
-    html.Div(id="t_drpdwn", children=[
-        dcc.Dropdown(id="towns_drpdwn", style={"display":"none"})
-    ], style={"display":"block"}), 
-    html.Div(id="t_ops", children=[
-        dcc.Checklist(id="t_checklist", style={"display":"none"})
-    ]),
-    html.Div(id="t_info", children=[
-        t_info_title, 
-        html.Ul(id="t_infolist"),
-    ])
-], style={'width': '40%', 'height': 'auto', "display":"block"})
-
-# Right tab with DataFrame/Map
-right_tab = html.Div(className='box', children=[
-    html.H3(children='Display', className='box-title', style={'textAlign': 'center'}),
-    html.Div(id='right-tab-content', 
-                style={'overflow': 'scroll'}
-             )
-], style={'width': '60%', 'height': '600px'})
-
-# check if a display option is selected 
-# edit layout accordingly 
-@app.callback(
-        [Output("st_c_drpdwn", "style", allow_duplicate=True), 
-         Output("state_ops", "style", allow_duplicate=True), 
-         Output("st_info", "style", allow_duplicate=True)],
-        [Input("disp_ops_checklist", "value")],
-        prevent_initial_call=True
-)
-
-def handle_st_disp_ops(options):
-    new_display_ops = [{"display":"block"}, {"display":"block"}, {"display":"block"}]
-    for option in options:
-        if option == "Hide Choose a State": 
-            new_display_ops[0] = {"display":"none"}
-        elif option == "Hide State Options":
-            new_display_ops[1] = {"display":"none"}
-        elif option == "Hide State Info":
-            new_display_ops[2] = {"display":"none"}
-
-    return new_display_ops
-
-# check if town option is selected
-# for each town option, display necessary information 
-@app.callback(
-        Output("t_infolist", "children"),
-        [Input("t_checklist", "value"), 
-         Input("states_drpdwn", "value"),
-         Input("county_drpdwn", "value"),
-         Input("towns_drpdwn", "value")]
-)
-def handle_t_ops(options, sel_state, sel_county, sel_town):
-    display_items = []
-
-    if sel_state != "All States" and sel_county != "Not Selected" and sel_town != None:
-        towns_pops = pd.read_csv("../data_clean/Ancestry_Web_Scraper/town_pops_clean.csv")
-        town_pop_df = towns_pops.loc[(towns_pops["city"] == sel_town) & (towns_pops["county"] == sel_county) & 
-                                    (towns_pops["state"] == sel_state), "population"]
-        town_pop = town_pop_df.iloc[0]
-        for option in options:
-            if option == "Total Town Population":
-                display_items.append(html.Li(children=[html.B(children="Total Town Population"), ": " + str(town_pop)]))
-            elif option == "Percentage of Town Holding Debt" and town_pop != "NR":
-                final_cd_df = pd.read_csv("../data_clean/final_data_CD.csv") 
-                total_t_holders = len(final_cd_df.loc[(final_cd_df["Group State"] == state_codes[sel_state]) & (final_cd_df["Group County"] == sel_county + " County")
-                                                    & (final_cd_df["Group Town"] == sel_town)])
-                display_items.append(html.Li(children=[html.B(children="Percentage of Town Holding Debt"), ": " + str(round(total_t_holders / float(town_pop), 2) * 100) + "%"]))
-
-    return display_items
-
-# check if town is selected
-# if town is selected, display town options 
-@app.callback(
-        Output("t_ops", "children"), 
-        Input("towns_drpdwn", "value")  
-)
-def display_t_ops(town):
-    if town != None:
-        t_op_title = html.H5(children="Town Options")
-        t_checklist = dcc.Dropdown(
-            id="t_checklist",
-            options=[
-                "Total Town Population",
-                "Percentage of Town Holding Debt"
+        dbc.Modal(
+            [
+                dbc.ModalHeader("Parameter Description: Region"),
+                dbc.ModalBody("Region determines the geographical scope of the displayed map. Nation shows the entire US, " + \
+                              "State shows a given state (that you pick) and County shows a county in a state (that you pick).")
             ],
-            value=["Total Town Population"],
-            multi=True
+            id='regions_modal'
+        ),
+        dbc.Modal(
+            [
+                dbc.ModalHeader("Parameter Description: Border"),
+                dbc.ModalBody("Border determines the level of geographical aggregation. " + \
+                              "For example, you can examine a nation-wide map at the county, state or national level")
+
+            ],
+            id='border_type_modal'
+        ),
+        dbc.Modal(
+            [
+                dbc.ModalHeader("Parameter Description: Statistic"),
+                dbc.ModalBody(
+                    "Statistic determines what metric the map displays. For example, Population shows you, at each unit" + \
+                    " of your border, the population.")
+            ],
+            id='heatmap_modal'
         )
-        return t_op_title, t_checklist 
+
+    ], style={"display": "block"}),
+    html.Div(id="states_c_drpdwn", children=[
+        dcc.Dropdown(id="states_drpdwn", style={"display": "none", 'padding-top': '25%'})
+    ]),
+    html.Div(id="c_drpdwn", children=[
+        dcc.Dropdown(id="county_drpdwn", style={"display": "none", 'padding-top': '25%'})
+    ]),
+    html.Div(id="bord_c_drpdwn", children=[
+        dcc.Dropdown(id="border_drpdwn", style={"display": "none"}),
+    ]),
+    html.Div(id="heatmap_c_drpdwn", children=[
+        dcc.Dropdown(id="heatmap_drpdwn", style={"display": "none"}),
+    ]),
+], style={'width': '35%', 'height': 'auto', "display": "block"})
+
+# right tab to show statistics associated with that particular geographical area
+right_tab = html.Div(id="right_tab", className='box', children=[
+    html.H3(children='Statistics', className='box-title', style={'textAlign': 'center'}),
+], style={'width': '65%', 'height': 'auto', "display": "block"})
+
+# Bottom Display tab with DataFrame/Map
+display_tab = html.Div(className='box', children=[
+    html.H3(children='Display', className='box-title', style={'textAlign': 'center'}),
+    html.Div(id='right-tab-content',
+             style={'overflow': 'scroll'}
+             ),
+    html.Div(id="range-slider", children=[
+        dcc.RangeSlider(id="slider", min=0, max=10)
+    ], style={"display": "none"})
+], style={'width': '100%', 'height': '85vh'})
+
+########################################################################################################################
+########################################### Helper Functions ###########################################################
+########################################################################################################################
+def returnSlider(df, col, slidermax, sliderrange):
+    maxval = df[col].max()+1
+    if slidermax != maxval:
+        slider = dcc.RangeSlider(min=0, max=maxval, id="slider")
+        return df, slider
+    else:
+        slider = dcc.RangeSlider(min=0, max=maxval, value=[sliderrange[0], sliderrange[1]], id="slider")
+        df_adj = df[df[col].between(sliderrange[0], sliderrange[1], inclusive="both")]
+        return df_adj, slider
+
+def returnFig(df_adj, df_geojson, geo_col, color_col, featureidkey, basemap_visible, fitbounds, hover_name, hover_data):
+    fig = px.choropleth(
+        df_adj, geojson=df_geojson, locations=geo_col, color=color_col, color_continuous_scale="Viridis",
+        range_color=(df_adj[color_col].min(), df_adj[color_col].max()), featureidkey=featureidkey,
+        scope="usa", basemap_visible=basemap_visible, fitbounds=fitbounds, hover_name=hover_name, hover_data=[hover_data])
+    return fig
+########################################################################################################################
+######################################### Callback Functions ###########################################################
+########################################################################################################################
+# Callback function to display range slider when heatmap type is chosen
+@app.callback(
+    Output("range-slider", "style"),
+    [Input("heatmap_drpdwn", "value")]
+)
+def add_range_slider(stat_val):
+    """
+    chooses to display or hide the dropdown menu
+    :param stat_val: what parameter was selected for the Statistic option
+    :return: display style - show or hide
+    """
+    if (stat_val is not None) and (stat_val != "Not Selected"):
+        return {"display": "block"}
+    else:
+        return {"display": "none"}
+
+# when state/county is chosen as the region, display state dropdown
+@app.callback(
+    Output("states_c_drpdwn", "children"),
+    Input("reg_drpdwn", "value")
+)
+def display_state_drpdwn(reg_val):
+    """
+    chooses what state dropdown type to show
+    :param reg_val: what parameter was selected for the Region option
+    :return: dropdown that the user can use to select a state
+    """
+    if reg_val == "State":
+        state_drpdwn_title = html.H5(children="State", id="state_drpdwn_t",
+                                     style={'text-align':'left'})
+    elif reg_val == 'County':
+        state_drpdwn_title = html.H5(children="State", id="state_drpdwn_t",
+                                     style={'text-align':'left'})
     else:
         return ''
+    state_drp = dcc.Dropdown(
+        id="states_drpdwn",
+        options=states,
+        value=states[0],
+        style={'width': '100%', 'align-items': 'right', 'justify-content': 'right', 'float': 'right'}
+    )
+    return dbc.Row([dbc.Col(state_drpdwn_title, width = 4), dbc.Col(state_drp, width = 8)], style = {'padding-top': '10px'})
 
-# check if county is selected 
-# get list of towns in the county 
-# display dropdown in id=t_drpdwn 
-@app.callback(
-        Output("t_drpdwn", "children"), 
-        [Input("county_drpdwn", "value"), 
-         Input("states_drpdwn", "value")]
-)
-def display_t_drpdwn(sel_county, sel_state):
-    if sel_county != "Not Selected":
-        towns_pops = pd.read_csv("../data_clean/Ancestry_Web_Scraper/town_pops_clean.csv")
-        towns_l = towns_pops.loc[(towns_pops["county"] == sel_county) & (towns_pops["state"] == sel_state), "city"].tolist()
-        t_drpdwn = dcc.Dropdown(
-            id="towns_drpdwn",
-            options=towns_l
-        )
-        t_title = html.H5(children="Pick a Town") 
-        return t_title, t_drpdwn 
-    else: 
-        return ''
-
-# get checked box values 
-# find data for each checked box 
-# populate div with id=st_info 
-    # store data in a <ul> element : with individual <li> 
-@app.callback(
-        Output("st_infolist", "children"), 
-        [Input("st_checklist", "value"),
-        Input("states_drpdwn", "value")]
-)
-def handle_state_ops(options, sel_state):
-    display_items = []
-
-    if sel_state != "All States":
-        final_cd_df = pd.read_csv("../data_clean/final_data_CD.csv")
-        
-        for option in options:
-            if option == "Total State Population":
-                tot_st_pop = state_pops.loc[state_pops["State"] == sel_state, "Total Pop"].iloc[0]
-                display_items.append(html.Li(children=[html.B(children="Total State Population"), ": " + str(tot_st_pop)]))
-            elif option == "Total Slave Population":
-                tot_sl_pop = state_pops.loc[state_pops["State"] == sel_state, "Slave Pop"].iloc[0]
-                display_items.append(html.Li(children=[html.B(children="Total Slave Population"), ": " + str(tot_sl_pop)]))
-            elif option == "Total Number of Debt Holders":
-                debt_holder_st = final_cd_df.loc[final_cd_df["Group State"] == state_codes[sel_state]] 
-                total_num_holders = len(debt_holder_st) 
-                display_items.append(html.Li(children=[html.B(children="Total Number of Debt Holders"), ": " + str(total_num_holders)]))
-            elif option == "Percentage Debt Holders Nationally":
-                total_cd_df = len(final_cd_df) 
-                debt_holder_st = final_cd_df.loc[final_cd_df["Group State"] == state_codes[sel_state]] 
-                total_num_holders = len(debt_holder_st) 
-                display_items.append(html.Li(children=[html.B(children="Percentage of Debt Holders Nationally"), ": " + str(round((total_num_holders / total_cd_df) * 100, 3)) + "%"]))
-            elif option == "Total Amount of Debt":
-                total_debt_st = final_cd_df.loc[final_cd_df["Group State"] == state_codes[sel_state], "final_total"].sum()
-                display_items.append(html.Li(children=[html.B(children="Total Amount of Debt"), ": " + str(round(total_debt_st, 2))]))
-            elif option == "Percentage of Total National Debt":
-                total_debt_col = final_cd_df["final_total"].sum()
-                total_debt_st = final_cd_df.loc[final_cd_df["Group State"] == state_codes[sel_state], "final_total"].sum()
-                display_items.append(html.Li(children=[html.B(children="Percentage of Total National Debt"), ": " + str(round((total_debt_st / total_debt_col) * 100, 3)) + "%"]))
-            elif option == "Occupations with Most Debt": 
-                occ_exists = os.path.isfile("../archive/S2022/occupational_analysis/avg_debt_occupation/FinishedSpreadsheets/Occupations" 
-                                            + state_codes[sel_state] + ".csv") # check if occupations data exists for that state
-                if occ_exists:
-                    occ_data_st = pd.read_csv("../archive/S2022/occupational_analysis/avg_debt_occupation/FinishedSpreadsheets/Occupations" 
-                                            + state_codes[sel_state] + ".csv")
-                    occs = occ_data_st["occupation"].tolist()
-                    occ_list = ["Occupations with the Most Debt (up to 5)"]
-                    if len(occs) > 5:
-                        i = 0
-                        while i < 5:
-                            occ_list.append(html.Li(occs[i]))
-                            i += 1; 
-                    else:
-                        for occ in occs:
-                            occ_list.append(html.Li(occ)) 
-                    
-                    display_items.append(html.Ul(html.B(children=occ_list)))
-                else:
-                    display_items.append(html.Li(html.Ul(children="No occupation data available for " + sel_state)))
-
-    return display_items
-
-# handle county options 
-# display county info as a list
-@app.callback(
-        Output("c_infolist", "children"), 
-        [Input("c_checklist", "value"), 
-        Input("states_drpdwn", "value"),
-        Input("county_drpdwn", "value")]
-)
-def handle_c_ops(options, sel_state, sel_county):
-    display_items = []
-    final_cd_df = pd.read_csv("../data_clean/final_data_CD.csv") 
-    if sel_state != "All States" and sel_county != "Not Selected":
-        for option in options:
-            if option == "Total County Population":
-                county_pops = pd.read_csv("../data_raw/census_data/countyPopulation.csv", header=1)
-                county_pops.rename(columns={"Geo_STUSAB":"state", "Geo_NHGISNAM":"county"}, inplace=True)
-                c_pop = county_pops.loc[(county_pops["state"] == state_codes[sel_state]) & (county_pops["county"] == sel_county), "SE_T001_001"].iloc[0]
-                display_items.append(html.Li(children=[html.B(children="Total County Population"), ": " + str(c_pop)]))
-            elif option == "Total Number of Debt Holders":
-                total_c_holders = len(final_cd_df.loc[(final_cd_df["Group State"] == state_codes[sel_state]) & (final_cd_df["Group County"] == sel_county + " County")])
-                display_items.append(html.Li(children=[html.B(children="Total Number of Debt Holders"), ": " + str(total_c_holders)]))
-            elif option == "Percentage of Debt Holders (Statewide)":
-                total_st_holders = len(final_cd_df.loc[final_cd_df["Group State"] == state_codes[sel_state]])
-                total_c_holders = len(final_cd_df.loc[(final_cd_df["Group State"] == state_codes[sel_state]) & (final_cd_df["Group County"] == sel_county + " County")])
-                display_items.append(html.Li(children=[html.B(children="Percentage of Debt Holders (Statewide)"), ": " + str(round(total_c_holders / total_st_holders, 3) * 100) + "%"]))
-            elif option == "Total Amount of Debt":
-                total_c_debt = final_cd_df.loc[(final_cd_df["Group State"] == state_codes[sel_state]) & (final_cd_df["Group County"] == sel_county + " County"), "final_total"].sum()
-                display_items.append(html.Li(children=[html.B(children="Total Amount of Debt in County"), ": " + str(round(total_c_debt, 2))]))
-            elif option == "Percentage of Total Debt (Statewide)":
-                total_st_debt = final_cd_df.loc[final_cd_df["Group State"] == state_codes[sel_state], "final_total"].sum()
-                total_c_debt = final_cd_df.loc[(final_cd_df["Group State"] == state_codes[sel_state]) & (final_cd_df["Group County"] == sel_county + " County"), "final_total"].sum()
-                display_items.append(html.Li(children=[html.B(children="Percentage of Total Debt (Statewide)"), ": " + str(round(total_c_debt / total_st_debt, 3) * 100) + "%"]))
-
-    return display_items 
-
-#display county options when a county is chosen
-# st_info, c_info, t_ops, t_drpdwn, t_info
-@app.callback(
-        [Output("c_ops", "style"),
-         Output("c_info", "style"),
-         Output("st_info", "style"), 
-         Output("t_ops", "style"),
-         Output("t_drpdwn", "style"),
-         Output("t_info", "style"),
-         Output("display_ops", "style")],
-        [Input("states_drpdwn", "value"),
-         Input("left-tab-options", "value")]
-)
-def add_c_options(sel_state, value):
-    if value == "map" and sel_state != "All States":
-        return {"display":"block"}, {"display":"block"}, {"display":"block"}, {"display":"block"}, {"display":"block"}, {"display":"block"}, {"display":"block"}
-    else:
-        return {"display":"none"}, {"display":"none"}, {"display":"none"}, {"display":"none"}, {"display":"none"}, {"display":"none"}, {"display":"none"}
-
-# call back function to display dropdown menus when 'map' is clicked
-@app.callback( 
-        [Output("st_c_drpdwn", "style"),
-         Output("c_drpdwn", "style"),
-         Output('map_type_ops', 'labelStyle')],
-        Input("left-tab-options", "value")
-)
-def add_map_options(value):
-    if value == "map":
-        return {"display":"block"}, {"display":"block"}, {"display":"block"}
-    else:
-        return {"display":"none"}, {"display":"none"}, {"display":"none"}
-
-# call back function to display map options when 'a state' is clicked 
-@app.callback( 
-        Output("state_ops", "style"),
-        [Input("left-tab-options", "value"), 
-         Input("states_drpdwn", "value")]
-)
-def add_map_options(value, state):
-    if value == "map" and state != "All States":
-        return {"display":"block"}
-    else:
-        return {"display":"none"}
-
-# call back function that changes the text shown when we move through arrows.
-@app.callback(
-    Output('project_desc_text', 'children'),
-    [Input('left_arrow', 'n_clicks'), Input('right_arrow', 'n_clicks')]
-)
-def update_project_desc(left_clicks, right_clicks):
-    if left_clicks == None:
-        left_clicks = 0
-    if right_clicks == None:
-        right_clicks = 0
-
-    number = 0
-    number += right_clicks - left_clicks
-    number = number % 10
-    return 'This is some text. We are currently displaying text at for the {} slide.'.format(
-        number)
-
-# when state is chosen, display county dropdown 
+#
+# when state of the county is chosen, display county dropdown
 @app.callback(
     Output("c_drpdwn", "children"),
-    Input("states_drpdwn", "value")
+    [Input("states_drpdwn", "value"),
+     Input('reg_drpdwn', 'value')]
 )
-def display_c_drpdwn(value):
-    if value != "All States":
-        counties = map_df.query("state==" + "'" + value + "'")["county"].tolist()
-        counties.insert(0, "Not Selected")
-        # title: "choose a county"
-        c_drpdwn_title = html.H5(children="Choose a County", id="c_drpdwn_t")
-        c_drp = dcc.Dropdown(
+def display_county_drpdwn(state_val, reg_val):
+    """
+    display list of counties in dropdown for the user to pick from
+    :param state_val: which state the user selected
+    :return: dropdown with list of counties
+    """
+    if (state_val != "All States") and (state_val is not None) and (reg_val == 'County'):
+        counties = map_df.query("state==" + "'" + state_val + "'")["county"].tolist()
+        counties.insert(0, "All Counties")
+        county_drpdwn_title = html.H5(children="County", id="county_drpdwn_t",
+                                      style={'text-align':'left'})
+        county_drp = dcc.Dropdown(
             id="county_drpdwn",
             options=counties,
-            value=counties[0]
+            value=counties[0],
+            style={'width': '100%', 'align-items': 'right', 'justify-content': 'right', 'float': 'right'}
         )
-        return c_drpdwn_title, c_drp 
+        return dbc.Row([dbc.Col(county_drpdwn_title, width = 4), dbc.Col(county_drp, width = 8)], style = {'padding-top': '10px'})
     else:
         return ''
 
+
+# when region is chosen, display border dropdown
 @app.callback(
-        Output('right-tab-content', 'children'),
-        [Input("states_drpdwn", "value"),
-         Input("county_drpdwn", "value"),
-        Input("left-tab-options", "value"), 
-        Input('map_type_ops', 'value')] 
+    Output("bord_c_drpdwn", "children"),
+    [Input("reg_drpdwn", "value"),
+     Input("states_drpdwn", "value"),
+     Input("county_drpdwn", "value")]
 )
+def display_border_drpdwn(reg_value, state_value, county_value):
+    """
+    determines what border options are made available, given the selection of region, state and county
+    :param reg_value: what region type we're displaying (county, state, nation)
+    :param state_value: state
+    :param county_value: county
+    :return: approrpiate dropdown list
+    """
+    if (reg_value != "Not Selected") and (reg_value is not None):
+        if (reg_value == "State") and (state_value == "All States") or (reg_value == "County") and (
+                state_value == "All States") \
+                or (reg_value == "County") and (county_value == "All Counties"):
+            return ''
+        bord_drpdwn_title = html.H5(
+            children=["Border", html.Button(children="ℹ", className='more_info_btn', id="more_info_border_button")],
+            id="bord_drpdwn_t")
+        if reg_value == "Nation":
+            drpdown_options = ['Not Selected', 'Nationwide', 'Statewide', 'Countywide']
+        elif reg_value == "State":
+            drpdown_options = ['Not Selected', 'Statewide', 'Countywide']
+        elif reg_value == "County":
+            drpdown_options = ['Not Selected', 'Countywide']
 
-def handle_state_dropdown(state, county, option, map_type):
-    if option == "map":
-        fitbounds = False
-        basemap_visible = True
-        map_df_c = map_df.copy()
-
-        if (state != "All States" and state != None):
-            map_df_c = map_df_c.loc[map_df['state'] == state]
-            fitbounds = "locations"
-            basemap_visible = False
-
-        if (county != "Not Selected" and county != None):
-            map_df_c = map_df_c.loc[map_df_c['county'] == county]
-
-        # save as a geojson
-        map_str = map_df_c.to_json()
-        map_gj = json.loads(map_str) # convert string json to dictionary json 
-
-        # debt info per county 
-        debt_by_county = pd.read_csv("../data_clean/final_data_CD.csv")[["Group State", "Group County", '6p_total']]
-        debt_by_county = debt_by_county.groupby(by=["Group County", "Group State"]).agg(['size', 'sum'])
-        # debt_by_county = debt_by_county.to_frame()
-        print(type(debt_by_county))
-        # debt_by_county.rename(columns={'size':'count'}, inplace=True)
-        debt_by_county.reset_index(inplace=True)
-
-        debt_by_county.columns = debt_by_county.columns.droplevel(1)
-        debt_by_county.columns = ['county', 'state', 'count', '6p_total']
-
-        print(debt_by_county)
-
-        county_geo_fips = pd.read_csv("../data_raw/census_data/countyPopulation.csv", header=1)[["Geo_FIPS", "Geo_name", 'Geo_STUSAB', "SE_T001_001"]]
-        county_geo_fips.rename(columns={"Geo_name":"county", 'Geo_STUSAB':'state', "SE_T001_001":'population'}, inplace=True)
-        county_debt_geo = pd.merge(debt_by_county, county_geo_fips, on=["county", 'state'])
-
-        print(county_debt_geo)
-
-        if map_type == 'population':
-
-            # get county populations 
-            county_pops = pd.read_csv("../data_raw/census_data/countyPopulation.csv", header=1)
-            county_pops = county_pops[county_pops["SE_T001_001"].notna()]
-            county_pops = county_pops.astype({"SE_T001_001":"int", "Geo_FIPS":"str"})
-            county_pops.rename(columns = {'SE_T001_001':'Population', "Geo_name":"County"}, inplace = True)
-            county_pops = county_pops[["Geo_FIPS", "Population", "County"]]
-            dcc.Store(data = county_pops, id = 'county_data')
-            
-            slider =  dcc.RangeSlider(min = county_pops["Population"].min(), 
-                                      max = county_pops["Population"].max(), 
-                                      step= 10000, 
-                                      value=[county_pops["Population"].min(), county_pops["Population"].max()],
-                                      id = "my-rangeslider"
-                                    )
-            #@app.callback(
-            #    Output('county_data', 'data'),
-            #    [Input('my-rangeslider', 'value')]
-            #)
-
-            #def update_data(sliderrange):
-            #    county_pops = county_pops[county_pops['Population'].between(sliderrange[0], sliderrange[1], inclusive=True)]
-            #    return county_pops
-
-            # create choropleth map 
-            fig = px.choropleth(county_pops, geojson=map_gj, locations='Geo_FIPS', 
-                                    color='Population',
-                                    color_continuous_scale="Viridis",
-                                    range_color=(county_pops["Population"].min(), 
-                                                county_pops["Population"].max()),
-                                    featureidkey="properties.Geo_FIPS",
-                                    scope="usa",
-                                    basemap_visible=basemap_visible,
-                                    fitbounds=fitbounds,
-                                    hover_name="County",
-                                    hover_data=["Population"]
-                               )
-        
-        elif map_type == 'slavery':
-            
-            basemap_visible = True
-
-            state_pop = gpd.read_file("../data_raw/census_data/statepop.csv")
-            state_pop = state_pop[["State", "Slave Pop"]].head(15)
-            state_pop.replace({"State": state_codes}, inplace = True)
-            state_pop = state_pop.astype({"Slave Pop":"int"})
-
-            fig = px.choropleth(state_pop, geojson=map_gj, locations='State', 
-                            locationmode='USA-states',
-                            color='Slave Pop',
-                            color_continuous_scale="Viridis",
-                            range_color=(state_pop['Slave Pop'].min(), 
-                                        state_pop['Slave Pop'].max()),
-                            featureidkey="properties.State",
-                            scope="usa",
-                            basemap_visible=basemap_visible,
-                            fitbounds=fitbounds,
-                            hover_name="State",
-                            hover_data=["Slave Pop"]
-                        )   
-            slider =  dcc.RangeSlider(0, 20, value=[5, 15], id = "my-rangeslider")
-
-        elif map_type == 'debt dist':
-            # Create the debt distribution map
-            # Input: archive/.../CD_geographical_table_summary.csv, countyPops.csv (GEO_FIPS column), Map geojson file 
-            # Create a dataframe of all county names and their GEO_FIPS code 
-            # Merge dataframe with CD_geographical_table_summary.csv 
-            # test debt distribution map 
-            # fig = px.choropleth()
-            six_p_tot = county_debt_geo["6p_total"]
-            x = six_p_tot[six_p_tot.between(six_p_tot.quantile(.15), six_p_tot.quantile(.85))] # remove outliers
-
-            fig = px.choropleth(county_debt_geo, geojson=map_gj, locations='Geo_FIPS', 
-                            color='6p_total',
-                            color_continuous_scale="Viridis",
-                            range_color=(x.min(), 
-                                        x.max()),
-                            featureidkey="properties.Geo_FIPS",
-                            scope="usa",
-                            basemap_visible=basemap_visible,
-                            fitbounds=fitbounds,
-                            hover_name="county",
-                            hover_data=["6p_total"]
-                        )
-
-            slider =  dcc.RangeSlider(0, 20, value=[5, 15], id = "my-rangeslider")
-        
-        elif map_type == 'debt density':
-            # Create county map
-            # Create a new column in debt_by_county: divide number of debt holders by county population 
-            # Disiplay new column 
-
-            county_debt_geo['density'] = county_debt_geo['6p_total'] / county_debt_geo['population']
-            
-            six_p_tot = county_debt_geo["density"]
-            x = six_p_tot[six_p_tot.between(six_p_tot.quantile(.15), six_p_tot.quantile(.85))] # remove outliers
-
-            fig = px.choropleth(county_debt_geo, geojson=map_gj, locations='Geo_FIPS', 
-                color='density',
-                color_continuous_scale="Viridis",
-                range_color=(x.min(), 
-                            x.max()),
-                featureidkey="properties.Geo_FIPS",
-                scope="usa",
-                basemap_visible=basemap_visible,
-                fitbounds=fitbounds,
-                hover_name="county",
-                hover_data=["density"]
-            )
-
-            slider =  dcc.RangeSlider(0, 20, value=[5, 15], id = "my-rangeslider")   
-
-        elif map_type == 'average debt holdings':
-            county_debt_geo['mean_6p_held'] = county_debt_geo['6p_total'] / county_debt_geo['count']
-
-            six_p_tot = county_debt_geo['mean_6p_held']
-            x = six_p_tot[six_p_tot.between(six_p_tot.quantile(.15), six_p_tot.quantile(.85))] # remove outliers
-
-            print(county_debt_geo.columns)
-
-            fig = px.choropleth(county_debt_geo, geojson=map_gj, locations='Geo_FIPS', 
-                color='mean_6p_held',
-                color_continuous_scale="Viridis",
-                range_color=(x.min(), 
-                            x.max()),
-                featureidkey="properties.Geo_FIPS",
-                scope="usa",
-                basemap_visible=basemap_visible,
-                fitbounds=fitbounds,
-                hover_name="county",
-                hover_data=["mean_6p_held"]
-            )
-
-            slider =  dcc.RangeSlider(0, 20, value=[5, 15], id = "my-rangeslider")   
-
-        return dcc.Graph(figure = fig, id = 'my-map'), slider
-        
-    else: # option is table
-        # Display the DataFrame as a table
-        df = pd.read_csv('../data_clean/final_data_CD.csv', index_col=0)
-        return dash_table.DataTable(
-            id='data-table',
-            columns=[{"name": col, "id": col} for col in df.columns],
-            data=df.to_dict('records'),
-            sort_action='native',  # Enable sorting
-            filter_action='native',  # Enable filtering
-            page_action='native',  # Enable pagination
-            page_size=13,  # Number of rows per page
-            style_table={'overflowX': 'scroll'},
-            style_cell={'minWidth': '150px', 'textAlign': 'left'},
-            style_header={
-                'backgroundColor': 'rgb(230, 230, 230)',
-                'fontWeight': 'bold'
-            }
+        bord_drp = dcc.Dropdown(
+            id="border_drpdwn",
+            options=drpdown_options,
+            value='Not Selected'
         )
-    
+        return bord_drpdwn_title, bord_drp
+    else:
+        return ''
+
+# when border is chosen, display heatmap dropdown
+@app.callback(
+    Output("heatmap_c_drpdwn", "children"),
+    [Input("border_drpdwn", "value"),  # need more input so it doesnt show up in county/state ex
+     Input("reg_drpdwn", "value")]
+)
+def display_heatmap_drpdwn(border_value, region_value):
+    if (border_value != "Not Selected") and (border_value is not None):
+        heatmap_chklist_title = html.H5(
+            children=["Statistic", html.Button(children='ℹ', className='more_info_btn', id='heatmap_more_info_button')],
+            id="heatmap_drpdwn_t")
+        heatmap_drp = dcc.Dropdown(
+            id="heatmap_drpdwn",
+            options=['Not Selected', 'Population', 'Slave Population', 'Debt Density', 'Debt Distribution',
+                     'Average Debt Holdings'],
+            value="Not Selected"
+        )
+        return heatmap_chklist_title, heatmap_drp
+    else:
+        return ''
+
+# Callback functions to handle additional information button
+@app.callback(
+    Output('regions_modal', 'is_open'),
+    Input('more_info_regions', 'n_clicks')
+)
+def open_regions_information(n_clicks):
+    if n_clicks > 0:
+        return True
+    else:
+        return False
+
+# Display more information about what border type means
+@app.callback(
+    Output("border_type_modal", "is_open"),
+    Input('more_info_border_button', 'n_clicks'),
+    State('border_type_modal', 'is_open')
+)
+def open_border_type_modal(n_click, state):
+    if n_click:
+        return not state
+    return state
+
+@app.callback(
+    Output("heatmap_modal", "is_open"),
+    Input('heatmap_more_info_button', 'n_clicks'),
+    State('heatmap_modal', 'is_open')
+)
+def open_heatmap_more_info(n_clicks, state):
+    if n_clicks:
+        return not state
+    return state
+@app.callback(
+    Output('right-tab-content', 'children'),
+    Output('range-slider', 'children'),
+    [Input("states_drpdwn", "value"),
+     Input("county_drpdwn", "value"),
+     Input('heatmap_drpdwn', 'value'),
+     Input('border_drpdwn', 'value'),
+     Input('slider', 'value'),
+     Input('slider', 'max')]
+    # to keep track of when the heatmap type changes--> means that the rangeslider maximum must be adjusted
+)
+def handle_state_dropdown(state, county, map_type, border_type, sliderrange, slidermax):
+    global fig
+    global county_pop_data
+    global state_pop_data
+    global nat_debt
+
+    fitbounds = "locations"
+    basemap_visible = True
+    map_df_c = map_df.copy()
+    state_map_df_c = state_map_df.copy()
+
+    # don't return anything if no options have been selected
+    if (map_type == "Not Selected") or (map_type is None):
+        return '', ''
+
+    if (state != "All States") and (state is not None):
+        if border_type == "Statewide" or border_type == "Nationwide":
+            state_map_df_c = state_map_df_c.loc[state_map_df['state'] == state]
+        fitbounds = "locations"
+        basemap_visible = False
+
+    if (county != "All Counties") and (county is not None):
+        map_df_c = map_df_c.loc[map_df_c['county'] == county]
+
+    # save as a geojson
+    map_str = map_df_c.to_json()
+    map_gj = json.loads(map_str)  # convert string json to dictionary json
+    states_str = state_map_df_c.to_json()
+    states_gj = json.loads(states_str)
+
+    param = map_to_col.get(map_type, "NONE")
+    if param == "NONE":
+        fig = px.choropleth()
+        slider = dcc.RangeSlider(id="slider", min=0, max=10)
+    else:
+        if border_type == "Countywide":
+            county_data_final_adj, slider = returnSlider(county_data_final, param, slidermax, sliderrange)
+            fig = returnFig(
+                county_data_final_adj, map_gj, 'Geo_FIPS', param, 'properties.Geo_FIPS', basemap_visible, fitbounds,
+                'county', param)
+        elif border_type == "Statewide":
+            state_data_final_adj, slider = returnSlider(state_data_final, param, slidermax, sliderrange)
+            fig = returnFig(
+                state_data_final_adj, states_gj, 'state', param, 'properties.state', basemap_visible, fitbounds,
+                'state', param)
+        elif border_type == "Nationwide":
+            national_data_final_adj, slider = returnSlider(national_data_final, param, slidermax, sliderrange)
+            fig = returnFig(
+                national_data_final_adj, states_gj, 'state', 'population', 'properties.state', basemap_visible, fitbounds,
+                'state', "population")
+
+    return dcc.Graph(figure=fig, id='my-map', style={'height':'70vh'}), [slider, 'You have selected {}'.format(sliderrange)]
+
+
 # Layout of the app
 app.layout = html.Div(className='app-container', children=[
     dbc.Container(className='header-container', children=[
@@ -676,7 +468,9 @@ app.layout = html.Div(className='app-container', children=[
         ])
     ]),
     project_desc,
-    html.Div(className='tabs-container', children=[left_tab, right_tab])
+    html.Div(className='tabs-container', children=[left_tab, right_tab]),
+    html.Div(className='right-tab', children=display_tab),
+    # html.Div(className='right-tab-2', children=right_tab_2)
 ])
 
 # run app
