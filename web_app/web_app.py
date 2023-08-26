@@ -47,12 +47,13 @@ states.remove("Tennessee")
 ###################################### dataframes used for maps ########################################################
 ########################################################################################################################
 # DEBT - COUNTY + STATE LEVEL
+# county - import debt
 debt_by_county = pd.read_csv("../data_clean/final_data_CD.csv")[["Group State", "Group County", '6p_total']]
 debt_by_county = debt_by_county.groupby(by=["Group County", "Group State"]).agg(['size', 'sum'])
 debt_by_county.reset_index(inplace=True)
 debt_by_county.columns = debt_by_county.columns.droplevel(1)
 debt_by_county.columns = ['county', 'state', 'count', '6p_total']
-
+# county - import geography and population data
 county_pop_data_raw = pd.read_csv("../data_raw/census_data/countyPopulation.csv", header=1)
 county_geo_fips = county_pop_data_raw[county_pop_data_raw["SE_T001_001"].notna()]
 county_geo_fips = county_geo_fips.astype({"SE_T001_001": "int", "Geo_FIPS": "str"})
@@ -62,20 +63,21 @@ county_geo_fips.rename(columns={"Geo_name": "county", 'Geo_STUSAB': 'state', "SE
 county_debt_geo = pd.merge(debt_by_county, county_geo_fips, on=["county", 'state'])
 county_debt_geo['density'] = county_debt_geo['6p_total'] / county_debt_geo['population']
 county_debt_geo['mean_6p_total'] = county_debt_geo['6p_total']/county_debt_geo['count']
-
-# state debt aggregation
+# state
 state_debt_geo = county_debt_geo.groupby('state', as_index=False).sum()
 state_debt_geo['state'] = state_debt_geo['state'].apply(lambda x: state_codes_inv[x])
 state_debt_geo['density'] = state_debt_geo['6p_total'] / state_debt_geo['population']
 state_debt_geo['mean_6p_total'] = state_debt_geo['6p_total']/county_debt_geo['count']
-
-
-# POPULATION - COUNTY + STATE LEVEL
-county_pop_data = county_geo_fips[['county', 'state', 'population', 'Geo_FIPS']]
-state_pop_data = county_pop_data.groupby('state')['population'].sum().reset_index()
-state_pop_data['state'] = state_pop_data['state'].apply(lambda x: state_codes_inv[x])
+# national
+nat_debt_geo = state_debt_geo.copy()
+nat_debt_geo['count'] = nat_debt_geo['count'].sum()
+nat_debt_geo['6p_total'] = nat_debt_geo['6p_total'].sum()
+nat_debt_geo['population'] = nat_debt_geo['population'].sum()
+nat_debt_geo["density"] = state_debt_geo['6p_total'].sum()/state_debt_geo["population"].sum()
+nat_debt_geo["mean_6p_total"] = state_debt_geo['6p_total'].sum()/state_debt_geo["count"].sum()
 
 # SLAVE POPULATION - COUNTY + STATE LEVEL
+# county
 county_slaves = gpd.read_file("../data_raw/census_data/census.csv")
 county_slaves = county_slaves[["GISJOIN", "slavePopulation"]].head(290)
 county_slaves['GISJOIN'] = county_slaves['GISJOIN'].str.replace('G0', '')
@@ -83,9 +85,25 @@ county_slaves['GISJOIN'] = county_slaves['GISJOIN'].str.replace('G', '')  # conv
 county_slaves.rename(columns={'GISJOIN': 'Geo_FIPS'}, inplace=True)
 county_slaves_data = pd.merge(county_geo_fips, county_slaves, on=['Geo_FIPS'])
 county_slaves_data = county_slaves_data.astype({"slavePopulation": "int", "Geo_FIPS": "str"})
-
+# state
 state_slaves_data = county_slaves_data.groupby('state')['slavePopulation'].sum().reset_index()
 state_slaves_data['state'] = state_slaves_data['state'].apply(lambda x: state_codes_inv[x])
+# national
+nat_slaves_data = state_slaves_data.copy()
+nat_slaves_data["slavePopulation"] = state_slaves_data["slavePopulation"].sum()
+
+# create final dataset
+county_data_final = pd.merge(county_slaves_data, county_debt_geo, how = 'outer')
+state_data_final = pd.merge(state_slaves_data, state_debt_geo, how = 'outer')
+national_data_final = pd.merge(nat_slaves_data, nat_debt_geo, how = 'outer')
+
+# MAP from parameter option to column
+map_to_col = {'Population': 'population',
+              'Slave Population': 'slavePopulation',
+              'Debt Distribution': '6p_total',
+              'Debt Density': 'density',
+              'Average Debt Holdings': 'debt density'}
+
 
 ########################################################################################################################
 ######################################### Define App Components ########################################################
@@ -191,7 +209,7 @@ display_tab = html.Div(className='box', children=[
 ########################################### Helper Functions ###########################################################
 ########################################################################################################################
 def returnSlider(df, col, slidermax, sliderrange):
-    maxval = df[col].max()+.05
+    maxval = df[col].max()+1
     if slidermax != maxval:
         slider = dcc.RangeSlider(min=0, max=maxval, id="slider")
         return df, slider
@@ -387,6 +405,7 @@ def handle_state_dropdown(state, county, map_type, border_type, sliderrange, sli
     global fig
     global county_pop_data
     global state_pop_data
+    global nat_debt
 
     fitbounds = "locations"
     basemap_visible = True
@@ -412,109 +431,26 @@ def handle_state_dropdown(state, county, map_type, border_type, sliderrange, sli
     states_str = state_map_df_c.to_json()
     states_gj = json.loads(states_str)
 
-
-    if map_type == "Population":
-        
-        if border_type == "Countywide":
-            county_pops_adj, slider = returnSlider(county_pop_data, 'population', slidermax, sliderrange)
-            fig = returnFig(
-                county_pops_adj, map_gj, 'Geo_FIPS', 'population', 'properties.Geo_FIPS', basemap_visible, fitbounds,
-                'county', "population")
-        elif border_type == "Statewide":
-            state_pops_adj, slider = returnSlider(state_pop_data, 'population', slidermax, sliderrange)
-            fig = returnFig(
-                state_pops_adj, states_gj, 'state', 'population', 'properties.state', basemap_visible, fitbounds,
-                'state', "population")
-        elif border_type == "Nationwide":
-            nat_pops = state_pop_data.copy()
-            nat_val = [state_pop_data["population"].sum()] * state_pop_data.shape[0]
-            nat_pops["population"] = nat_val
-            nat_pops_adj, slider = returnSlider(nat_pops, 'population', slidermax, sliderrange)
-            fig = returnFig(
-                nat_pops_adj, states_gj, 'state', 'population', 'properties.state', basemap_visible, fitbounds,
-                'state', "population")
-
-    elif map_type == 'Slave Population':
-        if border_type == "Countywide":
-            county_slaves_adj, slider = returnSlider(county_slaves_data, 'slavePopulation', slidermax, sliderrange)
-            fig = returnFig(
-                county_slaves_adj, map_gj, 'Geo_FIPS', 'slavePopulation', 'properties.Geo_FIPS', basemap_visible, fitbounds,
-                'county', "slavePopulation")
-        elif border_type == "Statewide":
-            state_slaves_adj, slider = returnSlider(state_slaves_data, 'slavePopulation', slidermax, sliderrange)
-            fig = returnFig(
-                state_slaves_adj, states_gj, 'state', 'slavePopulation', 'properties.state', basemap_visible, fitbounds,
-                'state', "slavePopulation")
-        elif border_type == "Nationwide":
-            nat_slave = state_slaves_data.copy()
-            nat_val = [state_pop_data["slavePopulation"].sum()] * state_pop_data.shape[0]
-            nat_slave["slavePopulation"] = nat_val
-            nat_slave_adj, slider = returnSlider(nat_slave, 'slavePopulation', slidermax, sliderrange)
-            fig = returnFig(
-                nat_slave_adj, states_gj, 'state', 'slavePopulation', 'properties.state', basemap_visible, fitbounds,
-                'state', "slavePopulation")
-    elif map_type == 'Debt Distribution':
-        if border_type == "Countywide":
-            county_debt_adj, slider = returnSlider(county_debt_geo, '6p_total', slidermax, sliderrange)
-            fig = returnFig(
-                county_debt_adj, map_gj, 'Geo_FIPS', '6p_total', 'properties.Geo_FIPS', basemap_visible, fitbounds,
-                'county', "6p_total")
-        elif border_type == "Statewide":
-            state_debt_adj, slider = returnSlider(state_debt_geo, '6p_total', slidermax, sliderrange)
-            fig = returnFig(
-                state_debt_adj, states_gj, 'state', '6p_total', 'properties.state', basemap_visible, fitbounds,
-                'state', "6p_total")
-        elif border_type == "Nationwide":
-            nat_debt = state_debt_geo.copy()
-            nat_val = [state_debt_geo["population"].sum()] * state_debt_geo.shape[0]
-            nat_debt["population"] = nat_val
-            nat_debt_adj, slider = returnSlider(nat_debt, '6p_total', slidermax, sliderrange)
-            fig = returnFig(
-                nat_debt_adj, states_gj, 'state', '6p_total', 'properties.state', basemap_visible, fitbounds,
-                'state', "6p_total")
-
-    elif map_type == 'Debt Density':
-        if border_type == "Countywide":
-            county_debt_adj, slider = returnSlider(county_debt_geo, 'density', slidermax, sliderrange)
-            fig = returnFig(
-                county_debt_adj, map_gj, 'Geo_FIPS', 'density', 'properties.Geo_FIPS', basemap_visible, fitbounds,
-                'county', "density")
-        elif border_type == "Statewide":
-            state_debt_adj, slider = returnSlider(state_debt_geo, 'density', slidermax, sliderrange)
-            fig = returnFig(
-                state_debt_adj, states_gj, 'state', 'density', 'properties.state', basemap_visible, fitbounds,
-                'state', "density")
-        elif border_type == "Nationwide":
-            nat_debt = state_debt_geo.copy()
-            nat_val = [state_debt_geo['6p_total'].sum()/state_debt_geo["population"].sum()] * state_debt_geo.shape[0]
-            nat_debt["density"] = nat_val
-            nat_debt_adj, slider = returnSlider(nat_debt, 'density', slidermax, sliderrange)
-            fig = returnFig(
-                nat_debt_adj, states_gj, 'state', 'density', 'properties.state', basemap_visible, fitbounds,
-                'state', "density")
-
-    elif map_type == 'Average Debt Holdings':
-        if border_type == "Countywide":
-            county_debt_adj, slider = returnSlider(county_debt_geo, 'mean_6p_total', slidermax, sliderrange)
-            fig = returnFig(
-                county_debt_adj, map_gj, 'Geo_FIPS', 'mean_6p_total', 'properties.Geo_FIPS', basemap_visible, fitbounds,
-                'county', "mean_6p_total")
-        elif border_type == "Statewide":
-            state_debt_adj, slider = returnSlider(state_debt_geo, 'mean_6p_total', slidermax, sliderrange)
-            fig = returnFig(
-                state_debt_adj, states_gj, 'state', 'mean_6p_total', 'properties.state', basemap_visible, fitbounds,
-                'state', "mean_6p_total")
-        elif border_type == "Nationwide":
-            nat_debt = state_debt_geo.copy()
-            nat_val = [state_debt_geo['6p_total'].sum()/state_debt_geo["count"].sum()] * state_debt_geo.shape[0]
-            nat_debt["mean_6p_total"] = nat_val
-            nat_debt_adj, slider = returnSlider(nat_debt, 'mean_6p_total', slidermax, sliderrange)
-            fig = returnFig(
-                nat_debt_adj, states_gj, 'state', 'mean_6p_total', 'properties.state', basemap_visible, fitbounds,
-                'state', "mean_6p_total")
-    else:
+    param = map_to_col.get(map_type, "NONE")
+    if param == "NONE":
         fig = px.choropleth()
-        slider = dcc.RangeSlider(id="slider-2", min=0, max=10)
+        slider = dcc.RangeSlider(id="slider", min=0, max=10)
+    else:
+        if border_type == "Countywide":
+            county_data_final_adj, slider = returnSlider(county_data_final, param, slidermax, sliderrange)
+            fig = returnFig(
+                county_data_final_adj, map_gj, 'Geo_FIPS', param, 'properties.Geo_FIPS', basemap_visible, fitbounds,
+                'county', param)
+        elif border_type == "Statewide":
+            state_data_final_adj, slider = returnSlider(state_data_final, param, slidermax, sliderrange)
+            fig = returnFig(
+                state_data_final_adj, states_gj, 'state', param, 'properties.state', basemap_visible, fitbounds,
+                'state', param)
+        elif border_type == "Nationwide":
+            national_data_final_adj, slider = returnSlider(national_data_final, param, slidermax, sliderrange)
+            fig = returnFig(
+                national_data_final_adj, states_gj, 'state', 'population', 'properties.state', basemap_visible, fitbounds,
+                'state', "population")
 
     return dcc.Graph(figure=fig, id='my-map', style={'height':'70vh'}), [slider, 'You have selected {}'.format(sliderrange)]
 
