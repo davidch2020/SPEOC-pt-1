@@ -19,10 +19,10 @@ title = html.H1(children='The Price of Liberty: Hamilton\'s Resolution of the Na
 
 # Navigation bar to get to different pages of the web app
 nav_bar = dbc.Nav(className='nav-bar', children=[
-    dbc.NavItem(dbc.NavLink("Maps", href="/", className="nav-link")),
-    dbc.NavItem(dbc.NavLink("Tables", href="/tables", className="nav-link")),
-    dbc.NavItem(dbc.NavLink("Project", href="/project_description", className="nav-link")),
-    dbc.NavItem(dbc.NavLink("The Team", href="/about_us", className="nav-link")),
+    dbc.NavItem(dbc.NavLink("Maps", href="/", className="nav-link", style={'fontWeight': 'bold', 'fontSize': '4vh'})),
+    dbc.NavItem(dbc.NavLink("Tables", href="/tables", className="nav-link", style={'fontWeight': 'bold', 'fontSize': '4vh'})),
+    dbc.NavItem(dbc.NavLink("Project", href="/project_description", className="nav-link", style={'fontWeight': 'bold', 'fontSize': '4vh'})),
+    dbc.NavItem(dbc.NavLink("Team", href="/about_us", className="nav-link", style={'fontWeight': 'bold', 'fontSize': '4vh'})),
 ], style={'margin': 'auto'}, navbar=True)
 
 # Layout of the app
@@ -52,6 +52,7 @@ def display_page(pathname):
     else:
         return html.Div(maps_layout)
 
+server = app.server
 # run app
 if __name__ == '__main__':
     app.run_server(debug=True, host='localhost')
