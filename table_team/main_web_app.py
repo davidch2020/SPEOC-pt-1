@@ -5,7 +5,7 @@ from dash.dependencies import Input, Output
 import dash_bootstrap_components as dbc
 
 app = dash.Dash(__name__)
-external_stylesheets = ['/Users/JGARCIA22/Desktop/NewApp/styles.css']
+external_stylesheets = ['styles.css']
 app = dash.Dash(__name__, external_stylesheets=[dbc.themes.BOOTSTRAP])
 
 # Define the app's layout
@@ -52,4 +52,4 @@ def display_page(pathname):
         return html.Div([maps_tables_layout()])
     
 if __name__ == '__main__':
-    app.run_server(port=8300)
+    app.run_server(debug=True, host='localhost', port = 8051)

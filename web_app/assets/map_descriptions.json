@@ -1,0 +1,22 @@
+{
+  "Debt Distribution": {
+    "What": "Debt distribution is the total amount of debt held by each county respectively.",
+    "Why": "Debt distribution can be considered our most important map. By displaying this information in a map, we can visualize where most of the debt was held. By doing so, we can come up with a correlation between geography and debt held."
+  },
+  "Population": {
+    "What": "The population map shows the distribution of people per state or county.",
+    "Why": "The population map shows how many people lived in each location. By mapping the population, we can visualize which counties had the most people living in them. We can then see if there was a correlation between population and the amount of debt in each county by placing both maps side-by-side."  
+  },
+  "Slave Population": {
+    "What": "The slave population map shows the distribution of how many total slaves were owned per state.",
+    "Why": "A slave population map can give information about the correlation between debt and slave ownership if the two maps are put side-by-side and compared. It may also show the difference between states that heavily depended on slave labor: was the debt density higher or lower in slave-dependent states (the South) compared to non-slave-dependent states (the North). If a significant difference exists, maybe it can provide some more insight into the historically relevant variation between Northerners and Southerners."
+  },  
+  "Debt Density": {
+    "What": "Debt density takes the amount of debt per county and divides it by the population of the county.",
+    "Why": "Debt density can give us more information than a debt distribution map. Unlike a debt distribution map, a debt density map takes into account population. A simple debt distribution map only takes into account total debt, so the map will be skewed towards large urban centers. However, rural counties may still hold a considerable amount of debt considering the size of their population."
+  },
+  "Average Debt Holdings": {
+    "What": "Takes the amount of debt per county and divides it by the total number of debt holders in the county.",
+    "Why": "Displaying this map can help us determine who was owning most of the debt. If the average debt holdings was high, that may indicate only a few people in the county owned most of the debt. If the average debt holdings was low, that can indicate the debt was held more evenly across the entire population."
+  }
+}
