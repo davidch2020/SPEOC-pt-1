@@ -22,6 +22,10 @@ state_codes_inv = {v: k for k, v in state_codes.items()}
 
 map_descr = json.loads(requests.get('https://raw.githubusercontent.com/liaochris/SPEOC-pt-1/main/web_app/assets/map_descriptions.json').text)
 
+
+# Number of project description slides
+DESCRIPTION_COUNT = 2
+
 ######################################################################
 ###################################### dataframes used for maps ########################################################
 ########################################################################################################################
@@ -33,7 +37,7 @@ map_df = gpd.GeoDataFrame(df_raw)
 
 # only contains state borders, no county borders
 # don't optimize time because it's fast enough without optimizing
-state_map_df = gpd.read_file("https://raw.githubusercontent.com/liaochris/SPEOC-pt-1/main/data_raw/shapefiles/stateshape_1790")
+state_map_df = gpd.read_file("../data_raw/shapefiles/stateshape_1790")
 state_map_df.rename(columns={'STATENAM': 'state'}, inplace=True)
 state_map_df['state_abrev'] = state_map_df.loc[:, 'state']
 state_map_df.replace({"state_abrev": state_codes}, inplace=True)
@@ -81,7 +85,7 @@ nat_debt_geo["mean_6p_total"] = state_debt_geo['6p_total'].sum()/state_debt_geo[
 
 # SLAVE POPULATION - COUNTY + STATE LEVEL
 # county
-county_slaves = gpd.read_file("https://raw.githubusercontent.com/liaochris/SPEOC-pt-1/main/data_raw/census_data/census.csv")
+county_slaves = gpd.read_file("../data_raw/census_data/census.csv")
 county_slaves = county_slaves[["GISJOIN", "slavePopulation"]].head(290)
 county_slaves['GISJOIN'] = county_slaves['GISJOIN'].str.replace('G0', '')
 county_slaves['GISJOIN'] = county_slaves['GISJOIN'].str.replace('G', '')  # convert to geo_fips
@@ -112,12 +116,12 @@ map_to_col = {'Population': 'population',
 ########################################################################################################################
 # Project description tab
 project_desc = html.Div(className='box', children=[
-    html.H2(children='Project Description', className='box-title', style={'marginBottom': '20px'}),
+    html.H2(children='Project Description', className='box-title', style={'marginBottom': '20px'}, id = 'slider-title'),
     # buttons that navigate you through different descriptions of the project
     html.Div(className='slider-container', children=[
         html.Button('\u25C0', id='left_arrow', className='slider-button',
                     style={'float': 'left', 'marginRight': '10px'}),
-        html.Span(id='project_desc_text', style={'fontWeight': 'bold', 'textAlign': 'center'}),
+        dcc.Markdown(id='project_desc_text', style={'textAlign': 'center'}),
         html.Button('\u25B6', id='right_arrow', className='slider-button',
                     style={'float': 'right', 'marginLeft': '10px'})
     ]),
@@ -505,3 +509,40 @@ def change_map_display(map_type):
     else:
         return html.H5(children = 'Choose a statistic')
     
+slide_text = {
+    0: "Welcome! This is a interactive web app that explores Hamilton's Resolution of the National Debt, as described \
+        in the first of four key reports he submitted to Congress as Secretary of the Treasury: The First Report on the Public Credit. \
+        In this web app, using a novel ledger of records on debt redemption, we provide technological tools that help analyze \
+        the debt records through maps and tables. These can be explored using the leftmost two tabs on the navigation bar. To learn about the \
+        in-depth history behind Hamilton's plan, click on the **Project** tab. To meet our team, click on the **Team** tab.",
+    1: "Although Hamilton's plan that refunded the national debt was over two centuries ago, it has had long-lasting implications. By establishing \
+        the United States as a trustworthy debitor, he ensured a secure line of credit for the United States in the future. \
+        To this day, the United States has not default on its national debt; it's why US treasuries are considered 'risk-free' assets in financial markets. \
+        \
+        \
+        Hamilton's plan made American debtholders individuals with financial stake in the new government, as if the new government failed, their debt \
+        would not be repaid. Who were these people? Why did Hamilton consider it important to repay their debt? What role did they play in America's early history? \
+        These are all questions that we hope this project can shine further light on"
+}
+
+slide_title = {
+    0: 'Project Description', 
+    1: 'Modern Relevance',
+}
+
+@app.callback(
+    Output('project_desc_text', 'children'),
+    Output('slider-title', 'children'),
+    [Input('left_arrow', 'n_clicks'), Input('right_arrow', 'n_clicks')]
+)
+def update_project_desc(left_clicks, right_clicks):
+    global DESCRIPTION_COUNT
+    if left_clicks == None:
+        left_clicks = 0
+    if right_clicks == None:
+        right_clicks = 0
+
+    number = 0
+    number += right_clicks - left_clicks
+    number = number % DESCRIPTION_COUNT
+    return slide_text[number], slide_title[number]
