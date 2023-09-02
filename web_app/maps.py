@@ -1,8 +1,6 @@
 # import packages
 import json
-import math
 
-import dash
 import dash_bootstrap_components as dbc
 import geopandas as gpd
 import numpy as np
@@ -11,41 +9,37 @@ import plotly.express as px
 from dash import dcc
 from dash import html
 from dash.dependencies import Input, Output, State
-import time
 from shapely import wkt
+import requests
+
 
 # import info from other pages
 from app import app
 
 # import json file that converts full name of a state to two character abbreviation
-with open('assets/state_codes.json', "r") as file:
-    state_codes = json.load(file)
+state_codes = json.loads(requests.get('https://raw.githubusercontent.com/liaochris/SPEOC-pt-1/main/web_app/assets/state_codes.json').text)
 state_codes_inv = {v: k for k, v in state_codes.items()}
 
+map_descr = json.loads(requests.get('https://raw.githubusercontent.com/liaochris/SPEOC-pt-1/main/web_app/assets/map_descriptions.json').text)
 
-# import json file that converts full name of a state to two character abbreviation
-with open('assets/state_codes.json', "r") as file:
-    state_codes = json.load(file)
-state_codes_inv = {v: k for k, v in state_codes.items()}
-
-########################################################################################################################
+######################################################################
 ###################################### dataframes used for maps ########################################################
 ########################################################################################################################
 # data for counties is preprocessed elsewhere, saves us 3s
-df_raw = pd.read_csv('assets/map_df.csv', index_col = 0)
+df_raw = pd.read_csv('https://raw.githubusercontent.com/liaochris/SPEOC-pt-1/main/web_app/assets/map_df.csv', index_col = 0)
 df_raw['geometry'] = df_raw['geometry'].apply(wkt.loads)
 map_df = gpd.GeoDataFrame(df_raw)
 
 
 # only contains state borders, no county borders
 # don't optimize time because it's fast enough without optimizing
-state_map_df = gpd.read_file("../data_raw/shapefiles/stateshape_1790")
+state_map_df = gpd.read_file("https://raw.githubusercontent.com/liaochris/SPEOC-pt-1/main/data_raw/shapefiles/stateshape_1790")
 state_map_df.rename(columns={'STATENAM': 'state'}, inplace=True)
 state_map_df['state_abrev'] = state_map_df.loc[:, 'state']
 state_map_df.replace({"state_abrev": state_codes}, inplace=True)
 
 # list of states we include in dropdown menu
-states = pd.read_csv("../data_raw/census_data/statepop.csv")["State"].dropna()
+states = pd.read_csv("https://raw.githubusercontent.com/liaochris/SPEOC-pt-1/main/data_raw/census_data/statepop.csv")["State"].dropna()
 states = pd.concat([pd.Series(["All States"]), states]).tolist()
 # remove states that have no map data
 states.remove("Maine")
@@ -57,13 +51,13 @@ states.remove("Tennessee")
 ########################################################################################################################
 # DEBT - COUNTY + STATE LEVEL
 # county - import debt
-debt_by_county = pd.read_csv("../data_clean/final_data_CD.csv")[["Group State", "Group County", '6p_total']]
+debt_by_county = pd.read_csv("https://raw.githubusercontent.com/liaochris/SPEOC-pt-1/main//data_clean/final_data_CD.csv")[["Group State", "Group County", '6p_total']]
 debt_by_county = debt_by_county.groupby(by=["Group County", "Group State"]).agg(['size', 'sum'])
 debt_by_county.reset_index(inplace=True)
 debt_by_county.columns = debt_by_county.columns.droplevel(1)
 debt_by_county.columns = ['county', 'state', 'count', '6p_total']
 # county - import geography and population data
-county_pop_data_raw = pd.read_csv("../data_raw/census_data/countyPopulation.csv", header=1)
+county_pop_data_raw = pd.read_csv("https://raw.githubusercontent.com/liaochris/SPEOC-pt-1/main//data_raw/census_data/countyPopulation.csv", header=1)
 county_geo_fips = county_pop_data_raw[county_pop_data_raw["SE_T001_001"].notna()]
 county_geo_fips = county_geo_fips.astype({"SE_T001_001": "int", "Geo_FIPS": "str"})
 county_geo_fips = county_geo_fips[["Geo_FIPS", "Geo_name", 'Geo_STUSAB', "SE_T001_001"]]
@@ -87,7 +81,7 @@ nat_debt_geo["mean_6p_total"] = state_debt_geo['6p_total'].sum()/state_debt_geo[
 
 # SLAVE POPULATION - COUNTY + STATE LEVEL
 # county
-county_slaves = gpd.read_file("../data_raw/census_data/census.csv")
+county_slaves = gpd.read_file("https://raw.githubusercontent.com/liaochris/SPEOC-pt-1/main/data_raw/census_data/census.csv")
 county_slaves = county_slaves[["GISJOIN", "slavePopulation"]].head(290)
 county_slaves['GISJOIN'] = county_slaves['GISJOIN'].str.replace('G0', '')
 county_slaves['GISJOIN'] = county_slaves['GISJOIN'].str.replace('G', '')  # convert to geo_fips
@@ -116,17 +110,6 @@ map_to_col = {'Population': 'population',
 ########################################################################################################################
 ######################################### Define App Components ########################################################
 ########################################################################################################################
-# Title Bar
-title = html.H1(children='American National Debt in the Late 18th Century', style={'textAlign': 'left'}, className='title')
-
-# Navigation bar to get to different pages of the web app
-nav_bar = dbc.Nav(className='nav-bar', children=[
-    dbc.NavItem(dbc.NavLink("Maps", href="/", className="nav-link")),
-    dbc.NavItem(dbc.NavLink("Tables", href="/", className="nav-link")),
-    dbc.NavItem(dbc.NavLink("Project", href="/project_description", className="nav-link")),
-    dbc.NavItem(dbc.NavLink("About", href="/about_us", className="nav-link")),
-], style={'margin': 'auto'}, navbar=True)
-
 # Project description tab
 project_desc = html.Div(className='box', children=[
     html.H2(children='Project Description', className='box-title', style={'marginBottom': '20px'}),
@@ -197,11 +180,12 @@ left_tab = html.Div(id="left_tab", className='box', children=[
 # right tab to show statistics associated with that particular geographical area
 right_tab = html.Div(id="right_tab", className='box', children=[
     html.H3(children='Statistics', className='box-title', style={'textAlign': 'center'}),
+    html.H5(children = 'Choose a statistic', id = 'statistic-description')
 ], style={'width': '65%', 'height': 'auto', "display": "block"})
 
 # Bottom Display tab with DataFrame/Map
 display_tab = html.Div(className='box', children=[
-    html.H3(children='Display', className='box-title', style={'textAlign': 'center'}),
+    html.H3(children='Display', className='box-title', style={'textAlign': 'center'}, id = 'display-tab'),
     html.Div(id='right-tab-content',
              style={'overflow': 'scroll'}
              ),
@@ -426,8 +410,9 @@ def handle_state_dropdown(state, county, map_type, border_type, sliderrange, sli
         return '', ''
 
     if (state != "All States") and (state is not None):
-        if border_type == "Statewide" or border_type == "Nationwide":
+        if border_type == "Statewide" or border_type == "Countywide":
             state_map_df_c = state_map_df_c.loc[state_map_df['state'] == state]
+            map_df_c = map_df_c.loc[map_df_c['state'] == state]
         fitbounds = "locations"
         basemap_visible = False
 
@@ -461,5 +446,62 @@ def handle_state_dropdown(state, county, map_type, border_type, sliderrange, sli
                 national_data_final_adj, states_gj, 'state', 'population', 'properties.state', basemap_visible, fitbounds,
                 'state', "population")
 
-    return dcc.Graph(figure=fig, id='my-map', style={'height':'70vh'}), [slider, 'You have selected {}'.format(sliderrange)]
+    if sliderrange is None:
+        slider_output = [slider, 'You have selected all values']
+    else:
+        if border_type == 'Countywide':
+            border_val = 'counties'
+        else:
+            border_val = border_type.replace('wide', '').lower() + "s"
 
+        slider_output = [slider, f'You have selected to display all {border_val} with {map_type.lower()} between {sliderrange[0]} and {sliderrange[1]}']
+
+    return dcc.Graph(figure=fig, id='my-map', style={'height':'70vh'}),  slider_output
+
+
+
+
+@app.callback(
+    Output('display-tab', 'children'),
+    [Input("states_drpdwn", "value"),
+     Input("county_drpdwn", "value"),
+     Input('heatmap_drpdwn', 'value'),
+     Input('border_drpdwn', 'value')]
+    # to keep track of when the heatmap type changes--> means that the rangeslider maximum must be adjusted
+)
+def change_map_display(state, county, map_type, border_type):
+    if (map_type is not None) and (map_type != 'Not Selected') and (border_type is not None) and (border_type != "Not Selected"):
+        btype = border_type
+        if border_type == 'Nationwide':
+            btype = ''
+        elif border_type == 'Statewide' or border_type == 'Countywide':
+            btype = btype.replace('wide', '')
+        
+        # no state filtering
+        if state is None:
+            return f'National Map of {map_type} ({btype}-Level)'
+        else:
+            # no county filtering
+            if county is None:
+                return f'Map of {map_type} for {state} ({btype}-Level)'
+            # county filtering
+            else:
+                return f'Map of {map_type} for {county} in {state} ({btype}-Level)'
+    return 'Map Display'
+
+@app.callback(
+    Output('statistic-description', 'children'),
+    [Input('heatmap_drpdwn', 'value')]
+    # to keep track of when the heatmap type changes--> means that the rangeslider maximum must be adjusted
+)
+def change_map_display(map_type):
+    if (map_type is not None) and (map_type != 'Not Selected'):
+        return [html.P(children=[
+            html.Strong('What: '),
+            html.Span(map_descr[map_type]['What'])]),
+              html.P(children=[
+            html.Strong('Why: '),
+            html.Span(map_descr[map_type]['Why'])]),]
+    else:
+        return html.H5(children = 'Choose a statistic')
+    

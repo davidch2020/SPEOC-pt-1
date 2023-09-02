@@ -17,10 +17,22 @@ from tables_style import custom_style, df
 table_desc = html.Div(className='box', children=[
     html.H2(children='Table Guide', className='box-title', style={'marginBottom': '20px'}),
     dcc.Markdown('''
-        The Dash DataTable provides a built-in, interactive filter that users can use to filter data in real-time. Here's how you can use it:
+        This is a table, aggregated at the debtholder level, of debt certificates redeemed after Hamilton's Plan. 
+        - To analyze the data at an aggretate level, click the **Analyze Data** button below. 
+        - To analyze the data at the debt holder level, the table allows you to select which columns to display and sort and filter based on row values. 
+        
+        ##### Table Capabilities
+        - **Toggle Columns** allows you to select which columns are included in the table. 
+        - To sort the data, click on the arrow pointing upwards to sort in ascending order, or downwards to sort in descending order. 
+        - There are four ways to filter the data, 2 for categorical and 2 for numerical data
+
+        ** Categorical Methods**
 
         1. **Contains:** This can be used with string columns to filter rows that contain a specific substring. For example, typing `NY` will show rows where the column contains the substring 'NY'.
         2. **Multiple values:** If you want to filter rows that match any of several values, you can provide the values separated by commas. For example, typing `"NY", "CT"` will show rows where 'Group State' is either 'NY' or 'CT'.
+        
+        **Numerical Methods**
+
         3. **Greater than (>), less than (<), greater than or equal to (>=), less than or equal to (<=):** These can be used with numeric columns to filter rows based on greater than, less than, or equal conditions. For example, in a numeric column like 'Face Value of 6% debt', typing `>500` will show rows where 'Face Value of 6% debt' is greater than 500.
         4. **Ranges for numeric columns:** If you want to filter a numeric column for a range of values, you can provide the range in the format `low-high`. For example, typing `1000-2000` in a numeric column's filter box will show rows where the column value is between 1000 and 2000.
 
@@ -59,10 +71,10 @@ display_tab = html.Div(className='box', children=[
 ], style={'width': '100%', 'overflow': 'auto'})
 
 # Button to open the modal
-display_more = dbc.Button("Analyze Data", id="open-button")
+display_more = dbc.Button("Analyze Data", id="open-button", style={ 'width':'100%'})
 display_more_tab = html.Div(className='box', children=[
     display_more
-], style={'width': '100%', 'overflow': 'auto'})
+], style={'width': '100%', 'overflow': 'auto', 'posotion': 'relative'})
 
 grouped_charts = html.Div(dbc.Modal([
     dbc.ModalHeader("Chart and Data Options"),
@@ -108,7 +120,7 @@ grouped_charts = html.Div(dbc.Modal([
         html.Div(id="chart-container")], style={ 'overflow': 'auto'}),
     dbc.ModalFooter(dbc.Button("Close", id="close-button", className="ml-auto"))
 ], id="modal", size='xl'))
-tables_layout = [table_desc, display_tab, display_more_tab, grouped_charts]
+tables_layout = [table_desc, display_more_tab, display_tab, grouped_charts]
 
 
 @app.callback(
@@ -283,15 +295,16 @@ def toggle_slider(dropdown_value):
 
 @app.callback(
     Output("guide", "style"),
+    Output("toggle-button", "children"),
     [Input("toggle-button", "n_clicks")]
 )
 def toggle_guide(n):
     if n % 2 == 0:
         # If the button has been clicked an even number of times, hide the guide
-        return {"display": "none"}
+        return {"display": "none"}, "Show Guide"
     else:
         # If the button has been clicked an odd number of times, show the guide
-        return {"display": "block"}
+        return {"display": "block"}, "Hide Guide"
 
 
 @app.callback(

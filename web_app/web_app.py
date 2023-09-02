@@ -15,14 +15,14 @@ from tables import tables_layout
 ######################################### Define App Components ########################################################
 ########################################################################################################################
 # Title Bar
-title = html.H1(children='American National Debt in the Late 18th Century', style={'textAlign': 'left'}, className='title')
+title = html.H1(children='The Price of Liberty: Hamilton\'s Resolution of the National Debt', style={'textAlign': 'left'}, className='title')
 
 # Navigation bar to get to different pages of the web app
 nav_bar = dbc.Nav(className='nav-bar', children=[
     dbc.NavItem(dbc.NavLink("Maps", href="/", className="nav-link")),
     dbc.NavItem(dbc.NavLink("Tables", href="/tables", className="nav-link")),
     dbc.NavItem(dbc.NavLink("Project", href="/project_description", className="nav-link")),
-    dbc.NavItem(dbc.NavLink("About", href="/about_us", className="nav-link")),
+    dbc.NavItem(dbc.NavLink("The Team", href="/about_us", className="nav-link")),
 ], style={'margin': 'auto'}, navbar=True)
 
 # Layout of the app

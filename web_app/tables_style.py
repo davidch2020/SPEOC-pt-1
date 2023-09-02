@@ -3,9 +3,8 @@ import pandas as pd
 
 # load the dataset.
 
-url = 'https://raw.githubusercontent.com/liaochris/SPEOC-pt-1/main/data_clean/final_data_CD.csv'
 
-df = pd.read_csv('../data_clean/final_data_CD.csv')
+df = pd.read_csv('https://raw.githubusercontent.com/liaochris/SPEOC-pt-1/main/data_clean/final_data_CD.csv')
 df = df.drop(
     ['Group Match Index', 'Group Match Url', 'Full Search Name', 'assets', 'Name_Fix_Transfer', 'Name_Fix_Clean',
      'imputed_location', 'location conflict', 'Group Village'], axis=1)
