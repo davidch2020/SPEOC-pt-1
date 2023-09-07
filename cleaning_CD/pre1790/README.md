@@ -143,6 +143,28 @@ print(agg_debt.loc[107216:107221][['to whom due | first name', 'to whom due | la
 print(agg_debt.loc[(agg_debt['to whom due | first name'] == 'James') & (agg_debt['to whom due | last name'] == 'Wood')][['to whom due | first name', 'to whom due | last name']].to_markdown())
 ```
 
+### "Heirs of"/Estate of" prefix removal
+<b>Goal: </b>Remove "Estate of", "Heirs of", "State of" prefixes in an entry, and marks "State of" entries as organizations
+
+|       | to whom due - first name   | to whom due - last name |
+|------:|:---------------------------|:------------------------|
+| 1891  | Estate of Abigail Champney  |                         |
+
+```python
+print(agg_debt.loc[(agg_debt['to whom due | first name'] == 'Estate of Abigail Champney')][['to whom due | first name', 'to whom due | last name']].to_markdown())
+```
+
+**Input**:```agg_debt``` <br>
+**Output**: ```agg_debt```: Rows with prefixes removed and names placed in thier correct column, ```name_changes```
+
+|       | to whom due - first name   | to whom due - last name   |
+|------:|:---------------------------|:--------------------------|
+| 1891  | Abigail                    | Champney                  |
+
+```python
+print(agg_debt.loc[(agg_debt['to whom due | first name'] == 'Abigail') & (agg_debt['to whom due | last name'] == 'Champney')][['to whom due | first name', 'to whom due | last name']].to_markdown())
+```
+
 ### Ancestry Search : ```ancestry_search_david.ipynb```
 <b>Goal: </b>Multiple different spellings of a name can be referring to the same identity. We will use a phonetics library and Ancestry to fix this. An example: ```David Schaffer``` and ```David Schafer``` from `MA`. There is a possibility that both of these individuals are the same, but were incorrectly spelled. 
 
