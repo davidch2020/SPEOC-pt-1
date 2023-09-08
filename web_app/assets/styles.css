@@ -29,9 +29,17 @@ body {
 }
 
 .nav-link {
-    margin: 0 10px;
+    margin: 0 4px;
     color: #333;
-    font-size: 16px;
+    font-size: 4vh;
+    font-weight: 'bold';
+}
+
+.nav-link2 {
+    margin: 0 4px;
+    color: #333;
+    font-size: 3vh;
+    font-weight: 'bold';
 }
 
 /* Box styles */
@@ -50,11 +58,24 @@ body {
     margin-bottom: 10px;
 }
 
+.section-title {
+    text-align: center;
+    color: #333;
+    margin-bottom: 10px;
+    font-size: 6vh;
+}
+
+.subsection-title {
+    text-align: left;
+    color: #333;
+    margin-bottom: 10px;
+    font-size: 5vh;
+}
+
 .slider-container {
     display: flex;
     align-items: center;
     justify-content: center;
-    margin-bottom: 2px;
 }
 
 .slider-button {
