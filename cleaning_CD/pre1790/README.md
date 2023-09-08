@@ -13,8 +13,13 @@ The goal of this exercise was to clean the names of the individuals in the pre-1
     - ```pip install fuzzywuzzy```
 5. Open ```clean_names_david.ipynb```
 
-## Running the Program
-Run code cells from top-to-bottom. Here are the different sections of my code. Detailed steps are in the section headers of ```clean_names_david.ipynb```. 
+## Running ```find-similar-names.ipynb```
+**Goal**: Create separate .csv files for each state. These .csv files will contain a column for names in each state and another column with a list of similar names. These similar names are determined using fuzzy string matching. 
+**Input**: ```agg_debt_grouped.csv```
+**Output**: ```similar_names``` folder 
+
+## Running ```combined.ipynb```
+Run code cells from top-to-bottom. Here are the different sections of the code. More information in the headers. 
 
 ### Before Cleaning
 **Goal**: Import all libraries and files. <br>
@@ -138,6 +143,28 @@ print(agg_debt.loc[107216:107221][['to whom due | first name', 'to whom due | la
 print(agg_debt.loc[(agg_debt['to whom due | first name'] == 'James') & (agg_debt['to whom due | last name'] == 'Wood')][['to whom due | first name', 'to whom due | last name']].to_markdown())
 ```
 
+### "Heirs of"/Estate of" prefix removal
+<b>Goal: </b>Remove "Estate of", "Heirs of", "State of" prefixes in an entry, and marks "State of" entries as organizations
+
+|       | to whom due - first name   | to whom due - last name |
+|------:|:---------------------------|:------------------------|
+| 1891  | Estate of Abigail Champney  |                         |
+
+```python
+print(agg_debt.loc[(agg_debt['to whom due | first name'] == 'Estate of Abigail Champney')][['to whom due | first name', 'to whom due | last name']].to_markdown())
+```
+
+**Input**:```agg_debt``` <br>
+**Output**: ```agg_debt```: Rows with prefixes removed and names placed in thier correct column, ```name_changes```
+
+|       | to whom due - first name   | to whom due - last name   |
+|------:|:---------------------------|:--------------------------|
+| 1891  | Abigail                    | Champney                  |
+
+```python
+print(agg_debt.loc[(agg_debt['to whom due | first name'] == 'Abigail') & (agg_debt['to whom due | last name'] == 'Champney')][['to whom due | first name', 'to whom due | last name']].to_markdown())
+```
+
 ### Ancestry Search : ```ancestry_search_david.ipynb```
 <b>Goal: </b>Multiple different spellings of a name can be referring to the same identity. We will use a phonetics library and Ancestry to fix this. An example: ```David Schaffer``` and ```David Schafer``` from `MA`. There is a possibility that both of these individuals are the same, but were incorrectly spelled. 
 
@@ -146,7 +173,27 @@ print(agg_debt.loc[(agg_debt['to whom due | first name'] == 'James') & (agg_debt
 
 ## Areas of Future Improvement and Research
 
-1. Currently, ```.itertuples``` is being used to iterate through ```agg_debt``` and group consecutive rows. Although faster than ```.iterrows```, ```.itertuples``` is still slower than other dataframe iteration methods. Check this [out](https://mlabonne.github.io/blog/posts/2022-03-21-Efficiently_iterating_over_rows_in_a_Pandas_DataFrame.html). There are resources on StackOverflow that cover a very similar [problem](https://stackoverflow.com/questions/44373668/python-pandas-merging-consecutive-rows-only-if-matching-columns)
+**Optimized Parallelization**
+Current parallelization code:
+```python
+df_split = np.array_split(similar_names_df, cpu_count())  
+print(len(df_split))
+
+# Initialize a parallelization job 
+ancestry_calls = [delayed(ancestry_wrap)(df_split[i], driver_objs[i]) for i in range(7)]
+results = Parallel(n_jobs=-1, backend="threading")(ancestry_calls) 
+```
+
+I am currently splitting up the dataframe into equal, smaller dataframes. Each CPU core will handle one smaller dataframe. However, this can be optimized. Once a core is done with its assigned smaller dataframe, it can help with another core's smaller dataframe. This way, performance remains constant. 
+
+**Improved Data Storage**
+Currently, we store name changes in a dictionary structured as such:
+```
+{[title1, title1, fn1, ln1, fn0, ln0, 6, org_file1, org_index1, state], ...}
+```
+
+However, I realize that this is not flexible. Sometimes, we need more information. A better way is to store the entire row instead of the row's information. Another way is to store the index (from ```agg_debt```) of the row. 
+
 
 
 
