@@ -11,7 +11,6 @@ The goal of this exercise was to clean the names of the individuals in the pre-1
     - ```pip install selenium```
     - ```pip install phonetics```
     - ```pip install fuzzywuzzy```
-5. Open ```clean_names_david.ipynb```
 
 ## Running ```find-similar-names.ipynb```
 **Goal**: Create separate .csv files for each state. These .csv files will contain a column for names in each state and another column with a list of similar names. These similar names are determined using fuzzy string matching. 
