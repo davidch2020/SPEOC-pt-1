@@ -1,0 +1,12 @@
+selenium
+webdriver-manager
+phonetics
+rapidfuzz
+joblib
+pandas
+numpy
+datetime
+fuzzywuzzy
+nltk
+nameparser 
+
