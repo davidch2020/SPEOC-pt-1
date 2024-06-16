@@ -6,7 +6,7 @@ The goal of this exercise was to clean the names of the individuals in the pre-1
 2. The latest version of Python is assumed to be installed. 
 3. Enter your default terminal. 
 4. Install all necessary packages: ```pip install -r requirements.txt```
-*Note: When installing packages, make sure you are in the ```pre1790``` directory.
+*Note: When installing packages, make sure you are in the ```pre1790``` directory and using PIP v3.
 
 ## Running ```find-similar-names.ipynb```
 **Goal**: Create separate .csv files for each state. These .csv files will contain a column for names in each state and another column with a list of similar names. These similar names are determined using fuzzy string matching. 
