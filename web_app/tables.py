@@ -5,11 +5,21 @@ from dash import Input, Output, State
 from dash import dash_table
 from dash import dcc
 from dash import html
+from dash.dash_table import DataTable, FormatTemplate
+from dash.dash_table.Format import Group
 
 # import info from other pages
 from app import app
 from tables_style import custom_style, df
 
+money = FormatTemplate.money(2)
+agg_columns = ["All 6% Debt",'6% Coupons','6% Deferred Coupons','3% Coupons']
+metric_type_dict = {
+    '6p':'6% Coupons',
+    '6p_def':'6% Deferred Coupons',
+    '3p':'3% Coupons',
+    '6p_all':"All 6% Debt",
+}
 ########################################################################################################################
 ######################################### Define App Components ########################################################
 ########################################################################################################################
@@ -18,7 +28,8 @@ table_desc = html.Div(className='box', children=[
     html.H2(children='Table Guide', className='box-title', style={'marginBottom': '20px'}),
     dcc.Markdown('''
         This is a table, aggregated at the debtholder level, of debt certificates redeemed after Hamilton's Plan. 
-        - To analyze the data at an aggretate level, click the **Analyze Data** button below. 
+        - To analyze the data at an aggretate level, click the **Analyze Data** button below. Note that the data used in **Analyze Data** applies filtering 
+        from below. 
         - To analyze the data at the debt holder level, the table allows you to select which columns to display and sort and filter based on row values. 
         
         ##### Table Capabilities
@@ -29,7 +40,7 @@ table_desc = html.Div(className='box', children=[
         ** Categorical Methods**
 
         1. **Contains:** This can be used with string columns to filter rows that contain a specific substring. For example, typing `NY` will show rows where the column contains the substring 'NY'.
-        2. **Multiple values:** If you want to filter rows that match any of several values, you can provide the values separated by commas. For example, typing `"NY", "CT"` will show rows where 'Group State' is either 'NY' or 'CT'.
+        2. **Multiple values:** If you want to filter rows that match any of several values, you can provide the values separated by commas. For example, typing `NY,CT` will show rows where 'State' is either 'NY' or 'CT'.
         
         **Numerical Methods**
 
@@ -44,30 +55,30 @@ table_desc = html.Div(className='box', children=[
     html.Button("Show Guide", id="toggle-button", n_clicks=1),
 ])
 
-dash_table = html.Div(dash_table.DataTable(
+dash_tbl = html.Div(dash_table.DataTable(
     id='DataTable',
     data=df.to_dict('records'),  # convert the pd dataframe into a dictionary, otherwise Dash cannot process it.
     # make columns toggleable
-    columns=[{"name": i, "id": i, 'hideable': True} for i in df.columns],
-    # first two arguments of dash_table.DataTable are data & columns by default.
-    hidden_columns=["6p_total_adj", "6p_def_total_adj", "unpaid_interest_adj", "final_total_adj"],
+    columns=[{"name": i, "id": i, 'hideable': True} if i not in agg_columns
+             else {"name": i, "id": i, 'hideable': True, 'type': 'numeric', 'format': money} for i in df.columns ],
     # Unpacking the style dictionary
     **custom_style,
     # Set Interactivity rules:
-    editable=True,
     filter_action="custom",
     sort_action="native",
     sort_mode="multi",
     selected_columns=[],
     selected_rows=[],
+    fill_width=False,
     page_size=10,
+    export_format = "csv",
     css=[
-        {'selector': '.dash-spreadsheet-menu', 'rule': 'position:absolute;bottom:-5px'},  # move below table
+        {'selector': ".show-hide", "rule": "display: none"},  # move below table
     ]))
 # Bottom Display tab with DataFrame/Map
 display_tab = html.Div(className='box', children=[
     html.H3(children='Table', className='box-title', style={'textAlign': 'center'}),
-    dash_table
+    dcc.Loading(children = [dash_tbl],  type = "default"),
 ], style={'width': '100%', 'overflow': 'auto'})
 
 # Button to open the modal
@@ -79,52 +90,93 @@ display_more_tab = html.Div(className='box', children=[
 grouped_charts = html.Div(dbc.Modal([
     dbc.ModalHeader("Chart and Data Options"),
     dbc.ModalBody([
-        dcc.Dropdown(id='dropdown', options=[
-            {'label': 'Group by State', 'value': 'state'},
-            {'label': 'Group by County', 'value': 'county'},
-            {'label': 'Group by Town', 'value': 'town'},
-            {'label': 'Group by Occupation', 'value': 'occupation'}],
-                     value='state'),
-        dcc.Dropdown(id='aggregation-dropdown', options=[
-            {'label': 'Sum', 'value': 'sum'},
-            {'label': 'Average', 'value': 'mean'},
-            {'label': 'Min', 'value': 'min'},
-            {'label': 'Max', 'value': 'max'}],
-                     value='sum'),
-        dcc.Dropdown(id='chart-type-dropdown', options=[
-            {'label': 'Bar Chart', 'value': 'bar'},
-            {'label': 'Pie Chart', 'value': 'pie'}],
-                     value='bar'),
+        dbc.Row([
+            dbc.Col(dcc.Markdown(children = '##### Metric'), md=2, style = {"display":"inline-block", "padding-top":"1vh"}),
+            dbc.Col(
+                dcc.Dropdown(id='metric-dropdown', options=[
+                {'label': '6% Coupons', 'value': '6p'},
+                {'label': '6% Deferred Coupons', 'value': '6p_def'},
+                {'label': '3% Coupons', 'value': '3p'},
+                {'label': 'All 6% Debt', 'value': '6p_all'}],
+                        value='6p_all'),
+                md=10,
+                align='end'
+            )
+        ]),
+        dbc.Row([
+            dbc.Col(dcc.Markdown(children = '##### Group'), md=2, style = {"display":"inline-block", "padding-top":"1vh"}),
+            dbc.Col(
+                dcc.Dropdown(id='dropdown', options=[
+                {'label': 'Group by State', 'value': 'state'},
+                {'label': 'Group by County', 'value': 'county'},
+                {'label': 'Group by Town', 'value': 'town'},
+                {'label': 'Group by Occupation', 'value': 'occupation'}],
+                        value='state'),
+                md=10,
+                align='end'
+            )
+        ]),
+        dbc.Row([
+            dbc.Col(dcc.Markdown(children = '##### Aggregation Type'), md=2, style = {"display":"inline-block", "padding-top":"1vh"}),
+            dbc.Col(
+                dcc.Dropdown(id='aggregation-dropdown', options=[
+                {'label': 'Sum', 'value': 'sum'},
+                {'label': 'Average', 'value': 'mean'},
+                {'label': 'Min', 'value': 'min'},
+                {'label': 'Max', 'value': 'max'}],
+                        value='sum'),
+                md=10,
+                align='end',
+                style = {"display":"inline-block"}
+            )
+        ], style = {'display':'flex'}),
+
+        dbc.Row([
+            dbc.Col(dcc.Markdown(children = '##### Chart Type'), md=2, style = {"display":"inline-block", "padding-top":"1vh"}),
+            dbc.Col(
+            dcc.Dropdown(id='chart-type-dropdown', options=[
+                {'label': 'Bar Chart', 'value': 'bar'},
+                {'label': 'Pie Chart', 'value': 'pie'}],
+                        value='bar'),
+                md=10,
+                align='end',
+                style = {"display":"inline-block"}
+            )
+        ], style = {'display':'flex'}),
         html.Div([
-            dcc.Checklist(options=[{'label': 'Show "not listed" values', 'value': 'SHOW_NOT_LISTED'}],
-                          value=[], id='show-not-listed-checkbox')]),
+            dcc.Checklist(options=[{'label': 'Include debtholders with missing locations', 'value': 'SHOW_NOT_LISTED'}],
+                          value=['SHOW_NOT_LISTED'], id='show-not-listed-checkbox')], style = {'padding-top':'1vh'}),
         html.Br(),
         html.Div(id='derived-table-container', style={"display": "none"},  # Initially hide the table
                  ),
         html.Label("Please select the number of records you want to display:"),
-        html.Div(
-            id='state-slider-container',
-            children=[dcc.Slider(id='state-slider', min=10, max=df['Group State'].nunique(), step=1, value=10,
-                                 marks={10: '10', df['Group State'].nunique(): str(df['Group State'].nunique())})]),
+        html.Div(id='state-slider-container',
+                 children=[dcc.Slider(id='state-slider', min=10, max=df['State'].nunique(), step=1, value=10,
+                                 marks={10: '10', df['State'].nunique(): str(df['State'].nunique())})]),
         html.Div(id='county-slider-container',
-                 children=[dcc.Slider(id='county-slider', min=10, max=df['Group County'].nunique(), step=1, value=10,
+                 children=[dcc.Slider(id='county-slider', min=10, max=df['County'].nunique(), step=1, value=10,
                                       marks={10: '10',
-                                             df['Group County'].nunique(): str(df['Group County'].nunique())})]),
+                                             df['County'].nunique(): str(df['County'].nunique())})]),
         html.Div(id='town-slider-container',
-                 children=[dcc.Slider(id='town-slider', min=10, max=df['Group Town'].nunique(), step=1, value=10,
-                                      marks={10: '10', df['Group Town'].nunique(): str(df['Group Town'].nunique())})]),
+                 children=[dcc.Slider(id='town-slider', min=10, max=df['Town'].nunique(), step=1, value=10,
+                                      marks={10: '10', df['Town'].nunique(): str(df['Town'].nunique())})]),
         html.Div(id='occupation-slider-container',
-                 children=[dcc.Slider(id='occupation-slider', min=10, max=df['occupation'].nunique(), step=1, value=10,
-                                      marks={10: '10', df['occupation'].nunique(): str(df['occupation'].nunique())},)]),
+                 children=[dcc.Slider(id='occupation-slider', min=10, max=df['Occupation'].nunique(), step=1, value=10,
+                                      marks={10: '10', df['Occupation'].nunique(): str(df['Occupation'].nunique())},)]),
         html.Div(id='DataTable Container'),
-        html.Div(id="chart-container")], style={ 'overflow': 'auto'}),
+        dcc.Loading(children = [html.Div(id="chart-container")], id = 'default'),
+        dcc.Loading(children = [html.Div(id="table-container")], id = 'default'),
+        ], style={ 'overflow': 'auto'}),
+
     dbc.ModalFooter(dbc.Button("Close", id="close-button", className="ml-auto"))
 ], id="modal", size='xl'))
 tables_layout = [table_desc, display_more_tab, display_tab, grouped_charts]
 
 
 @app.callback(
-    [Output('derived-table-container', 'style'), Output('chart-container', 'children')],
+    [Output('derived-table-container', 'style'), 
+     Output('chart-container', 'children'),
+     Output('table-container', 'children')],
     [Input('DataTable', "derived_virtual_data"),
      Input('DataTable', "derived_virtual_selected_rows"),
      Input('dropdown', "value"),
@@ -134,10 +186,15 @@ tables_layout = [table_desc, display_more_tab, display_tab, grouped_charts]
      Input('county-slider', 'value'),
      Input('town-slider', 'value'),
      Input('occupation-slider', 'value'),
-     Input('show-not-listed-checkbox', 'value')]
+     Input('show-not-listed-checkbox', 'value'),
+     Input('metric-dropdown', "value"),
+     ]
 )
+
+
 def update_graphs(rows, derived_virtual_selected_rows, dropdown_value, aggregation_method, chart_type, state_n,
-                  county_n, town_n, occupation_n, checkbox_values):
+                  county_n, town_n, occupation_n, checkbox_values, metric_type):
+    global agg_columns
     if derived_virtual_selected_rows is None:
         derived_virtual_selected_rows = []
 
@@ -147,38 +204,43 @@ def update_graphs(rows, derived_virtual_selected_rows, dropdown_value, aggregati
     show_not_listed = 'SHOW_NOT_LISTED' in checkbox_values
     if not show_not_listed:
         if dropdown_value in ['state', 'county', 'town']:
-            dff_chart = dff_chart[dff_chart['Group ' + dropdown_value.capitalize()] != 'not listed']
+            dff_chart = dff_chart[dff_chart[dropdown_value.capitalize()] != 'not listed']
         elif dropdown_value == 'occupation':
-            dff_chart = dff_chart[dff_chart['occupation'] != 'not listed']
+            dff_chart = dff_chart[dff_chart['Occupation'] != 'not listed']
 
     # Data Preprocessing
     # aggregate data
-    agg_columns = ["Face Value of 6% debt", "Face Value of deferred 6% debt", "Unpaid Interest", "Final Total"]
-    dff_group_state = dff_chart.groupby("Group State")[agg_columns].sum().reset_index()
+    dff_group_state = dff_chart.groupby("State")[agg_columns].sum().reset_index()
     df_occupation = dff_chart.copy()  # Use dff_chart here
     # Split "Occupation" column on "|" and explode it into multiple rows
-    df_occupation['occupation'] = df_occupation['occupation'].str.split('|')
-    df_occupation = df_occupation.explode('occupation')
-    df_occupation['occupation'] = df_occupation['occupation'].str.strip()  # remove leading and trailing spaces
-    dff_occupation = df_occupation.groupby("occupation")[agg_columns].sum().reset_index()
+    df_occupation['Occupation'] = df_occupation['Occupation'].str.split('|')
+    df_occupation = df_occupation.explode('Occupation')
+    df_occupation['Occupation'] = df_occupation['Occupation'].str.strip()  # remove leading and trailing spaces
+    dff_occupation = df_occupation.groupby("Occupation")[agg_columns].sum().reset_index()
 
     # options to choose aggregation method
     if aggregation_method == 'sum':
-        dff_group_state = dff_chart.groupby("Group State")[agg_columns].sum().reset_index()
-        dff_occupation = df_occupation.groupby("occupation")[agg_columns].sum().reset_index()
+        dff_group_state = dff_chart.groupby("State")[agg_columns].sum().reset_index()
+        dff_occupation = df_occupation.groupby("Occupation")[agg_columns].sum().reset_index()
+        dff_group_county = dff_chart.groupby("County")[agg_columns].sum().reset_index()
+        dff_group_town = dff_chart.groupby("Town")[agg_columns].sum().reset_index()
     elif aggregation_method == 'mean':
-        dff_group_state = dff_chart.groupby("Group State")[agg_columns].mean().reset_index()
-        dff_occupation = df_occupation.groupby("occupation")[agg_columns].mean().reset_index()
+        dff_group_state = dff_chart.groupby("State")[agg_columns].mean().reset_index()
+        dff_occupation = df_occupation.groupby("Occupation")[agg_columns].mean().reset_index()
+        dff_group_county = dff_chart.groupby("County")[agg_columns].mean().reset_index()
+        dff_group_town = dff_chart.groupby("Town")[agg_columns].mean().reset_index()
     elif aggregation_method == 'min':
-        dff_group_state = dff_chart.groupby("Group State")[agg_columns].min().reset_index()
-        dff_occupation = df_occupation.groupby("occupation")[agg_columns].min().reset_index()
+        dff_group_state = dff_chart.groupby("State")[agg_columns].min().reset_index()
+        dff_occupation = df_occupation.groupby("Occupation")[agg_columns].min().reset_index()
+        dff_group_county = dff_chart.groupby("County")[agg_columns].min().reset_index()
+        dff_group_town = dff_chart.groupby("Town")[agg_columns].min().reset_index()
     elif aggregation_method == 'max':
-        dff_group_state = dff_chart.groupby("Group State")[agg_columns].max().reset_index()
-        dff_occupation = df_occupation.groupby("occupation")[agg_columns].max().reset_index()
+        dff_group_state = dff_chart.groupby("State")[agg_columns].max().reset_index()
+        dff_occupation = df_occupation.groupby("Occupation")[agg_columns].max().reset_index()
+        dff_group_county = dff_chart.groupby("County")[agg_columns].max().reset_index()
+        dff_group_town = dff_chart.groupby("Town")[agg_columns].max().reset_index()
 
-    dff_group_county = dff_chart.groupby("Group County")[agg_columns].sum().reset_index()
-    dff_group_town = dff_chart.groupby("Group Town")[agg_columns].sum().reset_index()
-
+    # handle chart creation
     colors = ['#7FDBFF' if i in derived_virtual_selected_rows else '#0074D9' for i in range(len(dff))]
 
     charts = []  # Initialize charts as an empty list
@@ -186,22 +248,62 @@ def update_graphs(rows, derived_virtual_selected_rows, dropdown_value, aggregati
     # state
     if dropdown_value == 'state':
         if chart_type in ['bar', 'pie']:
-            charts = generateGraph(dff_group_state, 'Group State', chart_type, state_n, colors, dff)
+            charts = generateGraph(dff_group_state, 'State', chart_type, state_n, colors, dff, metric_type)
     # county
     elif dropdown_value == 'county':
         # Code for county grouping
         if chart_type in ['bar', 'pie']:
-            charts = generateGraph(dff_group_county, 'Group County', chart_type, state_n, colors, dff)
+            charts = generateGraph(dff_group_county, 'County', chart_type, state_n, colors, dff, metric_type)
     # town
     elif dropdown_value == 'town':
         # Code for county grouping
         if chart_type in ['bar', 'pie']:
-            charts = generateGraph(dff_group_town, 'Group Town', chart_type, state_n, colors, dff)
+            charts = generateGraph(dff_group_town, 'Town', chart_type, state_n, colors, dff, metric_type)
     # occupation
     elif dropdown_value == 'occupation':
         # Code for county grouping
         if chart_type in ['bar', 'pie']:
-            charts = generateGraph(dff_occupation, dropdown_value, chart_type, state_n, colors, dff)
+            charts = generateGraph(dff_occupation, dropdown_value, chart_type, state_n, colors, dff, metric_type)
+
+    # generate grouped tables
+    if dropdown_value == 'state':
+        dff_grouped = dff_chart.groupby("State")[agg_columns].agg(aggregation_method).reset_index()
+    elif dropdown_value == 'occupation':
+        df_occupation = dff_chart.copy()
+        df_occupation['Occupation'] = df_occupation['Occupation'].str.split('|')
+        df_occupation = df_occupation.explode('Occupation')
+        df_occupation['Occupation'] = df_occupation['Occupation'].str.strip()
+        dff_grouped = df_occupation.groupby("Occupation")[agg_columns].agg(aggregation_method).reset_index()
+    elif dropdown_value == 'county':
+        dff_grouped = dff_chart.groupby("County")[agg_columns].agg(aggregation_method).reset_index()
+    elif dropdown_value == 'town':
+        dff_grouped = dff_chart.groupby("Town")[agg_columns].agg(aggregation_method).reset_index()
+
+    for col in agg_columns:
+        if col != metric_type_dict[metric_type]:
+            dff_grouped.drop(col, axis = 1, inplace = True)
+        else:
+            dff_grouped[col] = dff_grouped[col].round(0)
+
+    table_output = [dcc.Markdown("#### Grouped Table"),
+            dash_table.DataTable(
+                data=dff_grouped.to_dict('records'),
+
+                # make columns toggleable
+                columns=[{"name": i, "id": i, 'hideable': True} if i not in agg_columns
+                        else {"name": i, "id": i, 'hideable': True, 'type': 'numeric', 'format': money} for i in dff_grouped.columns ],
+                # Unpacking the style dictionary
+                **custom_style,
+                css=[{"selector": ".show-hide", "rule": "display: none"}],
+                # Set Interactivity rules:
+                filter_action="custom",
+                sort_action="native",
+                sort_mode="multi",
+                selected_columns=[],
+                selected_rows=[],
+                fill_width=False,
+                export_format = "csv",
+                page_size=10)]
 
     # Check if charts should be displayed
     if dropdown_value is not None and aggregation_method is not None:
@@ -209,71 +311,7 @@ def update_graphs(rows, derived_virtual_selected_rows, dropdown_value, aggregati
     else:
         style = {'display': 'none'}
 
-    return style, charts
-
-
-@app.callback(
-    Output('derived-table-container', "children"),
-    [Input('dropdown', "value"),
-     Input('aggregation-dropdown', "value"),
-     Input('show-not-listed-checkbox', 'value')]
-)
-def update_derived_table(dropdown_value, aggregation_method, show_not_listed_values):
-    dff = df.copy()
-    dff_chart = dff.fillna("not listed")  # Copy of DataFrame for the charts
-
-
-    if not show_not_listed_values:
-        if dropdown_value in ['state', 'county', 'town']:
-            dff_chart = dff_chart[dff_chart['Group ' + dropdown_value.capitalize()] != 'not listed']
-        elif dropdown_value == 'occupation':
-            dff_chart = dff_chart[dff_chart['occupation'] != 'not listed']
-
-    agg_columns = ["Face Value of 6% debt", "Face Value of deferred 6% debt", "Unpaid Interest", "Final Total"]
-
-    if dropdown_value == 'state':
-        dff_grouped = dff_chart.groupby("Group State")[agg_columns].agg(aggregation_method).reset_index()
-        dff_grouped = dff_grouped.sort_values(by="Face Value of 6% debt", ascending=False)
-    elif dropdown_value == 'occupation':
-        df_occupation = dff_chart.copy()
-        df_occupation['occupation'] = df_occupation['occupation'].str.split('|')
-        df_occupation = df_occupation.explode('occupation')
-        df_occupation['occupation'] = df_occupation['occupation'].str.strip()
-        dff_grouped = df_occupation.groupby("occupation")[agg_columns].agg(aggregation_method).reset_index()
-        dff_grouped = dff_grouped.sort_values(by="Face Value of 6% debt", ascending=False)
-    elif dropdown_value == 'county':
-        dff_grouped = dff_chart.groupby("Group County")[agg_columns].agg(aggregation_method).reset_index()
-        dff_grouped = dff_grouped.sort_values(by="Face Value of 6% debt", ascending=False)
-    elif dropdown_value == 'town':
-        dff_grouped = dff_chart.groupby("Group Town")[agg_columns].agg(aggregation_method).reset_index()
-        dff_grouped = dff_grouped.sort_values(by="Face Value of 6% debt", ascending=False)
-
-    for col in agg_columns:
-        dff_grouped[col] = dff_grouped[col].round(0)
-    if type(dash_table) != html.Div:
-        return dash_table.DataTable(
-            data=dff_grouped.to_dict('records'),
-            columns=[{"name": i, "id": i} for i in dff_grouped.columns],
-            style_cell={'textAlign': 'left'},
-            style_header={
-                'backgroundColor': 'grey',
-                'fontWeight': 'bold'
-            },
-            style_data={
-                'backgroundColor': 'white',
-                'color': 'black'
-            },
-            editable=True,
-            filter_action="native",
-            sort_action="native",
-            sort_mode="multi",
-            selected_columns=[],
-            selected_rows=[],
-            page_action="native",
-            page_current=0,
-            page_size=10,
-        )
-
+    return style, charts, table_output
 
 @app.callback(
     [Output('state-slider-container', 'style'),
@@ -332,13 +370,13 @@ def update_table(filter_query):
     filtering_expressions = filter_query.split(' && ')
     for filter_part in filtering_expressions:
         col_name, operator, filter_value = split_filter_part(filter_part)
-
         if filter_value is None:
             continue
 
         if df[col_name].dtype != 'object':  # If it's a numeric column
             if '-' in str(filter_value):
                 low, high = [float(v) for v in filter_value.split('-')]
+                print(low, high, df_filtered[col_name])
                 df_filtered = df_filtered.loc[(df_filtered[col_name] >= low) & (df_filtered[col_name] <= high)]
             elif operator in ('gt'):
                 df_filtered = df_filtered.loc[df_filtered[col_name] > filter_value]
@@ -378,6 +416,7 @@ def split_filter_part(filter_part):
                                            ('le', '<= '),
                                            ('gt', '> '),
                                            ('ge', '>= '),
+                                           ('-', '= '),
                                            ('contains', 'contains '),
                                            ('datestartswith', 'datestartswith ')]:
         if operator_string in filter_part:
@@ -398,7 +437,7 @@ def split_filter_part(filter_part):
 
 
 
-def generateGraph(df, col, type, max_count, colors, dff):
+def generateGraph(df, col, type, max_count, colors, dff, metric_type):
     if type == 'pie':
         charts = [dcc.Graph(
             id=column if type != 'occupation' else column + '-occupation',
@@ -409,7 +448,7 @@ def generateGraph(df, col, type, max_count, colors, dff):
                                "height": '10vh',
                                "margin": { "l": 10, "r": 10},},},)
             for column in
-            ["Face Value of 6% debt", "Face Value of deferred 6% debt", "Unpaid Interest", "Final Total"] if
+            [metric_type_dict[metric_type]] if
             column in dff]
     elif type == 'bar':
         charts = [dcc.Graph(
@@ -424,7 +463,9 @@ def generateGraph(df, col, type, max_count, colors, dff):
                                    "title": {"text": column}},
                                "height": 250,
                                "margin": {"t": 10, "l": 10, "r": 10},},},)
-            for column in
-            ["Face Value of 6% debt", "Face Value of deferred 6% debt", "Unpaid Interest", "Final Total"] if
+            for column in 
+            [metric_type_dict[metric_type]] if
             column in dff]
-    return charts
+    charts_ret = [dcc.Markdown("#### Grouped Chart"),]
+    charts_ret.extend(charts)
+    return charts_ret

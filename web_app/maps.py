@@ -37,7 +37,7 @@ map_df = gpd.GeoDataFrame(df_raw)
 
 # only contains state borders, no county borders
 # don't optimize time because it's fast enough without optimizing
-state_map_df = gpd.read_file("../data_raw/shapefiles/stateshape_1790")
+state_map_df = gpd.read_file("data_raw/shapefiles/stateshape_1790")
 state_map_df.rename(columns={'STATENAM': 'state'}, inplace=True)
 state_map_df['state_abrev'] = state_map_df.loc[:, 'state']
 state_map_df.replace({"state_abrev": state_codes}, inplace=True)
@@ -55,11 +55,12 @@ states.remove("Tennessee")
 ########################################################################################################################
 # DEBT - COUNTY + STATE LEVEL
 # county - import debt
-debt_by_county = pd.read_csv("https://raw.githubusercontent.com/liaochris/SPEOC-pt-1/main//data_clean/final_data_CD.csv")[["Group State", "Group County", '6p_total']]
+debt_by_county = pd.read_csv("https://raw.githubusercontent.com/liaochris/SPEOC-pt-1/main//data_clean/final_data_CD.csv")[["Group State", "Group County", 'final_total_adj']]
+debt_by_county = debt_by_county.fillna('')
 debt_by_county = debt_by_county.groupby(by=["Group County", "Group State"]).agg(['size', 'sum'])
 debt_by_county.reset_index(inplace=True)
 debt_by_county.columns = debt_by_county.columns.droplevel(1)
-debt_by_county.columns = ['county', 'state', 'count', '6p_total']
+debt_by_county.columns = ['county', 'state', 'count', 'final_total_adj']
 # county - import geography and population data
 county_pop_data_raw = pd.read_csv("https://raw.githubusercontent.com/liaochris/SPEOC-pt-1/main//data_raw/census_data/countyPopulation.csv", header=1)
 county_geo_fips = county_pop_data_raw[county_pop_data_raw["SE_T001_001"].notna()]
@@ -68,24 +69,24 @@ county_geo_fips = county_geo_fips[["Geo_FIPS", "Geo_name", 'Geo_STUSAB', "SE_T00
 county_geo_fips.rename(columns={"Geo_name": "county", 'Geo_STUSAB': 'state', "SE_T001_001": 'population'},
                        inplace=True)
 county_debt_geo = pd.merge(debt_by_county, county_geo_fips, on=["county", 'state'])
-county_debt_geo['density'] = county_debt_geo['6p_total'] / county_debt_geo['population']
-county_debt_geo['mean_6p_total'] = county_debt_geo['6p_total']/county_debt_geo['count']
+county_debt_geo['density'] = county_debt_geo['final_total_adj'] / county_debt_geo['population']
+county_debt_geo['mean_6p_total'] = county_debt_geo['final_total_adj']/county_debt_geo['count']
 # state
 state_debt_geo = county_debt_geo.groupby('state', as_index=False).sum()
 state_debt_geo['state'] = state_debt_geo['state'].apply(lambda x: state_codes_inv[x])
-state_debt_geo['density'] = state_debt_geo['6p_total'] / state_debt_geo['population']
-state_debt_geo['mean_6p_total'] = state_debt_geo['6p_total']/county_debt_geo['count']
+state_debt_geo['density'] = state_debt_geo['final_total_adj'] / state_debt_geo['population']
+state_debt_geo['mean_6p_total'] = state_debt_geo['final_total_adj']/county_debt_geo['count']
 # national
 nat_debt_geo = state_debt_geo.copy()
 nat_debt_geo['count'] = nat_debt_geo['count'].sum()
-nat_debt_geo['6p_total'] = nat_debt_geo['6p_total'].sum()
+nat_debt_geo['final_total_adj'] = nat_debt_geo['final_total_adj'].sum()
 nat_debt_geo['population'] = nat_debt_geo['population'].sum()
-nat_debt_geo["density"] = state_debt_geo['6p_total'].sum()/state_debt_geo["population"].sum()
-nat_debt_geo["mean_6p_total"] = state_debt_geo['6p_total'].sum()/state_debt_geo["count"].sum()
+nat_debt_geo["density"] = state_debt_geo['final_total_adj'].sum()/state_debt_geo["population"].sum()
+nat_debt_geo["mean_6p_total"] = state_debt_geo['final_total_adj'].sum()/state_debt_geo["count"].sum()
 
 # SLAVE POPULATION - COUNTY + STATE LEVEL
 # county
-county_slaves = gpd.read_file("../data_raw/census_data/census.csv")
+county_slaves = gpd.read_file("data_raw/census_data/census.csv")
 county_slaves = county_slaves[["GISJOIN", "slavePopulation"]].head(290)
 county_slaves['GISJOIN'] = county_slaves['GISJOIN'].str.replace('G0', '')
 county_slaves['GISJOIN'] = county_slaves['GISJOIN'].str.replace('G', '')  # convert to geo_fips
@@ -107,9 +108,9 @@ national_data_final = pd.merge(nat_slaves_data, nat_debt_geo, how = 'outer')
 # MAP from parameter option to column
 map_to_col = {'Population': 'population',
               'Slave Population': 'slavePopulation',
-              'Debt Distribution': '6p_total',
+              'Debt Distribution': 'final_total_adj',
               'Debt Density': 'density',
-              'Average Debt Holdings': 'debt density'}
+              'Average Debt Holdings': 'mean_6p_total'}
 
 ########################################################################################################################
 ######################################### Define App Components ########################################################
@@ -119,12 +120,14 @@ project_desc = html.Div(className='box', children=[
     html.H2(children='Project Description', className='box-title', style={'marginBottom': '20px'}, id = 'slider-title'),
     # buttons that navigate you through different descriptions of the project
     html.Div(className='slider-container', children=[
-        html.Button('\u25C0', id='left_arrow', className='slider-button',
-                    style={'float': 'left', 'marginRight': '10px'}),
-        dcc.Markdown(id='project_desc_text', style={'textAlign': 'center'}),
-        html.Button('\u25B6', id='right_arrow', className='slider-button',
-                    style={'float': 'right', 'marginLeft': '10px'})
+    html.Button('\u25C0', id='left_arrow', className='slider-button',
+                style={'float': 'left', 'marginRight': '10px', 'flex': 1}),
+    dcc.Markdown(id='project_desc_text', style={'textAlign': 'center'}),
+    html.Button('\u25B6', id='right_arrow', className='slider-button',
+                style={'float': 'right', 'marginLeft': '10px', 'flex': 1})
+        
     ]),
+   
 ])
 
 
@@ -190,9 +193,10 @@ right_tab = html.Div(id="right_tab", className='box', children=[
 # Bottom Display tab with DataFrame/Map
 display_tab = html.Div(className='box', children=[
     html.H3(children='Display', className='box-title', style={'textAlign': 'center'}, id = 'display-tab'),
-    html.Div(id='right-tab-content',
-             style={'overflow': 'scroll'}
-             ),
+    dcc.Loading(children = [html.Div(id='right-tab-content',
+                                     style={'overflow': 'scroll'}
+                                     )],
+                type = "default"),
     html.Div(id="range-slider", children=[
         dcc.RangeSlider(id="slider", min=0, max=10)
     ], style={"display": "none"})
@@ -208,18 +212,36 @@ maps_layout = [project_desc,
 def returnSlider(df, col, slidermax, sliderrange):
     maxval = df[col].max()+1
     if slidermax != maxval:
-        slider = dcc.RangeSlider(min=0, max=maxval, id="slider")
+        print(np.linspace(0, maxval, num = 6))
+        slider = dcc.RangeSlider(min=0, max=maxval, id="slider", 
+                                 marks = {i: '{:,.1f}'.format(i) for i in np.linspace(0.1, maxval, num = 6)})
         return df, slider
     else:
-        slider = dcc.RangeSlider(min=0, max=maxval, value=[sliderrange[0], sliderrange[1]], id="slider")
+        slider = dcc.RangeSlider(min=0, max=maxval, value=[sliderrange[0], sliderrange[1]], id="slider",
+                                 marks = {i: '{:,.1f}'.format(i) for i in np.linspace(0, maxval, num = 6)})
         df_adj = df[df[col].between(sliderrange[0], sliderrange[1], inclusive="both")]
         return df_adj, slider
 
-def returnFig(df_adj, df_geojson, geo_col, color_col, featureidkey, basemap_visible, fitbounds, hover_name, hover_data):
-    fig = px.choropleth(
-        df_adj, geojson=df_geojson, locations=geo_col, color=color_col, color_continuous_scale="Viridis",
-        range_color=(df_adj[color_col].min(), df_adj[color_col].max()), featureidkey=featureidkey,
-        scope="usa", basemap_visible=basemap_visible, fitbounds=fitbounds, hover_name=hover_name, hover_data=[hover_data])
+def returnFig(df_adj, df_geojson, geo_col, color_col, featureidkey, basemap_visible, fitbounds, hover_name, hover_data, all_max, map_type,
+              border_type):
+    df_adj[map_type] = df_adj[color_col]
+    if border_type != 'Countywide':
+        fig = px.choropleth(
+            df_adj, geojson=df_geojson, locations=geo_col, color=map_type, color_continuous_scale="Viridis",
+            range_color=(0, all_max), featureidkey=featureidkey,
+            scope="usa", basemap_visible=basemap_visible, fitbounds=fitbounds, hover_name=hover_name, hover_data=[hover_data])
+    else:
+        fig = px.choropleth(
+            df_adj, geojson=df_geojson, locations=geo_col, color=map_type, 
+            color_continuous_scale=[[0, 'rgb(240,240,240)'],
+                                    [0.1, 'rgb(126, 191, 113)'],
+                                    [0.2, 'rgb(91, 161, 77)'],
+                                    [0.75, 'rgb(227, 72, 54)'],
+                                    [1, 'rgb(227, 26, 28)']],
+            range_color=(0, all_max), featureidkey=featureidkey,
+            scope="usa", basemap_visible=basemap_visible, fitbounds=fitbounds, hover_name=hover_name, hover_data=[hover_data])
+    
+                        
     return fig
 ########################################################################################################################
 ######################################### Callback Functions ###########################################################
@@ -400,15 +422,18 @@ def open_heatmap_more_info(n_clicks, state):
 )
 def handle_state_dropdown(state, county, map_type, border_type, sliderrange, slidermax):
     global fig
-    global county_pop_data
-    global state_pop_data
     global nat_debt
+    global county_data_final
+    global state_data_final
 
     fitbounds = "locations"
     basemap_visible = True
     map_df_c = map_df.copy()
     state_map_df_c = state_map_df.copy()
 
+    county_data_final_pre = county_data_final.copy()
+    state_data_final_pre = state_data_final.copy()
+    
     # don't return anything if no options have been selected
     if (map_type == "Not Selected") or (map_type is None):
         return '', ''
@@ -417,11 +442,16 @@ def handle_state_dropdown(state, county, map_type, border_type, sliderrange, sli
         if border_type == "Statewide" or border_type == "Countywide":
             state_map_df_c = state_map_df_c.loc[state_map_df['state'] == state]
             map_df_c = map_df_c.loc[map_df_c['state'] == state]
+            county_data_final_pre = county_data_final[county_data_final['state'] == state_codes[state]]
+            state_data_final_pre = state_data_final[state_data_final['state'] == state]
+
         fitbounds = "locations"
         basemap_visible = False
 
     if (county != "All Counties") and (county is not None):
         map_df_c = map_df_c.loc[map_df_c['county'] == county]
+        print(county)
+        county_data_final_pre = county_data_final[county_data_final['county'] == (county + " County")]
 
     # save as a geojson
     map_str = map_df_c.to_json()
@@ -435,20 +465,20 @@ def handle_state_dropdown(state, county, map_type, border_type, sliderrange, sli
         slider = dcc.RangeSlider(id="slider", min=0, max=10)
     else:
         if border_type == "Countywide":
-            county_data_final_adj, slider = returnSlider(county_data_final, param, slidermax, sliderrange)
+            county_data_final_adj, slider = returnSlider(county_data_final_pre, param, slidermax, sliderrange)
             fig = returnFig(
                 county_data_final_adj, map_gj, 'Geo_FIPS', param, 'properties.Geo_FIPS', basemap_visible, fitbounds,
-                'county', param)
+                'county', param, county_data_final_pre[param].max(), map_type, border_type)
         elif border_type == "Statewide":
-            state_data_final_adj, slider = returnSlider(state_data_final, param, slidermax, sliderrange)
+            state_data_final_adj, slider = returnSlider(state_data_final_pre, param, slidermax, sliderrange)
             fig = returnFig(
                 state_data_final_adj, states_gj, 'state', param, 'properties.state', basemap_visible, fitbounds,
-                'state', param)
+                'state', param, state_data_final_pre[param].max(), map_type, border_type)
         elif border_type == "Nationwide":
             national_data_final_adj, slider = returnSlider(national_data_final, param, slidermax, sliderrange)
             fig = returnFig(
-                national_data_final_adj, states_gj, 'state', 'population', 'properties.state', basemap_visible, fitbounds,
-                'state', "population")
+                national_data_final_adj, states_gj, 'state', param, 'properties.state', basemap_visible, fitbounds,
+                'state', param, national_data_final[param].max(), map_type, border_type)
 
     if sliderrange is None:
         slider_output = [slider, 'You have selected all values']
@@ -458,7 +488,8 @@ def handle_state_dropdown(state, county, map_type, border_type, sliderrange, sli
         else:
             border_val = border_type.replace('wide', '').lower() + "s"
 
-        slider_output = [slider, f'You have selected to display all {border_val} with {map_type.lower()} between {sliderrange[0]} and {sliderrange[1]}']
+        slider_output = [slider, f'You have selected to display all {border_val} with {map_type.lower()} between {"{:,}".format(sliderrange[0])} \
+                         and {"{:,}".format(sliderrange[1])}']
 
     return dcc.Graph(figure=fig, id='my-map', style={'height':'70vh'}),  slider_output
 
@@ -518,10 +549,8 @@ slide_text = {
     1: "Although Hamilton's plan that refunded the national debt was over two centuries ago, it has had long-lasting implications. By establishing \
         the United States as a trustworthy debitor, he ensured a secure line of credit for the United States in the future. \
         To this day, the United States has not default on its national debt; it's why US treasuries are considered 'risk-free' assets in financial markets. \
-        \
-        \
         Hamilton's plan made American debtholders individuals with financial stake in the new government, as if the new government failed, their debt \
-        would not be repaid. Who were these people? Why did Hamilton consider it important to repay their debt? What role did they play in America's early history? \
+        would not be repaid.Who were these people? Why did Hamilton consider it important to repay their debt? What role did they play in America's early history? \
         These are all questions that we hope this project can shine further light on"
 }
 

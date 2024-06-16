@@ -11,7 +11,6 @@ The goal of this exercise was to clean the names of the individuals in the pre-1
     - ```pip install selenium```
     - ```pip install phonetics```
     - ```pip install fuzzywuzzy```
-5. Open ```clean_names_david.ipynb```
 
 ## Running ```find-similar-names.ipynb```
 **Goal**: Create separate .csv files for each state. These .csv files will contain a column for names in each state and another column with a list of similar names. These similar names are determined using fuzzy string matching. 
@@ -141,6 +140,28 @@ print(agg_debt.loc[107216:107221][['to whom due | first name', 'to whom due | la
 
 ```python
 print(agg_debt.loc[(agg_debt['to whom due | first name'] == 'James') & (agg_debt['to whom due | last name'] == 'Wood')][['to whom due | first name', 'to whom due | last name']].to_markdown())
+```
+
+### "Heirs of"/Estate of" prefix removal
+<b>Goal: </b>Remove "Estate of", "Heirs of", "State of" prefixes in an entry, and marks "State of" entries as organizations
+
+|       | to whom due - first name   | to whom due - last name |
+|------:|:---------------------------|:------------------------|
+| 1891  | Estate of Abigail Champney  |                         |
+
+```python
+print(agg_debt.loc[(agg_debt['to whom due | first name'] == 'Estate of Abigail Champney')][['to whom due | first name', 'to whom due | last name']].to_markdown())
+```
+
+**Input**:```agg_debt``` <br>
+**Output**: ```agg_debt```: Rows with prefixes removed and names placed in thier correct column, ```name_changes```
+
+|       | to whom due - first name   | to whom due - last name   |
+|------:|:---------------------------|:--------------------------|
+| 1891  | Abigail                    | Champney                  |
+
+```python
+print(agg_debt.loc[(agg_debt['to whom due | first name'] == 'Abigail') & (agg_debt['to whom due | last name'] == 'Champney')][['to whom due | first name', 'to whom due | last name']].to_markdown())
 ```
 
 ### Ancestry Search : ```ancestry_search_david.ipynb```

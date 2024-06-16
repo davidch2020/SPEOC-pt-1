@@ -13,45 +13,45 @@ Turn raw post-1790 continental debt (CD) security data into an organized table i
 
 **Code**: 
 
-- [clean_1_geo.ipynb](cleaning_CD/clean_1_geo.ipynb) combines the raw CD debt data from all states into one dataset and processes the given geography colum
+- [clean_1_geo.ipynb](https://github.com/liaochris/SPEOC-pt-1/blob/main/cleaning_CD/clean_1_geo.ipynb) combines the raw CD debt data from all states into one dataset and processes the given geography colum
 
 **Inputs**:
 
 - Raw Data
 
-  1. [Post-1790 Continental Debt Files](data_raw/pre1790): csv files with suffix CD
+  1. [Post-1790 Continental Debt Files](https://github.com/liaochris/SPEOC-pt-1/blob/main/data_raw/pre1790): csv files with suffix CD
   2. Examples
-     1. Connecticut: [CT_post1790_CD_ledger.xlsx](data_raw/post1790/CT_post1790_CD_ledger.xlsx) 
-     2. Georgia: [T694_GA_Loan_Office_CD.xlsx](data_raw/post1790/GA/T694_GA_Loan_Office_CD.xlsx)
--  [cd_raw.csv](cleaning_CD/clean_tools/cd_raw.csv): arguments for importing state CD files
-- [zip_code_database.xls](data_raw/census_data/zip_code_database.xls): geograhical database matching towns to counties
+     1. Connecticut: [CT_post1790_CD_ledger.xlsx](https://github.com/liaochris/SPEOC-pt-1/blob/main/data_raw/post1790/CT_post1790_CD_ledger.xlsx) 
+     2. Georgia: [T694_GA_Loan_Office_CD.xlsx](https://github.com/liaochris/SPEOC-pt-1/blob/main/data_raw/post1790/GA/T694_GA_Loan_Office_CD.xlsx)
+-  [cd_raw.csv](https://github.com/liaochris/SPEOC-pt-1/blob/main/cleaning_CD/clean_tools/cd_raw.csv): arguments for importing state CD files
+- [zip_code_database.xls](https://github.com/liaochris/SPEOC-pt-1/blob/main/data_raw/census_data/zip_code_database.xls): geograhical database matching towns to counties
   - Downloaded from https://www.unitedstateszipcodes.org/zip_code_database.xls?download_auth=7b5b7133a55eef6807fc6da56f62bf27 
-- [town_fix.csv](cleaning_CD/clean_tools/town_fix.csv): database of changes to the gegographical classification
+- [town_fix.csv](https://github.com/liaochris/SPEOC-pt-1/blob/main/cleaning_CD/clean_tools/town_fix.csv): database of changes to the gegographical classification
 
 **Outputs (for future use)**: 
 
-- [aggregated_CD_post1790.csv](data_clean/aggregated_CD_post1790.csv): continental debt files with final geographical classification
+- [aggregated_CD_post1790.csv](https://github.com/liaochris/SPEOC-pt-1/blob/main/data_clean/aggregated_CD_post1790.csv): continental debt files with final geographical classification
 
 **Outputs (to check validity of cleaning process)**: 
 
-- [change_df_CD](data_clean/check/town_occ_agg_check.csv): crosswalk mapping aggregation of multiple towns/occupations (raw data) to one town/occupation ([aggregated_CD_post1790.csv](data_clean/aggregated_CD_post1790.csv))
+- [change_df_CD](https://github.com/liaochris/SPEOC-pt-1/blob/main/data_clean/check/town_occ_agg_check.csv): crosswalk mapping aggregation of multiple towns/occupations (raw data) to one town/occupation ([aggregated_CD_post1790.csv](https://github.com/liaochris/SPEOC-pt-1/blob/main/data_clean/aggregated_CD_post1790.csv))
 
 **Steps**:  
 
-1. Using the arguments in [cd_raw.csv](cleaning_CD/clean_tools/cd_raw.csv), the raw CD data for each state is imported and aggregated into one table
+1. Using the arguments in [cd_raw.csv](https://github.com/liaochris/SPEOC-pt-1/blob/main/cleaning_CD/clean_tools/cd_raw.csv), the raw CD data for each state is imported and aggregated into one table
 2. Our raw data (except for NY) contains a town and state column denoting the place of residence for each debtholder
    1. When an entry for the state column is missing, we impute the state loan office that the debtholder redeemed debt from
-   2. When there are multiple town or occupation values for one debtholder entry, we select the value with longest string length (since it likely contains the most information). The results of this selection are in [change_df_CD](data_clean/check/town_occ_agg_check.csv). 
+   2. When there are multiple town or occupation values for one debtholder entry, we select the value with longest string length (since it likely contains the most information). The results of this selection are in [change_df_CD](https://github.com/liaochris/SPEOC-pt-1/blob/main/data_clean/check/town_occ_agg_check.csv). 
    3. When one debtholder entry has multiple names, we group them and note that the entry has multiple names. CT_10 has the value `Joseph Woodruff | Joseph Woodruffe` 
 3. The town column in our raw data is extremely messy. Here are some of its problems
    1. The same location can be spelled multiple ways
       1. GA_24 and GA_33 have the values `Charleston South Carolina` and `Charleston` in their respective town column values
    2. The listed "town" might be a town, state or column
       1. PA_115 and PA_655 have the values `Cumberland` and `Cumb County Pennsylvania` in their respective town column values
-4. Using fuzzy string matching with [zip_code_database.xls](data_raw/census_data/zip_code_database.xls), we identify whether a "town" value is a town, county or state, and reformat it
+4. Using fuzzy string matching with [zip_code_database.xls](https://github.com/liaochris/SPEOC-pt-1/blob/main/data_raw/census_data/zip_code_database.xls), we identify whether a "town" value is a town, county or state, and reformat it
    1. For towns, we also find the corresponding county name
-5. There are cases where we cannot use fuzzy string matching to clean our geographies (or less commonly, [zip_code_database.xls](data_raw/census_data/zip_code_database.xls) makes a mistake). In this case, we use [town_fix.csv](cleaning_CD/clean_tools/town_fix.csv) to make the required changes
-6. Our final results are in [aggregated_CD_post1790.csv](data_clean/aggregated_CD_post1790.csv) 
+5. There are cases where we cannot use fuzzy string matching to clean our geographies (or less commonly, [zip_code_database.xls](https://github.com/liaochris/SPEOC-pt-1/blob/main/data_raw/census_data/zip_code_database.xls) makes a mistake). In this case, we use [town_fix.csv](https://github.com/liaochris/SPEOC-pt-1/blob/main/cleaning_CD/clean_tools/town_fix.csv) to make the required changes
+6. Our final results are in [aggregated_CD_post1790.csv](https://github.com/liaochris/SPEOC-pt-1/blob/main/data_clean/aggregated_CD_post1790.csv) 
 
 `town`, `occupation` and `state`  are given columns from the raw data but post step 2
 
@@ -73,41 +73,41 @@ print(CD_all[['town', 'state', 'occupation', 'new_town', 'county', 'new_state', 
 
 **Code**: 
 
-- [clean_2_names.ipynb](cleaning_CD/clean_2_names.ipynb) cleans all the names in the CD debt file
+- [clean_2_names.ipynb](https://github.com/liaochris/SPEOC-pt-1/blob/main/cleaning_CD/clean_2_names.ipynb) cleans all the names in the CD debt file
 
 **Inputs**:
 
-- [aggregated_CD_post1790.csv](data_clean/aggregated_CD_post1790.csv): continental debt files with final geographical classification
-- [company_names_fix.csv](cleaning_CD/clean_tools/company_names_fix.csv): database of name changes for data cleaning purposes
+- [aggregated_CD_post1790.csv](https://github.com/liaochris/SPEOC-pt-1/blob/main/data_clean/aggregated_CD_post1790.csv): continental debt files with final geographical classification
+- [company_names_fix.csv](https://github.com/liaochris/SPEOC-pt-1/blob/main/cleaning_CD/clean_tools/company_names_fix.csv): database of name changes for data cleaning purposes
 
 **Outputs (for future use)**: 
 
-- [aggregated_CD_post1790_names.csv](data_clean/aggregated_CD_post1790_names.csv): [aggregated_CD_post1790.csv](data_clean/aggregated_CD_post1790.csv) with cleaned names
-- [name_list.csv](cleaning_CD/clean_tools/name_list.csv): List of all identities in our raw debt data with cleaned names and geographies
+- [aggregated_CD_post1790_names.csv](https://github.com/liaochris/SPEOC-pt-1/blob/main/data_clean/aggregated_CD_post1790_names.csv): [aggregated_CD_post1790.csv](https://github.com/liaochris/SPEOC-pt-1/blob/main/data_clean/aggregated_CD_post1790.csv) with cleaned names
+- [name_list.csv](https://github.com/liaochris/SPEOC-pt-1/blob/main/cleaning_CD/clean_tools/name_list.csv): List of all identities in our raw debt data with cleaned names and geographies
   1. Identities have not been aggregated (two slightly mispelled names representing the same identity are denoted as separate identities)
 
 **Outputs (for future research)**
 
-- [company_research.csv](data_clean/check/company_research.csv): list of companies we want to map to owners/identities 
+- [company_research.csv](https://github.com/liaochris/SPEOC-pt-1/blob/main/data_clean/check/company_research.csv): list of companies we want to map to owners/identities 
 
 **Steps**:  
 
-1. First, we import [aggregated_CD_post1790.csv](data_clean/aggregated_CD_post1790.csv) 
-2. The names in [aggregated_CD_post1790.csv](data_clean/aggregated_CD_post1790.csv) can be quite messy for various reasons
+1. First, we import [aggregated_CD_post1790.csv](https://github.com/liaochris/SPEOC-pt-1/blob/main/data_clean/aggregated_CD_post1790.csv) 
+2. The names in [aggregated_CD_post1790.csv](https://github.com/liaochris/SPEOC-pt-1/blob/main/data_clean/aggregated_CD_post1790.csv) can be quite messy for various reasons
    1. One "name" value can be multiple names: CT_19 has the value `John and James Davenport` 
    2. One "name" value can have extraneous information: RI_318 has the value `John Parker as Gaurdian`
    3. One "name" value can be an institution, not a name: RI_597 has the value `Clark and Nightingale Transferred from Register | Clark and Nightingale transferred` . `Clark and Nightingale` is a company owned by Joseph Innes Clark and Joseph Nightingale. In this case, we can match a company to the owner but we may not always be able to do this
-      1. [company_research.csv](data_clean/check/company_research.csv) contains the list of companies we want to find identities for
+      1. [company_research.csv](https://github.com/liaochris/SPEOC-pt-1/blob/main/data_clean/check/company_research.csv) contains the list of companies we want to find identities for
    4. One debtholder entry can contain multiple names: CT_10 has the value `Joseph Woodruff | Joseph Woodruffe` . Different names are separated by ` | `
 3. In section **Known Cleaning Process**, we clean names where we know how to fix the structure
-4. In section **Import Name Fixes**, we clean names that have to be manually fixed (looked at each messed up entry one by one, then added the fixed name to the spreadsheet) using [company_names_fix.csv](cleaning_CD/clean_tools/company_names_fix.csv)
+4. In section **Import Name Fixes**, we clean names that have to be manually fixed (looked at each messed up entry one by one, then added the fixed name to the spreadsheet) using [company_names_fix.csv](https://github.com/liaochris/SPEOC-pt-1/blob/main/cleaning_CD/clean_tools/company_names_fix.csv)
    1. This process was tedious, even with GitHub copilot. we hope that this summer we can automate at least parts of this process 
 5. In section **Manual Name Fixes**, we make some final name changes
-6. Finally, we create a dataset of all unique identities (name + geography combinations) to feed to our scraper, outputted as [name_list.csv](cleaning_CD/clean_tools/name_list.csv)
+6. Finally, we create a dataset of all unique identities (name + geography combinations) to feed to our scraper, outputted as [name_list.csv](https://github.com/liaochris/SPEOC-pt-1/blob/main/cleaning_CD/clean_tools/name_list.csv)
    1. Name values that are not actually names (and for who we cannot match to a set of actual names) are excludede from this dataset
    2. NH_22's name is `The Trustees of Phillips Academy` 
    3. GA_64's name is `Jackson and Nightingale` 
-7. we also create [aggregated_CD_post1790_names.csv](data_clean/aggregated_CD_post1790_names.csv), which contains debt data, the original name and the new (cleaned) name
+7. we also create [aggregated_CD_post1790_names.csv](https://github.com/liaochris/SPEOC-pt-1/blob/main/data_clean/aggregated_CD_post1790_names.csv), which contains debt data, the original name and the new (cleaned) name
 
 Here are some examples of the original name and the cleaned name
 
@@ -126,26 +126,26 @@ print(df_comp.loc[[0,1,38]].to_markdown())
 
 **Code**: 
 
-- [clean_3_scrape.ipynb](cleaning_CD/clean_tools/clean_3_scrape.ipynb) cleans all the names in the CD debt file
+- [clean_3_scrape.ipynb](https://github.com/liaochris/SPEOC-pt-1/blob/main/cleaning_CD/clean_tools/clean_3_scrape.ipynb) cleans all the names in the CD debt file
 
 **Inputs**:
 
-- [name_list.csv](cleaning_CD/clean_tools/name_list.csv): List of all identities in our raw debt data with cleaned names and geographies
+- [name_list.csv](https://github.com/liaochris/SPEOC-pt-1/blob/main/cleaning_CD/clean_tools/name_list.csv): List of all identities in our raw debt data with cleaned names and geographies
 
 **Outputs (for future use)**: 
 
-- [name_list_scraped.csv](cleaning_CD/scrape_tools/name_list_scraped.csv): List of scrapable names in our dataset, with scraping results
-- [scrape_ids.csv](cleaning_CD/scrape_tools/scrape_ids.csv): cleaned preliminary dataset of identities from Ancestry.com census scraper
-- [scrape_results.csv](cleaning_CD/clean_tools/scrape_results.csv): cleaned preliminary demographic data for identities from scraper
+- [name_list_scraped.csv](https://github.com/liaochris/SPEOC-pt-1/blob/main/cleaning_CD/scrape_tools/name_list_scraped.csv): List of scrapable names in our dataset, with scraping results
+- [scrape_ids.csv](https://github.com/liaochris/SPEOC-pt-1/blob/main/cleaning_CD/scrape_tools/scrape_ids.csv): cleaned preliminary dataset of identities from Ancestry.com census scraper
+- [scrape_results.csv](https://github.com/liaochris/SPEOC-pt-1/blob/main/cleaning_CD/clean_tools/scrape_results.csv): cleaned preliminary demographic data for identities from scraper
 
 **Outputs (preliminary - not relevant outside of serving as checkpoints)**
 
-- [scrape_ids_prelims.csv](cleaning_CD/scrape_tools/scrape_ids_prelim.csv): preliminary dataset of identities from scraper
-- [scrape_results_prelim.csv](cleaning_CD/clean_tools/scrape_results_prelim.csv): preliminary demographic data for identities from scraper
+- [scrape_ids_prelims.csv](https://github.com/liaochris/SPEOC-pt-1/blob/main/cleaning_CD/scrape_tools/scrape_ids_prelim.csv): preliminary dataset of identities from scraper
+- [scrape_results_prelim.csv](https://github.com/liaochris/SPEOC-pt-1/blob/main/cleaning_CD/clean_tools/scrape_results_prelim.csv): preliminary demographic data for identities from scraper
 
 **Steps**:  
 
-1. First, we import [name_list.csv](cleaning_CD/clean_tools/name_list.csv)
+1. First, we import [name_list.csv](https://github.com/liaochris/SPEOC-pt-1/blob/main/cleaning_CD/clean_tools/name_list.csv)
 2. The code for the scraper looks complicated, but here's the gist of how it works - describes the **Helper Functions** and **Run Scraper** sections
    1. Navigate to the ancestry.com library landing page and login to my UChicago student portal 
    2. Go to the 1790 census collection search page
@@ -153,13 +153,13 @@ print(df_comp.loc[[0,1,38]].to_markdown())
       1. Each location has a special "location code" embedded in the search url - if we have not seen a location before, we find its location code and store it
       2. For each search, if we do not find a result, we reduce the strictness of the search (how exact the name match is, how exact the geography match is) up until we either **a)** find a result or **b)** reach my strictness threshold
    4. Store the results - the below files are saved after each search so no data is lost if the scraper crashes
-      1. [scrape_ids_prelims.csv](cleaning_CD/scrape_tools/scrape_ids_prelim.csv) contains information on which matches on Ancestry.com an individual matched to and the number of matches (between 0-4)
-      2. [scrape_results_prelim.csv](cleaning_CD/clean_tools/scrape_results_prelim.csv) contains information on the demographic data for each Ancestry.com individual 
+      1. [scrape_ids_prelims.csv](https://github.com/liaochris/SPEOC-pt-1/blob/main/cleaning_CD/scrape_tools/scrape_ids_prelim.csv) contains information on which matches on Ancestry.com an individual matched to and the number of matches (between 0-4)
+      2. [scrape_results_prelim.csv](https://github.com/liaochris/SPEOC-pt-1/blob/main/cleaning_CD/clean_tools/scrape_results_prelim.csv) contains information on the demographic data for each Ancestry.com individual 
 3. There are some manual changes we have to make to the results of our scraper and we do this in the **Clean Scraped Data** section
 4. Finally, we reset the index of our dataframes by removing duplicate entries
    1. This turns out to be a bit more complicated than just using the `.reset_index()` command becuase our two datasets are relational
-5. We export our final ancestry.com scraped data as [scrape_ids.csv](cleaning_CD/scrape_tools/scrape_ids.csv) and [scrape_results.csv](cleaning_CD/clean_tools/scrape_results.csv)
-6. We link our scraped census data to the names from the debt file in [name_list_scraped.csv](cleaning_CD/scrape_tools/name_list_scraped.csv)
+5. We export our final ancestry.com scraped data as [scrape_ids.csv](https://github.com/liaochris/SPEOC-pt-1/blob/main/cleaning_CD/scrape_tools/scrape_ids.csv) and [scrape_results.csv](https://github.com/liaochris/SPEOC-pt-1/blob/main/cleaning_CD/clean_tools/scrape_results.csv)
+6. We link our scraped census data to the names from the debt file in [name_list_scraped.csv](https://github.com/liaochris/SPEOC-pt-1/blob/main/cleaning_CD/scrape_tools/name_list_scraped.csv)
 
 **Example of scraped results matched to debtholder names**
 
@@ -185,37 +185,37 @@ print(pd.read_csv('scrape_tools/scrape_results.csv', index_col = 0).loc[[0, 8, 9
 
 **Code**: 
 
-- [clean_4_final.ipynb](cleaning_CD/clean_4_final.ipynb) creates our final dataset
+- [clean_4_final.ipynb](https://github.com/liaochris/SPEOC-pt-1/blob/main/cleaning_CD/clean_4_final.ipynb) creates our final dataset
 
 **Inputs**:
 
-- [aggregated_CD_post1790.csv](data_clean/aggregated_CD_post1790.csv): continental debt files with final geographical classification
-- [name_list_scraped.csv](cleaning_CD/scrape_tools/name_list_scraped.csv): List of scrapable names in our dataset, with scraping results
-- [scrape_results.csv](cleaning_CD/clean_tools/scrape_results.csv): cleaned preliminary dataset of data for matched identities from Ancestry.com census scraper 
-- [name_list.csv](cleaning_CD/clean_tools/name_list.csv): List of all identities in our raw debt data with cleaned names and geographies
+- [aggregated_CD_post1790.csv](https://github.com/liaochris/SPEOC-pt-1/blob/main/data_clean/aggregated_CD_post1790.csv): continental debt files with final geographical classification
+- [name_list_scraped.csv](https://github.com/liaochris/SPEOC-pt-1/blob/main/cleaning_CD/scrape_tools/name_list_scraped.csv): List of scrapable names in our dataset, with scraping results
+- [scrape_results.csv](https://github.com/liaochris/SPEOC-pt-1/blob/main/cleaning_CD/clean_tools/scrape_results.csv): cleaned preliminary dataset of data for matched identities from Ancestry.com census scraper 
+- [name_list.csv](https://github.com/liaochris/SPEOC-pt-1/blob/main/cleaning_CD/clean_tools/name_list.csv): List of all identities in our raw debt data with cleaned names and geographies
   1. Identities have not been aggregated (two slightly mispelled names representing the same identity are denoted as separate identities)
-- [name_agg.csv](cleaning_CD/clean_tools/name_agg.csv): database of names spelled differently that correspond to the same identity
-- [group_name_state.csv](cleaning_CD/clean_tools/group_name_state.csv): database of names with locations in multiple states that correspond to the same identity
-- [occ_correction.csv](cleaning_CD/clean_tools/occ_correction.csv): database of occupation name changes for data cleaning purposes
+- [name_agg.csv](https://github.com/liaochris/SPEOC-pt-1/blob/main/cleaning_CD/clean_tools/name_agg.csv): database of names spelled differently that correspond to the same identity
+- [group_name_state.csv](https://github.com/liaochris/SPEOC-pt-1/blob/main/cleaning_CD/clean_tools/group_name_state.csv): database of names with locations in multiple states that correspond to the same identity
+- [occ_correction.csv](https://github.com/liaochris/SPEOC-pt-1/blob/main/cleaning_CD/clean_tools/occ_correction.csv): database of occupation name changes for data cleaning purposes
 
 **Outputs (for future use)**: 
 
-- [final_data_CD.csv](data_clean/final_data_CD.csv): final table, indexed by individual, of aggregate CD debt holdings
-- [match_data_CD.csv](data_clean/match_data.csv): database of ancestry.com data for final_data_CD
+- [final_data_CD.csv](https://github.com/liaochris/SPEOC-pt-1/blob/main/data_clean/final_data_CD.csv): final table, indexed by individual, of aggregate CD debt holdings
+- [match_data_CD.csv](https://github.com/liaochris/SPEOC-pt-1/blob/main/data_clean/match_data.csv): database of ancestry.com data for final_data_CD
 
 
 
 **Steps**:  
 
-1. First, we import [aggregated_CD_post1790.csv](data_clean/aggregated_CD_post1790.csv), [name_list_scraped.csv](cleaning_CD/scrape_tools/name_list_scraped.csv), [scrape_results.csv](cleaning_CD/clean_tools/scrape_results.csv) and [name_list.csv](cleaning_CD/clean_tools/name_list.csv)
+1. First, we import [aggregated_CD_post1790.csv](https://github.com/liaochris/SPEOC-pt-1/blob/main/data_clean/aggregated_CD_post1790.csv), [name_list_scraped.csv](https://github.com/liaochris/SPEOC-pt-1/blob/main/cleaning_CD/scrape_tools/name_list_scraped.csv), [scrape_results.csv](https://github.com/liaochris/SPEOC-pt-1/blob/main/cleaning_CD/clean_tools/scrape_results.csv) and [name_list.csv](https://github.com/liaochris/SPEOC-pt-1/blob/main/cleaning_CD/clean_tools/name_list.csv)
 
-2. In **Adding Missing Occupations**, there are cases where an occupation is part of a name in [aggregated_CD_post1790.csv](data_clean/aggregated_CD_post1790.csv), but the occupation is not listed in the occupation column. we amend this by adding the occupation
+2. In **Adding Missing Occupations**, there are cases where an occupation is part of a name in [aggregated_CD_post1790.csv](https://github.com/liaochris/SPEOC-pt-1/blob/main/data_clean/aggregated_CD_post1790.csv), but the occupation is not listed in the occupation column. we amend this by adding the occupation
 
    1. Example: In CT_333, there is no occupation listed even though the debtholder's name is `Wheeler Coit Treasurer and Co` , so we added the `treasurer` occupation to the occupation column
 
 3. There are two steps in **Merge Data** to create the aggregate dataset we will work with
 
-   1. In [aggregated_CD_post1790.csv](data_clean/aggregated_CD_post1790.csv) (variable `CD_clean`), one debtholder entry name (`Name` column) sometimes corresponds to multiple names. we merge it with [name_list.csv](cleaning_CD/clean_tools/name_list.csv) (variable `name_df`), which maps one debtholder entry name (`Name`) to however many actual names are there are (values listed in `Name_Fix`). Note that now, the same debtholder entry may be linked to multiple "names". Here is an example:
+   1. In [aggregated_CD_post1790.csv](https://github.com/liaochris/SPEOC-pt-1/blob/main/data_clean/aggregated_CD_post1790.csv) (variable `CD_clean`), one debtholder entry name (`Name` column) sometimes corresponds to multiple names. we merge it with [name_list.csv](https://github.com/liaochris/SPEOC-pt-1/blob/main/cleaning_CD/clean_tools/name_list.csv) (variable `name_df`), which maps one debtholder entry name (`Name`) to however many actual names are there are (values listed in `Name_Fix`). Note that now, the same debtholder entry may be linked to multiple "names". Here is an example:
 
       1. `CD_clean`
 
@@ -306,13 +306,13 @@ print(pd.read_csv('scrape_tools/scrape_results.csv', index_col = 0).loc[[0, 8, 9
          print(CD_merged_mind[CD_merged_mind['Group Name'].apply(lambda x: x in ['Richard Woottan', 'Gassaway Watkins'])][['Name', 'state_data', 'state_data_index', 'Name_Fix', 'Fn_Fix', 'Ln_Fix', 'county', 'new_state', 'country', 'name_type','Match Index', 'Match Status','Group Name', 'Group Town', 'Group County', 'Group State', 'Group Country', 'Group Name Type','Group Match Index', 'Group Match Status',]].to_markdown())
          ```
 
-5. Next, we have a list of names (manually curated)  that represent the same identity but are slightly misspelled that we deal with in the **Group Names - Fuzzy Matching**. These are names that the Ancestry.com APwe could not find matches for, or somehow missed. we import [name_agg.csv](cleaning_CD/clean_tools/name_agg.csv) (variable `rep_names`)
+5. Next, we have a list of names (manually curated)  that represent the same identity but are slightly misspelled that we deal with in the **Group Names - Fuzzy Matching**. These are names that the Ancestry.com APwe could not find matches for, or somehow missed. we import [name_agg.csv](https://github.com/liaochris/SPEOC-pt-1/blob/main/cleaning_CD/clean_tools/name_agg.csv) (variable `rep_names`)
 
    1. Sometimes, a `location` value is needed to identify which individual we are referring to - as there can be multiple individuals with the same name. 
 
    2. Note that we don't need to go through the same process as earlier of filtering different `name_type` values to figure out what location level we want because the `new` name column was manually curated. An algorithm that generates would have to consider this when deciding what name is going to be in the `original` column (which name is being replaced) and what name is going to be in the `new` (the replacement name).
 
-      1. The manual curation process used techniques described in the **Name Matching Algorithms** section of the [2023 Handbook](https://docs.google.com/document/d/1U8bUp_No2pjpLYHOAKkroEMwqUkKn6Adz47YhAIbauE/edit#)
+      1. The manual curation process used techniques described in the **Name Matching Algorithms** section of the [2023 Handbook](https://github.com/liaochris/SPEOC-pt-1/blob/main/https://docs.google.com/document/d/1U8bUp_No2pjpLYHOAKkroEMwqUkKn6Adz47YhAIbauE/edit#)
 
    3. Here's an example of two entries in `rep_names` and the subsequent result. Notice how John Salter represents the identities of multiple individuals, so we specify a location
 
@@ -476,11 +476,11 @@ print(pd.read_csv('scrape_tools/scrape_results.csv', index_col = 0).loc[[0, 8, 9
 
     1. In this case, we set the group characteristics to be whatever data is most specific (most specific `name_type` for location)
 
-    2. The variable `state_group_names` contains our list of potential duplicates, imported from [group_name_state.csv](cleaning_CD/clean_tools/group_name_state.csv)
+    2. The variable `state_group_names` contains our list of potential duplicates, imported from [group_name_state.csv](https://github.com/liaochris/SPEOC-pt-1/blob/main/cleaning_CD/clean_tools/group_name_state.csv)
 
     3. To identify these cases, we find all names that appear across multiple states, then make sure that there are strictless less counties than states (removing cases where counties don't exist). This ensures that there is at least one pair of name + state that does not contradict each other (if we have 2 different states + 2 different counies, the state value column was not imputed which tells us that those 2 names represent different identities)
 
-       1. Then, we go through the list manually and using techniques from the **Name Matching Algorithms** section of the  [2023 Handbook](https://docs.google.com/document/d/1U8bUp_No2pjpLYHOAKkroEMwqUkKn6Adz47YhAIbauE/edit#) (and examining whether the two individuals in question both own debt from the same state debt file, of which affirmation is a positive sign)
+       1. Then, we go through the list manually and using techniques from the **Name Matching Algorithms** section of the  [2023 Handbook](https://github.com/liaochris/SPEOC-pt-1/blob/main/https://docs.google.com/document/d/1U8bUp_No2pjpLYHOAKkroEMwqUkKn6Adz47YhAIbauE/edit#) (and examining whether the two individuals in question both own debt from the same state debt file, of which affirmation is a positive sign)
 
     4. When both names only have location `name_type` at the state value, we input manually which state to aggregate data at (based on manual inspection)
 
@@ -506,7 +506,7 @@ print(pd.read_csv('scrape_tools/scrape_results.csv', index_col = 0).loc[[0, 8, 9
        print(df_final[df_final['Group Name'] == 'Adam Gilchrist'][['Group Name', 'Group State', 'Group County', 'Group Town', 'Group Name Type', 'Group Match Index']].to_markdown())
        ```
 
-12. Next, we move onto cleaning the dataset that contains Ancestry.com demographic data in section **Add Villages**. We import the dataset [scrape_results.csv](cleaning_CD/clean_tools/scrape_results.csv) (variable `match_df`)
+12. Next, we move onto cleaning the dataset that contains Ancestry.com demographic data in section **Add Villages**. We import the dataset [scrape_results.csv](https://github.com/liaochris/SPEOC-pt-1/blob/main/cleaning_CD/clean_tools/scrape_results.csv) (variable `match_df`)
 
     1. The Ancestry.com Census data does not list a geography that can be classified as a town for most Philadelphia/Charleston/New York City residents; instead, it lists a subdivision of the city, such as `New York City East Ward`
 
@@ -610,7 +610,7 @@ print(pd.read_csv('scrape_tools/scrape_results.csv', index_col = 0).loc[[0, 8, 9
     4. In cases where we have a location conflict at the county level (census county differs from given county), or a location conflict at the town level, we mark what level of location conflict we have and **do not** merge the ancestry.com location into our location for our final dataset
     5. In cases where we do not have a location conflict, and the census data was added, we **do** merge the ancestry.com location into our location for our final dataset
 
-17. In **Occupation Column Cleaning**, I clean the `occupation` column by unifying the name format using a mapping. We worked on this last year and explored using automated solutions, but there was still a large (too large) degree of manual input required so I just exported the manually craeted mapping as [occ_correction.csv](cleaning_CD/clean_tools/occ_correction.csv) and used that. 
+17. In **Occupation Column Cleaning**, I clean the `occupation` column by unifying the name format using a mapping. We worked on this last year and explored using automated solutions, but there was still a large (too large) degree of manual input required so I just exported the manually craeted mapping as [occ_correction.csv](https://github.com/liaochris/SPEOC-pt-1/blob/main/cleaning_CD/clean_tools/occ_correction.csv) and used that. 
 
     1. We should look into using NLP solutions, which we did not do last year, to automate this process. 
 
@@ -633,7 +633,7 @@ print(pd.read_csv('scrape_tools/scrape_results.csv', index_col = 0).loc[[0, 8, 9
        print(occ_data[occ_data['Corrected'].apply(lambda x: x in ['Merchant'])].head(9)[['Original', 'Corrected']].to_markdown())
        ```
 
-18. In **Reset Match Data Index**, we reset the index of our match data by removing entries that are no longer in the data, and then reindexing everything so that our match values go from 1... number of match values. This turns out to be a bit more complicated than just using the `.reset_index()` command becuase our two datasets are relational, but the code is essentially the same as in [clean_3_scrape.ipynb](cleaning_CD/clean_3_scrape.ipynb) 
+18. In **Reset Match Data Index**, we reset the index of our match data by removing entries that are no longer in the data, and then reindexing everything so that our match values go from 1... number of match values. This turns out to be a bit more complicated than just using the `.reset_index()` command becuase our two datasets are relational, but the code is essentially the same as in [clean_3_scrape.ipynb](https://github.com/liaochris/SPEOC-pt-1/blob/main/cleaning_CD/clean_3_scrape.ipynb) 
 
 19. In **Aggregate Debt Totals**, we want to calculate an individual's total holdings of 6%, 6% deferred and 3% stock. We calculate two measures. The first measure is the sum of all of an individual's holdings. However, this measure does not take into account that multiple individuals can hold the same debt, so our second measure is the sum of an individual's holdings, where debt held by multiple people is divided into equal shares. For example, if Bob and George both hold \$200 worth of debt together, then their second measure would have value \$100
 
@@ -641,10 +641,10 @@ print(pd.read_csv('scrape_tools/scrape_results.csv', index_col = 0).loc[[0, 8, 9
 
 ## Other Things
 
-The following links to state population data ([statepop.csv](data_raw/census_data/statepop.csv): https://web.viu.ca/davies/H320/population.colonies.htm) and county population data ([countyPopulation.csv](data_raw/census_data/countyPopulation.csv): https://www.socialexplorer.com/tables/Census1790/R13347861) that may be helpful in understanding the proportion of individuals in a state who held debt. 
+The following links to state population data ([statepop.csv](https://github.com/liaochris/SPEOC-pt-1/blob/main/data_raw/census_data/statepop.csv): https://web.viu.ca/davies/H320/population.colonies.htm) and county population data ([countyPopulation.csv](https://github.com/liaochris/SPEOC-pt-1/blob/main/data_raw/census_data/countyPopulation.csv): https://www.socialexplorer.com/tables/Census1790/R13347861) that may be helpful in understanding the proportion of individuals in a state who held debt. 
 
 To make maps, we use shapefiles. We have shapefiles at the county and state level. 
 
-- [historicalcounties](data_raw/shapefiles/historicalcounties): IPUMS NHGIS, 1790 census data, 1790 County 2000 Tiger/Line GIS
+- [historicalcounties](https://github.com/liaochris/SPEOC-pt-1/blob/main/data_raw/shapefiles/historicalcounties): IPUMS NHGIS, 1790 census data, 1790 County 2000 Tiger/Line GIS
 
-- [historicalstates](data_raw/shapefiles/historicalstates): https://digital.newberry.org/ahcb/downloads/gis/US_AtlasHCB_StateTerr_Gen001.zip
+- [historicalstates](https://github.com/liaochris/SPEOC-pt-1/blob/main/data_raw/shapefiles/historicalstates): https://digital.newberry.org/ahcb/downloads/gis/US_AtlasHCB_StateTerr_Gen001.zip
