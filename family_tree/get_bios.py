@@ -5,7 +5,7 @@ import logging
 log = logging.getLogger(__name__)
 
 INPUT_CSV = "results/task_1.csv"
-OUTPUT_JSONL = "wikitree_bios.jsonl"
+OUTPUT_JSONL = "wikitree_bios/wikitree_bios.jsonl"
 SLEEP_SEC = 0.5     # gentle on API
 MAX_RETRIES = 3
 
